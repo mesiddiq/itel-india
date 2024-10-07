@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    .content{
+        @apply mx-auto max-w-7xl w-full md:w-11/12;
+    }
+}
