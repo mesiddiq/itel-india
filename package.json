@@ -13,15 +13,11 @@
     "framer-motion": "^11.11.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-<<<<<<< HEAD
-    "react-router-dom": "^6.26.2"
-=======
     "react-fast-marquee": "^1.6.5",
     "react-player": "^2.16.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "video-react": "^0.16.0"
->>>>>>> 27ac7a487f716b4e0b7a7bbfe59b6ca8be78dcd6
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
