@@ -11,12 +11,14 @@ import SliderComponent from './components/core/SliderComponent'
 import TvAnimationLoop from './components/core/TvAnimation'
 import ImageWithText from './components/core/ImageWithText'
 import HotPicks from './components/core/HotPicks'
+import Hero from './components/common/Hero'
 
 function App() {
 
 	return (
 		<main className="bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] px-5 md:px-0">
 			<Navbar/>
+			<Hero/>
             <SliderComponent/>
 			<CoolGadgets />
 			<SmartAppliances />
