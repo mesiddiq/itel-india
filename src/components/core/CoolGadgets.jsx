@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
 const CoolGadgets = () => {
   return (
@@ -13,7 +14,7 @@ const CoolGadgets = () => {
         <div className="flex justify-center">
           <div className="p-4 rounded-lg">
             <img
-              src="/main.png"
+              src="/Gadgets.gif"
               alt="Gadget 1"
               className="w-full h-screen object-cover"
             />
@@ -29,10 +30,10 @@ const CoolGadgets = () => {
 
         {/* Explore Button */}
         <div className="flex ml-5">
-          <button className="mt-6 flex text-white font-semibold text-lg hover:text-purple-500 cursor-pointer transition-all duration-300 ease-in-out">
+          <button className="mt-6 flex text-white font-semibold text-lg cursor-pointer transition-all duration-300 ease-in-out">
             Explore
-            <span className="ml-2 text-xl hover:translate-x-1 transition-transform duration-300 ease-in-out">
-              →
+            <span className="ml-2 text-xl">
+              <img src="/Arrow_right.svg" alt="" />
             </span>
           </button>
         </div>
