@@ -1,4 +1,4 @@
-import './App.css'
+
 import HomePage from './pages/HomePage'
 import Video from './pages/Video'
 import DareToDoIt from './pages/DareToDoIt'
