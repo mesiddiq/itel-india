@@ -1,8 +1,13 @@
 import React from 'react'
+import CoolGadgets from '../components/core/CoolGadgets'
+import SmartAppliances from '../components/core/SmartAppliances'
 
 const HomePage = () => {
     return (
-        <div>HomePage</div>
+        <div>
+            <CoolGadgets/>
+            <SmartAppliances/>
+        </div>
     )
 }
 
