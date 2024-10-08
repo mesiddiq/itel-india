@@ -7,12 +7,14 @@ import React from 'react'
 // import ImageWithText from '../components/core/ImageWithText';
 import Navbar from '../components/common/Navbar';
 import SliderComponent from '../components/core/SliderComponent';
+import Hero from '../components/common/Hero';
 //  Aashish Gulshan 
 const HomePage = () => {
     return (
 
         <div className='content'>
             <Navbar/>
+            <Hero/>
             <SliderComponent/>
         </div>
     )
