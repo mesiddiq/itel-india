@@ -8,3 +8,27 @@
         @apply mx-auto max-w-7xl w-full md:w-11/12;
     }
 }
+
+.DareToDoIt {
+    position: relative;
+    transform: rotate(10deg);
+}
+
+.StayPlugged {
+    background-image: url('../public/subtract.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.StayPlugged h1, .StayPlugged h3, .StayPluggedMobile h1, .StayPluggedMobile h3 {
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+.StayPluggedMobile {
+    background-image: url('../public/subtract-mobile.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
