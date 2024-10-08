@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const TvAnimationLoop = () => {
   return (
-    <div className=" flex justify-center items-center bg-black">
+    <div className=" flex justify-center items-center">
       <motion.div
         className="relative w-screen h-auto border-8 border-black rounded-lg overflow-hidden"
         animate={{ scaleX: [1, 0.5, 0.5, 1], scaleY: [1, 0.5, 0.5, 1] }} // Image scaling animation

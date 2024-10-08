@@ -8,7 +8,7 @@ import G4 from "../../images/hotPicksImage/G-4.png"
 const HotPicks = () => {
   return (
     <>
-        <div className='pt-[50px] w-[1296px]'>
+        <div className='content'>
 
          <div className='flex items-center mb-[40px]'>
             <img src={star} alt='star' className=' w-[59.66px]'/>

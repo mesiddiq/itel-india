@@ -6,13 +6,11 @@ const Video = () => {
         <div className='w-full relative'>
             <ReactPlayer
                 playing
-                controls={false} 
-                playing={true} 
+                controls={false}
                 loop={true}
                 muted={true}
                 width='100%'
                 height='100%'
-                muted
                 url={[{src: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4', type: 'video/mp4'}]}
             />
             <div className='absolute w-full bottom-[16px] text-center'>
