@@ -5,7 +5,7 @@
 
 @layer base {
     .content{
-        @apply mx-auto max-w-7xl w-full md:w-11/12;
+        @apply mx-auto max-w-7xl w-full md:w-11/12 text-white;
     }
 }
 
