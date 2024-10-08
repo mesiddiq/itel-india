@@ -18,7 +18,10 @@ const SliderComponent = () => {
   return (
     <div className="relative">
       <Slider {...sliderSettings}>
-        <div className="h-screen bg-red-500">
+        <div 
+          className="h-screen bg-cover bg-center" 
+          style={{ backgroundImage: `url('./HeroBanner.gif')` }}
+        >
           <div className="text-white absolute top-1/3 left-10">
             <h1 className="text-6xl font-bold">Bringing India Together with itel</h1>
             <p className="text-xl mt-4">Snag your itel smartphones starting at just ₹6,999/-</p>
@@ -27,7 +30,10 @@ const SliderComponent = () => {
             </a>
           </div>
         </div>
-        <div className="h-screen bg-blue-500">
+        <div 
+          className="h-screen bg-cover bg-center" 
+          style={{ backgroundImage: `url('/path/to/your-gif2.gif')` }}
+        >
           <div className="text-white absolute top-1/3 left-10">
             <h1 className="text-6xl font-bold">Discover Smart TV at itel</h1>
             <p className="text-xl mt-4">Get the best viewing experience at affordable prices</p>
