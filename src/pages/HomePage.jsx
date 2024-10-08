@@ -8,6 +8,7 @@ import React from 'react'
 import Navbar from '../components/common/Navbar';
 import SliderComponent from '../components/core/SliderComponent';
 import Hero from '../components/common/Hero';
+import CardSection from '../components/core/CardSection';
 //  Aashish Gulshan 
 const HomePage = () => {
     return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <div className='content'>
             <Navbar/>
             <Hero/>
+            <CardSection/>
             <SliderComponent/>
         </div>
     )
