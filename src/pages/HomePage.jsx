@@ -6,11 +6,13 @@ import StayPlugged from '../components/StayPlugged'
 import CountOnItel from '../components/CountOnItel'
 import OurSmartAppliances from '../components/OurSmartAppliances'
 import Footer from '../components/Footer'
+import EnjoyBetterLife from '../components/EnjoyBetterLife'
 
 const HomePage = () => {
     return (
         <div className='bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] px-5 md:px-0 overflow-x-hidden'>
             <HeroSection />
+            <EnjoyBetterLife/>
             {/* <SimilarProducts /> */}
             <DareToDoIt />
             {/* <StayPlugged /> */}
