@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .content {
+    @apply mx-auto max-w-7xl w-full md:w-11/12 text-white;
+  }
+}
+
+.swiper-pagination-bullet{
+  background-color: white ;
+  color: white;
+  opacity: 100;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff0037;
+  width: 56px;
+  border-radius: 10px;
+  transition: width 0.1s linear;
+}
