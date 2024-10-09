@@ -9,12 +9,12 @@ const Footer = () => {
             <div className='w-full p-[20px] pt-[40px] md:p-[60px] bg-[#171717]'>
                 <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
                     <div className="col-span-1 md:col-span-2">
-                        {/* <div className='pb-3'><img src={itel} /></div>
-                        <div className='mt-3 pb-10'><img src={social} /></div> */}
+                        <div className='pb-3'><img src={'./footer/itel.png'} /></div>
+                        {/* <div className='mt-3 pb-10'><img src={social} /></div> */}
                         <p className='text-[14px] leading-[22.4px] pb-[15px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>Subscribe</p>
                         <div className="relative max-w-[330px]">
                             <input className="input" placeholder="Enter your email address"></input>
-                            {/* <div className="inputIcon"><img src={send} /></div> */}
+                            <div className="inputIcon"><img src={'./footer/send.png'} /></div>
                         </div>
                         <p className='text-[14px] text-[#FFFFFF] leading-[22.4px] pt-[15px]'>Join our newsletter to stay up to date on features and releases</p>
                     </div>
@@ -76,10 +76,10 @@ const Footer = () => {
                     </div>
                     <div className="col-span-1 md:col-span-1 pt-[20px] md:pt-[0px]">
                         <p className='text-[14px] leading-[22.4px] pb-[20px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>Contact</p>
-                        {/* <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'>
-                            <img src={phone} className='h-[14px] mr-2' /> +91-120-6650888
-                        </p> */}
-                        {/* <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'><img src={envelope} className='h-[14px] mr-2' /> info.in@transsion.com</p> */}
+                        <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'>
+                            <img src={'./footer/phone.png'} className='h-[14px] mr-2' /> +91-120-6650888
+                        </p>
+                        <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'><img src={'./footer/envelope.png'} className='h-[14px] mr-2' /> info.in@transsion.com</p>
                     </div>
                 </div>
             </div>
