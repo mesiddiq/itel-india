@@ -1,12 +1,12 @@
 import React from 'react'
-import HeroSection from '../components/HeroSection'
-import SimilarProducts from '../components/SimilarProducts'
-import DareToDoIt from '../components/DareToDoIt'
-import StayPlugged from '../components/StayPlugged'
-import CountOnItel from '../components/CountOnItel'
-import OurSmartAppliances from '../components/OurSmartAppliances'
+import HeroSection from '../../components/core/Homepage/HeroSection'
+import SimilarProducts from '../../components/core/Homepage/SimilarProducts'
+import DareToDoIt from '../../components/core/Homepage/DareToDoIt'
+import StayPlugged from '../../components/core/Homepage/StayPlugged'
+import CountOnItel from '../../components/core/Homepage/CountOnItel'
+import OurSmartAppliances from '../../components/core/Homepage/OurSmartAppliances'
 import Footer from '../components/Footer'
-import EnjoyBetterLife from '../components/EnjoyBetterLife'
+import EnjoyBetterLife from '../../components/core/Homepage/EnjoyBetterLife'
 
 const HomePage = () => {
     return (
