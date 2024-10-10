@@ -2,8 +2,8 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
-import HomePage from './pages/HomePage'
 import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/static_pages/HomePage'
 
 function App() {
 
