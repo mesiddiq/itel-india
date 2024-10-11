@@ -20,7 +20,7 @@ function App() {
 	return (
 		<>
 			<Routes>
-				<Route path='/' element={<h1>Home Route</h1>} />
+				<Route path='/' element={<h1 className='font-bricolage text-desktop/large/h'>S23</h1>} />
 				<Route path='/smartphones/s-series/s23' element={<STwentyThree />} />
 				<Route path='/smartphones/s-series/s23p' element={<STwentyThreePlus />} />
 				<Route path='/smartphones/s-series/s24' element={<STwentyFour />} />

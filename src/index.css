@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Mark_OT";
+  src: url("./fonts/MarkOT.ttf");
+}
+
+@font-face {
+  font-family: "BricolageGrotesque";
+  src: url("./fonts/BricolageGrotesque.ttf");
+}
+
+@font-face {
+  font-family: "BricolageGrotesque";
+  src: url("./fonts/BricolageGrotesque.ttf");
+}
+
 @layer base {
   .content {
     @apply mx-auto max-w-7xl w-full md:w-11/12 text-white;
