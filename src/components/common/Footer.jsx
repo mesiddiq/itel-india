@@ -1,7 +1,6 @@
 import React from 'react'
 import { For } from 'react-haiku'
-import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../data/FooterData'
-import rightChevron from '../../public/footer/rightChevron.png'
+import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../../data/FooterData'
 
 const Footer = () => {
     return (
@@ -25,7 +24,7 @@ const Footer = () => {
                                 <a href={item.link} className='cursor-pointer'>
                                     <div className='text-desktop/caption text-white flex'>
                                         {item.label}
-                                        <img src={rightChevron} className='h-[16px]' />
+                                        <img src={'./footer/rightChevron.png'} className='h-[16px]' />
                                     </div>
                                 </a>
                             } />
@@ -38,7 +37,7 @@ const Footer = () => {
                                 <a href={item.link} className='cursor-pointer'>
                                     <div className='text-desktop/caption text-white flex'>
                                         {item.label}
-                                        <img src={rightChevron} className='h-[16px]' />
+                                        <img src={'./footer/rightChevron.png'} className='h-[16px]' />
                                     </div>
                                 </a>
                             } />
@@ -52,7 +51,7 @@ const Footer = () => {
                                     <a href={item.link} className='cursor-pointer'>
                                         <div className='text-desktop/caption text-white flex'>
                                             {item.label}
-                                            <img src={rightChevron} className='h-[16px]' />
+                                            <img src={'./footer/rightChevron.png'} className='h-[16px]' />
                                         </div>
                                     </a>
                                 } />
@@ -66,7 +65,7 @@ const Footer = () => {
                                     <a href={item.link} className='cursor-pointer'>
                                         <div className='text-desktop/caption text-white flex'>
                                             {item.label}
-                                            <img src={rightChevron} className='h-[16px]' />
+                                            <img src={'./footer/rightChevron.png'} className='h-[16px]' />
                                         </div>
                                     </a>
                                 } />

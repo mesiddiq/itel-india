@@ -5,8 +5,9 @@ import DareToDoIt from '../../components/core/Homepage/DareToDoIt'
 import StayPlugged from '../../components/core/Homepage/StayPlugged'
 import CountOnItel from '../../components/core/Homepage/CountOnItel'
 import OurSmartAppliances from '../../components/core/Homepage/OurSmartAppliances'
-import Footer from '../components/Footer'
+// import Footer from ''
 import EnjoyBetterLife from '../../components/core/Homepage/EnjoyBetterLife'
+import Footer from '../../components/common/Footer'
 
 const HomePage = () => {
     return (
@@ -18,7 +19,7 @@ const HomePage = () => {
             {/* <StayPlugged /> */}
             <CountOnItel />
             <OurSmartAppliances />
-            <Footer />
+            <Footer/>
         </div>
     )
 }
