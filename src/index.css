@@ -4,17 +4,32 @@
 
 @font-face {
   font-family: "Mark_OT";
-  src: url("./fonts/MarkOT.ttf");
+  src: url("/fonts/Mark_OT/MarkOT.otf") format("opentype");
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "BricolageGrotesque";
-  src: url("./fonts/BricolageGrotesque.ttf");
+  font-family: "Mark_OT";
+  src: url("/fonts/Mark_OT/Mark_OT-Bold.otf") format("opentype");
+  font-weight: bold;
 }
 
 @font-face {
+  font-family: "Mark_OT";
+  src: url("/fonts/Mark_OT/MarkOT-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mark_OT";
+  src: url("/fonts/Mark_OT/MarkOT-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+
+@font-face {
   font-family: "BricolageGrotesque";
-  src: url("./fonts/BricolageGrotesque.ttf");
+  src: url("/fonts/BricolageGrotesque.ttf");
 }
 
 @layer base {
