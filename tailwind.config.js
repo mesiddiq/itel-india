@@ -23,6 +23,7 @@ export default {
 				'grey/grey/100': '#c0c0c0',
 				'dark/card/bg': '#232323',
 				'brand/black':'#1c1b1b',
+				'smoky/black':'#0e0e0e',
 				'black/1':'#181818',
 				's24/from':'#ffcf92',
 				's24/to':'#ffe8cb',
