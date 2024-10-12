@@ -27,7 +27,6 @@ const STwentyThreePlus = () => {
       <SnapFlawlessSelfie />
       <UnlockTouch />
       <BlogCards />
-      <Footer />
     </main>
   )
 }
