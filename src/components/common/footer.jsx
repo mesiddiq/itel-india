@@ -5,7 +5,7 @@ import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../../data/Fo
 const Footer = () => {
     return (
         <>
-            <div className='w-full p-[20px] pt-[40px] md:p-[60px] bg-[#171717]'>
+            <div className='w-full p-[20px] pt-[40px] md:p-[60px] bg-[#171717]' style={{ marginTop: '0px' }}>
                 <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
                     <div className="col-span-1 md:col-span-2">
                         <div className='pb-3'><img src={'./footer/itel.png'} /></div>
