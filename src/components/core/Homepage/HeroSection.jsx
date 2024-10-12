@@ -21,7 +21,7 @@ const HeroSection = () => {
             }}
             autoplay
             modules={[EffectFade, Pagination]}
-            className="mySwiper max-h-screen w-full font-markot "
+            className="mySwiper max-h-screen w-full "
         >
             <SwiperSlide>
                 <div className="relative h-[627px] flex justify-center  pt-[114px]">
