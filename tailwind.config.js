@@ -16,6 +16,7 @@ export default {
 				'itel-red':'#ff0037',
 				'bg/primary/1': '#f8f6f3',
 				'bg/secondry': '#ebe8e2',
+				'grey/grey/1': '#f2f2f2',
 				'grey/grey/2': '#d9d9d9',
 				'grey/grey/3': '#949494',
 				'grey/grey/4': '#666666',
