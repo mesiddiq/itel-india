@@ -3,17 +3,17 @@ import React from 'react';
 function SupportChannels() {
   const supportChannels = [
     {
-      image: "/SmartPhone/S_Twenty_Three/Support1.webp",
+      image: "/smartphone/S_Twenty_Three/Support1.webp",
       title: "100 Days Promise",
       link: "#"
     },
     {
-      image: "/SmartPhone/S_Twenty_Three/Support2.webp",
+      image: "/smartphone/S_Twenty_Three/Support2.webp",
       title: "Screen Replacement",
       link: "#"
     },
     {
-      image: "/SmartPhone/S_Twenty_Three/Support3.webp",
+      image: "/smartphone/S_Twenty_Three/Support3.webp",
       title: "Service Centre",
       link: "#"
     }
@@ -38,7 +38,7 @@ function SupportChannels() {
                 <h3 className="text-2xl tracking-tight leading-8 text-stone-100">{channel.title}</h3>
                 <a href={channel.link} className="flex gap-0.5 items-center mt-2 text-base tracking-tight leading-tight text-white">
                   <span className="self-stretch my-auto">Read more</span>
-                  <img loading="lazy" src="/SmartPhone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain w-6 aspect-square" />
+                  <img loading="lazy" src="/smartphone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain w-6 aspect-square" />
                 </a>
               </div>
             </div>

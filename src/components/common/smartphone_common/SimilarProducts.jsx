@@ -6,25 +6,25 @@ function SimilarProducts() {
       name: 'S24',
       price: '₹10,999.00',
       originalPrice: null,
-      image: '/SmartPhone/S_Twenty_Three/S24.webp' 
+      image: '/smartphone/S_Twenty_Three/S24.webp' 
     },
     {
       name: 'P55+',
       price: '₹9,499',
       originalPrice: '₹13,999.00',
-      image: '/SmartPhone/S_Twenty_Three/P55.webp' 
+      image: '/smartphone/S_Twenty_Three/P55.webp' 
     },
     {
       name: 'S23',
       price: '₹8,199',
       originalPrice: '₹12,999.00',
-      image: '/SmartPhone/S_Twenty_Three/S23.webp' 
+      image: '/smartphone/S_Twenty_Three/S23.webp' 
     },
     {
       name: 'A70',
       price: '₹6,299',
       originalPrice: '₹7,299.00',
-      image: '/SmartPhone/S_Twenty_Three/A70.webp' 
+      image: '/smartphone/S_Twenty_Three/A70.webp' 
     }
   ];
 
@@ -61,7 +61,7 @@ function SimilarProducts() {
                   <button className="flex gap-3 justify-center items-center mt-4 w-full text-base font-bold tracking-normal leading-tight text-center uppercase text-stone-100">
                     <span className="flex overflow-hidden gap-2 items-center">
                       <span>Buy Now</span>
-                      <img loading="lazy" src="/SmartPhone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain w-6" />
+                      <img loading="lazy" src="/smartphone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain w-6" />
                     </span>
                   </button>
                 </div>
