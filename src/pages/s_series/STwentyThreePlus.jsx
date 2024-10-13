@@ -21,7 +21,6 @@ const STwentyThreePlus = () => {
       <AmoledDisplay />
       <NewVision />
       <ImmersiveEntertainment />
-      <Footer />
     </main>
   )
 }
