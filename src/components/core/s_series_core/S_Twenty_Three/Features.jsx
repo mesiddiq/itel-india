@@ -1,80 +1,76 @@
-import { Card, CardContent } from "@/components/ui/card"
-
-export default function Component() {
+export default function SmartphoneFeatures() {
   return (
-    <div className="grid grid-cols-2 gap-4 p-4 bg-gray-900">
-      <Card className="bg-gray-800 text-white overflow-hidden">
-        <CardContent className="p-6 h-full flex flex-col justify-between" style={{
-          backgroundImage: "url('/placeholder.svg?height=300&width=400')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}>
-          <div>
-            <h2 className="text-xl font-bold mb-2">Endless Possibilities; Immersive Display</h2>
-            <p className="text-sm">16.66cm (6.6) HD+ IPS Display</p>
-            <p className="text-sm">90Hz Refresh Rate | 180Hz Touch Sampling Rate</p>
+    <section className='font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] lg:px-[80px] bg-[#1c1b1b] flex flex-col gap-5'>
+    
+    <section className='upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
+      
+      <div className='w-full lg:w-[40%] h-[784px] rounded-2xl overflow-hidden flex flex-col relative bg-black'>
+        <div className='text-white w-full h-auto p-10 gap-10 flex flex-col'>
+          <span className='text-desktop/h3 text-markot  bg-gradient-to-r from-[#DACFF9] to-[#5C5C7E] bg-clip-text text-transparent'>
+            Endless Possibilities; Immersive Display
+          </span>
+          <div className='flex flex-col gap-5 text-desktop/h4 text-nowrap'>
+            <span>16.66cm(6.6)HD+ IPS Display</span>
+            <span>90Hz Refresh Rate | 180Hz Touch Sampling Rate</span>
           </div>
-          <div className="mt-4">
-            <img src="/placeholder.svg?height=150&width=150" alt="Smartphone display" className="rounded-lg" />
-          </div>
-        </CardContent>
-      </Card>
-
-      <Card className="bg-gray-800 text-white overflow-hidden">
-        <CardContent className="p-6 h-full flex flex-col justify-between" style={{
-          backgroundImage: "url('/placeholder.svg?height=300&width=400')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}>
-          <h2 className="text-xl font-bold mb-2">Long Lasting Experience</h2>
-          <p className="text-sm mb-4">5000mAh Battery with 10W Fast Charging Support</p>
-          <div className="text-6xl font-bold">5000mAh</div>
-        </CardContent>
-      </Card>
-
-      <Card className="bg-gray-800 text-white overflow-hidden">
-        <CardContent className="p-6 h-full flex flex-col justify-between" style={{
-          backgroundImage: "url('/placeholder.svg?height=300&width=400')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}>
-          <h2 className="text-xl font-bold mb-2">Effortless Multi-Tasking</h2>
-          <p className="text-sm mb-4">UNISOC T606 Octa-Core</p>
-          <div className="bg-purple-600 text-white text-2xl font-bold p-4 rounded-lg inline-block">
-            T606
-          </div>
-        </CardContent>
-      </Card>
-
-      <div className="grid grid-rows-2 gap-4">
-        <Card className="bg-gray-800 text-white overflow-hidden">
-          <CardContent className="p-6 h-full flex items-center justify-between" style={{
-            backgroundImage: "url('/placeholder.svg?height=150&width=400')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}>
-            <div>
-              <h2 className="text-xl font-bold mb-2">Side-mounted Fingerprint Lock</h2>
-            </div>
-            <img src="/placeholder.svg?height=100&width=50" alt="Smartphone side view" className="rounded-lg" />
-          </CardContent>
-        </Card>
-
-        <Card className="bg-gray-800 text-white overflow-hidden">
-          <CardContent className="p-6 h-full flex items-center justify-between" style={{
-            backgroundImage: "url('/placeholder.svg?height=150&width=400')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}>
-            <div>
-              <h2 className="text-xl font-bold mb-2">itel S23's HD Pixel Lens!</h2>
-              <p className="text-sm">50MP AI Dual Rear Camera</p>
-              <p className="text-sm">8 MP Front Camera</p>
-            </div>
-            <img src="/placeholder.svg?height=100&width=100" alt="Camera lenses" className="rounded-lg" />
-          </CardContent>
-        </Card>
+        </div>
+        {/* <img src="/smartphone/S_Twenty_Three/Card1.webp"alt="" className='absolute bottom-[1%]'/> */}
       </div>
-    </div>
-  )
+
+      <div className='w-[60%] flex flex-col gap-5'>
+        <div className='w-full h-1/2 rounded-2xl p-10 bg-black bg-cover bg-top '>
+          <div className='flex flex-col justify-between h-full w-[328px]'>
+            <div className='flex flex-col gap-4'>
+              <span className='text-desktop/h3 bg-gradient-to-r from-[#DACFF9] to-[#5C5C7E] bg-clip-text text-transparent'>Long Lasting Experience </span>
+              <span className='text-desktop/h4 text-grey/grey/2 w-[257px]'>5000mAh Battery with 10W Fast Charging Support</span>
+            </div>
+            {/* <img src="/smartphone/S_Twenty_Three/Battery.webp" alt="" className='absolute '/> */}
+          </div>
+        </div>
+
+        <div className='w-full h-1/2 rounded-2xl p-10 bg-black bg-cover bg-top'>
+          <div className='flex flex-col justify-between h-[292px] w-[292px]'>
+            <span className='text-desktop/h3 bg-gradient-to-r from-[#DACFF9] to-[#5C5C7E] bg-clip-text text-transparent'>Effortless Multi-Tasking </span>
+            <span className='flex flex-col gap-5 text-desktop/h4 text-grey/grey/2 w-[257px]'>
+              <span>UNISOC T606 Octa-Core 
+              </span>
+            </span>
+            {/* <img src="/smartphone/S_Twenty_Three/Processor.webp" alt="" className='absolute'/> */}
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    
+    <section className='flex flex-col gap-5 justify-between'>
+      
+      <div className='w-full flex flex-row gap-5'>
+        
+        <div className='w-[40%] rounded-2xl bg-black p-[40px]'>
+          <div className='flex flex-col gap-4'>
+            <span className='text-desktop/h3 bg-gradient-to-r from-[#DACFF9] to-[#5C5C7E] bg-clip-text text-transparent'>
+              Side-mounted Fingerprint Lock
+            </span>
+            {/* <img src="/smartphone/S_Twenty_Three/p2.webp"alt="" className='absolute   '/> */}
+          </div>
+        </div>
+        
+        <div className='w-[60%] rounded-2xl bg-black py-[42px] px-[40px]'>
+          <div className='flex flex-col justify-between w-[334px] h-[292px]'>
+            <div className='flex flex-col gap-4'>
+              <span className='text-desktop/h3 bg-gradient-to-r from-[#DACFF9] to-[#5C5C7E] bg-clip-text text-transparent'>itel S23's HD Pixel Lens!</span>
+              <span className='text-desktop/h4 text-white'>Color Changing Technology</span>
+            </div>
+            <span className='text-desktop/h4 text-white'>50MP Al Dual Rear Camera 8 MP Front Camera</span>
+            {/* <img src="/smartphone/S_Twenty_Three/p1.webp"alt="" className='absolute'/> */}
+          </div>
+          
+        </div>
+      
+      </div>
+    </section>
+
+  </section>
+)
 }

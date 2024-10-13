@@ -5,7 +5,7 @@ function StyleSection() {
     <section
       className="flex overflow-hidden z-0 flex-col w-full bg-black bg-opacity-20 max-w-[1440px] h-[800px] "
       style={{
-        backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', // Replace with your actual image path
+        backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', 
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}
