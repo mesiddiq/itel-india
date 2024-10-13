@@ -10,6 +10,7 @@ import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twe
 import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
 import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
 import FullSpecifications from "../../components/core/s_series_core/S_Twenty_Four/FullSpecifications"
+import ColorImageCarousel from "../../components/core/s_series_core/S_Twenty_Four/ColorImageCarousel"
 
 const STwentyFour = () => {
     return (
@@ -35,7 +36,9 @@ const STwentyFour = () => {
             <MultipleCardComponents />
             <SliderAnimation />
 
+            <ColorImageCarousel />
             <FullSpecifications />
+            
 
         </>
     )
