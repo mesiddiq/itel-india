@@ -10,6 +10,9 @@ import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import SuperGuru4G from './pages/feature_phone/SuperGuru4G'
 import Footer from './components/common/Footer'
+import Support from './components/common/header/Support'
+import ScreenReplacement from './components/common/header/Support/ScreenReplacement'
+import EWaste from './components/common/header/Support/E-Waste'
 
 function App() {
 
@@ -30,6 +33,7 @@ function App() {
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s24'>s-24</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55'>p-55</Link>
 						<Link className='text-blue-500 underline' to='/featurephones/s-guru-4g'>s guru 4g</Link>
+						<Link className='text-blue-500 underline' to='/support'>support</Link>
 					</div>} />
 				<Route path='/homepage' element={<HomePage />} />
 				<Route path='/smartphones/s-series/s23' element={<STwentyThree />} />
@@ -37,6 +41,13 @@ function App() {
 				<Route path='/smartphones/s-series/s24' element={<STwentyFour />} />
 				<Route path='/smartphones/p-series/p55' element={<PFiftyFive />} />
 				<Route path='/featurephones/s-guru-4g' element={<SuperGuru4G />} />
+				{/* {
+					support and there pages
+				} */}
+				<Route path='/support' element={<Support/>} />
+				<Route path='/support/Screen Replacement' element={<ScreenReplacement/>} />
+				<Route path='/support/E-Waste Management' element={<EWaste/>} />
+
 			</Routes>
 			<Footer />
 		</main>
