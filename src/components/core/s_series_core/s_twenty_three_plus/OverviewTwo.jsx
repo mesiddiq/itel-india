@@ -63,13 +63,13 @@ const OverviewTwo = () => {
     <div className='overview-two-section' id='overviewSection'>
       <div className='grid grid-cols-1 md:grid-cols-2'>
         <div className='col-span-1'>
-          <h1 className={`linear-gradient text-[24px] md:text-[48px] font-[500] leading-[31.2px] md:leading-[57.6px]`}>
+          <h1 className={`linear-gradient text-desktop/h4 md:text-desktop/h2`}>
             {title.slice(0, titleIndex)}
           </h1>
         </div>
         <div className='col-span-1 pt-[10px]'>
           {showParagraph && (
-            <p className={`text-[16px] text-[#D9D9D9] font-[350] leading-[25.6px] animate-slide-down`}>
+            <p className={`text-desktop/body/2/regular md:text-desktop/body/1 text-[#D9D9D9] animate-slide-down`}>
               Experience the future of mobile tech with the itel S23+ smartphone, featuring a sleek 3D curved 6.78″ FHD+ AMOLED display, a robust 5000 mAh battery with fast charging, and a stunning 50MP AI dual rear camera setup, all wrapped in an ultra-slim 7.9mm body for an effortlessly stylish experience.
             </p>
           )}
@@ -98,10 +98,10 @@ const OverviewTwo = () => {
             ].map((card, index) => (
               <div key={index} className='col-span-1 overview-two-section-card animate-slide-up' style={{ animationDelay: `${(index + 1) * 0.5}s` }}>
                 <img src={card.img} alt="" />
-                <h3 className={`text-[20px] md:text-[24px] text-[#FFFFFF] font-[500] leading-[26px] md:leading-[31.2px] py-[10px] md:py-[20px]`}>
+                <h3 className={`text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] py-[10px] md:py-[20px]`}>
                   {card.title}
                 </h3>
-                <p className='text-[16px] text-[#D9D9D9] font-[350] leading-[25.6px]'>
+                <p className='text-desktop/body/2/regular md:text-desktop/body/1 text-[#D9D9D9]'>
                   {card.description}
                 </p>
               </div>

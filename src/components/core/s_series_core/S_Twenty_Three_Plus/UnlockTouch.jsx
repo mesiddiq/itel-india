@@ -5,8 +5,8 @@ const UnlockTouch = () => {
     <div className='unlock-touch-section'>
       <div className='grid grid-cols-1 md:grid-cols-2 mx-auto gap-4'>
         <div className='col-span-1 text-left'>
-          <h3 className={`linear-gradient text-[24px] md:text-[48px] font-[500] leading-[31.2px] md:leading-[57.6px] mb-[20px]`}>Unlock with a Touch:<br />In-Display Fingerprint</h3>
-          <p className='w-[70%] md:w-full text-[#F2F2F2] text-[12px] md:text-[20px] font-[400] leading-[18px] md:leading-[32px] mb-[20px] md:mb-[80px]'>Effortlessly access your device with the touch of a finger - seamless security and convenience with in-display finger unlock.</p>
+          <h3 className={`linear-gradient text-mobile/h4 md:text-desktop/h2 mb-[20px]`}>Unlock with a Touch:<br />In-Display Fingerprint</h3>
+          <p className='w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large mb-[20px] md:mb-[80px]'>Effortlessly access your device with the touch of a finger - seamless security and convenience with in-display finger unlock.</p>
         </div>
         <div className='col-span-1'>
           <div className='hidden md:flex justify-center'>

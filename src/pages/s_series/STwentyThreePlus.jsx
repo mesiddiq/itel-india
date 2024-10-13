@@ -11,7 +11,10 @@ import ImmersiveEntertainment from '../../components/core/s_series_core/s_twenty
 import PicturePerfect from '../../components/core/s_series_core/s_twenty_three_plus/PicturePerfect'
 import SnapFlawlessSelfie from '../../components/core/s_series_core/s_twenty_three_plus/SnapFlawlessSelfie'
 import UnlockTouch from '../../components/core/s_series_core/s_twenty_three_plus/UnlockTouch'
+import ThinDesign from '../../components/core/s_series_core/s_twenty_three_plus/ThinDesign'
 import BlogCards from '../../components/core/s_series_core/s_twenty_three_plus/BlogCards'
+import OtherCoolGears from '../../components/common/smartphone_common/OtherCoolGears'
+import StayInTheLoop from '../../components/common/smartphone_common/StayInTheLoop'
 
 const STwentyThreePlus = () => {
   return (
@@ -29,7 +32,10 @@ const STwentyThreePlus = () => {
         <PicturePerfect />
         <SnapFlawlessSelfie />
         <UnlockTouch />
+        <ThinDesign />
         <BlogCards />
+        <OtherCoolGears />
+        <StayInTheLoop />
       </main>
     </>
   )
