@@ -5,7 +5,7 @@ const FeatureHeader = () => {
     <div className="w-full  h-[96px] bg-[#161616] flex justify-between px-4 md:px-16 items-center m-0">
       {/* Left side: Logo and Model Name */}
       <div className="flex items-center">
-        <img src="/SmartPhone/S_Twenty_Three/HeadIcon.webp" alt="itel S23 Hero Icon" className="w-10 h-10 object-contain" />
+        <img src="/smartphone/S_Twenty_Three/HeadIcon.webp" alt="itel S23 Hero Icon" className="w-10 h-10 object-contain" />
         <span className="ml-2 text-white text-2xl">S23</span>
       </div>
 
@@ -18,7 +18,7 @@ const FeatureHeader = () => {
       {/* Right side: Button */}
       <button className="flex items-center bg-white rounded-full px-4 py-2" aria-label="Buy Now">
         <span className="text-black mr-2 font-bold">BUY NOW</span>
-        <img src="/SmartPhone/S_Twenty_Three/arrow-right.webp" alt="Arrow Icon" className="w-4 h-4" />
+        <img src="/smartphone/S_Twenty_Three/arrow-right.webp" alt="Arrow Icon" className="w-4 h-4" />
       </button>
     </div>
   );

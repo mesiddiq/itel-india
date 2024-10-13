@@ -1,13 +1,9 @@
 import React from 'react'
-import HeroSection from '../../components/core/Homepage/HeroSection'
-import SimilarProducts from '../../components/core/Homepage/SimilarProducts'
-import DareToDoIt from '../../components/core/Homepage/DareToDoIt'
-import StayPlugged from '../../components/core/Homepage/StayPlugged'
-import CountOnItel from '../../components/core/Homepage/CountOnItel'
-import OurSmartAppliances from '../../components/core/Homepage/OurSmartAppliances'
-// import Footer from ''
-import EnjoyBetterLife from '../../components/core/Homepage/EnjoyBetterLife'
-import Footer from '../../components/common/Footer'
+import CountOnItel from '../../components/core/static_pages_core/Homepage/CountOnItel'
+import DareToDoIt from '../../components/core/static_pages_core/Homepage/DareToDoIt'
+import HeroSection from '../../components/core/static_pages_core/Homepage/HeroSection'
+import OurSmartAppliances from '../../components/core/static_pages_core/Homepage/OurSmartAppliances'
+import EnjoyBetterLife from '../../components/core/static_pages_core/Homepage/EnjoyBetterLife'
 
 const HomePage = () => {
     return (
@@ -19,7 +15,7 @@ const HomePage = () => {
             {/* <StayPlugged /> */}
             <CountOnItel />
             <OurSmartAppliances />
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

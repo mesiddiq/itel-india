@@ -4,17 +4,17 @@ function OtherProducts() {
   const products = [
     {
       title: "Smart Gadgets and Wearables, Exquisite Design and Power",
-      image: "/SmartPhone/S_Twenty_Three/Watch2.webp",
+      image: "/smartphone/S_Twenty_Three/Watch2.webp",
       width: "w-[549px]"
     },
     {
       title: "Smart TV, Non-Stop Entertainment",
-      image: "/SmartPhone/S_Twenty_Three/TV.webp",
+      image: "/smartphone/S_Twenty_Three/TV.webp",
       width: "w-[243px]"
     },
     {
       title: "Feature Phones- Stay Connected All Day Long",
-      image: "/SmartPhone/S_Twenty_Three/Featurephone.webp",
+      image: "/smartphone/S_Twenty_Three/Featurephone.webp",
       width: "w-[243px]"
     }
   ];
@@ -44,7 +44,7 @@ function OtherProducts() {
                   </h3>
                   <a href="#" className="flex overflow-hidden gap-2 items-center self-start mt-3 text-base font-bold tracking-normal leading-tight text-center uppercase text-stone-100">
                     <span className="self-stretch my-auto">Read more</span>
-                    <img loading="lazy" src="/SmartPhone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    <img loading="lazy" src="/smartphone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
                   </a>
                 </div>
               </div>

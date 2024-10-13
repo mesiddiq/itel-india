@@ -5,7 +5,7 @@ function HeroSection() {
     <section
       className="relative flex flex-col items-center justify-between md:pt-32 w-full h-auto md:h-[800px]"
       style={{
-        backgroundImage: "url('/SmartPhone/S_Twenty_Three/S23Hero.webp')",
+        backgroundImage: "url('/smartphone/S_Twenty_Three/S23Hero.webp')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
       }}
@@ -20,7 +20,7 @@ function HeroSection() {
               Super Series
             </div>
             <img
-              src="/SmartPhone/S_Twenty_Three/Vector.webp"
+              src="/smartphone/S_Twenty_Three/Vector.webp"
               alt="Super Series Logo"
               className="w-3"
             />
@@ -43,7 +43,7 @@ function HeroSection() {
           {/* Buy Now Button (Visible only on medium and larger screens) */}
           <div className="hidden md:flex items-center mt-4">
             <button className="flex items-center py-2 text-black font-semibold h-[45px] w-[202px] gap-2 uppercase tracking-wide">
-              <img src="/SmartPhone/S_Twenty_Three/Buttons.webp" alt="Buy Now" />
+              <img src="/smartphone/S_Twenty_Three/Buttons.webp" alt="Buy Now" />
             </button>
           </div>
         </div>
@@ -51,7 +51,7 @@ function HeroSection() {
         {/* Image Section */}
         <div className="flex justify-start md:justify-end items-center mt-8 md:mt-0">
           <img
-            src="/SmartPhone/S_Twenty_Three/HeroImg.webp"
+            src="/smartphone/S_Twenty_Three/HeroImg.webp"
             alt="itel S23 smartphone"
             className="w-[250px] h-auto md:w-[685px] md:h-[747.49px] object-contain md:absolute md:top-[52px] left-[10%] md:left-[650px]"
           />

@@ -3,17 +3,17 @@ import React from 'react';
 function FeatureSection() {
   const features = [
     {
-      icon: "/SmartPhone/S_Twenty_Three/instagram.webp",   
+      icon: "/smartphone/S_Twenty_Three/instagram.webp",   
       title: "Snap Magic: itel S23's 50MP Wonder!",
       description: "Say cheese and let the memories unfold in vibrant colours and sharpness with the itel S23's 50MP AI dual rear camera."
     },
     {
-      icon: "/SmartPhone/S_Twenty_Three/cpu-charge.webp",  
+      icon: "/smartphone/S_Twenty_Three/cpu-charge.webp",  
       title: "Boost Performance: 16GB* (8GB + 8GB*) RAM with Memory Fusion",
       description: "Enjoy faster app performance and smoother operations for all your needs powered by Memory Fusion Technology."
     },
     {
-      icon: "/SmartPhone/S_Twenty_Three/slider.webp", 
+      icon: "/smartphone/S_Twenty_Three/slider.webp", 
       title: "Magic Hue: Colour Change Tech",
       description: "Witness the magic of colour changing seamlessly in sunlight with photochromic technology for a unique visual delight."
     }

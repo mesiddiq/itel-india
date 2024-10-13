@@ -6,7 +6,7 @@ function CameraSection() {
       {/* Full-width image before the camera section */}
       <img
         loading="lazy"
-        src="/SmartPhone/S_Twenty_Three/Patterns.webp" 
+        src="/smartphone/S_Twenty_Three/Patterns.webp" 
         alt="Full-width image"
         className="object-cover w-full h-[80px]"
       />
@@ -14,7 +14,7 @@ function CameraSection() {
       <div className="flex relative flex-col pt-10 md:pt-24 pl-8 w-full min-h-[831px] max-md:pl-5 max-md:max-w-full">
         <img
           loading="lazy"
-          src="/SmartPhone/S_Twenty_Three/CamBg.webp"
+          src="/smartphone/S_Twenty_Three/CamBg.webp"
           alt="Background image for camera section"
           className="object-cover absolute inset-0 size-full"
         />
@@ -23,7 +23,7 @@ function CameraSection() {
           {/* Hide CamIcon on small screens */}
           <img
             loading="lazy"
-            src="/SmartPhone/S_Twenty_Three/CamIcon.webp"
+            src="/smartphone/S_Twenty_Three/CamIcon.webp"
             alt=""
             className="object-contain shrink-0 aspect-[0.87] w-[49px] max-md:hidden" // Hide on small screens
           />
@@ -68,7 +68,7 @@ function CameraSection() {
             <div className="flex flex-col ml-5 w-[64%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                src="/SmartPhone/S_Twenty_Three/Camphone.webp"
+                src="/smartphone/S_Twenty_Three/Camphone.webp"
                 alt="itel S23 camera showcase"
                 className="object-contain grow w-full aspect-[1.11] max-md:mt-4 max-md:ml-10 max-md:max-w-full"
               />

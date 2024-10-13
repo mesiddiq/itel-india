@@ -5,7 +5,7 @@ function StyleSection() {
     <section
       className="flex overflow-hidden z-0 flex-col w-full bg-black bg-opacity-20 max-w-[1440px] h-[800px] "
       style={{
-        backgroundImage: 'url(/SmartPhone/S_Twenty_Three/StyleBg.webp)', // Replace with your actual image path
+        backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', // Replace with your actual image path
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}
@@ -29,7 +29,7 @@ function StyleSection() {
           <div className="flex flex-col ml-32 w-[59%] max-md:ml-0 max-md:w-full max-md:items-center">
             <img
               loading="lazy"
-              src="/SmartPhone/S_Twenty_Three/StyleImg.webp"
+              src="/smartphone/S_Twenty_Three/StyleImg.webp"
               alt="itel S23 color variants"
               className="object-contain grow w-full aspect-[1.11]  max-md:mt-28  md:h-[879px] md:w-[871px]  max-md:max-w-full max-md:mx-auto"
             />

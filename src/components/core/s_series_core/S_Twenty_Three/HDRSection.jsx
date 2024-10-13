@@ -17,7 +17,7 @@ function HDRSection() {
           <div className="relative flex flex-col items-center bg-white bg-opacity-0 max-md:max-w-full">
             <div className="absolute inset-0 bg-gray-500 opacity-60"></div>
             <img
-              src="/SmartPhone/S_Twenty_Three/Hdrleft.webp" 
+              src="/smartphone/S_Twenty_Three/Hdrleft.webp" 
               alt="No HDR"
               className="object-cover w-full h-[500px] relative z-10"
             />
@@ -29,7 +29,7 @@ function HDRSection() {
           {/* With HDR Section */}
           <div className="relative flex flex-col items-center bg-white bg-opacity-0 max-md:max-w-full">
             <img
-              src="/SmartPhone/S_Twenty_Three/HdrRight.webp" 
+              src="/smartphone/S_Twenty_Three/HdrRight.webp" 
               alt="With HDR"
               className="object-cover w-full h-[500px] relative z-10"
             />
