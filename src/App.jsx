@@ -11,6 +11,8 @@ import PFiftyFive from './pages/p_series/PFiftyFive'
 import SuperGuru4G from './pages/feature_phone/SuperGuru4G'
 import Footer from './components/common/Footer'
 import S_Series_Parent from './components/core/s_series_core/S_Series_Parent'
+import SuperGuru400 from './pages/feature_phone/SuperGuru400'
+import SuperGuru600 from './pages/feature_phone/SuperGuru600'
 
 function App() {
 
@@ -39,7 +41,11 @@ function App() {
 					<Route path='s24' element={<STwentyFour />} />
 				</Route>
 				<Route path='/smartphones/p-series/p55' element={<PFiftyFive />} />
+
+				
 				<Route path='/featurephones/super-guru-4g' element={<SuperGuru4G />} />
+				<Route path='/featurephones/super-guru-400' element={<SuperGuru400 />} />
+				<Route path='/featurephones/super-guru-600' element={<SuperGuru600 />} />
 			</Routes>
 			<Footer />
 		</main>
