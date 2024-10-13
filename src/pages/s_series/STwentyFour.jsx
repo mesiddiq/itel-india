@@ -17,7 +17,7 @@ import FullSpecifications from "../../components/common/FullSpecifications"
 const STwentyFour = () => {
     return (
         <>
-            <HeroSection />
+            {/* <HeroSection /> */}
             {/* <ProductDescription /> */}
             <OverViewBanner />
             <ProductDescription />
@@ -27,7 +27,7 @@ const STwentyFour = () => {
 
             <CameraSpecifications />
             
-            <SensorZoom />
+            {/* <SensorZoom /> */}
 
             <ProcessorSpecifications />
 
@@ -39,7 +39,7 @@ const STwentyFour = () => {
 
             <ColorImageCarousel />
 
-            <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} />
+            {/* <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} /> */}
             
 
         </>
