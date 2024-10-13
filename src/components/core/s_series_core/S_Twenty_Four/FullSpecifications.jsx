@@ -113,27 +113,25 @@ const tabs = [
       </div>
     </div>
   ) },
-  {
-    name: 'Memory & Storage',
-    content: (
-      <div className="flex flex-col">
-        <div className='flex flex-row gap-8 items-center h-[64px] '>
-          <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>RAM</span>
-          <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>8 GB</span>
-        </div>
-        <div className='flex flex-row gap-8 items-center h-[64px] '>
-          <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>ROM</span>
-          <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>128 GB</span>
-        </div>
-        <div className='flex flex-row gap-8 items-center h-[64px] '>
-          <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>User Memory</span>
-          <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>120 GB</span>
-        </div>
-        <div className='flex flex-row gap-8 items-center h-[64px] '>
-          <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>Expandable</span>
-          <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>120 GB</span>
-        </div>
+  { name: 'Memory & Storage', content: (
+    <div className="flex flex-col">
+      <div className='flex flex-row gap-8 items-center h-[64px] '>
+        <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>RAM</span>
+        <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>8 GB</span>
       </div>
+      <div className='flex flex-row gap-8 items-center h-[64px] '>
+        <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>ROM</span>
+        <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>128 GB</span>
+      </div>
+      <div className='flex flex-row gap-8 items-center h-[64px] '>
+        <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>User Memory</span>
+        <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>120 GB</span>
+      </div>
+      <div className='flex flex-row gap-8 items-center h-[64px] '>
+        <span className='text-desktop/body/2/medium text-grey/grey/3 px-[36px] py-[12px] text-left w-[300px]'>Expandable</span>
+        <span className='text-desktop/body/2/regular text-grey/grey/2 w-full px-[36px] py-[12px] '>120 GB</span>
+      </div>
+    </div>
     ),
   },
   { name: 'Connectivity', content: (
@@ -212,7 +210,7 @@ const tabs = [
 ];
 
 const FullSpecifications = () => {
-  const [selectedTab, setSelectedTab] = useState('Memory & Storage');
+  const [selectedTab, setSelectedTab] = useState('General');
 
   return (
     <div className="h-full bg-[#1c1b1b] py-[120px] px-[80px] flex flex-col gap-[52px]">

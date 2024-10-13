@@ -2,7 +2,7 @@ import { useState } from "react";
 import rightArrowCarousel from "/smartphone/S24/rightArrowCarousel.svg";
 import leftArrowCarousel from "/smartphone/S24/leftArrowCarousel.svg";
 
-// Placeholder for the images (you can replace with your actual image URLs)
+// Placeholder for the images
 const blackPhoneImages = [
     "/smartphone/S24/Starry Black 1.png",
     "/smartphone/S24/Starry Black 2.png",
