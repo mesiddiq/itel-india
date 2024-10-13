@@ -9,9 +9,10 @@ import SliderAnimation from "../../components/core/s_series_core/S_Twenty_Four/S
 import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twenty_Four/SinglePhoneImageContainer"
 import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
 import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
-import FullSpecifications from "../../components/core/s_series_core/S_Twenty_Four/FullSpecifications"
 import ColorImageCarousel from "../../components/core/s_series_core/S_Twenty_Four/ColorImageCarousel"
 import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
+import { FullSpecificationsSGuru4g } from "../../data/featurephonedata/SGuru4gData"
+import FullSpecifications from "../../components/common/FullSpecifications"
 
 const STwentyFour = () => {
     return (
@@ -38,7 +39,7 @@ const STwentyFour = () => {
 
             <ColorImageCarousel />
 
-            <FullSpecifications />
+            <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} />
             
 
         </>

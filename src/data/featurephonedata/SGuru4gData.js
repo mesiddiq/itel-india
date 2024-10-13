@@ -3,7 +3,7 @@ export const HeroData = {
     subtitle:''
 }
 
-export const FullSpecifications = [
+export const FullSpecificationsSGuru4g = [
     {
         id:1,
         label:'General',
