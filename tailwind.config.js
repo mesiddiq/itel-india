@@ -22,6 +22,7 @@ export default {
 				'grey/grey/4': '#666666',
 				'grey/grey/5': '#252525',
 				'grey/grey/100': '#c0c0c0',
+				'blue/blue/3': '#6b6682',
 				'dark/card/bg': '#232323',
 				'brand/black':'#1c1b1b',
 				'smoky/black':'#0e0e0e',
@@ -63,7 +64,7 @@ export default {
 					letterSpacing: '0.2px',
 					fontWeight: '700'
 				}],
-				'desktop/h5/medium': ['28px', {
+				'desktop/h5/medium': ['20px', {
 					lineHeight: '26px',
 					letterSpacing: '-0.2px',
 					fontWeight: '500'
@@ -132,10 +133,10 @@ export default {
 					letterSpacing: '-0.72px',
 					fontWeight: '500'
 				}],
-				'mobile/h2': ['', {
-					lineHeight: '',
-					letterSpacing: '',
-					fontWeight: ''
+				'mobile/h2': ['32px', {
+					lineHeight: '38.4px',
+					letterSpacing: '-0.64px',
+					fontWeight: '500'
 				}],
 				'mobile/h3': ['28px', {
 					lineHeight: '33.6px',
@@ -161,10 +162,10 @@ export default {
 					letterSpacing: '-0.16px',
 					fontWeight: '500'
 				}],
-				'mobile/h7': ['', {
-					lineHeight: '',
-					letterSpacing: '',
-					fontWeight: ''
+				'mobile/h7': ['12px', {
+					lineHeight: '16.8px',
+					letterSpacing: '0.17px',
+					fontWeight: '500'
 				}],
 				'mobile/title': ['14px', {
 					lineHeight: '22.4px',
