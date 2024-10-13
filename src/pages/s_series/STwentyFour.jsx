@@ -1,4 +1,4 @@
-// import HeroSection from "../../components/core/s_series_core/S_Twenty_Four/HeroSection"
+import HeroSection from "../../components/core/s_series_core/S_Twenty_Four/HeroSection"
 import CameraSpecifications from "../../components/core/s_series_core/S_Twenty_Four/CameraSpecifications"
 import PunchHoleDisplay from "../../components/core/s_series_core/S_Twenty_Four/PunchHoleDisplay"
 import ProcessorSpecifications from "../../components/core/s_series_core/S_Twenty_Four/ProcessorSpecifications"
@@ -7,28 +7,39 @@ import OverViewBanner from "../../components/core/s_series_core/S_Twenty_Four/Ov
 import ProductDescription from "../../components/core/s_series_core/S_Twenty_Four/ProductDescription"
 import SliderAnimation from "../../components/core/s_series_core/S_Twenty_Four/SliderAnimation"
 import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twenty_Four/SinglePhoneImageContainer"
-// import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
+import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
+import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
+import FullSpecifications from "../../components/core/s_series_core/S_Twenty_Four/FullSpecifications"
+import ColorImageCarousel from "../../components/core/s_series_core/S_Twenty_Four/ColorImageCarousel"
+import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
 
 const STwentyFour = () => {
     return (
         <>
-            <ProductDescription />
+            <HeroSection />
+            {/* <ProductDescription /> */}
             <OverViewBanner />
             <ProductDescription />
             <SliderAnimation />
-            {/* <Video1 /> */}
+            <Video1 />
             <FillerFrame />
+
             <CameraSpecifications />
-            <SliderAnimation />
+            
+            <SensorZoom />
 
             <ProcessorSpecifications />
-            <SliderAnimation />
 
             <SinglePhoneImageContainer />
-            <SliderAnimation />
 
             <PunchHoleDisplay />
-            <SliderAnimation />
+
+            <MultipleCardComponents />
+
+            <ColorImageCarousel />
+
+            <FullSpecifications />
+            
 
         </>
     )

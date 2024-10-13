@@ -29,7 +29,8 @@
 
 @font-face {
   font-family: "BricolageGrotesque";
-  src: url("/fonts/BricolageGrotesque.ttf");
+  src: url("/fonts/BricolageGrotesque.ttf") format('truetype');
+  font-family: 'BricolageGrotesque', sans-serif;
 }
 
 @font-face {
