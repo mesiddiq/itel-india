@@ -7,7 +7,9 @@ import OverViewBanner from "../../components/core/s_series_core/S_Twenty_Four/Ov
 import ProductDescription from "../../components/core/s_series_core/S_Twenty_Four/ProductDescription"
 import SliderAnimation from "../../components/core/s_series_core/S_Twenty_Four/SliderAnimation"
 import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twenty_Four/SinglePhoneImageContainer"
-// import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
+import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
+import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
+import FullSpecifications from "../../components/core/s_series_core/S_Twenty_Four/FullSpecifications"
 
 const STwentyFour = () => {
     return (
@@ -16,7 +18,7 @@ const STwentyFour = () => {
             <OverViewBanner />
             <ProductDescription />
             <SliderAnimation />
-            {/* <Video1 /> */}
+            <Video1 />
             <FillerFrame />
             <CameraSpecifications />
             <SliderAnimation />
@@ -29,6 +31,11 @@ const STwentyFour = () => {
 
             <PunchHoleDisplay />
             <SliderAnimation />
+
+            <MultipleCardComponents />
+            <SliderAnimation />
+
+            <FullSpecifications />
 
         </>
     )

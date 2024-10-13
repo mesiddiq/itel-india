@@ -206,7 +206,11 @@ export default {
 				// 	letterSpacing: '',
 				// 	fontWeight: ''
 				// }],
-			}
+			},
+			backgroundImage: {
+				'ultraStorageVault': "url('/smartphone/S24/ultra-storage-vault.png')",
+				'fullSpecificationsActiveTabgradient': 'linear-gradient(to right, rgba(255, 0, 55, 0.2) 0%, transparent 7%, transparent 50%, transparent 80%, transparent 100%)',
+			},
 		},
 	},
 	plugins: [],
