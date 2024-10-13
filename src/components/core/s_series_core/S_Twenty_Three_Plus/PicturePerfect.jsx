@@ -3,8 +3,8 @@ import React from 'react';
 const NewVision = () => {
   return (
     <div className='new-vision-section'>
-    	<div className='hidden md:flex w-1/2 p-4'>
-        <img src='/s_twenty_three_plus/StepIntoNewVisionPhone.svg' className='w-full' />
+      <div className='hidden md:flex w-1/2 p-4'>
+        <img src='./s_twenty_three_plus/StepIntoNewVisionPhone.svg' className='w-full' />
       </div>
       <div className='w-full md:w-1/2 p-4 md:pt-24 text-center'>
         <h3 className='linear-gradient text-[24px] md:text-[48px] font-[500]'>Step into the New Vision</h3>
@@ -15,16 +15,16 @@ const NewVision = () => {
             <p className='text-[10px] font-[400]'>Pixels Resolution</p>
           </div>
           <div className='text-[#FFFFFF]'>
-            <img src='/s_twenty_three_plus/StepIntoNewVisionBorder.svg' className='w-full md:w-auto h-[66px] md:h-[110px] mt-0 md:mt-[5px]' />
+            <img src='./s_twenty_three_plus/StepIntoNewVisionBorder.svg' className='w-full md:w-auto h-[66px] md:h-[110px] mt-0 md:mt-[5px]' />
           </div>
           <div className='text-[#FFFFFF] md:text-left'>
             <h3 className='text-[16px] md:text-[36px] font-[500] mb-[8px]'>Gorilla Glass 5</h3>
-            <img src='/s_twenty_three_plus/StepIntoNewVisionFrame.svg' />
+            <img src='./s_twenty_three_plus/StepIntoNewVisionFrame.svg' />
           </div>
         </div>
       </div>
       <div className='flex md:hidden w-full p-4'>
-        <img src='/s_twenty_three_plus/StepIntoNewVisionPhone.svg' className='w-full' />
+        <img src='./s_twenty_three_plus/StepIntoNewVisionPhone.svg' className='w-full' />
       </div>
     </div>
   );

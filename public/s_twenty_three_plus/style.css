@@ -17,7 +17,7 @@
   padding: 0 50px;
   width: 100%;
   height: 800px;
-  background-image: url('../../images/s_series/s_twenty_three_plus/heroBg.png');
+  background-image: url('./heroBg.png');
   background-size: cover;
   background-position: center;
 }
@@ -139,6 +139,7 @@
   position: relative;
   margin-top: 0px !important;
   width: 100%;
+  height: 722px;
   padding: 120px 80px;
   background: #1C1B1B;
 }
@@ -166,7 +167,7 @@
   padding: 0 50px;
   width: 100%;
   height: 800px;
-  background-image: url('../../images/s_series/s_twenty_three_plus/AmoledDisplay.jpg');
+  background-image: url('./AmoledDisplay.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -221,6 +222,18 @@
   transform: translate(-50%, -50%);
 }
 
+.picture-perfect-section {
+  display: flex;
+  position: relative;
+  margin-top: 0px !important;
+  padding: 120px;
+  width: 100%;
+  height: 800px;
+  background-image: url('./PicturePerfect.svg');
+  background-size: cover;
+  background-position: center;
+}
+
 .snap-flawless-selfie-section {
   display: flex;
   position: relative;
@@ -228,7 +241,7 @@
   padding: 120px;
   width: 100%;
   height: 800px;
-  background-image: url('../../images/s_series/s_twenty_three_plus/SnapFlawlessSelfie.png');
+  background-image: url('./SnapFlawlessSelfie.png');
   background-size: cover;
   background-position: center;
 }
@@ -240,7 +253,7 @@
   padding: 120px;
   width: 100%;
   height: 800px;
-  background-image: url('../../images/s_series/s_twenty_three_plus/UnlockTouch.png');
+  background-image: url('./UnlockTouch.png');
   background-size: cover;
   background-position: center;
 }
@@ -252,28 +265,28 @@
 }
 
 .blog-cards-section div:nth-child(2) {
-  background-image: url('../../images/s_series/s_twenty_three_plus/BlogCardsTwo.png');
+  background-image: url('./BlogCardsTwo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
 }
 
 .blog-cards-section div:nth-child(3) {
-  background-image: url('../../images/s_series/s_twenty_three_plus/BlogCardsThree.png');
+  background-image: url('./BlogCardsThree.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
 }
 
 .blog-cards-section div:nth-child(4) {
-  background-image: url('../../images/s_series/s_twenty_three_plus/BlogCardsFour.png');
+  background-image: url('./BlogCardsFour.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
 }
 
 .blog-cards-section div:nth-child(5) {
-  background-image: url('../../images/s_series/s_twenty_three_plus/BlogCardsFive.jpg');
+  background-image: url('./BlogCardsFive.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
@@ -291,10 +304,11 @@
   }
 
   .overview-two-section {
+    height: 1100px;
     padding: 40px 16px;
   }
 
-  .overview-card {
+  .overview-two-section-card {
     padding: 16px;
     margin: 16px 0;
   }
@@ -336,4 +350,62 @@
     padding: 40px 16px;
   }
 
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s forwards;
+}
+
+.video-animate-slide-up {
+  animation: videoAnimate 0.5s forwards;
+}
+
+@keyframes videoAnimate {
+  from {
+    opacity: 0;
+    transform: scaleX(0.5) translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1) translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

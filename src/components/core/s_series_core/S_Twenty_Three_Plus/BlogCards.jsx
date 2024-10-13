@@ -1,11 +1,5 @@
 import React from 'react';
 
-import BlogCardsOnePhone from '../../../../images/s_series/s_twenty_three_plus/BlogCardsOnePhone.svg';
-import BlogCardsOneScreen from '../../../../images/s_series/s_twenty_three_plus/BlogCardsOneScreen.svg';
-import BlogCardsOneButterfly from '../../../../images/s_series/s_twenty_three_plus/BlogCardsOneButterfly.svg';
-
-import '../../../../pages/s_series/style.css';
-
 const BlogCards = () => {
 
   return (
@@ -15,9 +9,9 @@ const BlogCards = () => {
           <h3 className={`linear-gradient text-[20px] md:text-[36px] font-[500] leading-[26px] md:leading-[46.8px] mb-[20px]`}>Dive into the Visuals</h3>
           <p className='text-[#F2F2F2] text-[14px] md:text-[24px] font-[500] leading-[19.6px] md:leading-[31.2px] mb-[20px] md:mb-[80px]'>6.78”FHD+ AMOLED 3D Curved Screen</p>
           <div className='flex justify-center'>
-            <img src={BlogCardsOnePhone} className='absolute bottom-0 w-[70%] md:w-auto' />
-            <img src={BlogCardsOneScreen} className='absolute bottom-0 w-[55%] md:w-auto' />
-            <img src={BlogCardsOneButterfly} className='absolute bottom-[8%] md:bottom-[17%] left-[42%] w-[45%] md:w-auto' />
+            <img src='/s_twenty_three_plus/BlogCardsOnePhone.svg' className='absolute bottom-0 w-[70%] md:w-auto' />
+            <img src='/s_twenty_three_plus/BlogCardsOneScreen.svg' className='absolute bottom-0 w-[55%] md:w-auto' />
+            <img src='/s_twenty_three_plus/BlogCardsOneButterfly.svg' className='absolute bottom-[8%] md:bottom-[17%] left-[42%] w-[45%] md:w-auto' />
           </div>
         </div>
         <div className='col-span-1 bg-[#000000] rounded p-[16px] md:p-[40px] h-[200px] md:h-auto'>

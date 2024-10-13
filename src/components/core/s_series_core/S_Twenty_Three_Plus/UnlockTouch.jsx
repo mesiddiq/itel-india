@@ -1,12 +1,5 @@
 import React from 'react';
 
-import UnlockTouchPhone from '../../../../images/s_series/s_twenty_three_plus/UnlockTouchPhone.svg';
-import UnlockTouchPhoneSM from '../../../../images/s_series/s_twenty_three_plus/UnlockTouchPhoneSM.svg';
-import UnlockTouchFinger from '../../../../images/s_series/s_twenty_three_plus/UnlockTouchFinger.svg';
-import UnlockTouchFingerPrint from '../../../../images/s_series/s_twenty_three_plus/UnlockTouchFingerPrint.svg';
-
-import '../../../../pages/s_series/style.css';
-
 const UnlockTouch = () => {
   return (
     <div className='unlock-touch-section'>
@@ -17,14 +10,14 @@ const UnlockTouch = () => {
         </div>
         <div className='col-span-1'>
           <div className='hidden md:flex justify-center'>
-            <img src={UnlockTouchPhone} className='absolute top-0' />
-            <img src={UnlockTouchFingerPrint} className='absolute top-[50%] ml-[-30px]' />
-            <img src={UnlockTouchFinger} className='absolute bottom-0 ml-[-770px]' />
+            <img src='/s_twenty_three_plus/UnlockTouchPhone.svg' className='absolute top-0' />
+            <img src='/s_twenty_three_plus/UnlockTouchFingerPrint.svg' className='absolute top-[50%] ml-[-30px]' />
+            <img src='/s_twenty_three_plus/UnlockTouchFinger.svg' className='absolute bottom-0 ml-[-770px]' />
           </div>
           <div className='flex md:hidden'>
-            <img src={UnlockTouchPhoneSM} className='absolute top-20 right-0 w-[109px] h-[284px]' />
-            <img src={UnlockTouchFingerPrint} className='absolute top-[60%] right-12 ml-[-30px] w-[18px] h-[28px]' />
-            <img src={UnlockTouchFinger} className='absolute left-14 bottom-5 w-[348px] h-[260px]' />
+            <img src='/s_twenty_three_plus/UnlockTouchPhoneSM.svg' className='absolute top-20 right-0 w-[109px] h-[284px]' />
+            <img src='/s_twenty_three_plus/UnlockTouchFingerPrint.svg' className='absolute top-[60%] right-12 ml-[-30px] w-[18px] h-[28px]' />
+            <img src='/s_twenty_three_plus/UnlockTouchFinger.svg' className='absolute left-14 bottom-5 w-[348px] h-[260px]' />
           </div>
         </div>
       </div>

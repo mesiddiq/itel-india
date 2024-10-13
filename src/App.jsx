@@ -6,7 +6,7 @@ import { Link, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/static_pages/HomePage'
 import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
-// import STwentyFour from './pages/s_series/STwentyFour'
+import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import SuperGuru4G from './pages/feature_phone/SuperGuru4G'
 import Footer from './components/common/Footer'
@@ -43,4 +43,4 @@ function App() {
 	)
 }
 
-export default App
+export default App;

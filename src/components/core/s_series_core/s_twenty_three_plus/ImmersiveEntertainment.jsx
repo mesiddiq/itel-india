@@ -1,10 +1,5 @@
 import React from 'react';
-
 import ReactPlayer from 'react-player'
-
-import ImmersiveEntertainmentVideo from '../../../../images/s_series/s_twenty_three_plus/ImmersiveEntertainment.mp4';
-
-import '../../../../pages/s_series/style.css';
 
 const ImmersiveEntertainment = () => {
   return (
@@ -17,7 +12,7 @@ const ImmersiveEntertainment = () => {
         muted={true}
         width='100%'
         height='100%'
-        url={[{src: ImmersiveEntertainmentVideo, type: 'video/mp4'}]}
+        url={[{src: '/s_twenty_three_plus/ImmersiveEntertainment.mp4', type: 'video/mp4'}]}
       />
       <div className='flex absolute bottom-4 md:bottom-10 w-full text-center justify-center gap-5 md:gap-14'>
         <div>
