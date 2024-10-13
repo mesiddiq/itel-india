@@ -33,7 +33,7 @@ const SuperGuru4G = () => {
             <PayAnywhere />
             <KingVoice />
             <TechSpecs />
-            <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} />
+            <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} mode={'light'} />
         </div>
     )
 }
