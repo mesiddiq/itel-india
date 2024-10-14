@@ -87,7 +87,7 @@ const ScreenReplacement = () => {
             </div>
           </div>
 
-          <div className=" h-screen flex items-center  justify-center   ">
+          <div className=" h-screen flex items-center   justify-center   ">
             <div className=" w-full p-20  bg-gray-500 flex items-center rounded-xl  h-[70%]">
               <div>
                 <p className=" text-4xl text-white font-medium">

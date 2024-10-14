@@ -13,7 +13,10 @@ import Footer from './components/common/Footer'
 import Support from './components/common/header/Support'
 import ScreenReplacement from './components/common/header/Support/ScreenReplacement'
 import EWaste from './components/common/header/Support/E-Waste'
-
+import Promise100 from './components/common/header/Support/Promise100'
+import CSR from "./pages/static_pages/CSR"
+import Aboutus from './pages/static_pages/Aboutus'
+import Contactus from './pages/static_pages/Contactus'
 function App() {
 
 	useEffect(() => {
@@ -47,6 +50,11 @@ function App() {
 				<Route path='/support' element={<Support/>} />
 				<Route path='/support/Screen Replacement' element={<ScreenReplacement/>} />
 				<Route path='/support/E-Waste Management' element={<EWaste/>} />
+				<Route path='/support/100 Days Promise' element={<Promise100/>} />
+				<Route path='/CSR' element={<CSR/>} />
+				<Route path='/aboutus' element={<Aboutus/>} />
+				<Route path='/contactus' element={<Contactus/>} />
+
 
 			</Routes>
 			<Footer />
