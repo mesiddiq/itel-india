@@ -32,6 +32,7 @@ function App() {
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s23p'>s-23-plus</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s24'>s-24</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55'>p-55</Link>
+
 						<Link className='text-blue-500 underline' to='/featurephones/super-guru-4g'>s guru 4g</Link>
 					</div>} />
 				<Route path='/homepage' element={<HomePage />} />
