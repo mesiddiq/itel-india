@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import arrowRight from '/smartphone/S24/rightArrow.svg'
 
 const BuyNowText = ({ content }) => {
   return (
@@ -8,7 +7,7 @@ const BuyNowText = ({ content }) => {
         { content }
       </span>
       <span>
-        <img src={arrowRight} alt="arrowRight" className='w-6 h-6'/>
+        <img src='/smartphone/S24/rightArrow.svg' alt="arrowRight" className='w-6 h-6'/>
       </span>
     </div>
   )

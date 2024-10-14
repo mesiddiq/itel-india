@@ -1,18 +1,17 @@
 import BuyNowSquareBG from '../../../common/smartphone_common/BuyNowSquareBG'
-import HeroBanner from '/smartphone/S24/Hero Banner 2.png'
 
 const HeroSection = () => {
   return (
     <section className="relative flex flex-col items-center bg-black justify-between h-screen overflow-hidden"
     style={{
-      backgroundImage: `url(${HeroBanner})`,
+      backgroundImage: `url('/smartphone/S24/Hero Banner 2.png')`,
       backgroundSize: 'cover',
       backgroundPositionY: 'bottom',
       backgroundPositionX: 'right',
       backgroundRepeat: 'no-repeat',
     }}>  
     
-        <div className=" flex flex-col gap-4 lg:gap-[64px] z-10 px-4 lg:px-20 w-full h-full kg:mt-0 mt-[45px] lg:justify-center items-start">
+        <div className="content flex flex-col gap-4 lg:gap-[64px] z-10 px-4 lg:px-0 w-full h-full lg:mt-0 mt-[45px] lg:justify-center items-start">
           
           {/* Text Section */}
           <div className="flex flex-col gap-4 lg:gap-[24px] w-full justify-center text-left">

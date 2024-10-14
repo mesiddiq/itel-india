@@ -1,45 +1,5 @@
-import crystalClearSHots from '/smartphone/S24/crystal-clear-shots.png'
-import dynamicBar from '/smartphone/S24/dynamic-bar.png'
-import sleekStyle from '/smartphone/S24/sleekStyle.png'
-
 const MultipleCardComponents = () => {
   return (
-    // <div className="w-full h-full py-[120px] px-20 bg-[#1c1b1b]">
-    //   {/* 3 level div */}
-    //   <div className="flex flex-row gap-2 justify-between items-center relative">
-    //     <div className="hello w-[518px] h-[784px] rounded-2xl overflow-hidden relative bg-black ">
-    //       <img src={crystalClearSHots} alt="crystal-clear-shots" className='absolute bottom-0 h-2/3 object-cover'/>
-          
-    //       <div className='text-white w-full h-full p-10 gap-10 flex flex-col'>
-    //           <span className='text-desktop/h3 text-markot bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-    //               Crystal-Clear Shots
-    //           </span>
-    //           <div className='flex flex-col gap-5 text-desktop/h4'>
-    //               <span>108MP AI Dual Rear Ultra Clear Camera</span>
-    //               <span>8MP Front Camera</span>
-    //           </div>
-    //       </div>
-    //     </div>
-        
-    //     <div className="flex flex-col gap-9 ">
-    //         <div className=' border relative bg-black w-[738px] h-[380px]'>
-    //           <img src={ultraStorageVault} alt="ultra-storage-vault" className='absolute right-0 h-2/3 object-cover'/>
-    //             s
-    //         </div>
-
-    //         <div className=' border relative bg-black w-[738px] h-[380px]'>
-    //           <img src={ultraStorageVault} alt="ultra-storage-vault" className='absolute right-0 h-2/3 object-cover'/>
-    //             s
-    //         </div>
-    //     </div>
-    //   </div>
-
-    //   <div></div>
-      
-    //   <div></div>
-
-    // </div>
-
     <section className='font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] lg:px-[80px] bg-[#1c1b1b] flex flex-col gap-5'>
       {/* upper-half-3-divs */}
       <section className='upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
@@ -55,7 +15,7 @@ const MultipleCardComponents = () => {
                     <span>8MP Front Camera</span>
                 </div>
               </div>
-              <img src={crystalClearSHots} alt="crystal-clear-shots" className='absolute z-0 bottom-[15%] scale-[200%]'/>
+              <img src="/smartphone/S24/crystal-clear-shots.png" alt="crystal-clear-shots" className='absolute z-0 bottom-[15%] scale-[200%]'/>
 
           </div>
 
@@ -98,7 +58,7 @@ const MultipleCardComponents = () => {
             </div>
             <span className='text-mobile/body/large lg:text-desktop/h4 text-white'>Seamless Notification Experience</span>
           </div>
-          <img src={dynamicBar} alt='dynamicBar' className='absolute lg:left-[554px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0'/>
+          <img src="/smartphone/S24/dynamic-bar.png" alt='dynamicBar' className='absolute lg:left-[554px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0'/>
         </div>
         
         <div className='w-full flex flex-col lg:flex-row gap-5'>
@@ -122,7 +82,7 @@ const MultipleCardComponents = () => {
               </div>
               <span className='text-desktop/body/large lg:text-desktop/h4 text-white'>Dawn White | Starry Black</span>
             </div>
-            <img src={sleekStyle} alt='sleekStyle' className='absolute lg:right-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:w-1/2 lg:bottom-0 -bottom-5'/>
+            <img src="/smartphone/S24/sleekStyle.png" alt='sleekStyle' className='absolute lg:right-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:w-1/2 lg:bottom-0 -bottom-5'/>
           </div>
         
         </div>

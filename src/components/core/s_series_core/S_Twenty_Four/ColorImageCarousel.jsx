@@ -1,6 +1,4 @@
 import { useState } from "react";
-import rightArrowCarousel from "/smartphone/S24/rightArrowCarousel.svg";
-import leftArrowCarousel from "/smartphone/S24/leftArrowCarousel.svg";
 
 // Placeholder for the images
 const blackPhoneImages = [
@@ -47,25 +45,25 @@ const ColorImageCarousel = () => {
             <div className="flex flex-row justify-between items-center w-full absolute px-5 lg:px-[80px]">
                 {/* Left Arrow */}
                 <button onClick={handlePrev} className="w-8 h-8 lg:w-12 lg:h-12">
-                    <img src={leftArrowCarousel} alt="leftArrowCarousel"/>
+                    <img src="/smartphone/S24/leftArrowCarousel.svg" alt="leftArrowCarousel"/>
                 </button>
 
                 {/* Right Arrow */}
                 <button onClick={handleNext} className="w-8 h-8 lg:w-12 lg:h-12">
-                        <img src={rightArrowCarousel} alt="leftArrowCarousel"/>
+                        <img src="/smartphone/S24/rightArrowCarousel.svg" alt="leftArrowCarousel"/>
                 </button>
             </div>
         </div>
         
         {/* Color Selector */}
-        <div className="font-markot w-full flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-4">
+        <div className="px-5 lg:px-0 font-markot w-full flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-4">
             <h1 className="text-desktop/title text-white">COLOR</h1>
 
             {/* Black color */}
             <div onClick={() => { setActiveColor("black"); setCurrentImageIndex(0); }} className={`cursor-pointer flex items-center justify-center`}>
                 { 
                     activeColor === "black" ? 
-                    <div className="lg:w-auto w-screen px-5">
+                    <div className="lg:w-auto w-screen px-5 lg:px-0">
                         <div className="border-[2px] border-itel-red flex flex-row-reverse lg:flex-row justify-center lg:justify-between items-center pl-4 p-[7px] gap-2 lg:gap-5 rounded-full">
                             <span className="text-mobile/h6 lg:text-desktop/button uppercase text-white">Starry Black</span>
                             <div className="h-[26px] w-[26px] bg-gradient-to-br from-[#ACB1B7] to-[#060708] rounded-full"></div>
@@ -73,15 +71,15 @@ const ColorImageCarousel = () => {
                     </div>   
                     :
                     <>
-                    <span className="hidden lg:block border-[2px] border-itel-red rounded-[100px] h-10 w-10 p-[2px] ">
-                        <div className="h-full w-full bg-gradient-to-br from-[#ACB1B7] to-[#060708] rounded-full"></div>
-                    </span>
-                    <div className="block lg:hidden w-screen px-5">
-                        <div className=" flex flex-row-reverse lg:flex-row justify-center lg:justify-between items-center pl-4 p-[7px] gap-2 lg:gap-5 rounded-full">
-                            <span className="text-mobile/body/2 lg:text-desktop/button uppercase text-white">Starry Black</span>
-                            <div className="h-[26px] w-[26px] bg-gradient-to-br from-[#ACB1B7] to-[#060708] rounded-full"></div>
-                        </div>
-                    </div>   
+                        <span className="hidden lg:block border-[2px] border-itel-red rounded-[100px] h-10 w-10 p-[2px] ">
+                            <div className="h-full w-full bg-gradient-to-br from-[#ACB1B7] to-[#060708] rounded-full"></div>
+                        </span>
+                        <div className="block lg:hidden w-screen px-0 lg:px-5">
+                            <div className=" flex flex-row-reverse lg:flex-row justify-center lg:justify-between items-center pl-4 p-[7px] gap-2 lg:gap-5 rounded-full">
+                                <span className="text-mobile/body/2 lg:text-desktop/button uppercase text-white">Starry Black</span>
+                                <div className="h-[26px] w-[26px] bg-gradient-to-br from-[#ACB1B7] to-[#060708] rounded-full"></div>
+                            </div>
+                        </div>   
                     </>
                 }
             </div>
@@ -89,18 +87,8 @@ const ColorImageCarousel = () => {
             {/* White color */}
             <div onClick={() => { setActiveColor("white"); setCurrentImageIndex(0); }} className={`cursor-pointer flex flex-row items-center justify-center`}>
                 {
-                    // activeColor === "white" ?
-                    // <div className="border-[2px] border-itel-red flex flex-row justify-between items-center pl-4 p-[7px] gap-5 rounded-full">
-                    //     <span className="text-desktop/button uppercase text-white">Dawn White</span>
-                    //     <div className="h-[26px] w-[26px] bg-gradient-to-bl from-[#F4F5F9] to-[#E0E3E8] rounded-full"></div>
-                    // </div>    
-                    // :
-                    // <span className="border-[2px] border-itel-red rounded-[100px] h-10 w-10 p-[2px] ">
-                    //     <div className="h-full w-full bg-gradient-to-bl from-[#F4F5F9] to-[#E0E3E8] rounded-full"></div>
-                    // </span>
-
                     activeColor === "white" ? 
-                    <div className="lg:w-auto w-screen px-5">
+                    <div className="lg:w-auto w-screen px-5 lg:px-0">
                         <div className="border-[2px] border-itel-red flex flex-row-reverse lg:flex-row justify-center lg:justify-between items-center pl-4 p-[7px] gap-2 lg:gap-5 rounded-full">
                             <span className="text-mobile/h6 lg:text-desktop/button uppercase text-white">Dawn White</span>
                             <div className="h-[26px] w-[26px] bg-gradient-to-br from-[#F4F5F9] to-[#E0E3E8] rounded-full"></div>
@@ -108,15 +96,15 @@ const ColorImageCarousel = () => {
                     </div>   
                     :
                     <>
-                    <span className="hidden lg:block border-[2px] border-itel-red rounded-[100px] h-10 w-10 p-[2px] ">
-                        <div className="h-full w-full bg-gradient-to-br from-[#F4F5F9] to-[#E0E3E8] rounded-full"></div>
-                    </span>
-                    <div className="block lg:hidden w-screen px-5">
-                        <div className=" flex flex-row-reverse lg:flex-row justify-center lg:justify-between items-center pl-4 p-[7px] gap-2 lg:gap-5 rounded-full">
-                            <span className="text-mobile/body/2 lg:text-desktop/button uppercase text-white">Dawn White</span>
-                            <div className="h-[26px] w-[26px] bg-gradient-to-br from-[#F4F5F9] to-[#E0E3E8] rounded-full"></div>
-                        </div>
-                    </div>   
+                        <span className="hidden lg:block border-[2px] border-itel-red rounded-[100px] h-10 w-10 p-[2px] ">
+                            <div className="h-full w-full bg-gradient-to-br from-[#F4F5F9] to-[#E0E3E8] rounded-full"></div>
+                        </span>
+                        <div className="block lg:hidden w-screen">
+                            <div className=" flex flex-row-reverse lg:flex-row justify-center lg:justify-between items-center pl-4 p-[7px] gap-2 lg:gap-5 rounded-full">
+                                <span className="text-mobile/body/2 lg:text-desktop/button uppercase text-white">Dawn White</span>
+                                <div className="h-[26px] w-[26px] bg-gradient-to-br from-[#F4F5F9] to-[#E0E3E8] rounded-full"></div>
+                            </div>
+                        </div>   
                     </>
                 }
             </div>

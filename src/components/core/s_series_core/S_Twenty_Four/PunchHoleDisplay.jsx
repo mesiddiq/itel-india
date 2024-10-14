@@ -1,15 +1,14 @@
-import s24_display from '/smartphone/S24/s24_display.png'
 import FeatureSpecifications from '../../../common/smartphone_common/FeatureSpecifications'
 
 const PunchHoleDisplay = () => {
     return (
         <div className='relative font-markot lg:h-[1000px] h-[400px] bg-black overflow-hidden'>
-            <img src={s24_display} alt="Camera Specifications" className="w-full"/>
+            <img src='/smartphone/S24/s24_display.png' alt="Camera Specifications" className="w-full"/>
             
             <div className='flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute bottom-8 lg:top-[600px] w-[328px] text-center lg:text-left lg:w-full left-1/2 lg:transform -translate-x-1/2'>
                 
                 <div className='flex flex-col justify-center items-center gap-2 lg:gap-4'>
-                    <div className='text-mobile/h5/medium lg:text-desktop/h2 text-center'>
+                    <div className='content text-mobile/h5/medium lg:text-desktop/h2 text-center'>
                         Seamless Sliding<br/> 
                         <span className='bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
                         90Hz Punch-Hole Display
