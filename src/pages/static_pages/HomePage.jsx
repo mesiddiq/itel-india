@@ -15,6 +15,7 @@ const HomePage = () => {
             {/* <StayPlugged /> */}
             <CountOnItel />
             <OurSmartAppliances />
+
             {/* <Footer/> */}
         </div>
     )
