@@ -1,4 +1,4 @@
-import HeroSection from "../../components/core/s_series_core/S_Twenty_Four/HeroSection"
+// import HeroSection from "../../components/core/s_series_core/S_Twenty_Four/HeroSection"
 import CameraSpecifications from "../../components/core/s_series_core/S_Twenty_Four/CameraSpecifications"
 import PunchHoleDisplay from "../../components/core/s_series_core/S_Twenty_Four/PunchHoleDisplay"
 import ProcessorSpecifications from "../../components/core/s_series_core/S_Twenty_Four/ProcessorSpecifications"
@@ -10,9 +10,10 @@ import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twe
 import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
 import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
 import ColorImageCarousel from "../../components/core/s_series_core/S_Twenty_Four/ColorImageCarousel"
-import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
-import { FullSpecificationsSGuru4g } from "../../data/featurephonedata/SGuru4gData"
+// import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
 import FullSpecifications from "../../components/common/FullSpecifications"
+
+import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
 
 const STwentyFour = () => {
     return (
@@ -39,7 +40,7 @@ const STwentyFour = () => {
 
             <ColorImageCarousel />
 
-            {/* <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} /> */}
+            <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
             
 
         </>

@@ -1,87 +1,98 @@
 export const HeroData = {
-    title: "Super Guru 4G",
+    title: "S24",
     subtitle:''
 }
 
-export const FullSpecificationsSGuru4g = [
+export const FullSpecificationsS24 = [
     {
         id:1,
         label:'General',
         data:[
-            {label:'Model',value:'Super Guru 4G'},
-            {label:'Colors',value:'Black, Blue, Light Green'},
-            {label:'Display',value:'5.09 cm(2")'},
-            {label:'Battery',value:'1000 mAH'},
-            {label:'Language Support',value:'13 (English, Hindi, Gujarati, Telugu, Tamil, Punjabi, Kannada, Malayalam, Bengali, Oriya, Assamese, Marathi, Urdu)'},
-            {label:'Phonebook',value:'2000'},
-            {label:'SMS',value:'500'},
-            {label:'Kingvoice',value:'Yes'},
-            {label:'Torch',value:'Yes'},
-            {label:'LetsChat',value:'Yes'},
+            {label:'Model',value:'S24'},
+            {label:'Colors',value:'Starry Black, Dawn White & Costaline Blue'},
         ]
     },
     {
         id:2,
         label:'Display Features',
         data:[
-            {label:'Display Size',value:'(5.08 cm) 2"'},
-            {label:'Resolution',value:'128x160'},
-            {label:'Resolution Type',value:'QQVGA'},
-            {label:'Pixel Density',value:'102.45ppi'},
+            {label:'Display Size',value:'16.76 cm (6.6 inch)'},
+            {label:'Resolution',value:'1612x720 Pixels'},
+            {label:'Resolution Type',value:'HD+'},
+            {label:'Dimension',value:'Dimension'},
+            {label:'Technology',value:'G+F, Incell'},
+            {label:'Refresh Rate',value:'180 Hz'},
+            {label:'Touch Sampling Rate',value:'Touch Sampling Rate'},
+            {label:'Pixel Density',value:'267 ppi'},
         ]
     },
     {
         id:3,
-        label:'Battery',
+        label:'OS & Processor',
         data:[
-            {label:'Battery Capacity',value:'1000 mAh'},
-            {label:'Battery Type',value:'Li-ion'},
-            {label:'Battery Backup',value:'6 Days'},
-            {label:'Talktime',value:'12.9 Hours'},
-            {label:'',value:''},
+            {label:'Operating System',value:'Android 13'},
+            {label:'Chipset',value:'Unisoc'},
+            {label:'Processor Core',value:'Hexa Core'},
         ]
     },
     {
         id:4,
         label:'Camera',
         data:[
-            {label:'Rear Camera',value:'VGA'},
-            {label:'Rear flash',value:'NA'},
+            {label:'Rear Camera',value:'108MP'},
+            {label:'Rear flash',value:'Yes'},
+            {label:'Front Camera',value:'8MP'},
+            {label:'Front flash',value:'Yes'},
         ]
     },
     {
         id:5,
-        label:'Memory & Storage',
+        label:'Battery',
         data:[
-            {label:'ROM',value:'128 MB'},
-            {label:'RAM',value:'64 MB'},
-            {label:'Chipset',value:'Unisoc T107'},
-            {label:'Dimension',value:'121×51.5x14mm'},
-            {label:'Expandable Memory',value:'Upto 64GB'},
-            {label:'Phonebook',value:'2000'},
-            {label:'Message',value:'500'},
+            {label:'Battery Capacity',value:'5000 mAh'},
+            {label:'Battery Type',value:'Lithium ion'},
+            {label:'Fast Charging',value:'18W'},
+            {label:'USB',value:'Type-C'},
+            {label:'Standby',value:'15h'},
+            {label:'Talktime',value:'12 Hours'},
+            {label:'',value:''},
         ]
     },
     {
         id:6,
-        label:'Connectivity',
+        label:'Memory & Storage',
         data:[
-            {label:'Network Type',value:'4G (B1/B3/B5/B8/B28/B40/B41)'},
-            {label:'Bluetooth Support',value:'4.2'},
-            {label:'Earphone Jack',value:'3.5mm'},
-            {label:'SIM Slot',value:'Slot 1 & Slot 2- Nano SIM'},
-            {label:'Dual Active/Standby',value:'Dual Standby'},
-            {label:'FM Radio',value:'Yes'},
-            {label:'GSM',value:'900/1800 MHz'},
-            {label:'3G: WCDMA',value:'900/2100 MHz'},
+            {label:'RAM',value:'8 GB'},
+            {label:'ROM',value:'128 GB'},
+            {label:'User Memory',value:'120 GB'},
+            {label:'Expandable',value:'120 GB'},
         ]
     },
     {
         id:7,
+        label:'Connectivity',
+        data:[
+            {label:'Network Type',value:'4G'},
+            {label:'GSM',value:'2G:B3, 5, 8'},
+            {label:'EDGE',value:'Support Download'},
+            {label:'WCDMA',value:'3G:B1, 5, 8'},
+            {label:'LTE',value:'B1/B3/B5/B8/B40/B38/B41(120M)'},
+            {label:'SIM Slot',value:'Dual Sim(Nano + eSIM)'},
+            {label:'Dual Active/Standby',value:'Dual Standby'},
+            {label:'Bluetooth Support',value:'Yes'},
+            {label:'Wi-Fi',value:'Yes'},
+            {label:'GPS',value:'Yes'},
+            {label:'USB Connectivity',value:'Yes'},
+        ]
+    },
+    {
+        id:8,
         label:'Additional',
         data:[
-            {label:'Languages',value:'13 (English, Hindi, Gujarati, Telugu, Tamil, Punjabi, Kannada, Malayalam, Bengali, Oriya, Assamese, Marathi, Urdu)'},
-            {label:'Accessories',value:'Charger & Battery'}
+            {label:'Earphone Jack',value:'3.5mm'},
+            {label:'Sensors',value:'Fingerprint | Face Unlock | G Sensor'},
+            {label:'Fingerprint',value:'Side'},
+            {label:'Accessories',value:'Handset, Charger, USB Cable, Sim Ejector Tool, User Guide'},
         ]
     },
 ]
