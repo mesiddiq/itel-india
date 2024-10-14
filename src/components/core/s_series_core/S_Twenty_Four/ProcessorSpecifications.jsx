@@ -4,20 +4,20 @@ import FeatureSpecifications from '../../../common/smartphone_common/FeatureSpec
 
 const CameraSpecifications = () => {
     return (
-        <div className='relative lg:h-[1020px] h-[454px] bg-black overflow-hidden'>
+        <div className='relative font-markot lg:h-[1020px] h-[454px] bg-black overflow-hidden'>
             <img src={processorBG} alt="Processor Background" className="absolute bottom-0 w-full"/>
             <img src={processor} alt="Processor Image" className="w-1/2 lg:w-auto absolute top-[80%] lg:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2"/>
             
             <div className='flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute top-[40px] lg:top-[90px] w-full left-1/2 lg:transform -translate-x-1/2'>
                 
                 <div className='flex flex-col justify-center items-center gap-2 lg:gap-[14px]'>
-                    <div className='FFMarkMedium text-mobile/h5/medium lg:text-desktop/h2 text-center'>
+                    <div className='text-mobile/h5/medium lg:text-desktop/h2 text-center'>
                         Game Like a Pro<br/> 
-                        <span className='bg-gradient-to-r from-[#FFCF92] via-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
+                        <span className='bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
                             Helio G91 Processor
                         </span>
                     </div>
-                    <div className='FFMarkRegular text-mobile/small/body lg:text-desktop/body/large'>
+                    <div className='text-mobile/small/body lg:text-desktop/body/large'>
                         Play your favourite games like pro with lightning-fast responsiveness.
                     </div>
                 </div>
