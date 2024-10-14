@@ -4,7 +4,6 @@ export default {
 		"./index.html",
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
-
 	theme: {
 		extend: {
 			fontFamily: {
@@ -218,8 +217,12 @@ export default {
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
 			},
-		
+			backgroundSize: {
+				'85': '85%',
+				'130': '130%',
+				'custom': '200px 100px',
+			}		
 		},
 	},
-	plugins: [],
+	plugins: [],	
 }

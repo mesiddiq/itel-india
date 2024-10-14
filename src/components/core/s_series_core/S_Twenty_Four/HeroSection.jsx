@@ -2,10 +2,10 @@ import BuyNowSquareBG from '../../../common/smartphone_common/BuyNowSquareBG'
 
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col items-center bg-black justify-between h-screen overflow-hidden"
+    <section className="relative flex flex-col items-center bg-black bg-130 lg:bg-85 justify-between max-h-[550px] h-[550px] lg:h-screen lg:max-h-screen overflow-hidden"
     style={{
-      backgroundImage: `url('/smartphone/S24/Hero Banner 2.png')`,
-      backgroundSize: 'cover',
+      backgroundImage: `url('/smartphone/S24/S24 Banner.png')`,
+      // backgroundSize: 'cover',
       backgroundPositionY: 'bottom',
       backgroundPositionX: 'right',
       backgroundRepeat: 'no-repeat',
@@ -17,11 +17,13 @@ const HeroSection = () => {
           <div className="flex flex-col gap-4 lg:gap-[24px] w-full justify-center text-left">
             
             {/* Super Series Badge */}
-            <div className="font-markot w-[140px] flex flex-row justify-between items-center gap-[3px] border-[2px] border-s24-gradient-border rounded-full px-[6px] py-[3px]">
-                <h1 className="font-bold bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent uppercase text-[14px] leading-[16.8px] tracking-[0.01em] ">
-                  Super Series
-                </h1>
-                <img src="/smartphone/S24/superSeriesStar.svg" alt="Super Series Star" className="w-3"/>
+            <div className="font-markot w-[140px] flex flex-row justify-between items-center gap-[3px] rounded-full px-[6px] py-[3px] border-2 border-transparent bg-clip-padding" style={{
+              background: 'linear-gradient(#000, #000) padding-box, linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) border-box'
+            }}>
+              <h1 className="font-bold bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent uppercase text-[14px] leading-[16.8px] tracking-[0.01em]">
+                Super Series
+              </h1>
+              <img src="/smartphone/S24/superSeriesStar.svg" alt="Super Series Star" className="w-3"/>
             </div>
 
             <div className='flex flex-col gap-1'>
