@@ -11,14 +11,14 @@ import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty
 import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
 import ColorImageCarousel from "../../components/core/s_series_core/S_Twenty_Four/ColorImageCarousel"
 import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
-import { FullSpecificationsSGuru4g } from "../../data/featurephonedata/SGuru4gData"
 import FullSpecifications from "../../components/common/FullSpecifications"
+
+import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
 
 const STwentyFour = () => {
     return (
         <>
             <HeroSection />
-            {/* <ProductDescription /> */}
             <OverViewBanner />
             <ProductDescription />
             <SliderAnimation />
@@ -39,7 +39,7 @@ const STwentyFour = () => {
 
             <ColorImageCarousel />
 
-            <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} />
+            <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
             
 
         </>

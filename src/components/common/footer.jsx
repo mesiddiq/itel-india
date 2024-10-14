@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
 import { For } from 'react-haiku'
 import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../../data/FooterData'
 

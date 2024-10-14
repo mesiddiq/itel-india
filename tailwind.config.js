@@ -22,7 +22,7 @@ export default {
 				'grey/grey/4': '#666666',
 				'grey/grey/5': '#252525',
 				'grey/grey/100': '#c0c0c0',
-				'blue/blue/3': '#6b6682',
+				'blue/blue/5': '#6b6682',
 				'dark/card/bg': '#232323',
 				'brand/black':'#1c1b1b',
 				'smoky/black':'#0e0e0e',
@@ -213,6 +213,7 @@ export default {
 				'imageCarouselBackground': "url('/smartphone/S24/imageCarouselBackground.png')",
 				'fullSpecificationsActiveTabgradient': 'linear-gradient(to right, rgba(255, 0, 55, 0.2) 0%, transparent 7%, transparent 50%, transparent 80%, transparent 100%)',
 				'BuyNowSquareBG': "url('/smartphone/S24/ButtonBackground.png')",
+				'dualDTSSpeaker': "url('/smartphone/S24/dualDTSSpeaker.png')",
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
