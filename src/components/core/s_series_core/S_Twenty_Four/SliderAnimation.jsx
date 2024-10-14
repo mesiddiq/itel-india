@@ -1,30 +1,24 @@
-import sliderAnimationStar from '/smartphone/S24/sliderAnimationStar.svg'
+import Marquee from "react-fast-marquee";
+
+import '../../../../pages/s_series/style.css';
 
 const SliderAnimation = () => {
   return (
-    <div className="FFMarkBold w-full h-[52px] bg-[#120F0D] flex flex-col justify-center items-center overflow-hidden">
-        <div className='flex flex-row justify-center items-center gap-[10px]'>
-            <span className='w-full text-nowrap bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-                INCREDIBLY SUPER
-            </span>
-            <img src={sliderAnimationStar} alt="sliderAnimationStar" className='' />
-            <span className='w-full text-nowrap bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-                SUPER SERIES
-            </span>
-            <img src={sliderAnimationStar} alt="sliderAnimationStar" className='' />
-            <span className='w-full text-nowrap bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-                INCREDIBLY SUPER
-            </span>
-            <img src={sliderAnimationStar} alt="sliderAnimationStar" className='' />
-
-            <span className='w-full text-nowrap bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-                INCREDIBLY SUPER
-            </span>
-            <img src={sliderAnimationStar} alt="sliderAnimationStar" className='' />
-
-        </div>
+    <div className='w-full h-[52px] overflow-hidden relative items-center justify-center flex flex-col bg-[#120F0D]'>
+        <Marquee speed='50' direction='right' autoFill={true}>
+            <div className=' flex items-center md:text-[35px] py-2'>
+                <img src='/smartphone/S24/sliderAnimationStar.svg' alt="MarqueeIcon" className='px-3' /> 
+                <h1 className='font-bricolage bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent uppercase text-[20px] font-extrabold leading-[24px] tracking-[0.08em] text-justify'>
+                    Super Series
+                </h1> 
+                <img src='/smartphone/S24/sliderAnimationStar.svg' alt="MarqueeIcon" className='px-3' />
+                <h1 className='font-bricolage bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent uppercase text-[20px] font-extrabold leading-[24px] tracking-[0.08em] text-justify'>
+                    Incredibly Super
+                </h1> 
+            </div>
+        </Marquee>
     </div>
-  )
-}
+  );
+};
 
-export default SliderAnimation
+export default SliderAnimation;

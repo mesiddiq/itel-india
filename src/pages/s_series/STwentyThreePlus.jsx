@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Navbar from '../../components/common/Navbar'
-import Footer from '../../components/common/Footer'
 import HeroBanner from '../../components/core/s_series_core/s_twenty_three_plus/HeroBanner'
 import Overview from '../../components/core/s_series_core/s_twenty_three_plus/Overview'
 import OverviewTwo from '../../components/core/s_series_core/s_twenty_three_plus/OverviewTwo'
@@ -21,7 +20,6 @@ const STwentyThreePlus = () => {
       <AmoledDisplay />
       <NewVision />
       <ImmersiveEntertainment />
-      <Footer />
     </main>
   )
 }

@@ -1,13 +1,9 @@
-import s24OverviewLogo1 from '/smartphone/S24/s24OverviewLogo1-instagram.svg'
-import s24OverviewLogo2 from '/smartphone/S24/s24OverviewLogo2-cpu-charge.svg'
-import s24OverviewLogo3 from '/smartphone/S24/s24OverviewLogo3-slider.svg'
-
 const ProductDescription = () => {
 return (
-    <div className="FFMarkRegular h-full w-full flex flex-col gap-6 lg:gap-[100px] px-4 py-10 lg:px-[60px] lg:py-[100px] bg-[#1C1B1B]">
+    <div className="font-markot h-full w-full flex flex-col gap-6 lg:gap-[100px] px-4 py-10 lg:px-0 lg:py-[100px] bg-[#1C1B1B]">
         
-        <div className="flex flex-col lg:flex-row justify-between gap-3 lg:gap-0">
-            <h1 className="FFMarkMedium w-full lg:w-1/2 text-mobile/h4 lg:text-desktop/h2 bg-gradient-to-r from-[#FFCF92] via-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
+        <div className="content flex flex-col lg:flex-row justify-between gap-3 lg:gap-0">
+            <h1 className="w-full lg:w-1/2 text-mobile/h4 lg:text-desktop/h2 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
                 <span className='hidden lg:block'>
                     Your Ideal Storyteller:
                     <br/>    
@@ -15,7 +11,7 @@ return (
                     <br/>
                     Camera
                 </span>
-                <span className='block lg:hidden'>
+                <span className='block lg:hidden font-markot'>
                     Your Ideal Storyteller:
                     <br/>    
                     Stunning 108MP AI Camera
@@ -26,12 +22,12 @@ return (
             </h2>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
+        <div className="content flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
             
-            <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6">
-                <img src={s24OverviewLogo1} alt='' className="w-[48px] lg:w-[52px]"/>
+            <div className="w-full lg:w-1/3 h-[227px] lg:h-[320px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6">
+                <img src='/smartphone/S24/s24OverviewLogo1-instagram.svg' alt='' className="w-[48px] lg:w-[52px]"/>
                 <div className="flex flex-col gap-2 w-full">
-                    <span className="FFMarkMedium text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
+                    <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
                         <span className='hidden lg:block'>
                             Picture-Perfect Moments:<br/>
                             108 MP AI Rear Camera
@@ -49,10 +45,10 @@ return (
                 </div>
             </div>
 
-            <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6">
-                <img src={s24OverviewLogo2} alt='' className="w-[48px] lg:w-[52px]"/>
+            <div className="w-full lg:w-1/3 h-[227px] lg:h-[320px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6">
+                <img src='/smartphone/S24/s24OverviewLogo2-cpu-charge.svg' alt='' className="w-[48px] lg:w-[52px]"/>
                 <div className="flex flex-col gap-2 w-full">
-                    <span className="FFMarkMedium text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
+                    <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
                         <span></span>
                         MediaTek Helio G91:<br/>
                         Unmatched Speed
@@ -65,11 +61,11 @@ return (
                 </div>
             </div>
             
-            <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6">
-                <img src={s24OverviewLogo3} alt='' className="w-[48px] lg:w-[52px]"/>
+            <div className="w-full lg:w-1/3 h-[227px] lg:h-[320px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6">
+                <img src='/smartphone/S24/s24OverviewLogo3-slider.svg' alt='' className="w-[48px] lg:w-[52px]"/>
                 <div className="flex flex-col gap-2 w-full">
-                    <span className="FFMarkMedium text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
-                        6.6&quot; HD+ Punch Hole Display<br/>
+                    <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
+                        6.6&quot; HD+ Punch Hole Display
                         with 90 Hz Refresh Rate
                     </span>
                     <span className="text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/3 lg:text-grey/grey/2 opacity-80">

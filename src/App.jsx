@@ -10,13 +10,10 @@ import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import SuperGuru4G from './pages/feature_phone/SuperGuru4G'
 import Footer from './components/common/Footer'
-import Support from './components/common/header/Support'
-import ScreenReplacement from './components/common/header/Support/ScreenReplacement'
-import EWaste from './components/common/header/Support/E-Waste'
-import Promise100 from './components/common/header/Support/Promise100'
-import CSR from "./pages/static_pages/CSR"
-import Aboutus from './pages/static_pages/Aboutus'
-import Contactus from './pages/static_pages/Contactus'
+import S_Series_Parent from './components/core/s_series_core/S_Series_Parent'
+import SuperGuru400 from './pages/feature_phone/SuperGuru400'
+import SuperGuru600 from './pages/feature_phone/SuperGuru600'
+
 function App() {
 
 	useEffect(() => {
@@ -30,32 +27,26 @@ function App() {
 			<Routes>
 				<Route path='/' element={
 					<div className='flex flex-col gap-4'>
-						<Link className='text-blue-500 underline' to='/homepage'>Homepage</Link>
+						<Link className='text-blue-500 underline' to='/homepage'>Home</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s23'>s-23</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s23p'>s-23-plus</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s24'>s-24</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55'>p-55</Link>
-						<Link className='text-blue-500 underline' to='/featurephones/s-guru-4g'>s guru 4g</Link>
-						<Link className='text-blue-500 underline' to='/support'>support</Link>
+
+						<Link className='text-blue-500 underline' to='/featurephones/super-guru-4g'>s guru 4g</Link>
 					</div>} />
 				<Route path='/homepage' element={<HomePage />} />
-				<Route path='/smartphones/s-series/s23' element={<STwentyThree />} />
-				<Route path='/smartphones/s-series/s23p' element={<STwentyThreePlus />} />
-				<Route path='/smartphones/s-series/s24' element={<STwentyFour />} />
+				<Route path='/smartphones/s-series' element={<S_Series_Parent />} >
+					<Route path='s23' element={<STwentyThree />} />
+					<Route path='s23p' element={<STwentyThreePlus />} />
+					<Route path='s24' element={<STwentyFour />} />
+				</Route>
 				<Route path='/smartphones/p-series/p55' element={<PFiftyFive />} />
-				<Route path='/featurephones/s-guru-4g' element={<SuperGuru4G />} />
-				{/* {
-					support and there pages
-				} */}
-				<Route path='/support' element={<Support/>} />
-				<Route path='/support/Screen Replacement' element={<ScreenReplacement/>} />
-				<Route path='/support/E-Waste Management' element={<EWaste/>} />
-				<Route path='/support/100 Days Promise' element={<Promise100/>} />
-				<Route path='/CSR' element={<CSR/>} />
-				<Route path='/aboutus' element={<Aboutus/>} />
-				<Route path='/contactus' element={<Contactus/>} />
 
-
+				
+				<Route path='/featurephones/super-guru-4g' element={<SuperGuru4G />} />
+				<Route path='/featurephones/super-guru-400' element={<SuperGuru400 />} />
+				<Route path='/featurephones/super-guru-600' element={<SuperGuru600 />} />
 			</Routes>
 			<Footer />
 		</main>
