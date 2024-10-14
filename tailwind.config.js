@@ -213,6 +213,7 @@ export default {
 				'imageCarouselBackground': "url('/smartphone/S24/imageCarouselBackground.png')",
 				'fullSpecificationsActiveTabgradient': 'linear-gradient(to right, rgba(255, 0, 55, 0.2) 0%, transparent 7%, transparent 50%, transparent 80%, transparent 100%)',
 				'BuyNowSquareBG': "url('/smartphone/S24/ButtonBackground.png')",
+				'dualDTSSpeaker': "url('/smartphone/S24/dualDTSSpeaker.png')",
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',

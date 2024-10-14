@@ -10,7 +10,7 @@ import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twe
 import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
 import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
 import ColorImageCarousel from "../../components/core/s_series_core/S_Twenty_Four/ColorImageCarousel"
-// import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
+import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
 import FullSpecifications from "../../components/common/FullSpecifications"
 
 import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
@@ -27,7 +27,7 @@ const STwentyFour = () => {
 
             <CameraSpecifications />
             
-            {/* <SensorZoom /> */}
+            <SensorZoom />
 
             <ProcessorSpecifications />
 

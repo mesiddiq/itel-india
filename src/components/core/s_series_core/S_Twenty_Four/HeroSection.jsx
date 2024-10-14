@@ -19,7 +19,7 @@ const HeroSection = () => {
             
             {/* Super Series Badge */}
             <div className="font-markot w-[140px] flex flex-row justify-between items-center gap-[3px] border-[2px] border-s24-gradient-border rounded-full px-[6px] py-[3px]">
-                <h1 className="bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent uppercase text-[14px] font-markot leading-[16.8px] tracking-[0.01em] ">
+                <h1 className="font-bold bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent uppercase text-[14px] leading-[16.8px] tracking-[0.01em] ">
                   Super Series
                 </h1>
                 <img src="/smartphone/S24/superSeriesStar.svg" alt="Super Series Star" className="w-3"/>

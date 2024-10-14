@@ -103,7 +103,7 @@ const MultipleCardComponents = () => {
         
         <div className='w-full flex flex-col lg:flex-row gap-5'>
           
-          <div className='w-full lg:w-[40%] h-[273px] lg:h-[380px] rounded-2xl bg-black p-4 lg:p-[40px]'>
+          <div className='w-full bg-dualDTSSpeaker bg-cover lg:w-[40%] min-h-[273px] h-[273px] lg:h-[380px] rounded-2xl bg-black p-4 lg:p-[40px]'>
             <div className='flex flex-col gap-2 lg:gap-4'>
               <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
                 Dual DTS Speaker
