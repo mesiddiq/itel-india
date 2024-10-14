@@ -2,17 +2,10 @@ import React from 'react'
 
 const Example = () => {
     return (
-     <div className=" h-[701px] flex justify-center items-center w-full"
-     style={{
-      backgroundImage: `url("/P_Series/Home_bg.png")`,
-      backgroundBlendMode: 'overlay', // This blends the image with the background color
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundColor: '#20315D', // Blend color (blue in this case)
-    }}
-     >
+     <div className="h-max p-8 lg:h-[701px] flex justify-center items-center w-full bg-cover"
+     style={{ backgroundImage: 'url(/P_Series/banner-image-2.png)' }}>
       <div className='flex flex-col justify-center items-center w-full'>
- <div className="flex flex-col lg:flex-row lg:justify-between items-right px-8 gap-3 lg:gap-0">
+ <div className="flex flex-col lg:flex-row lg:justify-between items-right gap-3 lg:gap-0">
             <h2 className=" w-full lg:w-1/2 text-mobile/h4 lg:text-desktop/h2 text-white ">
             Speed, Flair, and Power in your Pocket!
             </h2>
@@ -22,20 +15,17 @@ const Example = () => {
         </div>
 
 
-       <div className="flex flex-col lg:flex-row gap-4 py-8 lg:gap-6 w-full items-center">
+       <div className="flex flex-col md:flex-row gap-4 py-8 lg:gap-6 w-full items-center">
             
             <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] p-4 lg:p-10  rounded-2xl flex flex-col gap-2 lg:gap-6">
                 <img src="/P_Series/about1.png" alt='' className="w-[48px] lg:w-[52px]"/>
                 <div className="flex flex-col gap-2 w-full">
-                    <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
-                        <span className='hidden lg:block'>
+                    <span className="text-mobile/h4/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white text-[#F2F2F2]">
+                        <span className=''>
                             Picture-Perfect Moments:<br/>
                             108 MP AI Rear Camera
                         </span>
-                        <span className='block lg:hidden'>
-                        Picture-Perfect Moments: 108<br/>
-                        MP AI Rear Camera
-                        </span>
+                      
                     </span>
                     <span className="text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/3 lg:text-grey/grey/2 opacity-80">
                         Say goodbye to blurry memories and<br/>
@@ -48,7 +38,7 @@ const Example = () => {
             <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] p-4 lg:p-10  rounded-2xl flex flex-col gap-2 lg:gap-6">
                 <img src="/P_Series/about2.png" alt='' className="w-[48px] lg:w-[52px]"/>
                 <div className="flex flex-col gap-2 w-full">
-                    <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
+                    <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white text-[#F2F2F2]">
                         <span></span>
                         MediaTek Helio G91:<br/>
                         Unmatched Speed
@@ -64,7 +54,7 @@ const Example = () => {
             <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] p-4 lg:p-10  rounded-2xl flex flex-col gap-2 lg:gap-6">
                 <img src="/P_Series/about3.png" alt='' className="w-[48px] lg:w-[52px]"/>
                 <div className="flex flex-col gap-2 w-full">
-                    <span className=" text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white">
+                    <span className=" text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white text-[#F2F2F2]">
                         6.6&quot; HD+ Punch Hole Display<br/>
                         with 90 Hz Refresh Rate
                     </span>

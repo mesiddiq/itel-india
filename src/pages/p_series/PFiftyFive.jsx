@@ -6,12 +6,13 @@ import Powerful from '../../components/core/p_series_core/P_Fifty_Five.jsx/Power
 import Accessories from '../../components/common/smartphone_common/Accessories'
 import Model from '../../components/common/smartphone_common/Model';
 import Connectivity from '../../components/core/p_series_core/P_Fifty_Five.jsx/Connectivity'
-import Power from '../../components/core/p_series_core/P_Fifty_Five.jsx/Power'
 import Storage from '../../components/core/p_series_core/P_Fifty_Five.jsx/Storage'
 import Gaming from '../../components/core/p_series_core/P_Fifty_Five.jsx/Gaming'
 import Chatgpt from '../../components/core/p_series_core/P_Fifty_Five.jsx/Chatgpt'
 import Warrenty from '../../components/core/p_series_core/P_Fifty_Five.jsx/Warrenty'
 import Mobile_grid from '../../components/core/p_series_core/P_Fifty_Five.jsx/Mobilegrid'
+import Battery from '../../components/core/p_series_core/P_Fifty_Five.jsx/Battery'
+import Camera from '../../components/core/p_series_core/P_Fifty_Five.jsx/Camera'
 const PFiftyFive = () => {
     return (
       <>
@@ -26,8 +27,10 @@ const PFiftyFive = () => {
       
       <Grayframe/>
       <Chatgpt/>
+      <Battery/>
+      <Storage/>
+      <Camera/>
       <Warrenty/>
-      <Power />
      <Mobile_grid/>
      
       <Accessories/>
