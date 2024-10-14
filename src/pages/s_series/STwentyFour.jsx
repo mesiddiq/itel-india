@@ -1,4 +1,4 @@
-// import HeroSection from "../../components/core/s_series_core/S_Twenty_Four/HeroSection"
+import HeroSection from "../../components/core/s_series_core/S_Twenty_Four/HeroSection"
 import CameraSpecifications from "../../components/core/s_series_core/S_Twenty_Four/CameraSpecifications"
 import PunchHoleDisplay from "../../components/core/s_series_core/S_Twenty_Four/PunchHoleDisplay"
 import ProcessorSpecifications from "../../components/core/s_series_core/S_Twenty_Four/ProcessorSpecifications"
@@ -18,8 +18,7 @@ import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
 const STwentyFour = () => {
     return (
         <>
-            {/* <HeroSection /> */}
-            {/* <ProductDescription /> */}
+            <HeroSection />
             <OverViewBanner />
             <ProductDescription />
             <SliderAnimation />
