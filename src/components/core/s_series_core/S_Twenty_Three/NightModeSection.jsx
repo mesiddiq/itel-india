@@ -2,81 +2,49 @@ import React from 'react';
 
 function NightModeSection() {
   return (
-    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4 bg-black opacity-90 md:h-[956px] h-auto overflow-x-auto"> 
-      
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4 bg-black opacity-90 md:h-[956px] h-auto overflow-x-auto">
-      <div className="relative w-full max-w-3xl mx-auto bg-black text-white p-6 rounded-lg shadow-lg">
-        <div className="absolute top-6 left-6 z-10">
-          <h2 className="text-3xl font-bold">Nightlife Alive:</h2>
-          <h3 className="text-2xl font-semibold">Super Night Mode Engaged!</h3>
+     <div className='bg-black opacity-90 h-[998px] md:h-[856px] md:w-[1440px]'>
+      <div className='px-8 md:px-10 md:py-10'>
+      <h3 className='text-white text-mobile/h4 md:text-desktop/h2 font-markot mb-8 md:mt-14  md:mx-10 md:pt-0 pt-10'>
+      Nightlife Alive:
+      <span className="hidden md:inline"><br /></span>
+      <span className="inline md:hidden ml-2"></span>
+      Super Night Mode Engaged!
+      </h3>
+      <div className='grid grid-cols-[25%_75%] relative md:mt-12 md:mr-12'>
+        <div className='col-span-1'>
+          <img src='/smartphone/S_Twenty_Three/Night_Mode.webp' alt='' className='absolute md:left-[8%] md:bottom-[87px] left-[6%] bottom-0 max-md:h-[129px]' />
         </div>
-        <div className="relative mt-24">
-          <img
-            src="/smartphone/S_Twenty_Three/Night1.webp"
-            alt="Night cityscape with illuminated buildings"
-            className="w-full h-auto rounded-lg"
+        <div className='col-span-1'>
+          <img src='/smartphone/S_Twenty_Three/Night1.webp' alt='Night Mode' 
           />
-          <div className="absolute left-0 top-0 bottom-0 flex items-center">
-            <p className="transform -rotate-90 text-7xl font-bold text-transparent stroke-white stroke-2 opacity-30 ml-[-30px]">
-              Night
-            </p>
+        </div>
+      </div>
+      <div className='max-md:block hidden'>
+        <h3 className='text-white text-mobile/h4 md:text-desktop/h2 my-9 text-end'>
+        Ultra HD Mode<br /> with 10X Zoom
+        </h3>
+        <div className='grid md:hidden grid-cols-[75%_25%] relative'>
+          <div className='col-span-1 '>
+            <img src='/smartphone/S_Twenty_Three/10X_Zoom.webp' alt='' className='absolute right-10 -bottom-48 z-20' />
           </div>
-          <div className="absolute right-0 top-0 bottom-0 flex items-center">
-            <p className="transform -rotate-90 text-7xl font-bold text-transparent stroke-white stroke-2 opacity-30 mr-[-30px]">
-              Mode
-            </p>
+          <div className='col-span-1'>
+            <img src='/smartphone/S_Twenty_Three/Night2.webp' alt='`10X Zoom' className='absolute left-0 -bottom-48' />
+          </div>
+        </div>
+        <h3 className='text-white text-mobile/h4 md:text-desktop/h2 mt-60'>
+        Click Each Image with<br />Incredible Detail
+        </h3>
+        <div className='grid grid-cols-[25%_75%] relative mt-8'>
+          <div className='col-span-1'>
+            <img src='/smartphone/S_Twenty_Three/50Mp.webp' alt='' className=' absolute left-[8%] bottom-0' />
+          </div>
+          <div className='col-span-1'>
+            <img src='/smartphone/S_Twenty_Three/Night3.webp' alt='50Mp Camera' 
+            />
           </div>
         </div>
       </div>
-    </div>
-  
-     
-      {/* <div className="relative flex items-center flex-shrink-0 md:w-auto min-w-[300px] h-full"> 
-        <div className="w-3/4 relative">
-          <img 
-            src="/smartphone/S_Twenty_Three/Night2.webp" 
-            alt="Mosque architecture" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute top-2 left-2 bg-black bg-opacity-50 p-2">
-            <span className="text-2xl font-bold text-purple-300">
-              Ultra HD Mode with 10X Zoom
-            </span>
-          </div>
-          <div className="absolute bottom-0 left-0 p-2">
-            <span className="text-4xl font-bold text-purple-300">Zoom</span>
-          </div>
-        </div>
-        <div className="w-1/4 h-full flex items-center justify-center">
-          <span className="text-6xl font-bold text-purple-300 transform rotate-90 origin-center whitespace-nowrap">
-            10x
-          </span>
-        </div>
-      </div> */}
-  
-      
-      {/* <div className="relative flex items-center flex-shrink-0 md:w-auto min-w-[300px] h-full"> 
-        <div className="w-1/4 h-full flex items-center justify-center">
-          <span className="text-6xl font-bold text-purple-300 transform -rotate-90 origin-center whitespace-nowrap">
-            50MP
-          </span>
-        </div>
-        <div className="w-3/4 relative">
-          <img 
-            src="/smartphone/S_Twenty_Three/Night3.webp" 
-            alt="Lotus flower" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute top-2 left-2 bg-black bg-opacity-50 p-2">
-            <span className="text-2xl font-bold text-purple-300">
-              Click Each Image with Incredible Detail
-            </span>
-          </div>
-          <div className="absolute bottom-0 right-0 p-2">
-            <span className="text-4xl font-bold text-purple-300">Rear</span>
-          </div>
-        </div>
-      </div> */}
+      </div>
     </div>
   );
 };

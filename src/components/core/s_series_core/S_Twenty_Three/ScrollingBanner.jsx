@@ -19,7 +19,7 @@ const ScrollingBanner = () => {
         {['SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER'].map(
           (text, index) => (
             <div key={index} className="flex items-center space-x-4">
-              <span className="text-xl uppercase text-purple-200 text-[24px] font-extrabold leading-[24px] tracking-[0.08em] ml-4">
+              <span className="text-xl uppercase text-purple-200 text-[24px] font-extrabold leading-[24px] tracking-[0.08em] ml-4 font-bricolage">
                 {text}
               </span>
               <div className="rounded-full bg-gray-800 opacity-90 w-16 h-8 flex items-center justify-center">
@@ -31,7 +31,7 @@ const ScrollingBanner = () => {
         {['SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER', 'SUPER SERIES', 'INCREDIBLY SUPER'].map(
           (text, index) => (
             <div key={index + 6} className="flex items-center space-x-4">
-              <span className="text-xl uppercase text-purple-200 text-[24px] font-extrabold leading-[24px] tracking-[0.08em] ml-4">
+              <span className="text-xl uppercase text-purple-200 text-[24px] font-extrabold leading-[24px] tracking-[0.08em] ml-4 font-bricolage">
                 {text}
               </span>
               <div className="rounded-full bg-gray-800 opacity-90 w-16 h-8 flex items-center justify-center">

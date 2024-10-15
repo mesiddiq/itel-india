@@ -21,7 +21,7 @@ function HDRSection() {
                 alt="No HDR"
                 className="w-full h-[400px] md:h-[500px] object-cover "
               />
-              <div className="absolute bottom-4 md:bottom-8 left-16 transform -translate-x-1/2 md:left-6 md:transform-none px-6 py-2 bg-gray-400 bg-opacity-30 text-white text-sm ">
+              <div className="absolute bottom-4 md:bottom-8 left-16 transform -translate-x-1/2 md:left-6 md:transform-none px-6 py-2 bg-gray-400 bg-opacity-30 text-white text-mobile/h7 md:text-desktop/title ">
                 NO HDR
               </div>
             </div>
@@ -31,7 +31,7 @@ function HDRSection() {
                 alt="With HDR 4.0"
                 className="w-full  h-[400px] md:h-[500px] object-cover"
               />
-              <div className="absolute md:bottom-8  transform -translate-x-1/2 -right-14  bottom-4 md:right-6 md:transform-none px-6 py-2  bg-gray-400 bg-opacity-30 text-white text-sm ">
+              <div className="absolute md:bottom-8  transform -translate-x-1/2 -right-14  bottom-4 md:right-6 md:transform-none px-6 py-2  bg-gray-400 bg-opacity-30 text-white text-mobile/h7 md:text-desktop/title ">
                 WITH HDR 4.0
               </div>
             </div>

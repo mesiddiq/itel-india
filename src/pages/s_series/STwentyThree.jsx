@@ -28,11 +28,11 @@ const STwentyThree = () => {
             <VideoSection />
             <CameraSection/>
             <HDRSection/>
-            {/* <NightModeSection/> */}
+            <NightModeSection/>
             <ColorChangeSection/>
             <MemoryFusionSection />
             <StyleSection />
-            {/* <Features/> */}
+            <Features/>
 
 
             <SimilarProducts/>
