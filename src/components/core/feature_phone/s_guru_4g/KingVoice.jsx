@@ -1,17 +1,7 @@
 import React from 'react'
 import { For } from 'react-haiku'
 
-const SpecsData = [
-    { id: '1', label: 'Incoming Calls & Message', logo: '/featurephone/common/connectivity.svg' },
-    { id: '2', label: 'Reading Menu & Phonebook', logo: '/featurephone/common/upi.svg' },
-    { id: '3', label: 'Dialling Number', logo: '/featurephone/common/language.svg' },
-    { id: '4', label: 'Instant Reading', logo: '/featurephone/common/camera.svg' },
-    { id: '5', label: 'Customisation Support', logo: '/featurephone/common/display.svg' },
-    { id: '6', label: 'Time Update', logo: '/featurephone/common/game.svg' },
-]
-
-
-const KingVoice = () => {
+const KingVoice = ({ phoneUrl, cards }) => {
     return (
         <div className='bg-[#262b5a] flex flex-col items-center overflow-hidden relative gap-6 lg:gap-14 pb-[366px] pt-9 lg:pb-[116px] lg:pt-12'>
             <div className="">
@@ -32,14 +22,14 @@ const KingVoice = () => {
                 </div>
             </div>
             <div className="grid gap-x-4 gap-y-3 lg:gap-y-10 grid-cols-2 lg:gap-x-[622px] font-markot relative">
-                <For each={SpecsData} render={({ label, id, logo }) =>
-                    <div className="gap-2 flex  lg:gap-4 lg:w-[259px] items-center" key={id}>
-                        <img src={logo} alt="voice" className='size-8 lg:size-[54px]' />
+                <For each={cards} render={({ label, icon }, idx) =>
+                    <div className="gap-2 flex  lg:gap-4 lg:w-[259px] items-center" key={idx}>
+                        <img src={icon} alt="voice" className='size-8 lg:size-[54px]' />
                         <h3 className='text-mobile/h7 lg:text-desktop/h5/medium text-grey/grey/1 max-w-[116px] md:max-w-full'>{label}</h3>
                     </div>
                 } />
             </div>
-            <img src="/featurephone/superguru4g/kingvoice.webp" alt="Super Guru 4g" loading='lazy' className='absolute bottom-0 left-1/2 -translate-x-1/2 max-w-[298px] lg:max-w-[490px] w-full' />
+            <img src={phoneUrl} alt="Super Guru 4g" loading='lazy' className='absolute bottom-0 left-1/2 -translate-x-1/2 max-w-[298px] lg:max-w-[490px] w-full' />
         </div>
     )
 }

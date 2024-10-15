@@ -1,0 +1,68 @@
+import React from 'react';
+import Slider from 'react-slick';
+
+import Button from '../../common/Button';
+
+const StayInTheLoop = () => {
+  const settings = {
+    // dots: true,
+    autoplay: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
+  return (
+    <>
+      <link
+        rel='stylesheet'
+        type='text/css'
+        charset='UTF-8'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
+      />
+      <link
+        rel='stylesheet'
+        type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
+      />
+      <div className='flex flex-col md:flex-row justify-between px-[16px] md:px-[80px] pt-[60px] pb-[20px]' style={{ marginTop: '0px' }}>
+        <h3 className='text-mobile/h4 md:text-desktop/h3 text-[#FFFFFF]'>Stay in the loop: Follow us for updates!</h3>
+        <Button btnLabel='Follow us on Instagram' rounded='mt-[12px] md:mt-0 rounded-full' />
+      </div>
+      <div className='hidden md:grid grid-cols-1 md:grid-cols-4 gap-4 px-[16px] md:px-[80px] pb-[60px]' style={{ marginTop: '0px' }}>
+        <div className='col-span-1'>
+          <img src='/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full' />
+        </div>
+        <div className='col-span-1'>
+          <img src='/StayInTheLoopTwo.svg' alt='StayInTheLoopTwo' className='w-full' />
+        </div>
+        <div className='col-span-1'>
+          <img src='/StayInTheLoopThree.svg' alt='StayInTheLoopThree' className='w-full' />
+        </div>
+        <div className='col-span-1'>
+          <img src='/StayInTheLoopFour.svg' alt='StayInTheLoopFour' className='w-full' />
+        </div>
+      </div>
+      <div className='block md:hidden slider-container h-[430px]' style={{ marginTop: '0px' }}>
+        <Slider {...settings}>
+          <div>
+            <img src='/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full rounded-[16px]' />
+          </div>
+          <div>
+            <img src='/StayInTheLoopTwo.svg' alt='StayInTheLoopTwo' className='w-full rounded-[16px]' />
+          </div>
+          <div>
+            <img src='/StayInTheLoopThree.svg' alt='StayInTheLoopThree' className='w-full rounded-[16px]' />
+          </div>
+          <div>
+            <img src='/StayInTheLoopFour.svg' alt='StayInTheLoopFour' className='w-full rounded-[16px]' />
+          </div>
+        </Slider>
+      </div>
+    </>
+  );
+};
+
+export default StayInTheLoop;

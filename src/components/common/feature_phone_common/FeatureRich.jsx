@@ -1,11 +1,11 @@
 import React from 'react'
 import { For } from 'react-haiku'
 
-const FeatureRich = ({ heading, description, cards }) => {
+const FeatureRich = ({ title, description, cards }) => {
     return (
         <div className='content py-8 md:py-[120px] space-y-6 md:space-y-20 font-markot px-4 md:px-0'>
             <div className="flex flex-col lg:flex-row gap-3 justify-between">
-                <h1 className="lg:text-desktop/h2 text-mobile/h4 text-itel-red max-w-[450px] ">{heading}</h1>
+                <h1 className="lg:text-desktop/h2 text-mobile/h4 text-itel-red max-w-[450px] ">{title}</h1>
                 <p className=' text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/5 max-w-[674px]'>{description} </p>
             </div>
             <div className="flex flex-col gap-6 text-dark/card/bg justify-between lg:flex-row ">
