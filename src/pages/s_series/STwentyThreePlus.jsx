@@ -36,8 +36,8 @@ const STwentyThreePlus = () => {
   return (
     <>
       <link rel="stylesheet" href="/s_twenty_three_plus/style.css" />
-      <main className="bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] px-5 md:px-0">
-        <Navbar />
+      <main className="bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px]">
+        {/* <Navbar /> */}
         <HeroBanner scrollY={scrollY} />
         <Overview scrollY={scrollY} />
         <OverviewTwo scrollY={scrollY} />
