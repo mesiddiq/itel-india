@@ -32,7 +32,7 @@ function SimilarProducts() {
     <section className="flex z-0 flex-col bg-black items-center pb-32 max-w-full">
       <div className="flex flex-col justify-center items-center py-10 w-full">
         <div className="flex flex-col max-w-full w-[1280px]">
-          <h2 className="text-4xl font-medium tracking-tighter leading-tight text-white px-8 md:px-2 tracking-wide">
+          <h2 className="text-mobile/h4 md:text-desktop/h3 text-white px-8 md:px-2 ">
             Similar Products
           </h2>
           <div className="flex flex-wrap gap-5 items-start justify-center mt-9">
@@ -50,15 +50,15 @@ function SimilarProducts() {
                 </div>
                 <div className="flex flex-col mt-4">
                   <div className="flex flex-col items-center whitespace-nowrap">
-                    <h3 className="text-2xl font-medium tracking-tight leading-tight text-zinc-100">{product.name}</h3>
+                    <h3 className="text-mobile/h6 md:text-desktop/h4  text-zinc-100">{product.name}</h3>
                     <div className="flex gap-2 items-center mt-3">
-                      <p className="text-base font-bold tracking-normal leading-tight text-white">{product.price}</p>
+                      <p className="text-desktop/h6/medium font-bold tracking-normal leading-tight text-white">{product.price}</p>
                       {product.originalPrice && (
-                        <p className="text-xs tracking-wide leading-relaxed text-neutral-400 line-through">{product.originalPrice}</p>
+                        <p className="text-desktop/stikethrough/text text-neutral-400 line-through">{product.originalPrice}</p>
                       )}
                     </div>
                   </div>
-                  <button className="flex gap-3 justify-center items-center mt-4 w-full text-base font-bold tracking-normal leading-tight text-center uppercase text-stone-100">
+                  <button className="flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
                     <span className="flex overflow-hidden gap-2 items-center">
                       <span>Buy Now</span>
                       <img loading="lazy" src="/smartphone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain w-6" />

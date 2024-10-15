@@ -27,7 +27,7 @@ function CameraSection() {
             alt=""
             className="object-contain shrink-0 aspect-[0.87] w-[49px] max-md:hidden" // Hide on small screens
           />
-          <h2 className="bg-clip-text text-[linear-gradient(98deg,#DACFF9_0%,#5C5C7E_146.29%)] text-purple-300 md:w-[661px] max-md:max-w-full max-md:text-4xl w-[400px]">
+          <h2 className="bg-clip-text text-[linear-gradient(98deg,#DACFF9_0%,#5C5C7E_146.29%)] text-purple-300 md:w-[661px] max-md:max-w-full max-md:text-mobile/h4 text-desktop/h2 w-[328px] font-markot">
             itel S23's Ultra Snap Wonder!
           </h2>
         </div>
@@ -36,28 +36,28 @@ function CameraSection() {
           <div className="flex gap-5 max-md:flex-col">
             <div className="flex flex-col w-[36%] max-md:ml-0 max-md:w-full">
               <div className="flex relative flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
-                <p className="text-xl tracking-normal leading-8 text-zinc-100 max-md:mr-2.5 max-md:max-w-full">
+                <p className="text-mobile/body/large md:text-desktop/body/large  text-zinc-100 max-md:mr-2.5 max-md:max-w-full font-markot">
                   Capture every detail with its HD Pixel Photo System and F1.6 aperture.
                 </p>
 
                 <div className="flex flex-col justify-center items-start mt-44 max-md:mt-10 max-md:max-w-full">
-                  <div className="flex flex-col justify-center max-w-full text-4xl font-medium tracking-tighter leading-10 text-white w-[327px]">
+                  <div className="flex flex-col justify-center max-w-full text-desktop/h5/medium md:text-desktop/h3 font-markot text-white w-[327px]">
                     <h3 className="opacity-80">50MP AI Dual Rear Camera</h3>
                   </div>
                   <div className="flex flex-col justify-center mt-12 max-w-full w-[335px] max-md:mt-10">
                     <div className="flex flex-col justify-center w-full">
-                      <h4 className="text-2xl font-medium tracking-tight leading-8 text-white opacity-80">
+                      <h4 className="text-mobile/h5/medium md:text-desktop/h4 font-markot text-white opacity-80">
                         50MP high definition pixel photo system
                       </h4>
-                      <p className="mt-2 text-base leading-relaxed text-white opacity-80">
+                      <p className="mt-2 text-mobile/body/2 md:text-desktop/body/1 text-white opacity-80 font-markot">
                         To capture every moment of beauty
                       </p>
                     </div>
                     <div className="flex flex-col justify-center mt-8 max-w-full w-[230px]">
-                      <h4 className="text-2xl font-medium tracking-tight leading-tight text-white opacity-80">
+                      <h4 className="text-mobile/h5/medium md:text-desktop/h4 font-markot text-white opacity-80">
                         F1.6 Aperture
                       </h4>
-                      <p className="mt-2 text-base leading-7 text-white opacity-80">
+                      <p className="mt-2 text-mobile/body/2 md:text-desktop/body/1 text-white opacity-80 font-markot">
                         Bigger aperture, clearer and brighter pictures
                       </p>
                     </div>

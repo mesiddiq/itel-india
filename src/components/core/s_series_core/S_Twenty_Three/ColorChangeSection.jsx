@@ -23,10 +23,10 @@ function ColorChangeSection() {
         <div className="flex flex-col ml-24 w-[45%] max-md:ml-0 max-md:w-full max-md:pt-5 mb-10">
           <div className="flex flex-col px-14 pt-6 md:pt-28 pb-60 max-md:px-5 max-md:pb-0 max-md:max-w-full">
             <div className="flex flex-col justify-center max-md:max-w-full">
-              <h2 className="text-5xl font-medium tracking-tighter text-white leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px] max-md:text-left">
+              <h2 className=" text-white text-desktop/h2 max-md:w-[308px] max-md:text-desktop/h4 max-md:text-left max-md:h-[62px]">
                 Glow Up Guru: itel S23's Color Shift Swag!
               </h2>
-              <p className="mt-3.5 text-base leading-7 text-zinc-100 max-md:max-w-full max-md:text-left">
+              <p className="mt-3.5 text-desktop/body/1 text-zinc-100 max-md:max-w-full max-md:text-left max-md:text-desktop/body/2/regular">
                 Get ready to stand out with itel S23's colour-changing magic! Say goodbye to boredom with its photochromic effects that transform in sunlight or UV rays. Your phone, your style—it's always lit and never boring!
               </p>
             </div>
