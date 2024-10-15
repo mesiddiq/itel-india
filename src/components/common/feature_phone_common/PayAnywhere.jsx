@@ -2,7 +2,7 @@ import React from 'react'
 
 const PayAnywhere = () => {
     return (
-        <div className="py-[42px] lg:py-[85px]">
+        <div className="py-[42px] lg:py-[85px] px-4 lg:px-0 font-markot">
             <div className='rounded-[16px] overflow-hidden h-[430px] lg:h-auto lg:rounded-[24px] relative bg-bg/secondry content py-[26px] lg:py-[89px] px-[24px] lg:px-[114px]'>
                 <div className="space-y-[222px] lg:space-y-10 ">
                     <div className="space-y-2 lg:space-y-4 ">
