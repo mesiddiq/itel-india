@@ -1,5 +1,5 @@
-import React from 'react'
-import { For } from 'react-haiku'
+import React, { useRef } from 'react'
+import { For, useSize } from 'react-haiku'
 
 const SpecsData = [
     { id: '1', label: '4G/3G/2G', logo: '/featurephone/common/connectivity.svg' },
@@ -13,12 +13,16 @@ const SpecsData = [
 ]
 
 const TechSpecs = () => {
+
+    const elementRef = useRef(null);
+    const { width } = useSize(elementRef);
+
     return (
-        <div className="py[60px] lg:py-[120px]">
-            <div className='bg-bg/secondry rounded-[16px] flex flex-col lg:flex-row lg:rounded-[24px] lg:gap-10 py-[26px] overflow-hidden px-4 lg:pt-[97px] lg:pb-6 lg:pl-[124px]  content font-markot'>
+        <div ref={elementRef} className="py-[60px] px-4 md:px-0 lg:py-[120px]">
+            <div className='bg-bg/secondry rounded-[16px] flex flex-col lg:flex-row lg:rounded-[24px] lg:gap-10 py-[26px] overflow-hidden px-4 lg:pt-[97px] lg:pb-6 lg:pl-[124px] content font-markot' style={{ background: width > 1024 ? `#ebe8e2 url(/featurephone/superguru4g/techspecscircle.svg) top right no-repeat` : '#ebe8e2 url(/featurephone/superguru4g/techspecscirclemobile.svg) top 80% right no-repeat' }}>
                 <div className="space-y-5 lg:space-y-[57px]">
                     <div className="space-y-1 lg:space-y-3">
-                        <h3 className='uppercase text-mobile/title lg:text-[14px] lg:leading-[17px] font-medium text-blue/blue/3'>Tech Specs</h3>
+                        <h3 className='uppercase text-mobile/title lg:text-[14px] lg:leading-[17px] font-medium text-smoky/black'>Tech Specs</h3>
                         <h3 className=' text-mobile/h4 lg:text-desktop/h3 text-black/1'>Power Packed Features</h3>
                     </div>
                     <div className="grid grid-cols-2 gap-x-4 lg:gap-x-5 gap-y-3 lg:gap-y-10 max-w-[516px]">

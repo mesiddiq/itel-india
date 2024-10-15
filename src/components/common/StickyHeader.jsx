@@ -5,7 +5,7 @@ const StickyHeader = () => {
         <div className='bg-black/1 px-4 md:px-0 py-4 md:py-6 font-markot sticky top-0 z-50'>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
-                    <img src="" alt="Icon" className='size-10' />
+                    <img src="/featurephone/superguru4g/buynowlogo.svg" alt="Icon" className='size-10' />
                     <h1 className='text-mobile/h5 md:text-desktop/h4 font-bold'> Super Guru 4G </h1>
                 </div>
                 <div className="hidden md:flex gap-8 items-center">

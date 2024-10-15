@@ -11,6 +11,7 @@ import EntireWorld from '../../components/core/feature_phone/s_guru_4g/EntireWor
 import Hero from '../../components/common/feature_phone_common/Hero'
 import FullSpecifications from '../../components/common/FullSpecifications'
 import { FullSpecificationsSGuru4g } from '../../data/featurephonedata/SGuru4gData'
+import YourSideKick from '../../components/core/feature_phone/s_guru_4g/YourSideKick'
 
 const FeatureRichData = {
     heading: 'Feature-Rich Phone with 4G VoLTE Connectivity',
@@ -31,6 +32,7 @@ const SuperGuru4G = () => {
             <EnjoyHIgh />
             <EntireWorld/>
             <PayAnywhere />
+            <YourSideKick/>
             <KingVoice />
             <TechSpecs />
             <FullSpecifications FullSpecificationsData={FullSpecificationsSGuru4g} mode={'light'} />
