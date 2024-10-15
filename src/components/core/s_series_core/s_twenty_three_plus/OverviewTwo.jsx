@@ -2,26 +2,26 @@ import React, { useState, useEffect } from 'react';
 
 import Button from '../../../../components/common/Button';
 
-const OverviewTwo = () => {
+const OverviewTwo = (props) => {
+  const { scrollY } = props;
   const [titleIndex, setTitleIndex] = useState(0);
   const [isTitleComplete, setIsTitleComplete] = useState(false);
-  const [showParagraph, setShowParagraph] = useState(false);
-  const [showCards, setShowCards] = useState(false);
   const [startAnimation, setStartAnimation] = useState(false);
-
+  const [showParagraph, setShowParagraph] = useState(false);
+  const [showCardIconOne, setShowCardIconOne] = useState(false);
+  const [showCardIconTwo, setShowCardIconTwo] = useState(false);
+  const [showCardIconThree, setShowCardIconThree] = useState(false);
+  const [showCardTitleOne, setShowCardTitleOne] = useState(false);
+  const [showCardTitleTwo, setShowCardTitleTwo] = useState(false);
+  const [showCardTitleThree, setShowCardTitleThree] = useState(false);
+  const [showCardParaOne, setShowCardParaOne] = useState(false);
+  const [showCardParaTwo, setShowCardParaTwo] = useState(false);
+  const [showCardParaThree, setShowCardParaThree] = useState(false);
   const title = "Redefining Style with 3D Curved AMOLED Display";
 
-  const handleScroll = () => {
-    const sectionOneHeight = 600; // Adjust this value as needed
-    setStartAnimation(window.scrollY >= sectionOneHeight);
-  };
-
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    setStartAnimation(scrollY >= 600);
+  }, [scrollY]);
 
   useEffect(() => {
     console.log("startAnimation", startAnimation);
@@ -43,7 +43,7 @@ const OverviewTwo = () => {
     if (isTitleComplete) {
       const paragraphTimeout = setTimeout(() => {
         setShowParagraph(true);
-      }, 1000); // Delay before showing the paragraph
+      }, 500); // Delay before showing the paragraph
 
       return () => clearTimeout(paragraphTimeout);
     }
@@ -51,21 +51,99 @@ const OverviewTwo = () => {
 
   useEffect(() => {
     if (showParagraph) {
-      const cardsTimeout = setTimeout(() => {
-        setShowCards(true);
-      }, 1000); // Delay before showing cards
+      const cardIconTimeout = setTimeout(() => {
+        setShowCardIconOne(true);
+      }, 500); // Delay before showing cards
 
-      return () => clearTimeout(cardsTimeout);
+      return () => clearTimeout(cardIconTimeout);
     }
   }, [showParagraph]);
+
+  useEffect(() => {
+    if (showCardIconOne) {
+      const cardIconTwoTimeout = setTimeout(() => {
+        setShowCardIconTwo(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardIconTwoTimeout);
+    }
+  }, [showCardIconOne]);
+
+  useEffect(() => {
+    if (showCardIconTwo) {
+      const cardIconThreeTimeout = setTimeout(() => {
+        setShowCardIconThree(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardIconThreeTimeout);
+    }
+  }, [showCardIconTwo]);
+
+  useEffect(() => {
+    if (showCardIconThree) {
+      const cardTitleOneTimeout = setTimeout(() => {
+        setShowCardTitleOne(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardTitleOneTimeout);
+    }
+  }, [showCardIconThree]);
+
+  useEffect(() => {
+    if (showCardTitleOne) {
+      const cardTitleTwoTimeout = setTimeout(() => {
+        setShowCardTitleTwo(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardTitleTwoTimeout);
+    }
+  }, [showCardTitleOne]);
+
+  useEffect(() => {
+    if (showCardTitleTwo) {
+      const cardTitleThreeTimeout = setTimeout(() => {
+        setShowCardTitleThree(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardTitleThreeTimeout);
+    }
+  }, [showCardTitleTwo]);
+
+  useEffect(() => {
+    if (showCardTitleThree) {
+      const cardParaOneTimeout = setTimeout(() => {
+        setShowCardParaOne(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardParaOneTimeout);
+    }
+  }, [showCardTitleThree]);
+
+  useEffect(() => {
+    if (showCardParaOne) {
+      const cardParaTwoTimeout = setTimeout(() => {
+        setShowCardParaTwo(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardParaTwoTimeout);
+    }
+  }, [showCardParaOne]);
+
+  useEffect(() => {
+    if (showCardParaTwo) {
+      const cardParaThreeTimeout = setTimeout(() => {
+        setShowCardParaThree(true);
+      }, 500); // Delay before showing cards
+
+      return () => clearTimeout(cardParaThreeTimeout);
+    }
+  }, [showCardParaTwo]);
 
   return (
     <div className='overview-two-section' id='overviewSection'>
       <div className='grid grid-cols-1 md:grid-cols-2'>
         <div className='col-span-1'>
-          <h1 className={`linear-gradient text-desktop/h4 md:text-desktop/h2`}>
-            {title.slice(0, titleIndex)}
-          </h1>
+          <h1 className={`linear-gradient text-desktop/h4 md:text-desktop/h2`}>{title.slice(0, titleIndex)}</h1>
         </div>
         <div className='col-span-1 pt-[10px]'>
           {showParagraph && (
@@ -77,37 +155,33 @@ const OverviewTwo = () => {
       </div>
       <div className='h-[16px] md:h-[80px]'></div>
       <div className='grid grid-cols-1 md:grid-cols-3'>
-        {showCards && (
-          <>
-            {[
-              {
-                img: '/s_twenty_three_plus/OverviewCardOne.svg',
-                title: '3D Curved Brilliance: 6.78” FHD+ AMOLED Display',
-                description: 'Elevate your vision with itel S23+ smartphone with sleek 3D curved AMOLED display.'
-              },
-              {
-                img: '/s_twenty_three_plus/OverviewCardTwo.svg',
-                title: 'Snap in Style with 50MP AI Dual Rear Camera & 32MP Front Camera',
-                description: 'Capture every moment in jaw-dropping detail with our 50MP AI dual rear camera and 32 MP Front Camera set-up.'
-              },
-              {
-                img: '/s_twenty_three_plus/OverviewCardThree.svg',
-                title: '5000 mAh Battery with 18W Type-C Charger',
-                description: 'Power through your day with a 5000 mAh Battery. Recharge quickly and efficiently with the 18W Type-C Charger.'
-              }
-            ].map((card, index) => (
-              <div key={index} className='col-span-1 overview-two-section-card animate-slide-up' style={{ animationDelay: `${(index + 1) * 0.5}s` }}>
-                <img src={card.img} alt="" />
-                <h3 className={`text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] py-[10px] md:py-[20px]`}>
-                  {card.title}
-                </h3>
-                <p className='text-desktop/body/2/regular md:text-desktop/body/1 text-[#D9D9D9]'>
-                  {card.description}
-                </p>
-              </div>
-            ))}
-          </>
-        )}
+        <div className='col-span-1 overview-two-section-card'>
+          {showCardIconOne && (<img src='/s_twenty_three_plus/OverviewCardOne.svg' alt='OverviewCardOne' className='animate-slide-up' />)}
+          {showCardTitleOne && (<h3 className={`text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] py-[10px] md:py-[20px] animate-slide-up`}>
+            3D Curved Brilliance: 6.78” FHD+ AMOLED Display
+          </h3>)}
+          {showCardParaOne && (<p className='text-desktop/body/2/regular md:text-desktop/body/1 text-[#D9D9D9] animate-slide-up'>
+            Elevate your vision with itel S23+ smartphone with sleek 3D curved AMOLED display.
+          </p>)}
+        </div>
+        <div className='col-span-1 overview-two-section-card'>
+          {showCardIconTwo && (<img src='/s_twenty_three_plus/OverviewCardTwo.svg' alt='OverviewCardTwo' className='animate-slide-up' />)}
+          {showCardTitleTwo && (<h3 className={`text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] py-[10px] md:py-[20px] animate-slide-up`}>
+            Snap in Style with 50MP AI Dual Rear Camera & 32MP Front Camera
+          </h3>)}
+          {showCardParaTwo && (<p className='text-desktop/body/2/regular md:text-desktop/body/1 text-[#D9D9D9] animate-slide-up'>
+            Capture every moment in jaw-dropping detail with our 50MP AI dual rear camera and 32 MP Front Camera set-up.
+          </p>)}
+        </div>
+        <div className='col-span-1 overview-two-section-card'>
+          {showCardIconThree && (<img src='/s_twenty_three_plus/OverviewCardThree.svg' alt='OverviewCardThree' className='animate-slide-up' />)}
+          {showCardTitleThree && (<h3 className={`text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] py-[10px] md:py-[20px] animate-slide-up`}>
+            5000 mAh Battery with 18W Type-C Charger
+          </h3>)}
+          {showCardParaThree && (<p className='text-desktop/body/2/regular md:text-desktop/body/1 text-[#D9D9D9] animate-slide-up'>
+            Power through your day with a 5000 mAh Battery. Recharge quickly and efficiently with the 18W Type-C Charger.
+          </p>)}
+        </div>
       </div>
     </div>
   );

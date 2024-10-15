@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import Button from '../../../../components/common/Button';
 
-const HeroBanner = () => {
+const HeroBanner = (props) => {
+  const { scrollY } = props;
   const [primaryAnimation, setPrimaryAnimation] = useState(false);
   const [secondaryAnimation, setSecondaryAnimation] = useState(false);
   

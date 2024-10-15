@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
 
-const ImmersiveEntertainment = () => {
+const ImmersiveEntertainment = (props) => {
+  const { scrollY } = props;
+  
   return (
     <div className='immersive-entertainment-section'>
       <h2 className='text-[#181818] text-desktop/button md:text-desktop/h1'>Immersive Entertainment Awaits!</h2>

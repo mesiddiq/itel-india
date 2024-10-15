@@ -2,21 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 import ReactPlayer from 'react-player'
 
-const Video = () => {
+const Video = (props) => {
+  const { scrollY } = props;
   const [startAnimation, setStartAnimation] = useState(false);
   const [startVideoAnimation, setStartVideoAnimation] = useState(false);
 
-  const handleScroll = () => {
-    const sectionOneHeight = 1100; // Adjust this value as needed
-    setStartAnimation(window.scrollY >= sectionOneHeight);
-  };
-
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    setStartAnimation(scrollY >= 1100);
+  }, [scrollY]);
 
   useEffect(() => {
     console.log("startVideoAnimation", startAnimation);

@@ -8,8 +8,8 @@ const OtherCoolGears = () => {
       <div className='flex px-[16px] md:px-[80px] pt-[40px] pb-[20px]' style={{ marginTop: '0px' }}>
         <h3 className='text-mobile/h4 md:text-desktop/h3 text-[#FFFFFF]'>Take a quick Peep on our other cool gears!</h3>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-[16px] md:px-[80px] pb-[40px]" style={{ marginTop: '0px' }}>
-        <div class="group col-span-1 md:col-span-2 bg-[#232322] p-[20px] rounded-[16px] h-[258px] relative overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-[16px] md:px-[80px] pb-[40px]" style={{ marginTop: '0px' }}>
+        <div className="group col-span-1 md:col-span-2 bg-[#232322] p-[20px] rounded-[16px] h-[258px] relative overflow-hidden">
           <div className='grid grid-cols-2'>
             <div className='col-span-1 w-[200%]'>
               <h3 className='text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] pb-[10px]'>Smart Gadgets and Wearables, Exquisite Design and Power</h3>
@@ -37,7 +37,7 @@ const OtherCoolGears = () => {
             </div>
           </div>
         </div>
-        <div class="group col-span-1 bg-[#232322] p-[20px] rounded-[16px] h-[258px] relative overflow-hidden">
+        <div className="group col-span-1 bg-[#232322] p-[20px] rounded-[16px] h-[258px] relative overflow-hidden">
           <div className='grid grid-cols-2'>
             <div className='col-span-1 w-[200%]'>
               <h3 className='text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] pb-[10px]'>Smart TV, Non-Stop Entertainment</h3>
@@ -60,7 +60,7 @@ const OtherCoolGears = () => {
             </div>
           </div>
         </div>
-        <div class="group col-span-1 bg-[#232322] p-[20px] rounded-[16px] h-[258px] relative overflow-hidden">
+        <div className="group col-span-1 bg-[#232322] p-[20px] rounded-[16px] h-[258px] relative overflow-hidden">
           <div className='grid grid-cols-2'>
             <div className='col-span-1 w-[200%]'>
               <h3 className='text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] pb-[10px]'>Feature Phones-<span className='text-mobile/h6 md:text-desktop/h6'>Stay Connected All Day Long</span></h3>

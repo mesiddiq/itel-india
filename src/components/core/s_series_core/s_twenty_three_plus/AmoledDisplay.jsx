@@ -1,26 +1,23 @@
 import React, { useState, useEffect } from 'react';
 
-const AmoledDisplay = () => {
+const AmoledDisplay = (props) => {
+  const { scrollY } = props;
   const [startAnimation, setStartAnimation] = useState(false);
-  const [startVideoAnimation, setStartVideoAnimation] = useState(false);
-
-  const handleScroll = () => {
-    const sectionOneHeight = 1600; // Adjust this value as needed
-    setStartAnimation(window.scrollY >= sectionOneHeight);
-  };
+  const [showImages, setShowImages] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    if (screen.width > 1000) {
+      setStartAnimation(scrollY >= 2700);
+    } else {
+      setStartAnimation(scrollY >= 1900);
+    }
+  }, [scrollY]);
 
   useEffect(() => {
     console.log("startAmoledAnimation", startAnimation);
     if (startAnimation) {
       const startVideo = setTimeout(() => {
-        setStartVideoAnimation(true);
+        setShowImages(true);
       }, 500); // Delay before showing the paragraph
 
       return () => clearTimeout(startVideo);
@@ -29,12 +26,12 @@ const AmoledDisplay = () => {
 
   return (
     <div className='amoled-display-section'>
-      {startVideoAnimation && (
+      {showImages && (
         <>
-        	<div className='amoled-display-section-phone animate-slide-down'>
+        	<div className='amoled-display-section-phone'>
         		<img src='/s_twenty_three_plus/AmoledDisplayPhone.svg' width={840} height={425} />
         	</div>
-        	<div className='amoled-display-section-text animate-slide-up'>
+        	<div className='amoled-display-section-text'>
         		<img src='/s_twenty_three_plus/AmoledDisplayText.svg' width={872} height={401} />
         	</div>
         </>

@@ -8,12 +8,14 @@ const Footer = () => {
             <div className='w-full p-[20px] pt-[40px] md:p-[60px] bg-[#171717]' style={{ marginTop: '0px' }}>
                 <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
                     <div className="col-span-1 md:col-span-2">
-                        <div className='pb-3'><img src={'./footer/itel.png'} /></div>
-                        {/* <div className='mt-3 pb-10'><img src={social} /></div> */}
+                        <div className='flex justify-between md:flex-col'>
+                        <div className='pb-3'><img src='/itel.png' /></div>
+                        <div className='mt-3 pb-10'><img src='/social.png' /></div> 
+                        </div>
                         <p className='text-[14px] leading-[22.4px] pb-[15px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>Subscribe</p>
                         <div className="relative max-w-[330px]">
                             <input className="input" placeholder="Enter your email address"></input>
-                            <div className="inputIcon"><img src={'./footer/send.png'} /></div>
+                            <div className="inputIcon"><img src='/send.png' className='w-full' /></div>
                         </div>
                         <p className='text-[14px] text-[#FFFFFF] leading-[22.4px] pt-[15px]'>Join our newsletter to stay up to date on features and releases</p>
                     </div>
@@ -24,7 +26,7 @@ const Footer = () => {
                                 <a href={item.link} className='cursor-pointer'>
                                     <div className='text-desktop/caption text-white flex'>
                                         {item.label}
-                                        <img src={'./footer/rightChevron.png'} className='h-[16px]' />
+                                        <img src='/rightChevron.png' className='h-[16px] mt-[2px]' />
                                     </div>
                                 </a>
                             } />
@@ -37,35 +39,35 @@ const Footer = () => {
                                 <a href={item.link} className='cursor-pointer'>
                                     <div className='text-desktop/caption text-white flex'>
                                         {item.label}
-                                        <img src={'./footer/rightChevron.png'} className='h-[16px]' />
+                                        <img src='/rightChevron.png' className='h-[16px] mt-[2px]' />
                                     </div>
                                 </a>
                             } />
                         </div>
                     </div>
-                    <div className="col-span-1 md:col-span-1 pt-[20px] md:pt-[0px] flex flex-col justify-between">
-                        <div className="">
+                    <div className="col-span-1 md:col-span-1 pt-[20px] md:pt-[0px] flex flex-col">
+                        <div>
                             <p className='text-desktop/subtitle pb-[20px] text-white/50'>Media</p>
                             <div className="flex flex-col gap-3">
                                 <For each={MediaLinks} render={(item, index) =>
                                     <a href={item.link} className='cursor-pointer'>
                                         <div className='text-desktop/caption text-white flex'>
                                             {item.label}
-                                            <img src={'./footer/rightChevron.png'} className='h-[16px]' />
+                                            <img src='/rightChevron.png' className='h-[16px] mt-[2px]' />
                                         </div>
                                     </a>
                                 } />
                             </div>
                         </div>
 
-                        <div className="">
+                        <div className="mt-9">
                             <p className='text-desktop/subtitle pb-[20px] text-white/50'>About</p>
                             <div className="flex flex-col gap-3">
                                 <For each={AboutItel} render={(item, index) =>
                                     <a href={item.link} className='cursor-pointer'>
                                         <div className='text-desktop/caption text-white flex'>
                                             {item.label}
-                                            <img src={'./footer/rightChevron.png'} className='h-[16px]' />
+                                            <img src='/rightChevron.png' className='h-[16px] mt-[2px]' />
                                         </div>
                                     </a>
                                 } />
@@ -76,9 +78,9 @@ const Footer = () => {
                     <div className="col-span-1 md:col-span-1 pt-[20px] md:pt-[0px]">
                         <p className='text-[14px] leading-[22.4px] pb-[20px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>Contact</p>
                         <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'>
-                            <img src={'./footer/phone.png'} className='h-[14px] mr-2' /> +91-120-6650888
+                            <img src='/phone.png' className='h-[14px] mr-2' /> +91-120-6650888
                         </p>
-                        <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'><img src={'./footer/envelope.png'} className='h-[14px] mr-2' /> info.in@transsion.com</p>
+                        <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'><img src='/envelope.png' className='h-[14px] mr-2' /> info.in@transsion.com</p>
                     </div>
                 </div>
             </div>
