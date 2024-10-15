@@ -21,7 +21,7 @@ const STwentyFour = () => {
     return (
         <>
             <HeroSection />
-            <OverViewBanner />
+            {/* <OverViewBanner /> */}
             <ProductDescription />
             <SliderAnimation />
             <Video1 />

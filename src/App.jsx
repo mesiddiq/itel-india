@@ -6,10 +6,10 @@ import { Link, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/static_pages/HomePage'
 import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
-// import STwentyFour from './pages/s_series/STwentyFour'
+import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import SuperGuru4G from './pages/feature_phone/SuperGuru4G'
-import S_Series_Parent from './components/core/s_series_core/S_Series_Parent'
+import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import SuperGuru400 from './pages/feature_phone/SuperGuru400'
 import SuperGuru600 from './pages/feature_phone/SuperGuru600'
 import Footer from './components/common/Footer'
@@ -46,7 +46,7 @@ function App() {
 				<Route path='/smartphones/s-series' element={<S_Series_Parent />} >
 					<Route path='s23' element={<STwentyThree />} />
 					<Route path='s23p' element={<STwentyThreePlus />} />
-					{/*<Route path='s24' element={<STwentyFour />} />*/}
+					<Route path='s24' element={<STwentyFour />} />
 				</Route>
 				<Route path='/smartphones/p-series/p55' element={<PFiftyFive />} />
 
