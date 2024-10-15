@@ -36,6 +36,8 @@ function App() {
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s24'>s-24</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55'>p-55</Link>
 						<Link className='text-blue-500 underline' to='/featurephones/super-guru-4g'>s guru 4g</Link>
+						<Link className='text-blue-500 underline' to='/featurephones/super-guru-400'>s guru 400</Link>
+						<Link className='text-blue-500 underline' to='/featurephones/super-guru-600'>s guru 600</Link>
 						<Link className='text-blue-500 underline' to='/aboutus'>About us </Link>
 						<Link className='text-blue-500 underline' to='/contactus'>Contact US </Link>
 						<Link className='text-blue-500 underline' to='/csr'>Csr</Link>
