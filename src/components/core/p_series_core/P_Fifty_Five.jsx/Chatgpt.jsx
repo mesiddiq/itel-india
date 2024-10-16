@@ -27,7 +27,7 @@ const Chatgpt = () => {
       </div>
       
       <div 
-        className="relative h-[530px] w-[318px] sm:w-[500px] md:w-[550px] lg:w-[600px] flex justify-center items-center bg-cover bg-center overflow-hidden" data-aos="fade-left"
+        className="relative h-[530px] w-[318px] sm:w-[500px] md:w-[550px] lg:w-[600px] flex justify-center items-center bg-cover bg-center overflow-hidden" 
       >
         <img 
           src='/P_Series/chatgpt_bg.png' 

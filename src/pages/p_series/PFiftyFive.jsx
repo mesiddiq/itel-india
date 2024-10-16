@@ -16,6 +16,9 @@ import Warrenty from '../../components/core/p_series_core/P_Fifty_Five.jsx/Warre
 import Mobile_grid from '../../components/core/p_series_core/P_Fifty_Five.jsx/Mobilegrid'
 import Battery from '../../components/core/p_series_core/P_Fifty_Five.jsx/Battery'
 import Camera from '../../components/core/p_series_core/P_Fifty_Five.jsx/Camera'
+import FullSpecifications from "../../components/common/FullSpecifications"
+
+import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data'
 const PFiftyFive = () => {
  
   useEffect(() => {
@@ -45,7 +48,7 @@ const PFiftyFive = () => {
      
       <Warrenty/>
      <Mobile_grid/>
-     
+     <FullSpecifications FullSpecificationsData={FullSpecificationsP55} mode="dark"/>
       <Accessories/>
       <Model />
 
