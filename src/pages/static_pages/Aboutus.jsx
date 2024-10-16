@@ -81,7 +81,11 @@ const Aboutus = () => {
 <div className=" mt-20">
 <p className=" text-desktop/h2 text-center">Awards and Recognitions</p>
 
+<p className=" p-10 text-center">under building</p>
+
 </div>
+
+
     </div>
   );
 };

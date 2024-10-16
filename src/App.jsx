@@ -13,7 +13,6 @@ import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import SuperGuru400 from './pages/feature_phone/SuperGuru400'
 import SuperGuru600 from './pages/feature_phone/SuperGuru600'
 import Footer from './components/common/Footer'
-<<<<<<< HEAD
 import Support from './pages/static_pages/header/Support'
 import ScreenReplacement from './pages/static_pages/header/Support/ScreenReplacement'
 import Promise100 from './pages/static_pages/header/Support/Promise100'
@@ -22,12 +21,6 @@ import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
 import ServiceCenters from './pages/static_pages/ServiceCenters'
-=======
-import Aboutus from './pages/static_pages/Aboutus'
-import Contactus from './pages/static_pages/Contactus'
-import CSR from './pages/static_pages/CSR'
-
->>>>>>> 8645839c4090df49e369c5116101fe129954b08e
 function App() {
 
 	useEffect(() => {
@@ -60,7 +53,6 @@ function App() {
 					<Route path='s24' element={<STwentyFour />} />
 				</Route>
 				<Route path='/smartphones/p-series/p55' element={<PFiftyFive />} />
-<<<<<<< HEAD
 				<Route path='/featurephones/s-guru-4g' element={<SuperGuru4G />} />
 				{/* {
 					support and there pages
@@ -73,12 +65,6 @@ function App() {
 				<Route path='/aboutus' element={<Aboutus/>} />
 				<Route path='/contactus' element={<Contactus/>} />
 				<Route path='/servicecenters'element={<ServiceCenters/>} />
-=======
-
-				<Route path='/aboutus' element={<Aboutus />} />
-				<Route path='/contactus' element={<Contactus />} />
-				<Route path='/csr' element={<CSR />} />
->>>>>>> 8645839c4090df49e369c5116101fe129954b08e
 
 
 				<Route path='/featurephones/super-guru-4g' element={<SuperGuru4G />} />
