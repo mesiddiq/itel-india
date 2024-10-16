@@ -8,21 +8,12 @@ const HeroBanner = (props) => {
   const [secondaryAnimation, setSecondaryAnimation] = useState(false);
   
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const paragraphTimeout = setTimeout(() => {
       setPrimaryAnimation(true);
-    }, 100);
+    }, 500); // Delay before showing the paragraph
 
-    const stimer = setTimeout(() => {
-      setSecondaryAnimation(true);
-      console.log("HI");
-    }, 30000);
-
-    // Cleanup the timer on component unmount
-    return () => {
-      clearTimeout(timer);
-      clearTimeout(stimer);
-    };
-  }, []);
+    return () => clearTimeout(paragraphTimeout);
+  });
 
   return (
     <div className='hero-section md:items-center'>
