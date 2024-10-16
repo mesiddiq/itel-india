@@ -52,8 +52,17 @@ const PFiftyFive = () => {
       <Accessories/>
       <Model />
 
-      </>
-    )
+
+      <Grayframe />
+      <Chatgpt />
+      <Battery />
+      <Storage />
+      <Camera />
+      <Warrenty />
+      <Mobile_grid />
+
+    </>
+  )
 }
 
 export default PFiftyFive

@@ -14,12 +14,14 @@ import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/Sensor
 import FullSpecifications from "../../components/common/FullSpecifications"
 
 import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
+import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
+import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
 
 const STwentyFour = () => {
     return (
         <>
             <HeroSection />
-            <OverViewBanner />
+            {/* <OverViewBanner /> */}
             <ProductDescription />
             <SliderAnimation />
             <Video1 />
@@ -28,6 +30,10 @@ const STwentyFour = () => {
             <CameraSpecifications />
             
             <SensorZoom />
+
+            <MultipleCameraModes />
+
+            <StandAloneImage />
 
             <ProcessorSpecifications />
 

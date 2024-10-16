@@ -4,7 +4,6 @@ export default {
 		"./index.html",
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
-
 	theme: {
 		extend: {
 			fontFamily: {
@@ -23,6 +22,8 @@ export default {
 				'grey/grey/5': '#252525',
 				'grey/grey/100': '#c0c0c0',
 				'blue/blue/5': '#6b6682',
+				'blue/blue/3': '#6b6682',
+				'purple/sg': '#6B53DD',
 				'dark/card/bg': '#232323',
 				'brand/black':'#1c1b1b',
 				'smoky/black':'#0e0e0e',
@@ -218,8 +219,12 @@ export default {
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
 			},
-		
+			backgroundSize: {
+				'85': '85%',
+				'130': '130%',
+				'custom': '200px 100px',
+			}		
 		},
 	},
-	plugins: [],
+	plugins: [],	
 }

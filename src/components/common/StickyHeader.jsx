@@ -1,12 +1,12 @@
 import React from 'react'
 
-const StickyHeader = () => {
+const StickyHeader = ({ title, purchaseLink, icon }) => {
     return (
         <div className='bg-black/1 px-4 md:px-0 py-4 md:py-6 font-markot sticky top-0 z-50'>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
-                    <img src="" alt="Icon" className='size-10' />
-                    <h1 className='text-mobile/h5 md:text-desktop/h4 font-bold'> Super Guru 4G </h1>
+                    <img src={icon} alt="Icon" className='size-10' />
+                    <h1 className='text-mobile/h5 md:text-desktop/h4 font-bold'>{title}</h1>
                 </div>
                 <div className="hidden md:flex gap-8 items-center">
                     <a href="#overview" className='text-desktop/body/1'>Overview</a>

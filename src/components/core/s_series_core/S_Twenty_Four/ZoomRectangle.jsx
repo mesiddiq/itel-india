@@ -2,7 +2,7 @@
 const ZoomRectangle = ({ active }) => {
   return (
     <>
-        <div className="hidden lg:flex flex-col gap-[7px] p-[6px] border-[0.7px] rounded-[50px] bg-white/30 backdrop-blur-[3px]">
+        <div className="hidden lg:flex flex-col  gap-[7px] p-[6px] border-[0.7px] rounded-[50px] bg-white/30 backdrop-blur-[3px]">
             <span className={`text-desktop/h6/medium text-black/1 p-[15px] rounded-[50px] ${ active == "3X" ? 'bg-white/40 backdrop-blur-sm border' : ''}`}>3X</span>
             <span className="text-desktop/h6/medium text-black/1 p-[15px] rounded-[50px]">2X</span>
             <span className={`text-desktop/h6/medium text-black/1 p-[15px] rounded-[50px] ${ active == "1X" ? 'bg-white/40 backdrop-blur-sm border' : ''}`}>1X</span>
