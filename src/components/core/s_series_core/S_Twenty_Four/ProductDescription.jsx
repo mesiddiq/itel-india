@@ -50,7 +50,8 @@ const ProductDescription = () => {
 
   return (
     <div ref={ref} className="font-markot h-full w-full flex flex-col gap-6 lg:gap-[100px] px-4 py-10 lg:px-0 lg:py-[100px] bg-[#1C1B1B]">
-      <div className="content flex flex-col lg:flex-row justify-between gap-3 lg:gap-0">
+      
+      <div className="content md:content flex flex-col lg:flex-row justify-between gap-3 lg:gap-0">
         <motion.h1
           className="w-full lg:w-[40%] text-mobile/h4 lg:text-desktop/h2 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent"
           initial="hidden"
@@ -76,10 +77,10 @@ const ProductDescription = () => {
         </motion.h2>
       </div>
 
-      <div className="content flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
+      <div className="content md:content flex flex-col lg:flex-row gap-4 lg:gap-12 w-full lg:min-h-[320px]">
         {/* First Content Div */}
         <motion.div
-          className="w-full lg:w-1/3 h-[227px] lg:h-[320px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6"
+          className="w-full lg:w-1/3 h-[227px] lg:h-auto p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6"
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
         >
@@ -104,8 +105,8 @@ const ProductDescription = () => {
               animate={isVisible ? "visible" : "hidden"}
               variants={textAnimation} // Apply description animation
             >
-              Say goodbye to blurry memories and<br />
-              hello to crystal-clear shots with the<br />
+              Say goodbye to blurry memories and
+              hello to crystal-clear shots with the
               Samsung HM6 ISOCELL Sensor.
             </motion.span>
           </div>
@@ -113,7 +114,7 @@ const ProductDescription = () => {
 
         {/* Second Content Div */}
         <motion.div
-          className="w-full lg:w-1/3 h-[227px] lg:h-[320px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6"
+          className="w-full lg:w-1/3 h-[227px] lg:h-auto p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6"
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
         >
@@ -138,14 +139,14 @@ const ProductDescription = () => {
               animate={isVisible ? "visible" : "hidden"}
               variants={textAnimation} // Apply description animation
             >
-                Experience ultra-fast gaming &<br/>multi-tasking like never before with the<br/>Helio G91 processor.
+                Experience ultra-fast gaming & multi-tasking like never before with the Helio G91 processor.
             </motion.span>
           </div>
         </motion.div>
 
         {/* Third Content Div */}
         <motion.div
-          className="w-full lg:w-1/3 h-[227px] lg:h-[320px] p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6"
+          className="w-full lg:w-1/3 h-[227px] lg:h-auto p-4 lg:p-10 border border-white/20 rounded-2xl flex flex-col gap-2 lg:gap-6"
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
         >
@@ -170,13 +171,14 @@ const ProductDescription = () => {
               animate={isVisible ? "visible" : "hidden"}
               variants={textAnimation} // Apply description animation
             >
-              Dive into a world of vibrant visuals with<br />
-              a 90 Hz refresh rate, every swipe and<br />
+              Dive into a world of vibrant visuals with
+              a 90 Hz refresh rate, every swipe and
               scroll feels buttery-smooth.
             </motion.span>
           </div>
         </motion.div>
       </div>
+
     </div>
   );
 };
