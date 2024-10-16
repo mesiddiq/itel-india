@@ -1,11 +1,13 @@
-import arrowRight from '/smartphone/S24/rightArrow.svg'
+/* eslint-disable react/prop-types */
 
-const BuyNowText = () => {
+const BuyNowText = ({ content }) => {
   return (
-    <div className='flex flex-row gap-2 justify-center items-center'>
-      <span className='font-medium text-[12px] leading-[19.2px] tracking-[-0.02em] lg:text-desktop/button'>BUY NOW</span>
+    <div className='font-markot flex flex-row gap-2 justify-center items-center'>
+      <span className='text-black text-mobile/button lg:text-desktop/button uppercase'>
+        { content }
+      </span>
       <span>
-        <img src={arrowRight} alt="arrowRight" className='w-6 h-6'/>
+        <img src='/smartphone/S24/rightArrow.svg' alt="arrowRight" className='w-6 h-6'/>
       </span>
     </div>
   )

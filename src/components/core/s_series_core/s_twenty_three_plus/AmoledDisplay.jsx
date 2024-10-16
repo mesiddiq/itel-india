@@ -1,22 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-import Marquee from "react-fast-marquee";
-import ReactPlayer from 'react-player'
+const AmoledDisplay = (props) => {
+  const { scrollY } = props;
+  const [startAnimation, setStartAnimation] = useState(false);
+  const [showImages, setShowImages] = useState(false);
 
-import AmoledDisplayText from '../../../../images/s_series/s_twenty_three_plus/AmoledDisplayText.svg';
-import AmoledDisplayPhone from '../../../../images/s_series/s_twenty_three_plus/AmoledDisplayPhone.svg';
+  useEffect(() => {
+    if (screen.width > 1000) {
+      setStartAnimation(scrollY >= 2700);
+    } else {
+      setStartAnimation(scrollY >= 1900);
+    }
+  }, [scrollY]);
 
-import '../../../../pages/s_series/style.css';
+  useEffect(() => {
+    console.log("startAmoledAnimation", startAnimation);
+    if (startAnimation) {
+      const startVideo = setTimeout(() => {
+        setShowImages(true);
+      }, 500); // Delay before showing the paragraph
 
-const AmoledDisplay = () => {
+      return () => clearTimeout(startVideo);
+    }
+  }, [startAnimation]);
+
   return (
     <div className='amoled-display-section'>
-    	<div className='amoled-display-section-phone'>
-    		<img src={AmoledDisplayPhone} width={840} height={425} />
-    	</div>
-    	<div className='amoled-display-section-text'>
-    		<img src={AmoledDisplayText} width={872} height={401} />
-    	</div>
+      {showImages && (
+        <>
+        	<div className='amoled-display-section-phone'>
+        		<img src='/s_twenty_three_plus/AmoledDisplayPhone.svg' width={840} height={425} />
+        	</div>
+        	<div className='amoled-display-section-text'>
+        		<img src='/s_twenty_three_plus/AmoledDisplayText.svg' width={872} height={401} />
+        	</div>
+        </>
+      )}
     </div>
   );
 };
