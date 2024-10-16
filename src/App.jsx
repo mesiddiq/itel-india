@@ -20,7 +20,10 @@ import EWaste from './pages/static_pages/header/Support/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
-import ServiceCenters from './pages/static_pages/ServiceCenters'
+
+import CSR from './pages/static_pages/CSR'
+import P_Series_Parent from './pages/p_series/P_Series_Parent'
+
 function App() {
 
 	useEffect(() => {
@@ -46,27 +49,51 @@ function App() {
 						<Link className='text-blue-500 underline' to='/contactus'>Contact US </Link>
 						<Link className='text-blue-500 underline' to='/csr'>Csr</Link>
 					</div>} />
+
+				{/********************************************************/}
+				{/* 					Static Pages					 */}
+				{/********************************************************/}
+
 				<Route path='/homepage' element={<HomePage />} />
+				<Route path='/aboutus' element={<Aboutus />} />
+				<Route path='/contactus' element={<Contactus />} />
+				<Route path='/csr' element={<CSR />} />
+
+				{/* ***************************************************************************************************/}
+				{/* *******************************************SmartPhones*********************************************/}
+				{/* ***************************************************************************************************/}
+				
+				{/********************************************************/}
+				{/* 					S series						 */}
+				{/********************************************************/}
+
 				<Route path='/smartphones/s-series' element={<S_Series_Parent />} >
 					<Route path='s23' element={<STwentyThree />} />
 					<Route path='s23p' element={<STwentyThreePlus />} />
 					<Route path='s24' element={<STwentyFour />} />
 				</Route>
-				<Route path='/smartphones/p-series/p55' element={<PFiftyFive />} />
-				<Route path='/featurephones/s-guru-4g' element={<SuperGuru4G />} />
-				{/* {
-					support and there pages
-				} */}
-				<Route path='/support' element={<Support/>} />
-				<Route path='/support/Screen Replacement' element={<ScreenReplacement/>} />
-				<Route path='/support/E-Waste Management' element={<EWaste/>} />
-				<Route path='/support/100 Days Promise' element={<Promise100/>} />
-				<Route path='/CSR' element={<CSR/>} />
-				<Route path='/aboutus' element={<Aboutus/>} />
-				<Route path='/contactus' element={<Contactus/>} />
-				<Route path='/servicecenters'element={<ServiceCenters/>} />
+	
+				{/********************************************************/}
+				{/* 					P series						 */}
+				{/********************************************************/}
+
+				<Route path='/smartphones/p-series' element={<P_Series_Parent />} >
+					<Route path='p55' element={<PFiftyFive />} />
+				</Route>
+
+				{/********************************************************/}
+				{/* 					A series						 */}
+				{/********************************************************/}
 
 
+
+				{/***************************************************************************************************/}
+				{/*****************************************Feature Phoness*******************************************/}
+				{/***************************************************************************************************/}
+
+				{/********************************************************/}
+				{/* 				  Super series						 */}
+				{/********************************************************/}
 				<Route path='/featurephones/super-guru-4g' element={<SuperGuru4G />} />
 				<Route path='/featurephones/super-guru-400' element={<SuperGuru400 />} />
 				<Route path='/featurephones/super-guru-600' element={<SuperGuru600 />} />

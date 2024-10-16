@@ -7,7 +7,7 @@ import SupportChannels from '../../components/common/smartphone_common/SupportCh
 import Accessories from '../../components/common/smartphone_common/Accessories'
 import Model from '../../components/common/smartphone_common/Model'
 
-const S_Series_Parent = () => {
+const P_Series_Parent = () => {
     return (
         <div className='bg-[#111111]'>
             <Outlet />
@@ -21,4 +21,4 @@ const S_Series_Parent = () => {
     )
 }
 
-export default S_Series_Parent
+export default P_Series_Parent
