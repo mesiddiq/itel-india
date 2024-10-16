@@ -1,6 +1,6 @@
 import React from "react";
 import MainHeader from "../MainHeader";
-import Footer from "../../Footer";
+
 
 const Promise100 = () => {
   return (

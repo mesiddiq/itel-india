@@ -10,13 +10,14 @@ import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import SuperGuru4G from './pages/feature_phone/SuperGuru4G'
 import Footer from './components/common/Footer'
-import Support from './components/common/header/Support'
-import ScreenReplacement from './components/common/header/Support/ScreenReplacement'
-import EWaste from './components/common/header/Support/E-Waste'
-import Promise100 from './components/common/header/Support/Promise100'
+import Support from './pages/static_pages/header/Support'
+import ScreenReplacement from './pages/static_pages/header/Support/ScreenReplacement'
+import Promise100 from './pages/static_pages/header/Support/Promise100'
+import EWaste from './pages/static_pages/header/Support/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
+import ServiceCenters from './pages/static_pages/ServiceCenters'
 function App() {
 
 	useEffect(() => {
@@ -54,6 +55,7 @@ function App() {
 				<Route path='/CSR' element={<CSR/>} />
 				<Route path='/aboutus' element={<Aboutus/>} />
 				<Route path='/contactus' element={<Contactus/>} />
+				<Route path='/servicecenters'element={<ServiceCenters/>} />
 
 
 			</Routes>
