@@ -37,7 +37,7 @@ const STwentyThree = () => {
 
             <SimilarProducts/>
             <SupportChannels/>
-            <OtherProducts/>
+            {/* <OtherProducts/> */}
             
 
         </div>
