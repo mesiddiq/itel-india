@@ -23,6 +23,9 @@ import Contactus from './pages/static_pages/Contactus'
 
 import P_Series_Parent from './pages/p_series/P_Series_Parent'
 import ServiceCenters from './pages/static_pages/ServiceCenters'
+import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
+import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
+import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
 
 function App() {
 
@@ -41,6 +44,7 @@ function App() {
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s23'>s-23</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s23p'>s-23-plus</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/s-series/s24'>s-24</Link>
+						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55-5g'>p-55 5G</Link>
 						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55'>p-55</Link>
 						<Link className='text-blue-500 underline' to='/featurephones/super-guru-4g'>s guru 4g</Link>
 						<Link className='text-blue-500 underline' to='/featurephones/super-guru-400'>s guru 400</Link>
@@ -90,7 +94,10 @@ function App() {
 				{/********************************************************/}
 
 				<Route path='/smartphones/p-series' element={<P_Series_Parent />} >
+					<Route path='p55-5g' element={<PFiftyFive5g />} />
 					<Route path='p55' element={<PFiftyFive />} />
+					<Route path='p55' element={<PFiftyFivePlus />} />
+					<Route path='p55' element={<PFiftyFiveT/>} />
 				</Route>
 
 				{/********************************************************/}
