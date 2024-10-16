@@ -129,7 +129,6 @@ const MultipleCardComponents = () => {
         </section>
 
       </section>
-    </div >
   )
 }
 
