@@ -7,6 +7,7 @@ import Grayframe from '../../components/core/p_series_core/P_Fifty_Five.jsx/Gray
 import Powerful from '../../components/core/p_series_core/P_Fifty_Five.jsx/Powerful';
 import Accessories from '../../components/common/smartphone_common/Accessories'
 import Model from '../../components/common/smartphone_common/Model';
+import Pvideo from '../../components/core/p_series_core/P_Fifty_Five.jsx/Pvideo';
 import Connectivity from '../../components/core/p_series_core/P_Fifty_Five.jsx/Connectivity'
 import Storage from '../../components/core/p_series_core/P_Fifty_Five.jsx/Storage'
 import Gaming from '../../components/core/p_series_core/P_Fifty_Five.jsx/Gaming'
@@ -32,6 +33,7 @@ const PFiftyFive = () => {
   
      
       <Connectivity />
+      <Pvideo/>
       <Storage/>
       <Powerful/>
       <Gaming />
