@@ -6,8 +6,8 @@ const CSR = () => {
     <div className=" overflow-hidden font-markot">
         <MainHeader/>
 
-      <div className=" h-screen w-screen p-5 lg:p-20 flex bg-rose-400  flex-col justify-center items-center">
-        <img className=" py-7 " src="https://dummyimage.com/60" alt="" />
+      <div className=' lg:bg-[url("/banners/Frame%201973341368.png")] bg-[url("/banners/moblie%20-%20service%20center%20BG.png")]  bg-cover bg-center h-screen w-screen p-5 lg:p-20 flex   flex-col justify-center items-center'>
+        <img className=" py-7 " src={'./static_page/heart.png'} alt="" />
         
         <p className=" text-mobile/h1 text-center text-white lg:text-desktop/h1 font-markot">
           Corporate Social

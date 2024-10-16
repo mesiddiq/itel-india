@@ -69,8 +69,8 @@ const EWaste = () => {
     <div className=" font-markot overflow-hidden">
       <MainHeader />
 
-      <div className="  lg:p-20 p-5 flex items-center   bg-gray-500 h-screen w-screen border border-black">
-        <div className=" lg:w-[981px]">
+      <div className='lg:bg-[url("/banners/Frame%201973341368.png")] bg-[url("/banners/moblie%20-%20service%20center%20BG.png")]  bg-cover bg-center lg:h-screen w-full lg:p-20 p-10'>
+         <div className=" lg:w-[981px]">
           <p className=" lg:text-desktop/h1 text-mobile/h1 text-white">
             Ditch Your Old Gadgets with Us!
           </p>

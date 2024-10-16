@@ -6,7 +6,7 @@ const ScreenReplacement = () => {
     <>
       <div className=" font-markot overflow-hidden">
         <MainHeader />
-        <div className="    p-20 flex items-center  bg-itel-red h-screen w-screen border border-black">
+        <div className='lg:bg-[url("/banners/Frame%201973341368.png")] bg-[url("/banners/moblie%20-%20service%20center%20BG.png")]  bg-cover bg-center lg:p-20 p-5 flex items-center h-screen w-screen border border-black'>
           <div className=" lg:w-[784px] w-[280px]">
             <p className="   text-mobile/h1 lg:text-desktop/h1  text-white font-medium">
               Get a Free Screen Replacement

@@ -179,7 +179,7 @@ const Support = () => {
       <MainHeader />
       <div className=" flex flex-col justify-center items-center h-[550px] w-screen bg-red-500">
         <p className=" lg:text-desktop/h3  text-mobile/h5/medium text-white">Welcome to</p>
-        <p className="  text-white text-mobile/h1 lg;text-desktop/h1  mt-5">itel Support</p>
+        <p className="  text-white text-mobile/h1 lg:text-desktop/h1  mt-5">itel Support</p>
         <p className=" text-white tracking-wide mt-5">
           We're here to help you tackle any tech troubles head-on.
         </p>
