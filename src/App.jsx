@@ -21,8 +21,8 @@ import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
 
-import CSR from './pages/static_pages/CSR'
 import P_Series_Parent from './pages/p_series/P_Series_Parent'
+import ServiceCenters from './pages/static_pages/ServiceCenters'
 
 function App() {
 
@@ -45,24 +45,36 @@ function App() {
 						<Link className='text-blue-500 underline' to='/featurephones/super-guru-4g'>s guru 4g</Link>
 						<Link className='text-blue-500 underline' to='/featurephones/super-guru-400'>s guru 400</Link>
 						<Link className='text-blue-500 underline' to='/featurephones/super-guru-600'>s guru 600</Link>
-						<Link className='text-blue-500 underline' to='/aboutus'>About us </Link>
-						<Link className='text-blue-500 underline' to='/contactus'>Contact US </Link>
-						<Link className='text-blue-500 underline' to='/csr'>Csr</Link>
-					</div>} />
+						<Link className='text-blue-500 underline' to='/support'>Support</Link>
+						<Link className='text-blue-500 underline' to='/csr'>CSR</Link>
+						<Link className='text-blue-500 underline' to='/aboutus'>About us</Link>
+						<Link className='text-blue-500 underline' to='/contactus'>Contact us</Link>
+						<Link className='text-blue-500 underline' to='/servicecenters'>Service Centers</Link>
+						<Link className='text-blue-500 underline' to='/support/screenreplacement'>Screen Replacement</Link>
+						<Link className='text-blue-500 underline' to='/support/e-waste-management'>E-Waste Management</Link>
+						<Link className='text-blue-500 underline' to='/support/100-days-promise'>100 Days Promise</Link>
 
+					</div>} />
+	
 				{/********************************************************/}
 				{/* 					Static Pages					 */}
 				{/********************************************************/}
+				
 
 				<Route path='/homepage' element={<HomePage />} />
+				<Route path='/support' element={<Support />} />
+				<Route path='/support/screenreplacement' element={<ScreenReplacement />} />
+				<Route path='/support/e-waste-management' element={<EWaste />} />
+				<Route path='/support/100-days-promise' element={<Promise100 />} />
+				<Route path='/csr' element={<CSR />} />
 				<Route path='/aboutus' element={<Aboutus />} />
 				<Route path='/contactus' element={<Contactus />} />
-				<Route path='/csr' element={<CSR />} />
+				<Route path='/servicecenters' element={<ServiceCenters />} />
 
 				{/* ***************************************************************************************************/}
 				{/* *******************************************SmartPhones*********************************************/}
 				{/* ***************************************************************************************************/}
-				
+
 				{/********************************************************/}
 				{/* 					S series						 */}
 				{/********************************************************/}
@@ -72,7 +84,7 @@ function App() {
 					<Route path='s23p' element={<STwentyThreePlus />} />
 					<Route path='s24' element={<STwentyFour />} />
 				</Route>
-	
+
 				{/********************************************************/}
 				{/* 					P series						 */}
 				{/********************************************************/}
