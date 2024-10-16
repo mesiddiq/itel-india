@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-import '../../../../pages/s_series/style.css';
+// import '../../../../pages/s_series/style.css';
 
 const SliderAnimation = () => {
   return (

@@ -1,8 +1,8 @@
 const MultipleCardComponents = () => {
   return (
-    <section className='font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] lg:px-[80px] bg-[#1c1b1b] flex flex-col gap-5'>
+    <section className='font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] bg-[#1c1b1b] flex flex-col gap-5'>
       {/* upper-half-3-divs */}
-      <section className='upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
+      <section className='content upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
         
           {/* Card 1 */}
           <div className='w-full lg:w-[40%] min-h-[506px] h-[506px] lg:h-[784px] rounded-2xl overflow-hidden flex flex-col relative bg-black group'>
@@ -49,7 +49,10 @@ const MultipleCardComponents = () => {
 
               {/* Card 3 */}
               <div className='flex flex-col w-full min-h-[380px] h-[380px] rounded-2xl p-4 lg:p-10 bg-black group relative overflow-hidden'>
-                <div className='flex flex-col gap-2 lg:justify-between h-[292px] w-[292px] z-10'>
+                <div className='flex flex-col gap-2 lg:justify-between lg:h-[292px] w-[292px] z-10 bg-black bg-opacity-80 backdrop-blur-md rounded-lg'
+                  style={{
+                    boxShadow: '0px 0px 35px 30px rgba(0, 0, 0, 1)', // Creates the faded border effect
+                  }}>
                   <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
                     Quick Charge with Bypass Charging
                   </span>
@@ -59,11 +62,12 @@ const MultipleCardComponents = () => {
                   </span>
                 </div>
 
+
                 {/* Image added here */}
                 <img
                   src='/smartphone/S24/quickCharge.png'
-                  alt='Ultra Storage Vault'
-                  className='absolute lg:left-[200px] lg:-top-[150px] left-2/3 bottom-0 scale-[60%] group-hover:scale-[70%] transition-transform duration-700'
+                  alt='quickCharge'
+                  className='absolute lg:left-[200px] lg:-top-[300px] left-[100px] top-[40px] scale-[120%] lg:scale-[80%] group-hover:scale-[130%] lg:group-hover:scale-[90%] transition-transform duration-700'
                 />
               </div>
 
@@ -72,7 +76,7 @@ const MultipleCardComponents = () => {
       </section>
 
       {/* lower-half-3-divs */}
-      <section className='font-markot lower-half-3-divs flex flex-col gap-5 justify-between'>
+      <section className='content font-markot lower-half-3-divs flex flex-col gap-5 justify-between'>
         
         {/* Card 4 */}
         <div className='group overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] bg-black h-[430px] lg:h-[451px] relative'>
