@@ -90,7 +90,7 @@ const ScreenReplacement = () => {
                 </p>
                 <p className=" text-white mt-4">
                   Get free original screen replacement: Enjoy your phone
-                  <br /> without the stress— itel's got your back!
+                  <br/> without the stress— itel's got your back!
                 </p>
               </div>
             </div>
