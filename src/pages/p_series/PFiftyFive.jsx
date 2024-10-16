@@ -30,19 +30,19 @@ const PFiftyFive = () => {
       <>
       <Home/>
       <About />
-  
-     
-      <Connectivity />
       <Pvideo/>
-      <Storage/>
-      <Powerful/>
-      <Gaming />
-      
       <Grayframe/>
-      <Chatgpt/>
+      <Connectivity />
+      <Powerful/>
+      <Storage/>
+   
+      <Gaming />
       <Battery/>
       
       <Camera/>
+     
+      <Chatgpt/>
+     
       <Warrenty/>
      <Mobile_grid/>
      

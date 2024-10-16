@@ -10,7 +10,7 @@ const Chatgpt = () => {
       <div className="flex flex-col gap-[48px] justify-center px-4 lg:px-0" data-aos="fade-right">
         <div className='flex flex-col gap-[12px]'>
           <h2 className='text-mobile/h3 md:text-desktop/h2 text-white'>Smart assistant: itel Aivana ChatGPT Bot</h2>
-          <p className='text-mobile/body/2 md:text-[16px] text-white'>
+          <p className='text-mobile/body/2 md:text-[16px] text-white md:w-[413px]'>
             Personalize your experience and improve your task performance with itel Aivana ChatGPT bot.
           </p>
         </div>

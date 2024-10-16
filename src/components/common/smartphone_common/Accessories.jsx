@@ -29,15 +29,15 @@ const Accessories = () => {
     <div className='bg-black h-auto flex justify-center w-full py-[40px]'>
       <div className='content w-full flex flex-col gap-[36px] px-4'>
         <h3 className='text-mobile/h4 md:text-desktop/h3 text-white'>Level Up Your Experience with Accessories!</h3>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-[20px] justify-center'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-[20px] justify-center '>
           {/* Map through accessoriesData to render the content directly */}
           {accessoriesData.map((accessory, index) => (
-            <div key={index} className="bg-[#232323] rounded-[16px] flex flex-col p-4 items-center text-center text-white">
+            <div key={index} className="bg-[#232323] rounded-[16px] flex flex-col p-4 items-center text-center text-white ">
               <div className='flex justify-center items-center'>
-                <img src={accessory.imageSrc} alt={accessory.title} className='h-[220px] w-[220px]' />
+                <img src={accessory.imageSrc} alt={accessory.title} className='md:h-[220px] md:w-[220px] h-[102px] w-[100px]' />
               </div>
-              <h4 className='text-desktop/h4'>{accessory.title}</h4>
-              <h6 className='text-desktop/h6'>{accessory.price}</h6>
+              <h4 className='text-mobile/h6 md:text-desktop/h4'>{accessory.title}</h4>
+              <h6 className='text-desktop/h6 font-markot'>{accessory.price}</h6>
             </div>
           ))}
         </div>

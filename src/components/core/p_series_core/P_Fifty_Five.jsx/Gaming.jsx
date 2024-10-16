@@ -25,7 +25,7 @@ const Gaming = () => {
             Experience the best of both worlds with the enormous 6.6" HD+ IPS display and lightning-fast MediaTek Dimensity 6080 processor - perfect for avid gamers.
           </p>
         </div>
-        <div className='flex justify-between gap-[8px]'>
+        <div className='flex gap-[28px]'>
           <div className='flex flex-col gap-[8px]'>
             <img src='/P_Series/game_icon.png' className='h-[40px] w-[40px]' alt="Game Icon"/>
             <h6 className='text-desktop/h6/medium text-white'>Hyper Engine</h6>

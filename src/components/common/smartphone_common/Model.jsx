@@ -73,7 +73,7 @@ const Model = () => {
                 </div>
                 <div className='flex flex-col gap-4'>
                   {model.features.map((feature, idx) => (
-                    <div key={idx} className='flex justify-between items-center'>
+                    <div key={idx} className='flex flex-col md:flex-row md:justify-between gap-[20px] items-center'>
                       <p className='text-[#F8F6F3] text-desktop/subtitle '>{feature.label}</p>
                       <p className='text-[#D9D9D9] text-desktop/body/2/regular '>{feature.value}</p>
                     </div>

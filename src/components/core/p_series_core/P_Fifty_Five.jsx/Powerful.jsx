@@ -27,7 +27,7 @@ const Powerful = () => {
             </p>
           </div>
 
-          <div className="flex text-white gap-[48px]">
+          <div className="flex text-white gap-[14px] font-markot md:gap-[48px]">
             <div className="text-desktop/body/1">
               <span className="text-mobile/body/2 md:text-desktop/h3 font-bold">6nm</span><br />
               Fast and Efficient Chipset
