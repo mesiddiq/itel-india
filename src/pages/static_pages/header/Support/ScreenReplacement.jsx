@@ -68,7 +68,7 @@ const ScreenReplacement = () => {
             </div>
             <div>
               <img
-                src=""
+                src=" "
                 alt=""
                 className=" h-10 w-10 border border-black rounded-full"
               />
