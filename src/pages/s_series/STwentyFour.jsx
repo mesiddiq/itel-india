@@ -16,6 +16,7 @@ import FullSpecifications from "../../components/common/FullSpecifications"
 import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
 import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
 import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
+import ModernTwist from "../../components/core/s_series_core/S_Twenty_Four/ModernTwist"
 
 const STwentyFour = () => {
     return (
@@ -40,6 +41,8 @@ const STwentyFour = () => {
             <SinglePhoneImageContainer />
 
             <PunchHoleDisplay />
+
+            <ModernTwist />
 
             <MultipleCardComponents />
 
