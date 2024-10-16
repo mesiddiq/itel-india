@@ -68,7 +68,7 @@ const InquiryForm = () => {
           </div>
         </div>
 
-        {/* Inquiry Form */}
+        {/* Inquiry Form*/}
         <div className="w-full bg-bg/primary/1 lg:w-2/3 lg:pl-8">
           <h2 className=" text-mobile/h4 lg:text-desktop/h2 text-center  mb-4">Inquiry Form</h2>
           <p className=" text-desktop/body/2/regular text-grey/grey/5 mb-6">
