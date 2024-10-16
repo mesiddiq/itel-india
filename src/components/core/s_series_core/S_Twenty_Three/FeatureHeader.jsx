@@ -2,7 +2,7 @@ import React from "react";
 
 const FeatureHeader = () => {
   return (
-    <div className="w-full  h-[96px] bg-[#161616] flex justify-between px-4 md:px-16 items-center m-0">
+    <div className="content w-full  h-[96px] bg-[#161616] flex justify-between px-4 md:px-16 items-center m-0">
       {/* Left side: Logo and Model Name */}
       <div className="flex items-center">
         <img

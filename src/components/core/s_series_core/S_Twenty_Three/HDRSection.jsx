@@ -2,7 +2,7 @@ import React from 'react';
 
 function HDRSection() {
   return (
-    <section className="relative flex flex-col justify-start md:justify-center items-center  px-2 md:px-4 py-16 w-full h-[750px] md:h-[862px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/smartphone/S_Twenty_Three/CamBg.webp')" }}>
+    <section className="content relative flex flex-col justify-start md:justify-center items-center  px-2 md:px-4 py-16 w-full h-[750px] md:h-[862px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/smartphone/S_Twenty_Three/CamBg.webp')" }}>
       <div className="w-full max-w-7xl mx-auto z-10">
         <div className="w-full mt-[5px] md:mt-[65px] ml-0 md:ml-[168px] text-center md:text-left">
           <h2 className=" text-purple-200 mb-4 font-markot text-mobile/h4 md:text-desktop/h2 md:ml-10 ">
