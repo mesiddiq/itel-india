@@ -43,12 +43,12 @@ const Model = () => {
 
   return (
     <div className='bg-black py-[60px] h-auto flex justify-center'>
-      <div className='w-full max-w-[1440px] flex flex-col gap-[36px] px-4 lg:px-12'>
-        <div className='flex flex-col md:flex-row justify-between items-center'>
-          <h3 className='text-white text-2xl md:text-3xl lg:text-4xl'>Compare Models</h3>
+      <div className='w-full content flex flex-col gap-[36px] px-4 '>
+        <div className='flex justify-between items-center'>
+          <h3 className='text-white text-mobile/h5/medium md:text-desktop/h3'>Compare Models</h3>
           <div className='flex gap-[8px] mt-4 md:mt-0'>
             <img src='/P_Series/red_model.png' className='h-[24px] w-[25px]' alt='Model' />
-            <h2 className='text-white text-lg lg:text-xl'>Compare other models</h2>
+            <h2 className='text-white md:text-desktop/tertiary/cta'>Compare other models</h2>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ const Model = () => {
                   ))}
                 </div>
               </div>
-              <div className='py-[12px] px-[24px]'>
+              <div className='py-[12px] '>
               
               </div>
             </div>

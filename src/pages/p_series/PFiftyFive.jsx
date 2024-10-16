@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Home from '../../components/core/p_series_core/P_Fifty_Five.jsx/Home'
 import About from '../../components/core/p_series_core/P_Fifty_Five.jsx/About'
 import Grayframe from '../../components/core/p_series_core/P_Fifty_Five.jsx/Grayframe'
@@ -14,6 +16,15 @@ import Mobile_grid from '../../components/core/p_series_core/P_Fifty_Five.jsx/Mo
 import Battery from '../../components/core/p_series_core/P_Fifty_Five.jsx/Battery'
 import Camera from '../../components/core/p_series_core/P_Fifty_Five.jsx/Camera'
 const PFiftyFive = () => {
+ 
+  useEffect(() => {
+    // Initialize AOS when the component mounts
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+  
     return (
       <>
       <Home/>
@@ -28,7 +39,7 @@ const PFiftyFive = () => {
       <Grayframe/>
       <Chatgpt/>
       <Battery/>
-      <Storage/>
+      
       <Camera/>
       <Warrenty/>
      <Mobile_grid/>
