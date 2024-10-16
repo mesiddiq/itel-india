@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import StickyHeader from '../../components/common/StickyHeader';
 import AmoledDisplay from '../../components/core/s_series_core/s_twenty_three_plus/AmoledDisplay';
-import BlogCards from '../../components/core/s_series_core/s_twenty_three_plus/BlogCards';
+// import BlogCards from '../../components/core/s_series_core/s_twenty_three_plus/BlogCards';
 import HeroBanner from '../../components/core/s_series_core/s_twenty_three_plus/HeroBanner';
 import ImmersiveEntertainment from '../../components/core/s_series_core/s_twenty_three_plus/ImmersiveEntertainment';
 import NewVision from '../../components/core/s_series_core/s_twenty_three_plus/NewVision';
@@ -14,6 +14,7 @@ import ThinDesign from '../../components/core/s_series_core/s_twenty_three_plus/
 import TimeLapse from '../../components/core/s_series_core/s_twenty_three_plus/TimeLapse';
 import UnlockTouch from '../../components/core/s_series_core/s_twenty_three_plus/UnlockTouch';
 import Video from '../../components/core/s_series_core/s_twenty_three_plus/Video';
+import BlogCardsNew from '../../components/core/s_series_core/S_Twenty_Three_Plus/BlogCardsNew';
 const STwentyThreePlus = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -47,7 +48,8 @@ const STwentyThreePlus = () => {
         <SnapFlawlessSelfie scrollY={scrollY} />
         <UnlockTouch scrollY={scrollY} />
         <ThinDesign scrollY={scrollY} />
-        <BlogCards scrollY={scrollY} />
+        {/* <BlogCards scrollY={scrollY} /> */}
+        <BlogCardsNew scrollY={scrollY} />
       </main>
     </>
   )
