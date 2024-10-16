@@ -66,26 +66,26 @@ const EWaste = () => {
   };
 
   return (
-    <div className=" overflow-hidden">
+    <div className=" font-markot overflow-hidden">
       <MainHeader />
 
-      <div className="  p-20 flex items-center   bg-gray-500 h-screen w-screen border border-black">
-        <div>
-          <p className=" text-6xl text-white font-medium">
-            Ditch Your Old <br /> Gadgets with Us!
+      <div className='lg:bg-[url("/banners/Frame%201973341368.png")] bg-[url("/banners/moblie%20-%20service%20center%20BG.png")]  bg-cover bg-center lg:h-screen w-full lg:p-20 p-10'>
+         <div className=" lg:w-[981px]">
+          <p className=" lg:text-desktop/h1 text-mobile/h1 text-white">
+            Ditch Your Old Gadgets with Us!
           </p>
 
-          <p className=" mt-5 text-white">
+          <p className=" mt-5 lg:text-desktop/body/large text-desktop/body/1  text-white">
             Got old gadgets collecting dust? Don't just toss them! Drop off your
-            outdated tech <br /> with us, and we'll recycle it responsibly. Save
+            outdated tech with us, and we'll recycle it responsibly. Save
             the planet, one gadget at a time!
           </p>
         </div>
       </div>
 
-      <div className=" p-20">
-        <div   className=" space-y-10">
-          <p data-aos="fade-up">
+      <div className=" lg:p-20 p-5">
+        <div   className=" text-desktop/body/1 text-grey/grey/5 space-y-10">
+          <p  className="" data-aos=" fade-up">
             E-waste is a popular, informal name for electronic waste products
             nearing the end of their “useful life.” Telephones, pay phones,
             cordless phones, air conditioners, televisions, refrigerators,
@@ -105,13 +105,13 @@ const EWaste = () => {
 
           <img data-aos="fade-up" src={"/support/Banner Section.png"} alt="" className="" />
 
-          <div className=" h-screen flex items-center ">
+          <div className=" flex items-center ">
             <div className=" h-[80%] w-full p-10 border bg-[#F8F6F3]">
-              <p data-aos="fade-up" className=" text-center font-medium text-4xl ">
+              <p data-aos="fade-up" className=" text-center font-medium text-mobile/h4 lg:text-desktop/h3 ">
                 E-Waste Drop Points
               </p>
-              <div className=" p-10  ">
-                <p data-aos="fade-up" className="  tracking-wide">
+              <div className=" lg:p-10 p-3 ">
+                <p data-aos="fade-up" className=" text-desktop/body/2/regular">
                   Looking to get rid of your old electronics responsibly? Our
                   Eco Drop Zones make it easy. Find our collection and drop
                   points near you to safely dispose of e-waste. Together, we can
@@ -123,7 +123,7 @@ const EWaste = () => {
                   <div className="flex w-full  flex-col md:flex-row justify-between ">
                     {/* State Dropdown */}
                     <div data-aos="fade-right" className="flex flex-col items-start">
-                      <label className="mb-2 font-medium text-gray-700">
+                      <label className="mb-2 text-grey/grey/5 font-medium text-mobile/h6 lg:text-desktop/h6/medium">
                         State
                       </label>
                       <select
@@ -142,8 +142,8 @@ const EWaste = () => {
 
                     {/* City Dropdown */}
                     <div data-aos="fade-left" className="flex flex-col items-start">
-                      <label className="mb-2 font-medium text-gray-700">
-                        City
+                    <label className="mb-2 text-grey/grey/5 font-medium text-mobile/h6 lg:text-desktop/h6/medium">
+                    City
                       </label>
                       <select
                         value={selectedCity}
@@ -163,7 +163,7 @@ const EWaste = () => {
                   {/* Search Button */}
                   <button data-aos="fade-in"
                     onClick={handleSearch}
-                    className="mt-6 bg-black text-white py-3 px-8 rounded-full hover:bg-white hover:text-black hover:shadow-2xl hover:border hover:border-black  transition duration-300 flex items-center justify-center"
+                    className="mt-6 bg-black lg:text-desktop/button text-mobile/button text-white py-3 px-8 rounded-full hover:bg-white hover:text-black hover:shadow-2xl hover:border hover:border-black  transition duration-300 flex items-center justify-center"
                   >
                     SEARCH
                     <span className="ml-2 text-red-500">→</span>
@@ -173,12 +173,12 @@ const EWaste = () => {
             </div>
           </div>
 
-          <div className=" space-y-10 text-[#252525]">
-            <p data-aos="fade-up" className=" font-bold text-4xl">
+          <div className=" space-y-10">
+            <p data-aos="fade-up" className=" text-brand/black lg:text-desktop/h3 text-mobile/h3">
               S Mobile Devices Private Limited - Recycling Program
             </p>
-
-            <p data-aos="fade-up">
+          <div className=" text-desktop/body/2/regular space-y-4 text-grey/grey/5 lg:text-desktop/body/1">
+          <p className="" data-aos="fade-up">
               At S Mobile Devices Private Limited, we understand that our
               responsibility doesn’t end at selling you our products. S Mobile
               Devices Private Limited has been working in the area of safe
@@ -188,12 +188,12 @@ const EWaste = () => {
               and Forests (MoEF & CC) called E-Waste (Management) Rules, 2016,
               which came into effect on 1st Oct 2016.
             </p>
-            <p data-aos="fade-up">
+            <p className="" data-aos="fade-up">
               S Mobile Devices Private Limited will seek shared responsibility
               and cooperation from customers in reducing the environmental
               impact of their products.
             </p>
-            <p data-aos="fade-up">
+            <p  className="" data-aos="fade-up">
               S Mobile Devices Private Limited will comply with all applicable
               laws related to e-waste management. As a part of our e-waste
               recycling initiative, S Mobile Devices Private Limited has
@@ -202,11 +202,14 @@ const EWaste = () => {
               sound management of end-of-life electronics.
             </p>
           </div>
+          
+          </div>
 
-          <div className=" space-y-10 pt-10  text-[#252525]">
-            <p data-aos="fade-up" className=" font-bold text-4xl">3R Recycler</p>
+          <div className=" space-y-10 pt-10  ">
+          <p data-aos="fade-up" className=" text-brand/black lg:text-desktop/h3 text-mobile/h3">
+          3R Recycler</p>
 
-            <p data-aos="fade-up">
+            <p className=" text-desktop/body/2/regular space-y-4 text-grey/grey/5 lg:text-desktop/body/1" data-aos="fade-up">
               As part of this partnership with 3R Recycler, the company will
               ensure environmentally sound management of electronics that have
               reached their end-of-life phase. 3R Recycler has obtained all the
@@ -219,10 +222,11 @@ const EWaste = () => {
             </p>
           </div>
 
-          <div className=" space-y-10 pt-10  text-[#252525]">
-            <p data-aos="fade-up" className=" font-bold text-4xl">Exigo Recycling Pvt Ltd</p>
+          <div className=" space-y-10 pt-10 ">
+          <p data-aos="fade-up" className=" text-brand/black lg:text-desktop/h3 text-mobile/h3">Exigo Recycling Pvt Ltd</p>
 
-            <p data-aos="fade-up">
+          <p className=" text-desktop/body/2/regular space-y-4 text-grey/grey/5 lg:text-desktop/body/1" data-aos="fade-up">
+
               Exigo Recycling Pvt. Ltd. is an initiative started to remove the
               complexity out of the process of electronic assets management and
               recycling. Our aim is to provide a simple,
@@ -240,57 +244,57 @@ const EWaste = () => {
       <div className=" bg-[#F8F6F3] p-20">
         <p  data-aos="fade-up" className=" font-bold text-4xl">Do's</p>
 
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-20 mt-10">
+        <div className=" grid grid-cols-1 lg:grid-cols-3  text-grey/grey/5 gap-20 mt-10">
           <div data-aos="fade-up" className=" space-y-4">
-            <img src="https://dummyimage.com/30" alt="" />
-            <p className=" text-[#252525]">
+            <img  className=" h-[35px]"  src={'/static_page/Frame 1973341441.png'} alt="check image" />
+            <p className=" text-desktop/body/2/regular lg:text-desktop/body/1">
               Follow the instructions for proper handling of end-of-life
               equipment in our catalogs.
             </p>
           </div>
           <div  data-aos="fade-up" className=" space-y-4">
-            <img src="https://dummyimage.com/30" alt="" />
-            <p className=" text-[#252525]">
+          <img  className=" h-[35px]"  src={'/static_page/Frame 1973341441.png'} alt="check image" />
+            <p className=" text-desktop/body/2/regular lg:text-desktop/body/1">
               Make sure that your electronic products are recycled only by
               authorized recyclers/dismantlers.
             </p>
           </div>
           <div  data-aos="fade-up" className=" space-y-4">
-            <img src="https://dummyimage.com/30" alt="" />
-            <p className=" text-[#252525]">
+          <img  className=" h-[35px]"  src={'/static_page/Frame 1973341441.png'} alt="check image" />
+            <p className=" text-desktop/body/2/regular lg:text-desktop/body/1">
               Consult your nearest itel Collection Point for disposing products
               that have reached end-of- life.
             </p>
           </div>
           <div  data-aos="fade-up" className=" space-y-4">
-            <img src="https://dummyimage.com/30" alt="" />
-            <p className=" text-[#252525]">
-              Drop-off used Mobile Phones, batteries or any accessories at the
+          <img  className=" h-[35px]"  src={'/static_page/Frame 1973341441.png'} alt="check image" />
+            <p className=" text-desktop/body/2/regular lg:text-desktop/body/1">
+            Drop-off used Mobile Phones, batteries or any accessories at the
               nearest itel Collection Point.
             </p>
           </div>
           <div  data-aos="fade-up" className=" space-y-4">
-            <img src="https://dummyimage.com/30" alt="" />
-            <p className=" text-[#252525]">
+          <img  className=" h-[35px]"  src={'/static_page/Frame 1973341441.png'} alt="check image" />
+            <p className=" text-desktop/body/2/regular lg:text-desktop/body/1">
               Follow the instructions for proper handling of end-of-life
               equipment in our catalogs.
             </p>
           </div>
           <div data-aos="fade-up"  className=" space-y-4">
-            <img src="https://dummyimage.com/30" alt="" />
-            <p className=" text-[#252525]">
+          <img  className=" h-[35px]"  src={'/static_page/Frame 1973341441.png'} alt="check image" />
+            <p className=" text-desktop/body/2/regular lg:text-desktop/body/1">
               Protect the glass surface of any electronic product to avoid
               breakage.
             </p>
           </div>
         </div>
 
-        <p data-aos="fade-up" className=" mt-20 font-bold text-4xl">Don’ts</p>
+        <p data-aos="fade-up" className=" mt-20 text-mobile/h3 lg:text-desktop/h3">Don’ts</p>
 
         <div data-aos="fade-up" className=" mt-10  grid grid-cols-1  gap-10 md:grid-cols-4">
-          <div className=" space-y-4">
+          <div className="  space-y-4">
             <img src="https://dummyimage.com/50" alt="" />
-            <p  className=" text-[#252525]">
+            <p  className=" lg:text-desktop/body/1 text-desktop/body/2/regular">
               Never <b>bdismantle</b> your electronic <b>products yourself</b>{" "}
               at home.
             </p>
@@ -320,10 +324,10 @@ const EWaste = () => {
         </div>
       </div>
 
-      <div className=" space-y-10 pt-10 p-20  text-[#252525]">
-        <p data-aos="fade-up" className=" font-bold text-4xl">Lifecycle of our Products</p>
-
-        <p data-aos="fade-up">
+      <div className=" space-y-10 pt-10 p-20 ">
+      <p data-aos="fade-up" className=" text-brand/black lg:text-desktop/h3 text-mobile/h3">Lifecycle of our Products</p>
+<div className=" text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/5  space-y-4">
+  <p data-aos="fade-up">
           As defined under the New E-waste (Management) Rules, 2016, the
           lifecycle of our Feature Phone is 7 years and Smartphone is 5
           years. <br /><br />In case of any queries regarding the proper disposal and/or
@@ -335,6 +339,8 @@ const EWaste = () => {
           <a href=""> Email – info@3rrecycler.com</a>
         
         </p>
+</div>
+        
       </div>
     </div>
   );

@@ -3,6 +3,9 @@ import MainHeader from "./MainHeader";
 
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+
+
+
 const Support = () => {
   const navigate = useNavigate();
   const [activeButton, setActiveButton] = useState("Calls & Contacts");
@@ -74,27 +77,27 @@ const Support = () => {
 
   const card_data = [
     {
-      img: "./support/Frame 1973340763.png",
+      img: "/support/Frame 1973340763.png",
       service_name: "Service Center",
     },
     {
-      img: "./support/Group 1973339760.png",
+      img: "/support/Group 1973339760.png",
       service_name: "Screen Replacement",
     },
     {
-      img: "./support/Frame 1973340762.png",
+      img: "/support/Frame 1973340762.png",
       service_name: "100 Days Promise",
     },
     {
-      img: "./support/Frame 1973340762.png",
+      img: "/support/Frame 1973340762.png",
       service_name: "FAQ",
     },
     {
-      img: "./support/Group 1973339760 (1).png",
+      img: "/support/Group 1973339760 (1).png",
       service_name: "E-Waste Management",
     },
     {
-      img: "./support/Group 1973339765 (1).png",
+      img: "/support/Group 1973339765 (1).png",
       service_name: "Contact Us",
     },
   ];
@@ -175,11 +178,11 @@ const Support = () => {
   };
 
   return (
-    <div className=" overflow-hidden">
+    <div className=" font-markot overflow-hidden">
       <MainHeader />
       <div className=" flex flex-col justify-center items-center h-[550px] w-screen bg-red-500">
-        <p className=" text-4xl text-white font-medium ">Welcome to</p>
-        <p className=" text-7xl text-white  mt-5">itel Support</p>
+        <p className=" lg:text-desktop/h3  text-mobile/h5/medium text-white">Welcome to</p>
+        <p className="  text-white text-mobile/h1 lg:text-desktop/h1  mt-5">itel Support</p>
         <p className=" text-white tracking-wide mt-5">
           We're here to help you tackle any tech troubles head-on.
         </p>

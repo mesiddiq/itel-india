@@ -1,44 +1,41 @@
 import React from "react";
 import MainHeader from "../MainHeader";
 
-
 const ScreenReplacement = () => {
   return (
     <>
-      <div className=" overflow-hidden">
+      <div className=" font-markot overflow-hidden">
         <MainHeader />
-        <div className="  p-20 flex items-center   bg-gray-500 h-screen w-screen border border-black">
-          <div>
-            <p className=" text-6xl text-white font-medium">
-              Get a Free <br /> Screen Replacement
+        <div className='lg:bg-[url("/banners/Frame%201973341368.png")] bg-[url("/banners/moblie%20-%20service%20center%20BG.png")]  bg-cover bg-center lg:p-20 p-5 flex items-center h-screen w-screen border border-black'>
+          <div className=" lg:w-[784px] w-[280px]">
+            <p className="   text-mobile/h1 lg:text-desktop/h1  text-white font-medium">
+              Get a Free Screen Replacement
             </p>
 
-            <p className=" mt-5 text-white">
+            <p className=" mt-5 text-desktop/body/1 lg:text-desktop/body/large text-white">
               Got a new itel phone? No worries about cracks! With our One-Time
-              Screen <br />
-              Replacement Promise, if your screen gets damaged within the first
-              100 days, we’ll
-              <br /> replace it for free*
+              Screen Replacement Promise, if your screen gets damaged within the
+              first 100 days, we’ll replace it for free*
             </p>
           </div>
         </div>
 
         <div className=" w-screen mt-10 p-10">
-          <p className="  font-medium text-4xl text-center">
+          <p className=" text-mobile/h4 lg:text-desktop/h2 text-brand/black text-center">
             One-Time Screen Replacement
           </p>
 
-          <div className=" mt-12 grid gap-10 grid-cols-4">
+          <div className=" mt-12 grid gap-10 grid-cols-1  lg:grid-cols-4">
             <div>
               <img
                 src=""
                 alt=""
                 className=" h-10 w-10 border border-black rounded-full"
               />
-              <p className=" mt-3 text-[#1C1B1B] text-lg font-medium">
+              <p className=" mt-3 text-mobile/h5/medium lg:text-desktop/h4 text-brand/black">
                 Swap Guarantee
               </p>
-              <p className=" text-[#252525] text-sm">
+              <p className=" lg:text-desktop/body/1 mt-3  text-grey/grey/5 text-sm">
                 If your Itel phone screen gets damaged within 100 days, we'll
                 hook you up with a new one.
               </p>
@@ -49,26 +46,11 @@ const ScreenReplacement = () => {
                 alt=""
                 className=" h-10 w-10 border border-black rounded-full"
               />
-              <p className=" mt-3 text-[#1C1B1B] text-lg font-medium">
-                Swap Guarantee
+              <p className=" mt-3 text-mobile/h5/medium lg:text-desktop/h4 text-brand/black">
+              Same Specs, Same Vibes
               </p>
-              <p className=" text-[#252525] text-sm">
-                If your Itel phone screen gets damaged within 100 days, we'll
-                hook you up with a new one.
-              </p>
-            </div>
-            <div>
-              <img
-                src=""
-                alt=""
-                className=" h-10 w-10 border border-black rounded-full"
-              />
-              <p className=" mt-3 text-[#1C1B1B] text-lg font-medium">
-                Swap Guarantee
-              </p>
-              <p className=" text-[#252525] text-sm">
-                If your Itel phone screen gets damaged within 100 days, we'll
-                hook you up with a new one.
+              <p className=" lg:text-desktop/body/1 mt-3  text-grey/grey/5 text-sm">
+              Your replacement phone will be the same model or one with similar specs, so you won’t miss a beat.
               </p>
             </div>
             <div>
@@ -77,12 +59,25 @@ const ScreenReplacement = () => {
                 alt=""
                 className=" h-10 w-10 border border-black rounded-full"
               />
-              <p className=" mt-3 text-[#1C1B1B] text-lg font-medium">
-                Swap Guarantee
+              <p className=" mt-3 text-mobile/h5/medium lg:text-desktop/h4 text-brand/black">
+              Fresh Look
               </p>
-              <p className=" text-[#252525] text-sm">
-                If your Itel phone screen gets damaged within 100 days, we'll
-                hook you up with a new one.
+              <p className=" lg:text-desktop/body/1 mt-3 text-grey/grey/5 text-sm">
+              The swapped phone might look just like your old one or even better—score!
+              </p>
+            </div>
+            <div>
+              <img
+                src=" "
+                alt=""
+                className=" h-10 w-10 border border-black rounded-full"
+              />
+              <p className=" mt-3 text-mobile/h5/medium  lg:text-desktop/h4 text-brand/black">
+              Normal Warranty After 100 Days
+
+              </p>
+              <p className=" lg:text-desktop/body/1 mt-3  text-grey/grey/5 text-sm">
+              Once 100 days are up, the usual repair warranty kicks in.
               </p>
             </div>
           </div>
@@ -95,18 +90,18 @@ const ScreenReplacement = () => {
                 </p>
                 <p className=" text-white mt-4">
                   Get free original screen replacement: Enjoy your phone
-                  <br /> without the stress— itel's got your back!
+                  <br/> without the stress— itel's got your back!
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className=" bg-[#EBE8E2] p-10 ">
-          <p className=" text-3xl text-center text-black font-medium">
+        <div className=" bg-bg/secondry p-10 ">
+        <p className=" text-mobile/h4 lg:text-desktop/h2 text-brand/black text-center">
             Terms & Conditions
           </p>
-          <div className=" px-10 mt-10  space-y-1 text-sm text-[#252525]">
+          <div className=" px-10 mt-10  space-y-1 text-desktop/body/1  text-grey/grey/5">
             <p>
               1. The policy is not valid after 100 days of product purchase
               only, except for the original purchaser of the product(customer).
@@ -143,10 +138,10 @@ const ScreenReplacement = () => {
               product. Policies/Offers can be model-specific.
             </p>
           </div>
-          <div className=" px-10">
-            <p className=" text-lg mt-5 font-medium">Disclaimer </p>
+          <div className=" ">
+            <p className="  text-desktop/h4 mt-5">Disclaimer </p>
 
-            <div className=" text-sm text-[#252525] mt-5">
+            <div className=" px-10 mt-10  space-y-1 text-desktop/body/1  text-grey/grey/5">
               <p>
                 * itel mobiles reserves the right to change or withdraw the
                 above-mentioned policies without prior notice.
@@ -158,8 +153,6 @@ const ScreenReplacement = () => {
             </div>
           </div>
         </div>
-
-       
       </div>
     </>
   );

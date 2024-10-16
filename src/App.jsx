@@ -13,8 +13,14 @@ import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import SuperGuru400 from './pages/feature_phone/SuperGuru400'
 import SuperGuru600 from './pages/feature_phone/SuperGuru600'
 import Footer from './components/common/Footer'
+import Support from './pages/static_pages/header/Support'
+import ScreenReplacement from './pages/static_pages/header/Support/ScreenReplacement'
+import Promise100 from './pages/static_pages/header/Support/Promise100'
+import EWaste from './pages/static_pages/header/Support/E-Waste'
+import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
+
 import CSR from './pages/static_pages/CSR'
 import P_Series_Parent from './pages/p_series/P_Series_Parent'
 
