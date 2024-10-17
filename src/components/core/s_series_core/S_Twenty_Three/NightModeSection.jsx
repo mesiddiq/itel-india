@@ -2,17 +2,51 @@ import React from 'react';
 
 function NightModeSection() {
   return (
-    <section className="flex z-0 gap-10 items-start px-20 py-28 w-full text-5xl font-medium tracking-tighter text-white leading-[58px] max-w-[1440px] min-h-[956px] max-md:px-5 max-md:py-24 max-md:max-w-full max-md:text-4xl max-md:leading-[54px] bg-black opacity-90">
-      <div className="flex relative justify-between min-h-[720px] min-w-[240px] w-[1280px] max-md:text-4xl max-md:leading-[54px]">
-        <div className="flex absolute bottom-4 z-0 shrink-0 self-start rounded-none h-[529px] left-[53px] min-w-[240px] w-[432px]" />
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef440154659eef0e8192ca886df325f1c7a3dcfe12833f3bc7b5b4317dac41f6?placeholderIfAbsent=true&apiKey=9df870c4752649e79a5fc9825272f886" alt="Night mode photography showcase" className="object-contain absolute right-0 bottom-0 z-0 self-start aspect-[1.85] h-[540px] min-w-[240px] w-[1000px] max-md:max-w-full" />
-        <h2 className="z-0 w-[798px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
-          Nightlife Alive: <br /> Super Night Mode Engaged!
-        </h2>
-        <div className="flex z-0 shrink-0 self-end h-[540px] min-w-[240px] w-[1000px]" />
+     <div className='content bg-black opacity-90 h-[998px] md:h-[856px] md:w-[1440px]'>
+      <div className='px-8 md:px-10 md:py-10'>
+      <h3 className='text-white text-mobile/h4 md:text-desktop/h2 font-markot mb-8 md:mt-14  md:mx-10 md:pt-0 pt-10'>
+      Nightlife Alive:
+      <span className="hidden md:inline"><br /></span>
+      <span className="inline md:hidden ml-2"></span>
+      Super Night Mode Engaged!
+      </h3>
+      <div className='grid grid-cols-[25%_75%] relative md:mt-12 md:mr-12'>
+        <div className='col-span-1'>
+          <img src='/smartphone/S_Twenty_Three/Night_Mode.webp' alt='' className='absolute md:left-[8%] md:bottom-[87px] left-[6%] bottom-0 max-md:h-[129px]' />
+        </div>
+        <div className='col-span-1'>
+          <img src='/smartphone/S_Twenty_Three/Night1.webp' alt='Night Mode' 
+          />
+        </div>
       </div>
-    </section>
+      <div className='max-md:block hidden'>
+        <h3 className='text-white text-mobile/h4 md:text-desktop/h2 my-9 text-end'>
+        Ultra HD Mode<br /> with 10X Zoom
+        </h3>
+        <div className='grid md:hidden grid-cols-[75%_25%] relative'>
+          <div className='col-span-1 '>
+            <img src='/smartphone/S_Twenty_Three/10X_Zoom.webp' alt='' className='absolute right-10 -bottom-48 z-20' />
+          </div>
+          <div className='col-span-1'>
+            <img src='/smartphone/S_Twenty_Three/Night2.webp' alt='`10X Zoom' className='absolute left-0 -bottom-48' />
+          </div>
+        </div>
+        <h3 className='text-white text-mobile/h4 md:text-desktop/h2 mt-60'>
+        Click Each Image with<br />Incredible Detail
+        </h3>
+        <div className='grid grid-cols-[25%_75%] relative mt-8'>
+          <div className='col-span-1'>
+            <img src='/smartphone/S_Twenty_Three/50Mp.webp' alt='' className=' absolute left-[8%] bottom-0' />
+          </div>
+          <div className='col-span-1'>
+            <img src='/smartphone/S_Twenty_Three/Night3.webp' alt='50Mp Camera' 
+            />
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default NightModeSection;

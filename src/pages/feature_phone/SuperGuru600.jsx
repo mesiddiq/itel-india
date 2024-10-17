@@ -12,6 +12,7 @@ import {
     KingVoiceDataSuperGuru600,
     TechSpecsDataSuperGuru600
 } from '../../data/featurephonedata/SGuru600Data'
+import UninterruptedConnectivity from '../../components/core/feature_phone/s_guru_600/UninterruptedConnectivity'
 
 const SuperGuru600 = () => {
     return (
@@ -19,6 +20,7 @@ const SuperGuru600 = () => {
             <Hero {...HeroDataSuperGuru600} />
             <StickyHeader {...HeroDataSuperGuru600} />
             <FeatureRich {...FeatureRichDataSuperGuru600} />
+            <UninterruptedConnectivity/>
             <PayAnywhere />
             <KingVoice {...KingVoiceDataSuperGuru600} />
             <TechSpecs {...TechSpecsDataSuperGuru600} />

@@ -2,7 +2,7 @@ export const HeroDataSuperGuru4g = {
     title: "Super Guru 4G",
     subtitle: '4G VoLTE | YouTube* | YouTube Shorts*| UPI Payments',
     purchaseLink: '',
-    icon:'',
+    icon:"/featurephone/superguru4g/buynowlogo.svg",
     phoneUrl:'/featurephone/superguru4g/hero.webp'
 }
 

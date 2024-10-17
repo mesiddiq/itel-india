@@ -3,9 +3,9 @@ import React from 'react';
 function StyleSection() {
   return (
     <section
-      className="flex overflow-hidden z-0 flex-col w-full bg-black bg-opacity-20 max-w-[1440px] h-[800px] "
+      className="content flex overflow-hidden z-0 flex-col w-full bg-black bg-opacity-20 max-w-[1440px] h-[652px] md:h-[800px] "
       style={{
-        backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', // Replace with your actual image path
+        backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', 
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}
@@ -16,10 +16,10 @@ function StyleSection() {
           {/* Text Section */}
           <div className="flex flex-col w-[30%] max-md:ml-0 max-md:w-full max-md:items-center max-md:justify-center">
             <div className="flex flex-col justify-center self-stretch mt-48 mr-0 max-md:mt-10 max-md:max-w-full">
-              <h2 className="text-5xl font-medium tracking-tighter text-white leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px] max-md:text-center">
+              <h2 className="text-mobile/h4 md:text-desktop/h2  text-white max-md:max-w-full  max-md:text-center">
                 Elevate Your Style with the itel S23
               </h2>
-              <p className="mt-3.5 text-xl tracking-normal leading-8 text-[#F2F2F2] max-md:text-center">
+              <p className="mt-3.5 text-[#F2F2F2] max-md:text-center text-desktop/body/2/regular md:text-desktop/body/large">
                 Explore our range of sleek monochromes S23 models, featuring timeless black and white designs tailored to complement your elegance.
               </p>
             </div>

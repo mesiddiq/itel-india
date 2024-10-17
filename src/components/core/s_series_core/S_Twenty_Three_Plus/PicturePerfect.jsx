@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const NewVision = (props) => {
+const PicturePerfect = (props) => {
   const { scrollY } = props;
   const [startAnimation, setStartAnimation] = useState(false);
   const [titleIndex, setTitleIndex] = useState(0);
@@ -155,4 +155,4 @@ const NewVision = (props) => {
   );
 };
 
-export default NewVision;
+export default PicturePerfect;

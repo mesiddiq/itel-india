@@ -22,7 +22,7 @@ function OtherProducts() {
   return (
     <section className="flex flex-col bg-black items-center pt-10 w-full min-h-[461px] max-md:px-4">
       <div className="flex flex-col max-w-full w-[1280px]">
-        <h2 className="text-4xl font-medium tracking-tighter leading-tight text-white max-md:max-w-full">
+        <h2 className="text-mobile/h4 md:text-desktop/h3 text-white max-md:max-w-full">
           Check out our other Products
         </h2>
         <div className="flex flex-wrap gap-5 items-start self-center mt-9 w-full rounded-[32px]">
@@ -39,11 +39,11 @@ function OtherProducts() {
                   className="object-cover absolute bottom-0 right-0 w-1/2 h-auto" 
                 />
                 <div className="flex relative flex-col mb-0 max-w-full w-[258px] max-md:mb-2.5">
-                  <h3 className="text-2xl font-medium tracking-tight leading-8 text-white">
+                  <h3 className="text-desktop/h5/medium md:text-desktop/h4 text-white">
                     {product.title}
                   </h3>
                   <a href="#" className="flex overflow-hidden gap-2 items-center self-start mt-3 text-base font-bold tracking-normal leading-tight text-center uppercase text-stone-100">
-                    <span className="self-stretch my-auto">Read more</span>
+                    <span className="self-stretch my-auto text-mobile/button md:text-desktop/button">Read more</span>
                     <img loading="lazy" src="/smartphone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
                   </a>
                 </div>

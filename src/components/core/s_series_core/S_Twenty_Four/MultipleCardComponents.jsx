@@ -103,32 +103,32 @@ const MultipleCardComponents = () => {
               </span>
             </div>
 
-            {/* Image added here */}
-            <img
-              src='/smartphone/S24/dualDTSSpeaker.png' 
-              alt='Dual DTS Speaker'
-              className='absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110 z-0'
-            />
-          </div>
-
-          
-          {/* Card 6 */}
-          <div className='group relative overflow-hidden w-full lg:w-[60%] rounded-2xl bg-black p-5 lg:py-[42px] lg:px-[40px] lg:h-auto h-[446px]'>
-            <div className='flex flex-col gap-4 lg:justify-between lg:w-[334px] lg:h-[292px]'>
-              <div className='flex flex-col gap-2 lg:gap-4'>
-                <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>Sleek Style: Elegant Design</span>
-                <span className='text-desktop/body/2/regular lg:text-desktop/h4 text-grey/grey/2 lg:text-white'>Color Changing Technology</span>
-              </div>
-              <span className='text-desktop/body/large lg:text-desktop/h4 text-white'>Dawn White | Starry Black</span>
+              {/* Image added here */}
+              <img
+                src='/smartphone/S24/dualDTSSpeaker.png'
+                alt='Dual DTS Speaker'
+                className='absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110 z-0'
+              />
             </div>
-            <img src="/smartphone/S24/sleekStyle.png" alt='sleekStyle' className='absolute lg:right-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:w-1/2 lg:bottom-0 -bottom-5 group-hover:scale-[110%] transition-transform duration-700'/>
-          </div>
-        
-        </div>
-        
-      </section>
 
-    </section>
+
+            {/* Card 6 */}
+            <div className='group relative overflow-hidden w-full lg:w-[60%] rounded-2xl bg-black p-5 lg:py-[42px] lg:px-[40px] lg:h-auto h-[446px]'>
+              <div className='flex flex-col gap-4 lg:justify-between lg:w-[334px] lg:h-[292px]'>
+                <div className='flex flex-col gap-2 lg:gap-4'>
+                  <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>Sleek Style: Elegant Design</span>
+                  <span className='text-desktop/body/2/regular lg:text-desktop/h4 text-grey/grey/2 lg:text-white'>Color Changing Technology</span>
+                </div>
+                <span className='text-desktop/body/large lg:text-desktop/h4 text-white'>Dawn White | Starry Black</span>
+              </div>
+              <img src="/smartphone/S24/sleekStyle.png" alt='sleekStyle' className='absolute lg:right-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:w-1/2 lg:bottom-0 -bottom-5 group-hover:scale-[110%] transition-transform duration-700' />
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
   )
 }
 
