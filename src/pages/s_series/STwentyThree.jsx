@@ -10,6 +10,8 @@ import HDRSection from '../../components/core/s_series_core/S_Twenty_Three/HDRSe
 import FeatureSection from '../../components/core/s_series_core/S_Twenty_Three/FeatureSection'
 import FeatureHeader from '../../components/core/s_series_core/S_Twenty_Three/FeatureHeader'
 import Features from '../../components/core/s_series_core/S_Twenty_Three/Features'
+import FullSpecifications from "../../components/common/FullSpecifications"
+import {FullSpecificationsS23} from '../../data/smartphonedata/S23Data'
 
 import VideoSection from '../../components/core/s_series_core/S_Twenty_Three/VideoSection'
 import SimilarProducts from '../../components/common/smartphone_common/SimilarProducts'
@@ -33,8 +35,8 @@ const STwentyThree = () => {
             <MemoryFusionSection />
             <StyleSection />
             <Features/>
-
-
+            <FullSpecifications FullSpecificationsData={FullSpecificationsS23} mode="dark"/>
+            
             <SimilarProducts/>
             <SupportChannels/>
             {/* <OtherProducts/> */}

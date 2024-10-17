@@ -2,7 +2,7 @@ import React from 'react';
 
 function MemoryFusionSection() {
   return (
-    <section className="flex overflow-hidden z-0 flex-col w-full bg-black max-w-[1440px] max-md:max-w-full gap-10">
+    <section className="content flex overflow-hidden z-0 flex-col w-full bg-black max-w-[1440px] max-md:max-w-full gap-10">
       <div className="max-md:pr-5 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
           {/* Left Image Section */}
