@@ -2,14 +2,14 @@ const ModernTwist = () => {
   return (
     <div className='bg-[#1C1B1B] '>
       
-      <div className="w-full px-4 h-full content pt-[50px] lg:pt-[120px]">
-        <h3 className='content font-markot text-[#FFFFFF] text-mobile/h4 md:text-desktop/h2 mb-4 lg:mb-16'>
+      <div className="w-full h-full px-4 lg:px-0 content pt-[50px] lg:pt-[120px]">
+        <h3 className='content font-markot text-[#FFFFFF] text-mobile/h4 md:text-desktop/h2 mb-10 lg:mb-20'>
         Modern Twist <br />on Timeless Elegance
         </h3>
         
         <div className='content grid grid-cols-[25%_75%] relative'>
             <div className=''>
-              <img src='/smartphone/S24/starryBlackText.svg' alt='starryBlackText' className='w-[30%] left-[10%] absolute bottom-1' />
+              <img src='/smartphone/S24/starryBlackText.svg' alt='starryBlackText' className='w-[40%] left-[2%] absolute bottom-1' />
             </div>
             <div className=''>
               <img src='/smartphone/S24/starryBlackImage.png' alt='starryBlackImage'  />

@@ -67,7 +67,7 @@ const CameraSpecifications = () => {
         <div className="flex flex-row gap-4 lg:gap-16 justify-between items-center">
           <FeatureSpecifications featureMetric="1.93 µm" featureMetricDescription="Fusion Pixel" />
           <div className="h-[37px] lg:h-[81px] border"></div>
-          <FeatureSpecifications featureMetric="12000 * 9000" featureMetricDescription="Fusion Pixel" />
+          <FeatureSpecifications featureMetric="12000 * 9000" featureMetricDescription="Effective Resolution" />
           <div className="h-[37px] lg:h-[81px] border"></div>
           <FeatureSpecifications featureMetric="f/1.6" featureMetricDescription="Large Aperture" />
         </div>
