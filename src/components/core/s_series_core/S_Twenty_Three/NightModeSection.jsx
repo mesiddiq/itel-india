@@ -2,7 +2,7 @@ import React from 'react';
 
 function NightModeSection() {
   return (
-     <div className='bg-black opacity-90 h-[998px] md:h-[856px] md:w-[1440px]'>
+     <div className='content bg-black opacity-90 h-[998px] md:h-[856px] md:w-[1440px]'>
       <div className='px-8 md:px-10 md:py-10'>
       <h3 className='text-white text-mobile/h4 md:text-desktop/h2 font-markot mb-8 md:mt-14  md:mx-10 md:pt-0 pt-10'>
       Nightlife Alive:

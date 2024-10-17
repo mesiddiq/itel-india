@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SmartphoneFeatures() {
   return (
-    <section className="font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] lg:px-[80px] bg-[#1c1b1b] flex flex-col gap-5">
+    <section className="content font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] lg:px-[80px] bg-[#1c1b1b] flex flex-col gap-5">
       
       <section className="flex flex-col lg:flex-row gap-5 justify-between">
         <div

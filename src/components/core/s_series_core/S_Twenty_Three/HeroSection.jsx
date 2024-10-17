@@ -3,7 +3,7 @@ import React from "react";
 function HeroSection() {
   return (
     <section
-      className="relative flex flex-col items-center justify-between md:pt-32 w-full h-auto md:h-[800px]"
+      className="content relative flex flex-col items-center justify-between md:pt-32 w-full h-auto md:h-[800px]"
       style={{
         backgroundImage: "url('/smartphone/S_Twenty_Three/S23Hero.webp')",
         backgroundSize: "cover",

@@ -3,7 +3,7 @@ import React from 'react';
 function StyleSection() {
   return (
     <section
-      className="flex overflow-hidden z-0 flex-col w-full bg-black bg-opacity-20 max-w-[1440px] h-[652px] md:h-[800px] "
+      className="content flex overflow-hidden z-0 flex-col w-full bg-black bg-opacity-20 max-w-[1440px] h-[652px] md:h-[800px] "
       style={{
         backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', 
         backgroundPosition: 'center',
