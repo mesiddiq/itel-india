@@ -39,6 +39,16 @@
   }
 }
 
+@layer base {
+  .font-outline-2 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+
 .swiper-pagination-bullet{
   background-color: white ;
   color: white;
