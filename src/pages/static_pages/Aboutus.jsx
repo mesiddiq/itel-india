@@ -1,5 +1,4 @@
-import { useState } from "react";
-import React from "react";
+
 import MainHeader from "./header/MainHeader";
 
 
@@ -78,7 +77,7 @@ const Aboutus = () => {
 </div>
 
 
-<div className=" mt-20">
+<div className=" ">
 <p className=" text-desktop/h2 text-center">Awards and Recognitions</p>
 
 <p className=" p-10 text-center">under building</p>

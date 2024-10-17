@@ -16,7 +16,12 @@ const CSR = () => {
         <p className=" text-white lg:text-desktop/body/large  font-markot">Pathway to a Better India - CSR Endeavor</p>
       </div>
 
-      <div className="  p-5 lg:p-20 ">
+
+
+<div >
+
+
+<div className=" content text-black  p-5 lg:py-20 ">
         <p  className=" lg:text-desktop/h2 text-mobile/h2 ">
           Corporate Social Responsibility Policy
         </p>
@@ -331,6 +336,10 @@ const CSR = () => {
           </div>
         </div>
       </div>
+
+
+</div>
+     
     </div>
   );
 };

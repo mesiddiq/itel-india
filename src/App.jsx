@@ -21,6 +21,7 @@ import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
 import ServiceCenters from './pages/static_pages/ServiceCenters'
+import FAQ from './pages/static_pages/FAQ'
 function App() {
 
 	useEffect(() => {
@@ -64,10 +65,9 @@ function App() {
 				<Route path='/CSR' element={<CSR/>} />
 				<Route path='/aboutus' element={<Aboutus/>} />
 				<Route path='/contactus' element={<Contactus/>} />
+				<Route path='/FAQ' element={<FAQ/>} />
 				<Route path='/servicecenters'element={<ServiceCenters/>} />
-
-
-				<Route path='/featurephones/super-guru-4g' element={<SuperGuru4G />} />
+<Route path='/featurephones/super-guru-4g' element={<SuperGuru4G />} />
 				<Route path='/featurephones/super-guru-400' element={<SuperGuru400 />} />
 				<Route path='/featurephones/super-guru-600' element={<SuperGuru600 />} />
 			</Routes>
