@@ -20,12 +20,12 @@ function FeatureSection() {
   ];
 
   return (
-    <section className="flex bg-black opacity-90  overflow-hidden z-0 flex-col justify-center px-20  pt-[40px] md:pt-40 pb-32 max-w-full w-[1440px] max-md:px-5 max-md:py-24 ">
+    <section className="flex bg-black opacity-90  overflow-hidden z-0 flex-col justify-center px-5 md:px-0 pt-[40px] md:pt-40 pb-32 max-w-full max-md:py-24 ">
 
-      <div className="flex flex-col justify-center w-full max-md:max-w-full">
+      <div className="flex flex-col justify-center w-full max-md:max-w-full content">
         <div className="flex flex-wrap justify-between items-start w-full max-md:max-w-full max-md:flex-col">
           <h2 className="flex flex-col flex-1 shrink text-5xl font-medium tracking-tighter basis-0 leading-[58px] min-w-[240px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px] md:gap-[24px]">
-            <span className="bg-clip-text text-[linear-gradient(98deg,#DACFF9_0%,#5C5C7E_146.29%)] text-purple-200 md:max-w-[90%] max-md:text-mobile/h4  text-desktop/h2  mt-6 font-markot">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-s23/from to-s23/to md:max-w-[90%] max-md:text-mobile/h4  text-desktop/h2  mt-6 font-markot">
               Flaunt your Style: Photochromic Colour Change Technology
             </span>
           </h2>

@@ -16,15 +16,21 @@ import FullSpecifications from "../../components/common/FullSpecifications"
 import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
 import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
 import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
+import ModernTwist from "../../components/core/s_series_core/S_Twenty_Four/ModernTwist"
 
 const STwentyFour = () => {
     return (
         <>
             <HeroSection />
-            {/* <OverViewBanner /> */}
+
+            <OverViewBanner />
+
             <ProductDescription />
+
             <SliderAnimation />
+
             <Video1 />
+
             <FillerFrame />
 
             <CameraSpecifications />
@@ -41,13 +47,14 @@ const STwentyFour = () => {
 
             <PunchHoleDisplay />
 
+            <ModernTwist />
+
             <MultipleCardComponents />
 
             <ColorImageCarousel />
 
             <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
             
-
         </>
     )
 }

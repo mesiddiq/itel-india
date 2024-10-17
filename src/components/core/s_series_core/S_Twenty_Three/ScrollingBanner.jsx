@@ -5,7 +5,7 @@ const ScrollingBanner = () => {
 
   return (
     <div
-      className="bg-black text-[#C6C4E4] flex overflow-hidden items-center p-4"
+      className=" bg-black text-[#C6C4E4] flex overflow-hidden items-center p-4"
       style={{ whiteSpace: 'nowrap' }}
     >
       <div

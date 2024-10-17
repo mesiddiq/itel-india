@@ -40,7 +40,7 @@ const Support = () => {
 
   const BlogCard = ({ category, title, image }) => {
     return (
-      <div className="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div className="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 content ">
         <img
           src={image}
           alt={title}
@@ -232,11 +232,10 @@ const Support = () => {
             <button
               key={button.id}
               className={`px-6 py-2 rounded-full border transition-colors duration-300
-            ${
-              activeButton === button.label
-                ? "bg-black text-white font-medium"
-                : "bg-white text-black font-medium border-gray-400"
-            }`}
+            ${activeButton === button.label
+                  ? "bg-black text-white font-medium"
+                  : "bg-white text-black font-medium border-gray-400"
+                }`}
               onClick={() => handleClick(button.label)}
             >
               {button.label.toUpperCase()}
@@ -261,11 +260,10 @@ const Support = () => {
               {Tabs.map((tab) => (
                 <button
                   key={tab}
-                  className={`px-4 py-2 rounded-full text-sm font-semibold ${
-                    activeTab === tab
+                  className={`px-4 py-2 rounded-full text-sm font-semibold ${activeTab === tab
                       ? "bg-black text-white"
                       : "bg-gray-200 text-gray-800 hover:bg-gray-300"
-                  } transition-colors duration-300`}
+                    } transition-colors duration-300`}
                   onClick={() => setActiveTab(tab)}
                 >
                   {tab.toUpperCase()}
@@ -400,7 +398,7 @@ const Support = () => {
         </div>
       </div>
 
-     
+
     </div>
   );
 };

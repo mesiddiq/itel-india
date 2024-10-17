@@ -10,7 +10,7 @@ function HeroSection() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex flex-col md:flex-row z-10 px-4 md:px-10 md:pt-10 w-full max-w-screen-xl gap-y-4 justify-between items-center mx-auto h-auto md:h-[405px] mt-4  md:mt-16">
+      <div className="flex content flex-col md:flex-row z-10 px-4 md:px-0 md:pt-10 w-full max-w-screen-xl gap-y-4 justify-between items-center mx-auto h-auto md:h-[405px] mt-4  md:mt-16">
         {/* Text Section */}
         <div className="flex flex-col justify-center h-auto md:h-[405px] w-full md:w-[785.14px] text-left">
           {/* Super Series Badge */}

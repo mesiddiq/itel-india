@@ -40,7 +40,7 @@ const ColorImageCarousel = () => {
     <div className="relative h-full flex flex-col justify-center items-center gap-8 bg-[#1c1b1b]">
         <div className="relative w-full h-[360px] lg:h-screen bg-cover bg-center bg-imageCarouselBackground flex flex-col justify-center items-center">
             {/* Phone Image */}
-            <img src={images[currentImageIndex]} alt="Phone" className="w-[70%] lg:w-full lg:h-full object-contain" />
+            <img src={images[currentImageIndex]} alt="Phone" className="w-[70%] sm:h-[90%] lg:w-full lg:h-full object-contain" />
             
             <div className="flex flex-row justify-between items-center w-full absolute px-5 lg:px-[80px]">
                 {/* Left Arrow */}

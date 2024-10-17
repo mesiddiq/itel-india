@@ -1,10 +1,9 @@
 const MultipleCardComponents = () => {
   return (
-    <div className="bg-[#1c1b1b] px-4 md:px-0">
-      <section className='font-markot content w-full h-full py-[40px] lg:py-[120px] bg-[#1c1b1b] flex flex-col gap-5'>
-        {/* upper-half-3-divs */}
-        <section className='upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
-
+    <section className='font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] bg-[#1c1b1b] flex flex-col gap-5'>
+      {/* upper-half-3-divs */}
+      <section className='content upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
+        
           {/* Card 1 */}
           <div className='w-full lg:w-[40%] min-h-[506px] h-[506px] lg:h-[784px] rounded-2xl overflow-hidden flex flex-col relative bg-black group'>
             <div className='text-white w-full h-auto p-4 lg:p-10 gap-3 lg:gap-10 flex flex-col z-10'>
@@ -24,81 +23,85 @@ const MultipleCardComponents = () => {
           </div>
 
           <div className='w-full lg:w-[60%] flex flex-col gap-5'>
-            {/* Card 2 */}
-            <div className='flex flex-col w-full min-h-[329.02px] h-[329.02px] lg:h-1/2 rounded-2xl p-4 lg:p-10 bg-black group relative overflow-hidden'>
-              <div className='flex flex-col lg:justify-between gap-2 h-full lg:w-[328px] z-10'>
-                <div className='flex flex-col gap-2 lg:gap-4'>
-                  <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-                    Ultra Storage Vault
-                  </span>
-                  <span className='text-mobile/body/large lg:text-desktop/h4 text-grey/grey/2 lg:w-[257px]'>
-                    16GB* (8GB + 8GB*) RAM + 128GB ROM
+              {/* Card 2 */}
+              <div className='flex flex-col w-full min-h-[329.02px] h-[329.02px] lg:h-1/2 rounded-2xl p-4 lg:p-10 bg-black group relative overflow-hidden'>
+                <div className='flex flex-col lg:justify-between gap-2 h-full lg:w-[328px] z-10'>
+                  <div className='flex flex-col gap-2 lg:gap-4'>
+                    <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
+                      Ultra Storage Vault
+                    </span>
+                    <span className='text-mobile/body/large lg:text-desktop/h4 text-grey/grey/2 lg:w-[257px]'>
+                      16GB* (8GB + 8GB*) RAM + 128GB ROM
+                    </span>
+                  </div>
+                  <span className='text-mobile/small/body lg:text-desktop/body/1 text-grey/grey/4 lg:text-grey/grey/2'>
+                    *Memory Fusion Technology
                   </span>
                 </div>
-                <span className='text-mobile/small/body lg:text-desktop/body/1 text-grey/grey/4 lg:text-grey/grey/2'>
-                  *Memory Fusion Technology
-                </span>
+                
+                {/* Image added here */}
+                <img
+                  src='/smartphone/S24/ultra-storage-vault.png'
+                  alt='Ultra Storage Vault'
+                  className='absolute lg:top-[50px] lg:left-[50px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700'
+                />
               </div>
 
-              {/* Image added here */}
-              <img
-                src='/smartphone/S24/ultra-storage-vault.png'
-                alt='Ultra Storage Vault'
-                className='absolute lg:top-[50px] lg:left-[50px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700'
-              />
-            </div>
+              {/* Card 3 */}
+              <div className='flex flex-col w-full min-h-[380px] h-[380px] rounded-2xl p-4 lg:p-10 bg-black group relative overflow-hidden'>
+                <div className='flex flex-col gap-2 lg:justify-between lg:h-[292px] w-[292px] z-10 bg-black bg-opacity-80 backdrop-blur-md rounded-lg'
+                  style={{
+                    boxShadow: '0px 0px 35px 30px rgba(0, 0, 0, 1)', // Creates the faded border effect
+                  }}>
+                  <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
+                    Quick Charge with Bypass Charging
+                  </span>
+                  <span className='flex flex-col gap-1 lg:gap-5 text-mobile/body/large lg:text-desktop/h4 text-grey/grey/2 w-[257px]'>
+                    <span>5000 mAh Battery</span>
+                    <span>18W Fast Charging</span>
+                  </span>
+                </div>
 
-            {/* Card 3 */}
-            <div className='flex flex-col w-full min-h-[380px] h-[380px] rounded-2xl p-4 lg:p-10 bg-black group relative overflow-hidden'>
-              <div className='flex flex-col gap-2 lg:justify-between h-[292px] w-[292px] z-10'>
-                <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-                  Quick Charge with Bypass Charging
-                </span>
-                <span className='flex flex-col gap-1 lg:gap-5 text-mobile/body/large lg:text-desktop/h4 text-grey/grey/2 w-[257px]'>
-                  <span>5000 mAh Battery</span>
-                  <span>18W Fast Charging</span>
-                </span>
+
+                {/* Image added here */}
+                <img
+                  src='/smartphone/S24/quickCharge.png'
+                  alt='quickCharge'
+                  className='absolute lg:left-[200px] lg:-top-[300px] left-[100px] top-[40px] scale-[120%] lg:scale-[80%] group-hover:scale-[130%] lg:group-hover:scale-[90%] transition-transform duration-700'
+                />
               </div>
-
-              {/* Image added here */}
-              <img
-                src='/smartphone/S24/quickCharge.png'
-                alt='Ultra Storage Vault'
-                className='absolute lg:left-[200px] lg:-top-[150px] left-2/3 bottom-0 scale-[60%] group-hover:scale-[70%] transition-transform duration-700'
-              />
-            </div>
 
           </div>
 
-        </section>
+      </section>
 
-        {/* lower-half-3-divs */}
-        <section className='font-markot lower-half-3-divs flex flex-col gap-5 justify-between'>
-
-          {/* Card 4 */}
-          <div className='group overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] bg-black h-[430px] lg:h-[451px] relative'>
-            <div className='flex flex-col gap-2 lg:justify-between lg:w-[400px] lg:h-[346px] lg:mt-0 mt-[50px]'>
-              <div className='flex flex-col gap-2 lg:gap-4'>
-                <span className='w-[300px] text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>Say Hello to Dynamic Bar</span>
-                <span className='text-mobile/small/body lg:text-desktop/body/1 text-grey/grey/4 lg:text-grey/grey/2'>Check important notifications such as battery status, incoming calls & reminders conveniently than ever before.</span>
-              </div>
-              <span className='text-mobile/body/large lg:text-desktop/h4 text-white'>Seamless Notification Experience</span>
+      {/* lower-half-3-divs */}
+      <section className='content font-markot lower-half-3-divs flex flex-col gap-5 justify-between'>
+        
+        {/* Card 4 */}
+        <div className='group overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] bg-black h-[430px] lg:h-[451px] relative'>
+          <div className='flex flex-col gap-2 lg:justify-between lg:w-[400px] lg:h-[346px] lg:mt-0 mt-[50px]'>
+            <div className='flex flex-col gap-2 lg:gap-4'>
+              <span className='w-[300px] text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>Say Hello to Dynamic Bar</span>
+              <span className='text-mobile/small/body lg:text-desktop/body/1 text-grey/grey/4 lg:text-grey/grey/2'>Check important notifications such as battery status, incoming calls & reminders conveniently than ever before.</span>
             </div>
-            <img src="/smartphone/S24/dynamic-bar.png" alt='dynamicBar' className='absolute lg:left-[554px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700' />
+            <span className='text-mobile/body/large lg:text-desktop/h4 text-white'>Seamless Notification Experience</span>
           </div>
-
-          <div className='w-full flex flex-col lg:flex-row gap-5'>
-
-            {/* Card 5 */}
-            <div className='flex flex-col w-full lg:w-[40%] min-h-[273px] h-[273px] lg:h-[380px] rounded-2xl bg-black p-4 lg:p-[40px] relative overflow-hidden group'>
-              <div className='flex flex-col gap-2 lg:gap-4 z-10'>
-                <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
-                  Dual DTS Speaker
-                </span>
-                <span className='text-mobile/body/large lg:text-desktop/h4 text-white opacity-90 lg:text-grey/grey/2'>
-                  High-Quality Surround Sound Technology
-                </span>
-              </div>
+          <img src="/smartphone/S24/dynamic-bar.png" alt='dynamicBar' className='absolute lg:left-[554px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700'/>
+        </div>
+        
+        <div className='w-full flex flex-col lg:flex-row gap-5'>
+          
+          {/* Card 5 */}
+          <div className='flex flex-col w-full lg:w-[40%] min-h-[273px] h-[273px] lg:h-[380px] rounded-2xl bg-black p-4 lg:p-[40px] relative overflow-hidden group'>
+            <div className='flex flex-col gap-2 lg:gap-4 z-10'>
+              <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
+                Dual DTS Speaker
+              </span>
+              <span className='text-mobile/body/large lg:text-desktop/h4 text-white opacity-90 lg:text-grey/grey/2'>
+                High-Quality Surround Sound Technology
+              </span>
+            </div>
 
               {/* Image added here */}
               <img
@@ -126,7 +129,6 @@ const MultipleCardComponents = () => {
         </section>
 
       </section>
-    </div >
   )
 }
 

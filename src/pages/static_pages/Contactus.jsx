@@ -6,7 +6,7 @@ const InquiryForm = () => {
 
   return (
     <div className="min-h-screen  flex justify-center items-center font-markot  p-4">
-      <div className=" shadow-md rounded-lg p-8 w-full mt-20 flex flex-col lg:flex-row">
+      <div className=" shadow-md rounded-lg  w-full mt-20 flex flex-col lg:flex-row">
         {/* Contact Section */}
         <div className="w-full lg:w-1/3 border-b  flex flex-col space-y-10  lg:pr-8 mb-6 lg:mb-0">
           <div className=" flex items-center space-x-2">
@@ -69,7 +69,7 @@ const InquiryForm = () => {
         </div>
 
         {/* Inquiry Form*/}
-        <div className="w-full bg-bg/primary/1 lg:w-2/3 lg:pl-8">
+        <div className="  bg-bg/primary/1 max-w-[735px] ">
           <h2 className=" text-mobile/h4 lg:text-desktop/h2 text-center  mb-4">Inquiry Form</h2>
           <p className=" text-desktop/body/2/regular text-grey/grey/5 mb-6">
             Complete the form, and our dedicated team will swiftly reach out to
@@ -191,8 +191,8 @@ const InquiryForm = () => {
 const Contactus = () => {
   return (
     <div className=" font-markot">
-      <MainHeader />
-      <div className='   lg:p-20 p-5 flex items-center lg:h-[520px] lg:bg-[url("/banners/Frame%201973341368.png")] bg-[url("/banners/moblie%20-%20service%20center%20BG.png")]  bg-cover bg-center  h-[400px] w-screen border border-black'>
+   
+      <div className='    lg:py-20 p-5 flex items-center lg:h-[520px] lg:bg-[url("/banners/Frame%201973341368.png")] bg-[url("/banners/moblie%20-%20service%20center%20BG.png")]  bg-cover bg-center  h-[400px] w-screen border border-black'>
         <div>
           <p className=" lg:text-desktop/h1 text-white text-mobile/h1">Contact Us</p>
         </div>

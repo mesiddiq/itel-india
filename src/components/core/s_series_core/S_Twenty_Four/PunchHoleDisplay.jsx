@@ -65,12 +65,12 @@ const PunchHoleDisplay = () => {
             />
 
             <motion.div
-                className="flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute bottom-8 lg:top-[600px] w-[328px] text-center lg:text-left lg:w-full inset-x-0 left-[12%] lg:left-0 transform -translate-x-full"
+                className="flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute bottom-8 lg:top-[600px] text-center lg:text-left w-full  lg:left-0 transform -translate-x-1/4"
                 initial="hidden"
                 animate={controls}
                 variants={textVariants}
             >
-                <div className="flex flex-col justify-center items-center gap-2 lg:gap-4">
+                <div className="w-[328px] lg:w-full flex flex-col justify-center items-center gap-2 lg:gap-4">
                     <div className="content text-mobile/h5/medium lg:text-desktop/h2 text-center">
                         Seamless Sliding<br />
                         <span className="bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
