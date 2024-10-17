@@ -2,23 +2,20 @@ import { useState, useEffect } from 'react';
 
 const images = [
   {
-    src: 'https://example.com/image1.jpg',
-    alt: 'New York City skyline',
+    src: '/smartphone/P55/CameraMode1.png',
+    alt: 'panorama',
     text: 'Capture all in a single image',
-    title: 'panorama'
   },
   {
-    src: 'https://example.com/image2.jpg',
-    alt: 'London cityscape',
-    text: 'Experience the urban jungle',
-    title: 'cityscape'
+    src: '/smartphone/P55/CameraMode2.png',
+    alt: 'timelapse',
+    text: 'Compress hours into seconds',
   },
   {
-    src: 'https://example.com/image3.jpg',
-    alt: 'Tokyo at night',
-    text: 'Embrace the neon nights',
-    title: 'metropolis'
-  }
+    src: '/smartphone/P55/CameraMode3.png',
+    alt: 'nightmode',
+    text: 'City lights, in low lights. All night.',
+  },
 ];
 
 const AutomaticCarousel = () => {
@@ -33,41 +30,43 @@ const AutomaticCarousel = () => {
   }, []);
 
   return (
-    <div className=" w-full h-screen overflow-hidden rounded-lg">
-        <div className='relative content'>
+    <div className="h-[860px] w-full bg-white py-[120px]">
+        <div className="content w-full h-full relative">
 
-            {images.map((image, index) => (
-                <div
-                key={index}
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    index === currentIndex ? 'opacity-100' : 'opacity-0'
-                }`}
-                >
-                <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-1000 ease-in-out transform scale-105"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-30">
-                    <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-8xl font-bold opacity-50">
-                    {image.title}
-                    </h2>
-                </div>
-                <div className="absolute bottom-8 left-8 text-white text-2xl font-semibold transition-all duration-500 ease-in-out transform translate-y-0">
-                    {image.text}
-                </div>
-                <div className="absolute bottom-8 right-8 flex space-x-2">
-                    {images.map((_, i) => (
-                    <div
-                        key={i}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        i === currentIndex ? 'w-6 bg-white' : 'bg-white/50'
-                        }`}
-                    ></div>
-                    ))}
-                </div>
-                </div>
-            ))}
+            {
+              images.map((image, index) => (
+                  <div
+                  key={index}
+                  className={`font-markot object-cover w-full absolute transition-opacity duration-1000 ease-in-out ${
+                      index === currentIndex ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  >
+                  <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full transition-transform duration-1000 ease-in-out transform"
+                  />
+                  {/* <div className="absolute inset-0 bg-black bg-opacity-30">
+                      <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-8xl font-bold opacity-50">
+                      {image.title}
+                      </h2>
+                  </div> */}
+                  <div className="max-w-[400px] text-desktop/h2 absolute bottom-12 left-16 text-white transition-all duration-500 ease-in-out transform translate-y-0">
+                      {image.text}
+                  </div>
+                  <div className="absolute bottom-12 right-16 flex space-x-2">
+                      {images.map((_, i) => (
+                      <div
+                          key={i}
+                          className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          i === currentIndex ? 'w-9 bg-white' : 'bg-white/50'
+                          }`}
+                      ></div>
+                      ))}
+                  </div>
+                  </div>
+              ))
+            }
     
         </div>
         

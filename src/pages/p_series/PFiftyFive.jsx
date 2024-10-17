@@ -9,7 +9,7 @@ import SuperfastUnisoc from "../../components/core/p_series_core/P_Fifty_Five/Su
 import ClearVision from "../../components/core/p_series_core/P_Fifty_Five/ClearVision"
 import ChargeUpFull from "../../components/core/p_series_core/P_Fifty_Five/ChargeUpFull"
 import MultipleCardComponents from "../../components/core/p_series_core/P_Fifty_Five/MultipleCardComponents"
-// import AutomaticCarousel from "../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel"
+import AutomaticCarousel from "../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel"
 
 const PFiftyFive = () => {
     return (
@@ -22,7 +22,7 @@ const PFiftyFive = () => {
 
             <Frame24GB />
 
-            {/* <AutomaticCarousel /> */}
+            <AutomaticCarousel />
 
             <SeeMoreCaptureMore />
 
