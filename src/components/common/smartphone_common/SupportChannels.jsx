@@ -20,7 +20,7 @@ function SupportChannels() {
   ];
 
   return (
-    <section className="flex flex-col bg-black justify-center items-center w-full font-medium text-center pb-24">
+    <section className="flex flex-col justify-center items-center w-full font-medium text-center pb-24">
       <div className="flex flex-col max-w-full w-[1280px]">
         <h2 className="text-mobile/h4 md:text-desktop/h3 max-md:pt-10 text-white max-md:max-w-full  max-md:text-left max-md:px-8">
           Support Channels

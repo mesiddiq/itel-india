@@ -42,7 +42,7 @@ const Model = () => {
   ];
 
   return (
-    <div className="bg-black py-[60px] h-auto flex justify-center">
+    <div className="py-[60px] h-auto flex justify-center">
       <div className="w-full content flex flex-col gap-[36px] px-4">
         <div className="flex justify-between items-center">
           <h3 className="text-white text-mobile/h5/medium md:text-desktop/h3">Compare Models</h3>
