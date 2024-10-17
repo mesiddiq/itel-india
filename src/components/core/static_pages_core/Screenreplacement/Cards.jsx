@@ -26,7 +26,7 @@ const Cards = () => {
     },
   ];
   return (
-    <div className=" content space-y-12  font-markot text-black">
+    <div className=" lg:content px-3 space-y-12  font-markot text-black">
       <p className=" text-center   text-mobile/h4 text-brand/black lg:text-desktop/h2">
         One-Time Screen Replacement
       </p>
