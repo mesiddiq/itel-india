@@ -8,7 +8,13 @@ const Video = (props) => {
   const [startVideoAnimation, setStartVideoAnimation] = useState(false);
 
   useEffect(() => {
-    setStartAnimation(scrollY >= 1100);
+    if (screen.width < 2000 && screen.width > 1500) {
+      setStartAnimation(scrollY >= 1200);
+    } else if (screen.width > 1000) {
+      setStartAnimation(scrollY >= 1450);
+    } else {
+      setStartAnimation(scrollY >= 1320);
+    }
   }, [scrollY]);
 
   useEffect(() => {
@@ -26,8 +32,8 @@ const Video = (props) => {
     <div className='w-full overflow-hidden relative items-center justify-center bg-[#050036]' style={{ marginTop: '0px' }}>
       <Marquee speed='50' direction='right' autoFill={true}>
 				<h3 className='flex items-center text-[#FFFFFF] text-[16px] md:text-[35px] font-[800] py-2'>
-					<img src='/s_twenty_three_plus/MarqueeIcon.png' alt="MarqueeIcon" className='px-3' /> <h1 className='linear-gradient text-[20px] font-[800] uppercase'>Super Series</h1> 
-					<img src='/s_twenty_three_plus/MarqueeIcon.png' alt="MarqueeIcon" className='px-3' /> <h1 className='linear-gradient text-[20px] font-[800] uppercase'>incredibly super</h1> 
+					<img src='/s_twenty_three_plus/MarqueeIcon.png' alt="MarqueeIcon" className='px-3' /> <h1 className='linear-gradient text-[20px] font-bricolage font-[800] uppercase'>Super Series</h1> 
+					<img src='/s_twenty_three_plus/MarqueeIcon.png' alt="MarqueeIcon" className='px-3' /> <h1 className='linear-gradient text-[20px] font-bricolage font-[800] uppercase'>incredibly super</h1> 
 				</h3>
 			</Marquee>
       {startVideoAnimation && (
@@ -43,6 +49,7 @@ const Video = (props) => {
               url={[{src: '/s_twenty_three_plus/s23plus.mp4', type: 'video/mp4'}]}
             />
           </div>
+          <img src='/s_twenty_three_plus/Patterns.svg' className='w-full' />
         </>
       )}
     </div>

@@ -11,15 +11,25 @@ const ThinDesign = (props) => {
 
   useEffect(() => {
     if (screen.width > 1000) {
-      setStartAnimation(scrollY >= 7700);
+      setStartAnimation(scrollY >= 10050);
     } else {
-      setStartAnimation(scrollY >= 5700);
+      setStartAnimation(scrollY >= 5800);
     }
   }, [scrollY]);
 
   useEffect(() => {
     console.log('startAnimation', startAnimation);
     if (startAnimation) {
+      const showPhoneTimeout = setTimeout(() => {
+        setShowPhone(true);
+      }, 500); // Delay before showing the paragraph
+
+      return () => clearTimeout(showPhoneTimeout);
+    }
+  }, [startAnimation]);
+
+  useEffect(() => {
+    if (showPhone) {
       const titleInterval = setInterval(() => {
         if (titleIndex < title.length) {
           setTitleIndex((prev) => prev + 1);
@@ -31,8 +41,8 @@ const ThinDesign = (props) => {
 
       return () => clearInterval(titleInterval);
     }
-  }, [startAnimation, titleIndex]);
-
+  }, [showPhone, titleIndex]);
+  
   useEffect(() => {
     if (isTitleComplete) {
       const paragraphTimeout = setTimeout(() => {
@@ -43,29 +53,21 @@ const ThinDesign = (props) => {
     }
   }, [isTitleComplete]);
 
-  useEffect(() => {
-    if (showParagraph) {
-      const showPhoneTimeout = setTimeout(() => {
-        setShowPhone(true);
-      }, 500); // Delay before showing the paragraph
-
-      return () => clearTimeout(showPhoneTimeout);
-    }
-  }, [showParagraph]);
-  
   return (
     <>
-    <div className='thin-design-mobile-text block md:hidden'>
-      <h3 className='linear-gradient text-mobile/h4 md:text-desktop/h2 mb-5'>{title.slice(0, titleIndex)}</h3>
-      {showParagraph && (<p className='w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large mb-5 md:mb-20 slideInFromLeft'>7.9mm Slim Depth Body</p>)}
+    <div className='thin-design-mobile-text relative block md:hidden h-[130px] z-2'>
+      <h3 className='linear-gradient text-mobile/h4 md:text-desktop/h2 font-markot mb-5'>{title.slice(0, titleIndex)}</h3>
+      {showParagraph && (<p className='w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large font-markot mb-5 md:mb-20 slideInFromLeft'>7.9mm Slim Depth Body</p>)}
     </div>
     <div className='thin-design-section items-center justify-center'>
-      <div className='flex flex-col items-center relative'>
-        {showPhone && (<img src='/s_twenty_three_plus/DesignMobilePack.png' className='slideInFromTop' />)}
-      </div>
-      <div className='hidden md:block absolute left-[120px] bottom-0'>
-        <h3 className={`linear-gradient text-mobile/h4 md:text-desktop/h2 mb-[20px] w-[60%]`}>{title.slice(0, titleIndex)}</h3>
-        {showParagraph && (<p className='w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large mb-[20px] md:mb-[80px] slideInFromLeft'>7.9mm Slim Depth Body</p>)}
+      <div className='content'>
+        <div className='flex flex-col items-center relative md:top-[-60%]'>
+          {showPhone && (<img src='/s_twenty_three_plus/DesignMobilePack.png' className='slideInFromTop' />)}
+        </div>
+        <div className='hidden md:block absolute left-[120px] bottom-0'>
+          <h3 className={`linear-gradient text-mobile/h4 md:text-desktop/h2 font-markot mb-[20px] w-[60%]`}>{title.slice(0, titleIndex)}</h3>
+          {showParagraph && (<p className='w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large font-markot mb-[20px] md:mb-[80px] slideInFromLeft'>7.9mm Slim Depth Body</p>)}
+        </div>
       </div>
     </div>
     </>

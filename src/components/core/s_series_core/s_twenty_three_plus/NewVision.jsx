@@ -10,9 +10,9 @@ const NewVision = (props) => {
 
   useEffect(() => {
     if (screen.width > 1000) {
-      setStartAnimation(scrollY >= 3450);
+      setStartAnimation(scrollY >= 3250);
     } else {
-      setStartAnimation(scrollY >= 2250);
+      setStartAnimation(scrollY >= 1950);
     }
   }, [scrollY]);
 
@@ -59,36 +59,38 @@ const NewVision = (props) => {
   
   return (
     <div className='new-vision-section'>
-    	<div className='hidden md:flex w-1/2 p-4'>
-        {showImage && (<img src='/s_twenty_three_plus/StepIntoNewVisionPhone.svg' className='w-full slideInFromLeft' />)}
-      </div>
-      <div className='w-full md:w-1/2 p-4 md:pt-24 text-center'>
-        {showHeading && (
-          <div className='animate-slide-down'>
-            <h3 className='linear-gradient text-mobile/h4 md:text-desktop/h2'>Step into the New Vision</h3>
-            <p className='text-[#F2F2F2] text-mobile/h6 md:text-desktop/h4 mt-[20px] mb-[30px]'>6.78" FHD+ Amoled Display<br />3D Curved Screen</p>
+      <div className='relative content h-full'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-full align-middle'>
+          <div className='col-span-1'>
+            
           </div>
-        )}
-        {showText && (
-        <div className='grid grid-cols-[0%_35%_10%_55%] md:grid-cols-[15%_35%_10%_40%] md:gap-4 animate-slide-down'>
-          <div className='text-[#FFFFFF]'>
+          <div className='col-span-1 md:pt-24 text-center'>
+            {showHeading && (
+              <div className='animate-slide-down'>
+                <h3 className='linear-gradient text-mobile/h4 md:text-desktop/h2 font-markot'>Step into the New Vision</h3>
+                <p className='text-[#F2F2F2] text-mobile/h6 md:text-desktop/h4 font-markot mt-[20px] mb-[30px]'>6.78" FHD+ Amoled Display<br />3D Curved Screen</p>
+              </div>
+            )}
+            {showText && (
+            <div className='grid grid-cols-[96px_24px_167px] md:grid-cols-[231px_36px_256px] md:gap-4 animate-slide-down justify-center'>
+              <div className='text-[#FFFFFF] md:text-left'>
+                <h3 className='text-mobile/h6 md:text-desktop/h3 font-markot mb-[8px]'>2400 x 1080</h3>
+                <p className='text-mobile/small/body md:text-desktop/body/1 font-markot'>Pixels Resolution</p>
+              </div>
+              <div className='text-[#FFFFFF]'>
+                <img src='/s_twenty_three_plus/StepIntoNewVisionBorder.svg' className='w-full md:w-auto h-[66px] md:h-[110px] mt-0 md:mt-[5px]' />
+              </div>
+              <div className='text-[#FFFFFF] md:text-left'>
+                <h3 className='text-mobile/h6 md:text-desktop/h3 font-markot mb-[8px]'>Gorilla Glass 5</h3>
+                <img src='/s_twenty_three_plus/StepIntoNewVisionFrame.svg' />
+              </div>
+            </div>
+            )}
           </div>
-          <div className='text-[#FFFFFF] md:text-left'>
-            <h3 className='text-mobile/h6 md:text-desktop/h3 mb-[8px]'>2400 x 1080</h3>
-            <p className='text-mobile/small/body md:text-desktop/body/1'>Pixels Resolution</p>
-          </div>
-          <div className='text-[#FFFFFF]'>
-            <img src='/s_twenty_three_plus/StepIntoNewVisionBorder.svg' className='w-full md:w-auto h-[66px] md:h-[110px] mt-0 md:mt-[5px]' />
-          </div>
-          <div className='text-[#FFFFFF] md:text-left'>
-            <h3 className='text-mobile/h6 md:text-desktop/h3 mb-[8px]'>Gorilla Glass 5</h3>
-            <img src='/s_twenty_three_plus/StepIntoNewVisionFrame.svg' />
+          <div className='flex md:hidden w-full p-4'>
+            <img src='/s_twenty_three_plus/StepIntoNewVisionPhone.svg' className='w-full' />
           </div>
         </div>
-        )}
-      </div>
-      <div className='flex md:hidden w-full p-4'>
-        {showMobileImage && (<img src='/s_twenty_three_plus/StepIntoNewVisionPhone.svg' className='w-full animate-slide-down' />)}
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
   display: flex;
   position: relative;
   margin-top: 0px !important;
-  padding: 0 50px;
+/*  padding: 0 50px;*/
   width: 100%;
   height: 800px;
   background-image: url('./heroBg.png');
@@ -138,7 +138,7 @@
   position: relative;
   margin-top: 0px !important;
   width: 100%;
-  height: 722px;
+/*  height: 722px;*/
   padding: 120px 80px;
   background: #1C1B1B;
 }
@@ -156,13 +156,14 @@
   border: 1px solid rgba(202, 134, 255, 0.1);
   border-radius: 16px;
   margin: 0 25px;
+  min-height: 360px;
 /*  border-image-source: linear-gradient(107.83deg, rgba(202, 134, 255, 0.1) 23.83%, rgba(133, 226, 253, 0.1) 75.66%);*/
 }
 
 .amoled-display-section {
   display: flex;
   position: relative;
-  margin-top: 80px !important;
+  margin-top: 0px !important;
   padding: 0 50px;
   width: 100%;
   height: 800px;
@@ -176,7 +177,7 @@
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 99;
+  z-index: 9;
 }
 
 .amoled-display-section-phone img {
@@ -227,6 +228,10 @@
   width: 100%;
   height: 800px;
   background-color: #000000;
+  background-image: url('./StepIntoNewVisionBg.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .immersive-entertainment-section {
@@ -249,7 +254,7 @@
   display: flex;
   position: relative;
   margin-top: 0px !important;
-  padding: 120px;
+  padding: 120px 0px;
   width: 100%;
   height: 800px;
   background-image: url('./PicturePerfect.svg');
@@ -262,15 +267,15 @@
   flex-direction: column; /* Stack items vertically */
   position: relative;
   margin-top: 0px !important;
-  padding: 120px;
+  padding: 120px 0px;
   width: 100%;
 }
 
 .time-lapse-section {
-  display: flex;
+/*  display: flex;*/
   position: relative;
   margin-top: 0px !important;
-  padding: 120px;
+  padding: 120px 0px;
   width: 100%;
   height: 800px;
   background-image: url('./SnapFlawlessSelfie.png');
@@ -322,38 +327,51 @@
   padding: 120px 80px;
 }
 
-.blog-cards-section div:nth-child(2) {
+.blog-cards-section .grid div:nth-child(1) {
+  background-image: url('./BlogCardsOne.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.blog-cards-section .grid div:nth-child(2) {
   background-image: url('./BlogCardsTwo.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+  border-radius: 16px;
 }
 
-.blog-cards-section div:nth-child(3) {
+.blog-cards-section .grid div:nth-child(3) {
   background-image: url('./BlogCardsThree.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+  border-radius: 16px;
 }
 
-.blog-cards-section div:nth-child(4) {
+.blog-cards-section .grid div:nth-child(4) {
   background-image: url('./BlogCardsFour.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+  border-radius: 16px;
 }
 
-.blog-cards-section div:nth-child(5) {
+.blog-cards-section .grid div:nth-child(5) {
   background-image: url('./BlogCardsFive.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+  border-radius: 16px;
 }
 
 @media (max-width: 768px) {
   .hero-section {
     display: block;
-    padding: 20px 0 0 0;
+    padding: 20px;
+    padding-bottom: 0px;
     height: 585px;
   }
 
@@ -362,17 +380,17 @@
   }
 
   .overview-two-section {
-    height: 1100px;
+    height: 1000px;
     padding: 40px 16px;
   }
 
   .overview-two-section-card {
     padding: 16px;
     margin: 16px 0;
+    min-height: 210px;
   }
 
   .amoled-display-section {
-    margin-top: 48px !important;
     height: 330px;
   }
 
@@ -391,14 +409,15 @@
   .new-vision-section {
     display: block;
     padding: 12px 16px;
-    height: 500px;
+    height: 545px;
+    background-image: none;
   }
 
   .picture-perfect-section {
     display: block;
     padding: 12px 16px;
     padding-bottom: 0px;
-    height: auto;
+    height: 790px;
   }
 
   .sharp-focus-section {
@@ -406,7 +425,7 @@
   }
 
   .sharp-focus-section-text {
-    width: 90px;
+    width: 135px;
   }
 
   .time-lapse-section {
@@ -431,7 +450,7 @@
 
   .unlock-touch-section {
     padding: 12px 16px;
-    height: 465px;
+    height: 500px;
   }
 
   .thin-design-section {
@@ -601,4 +620,32 @@
 .slick-dots li button:before {
   content: '' !important;
   opacity: 0;
+}
+
+.primaryAnimation {
+  animation: primaryAnimationFrame 2.5s ease-out;
+  backface-visibility: hidden;
+}
+
+@keyframes primaryAnimationFrame {
+  0% {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  90% {
+    position: absolute;
+    left: 175px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    position: absolute;
+    left: 175px;
+    transform: translate(-50%, -50%);
+  }
 }

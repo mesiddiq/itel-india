@@ -7,9 +7,9 @@ const AmoledDisplay = (props) => {
 
   useEffect(() => {
     if (screen.width > 1000) {
-      setStartAnimation(scrollY >= 2700);
+      setStartAnimation(scrollY >= 2500);
     } else {
-      setStartAnimation(scrollY >= 1900);
+      setStartAnimation(scrollY >= 1700);
     }
   }, [scrollY]);
 
@@ -27,14 +27,14 @@ const AmoledDisplay = (props) => {
   return (
     <div className='amoled-display-section'>
       {showImages && (
-        <>
+        <div className='content'>
         	<div className='amoled-display-section-phone'>
         		<img src='/s_twenty_three_plus/AmoledDisplayPhone.svg' width={840} height={425} />
         	</div>
         	<div className='amoled-display-section-text'>
         		<img src='/s_twenty_three_plus/AmoledDisplayText.svg' width={872} height={401} />
         	</div>
-        </>
+        </div>
       )}
     </div>
   );

@@ -11,9 +11,9 @@ const BlogCards = (props) => {
 
 	useEffect(() => {
 		if (screen.width > 1000) {
-			setStartAnimation(scrollY >= 8500);
+			setStartAnimation(scrollY >= 10700);
 		} else {
-			setStartAnimation(scrollY >= 6100);
+			setStartAnimation(scrollY >= 5850);
 		}
 	}, [scrollY]);
 
@@ -75,8 +75,8 @@ const BlogCards = (props) => {
 					<h3 className={`linear-gradient text-mobile/h5/medium md:text-desktop/h3 mb-[20px]`}>Dive into the Visuals</h3>
 					<p className='text-[#F2F2F2] text-mobile/body/large md:text-desktop/h4 mb-[20px] md:mb-[80px]'>6.78”FHD+ AMOLED 3D Curved Screen</p>
 					<div className='flex justify-center'>
-						<img src='/s_twenty_three_plus/BlogCardsOnePhone.svg' className='absolute bottom-0 w-[70%] md:w-auto' />
-						<img src='/s_twenty_three_plus/BlogCardsOneScreen.svg' className='absolute bottom-0 w-[55%] md:w-auto' />
+						<img src='/s_twenty_three_plus/BlogCardsOnePhone.svg' className='absolute bottom-0 w-[60%] md:w-[70%] md:w-auto' />
+						<img src='/s_twenty_three_plus/BlogCardsOneScreen.svg' className='absolute bottom-0 w-[47.5%] md:w-[55%] md:w-auto' />
 						<img src='/s_twenty_three_plus/BlogCardsOneButterfly.svg' className='absolute bottom-[8%] md:bottom-[17%] left-[42%] w-[45%] md:w-auto' />
 					</div>
 				</div>)}

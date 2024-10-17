@@ -13,9 +13,9 @@ const UnlockTouch = (props) => {
 
   useEffect(() => {
     if (screen.width > 1000) {
-      setStartAnimation(scrollY >= 6800);
+      setStartAnimation(scrollY >= 9200);
     } else {
-      setStartAnimation(scrollY >= 3800);
+      setStartAnimation(scrollY >= 5350);
     }
   }, [scrollY]);
 
@@ -39,7 +39,7 @@ const UnlockTouch = (props) => {
     if (isTitleComplete) {
       const paragraphTimeout = setTimeout(() => {
         setShowParagraph(true);
-      }, 1000); // Delay before showing the paragraph
+      }, 500); // Delay before showing the paragraph
 
       return () => clearTimeout(paragraphTimeout);
     }
@@ -78,9 +78,9 @@ const UnlockTouch = (props) => {
   return (
     <div className='unlock-touch-section'>
       <div className='grid grid-cols-1 md:grid-cols-2 mx-auto gap-4'>
-        <div className='col-span-1 text-left'>
-          <h3 className={`linear-gradient text-mobile/h4 md:text-desktop/h2 mb-[20px]`}>{title.slice(0, titleIndex)}</h3>
-          {showParagraph && (<p className='w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large mb-[20px] md:mb-[80px] slideInFromLeft'>Effortlessly access your device with the touch of a finger - seamless security and convenience with in-display finger unlock.</p>)}
+        <div className='col-span-1 text-left pt-8'>
+          <h3 className={`linear-gradient text-mobile/h4 md:text-desktop/h2 font-markot mb-[20px] w-[65%]`}>{title.slice(0, titleIndex)}</h3>
+          {showParagraph && (<p className='w-[55%] md:w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large font-markot mb-[20px] md:mb-[80px] slideInFromLeft'>Effortlessly access your device with the touch of a finger - seamless security and convenience with in-display finger unlock.</p>)}
         </div>
         <div className='col-span-1'>
           <div className='hidden md:flex justify-center'>
@@ -89,9 +89,9 @@ const UnlockTouch = (props) => {
             {showFinger && (<img src='/s_twenty_three_plus/UnlockTouchFinger.svg' className='absolute bottom-0 ml-[-770px] slideInFromTop' />)}
           </div>
           <div className='flex md:hidden'>
-            {showPhone && (<img src='/s_twenty_three_plus/UnlockTouchPhoneSM.svg' className='absolute top-20 right-0 w-[109px] h-[284px] slideInFromTop' />)}
-            {showFingerPrint && (<img src='/s_twenty_three_plus/UnlockTouchFingerPrint.svg' className='absolute top-[60%] right-12 ml-[-30px] w-[18px] h-[28px] slideInFromTop' />)}
-            {showFinger && (<img src='/s_twenty_three_plus/UnlockTouchFinger.svg' className='absolute left-14 bottom-5 w-[348px] h-[260px] slideInFromTop' />)}
+            {showPhone && (<img src='/s_twenty_three_plus/UnlockTouchPhoneSM.svg' className='absolute top-[80px] right-[40px] w-[109px] h-[284px] slideInFromTop' />)}
+            {showFingerPrint && (<img src='/s_twenty_three_plus/UnlockTouchFingerPrint.svg' className='absolute top-[55%] right-[90px] ml-[-30px] w-[18px] h-[28px] slideInFromTop' />)}
+            {showFinger && (<img src='/s_twenty_three_plus/UnlockTouchFingerMobile.svg' className='absolute left-0 bottom-[-50px] w-[450px] slideInFromTop' />)}
           </div>
         </div>
       </div>
