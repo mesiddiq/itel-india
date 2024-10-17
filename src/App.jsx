@@ -17,7 +17,7 @@ import EWaste from './pages/static_pages/header/Support/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
-
+import FAQ from './pages/static_pages/FAQ'
 import P_Series_Parent from './pages/p_series/P_Series_Parent'
 import ServiceCenters from './pages/static_pages/ServiceCenters'
 import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
@@ -49,8 +49,8 @@ function App() {
 	return (
 		<main>
 			<Routes>
-				<Route path='/' element={<HomePageButtons/>} />
 
+				<Route path='/' element={<HomePageButtons/>} />
 				{/********************************************************/}
 				{/* 					Static Pages					 */}
 				{/********************************************************/}
@@ -65,6 +65,8 @@ function App() {
 				<Route path='/aboutus' element={<Aboutus />} />
 				<Route path='/contactus' element={<Contactus />} />
 				<Route path='/servicecenters' element={<ServiceCenters />} />
+				<Route path='/FAQ' element={<FAQ/>} />
+				
 
 				{/* ***************************************************************************************************/}
 				{/* *******************************************SmartPhones*********************************************/}
