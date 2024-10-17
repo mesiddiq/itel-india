@@ -33,34 +33,6 @@
   font-family: 'BricolageGrotesque', sans-serif;
 }
 
-@font-face {
-  font-family: 'FFMarkRegular';
-  src: url('./assets/fonts/Mark-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'FFMarkMedium';
-  src: url('./assets/fonts/FontFont_FF.Mark.Pro.Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'FFMarkBold';
-  src: url('./assets/fonts/FontFont_FF.Mark.Pro.Bold.otf') format('opentype');
-}
-
-.FFMarkRegular {
-  font-family: 'FFMarkRegular', sans-serif;
-}
-
-.FFMarkMedium {
-  font-family: 'FFMarkMedium', sans-serif;
-}
-
-.FFMarkBold {
-  font-family: 'FFMarkBold', sans-serif;
-}
-
-
 @layer base {
   .content {
     @apply mx-auto max-w-7xl w-full md:w-11/12 text-white;
