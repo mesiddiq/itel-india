@@ -220,6 +220,7 @@ export default {
 				'p55SeeMoreCaptureMoreLaptop': "url('/smartphone/P55/SeeMoreCaptureMore-Laptop.png')",
 				'p55SeeMoreCaptureMoreMobile': "url('/smartphone/P55/SeeMoreCaptureMore-Mobile.png')",
 				'superfastUnisocBGLaptop': "url('/smartphone/P55/superfastUnisocBGLaptop.png')",
+				'superfastUnisocBGMobile': "url('/smartphone/P55/superfastUnisocBGMobile.png')",
 				'clearVisionBG': "url('/smartphone/P55/clearVisionBG.png')",
 				'frame24GB': "url('/smartphone/P55/frame24GB.png')",
 

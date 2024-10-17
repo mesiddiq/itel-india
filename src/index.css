@@ -40,7 +40,7 @@
 }
 
 @layer base {
-  .font-outline-2 {
+  .font-outline-1 {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px white;
   }
