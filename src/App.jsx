@@ -20,7 +20,7 @@ import EWaste from './pages/static_pages/header/Support/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
-
+import FAQ from './pages/static_pages/FAQ'
 import P_Series_Parent from './pages/p_series/P_Series_Parent'
 import ServiceCenters from './pages/static_pages/ServiceCenters'
 import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
@@ -57,7 +57,7 @@ function App() {
 						<Link className='text-blue-500 underline' to='/support/screenreplacement'>Screen Replacement</Link>
 						<Link className='text-blue-500 underline' to='/support/e-waste-management'>E-Waste Management</Link>
 						<Link className='text-blue-500 underline' to='/support/100-days-promise'>100 Days Promise</Link>
-
+                         
 					</div>} />
 	
 				{/********************************************************/}
@@ -74,6 +74,8 @@ function App() {
 				<Route path='/aboutus' element={<Aboutus />} />
 				<Route path='/contactus' element={<Contactus />} />
 				<Route path='/servicecenters' element={<ServiceCenters />} />
+				<Route path='/FAQ' element={<FAQ/>} />
+				
 
 				{/* ***************************************************************************************************/}
 				{/* *******************************************SmartPhones*********************************************/}
