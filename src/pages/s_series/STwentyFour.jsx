@@ -22,10 +22,15 @@ const STwentyFour = () => {
     return (
         <>
             <HeroSection />
+
             <OverViewBanner />
+
             <ProductDescription />
+
             <SliderAnimation />
+
             <Video1 />
+
             <FillerFrame />
 
             <CameraSpecifications />
@@ -50,7 +55,6 @@ const STwentyFour = () => {
 
             <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
             
-
         </>
     )
 }

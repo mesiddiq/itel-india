@@ -53,7 +53,13 @@ const MultipleCameraModes = () => {
                 {/* Mobile */}
                 <div className="lg:hidden  grid grid-cols-[7%_93%] justify-between items-end ">
                     <img src='/smartphone/S24/timeLapseText.svg' alt='timeLapseText' className="w-[80%]"/>
-                    <img src='/smartphone/S24/timeLapse.png' alt='timeLapse' className="h-full"/>
+                    <video autoPlay muted className="w-full">
+                        <source
+                        src="https://res.cloudinary.com/djwj42mic/video/upload/v1728627747/S24_Timelapse_nxkur0.mp4"
+                        type="video/mp4"
+                        />
+                    </video>
+                    {/* <img src='/smartphone/S24/timeLapse.png' alt='timeLapse' className="h-full"/> */}
                 </div>
 
                 {/* Lower Most Text */}
