@@ -15,11 +15,12 @@ import FullSpecifications from "../../components/common/FullSpecifications"
 
 import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData'
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data'
+import StickyHeader from "../../components/common/StickyHeader"
 
 const PFiftyFive = () => {
     return (
         <>
-            <OverViewBanner />
+            <StickyHeader title="P55" purchaseLink="" icon="/smartphone/P55/P55Logo.svg" bgColor="#91C9EC"/>
 
             <VideoAsset />
 
