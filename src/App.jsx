@@ -24,6 +24,9 @@ import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
 import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
 
+import A_Series_Parent from './pages/a_series/A_Series_Parent'
+import A05i from './pages/a_series/A05i'
+
 import { 
 	Circle1, 
 	It2175p, 
@@ -96,7 +99,10 @@ function App() {
 				{/********************************************************/}
 				{/* 					A series						 */}
 				{/********************************************************/}
-
+				
+				<Route path='/smartphones/a-series' element={<A_Series_Parent />} >
+					<Route path='a05i' element={<A05i />} />
+				</Route>
 
 
 				{/***************************************************************************************************/}

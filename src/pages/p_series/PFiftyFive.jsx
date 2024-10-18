@@ -1,5 +1,3 @@
-import OverViewBanner from "../../components/core/s_series_core/S_Twenty_Four/OverViewBanner"
-
 import FillerFrame from "../../components/core/p_series_core/P_Fifty_Five/FillerFrame"
 import GamingRevolution from "../../components/core/p_series_core/P_Fifty_Five/GamingRevolution"
 import VideoAsset from "../../components/core/p_series_core/P_Fifty_Five/VideoAsset"
@@ -12,10 +10,10 @@ import MultipleCardComponents from "../../components/core/p_series_core/P_Fifty_
 import AutomaticCarousel from "../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel"
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import FullSpecifications from "../../components/common/FullSpecifications"
+import StickyHeader from "../../components/common/StickyHeader"
 
 import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData'
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data'
-import StickyHeader from "../../components/common/StickyHeader"
 
 const PFiftyFive = () => {
     return (

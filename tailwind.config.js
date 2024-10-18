@@ -227,7 +227,10 @@ export default {
 				'superfastUnisocGradient': 'linear-gradient(101.38deg, #D5EEF9 -22.94%, #70A2E1 77.36%)',
 				'frame24GBGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
 				'multipleCardComponentsGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
-				
+
+				'RAMHighPerformanceGradient': 'linear-gradient(240.94deg, #DFF4FF 0.88%, rgba(230, 221, 255, 0) 56.21%)',
+				'MultiTaskEaseGradient': 'linear-gradient(289.9deg, rgba(221, 248, 255, 0.1) 7.77%, #E6DDFF 92.5%)',
+				'HighPerformanceGradient': 'linear-gradient(251.2deg, rgba(221, 248, 255, 0.3) 0%, #E6DDFF 40.29%)',
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
