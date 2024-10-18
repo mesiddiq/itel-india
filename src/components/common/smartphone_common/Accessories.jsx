@@ -1,25 +1,30 @@
+import React from 'react';
 const Accessories = () => {
-  // Define the accessory data in a JSON-like structure (constant array)
+  
   const accessoriesData = [
     {
       imageSrc: '/P_Series/bg2.png',
       title: 'Earbuds T1Pro',
       price: '₹849.00',
+      url:'',
     },
     {
       imageSrc: '/P_Series/bg3.png',
       title: 'Icon 2',
       price: '₹1,099.00',
+      url:'',
     },
     {
       imageSrc: '/P_Series/bg4.png',
       title: 'N82',
       price: '₹999.00',
+      url:'',
     },
     {
       imageSrc: '/P_Series/bg5.png',
       title: 'Smartwatch 2 Ultra',
       price: '₹2,099.00',
+      url:'',
     },
   ];
 
@@ -43,11 +48,22 @@ const Accessories = () => {
                   className="w-full h-auto max-w-[150px] md:max-w-[220px] object-contain"
                 />
               </div>
-              <h4 className="text-mobile/h6 md:text-desktop/h4 mt-4">
+              <div className="flex flex-col gap-[24px]">
+              <div className="flex flex-col gap-[12px]">
+              <h4 className="text-mobile/h6 md:text-desktop/h4 mt-4 font-markot">
                 {accessory.title}
               </h4>
               <h6 className="text-desktop/h6 font-markot">{accessory.price}</h6>
-            </div>
+</div>
+
+<button className="flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
+                    <span className="flex overflow-hidden gap-2 items-center">
+                      <span>Buy Now</span>
+                      <img loading="lazy" src="/P_Series/arrow-right.png" alt="" className="object-contain w-6" />
+                    </span>
+                  </button>
+  </div></div>
+         
           ))}
         </div>
       </div>

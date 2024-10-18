@@ -20,8 +20,6 @@ import EWaste from './pages/static_pages/header/Support/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
-
-import CSR from './pages/static_pages/CSR'
 import P_Series_Parent from './pages/p_series/P_Series_Parent'
 
 function App() {

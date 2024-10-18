@@ -2,13 +2,13 @@ import React from 'react';
 
 const Powerful = () => {
   return (
-    <div className="w-full h-max  lg:px-[80px] lg:py-[120px] p-[40px]">
+    <div className="w-full h-max  lg:px-[80px] lg:py-[120px] p-[40px] bg-white">
   <div className={`
     flex flex-col items-end md:justify-center w-full  h-[660px] 
     bg-cover overflow-hidden rounded-[16px] 
     bg-[url('/P_Series/chip_mobile.png')]  
     md:bg-[url('/P_Series/powerful.png')]  
-    bg-center bg-no-repeat bg-[#090F1B]
+    bg-center bg-no-repeat 
   `}>
         <div className='content flex flex-row md:flex-col justify-center gap-[56px] items-end rounded-[16px] '>
           <div className='flex flex-col justify-between text-center md:text-left  pt-8' data-aos="fade-left">

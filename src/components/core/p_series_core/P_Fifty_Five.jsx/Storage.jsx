@@ -27,7 +27,7 @@ const Storage = () => {
      </div>
      </div>
      <div className="w-full md:w-1/2 h-full">
-     <img src='/P_Series/vector3.png' className='w-full h-full bg-cover opacity-50'></img>
+     <img src='/P_Series/vector4.png' className='w-full h-full bg-cover opacity-50'></img>
      </div>
     </div></div>
   )

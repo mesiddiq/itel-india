@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Model = () => {
-  // Define the data for models
+ 
   const models = [
     {
       id: 1,
@@ -9,10 +9,12 @@ const Model = () => {
       title: 'S23+',
       price: '₹12,999.00',
       features: [
-        { label: 'Camera', value: '50MP AI Dual Rear Camera' },
-        { label: 'Display', value: '6.5" Super AMOLED' },
+        { label: 'Camera', value: '108MP Ultra Clear AI Camera' },
+        {label: 'Memory', value: 'Upto 16GB* RAM + 128GB ROM'},
+        { label: 'Dimension', value: '163.5 x 75.5 x 8.3 mm' },
+        { label: 'Processor', value: 'Octa-core Processor' },
         { label: 'Battery', value: '5000mAh' },
-        { label: 'Processor', value: 'Octa-Core 2.2GHz' },
+       
       ],
     },
     {
@@ -21,10 +23,12 @@ const Model = () => {
       title: 'S24',
       price: '₹10,999.00',
       features: [
-        { label: 'Camera', value: '108MP Quad Rear Camera' },
-        { label: 'Display', value: '6.8" Dynamic AMOLED' },
-        { label: 'Battery', value: '6000mAh' },
-        { label: 'Processor', value: 'Snapdragon 8 Gen 1' },
+        { label: 'Camera', value: '50MP Dual Rear' },
+        {label: 'Memory', value: '8GB + 8GB* + 256GB Memory'},
+        { label: 'Dimension', value: '164.4 x 75.1 x 7.9mm' },
+        { label: 'Processor', value: 'Octa-core Processor' },
+        { label: 'Battery', value: '5000mAh' },
+        
       ],
     },
     {
@@ -34,9 +38,12 @@ const Model = () => {
       price: '₹6,799.00',
       features: [
         { label: 'Camera', value: '32MP Dual Rear Camera' },
-        { label: 'Display', value: '6.1" IPS LCD' },
-        { label: 'Battery', value: '4500mAh' },
-        { label: 'Processor', value: 'MediaTek Helio G95' },
+        {label: 'Memory', value: 'Upto 12GB RAM'},
+        { label: 'Dimensions', value: '163.9 * 75.7 * 8.6 mm' },
+        { label: 'Processor', value: 'Octa-core Processor' },
+        { label: 'Battery', value: '5000mAh' },
+        
+        
       ],
     },
   ];
@@ -77,12 +84,20 @@ const Model = () => {
                 </div>
                 <div className="flex flex-col gap-[8px] md:gap-4">
                   {model.features.map((feature, idx) => (
-                    <div key={idx} className="flex flex-col md:flex-row justify-center md:justify-between gap-[12px] text-center md:gap-[20px] items-center">
+                   <div key={idx} className="flex flex-col md:flex-row justify-center md:justify-between gap-[12px] text-center md:gap-[20px] items-center">
                       <p className="text-[#F8F6F3] font-markot text-desktop/caption md:text-desktop/subtitle">{feature.label}</p>
                       <p className="text-[#D9D9D9] font-markot text-mobile/small/body md:text-desktop/body/2/regular">{feature.value}</p>
+                      
                     </div>
+              
                   ))}
                 </div>
+                <button className="flex gap-3 justify-center border border-white/50 py-[12px] px-[24px] rounded-full items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
+                    <span className="flex overflow-hidden gap-2 items-center">
+                      <span>Buy Now</span>
+                      <img loading="lazy" src="/P_Series/arrow-right.png" alt="" className="object-contain w-6" />
+                    </span>
+                  </button>
               </div>
             </div>
           ))}

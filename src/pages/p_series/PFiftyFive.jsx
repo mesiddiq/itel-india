@@ -53,14 +53,6 @@ const PFiftyFive = () => {
       <Model />
 
 
-      <Grayframe />
-      <Chatgpt />
-      <Battery />
-      <Storage />
-      <Camera />
-      <Warrenty />
-      <Mobile_grid />
-
     </>
   )
 }
