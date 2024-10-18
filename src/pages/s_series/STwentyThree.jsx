@@ -17,14 +17,14 @@ import VideoSection from '../../components/core/s_series_core/S_Twenty_Three/Vid
 import SimilarProducts from '../../components/common/smartphone_common/SimilarProducts'
 import SupportChannels from '../../components/common/smartphone_common/SupportChannels'
 import OtherProducts from '../../components/common/smartphone_common/OtherProducts'
+import StickyHeader from '../../components/common/StickyHeader'
 
 
 const STwentyThree = () => {
     return (
-        <div className='overflow-hidden'>
-        
+        <div className=''>
             <HeroSection />
-            <FeatureHeader/>
+            <StickyHeader title="S23"  purchaseLink={''} icon={''} bgColor={'#181818'} />
             <FeatureSection />
             <ScrollingBanner />
             <VideoSection />
@@ -36,12 +36,6 @@ const STwentyThree = () => {
             <StyleSection />
             <Features/>
             <FullSpecifications FullSpecificationsData={FullSpecificationsS23} mode="dark"/>
-            
-            <SimilarProducts/>
-            <SupportChannels/>
-            {/* <OtherProducts/> */}
-            
-
         </div>
     )
 }

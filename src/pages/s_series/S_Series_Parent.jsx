@@ -9,7 +9,7 @@ import Model from '../../components/common/smartphone_common/Model'
 
 const S_Series_Parent = () => {
     return (
-        <div className='bg-[#111111]'>
+        <div className='bg-brand/black'>
             <Outlet />
             <Accessories />
             <Model />

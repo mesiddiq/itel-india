@@ -22,13 +22,13 @@ import YourSideKick from '../../components/core/feature_phone/s_guru_4g/YourSide
 
 const SuperGuru4G = () => {
     return (
-        <div className=''>
+        <div >
             <Hero {...HeroDataSuperGuru4g} />
             <StickyHeader {...HeroDataSuperGuru4g} />
             <FeatureRich {...FeatureRichDataSuperGuru4g} />
             <EnjoyHIgh />
             <EntireWorld />
-            <PayAnywhere />
+            <PayAnywhere upiImageUrl="/featurephone/superguru4g/upiphone.png" />
             <YourSideKick />
             <KingVoice {...KingVoiceDataSuperGuru4g} />
             <TechSpecs {...TechSpecsDataSuperGuru4g} />

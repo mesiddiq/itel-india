@@ -20,14 +20,6 @@ import FullSpecifications from "../../components/common/FullSpecifications"
 
 import { FullSpecificationsP555g } from '../../data/smartphonedata/P555gData'
 const PFiftyFive5g = () => {
- 
-  useEffect(() => {
-    // Initialize AOS when the component mounts
-    AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
   
     return (
       <>

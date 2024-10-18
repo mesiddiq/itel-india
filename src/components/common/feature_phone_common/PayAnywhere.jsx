@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PayAnywhere = () => {
+const PayAnywhere = ({ upiImageUrl }) => {
     return (
         <div className="py-[42px] lg:py-[85px] px-4 lg:px-0 font-markot">
             <div className='rounded-[16px] overflow-hidden h-[430px] lg:h-auto lg:rounded-[24px] relative bg-bg/secondry content py-[26px] lg:py-[89px] px-[24px] lg:px-[114px]'>
@@ -18,7 +18,7 @@ const PayAnywhere = () => {
                         </div>
                     </div>
                 </div>
-                <img src="/featurephone/superguru4g/upiphone.png" alt="UPI Enabled Phone" className='absolute bottom-0 right-0 h-[284px] lg:h-[450px] w-[209px] lg:object-contain md:w-auto' />
+                <img src={upiImageUrl} alt="UPI Enabled Phone" className='absolute -bottom-10 lg:bottom-0 object-contain right-0 h-[284px] lg:h-[450px] w-[209px] lg:object-contain md:w-auto' />
             </div>
         </div>
     )

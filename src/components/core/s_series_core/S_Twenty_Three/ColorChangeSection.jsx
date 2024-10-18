@@ -3,7 +3,7 @@ import React from 'react';
 function ColorChangeSection() {
   return (
     <section
-      className="content relative h-[800px] overflow-hidden z-0 pb-4 max-w-full w-[1440px] bg-cover bg-top"
+      className="relative h-[800px] overflow-hidden z-0 pb-4 max-w-full px-4 md:px-0 bg-cover bg-top"
       style={{ backgroundImage: 'url(/smartphone/S_Twenty_Three/ColorChangeBg.webp)' }}
     >
       <div className="flex gap-5 max-md:flex-col-reverse max-md:items-center max-md:gap-0">

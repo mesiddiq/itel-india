@@ -14,7 +14,7 @@ const VideoComponent = ({ videoSrc, thumbnailSrc, videoTitle }) => {
   };
 
   return (
-    <div className="relative cursor-pointer content" onClick={handleVideoClick}>
+    <div className="relative cursor-pointer" onClick={handleVideoClick}>
       <video
         ref={videoRef}
         src="https://res.cloudinary.com/djwj42mic/video/upload/v1728628180/itel___itel_S23_smartphone_1080p_talia7.mp4"
