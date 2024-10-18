@@ -1,11 +1,12 @@
-import { desc } from "framer-motion/client"
 
 export const HeroDataSuperGuru400 = {
     title: "Super Guru 400",
     subtitle: '2.4” Display | 1200 mAh Battery | Crystal Clear Audio ',
+    bgDesktop: '/featurephone/superguru400/Hero_banner_desktop.webp',
+    bgMobile: '/featurephone/superguru400/Hero_banner_mobile.webp',
     purchaseLink: '',
     icon: '',
-    phoneUrl: '/featurephone/superguru4g/hero.webp'
+    phoneUrl: '/featurephone/superguru400/Hero_mobile.webp'
 }
 
 export const FullSpecificationsDataSuperGuru400 = [
@@ -98,26 +99,28 @@ export const FeatureRichDataSuperGuru400 = {
 }
 
 export const KingVoiceDataSuperGuru400 = {
-    phoneUrl: '',
+    phoneUrl: '/featurephone/superguru400/Hero_mobile.webp',
+    bgColor: '#0C92A4',
+    borderColor: '#13A6BD',
     cards: [
-        { icon: '', label: `Incoming Calls & Message` },
-        { icon: '', label: `Reading Menu & Phonebook` },
-        { icon: '', label: `Dialling Number` },
-        { icon: '', label: `Instant Reading` },
-        { icon: '', label: `Customisation Support` },
-        { icon: '', label: `Time Update` },
+        { icon: '/featurephone/superguru400/kvcall.svg', label: `Incoming Calls & Message` },
+        { icon: '/featurephone/superguru400/kvphonebook.svg', label: `Reading Menu & Phonebook` },
+        { icon: '/featurephone/superguru400/kvdialing.svg', label: `Dialling Number` },
+        { icon: '/featurephone/superguru400/kvreading.svg', label: `Instant Reading` },
+        { icon: '/featurephone/superguru400/kvsupport.svg', label: `Customisation Support` },
+        { icon: '/featurephone/superguru400/kvtime.svg', label: `Time Update` },
     ]
 }
 
 export const TechSpecsDataSuperGuru400 = {
-    phoneUrl: '',
+    phoneUrl: '/featurephone/superguru400/tech_specs_phone.webp',
     cards: [
-        { icon: '', label: `UPI Support` },
-        { icon: '', label: `9 Languages Support` },
-        { icon: '', label: `1.3 MP Camera` },
-        { icon: '', label: `2.4” Display` },
-        { icon: '', label: `Crystal Clear Audio` },
-        { icon: '', label: `King Voice` },
-        { icon: '', label: `14 Days* Standby Time` },
+        { icon: '/featurephone/common/upi.svg', label: `UPI Support` },
+        { icon: '/featurephone/common/language.svg', label: `9 Languages Support` },
+        { icon: '/featurephone/common/camera.svg', label: `1.3 MP Camera` },
+        { icon: '/featurephone/common/display.svg', label: `2.4” Display` },
+        { icon: '/featurephone/common/voice.svg', label: `Crystal Clear Audio` },
+        { icon: '/featurephone/common/voice.svg', label: `King Voice` },
+        { icon: '/featurephone/common/battery.svg', label: `14 Days* Standby Time` },
     ]
 }

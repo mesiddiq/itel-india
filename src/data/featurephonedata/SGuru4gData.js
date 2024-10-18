@@ -1,6 +1,8 @@
 export const HeroDataSuperGuru4g = {
     title: "Super Guru 4G",
     subtitle: '4G VoLTE | YouTube* | YouTube Shorts*| UPI Payments',
+    bgDesktop:'/featurephone/superguru4g/banner.png',
+    bgMobile:'/featurephone/superguru4g/bannermobile.png',
     purchaseLink: '',
     icon:"/featurephone/superguru4g/buynowlogo.svg",
     phoneUrl:'/featurephone/superguru4g/hero.webp'
@@ -100,7 +102,7 @@ export const FeatureRichDataSuperGuru4g = {
 }
 
 export const KingVoiceDataSuperGuru4g = {
-    phoneUrl: '/featurephone/superguru4g/kingvoice.webp',
+    phoneUrl: '/featurephone/superguru4g/Banner Phone.webp',
     bgColor:'#262b5a',
     borderColor: '#404796',
     cards: [

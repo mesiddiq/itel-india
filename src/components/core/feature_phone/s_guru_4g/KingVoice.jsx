@@ -3,7 +3,7 @@ import { For } from 'react-haiku'
 
 const KingVoice = ({ phoneUrl, cards,bgColor,borderColor }) => {
     return (
-        <div className={`bg-[#262b5a] flex flex-col items-center overflow-hidden relative gap-6 lg:gap-14 pb-[366px] pt-9 lg:pb-[116px] lg:pt-12`} style={{backgroundColor:bgColor}}>
+        <div className={` flex flex-col items-center overflow-hidden relative gap-6 lg:gap-14 pb-[366px] pt-9 lg:pb-[116px] lg:pt-12`} style={{backgroundColor:bgColor}}>
             <div className="">
                 <div className={`flex justify-center border-2 relative rounded-s`} style={{borderColor:borderColor}}>
                     <h3 className={`text-mobile/h6 lg:text-desktop/h3 text-white font-markot text-center absolute -translate-y-1/2  px-3 lg:px-5`} style={{backgroundColor:bgColor}}>A Phone That Speaks For You</h3>
@@ -29,7 +29,7 @@ const KingVoice = ({ phoneUrl, cards,bgColor,borderColor }) => {
                     </div>
                 } />
             </div>
-            <img src={phoneUrl} alt="Super Guru 4g" loading='lazy' className='absolute bottom-0 left-1/2 -translate-x-1/2 max-w-[298px] lg:max-w-[490px] w-full' />
+            <img src={phoneUrl} alt="Super Guru 4g" loading='lazy' className='absolute bottom-0 left-1/2 top-[440px] lg:top-[278px] -translate-x-1/2 max-w-[298px] max-h-[760px] lg:max-w-[490px] ' />
         </div>
     )
 }

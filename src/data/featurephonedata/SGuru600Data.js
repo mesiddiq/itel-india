@@ -3,9 +3,11 @@ import { desc } from "framer-motion/client"
 export const HeroDataSuperGuru600 = {
     title: "Super Guru 600",
     subtitle: '2.8” Display | 1900 mAh Battery | UPI Payments',
+    bgDesktop: '/featurephone/superguru600/Hero_banner_desktop.webp',
+    bgMobile: '/featurephone/superguru600/Hero_banner_mobile.webp',
     purchaseLink: '',
     icon: '',
-    phoneUrl: '/featurephone/superguru4g/hero.webp'
+    phoneUrl: '/featurephone/superguru600/Hero_mobile.webp'
 }
 
 export const FullSpecificationsDataSuperGuru600 = [
@@ -98,7 +100,7 @@ export const FeatureRichDataSuperGuru600 = {
 }
 
 export const KingVoiceDataSuperGuru600 = {
-    phoneUrl: '',
+    phoneUrl: '/featurephone/superguru600/King Voice Graphic.webp',
     bgColor:'#b26504',
     borderColor: '#cf8323',
     cards: [
@@ -112,13 +114,13 @@ export const KingVoiceDataSuperGuru600 = {
 }
 
 export const TechSpecsDataSuperGuru600 = {
-    phoneUrl: '',
+    phoneUrl: '/featurephone/superguru600/techspecs.webp',
     cards: [
-        { icon: '', label: `UPI Support` },
-        { icon: '', label: `9 Languages Support` },
-        { icon: '', label: `1.3MP Camera` },
-        { icon: '', label: `2.8” Display` },
-        { icon: '', label: `King Voice` },
-        { icon: '', label: `20 Days* Standby Time` },
+        { icon: '/featurephone/common/upi.svg', label: `UPI Support` },
+        { icon: '/featurephone/common/language.svg', label: `9 Languages Support` },
+        { icon: '/featurephone/common/camera.svg', label: `1.3MP Camera` },
+        { icon: '/featurephone/common/display.svg', label: `2.8” Display` },
+        { icon: '/featurephone/common/voice.svg', label: `King Voice` },
+        { icon: '/featurephone/common/battery.svg', label: `20 Days* Standby Time` },
     ]
 }
