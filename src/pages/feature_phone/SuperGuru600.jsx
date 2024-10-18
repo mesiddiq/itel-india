@@ -13,6 +13,8 @@ import {
     TechSpecsDataSuperGuru600
 } from '../../data/featurephonedata/SGuru600Data'
 import UninterruptedConnectivity from '../../components/core/feature_phone/s_guru_600/UninterruptedConnectivity'
+import UltraFastSupport from '../../components/common/feature_phone_common/UltraFastSupport'
+import PhoneSliderAnimation from '../../components/common/feature_phone_common/PhoneSliderAnimation'
 
 const SuperGuru600 = () => {
     return (
@@ -20,8 +22,10 @@ const SuperGuru600 = () => {
             <Hero {...HeroDataSuperGuru600} />
             <StickyHeader {...HeroDataSuperGuru600} />
             <FeatureRich {...FeatureRichDataSuperGuru600} />
+            <PhoneSliderAnimation/>
             <UninterruptedConnectivity/>
             <PayAnywhere upiImageUrl={'/featurephone/superguru600/upi.webp'} />
+            <UltraFastSupport/>
             <KingVoice {...KingVoiceDataSuperGuru600} />
             <TechSpecs {...TechSpecsDataSuperGuru600} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataSuperGuru600} mode={'light'} />
