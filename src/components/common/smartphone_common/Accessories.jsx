@@ -24,7 +24,7 @@ const Accessories = () => {
   ];
 
   return (
-    <div className="bg-black h-auto flex justify-center w-full py-[40px]">
+    <div className="h-auto flex justify-center w-full py-[40px]">
       <div className="content w-full flex flex-col gap-[36px] px-4">
         <h3 className="text-mobile/h4 md:text-desktop/h3 text-white">
           Level Up Your Experience with Accessories!

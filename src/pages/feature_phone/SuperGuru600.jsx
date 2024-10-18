@@ -21,7 +21,7 @@ const SuperGuru600 = () => {
             <StickyHeader {...HeroDataSuperGuru600} />
             <FeatureRich {...FeatureRichDataSuperGuru600} />
             <UninterruptedConnectivity/>
-            <PayAnywhere />
+            <PayAnywhere upiImageUrl={'/featurephone/superguru600/upi.webp'} />
             <KingVoice {...KingVoiceDataSuperGuru600} />
             <TechSpecs {...TechSpecsDataSuperGuru600} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataSuperGuru600} mode={'light'} />

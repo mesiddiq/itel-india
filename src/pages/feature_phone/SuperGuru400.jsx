@@ -20,7 +20,7 @@ const SuperGuru400 = () => {
             <Hero {...HeroDataSuperGuru400} />
             <StickyHeader {...HeroDataSuperGuru400} />
             <FeatureRich {...FeatureRichDataSuperGuru400} />
-            <PayAnywhere />
+            <PayAnywhere upiImageUrl="/featurephone/superguru400/upi.webp" />
             <KingVoice {...KingVoiceDataSuperGuru400} />
             <TechSpecs {...TechSpecsDataSuperGuru400} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataSuperGuru400} mode={'light'} />

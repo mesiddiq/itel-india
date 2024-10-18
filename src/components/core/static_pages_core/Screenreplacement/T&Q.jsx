@@ -21,7 +21,7 @@ const Terms = () => {
   ];
   return (
     <div className=" lg:bg-bg/secondry  font-markot bg-bg/primary/1">
-      <div className=" lg:py-[120px] lg:px-20 lg:space-y-10 space-y-8  content">
+      <div className=" lg:py-[120px]  py-[42px]  lg:px-20 lg:space-y-10 space-y-8  lg:content px-3 ">
         <p className=" text-center text-mobile/h4 text-brand/black lg:text-desktop/h2">
           Terms & Conditions
         </p>

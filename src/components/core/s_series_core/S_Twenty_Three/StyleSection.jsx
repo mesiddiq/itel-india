@@ -3,14 +3,14 @@ import React from 'react';
 function StyleSection() {
   return (
     <section
-      className="content flex overflow-hidden z-0 flex-col w-full bg-black bg-opacity-20 max-w-[1440px] h-[652px] md:h-[800px] "
+      className="flex overflow-hidden z-0 flex-col px-4 md:px-0 w-full bg-black bg-opacity-20 h-[652px] md:h-[800px] "
       style={{
         backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', 
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}
     >
-      <div className="px-16 pt-4 max-md:px-5 max-md:max-w-full">
+      <div className="pt-4 content max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:items-center max-md:text-center">
           
           {/* Text Section */}

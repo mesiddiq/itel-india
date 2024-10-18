@@ -29,7 +29,7 @@ function SimilarProducts() {
   ];
 
   return (
-    <section className="flex z-0 flex-col bg-black items-center pb-32 max-w-full">
+    <section className="flex z-0 flex-col items-center pb-32 max-w-full">
       <div className="flex flex-col justify-center items-center py-10 w-full">
         <div className="flex flex-col max-w-full w-[1280px]">
           <h2 className="text-mobile/h4 md:text-desktop/h3 text-white px-8 md:px-2 ">

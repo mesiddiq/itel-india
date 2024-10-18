@@ -1,13 +1,15 @@
 import React, { useRef } from 'react'
 import { useSize } from 'react-haiku';
 
-const Hero = ({title,subtitle,phoneUrl,purchaseLink}) => {
+const Hero = ({ title, subtitle, phoneUrl, purchaseLink, bgDesktop, bgMobile }) => {
 
     const elementRef = useRef(null);
     const { width } = useSize(elementRef);
 
+    console.log('bgdesktop',bgDesktop)
+
     return (
-        <div ref={elementRef} className='font-markot lg:min-h-[680px] min-h-[521px] items-center flex' style={{ background: `url(/featurephone/superguru4g/banner${width < 1024 ? 'mobile' : ''}.png) center center/cover no-repeat` }}>
+        <div ref={elementRef} className='font-markot lg:min-h-[680px] min-h-[521px] items-center flex' style={{ background: `url(${width < 1024 ? bgMobile : bgDesktop}) center center/cover no-repeat` }}>
             <div className="content flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center px-4 md:px-0 relative">
                 <div className="space-x-4 lg:space-y-9">
                     <div className="space-y-2 lg:space-y-3">
