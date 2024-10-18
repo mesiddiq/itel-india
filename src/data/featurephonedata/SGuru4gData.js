@@ -101,13 +101,15 @@ export const FeatureRichDataSuperGuru4g = {
 
 export const KingVoiceDataSuperGuru4g = {
     phoneUrl: '/featurephone/superguru4g/kingvoice.webp',
+    bgColor:'#262b5a',
+    borderColor: '#404796',
     cards: [
-        { id: '1', label: 'Incoming Calls & Message', icon: '/featurephone/common/connectivity.svg' },
-        { id: '2', label: 'Reading Menu & Phonebook', icon: '/featurephone/common/upi.svg' },
-        { id: '3', label: 'Dialling Number', icon: '/featurephone/common/language.svg' },
-        { id: '4', label: 'Instant Reading', icon: '/featurephone/common/camera.svg' },
-        { id: '5', label: 'Customisation Support', icon: '/featurephone/common/display.svg' },
-        { id: '6', label: 'Time Update', icon: '/featurephone/common/game.svg' },
+        { id: '1', label: 'Incoming Calls & Message', icon: '/featurephone/superguru4g/kvcall.svg' },
+        { id: '2', label: 'Reading Menu & Phonebook', icon: '/featurephone/superguru4g/kvphonebook.svg' },
+        { id: '3', label: 'Dialling Number', icon: '/featurephone/superguru4g/kvdialing.svg' },
+        { id: '4', label: 'Instant Reading', icon: '/featurephone/superguru4g/kvreading.svg' },
+        { id: '5', label: 'Customisation Support', icon: '/featurephone/superguru4g/kvsupport.svg' },
+        { id: '6', label: 'Time Update', icon: '/featurephone/superguru4g/kvtime.svg' },
     ]
 }
 

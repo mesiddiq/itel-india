@@ -2,7 +2,7 @@ import React from 'react';
 
 function CameraSection() {
   return (
-    <section className="flex overflow-hidden z-0 flex-col max-w-full w-[1440px]">
+    <section className=" flex overflow-hidden z-0 flex-col max-w-full">
       {/* Full-width image before the camera section */}
       <img
         loading="lazy"
