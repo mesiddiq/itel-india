@@ -24,7 +24,7 @@ const STwentyThree = () => {
     return (
         <div className=''>
             <HeroSection />
-            <StickyHeader title="S23"  purchaseLink={''} />
+            <StickyHeader title="S23"  purchaseLink={''} icon={''} bgColor={'#181818'} />
             <FeatureSection />
             <ScrollingBanner />
             <VideoSection />

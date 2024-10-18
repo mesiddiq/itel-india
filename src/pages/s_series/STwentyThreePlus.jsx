@@ -259,7 +259,7 @@ const STwentyThreePlus = () => {
       <div>
         {/* <Navbar /> */}
         <HeroBanner scrollY={scrollY} />
-        <StickyHeader title={"S23+"}  />
+        <StickyHeader title={"S23+"} bgColor={'#181818'} />
         <OverviewTwo scrollY={scrollY} />
         <Video scrollY={scrollY} />
         <AmoledDisplay scrollY={scrollY} />
