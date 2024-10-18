@@ -18,7 +18,7 @@ import Battery from '../../components/core/p_series_core/P_Fifty_Five_5g/Battery
 import Camera from '../../components/core/p_series_core/P_Fifty_Five_5g/Camera'
 import FullSpecifications from "../../components/common/FullSpecifications"
 
-import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data'
+import { FullSpecificationsP555g } from '../../data/smartphonedata/P555gData'
 const PFiftyFive5g = () => {
  
   useEffect(() => {
@@ -48,7 +48,7 @@ const PFiftyFive5g = () => {
      
       <Warrenty/>
      <Mobile_grid/>
-     <FullSpecifications FullSpecificationsData={FullSpecificationsP55} mode="dark"/>
+     <FullSpecifications FullSpecificationsData={FullSpecificationsP555g} mode="dark"/>
       <Accessories/>
       <Model />
 

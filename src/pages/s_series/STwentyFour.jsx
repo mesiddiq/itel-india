@@ -9,11 +9,13 @@ import SliderAnimation from "../../components/core/s_series_core/S_Twenty_Four/S
 import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twenty_Four/SinglePhoneImageContainer"
 import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
 import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
-import ColorImageCarousel from "../../components/core/s_series_core/S_Twenty_Four/ColorImageCarousel"
+import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
 import FullSpecifications from "../../components/common/FullSpecifications"
 
+import { ImageCarouselData } from '../../data/smartphonedata/S24ImageCarouselData'
 import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
+
 import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
 import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
 import ModernTwist from "../../components/core/s_series_core/S_Twenty_Four/ModernTwist"
@@ -51,7 +53,7 @@ const STwentyFour = () => {
 
             <MultipleCardComponents />
 
-            <ColorImageCarousel />
+            <ColorImageCarousel ImageCarouselData={ImageCarouselData}/>
 
             <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
             

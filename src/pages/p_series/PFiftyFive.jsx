@@ -10,6 +10,11 @@ import ClearVision from "../../components/core/p_series_core/P_Fifty_Five/ClearV
 import ChargeUpFull from "../../components/core/p_series_core/P_Fifty_Five/ChargeUpFull"
 import MultipleCardComponents from "../../components/core/p_series_core/P_Fifty_Five/MultipleCardComponents"
 import AutomaticCarousel from "../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel"
+import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
+import FullSpecifications from "../../components/common/FullSpecifications"
+
+import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData'
+import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data'
 
 const PFiftyFive = () => {
     return (
@@ -35,6 +40,15 @@ const PFiftyFive = () => {
             <GamingRevolution />
 
             <MultipleCardComponents />
+ 
+            <div className="lg:px-0 py-[48px] lg:py-[120px] bg-[#D5EEF9]">
+                <div className="lg:content bg-[#D5EEF9]  overflow-hidden">
+                    <ColorImageCarousel ImageCarouselData={ImageCarouselData}/>
+                </div>
+            </div>
+
+            <FullSpecifications FullSpecificationsData={FullSpecificationsP55} mode="dark"/>
+
         </>
 
     )
