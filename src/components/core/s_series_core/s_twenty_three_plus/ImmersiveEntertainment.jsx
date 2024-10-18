@@ -5,8 +5,8 @@ const ImmersiveEntertainment = (props) => {
   const { scrollY } = props;
   
   return (
-    <div className='immersive-entertainment-section'>
-      <h2 className='text-[#181818] text-desktop/button md:text-desktop/h1 font-markot'>Immersive Entertainment Awaits!</h2>
+    <div className='relative w-full text-center' style={{ marginTop: '0px' }}>
+      <h2 className='absolute w-full top-[12%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] text-[#181818] text-desktop/button md:text-desktop/h1 font-markot'>Immersive Entertainment Awaits!</h2>
 			<ReactPlayer
         playing
         controls={false}
