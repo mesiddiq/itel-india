@@ -1,8 +1,7 @@
-import Herosection from '../../../../components/core/static_pages_core/Screenreplacement/Herosection'
-import Cards from '../../../../components/core/static_pages_core/Screenreplacement/Cards'
-import AssuranceCard from '../../../../components/core/static_pages_core/Screenreplacement/AssuranceCard'
-import Terms from '../../../../components/core/static_pages_core/Screenreplacement/T&Q'
-
+import Herosection from "../../components/core/static_pages_core/Screenreplacement/Herosection"
+import Cards from "../../components/core/static_pages_core/Screenreplacement/Cards"
+import AssuranceCard from "../../components/core/static_pages_core/Screenreplacement/AssuranceCard"
+import Terms from "../../components/core/static_pages_core/Screenreplacement/T&Q"
 const ScreenReplacement = () => {
   return (
     <>

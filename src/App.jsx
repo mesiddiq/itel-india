@@ -14,9 +14,9 @@ import SuperGuru400 from './pages/feature_phone/SuperGuru400'
 import SuperGuru600 from './pages/feature_phone/SuperGuru600'
 import Footer from './components/common/Footer'
 import Support from './pages/static_pages/header/Support'
-import ScreenReplacement from './pages/static_pages/header/Support/ScreenReplacement'
-import Promise100 from './pages/static_pages/header/Support/Promise100'
-import EWaste from './pages/static_pages/header/Support/E-Waste'
+import ScreenReplacement from './pages/static_pages/ScreenReplacement'
+import Promise100 from './pages/static_pages/Promise100'
+import EWaste from './pages/static_pages/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
@@ -54,9 +54,9 @@ function App() {
 						<Link className='text-blue-500 underline' to='/aboutus'>About us</Link>
 						<Link className='text-blue-500 underline' to='/contactus'>Contact us</Link>
 						<Link className='text-blue-500 underline' to='/servicecenters'>Service Centers</Link>
-						<Link className='text-blue-500 underline' to='/support/screenreplacement'>Screen Replacement</Link>
-						<Link className='text-blue-500 underline' to='/support/e-waste-management'>E-Waste Management</Link>
-						<Link className='text-blue-500 underline' to='/support/100-days-promise'>100 Days Promise</Link>
+						<Link className='text-blue-500 underline' to='/screenreplacement'>Screen Replacement</Link>
+						<Link className='text-blue-500 underline' to='/e-waste-management'>E-Waste Management</Link>
+						<Link className='text-blue-500 underline' to='/100-days-promise'>100 Days Promise</Link>
                          
 					</div>} />
 	
@@ -67,9 +67,9 @@ function App() {
 
 				<Route path='/homepage' element={<HomePage />} />
 				<Route path='/support' element={<Support />} />
-				<Route path='/support/screenreplacement' element={<ScreenReplacement />} />
-				<Route path='/support/e-waste-management' element={<EWaste />} />
-				<Route path='/support/100-days-promise' element={<Promise100 />} />
+				<Route path='/screenreplacement' element={<ScreenReplacement />} />
+				<Route path='/e-waste-management' element={<EWaste />} />
+				<Route path='/100-days-promise' element={<Promise100 />} />
 				<Route path='/csr' element={<CSR />} />
 				<Route path='/aboutus' element={<Aboutus />} />
 				<Route path='/contactus' element={<Contactus />} />
