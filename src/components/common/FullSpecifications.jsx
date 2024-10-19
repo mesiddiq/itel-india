@@ -2,16 +2,21 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 
-const FullSpecifications = ({ FullSpecificationsData, mode }) => {
+const FullSpecifications = ({ FullSpecificationsData, mode, gifStar }) => {
 	const [selectedTab, setSelectedTab] = useState('General');
 
 	const handleTabChange = (label) => setSelectedTab(label);
 
 	return (
+
 		<div id='specifications' className={`px-4 overflow-hidden py-[60px] lg:py-[120px] ${mode == 'light' ? 'bg-[#fbfbfb]' : 'bg-[#1C1B1B]'}`}>
+    
 			<div className={`h-full lg:content flex flex-col gap-6 lg:gap-[52px] ${mode == 'light' ? 'bg-[#fbfbfb]' : ''}`}>
 				
-				<h1 className={`font-markot ${mode == 'light' ? 'text-black' : 'text-white'} text-desktop/h4 lg:text-desktop/h2`}>Full Specifications</h1>
+				<h1 className={`font-markot ${mode == 'light' ? 'text-black' : 'text-white'} text-desktop/h4 lg:text-desktop/h2 flex flex-row items-center`}>
+				{ gifStar ? <img src={gifStar} className='mr-2 w-[60px] h-[45px]'/> : '' }<span>Full Specifications</span>
+				</h1>
+				
 				<div className={`flex flex-row w-full ${mode == 'light' ? 'bg-[#fbfbfb]' : 'bg-[#202020]'}}`}>
 					
 					{/* Left Sidebar */}
