@@ -41,6 +41,7 @@ import {
 } from './pages/feature_phone'
 import HomePageButtons from './components/common/HomePageButtons'
 import ASeventy from './pages/a_series/ASeventy'
+import A05 from './pages/a_series/A05'
 
 
 function App() {
@@ -105,6 +106,7 @@ function App() {
 				<Route path='/smartphones/a-series' element={<A_Series_Parent />} >
 					<Route path='a05i' element={<A05i />} />
 					<Route path='a70' element={<ASeventy />} />
+					<Route path='a05' element={<A05/>} />
 				</Route>
 
 
