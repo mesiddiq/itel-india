@@ -52,17 +52,20 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
                 <div className="">
                     <img src={selectedData?.images[currentImageIndex]} alt="Phone Image" className={`lg:max-h-[610px] max-h-[264px]`} />
                 </div>
-                <div className="flex flex-row justify-between items-center w-full absolute px-5 lg:px-[80px]">
-                    {/* Left Arrow */}
-                    <button onClick={handlePrev} className="w-8 h-8 lg:w-12 lg:h-12">
-                        <img src="/smartphone/S24/leftArrowCarousel.svg" alt="leftArrowCarousel" />
-                    </button>
+                {
+                    selectedData?.images?.length > 1 &&
+                    <div className="flex flex-row justify-between items-center w-full absolute px-5 lg:px-[80px]">
+                        {/* Left Arrow */}
+                        <button onClick={handlePrev} className="w-8 h-8 lg:w-12 lg:h-12">
+                            <img src="/smartphone/S24/leftArrowCarousel.svg" alt="leftArrowCarousel" />
+                        </button>
 
-                    {/* Right Arrow */}
-                    <button onClick={handleNext} className="w-8 h-8 lg:w-12 lg:h-12">
-                        <img src="/smartphone/S24/rightArrowCarousel.svg" alt="leftArrowCarousel" />
-                    </button>
-                </div>
+                        {/* Right Arrow */}
+                        <button onClick={handleNext} className="w-8 h-8 lg:w-12 lg:h-12">
+                            <img src="/smartphone/S24/rightArrowCarousel.svg" alt="leftArrowCarousel" />
+                        </button>
+                    </div>
+                }
             </div>
             <div className='flex flex-col lg:flex-row text-center lg:items-center justify-center gap-4 content'>
                 <h1 className="text-desktop/title uppercase text-black/1">color</h1>

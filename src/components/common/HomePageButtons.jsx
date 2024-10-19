@@ -60,6 +60,11 @@ const HomePageButtons = () => {
             </div>
             <div className=" flex flex-col gap-10">
                 <h1 className="text-2xl">Feature Phones</h1>
+                <Link to='/featurephones/ace-2-power'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        Ace 2 Power
+                    </button>
+                </Link>
                 <Link to='/featurephones/super-guru-4g'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s guru 4g
@@ -95,11 +100,6 @@ const HomePageButtons = () => {
                         IT 5262
                     </button>
                 </Link>
-                <Link to='/featurephones/circle1'>
-                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
-                        Circle 1
-                    </button>
-                </Link>
                 <Link to='/featurephones/it-5330'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         IT 5330
@@ -108,6 +108,11 @@ const HomePageButtons = () => {
                 <Link to='/featurephones/it-2175p'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         IT 2175P
+                    </button>
+                </Link>
+                <Link to='/featurephones/circle-1'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        Circle 1
                     </button>
                 </Link>
             </div>

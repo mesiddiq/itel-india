@@ -37,7 +37,8 @@ import {
 	Power450, 
 	SuperGuru400, 
 	SuperGuru4G, 
-	SuperGuru600 
+	SuperGuru600,
+	Ace2Power
 } from './pages/feature_phone'
 import HomePageButtons from './components/common/HomePageButtons'
 import ASeventy from './pages/a_series/ASeventy'
@@ -117,13 +118,14 @@ function App() {
 					<Route path='super-guru-4g' element={<SuperGuru4G />} />
 					<Route path='super-guru-400' element={<SuperGuru400 />} />
 					<Route path='super-guru-600' element={<SuperGuru600 />} />
-					<Route path='circle1' element={<Circle1 />} />
+					<Route path='circle-1' element={<Circle1 />} />
 					<Route path='it-2175p' element={<It2175p />} />
 					<Route path='it-5262' element={<It5262 />} />
 					<Route path='it-5027' element={<It5027 />} />
 					<Route path='it-5330' element={<It5330 />} />
 					<Route path='power-120' element={<Power120 />} />
 					<Route path='power-450' element={<Power450 />} />
+					<Route path='ace-2-power' element={<Ace2Power />} />
 				</Route>
 			</Routes>
 			<Footer />
