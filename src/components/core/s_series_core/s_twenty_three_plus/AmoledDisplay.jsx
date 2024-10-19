@@ -7,14 +7,14 @@ const AmoledDisplay = (props) => {
 
   useEffect(() => {
     if (screen.width > 1000) {
-      setStartAnimation(scrollY >= 2700);
+      setStartAnimation(scrollY >= 2500);
     } else {
-      setStartAnimation(scrollY >= 1900);
+      setStartAnimation(scrollY >= 1700);
     }
   }, [scrollY]);
 
   useEffect(() => {
-    console.log("startAmoledAnimation", startAnimation);
+    console.log('startAmoledAnimation', startAnimation);
     if (startAnimation) {
       const startVideo = setTimeout(() => {
         setShowImages(true);
@@ -25,16 +25,16 @@ const AmoledDisplay = (props) => {
   }, [startAnimation]);
 
   return (
-    <div className='amoled-display-section'>
+    <div className='flex relative w-full h-[330px] md:h-[800px] p-0 bg-[url("/s_twenty_three_plus/AmoledDisplay.jpg")] bg-cover bg-center' style={{ marginTop: '0px' }}>
       {showImages && (
-        <>
-        	<div className='amoled-display-section-phone'>
-        		<img src='/s_twenty_three_plus/AmoledDisplayPhone.svg' width={840} height={425} />
+        <div className='content'>
+        	<div className='absolute top-[60%] md:top-[65%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[9]'>
+        		<img src='/s_twenty_three_plus/AmoledDisplayPhone.svg' width={840} height={425} className='transform scale-[1.75] md:scale-[1.05]' data-aos="fade-down" />
         	</div>
-        	<div className='amoled-display-section-text'>
-        		<img src='/s_twenty_three_plus/AmoledDisplayText.svg' width={872} height={401} />
+        	<div className='absolute top-[42%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]'>
+        		<img src='/s_twenty_three_plus/AmoledDisplayText.svg' width={872} height={401} className='transform scale-[1.2]' data-aos="fade-up" />
         	</div>
-        </>
+        </div>
       )}
     </div>
   );

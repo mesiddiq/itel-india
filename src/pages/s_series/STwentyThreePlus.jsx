@@ -12,11 +12,13 @@ import OverviewTwo from '../../components/core/s_series_core/s_twenty_three_plus
 import PicturePerfect from '../../components/core/s_series_core/s_twenty_three_plus/PicturePerfect';
 import SharpFocus from '../../components/core/s_series_core/s_twenty_three_plus/SharpFocus';
 import SnapFlawlessSelfie from '../../components/core/s_series_core/s_twenty_three_plus/SnapFlawlessSelfie';
+import UltraHDMode from '../../components/core/s_series_core/s_twenty_three_plus/UltraHDMode';
 import ThinDesign from '../../components/core/s_series_core/s_twenty_three_plus/ThinDesign';
 import TimeLapse from '../../components/core/s_series_core/s_twenty_three_plus/TimeLapse';
 import UnlockTouch from '../../components/core/s_series_core/s_twenty_three_plus/UnlockTouch';
 import Video from '../../components/core/s_series_core/s_twenty_three_plus/Video';
 import BlogCardsNew from '../../components/core/s_series_core/S_Twenty_Three_Plus/BlogCardsNew';
+
 const STwentyThreePlus = () => {
   const [scrollY, setScrollY] = useState(0);
   const FullSpecificationsData = [
@@ -244,7 +246,6 @@ const STwentyThreePlus = () => {
 
   const handleScroll = () => {
     setScrollY(parseInt(window.scrollY));
-    console.log("MainWindowscrollY", parseInt(window.scrollY));
   };
 
   useEffect(() => {
@@ -259,7 +260,7 @@ const STwentyThreePlus = () => {
       <div>
         {/* <Navbar /> */}
         <HeroBanner scrollY={scrollY} />
-        <StickyHeader title={"S23+"} bgColor={'#181818'} />
+        <StickyHeader title={"S23+"} purchaseLink={scrollY} icon={'/s_twenty_three_plus/overview.png'} />
         <OverviewTwo scrollY={scrollY} />
         <Video scrollY={scrollY} />
         <AmoledDisplay scrollY={scrollY} />
@@ -269,9 +270,9 @@ const STwentyThreePlus = () => {
         <SharpFocus scrollY={scrollY} />
         <TimeLapse scrollY={scrollY} />
         <SnapFlawlessSelfie scrollY={scrollY} />
+        <UltraHDMode scrollY={scrollY} />
         <UnlockTouch scrollY={scrollY} />
         <ThinDesign scrollY={scrollY} />
-        {/* <BlogCards scrollY={scrollY} /> */}
         <BlogCardsNew scrollY={scrollY} />
         <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
       </div>
