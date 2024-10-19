@@ -24,6 +24,9 @@ const HomePageButtons = () => {
                 <Link to='/smartphones/p-series/p55'>p-55</Link>
             </button>
             <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                <Link to='/smartphones/p-series/p55t'>p-55T</Link>
+            </button>
+            <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                 <Link to='/featurephones/super-guru-4g'>s guru 4g</Link>
             </button>
             <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">

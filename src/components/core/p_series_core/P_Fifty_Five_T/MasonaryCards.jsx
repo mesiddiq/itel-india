@@ -1,0 +1,90 @@
+import React from 'react'
+
+const MasonaryCards = (props) => {
+	const {scrollY} = props;
+
+  return (
+      <div className='flex relative w-full px-[16px] md:px-0 py-[40px] md:py-[120px] bg-[#181818]' style={{ marginTop: '0px' }}>
+      	<div className='content'>
+	      	<div className='grid grid-cols-2 md:grid-cols-[40%_30%_30%] gap-4'>
+	      		<div className='col-span-2 md:col-span-3 md:h-[470px] rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      			<div className='flex flex-col md:flex-row h-full'>
+	      				<div className='flex md:flex-col justify-between md:w-[30%] p-5 md:p-7 pb-14'>
+	      					<div>
+	      						<img src="/SmartPhone/p55T/PowerPlay.svg" className='h-[16px]' />
+		      					<h3 className='text-[#FFFFFF] text-mobile/h5/medium md:text-desktop/h3 font-markot'>Stay Lit All Day!</h3>
+	      					</div>
+	      					<div className='flex md:flex-col w-[60%] md:w-full'>
+	      						<img src="/SmartPhone/p55T/MasonaryCardOneBattery.png" className='hidden md:block w-[34px]' />
+	      						<h4 className='text-[#FFFFFF] text-mobile/body/2 md:text-desktop/h4 font-markot md:w-[309px] pl-[40px] md:pl-0'>Big 6000 mAh battery with 18W Type-C fast charging. No more low battery drama!</h4>
+	      					</div>
+	      				</div>
+	      				<div className='md:w-[70%] md:relative'>
+	      					<img src="/SmartPhone/p55T/MasonaryCardOne.png" className='md:absolute md:bottom-0 md:right-0' />
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div className='col-span-2 md:col-span-1 md:row-span-2 rounded-[16px] bg-[#173145]'>
+	      			<div className='flex flex-col justify-between h-full'>
+      					<div className='p-5 md:p-7 pb-14'>
+      						<img src="/SmartPhone/p55T/PowerPlay.svg" className='h-[16px]' />
+	      					<h3 className='text-[#FFFFFF] text-mobile/h5/medium md:text-desktop/h3 font-markot'>Snap Like a Pro!</h3>
+	      					<div className='grid grid-cols-2 md:grid-cols-4 gap-3 pt-10'>
+	      						<div className='col-span-1'>
+      								<img src="/SmartPhone/p55T/MasonaryCardTwoCamera.png" className='h-[21px] md:h-[28px]' />
+	      							<h5 className='text-[#FFFFFF] text-mobile/title md:text-desktop/h5/medium font-markot pt-3'>50MP Dual Rear<br />Camera</h5>
+      							</div>
+	      						<div className='col-span-1'>
+      								<img src="/SmartPhone/p55T/MasonaryCardTwoCamera.png" className='h-[21px] md:h-[28px]' />
+	      							<h5 className='text-[#FFFFFF] text-mobile/title md:text-desktop/h5/medium font-markot pt-3'>8MP Front<br />Camera</h5>
+      							</div>
+	      						<div className='col-span-1'>
+	      							<img src="/SmartPhone/p55T/MasonaryCardTwoCamera.png" className='h-[21px] md:h-[28px]' />
+	      							<h5 className='text-[#FFFFFF] text-mobile/title md:text-desktop/h5/medium font-markot pt-3'>AI Powered</h5>
+      							</div>
+	      						<div className='col-span-1'>
+	      							<img src="/SmartPhone/p55T/MasonaryCardTwoCamera.png" className='h-[21px] md:h-[28px]' />
+	      							<h5 className='text-[#FFFFFF] text-mobile/title md:text-desktop/h5/medium font-markot pt-3'>Multiple<br />Modes</h5>
+      							</div>
+      						</div>
+      					</div>
+      					<img src="/SmartPhone/p55T/MasonaryCardTwo.svg" />
+      				</div>
+	      		</div>
+	      		<div className='col-span-2 h-[245px] md:h-[375px] rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      			<div className='flex flex-col md:flex-row h-full'>
+	      				<div className='flex md:flex-col justify-between md:w-[40%] p-5 md:p-7'>
+	      					<div>
+	      						<img src="/SmartPhone/p55T/PowerPlay.svg" className='h-[16px]' />
+		      					<h3 className='text-[#FFFFFF] text-mobile/h5/medium md:text-desktop/h3 font-markot'>All Eyes on the Display!</h3>
+	      					</div>
+	      					<div className='flex md:flex-col w-[60%] md:w-full'>
+	      						<img src="/SmartPhone/p55T/MasonaryCardThreePhone.png" className='hidden md:block w-[28px]' />
+	      						<h4 className='text-[#FFFFFF] text-mobile/body/large md:text-[22px] md:font-[400] md:leading-[28px] font-markot md:w-[250px] pl-[40px] md:pl-0 md:pt-3'><span className='md:font-[700]'>6.6" HD+</span> Punch Hole <span className='md:font-[700]'>90Hz RR</span> Display</h4>
+	      					</div>
+	      				</div>
+	      				<div className='hidden md:block md:w-[70%] md:relative'>
+	      					<img src="/SmartPhone/p55T/MasonaryCardThree.svg" className='md:absolute md:bottom-0 md:right-0' />
+	      				</div>
+	      				<div className='block md:hidden relative w-full h-full'>
+	      					<img src="/SmartPhone/p55T/MasonaryCardThreeSM.svg" className='absolute bottom-0 left-[50%] transform -translate-x-[50%]' />
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div className='col-span-1 rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      			<div className='flex h-full'>
+    						<img src="/SmartPhone/p55T/MasonaryCardFour.png"  />
+	      			</div>
+	      		</div>
+	      		<div className='col-span-1 rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      			<div className='flex h-full'>
+    						<img src="/SmartPhone/p55T/MasonaryCardFive.png"  />
+	      			</div>
+	      		</div>
+	      	</div>
+      	</div>
+      </div>
+  )
+}
+
+export default MasonaryCards;

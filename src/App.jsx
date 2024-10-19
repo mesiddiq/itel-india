@@ -90,7 +90,7 @@ function App() {
 					<Route path='p55-5g' element={<PFiftyFive5g />} />
 					<Route path='p55' element={<PFiftyFive />} />
 					<Route path='p55' element={<PFiftyFivePlus />} />
-					<Route path='p55' element={<PFiftyFiveT />} />
+					<Route path='p55t' element={<PFiftyFiveT />} />
 				</Route>
 
 				{/********************************************************/}
