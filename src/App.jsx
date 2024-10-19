@@ -40,7 +40,7 @@ import {
 	SuperGuru600 
 } from './pages/feature_phone'
 import HomePageButtons from './components/common/HomePageButtons'
-import A_Seventy from './pages/a_series/A_Seventy'
+import ASeventy from './pages/a_series/ASeventy'
 
 
 function App() {
@@ -94,8 +94,8 @@ function App() {
 				<Route path='/smartphones/p-series' element={<P_Series_Parent />} >
 					<Route path='p55-5g' element={<PFiftyFive5g />} />
 					<Route path='p55' element={<PFiftyFive />} />
-					<Route path='p55' element={<PFiftyFivePlus />} />
-					<Route path='p55' element={<PFiftyFiveT />} />
+					<Route path='p55plus' element={<PFiftyFivePlus />} />
+					<Route path='p55T' element={<PFiftyFiveT />} />
 				</Route>
 
 				{/********************************************************/}
@@ -104,7 +104,7 @@ function App() {
 				
 				<Route path='/smartphones/a-series' element={<A_Series_Parent />} >
 					<Route path='a05i' element={<A05i />} />
-
+					<Route path='a70' element={<ASeventy />} />
 				</Route>
 
 

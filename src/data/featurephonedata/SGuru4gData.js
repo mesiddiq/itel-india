@@ -1,11 +1,11 @@
 export const HeroDataSuperGuru4g = {
     title: "Super Guru 4G",
     subtitle: '4G VoLTE | YouTube* | YouTube Shorts*| UPI Payments',
-    bgDesktop:'/featurephone/superguru4g/banner.png',
-    bgMobile:'/featurephone/superguru4g/bannermobile.png',
+    bgDesktop: '/featurephone/superguru4g/banner.png',
+    bgMobile: '/featurephone/superguru4g/bannermobile.png',
     purchaseLink: '',
-    icon:"/featurephone/superguru4g/buynowlogo.svg",
-    phoneUrl:'/featurephone/superguru4g/hero.webp'
+    icon: "/featurephone/superguru4g/buynowlogo.svg",
+    phoneUrl: '/featurephone/superguru4g/hero.webp'
 }
 
 export const FullSpecificationsDataSuperGuru4g = [
@@ -103,7 +103,7 @@ export const FeatureRichDataSuperGuru4g = {
 
 export const KingVoiceDataSuperGuru4g = {
     phoneUrl: '/featurephone/superguru4g/Banner Phone.webp',
-    bgColor:'#262b5a',
+    bgColor: '#262b5a',
     borderColor: '#404796',
     textColor: '#fff',
     cards: [
@@ -127,5 +127,43 @@ export const TechSpecsDataSuperGuru4g = {
         { id: '6', label: 'Preloaded Games', icon: '/featurephone/common/game.svg' },
         { id: '7', label: 'King Voice', icon: '/featurephone/common/voice.svg' },
         { id: '8', label: '6 Days* Battery Backup', icon: '/featurephone/common/battery.svg' },
+    ]
+}
+
+
+export const ProductGalleryDataSuperGuru4g = {
+    bgUrl: '/featurephone/superguru4g/phone_preview.webp',
+    bgUrlMobile: '/featurephone/superguru4g/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/superguru4g/product_gallery/black_front.webp",
+                "/featurephone/superguru4g/product_gallery/black_angular.webp",
+                "/featurephone/superguru4g/product_gallery/black_back.webp",
+            ],
+            buttonLabel: 'Black',
+            buttonColor: '#0E0E0E'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/superguru4g/product_gallery/blue_front.webp",
+                "/featurephone/superguru4g/product_gallery/blue_angular.webp",
+                "/featurephone/superguru4g/product_gallery/blue_back.webp",
+            ],
+            buttonLabel: 'Blue',
+            buttonColor: '#2A304B'
+        },
+        {
+            id: 3,
+            images: [
+                "/featurephone/superguru4g/product_gallery/green_front.webp",
+                "/featurephone/superguru4g/product_gallery/green_angular.webp",
+                "/featurephone/superguru4g/product_gallery/green_back.webp",
+            ],
+            buttonLabel: 'Green',
+            buttonColor: '#AFE1C1'
+        }
     ]
 }

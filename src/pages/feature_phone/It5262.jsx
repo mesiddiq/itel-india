@@ -4,7 +4,8 @@ import PhoneSliderAnimation from '../../components/common/feature_phone_common/P
 import Hero from '../../components/common/feature_phone_common/Hero'
 import FullSpecifications from '../../components/common/FullSpecifications'
 import StickyHeader from '../../components/common/StickyHeader'
-import { FeatureRichDatait5262, FullSpecificationsDatait5262, HeroDatait5262, KingVoiceDatait5262, TechSpecsDatait5262 } from '../../data/featurephonedata/it5262Data'
+import { FeatureRichDatait5262, FullSpecificationsDatait5262, HeroDatait5262, KingVoiceDatait5262, ProductGalleryDataIt5262, TechSpecsDatait5262 } from '../../data/featurephonedata/it5262Data'
+import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 
 const It5262 = () => {
     return (
@@ -15,6 +16,7 @@ const It5262 = () => {
             <PhoneSliderAnimation />
             <KingVoice {...KingVoiceDatait5262} />
             <TechSpecs {...TechSpecsDatait5262} />
+            <FeaturePhoneProductGallery {...ProductGalleryDataIt5262} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5262} mode={'light'} />
         </div>
     )

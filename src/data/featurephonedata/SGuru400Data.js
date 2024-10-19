@@ -125,3 +125,41 @@ export const TechSpecsDataSuperGuru400 = {
         { icon: '/featurephone/common/battery.svg', label: `14 Days* Standby Time` },
     ]
 }
+
+
+export const ProductGalleryDataSuperGuru400 = {
+    bgUrl: '/featurephone/superguru4g/phone_preview.webp',
+    bgUrlMobile: '/featurephone/superguru4g/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/superguru4g/product_gallery/black_front.webp",
+                "/featurephone/superguru4g/product_gallery/black_angular.webp",
+                "/featurephone/superguru4g/product_gallery/black_back.webp",
+            ],
+            buttonLabel: 'aurora green',
+            buttonColor: '#31BBCF'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/superguru4g/product_gallery/blue_front.webp",
+                "/featurephone/superguru4g/product_gallery/blue_angular.webp",
+                "/featurephone/superguru4g/product_gallery/blue_back.webp",
+            ],
+            buttonLabel: 'NA',
+            buttonColor: '#CFB697'
+        },
+        {
+            id: 3,
+            images: [
+                "/featurephone/superguru4g/product_gallery/green_front.webp",
+                "/featurephone/superguru4g/product_gallery/green_angular.webp",
+                "/featurephone/superguru4g/product_gallery/green_back.webp",
+            ],
+            buttonLabel: 'Blue',
+            buttonColor: '#394883'
+        }
+    ]
+}

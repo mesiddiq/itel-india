@@ -98,7 +98,7 @@ export const FeatureRichDatait5262 = {
 }
 
 export const KingVoiceDatait5262 = {
-    phoneUrl: '/featurephone/it5262/kingvoiceit5262.webp',
+    phoneUrl: '/featurephone/it5262/Backgrounds/kingvoice.webp',
     bgColor: '#0E0E0E',
     borderColor: '#146D61',
     textColor:'#146D61',
@@ -113,7 +113,7 @@ export const KingVoiceDatait5262 = {
 }
 
 export const TechSpecsDatait5262 = {
-    phoneUrl: '/featurephone/superguru4g/techspecs.webp',
+    phoneUrl: '/featurephone/it5262/Backgrounds/techspecs.webp',
     cards: [
         { id: '1', label: 'Glass Fashion Design', icon: '/featurephone/common/connectivity.svg' },
         { id: '2', label: '6.1cm (2.4”) Display', icon: '/featurephone/common/upi.svg' },
@@ -123,5 +123,32 @@ export const TechSpecsDatait5262 = {
         { id: '6', label: 'VGA Camera with flash', icon: '/featurephone/common/game.svg' },
         { id: '7', label: 'Wireless FM with recorder', icon: '/featurephone/common/voice.svg' },
         { id: '8', label: 'Vibration Mode', icon: '/featurephone/common/battery.svg' },
+    ]
+}
+
+export const ProductGalleryDataIt5262 = {
+    bgUrl: '/featurephone/it5262/Backgrounds/phone_preview.webp',
+    bgUrlMobile: '/featurephone/it5262/Backgrounds/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/it5262/product_gallery/black_front.webp",
+                "/featurephone/it5262/product_gallery/black_angular.webp",
+                "/featurephone/it5262/product_gallery/black_back.webp",
+            ],
+            buttonLabel: 'black',
+            buttonColor: '#000'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/it5262/product_gallery/green_front.webp",
+                "/featurephone/it5262/product_gallery/green_angular.webp",
+                "/featurephone/it5262/product_gallery/green_all.webp",
+            ],
+            buttonLabel: 'green',
+            buttonColor: '#268072'
+        }
     ]
 }
