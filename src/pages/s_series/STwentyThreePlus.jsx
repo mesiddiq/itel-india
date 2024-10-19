@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import '../../style.css'
 import StickyHeader from '../../components/common/StickyHeader';
 import FullSpecifications from '../../components/common/FullSpecifications';
 import AmoledDisplay from '../../components/core/s_series_core/s_twenty_three_plus/AmoledDisplay';
@@ -256,8 +257,7 @@ const STwentyThreePlus = () => {
 
   return (
     <>
-      <link rel="stylesheet" href="/s_twenty_three_plus/style.css" />
-      <main className="bg-[#111111]">
+      <div>
         {/* <Navbar /> */}
         <HeroBanner scrollY={scrollY} />
         <StickyHeader title={"S23+"} purchaseLink={scrollY} icon={'/s_twenty_three_plus/overview.png'} />
@@ -275,7 +275,7 @@ const STwentyThreePlus = () => {
         <ThinDesign scrollY={scrollY} />
         <BlogCardsNew scrollY={scrollY} />
         <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
-      </main>
+      </div>
     </>
   )
 }

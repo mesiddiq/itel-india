@@ -212,9 +212,22 @@ export default {
 			backgroundImage: {
 				'ultraStorageVault': "url('/smartphone/S24/ultra-storage-vault.png')",
 				'imageCarouselBackground': "url('/smartphone/S24/imageCarouselBackground.png')",
-				'fullSpecificationsActiveTabgradient': 'linear-gradient(to right, rgba(255, 0, 55, 0.2) 0%, transparent 7%, transparent 50%, transparent 80%, transparent 100%)',
 				'BuyNowSquareBG': "url('/smartphone/S24/ButtonBackground.png')",
 				'dualDTSSpeaker': "url('/smartphone/S24/dualDTSSpeaker.png')",
+				
+				'fullSpecificationsActiveTabgradient': 'linear-gradient(to right, rgba(255, 0, 55, 0.2) 0%, transparent 7%, transparent 50%, transparent 80%, transparent 100%)',
+				
+				'p55SeeMoreCaptureMoreLaptop': "url('/smartphone/P55/SeeMoreCaptureMore-Laptop.png')",
+				'p55SeeMoreCaptureMoreMobile': "url('/smartphone/P55/SeeMoreCaptureMore-Mobile.png')",
+				'superfastUnisocBGLaptop': "url('/smartphone/P55/superfastUnisocBGLaptop.png')",
+				'superfastUnisocBGMobile': "url('/smartphone/P55/superfastUnisocBGMobile.png')",
+				'clearVisionBG': "url('/smartphone/P55/clearVisionBG.png')",
+				'frame24GB': "url('/smartphone/P55/frame24GB.png')",
+
+				'superfastUnisocGradient': 'linear-gradient(101.38deg, #D5EEF9 -22.94%, #70A2E1 77.36%)',
+				'frame24GBGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
+				'multipleCardComponentsGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
+				
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',

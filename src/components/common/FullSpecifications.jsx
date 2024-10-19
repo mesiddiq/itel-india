@@ -8,7 +8,7 @@ const FullSpecifications = ({ FullSpecificationsData, mode }) => {
 	const handleTabChange = (label) => setSelectedTab(label);
 
 	return (
-		<div className={`px-4 py-[60px] lg:py-[120px] ${mode == 'light' ? 'bg-[#fbfbfb]' : 'bg-[#1C1B1B]'}`}>
+		<div id='specifications' className={`px-4 overflow-hidden py-[60px] lg:py-[120px] ${mode == 'light' ? 'bg-[#fbfbfb]' : 'bg-[#1C1B1B]'}`}>
 			<div className={`h-full lg:content flex flex-col gap-6 lg:gap-[52px] ${mode == 'light' ? 'bg-[#fbfbfb]' : ''}`}>
 				
 				<h1 className={`font-markot ${mode == 'light' ? 'text-black' : 'text-white'} text-desktop/h4 lg:text-desktop/h2`}>Full Specifications</h1>
