@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const BlogCardsNew = () => {
 
 	return (
-		<div className='relative px-[16px] md:px-0 py-[12px] md:py-[120px]'>
+		<div className='relative px-[16px] md:px-0 py-[12px] md:py-[120px] overflow-hidden'>
 			<div className='content'>
 				<div className='grid grid-cols-1 md:grid-cols-[40%_60%] gap-4'>
 					<div className='relative col-span-1 row-span-2 bg-[#000000] bg-[url("/s_twenty_three_plus/BlogCardsOne.png")] bg-cover bg-no-repeat bg-center rounded-[16px] p-[16px] md:p-[40px] h-[470px] md:h-[780px]' data-aos="fade-right">

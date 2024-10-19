@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const NewVision = (props) => {
   
   return (
-    <div className='block md:flex relative w-full h-[545px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-0 bg-black md:bg-[url("/s_twenty_three_plus/StepIntoNewVisionBg.svg")] md:bg-contain md:bg-center md:bg-no-repeat' style={{ marginTop: '0px' }}>
+    <div className='block md:flex relative w-full h-[545px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-0 bg-black md:bg-[url("/s_twenty_three_plus/StepIntoNewVisionBg.svg")] md:bg-contain md:bg-center md:bg-no-repeat overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='relative content h-full'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-full align-middle'>
           <div className='col-span-1'></div>

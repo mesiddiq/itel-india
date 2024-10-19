@@ -3,7 +3,7 @@ import React from 'react';
 const SnapFlawlessSelfie = () => {
 
   return (
-    <div className='flex relative w-full h-[468px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/s_twenty_three_plus/SnapFlawlessSelfie.png")] bg-cover bg-center' style={{ marginTop: '0px' }}>
+    <div className='flex relative w-full h-[468px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/s_twenty_three_plus/SnapFlawlessSelfie.png")] bg-cover bg-center overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='content'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           <div className='col-span-1 text-center md:text-left'>

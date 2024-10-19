@@ -5,7 +5,7 @@ import BuyNowSquareBG from '../../../common/smartphone_common/BuyNowSquareBG';
 const HeroBanner = () => {
 
   return (
-    <div className='block md:flex relative w-full h-[585px] md:h-[800px] md:items-center p-[20px] md:p-0 pb-0 bg-[url("/s_twenty_three_plus/heroBg.png")] bg-cover bg-center' style={{ marginTop: '0px' }}>
+    <div className='block md:flex relative w-full h-[585px] md:h-[800px] md:items-center p-[20px] md:p-0 pb-0 bg-[url("/s_twenty_three_plus/heroBg.png")] bg-cover bg-center overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='content h-full'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 relative h-full md:justify-center md:items-center'>
           <div className='col-span-1'>

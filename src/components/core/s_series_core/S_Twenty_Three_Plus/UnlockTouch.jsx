@@ -3,7 +3,7 @@ import React from 'react';
 const UnlockTouch = () => {
 
   return (
-    <div className='flex relative w-full overflow-hidden h-[500px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/s_twenty_three_plus/UnlockTouch.png")] bg-cover bg-center' style={{ marginTop: '0px' }}>
+    <div className='flex relative w-full overflow-hidden h-[500px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/s_twenty_three_plus/UnlockTouch.png")] bg-cover bg-center overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='content'>
         <div className='grid grid-cols-1 md:grid-cols-2 mx-auto gap-4'>
           <div className='col-span-1 text-left pt-8'>

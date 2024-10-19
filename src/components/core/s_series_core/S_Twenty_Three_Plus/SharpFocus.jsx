@@ -3,7 +3,7 @@ import React from 'react';
 const SharpFocus = () => {
 
   return (
-    <div className='flex flex-col relative w-full px-[16px] md:px-0 py-[12px] md:py-[120px]' style={{ marginTop: '0px' }}>
+    <div className='flex flex-col relative w-full px-[16px] md:px-0 py-[12px] md:py-[120px] overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='content'>
         <h3 className='text-[#FFFFFF] text-mobile/h4 md:text-desktop/h2 font-markot mb-8'>Enhance your photos with<br />Eye-Tracking Technology</h3>
         <div className='grid grid-cols-[15%_85%] md:grid-cols-[25%_75%] relative'>

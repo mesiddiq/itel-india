@@ -3,7 +3,7 @@ import React from 'react';
 const PicturePerfect = () => {
 
   return (
-    <div className='block md:flex relative w-full h-[790px] md:h-[800px] px-[16px] md:px-0 pt-[12px] md:pt-[120px] pb-0 md:pb-[120px] bg-[url("/s_twenty_three_plus/PicturePerfect.svg")] bg-cover bg-center' style={{ marginTop: '0px' }}>
+    <div className='block md:flex relative w-full h-[790px] md:h-[800px] px-[16px] md:px-0 pt-[12px] md:pt-[120px] pb-0 md:pb-[120px] bg-[url("/s_twenty_three_plus/PicturePerfect.svg")] bg-cover bg-center overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='md:flex md:content gap-4'>
         <div className='hidden md:flex w-[60%]'>
           <img src='/s_twenty_three_plus/PicturePerfectPhone.png' className='absolute bottom-0' data-aos="fade-right" />

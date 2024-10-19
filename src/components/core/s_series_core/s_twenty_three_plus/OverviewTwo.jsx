@@ -5,7 +5,7 @@ import Button from '../../../../components/common/Button';
 const OverviewTwo = (props) => {
 
   return (
-    <div className='relative w-full px-[16px] md:px-0 py-[40px] md:py-[120px] h-[1000px] md:h-auto bg-[#1C1B1B]' id='overviewSection' style={{ marginTop: '0px' }}>
+    <div className='relative w-full px-[16px] md:px-0 py-[40px] md:py-[120px] h-[1000px] md:h-auto bg-[#1C1B1B] overflow-hidden' id='overviewSection' style={{ marginTop: '0px' }}>
       <div className='content'>
         <div className='grid grid-cols-1 md:grid-cols-2 min-h-[185px] md:min-h-[120px]'>
           <div className='col-span-1'>

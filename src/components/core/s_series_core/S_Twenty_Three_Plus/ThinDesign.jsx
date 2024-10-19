@@ -4,7 +4,7 @@ const ThinDesign = () => {
   
   return (
     <>
-      <div className='block relative md:hidden h-[130px] px-[16px] pt-[12px] pb-[1px] z-2' style={{ marginTop: '0px', background: 'linear-gradient(270deg, #000000 0%, #0E1D31 50%, #000000 100%)' }}>
+      <div className='block relative md:hidden h-[130px] px-[16px] pt-[12px] pb-[1px] z-2 overflow-hidden' style={{ marginTop: '0px', background: 'linear-gradient(270deg, #000000 0%, #0E1D31 50%, #000000 100%)' }}>
         <h3 className='linear-gradient text-mobile/h4 md:text-desktop/h2 font-markot mb-5'>Ultra-Thin Design: Perfectly Crafted for New Age Style</h3>
         <p className='w-[70%] md:w-full text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large font-markot mb-5 md:mb-20' data-aos="fade-down">7.9mm Slim Depth Body</p>
       </div>
