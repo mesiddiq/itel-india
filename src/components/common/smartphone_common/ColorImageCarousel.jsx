@@ -3,7 +3,7 @@ import { useState } from "react";
 import ColorSelectorButtonActive from "./ColorSelectorButtonActive";
 import ColorSelectorButtonInactive from "./ColorSelectorButtonInactive";
 
-const ColorImageCarousel = ({ ImageCarouselData }) => {
+const ColorImageCarousel = ({ ImageCarouselData, showTitleInMobile }) => {
   const [activeColor, setActiveColor] = useState(ImageCarouselData[0].color); // Default active phone color
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -26,7 +26,14 @@ const ColorImageCarousel = ({ ImageCarouselData }) => {
   return (
     <>
     <div className={`relative h-full flex flex-col justify-center items-start gap-8 ${ImageCarouselData[0].bgContainer}`}>
-        <h1 className="block lg:hidden px-4 text-black/1 text-mobile/h4 text-left font-markot">Product Versions</h1>
+        
+        {
+          showTitleInMobile &&
+          <h1 className="block lg:hidden px-4 text-black/1 text-mobile/h4 text-left font-markot">
+            Product Versions
+          </h1>
+        }
+
         <div className="lg:rounded-2xl overflow-hidden relative w-full h-[360px] lg:h-screen bg-cover bg-center flex flex-col justify-center items-center" style={{
           backgroundImage: `url(${ImageCarouselData[0].bgURL})`
         }}>

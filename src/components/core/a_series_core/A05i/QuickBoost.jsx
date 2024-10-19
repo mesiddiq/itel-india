@@ -16,6 +16,7 @@ const CustomFeatureSpecifications = ({featureMetric, featureMetricDescription}) 
 const QuickBoost = () => {
   return (
     <>
+        {/* Laptop */}
         <div className="border border-black/10 hidden sm:block relative font-markot overflow-hidden rounded-2xl md:rounded-[56px] ">
             <div className="h-full w-full rounded-2xl md:rounded-[56px]">
                 <img src="/smartphone/A05i/quickBoost.png"/>
@@ -37,9 +38,10 @@ const QuickBoost = () => {
 
                 <h1 className="text-[#6F7384] absolute sm:bottom-6 lg:bottom-12 sm:text-desktop/body/2/regular lg:text-desktop/body/1">*5W charger available inside the box</h1>
             </div>
-            </div>
+        </div>
 
-            <div className="border border-black/10 block sm:hidden relative font-markot overflow-hidden rounded-2xl md:rounded-[56px] ">
+        {/* Mobile */}
+        <div className="border border-black/10 block sm:hidden relative font-markot overflow-hidden rounded-2xl md:rounded-[56px] ">
             <div className="h-full w-full rounded-2xl md:rounded-[56px]">
                 <img src="/smartphone/A05i/quickBoostMobile.jpg" className="object-cover w-full"/>
             </div>

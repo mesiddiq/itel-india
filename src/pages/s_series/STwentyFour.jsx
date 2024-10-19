@@ -53,10 +53,11 @@ const STwentyFour = () => {
 
             <MultipleCardComponents />
 
-            <ColorImageCarousel ImageCarouselData={ImageCarouselData}/>
+            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false}/>
 
-            <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
-            
+            <div className="px-4 py-[60px] lg:py-[120px] bg-[#1c1b1b]">
+                <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
+            </div>
         </>
     )
 }

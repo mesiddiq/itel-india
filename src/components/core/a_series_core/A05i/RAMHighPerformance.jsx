@@ -1,6 +1,7 @@
 const RAMHighPerformance = () => {
   return (
     <>
+        {/* Laptop */}
         <div className="hidden border border-black/10 relative md:flex flex-row overflow-hidden rounded-2xl md:rounded-[56px] bg-RAMHighPerformanceGradient h-[740px] px-5 pt-5">
         
         <div className="flex flex-col justify-end items-center h-full w-1/2 rounded-2xl md:rounded-[56px]">
@@ -45,6 +46,7 @@ const RAMHighPerformance = () => {
 
         </div>
 
+        {/* Mobile */}
         <div className="border border-black/10 relative md:hidden flex flex-col-reverse gap-16 overflow-hidden rounded-2xl md:rounded-[56px] bg-RAMHighPerformanceGradient h-auto px-5 pt-5">
         
             <div className="flex flex-col justify-end items-center h-full w-full rounded-2xl md:rounded-[56px]">

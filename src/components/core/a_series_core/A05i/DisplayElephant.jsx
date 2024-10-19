@@ -1,5 +1,6 @@
 const DisplayElephant = () => {
   return (
+    // Optimised for all views
     <div className="border border-black/10 relative overflow-hidden rounded-2xl md:rounded-[56px]">
       <div className="h-full w-full rounded-2xl md:rounded-[56px]">
         <img src="/smartphone/A05i/displayElephant.png"/>

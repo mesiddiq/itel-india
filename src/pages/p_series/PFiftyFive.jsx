@@ -42,12 +42,13 @@ const PFiftyFive = () => {
  
             <div className="lg:px-0 py-[48px] lg:py-[120px] bg-[#D5EEF9]">
                 <div className="lg:content bg-[#D5EEF9]  overflow-hidden">
-                    <ColorImageCarousel ImageCarouselData={ImageCarouselData}/>
+                    <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={true}/>
                 </div>
             </div>
-
-            <FullSpecifications FullSpecificationsData={FullSpecificationsP55} mode="dark"/>
-
+            
+            <div className="px-4 py-[60px] lg:py-[120px] bg-[#1c1b1b]">
+                <FullSpecifications FullSpecificationsData={FullSpecificationsP55} mode="dark"/>
+            </div>
         </>
 
     )
