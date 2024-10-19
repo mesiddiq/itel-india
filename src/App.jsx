@@ -31,6 +31,7 @@ import {
 	Circle1, 
 	It2175p, 
 	It5027, 
+	It5262, 
 	It5330, 
 	Power120, 
 	Power450, 
@@ -39,13 +40,14 @@ import {
 	SuperGuru600 
 } from './pages/feature_phone'
 import HomePageButtons from './components/common/HomePageButtons'
+import A_Seventy from './pages/a_series/A_Seventy'
 
 
 function App() {
 
 	useEffect(() => {
 		Aos.init({
-			duration: 700
+			duration: 1000
 		})
 	}, [])
 
@@ -102,6 +104,7 @@ function App() {
 				
 				<Route path='/smartphones/a-series' element={<A_Series_Parent />} >
 					<Route path='a05i' element={<A05i />} />
+
 				</Route>
 
 
@@ -114,6 +117,7 @@ function App() {
 					<Route path='super-guru-600' element={<SuperGuru600 />} />
 					<Route path='circle1' element={<Circle1 />} />
 					<Route path='it-2175p' element={<It2175p />} />
+					<Route path='it-5262' element={<It5262 />} />
 					<Route path='it-5027' element={<It5027 />} />
 					<Route path='it-5330' element={<It5330 />} />
 					<Route path='power-120' element={<Power120 />} />

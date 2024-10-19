@@ -95,9 +95,9 @@ export const FeatureRichDataSuperGuru4g = {
     title: 'Feature-Rich Phone with 4G VoLTE Connectivity',
     description: 'Introducing India ka Super Guru—a collection of stylish keypad mobile phones that are the perfect blend of premium design and durability. Perfect for a busy lifestyle, this phone supports 4G and UPI payments, ensuring you stay connected and efficient. With Kingmedia, access YouTube, YouTube Shorts, news, cricket updates, and weather information effortlessly. The Kingvoice feature lets your phone speak out loud for you. ',
     cards: [
-        { icon: '/featurephone/superguru4g/wifi-square.svg', title: 'Top-Tier 4G VoLTE Support', description: `Choose your speed with the Super Guru 4G- 4G for lightning fast browsing & 2G/3G to save data. Stay connected wherever you are.` },
-        { icon: '/featurephone/superguru4g/music-playlist.svg', title: 'KingMedia: All in one Entertainment', description: `Make payment without internet. No Internet required, payment can be done through GS Pay.` },
-        { icon: '/featurephone/superguru4g/upi.svg', title: 'UPI Payments', description: `Make payment without internet. No Internet required, payment can be done through GS Pay.` },
+        { icon: '/featurephone/common/wifi-red.svg', title: 'Top-Tier 4G VoLTE Support', description: `Choose your speed with the Super Guru 4G- 4G for lightning fast browsing & 2G/3G to save data. Stay connected wherever you are.` },
+        { icon: '/featurephone/common/music-red.svg', title: 'KingMedia: All in one Entertainment', description: `Make payment without internet. No Internet required, payment can be done through GS Pay.` },
+        { icon: '/featurephone/common/upi-red.svg', title: 'UPI Payments', description: `Make payment without internet. No Internet required, payment can be done through GS Pay.` },
     ]
 }
 
@@ -105,13 +105,14 @@ export const KingVoiceDataSuperGuru4g = {
     phoneUrl: '/featurephone/superguru4g/Banner Phone.webp',
     bgColor:'#262b5a',
     borderColor: '#404796',
+    textColor: '#fff',
     cards: [
-        { id: '1', label: 'Incoming Calls & Message', icon: '/featurephone/superguru4g/kvcall.svg' },
-        { id: '2', label: 'Reading Menu & Phonebook', icon: '/featurephone/superguru4g/kvphonebook.svg' },
-        { id: '3', label: 'Dialling Number', icon: '/featurephone/superguru4g/kvdialing.svg' },
-        { id: '4', label: 'Instant Reading', icon: '/featurephone/superguru4g/kvreading.svg' },
-        { id: '5', label: 'Customisation Support', icon: '/featurephone/superguru4g/kvsupport.svg' },
-        { id: '6', label: 'Time Update', icon: '/featurephone/superguru4g/kvtime.svg' },
+        { id: '1', label: 'Incoming Calls & Message', icon: '/featurephone/common/call-kv.svg' },
+        { id: '2', label: 'Reading Menu & Phonebook', icon: '/featurephone/common/phonebook-kv.svg' },
+        { id: '3', label: 'Dialling Number', icon: '/featurephone/common/dialing-kv.svg' },
+        { id: '4', label: 'Instant Reading', icon: '/featurephone/common/reading-kv.svg' },
+        { id: '5', label: 'Customisation Support', icon: '/featurephone/common/support-kv.svg' },
+        { id: '6', label: 'Time Update', icon: '/featurephone/common/time-kv.svg' },
     ]
 }
 

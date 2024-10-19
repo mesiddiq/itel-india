@@ -1,8 +1,22 @@
 import React from 'react'
+import { FeatureRich, KingVoice, TechSpecs } from '../../components/core/feature_phone/s_guru_4g'
+import PhoneSliderAnimation from '../../components/common/feature_phone_common/PhoneSliderAnimation'
+import Hero from '../../components/common/feature_phone_common/Hero'
+import FullSpecifications from '../../components/common/FullSpecifications'
+import StickyHeader from '../../components/common/StickyHeader'
+import { FeatureRichDatait5262, FullSpecificationsDatait5262, HeroDatait5262, KingVoiceDatait5262, TechSpecsDatait5262 } from '../../data/featurephonedata/it5262Data'
 
 const It5262 = () => {
     return (
-        <div>It5262</div>
+        <div>
+            <Hero {...HeroDatait5262} />
+            <StickyHeader {...HeroDatait5262} />
+            <FeatureRich {...FeatureRichDatait5262} />
+            <PhoneSliderAnimation />
+            <KingVoice {...KingVoiceDatait5262} />
+            <TechSpecs {...TechSpecsDatait5262} />
+            <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5262} mode={'light'} />
+        </div>
     )
 }
 

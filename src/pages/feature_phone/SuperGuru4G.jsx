@@ -18,6 +18,7 @@ import {
     TechSpecsDataSuperGuru4g
 } from '../../data/featurephonedata/SGuru4gData'
 import YourSideKick from '../../components/core/feature_phone/s_guru_4g/YourSideKick'
+import PhoneSliderAnimation from '../../components/common/feature_phone_common/PhoneSliderAnimation'
 
 
 const SuperGuru4G = () => {
@@ -26,6 +27,7 @@ const SuperGuru4G = () => {
             <Hero {...HeroDataSuperGuru4g} />
             <StickyHeader {...HeroDataSuperGuru4g} />
             <FeatureRich {...FeatureRichDataSuperGuru4g} />
+            <PhoneSliderAnimation />
             <EnjoyHIgh />
             <EntireWorld />
             <PayAnywhere upiImageUrl="/featurephone/superguru4g/upiphone.png" />
