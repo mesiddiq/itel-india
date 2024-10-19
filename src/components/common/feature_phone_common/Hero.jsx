@@ -11,12 +11,12 @@ const Hero = ({ title, subtitle, phoneUrl, purchaseLink, bgDesktop, bgMobile }) 
     console.log('bgdesktop', bgDesktop)
 
     return (
-        <div ref={elementRef} className='font-markot lg:min-h-[680px] min-h-[521px] items-center flex' style={{ background: `url(${width < 1024 ? bgMobile : bgDesktop}) center center/cover no-repeat` }}>
+        <div ref={elementRef} className='font-markot overflow-hidden lg:min-h-[680px] min-h-[521px] items-center flex' style={{ background: `url(${width < 1024 ? bgMobile : bgDesktop}) center center/cover no-repeat` }}>
             <div className="content flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center px-4 md:px-0 relative">
                 <div className="space-y-4 lg:space-y-9">
                     <div className="space-y-2 lg:space-y-3">
                         <h1 className="text-mobile/h1 lg:text-desktop/h1" data-aos="fade-right">{title}</h1>
-                        <p className="text-mobile/title lg:text-[20px] lg:leading-6 lg:tracking-[0.2px] font-normal uppercase text-grey/grey/1" data-aos="fade-right" data-aos-delay="400">{subtitle}</p>
+                        <p className="text-mobile/title lg:text-[20px] lg:leading-6 lg:tracking-[0.2px] font-normal uppercase text-grey/grey/1 max-w-[564px]" data-aos="fade-right" data-aos-delay="400">{subtitle}</p>
                     </div>
                     <div className="hidden lg:block" data-aos="fade-up" data-aos-delay="600">
                         <BuyNowSquareBG purchaseLink={purchaseLink} />
