@@ -260,20 +260,21 @@ const STwentyThreePlus = () => {
       <div>
         {/* <Navbar /> */}
         <HeroBanner scrollY={scrollY} />
-        <StickyHeader title={"S23+"} purchaseLink={scrollY} icon={'/s_twenty_three_plus/overview.png'} />
-        <OverviewTwo scrollY={scrollY} />
-        <Video scrollY={scrollY} />
-        <AmoledDisplay scrollY={scrollY} />
-        <NewVision scrollY={scrollY} />
-        <ImmersiveEntertainment scrollY={scrollY} />
-        <PicturePerfect scrollY={scrollY} />
-        <SharpFocus scrollY={scrollY} />
-        <TimeLapse scrollY={scrollY} />
-        <SnapFlawlessSelfie scrollY={scrollY} />
-        <UltraHDMode scrollY={scrollY} />
-        <UnlockTouch scrollY={scrollY} />
-        <ThinDesign scrollY={scrollY} />
-        <BlogCardsNew scrollY={scrollY} />
+        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/s_twenty_three_plus/overview.png'} />
+        <OverviewTwo />
+        <Video />
+        <AmoledDisplay />
+        <NewVision />
+        <ImmersiveEntertainment />
+        <PicturePerfect />
+        <SharpFocus />
+        <TimeLapse />
+        <SnapFlawlessSelfie />
+        {/* Use https://swiperjs.com/react for the slider in the below component */}
+        <UltraHDMode />
+        <UnlockTouch />
+        <ThinDesign />
+        <BlogCardsNew />
         <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
       </div>
     </>

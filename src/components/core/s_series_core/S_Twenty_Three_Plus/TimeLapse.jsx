@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player'
 
-const TimeLapse = (props) => {
-  const { scrollY } = props;
+const TimeLapse = () => {
 
   return (
     <div className='hidden md:flex relative w-full h-[250px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/s_twenty_three_plus/SnapFlawlessSelfie.png")] bg-cover bg-center' style={{ marginTop: '0px' }}>
