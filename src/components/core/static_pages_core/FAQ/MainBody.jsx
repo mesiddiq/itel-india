@@ -14,11 +14,14 @@ const MainBody = () => {
     {
       problem:"Cannot make a call after activating data",
       solution:[
-        1. IF or not all the contacts cannot be called. If yes, go to step 2\. If not, maybe it's not a phone issue.
-        2. Make sure the SIM account has enough balance and the place has a good signal.
-        3. Check whether the phone is on 4G only mode, if yes, change to other modes.
-        4. Try to reset factory settings, but remember to take data back up first.
-        5. Visit the nearest customer service center for further check.
+        "1. IF or not all the contacts cannot be called. If yes, go to step 2\. If not, maybe it's not a phone issue.",
+        "2. Make sure the SIM account has enough balance and the place has a good signal.",
+
+        "3. Check whether the phone is on 4G only mode, if yes, change to other modes.",
+
+        "4. Try to reset factory settings, but remember to take data back up first.",
+
+        "5. Visit the nearest customer service center for further check."
         
       ]
     },
