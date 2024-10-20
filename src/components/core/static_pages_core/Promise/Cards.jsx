@@ -26,7 +26,7 @@ const Cards = () => {
       },
     ];
     return (
-      <div className=" lg:content px-3 space-y-12  font-markot text-black">
+      <div className=" lg:content px-4 space-y-12  font-markot text-black">
       
         <div className=" lg:grid lg:gap-[68px] lg:grid-cols-4  flex flex-col lg:space-y-0 space-y-10  ">
           {data.map((data, index) => {

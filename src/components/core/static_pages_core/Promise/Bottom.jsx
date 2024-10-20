@@ -11,7 +11,7 @@ const Bottom = () => {
           src={"/static_page/promise/Shape.webp"}
           alt=""
         />
-        <div className=" lg:space-y-5 text-white space-y-2 w-[286px] lg:min-w-[562px]">
+        <div className=" lg:space-y-5 text-white space-y-2  lg:min-w-[562px]">
           <p className=" lg:text-desktop/h3 text-mobile/h4">Unparalleled Service Guaranteed</p>
           <p className=" text-desktop/caption  lg:text-desktop/body/large">
           With our commitment to excellence, expect unparalleled support and service throughout your journey with us. 

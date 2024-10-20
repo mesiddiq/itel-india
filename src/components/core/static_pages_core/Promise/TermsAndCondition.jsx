@@ -11,8 +11,8 @@ const TermsAndCondition = () => {  const data = [
 
 
   return (
-    <div className='lg:bg-[url("/static_page/promise/T&C%20Background.webp")]  bg-[url("/static_page/promise/T&C%20Background%20Mobile.webp")] bg-cover  bg-center  font-markot '>
-      <div className=" lg:py-[80px]  py-[42px]  lg:px-20 lg:space-y-10 space-y-8  lg:content px-3 ">
+    <div className='lg:bg-[url("/static_page/promise/T&C%20Background.webp")]   bg-[url("/static_page/promise/T&C%20Background%20Mobile.webp")] bg-cover  bg-center  font-markot '>
+      <div className=" lg:py-[80px]  py-[42px]  lg:px-20 lg:space-y-10 space-y-8  lg:content px-4 ">
         <p className=" lg:text-center text-mobile/h4 text-brand/black lg:text-desktop/h2">
           Terms & Conditions
         </p>

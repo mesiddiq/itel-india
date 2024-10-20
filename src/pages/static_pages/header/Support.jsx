@@ -1,8 +1,20 @@
 import React from 'react'
+import Bottom from '../../../components/core/static_pages_core/Support/Bottom'
+import Cards from '../../../components/core/static_pages_core/Support/Cards'
+import FAQ from '../../../components/core/static_pages_core/Support/FAQ'
+import Herosection from '../../../components/core/static_pages_core/Support/Herosection'
+import MoileIn from '../../../components/core/static_pages_core/Support/MoileIn'
+
 
 const Support = () => {
   return (
-    <div>Support</div>
+    <div className=' lg:space-y-[120px]  space-y-[60px]'>
+      <Herosection/>
+      <Cards/>
+      <FAQ/>
+      <MoileIn/>
+      <Bottom/>
+    </div>
   )
 }
 
@@ -41,61 +53,9 @@ export default Support
 
 // const Support = () => {
 //   const navigate = useNavigate();
-//   const [activeButton, setActiveButton] = useState("Calls & Contacts");
 
-//   const data = [
-//     {
-//       category: "NEWS",
-//       title:
-//         "Itel India’s Heartwarming World Cup Campaign: Connecting India through the...",
-//       image: "./support/Frame 1973341043.png", // Replace with actual image URL
-//       type: "All",
-//     },
-//     {
-//       category: "BLOG",
-//       title: "Imagine a day with uninterrupted HiFi Sound.",
-//       image: "./support/Frame 1973341043 (1).png", // Replace with actual image URL
-//       type: "Latest",
-//     },
-//     {
-//       category: "BLOG",
-//       title: "Unleash the Power of Memory: Itel S23 Redefines Performance",
-//       image: "./support/Frame 1973341043 (2).png", // Replace with actual image URL
-//       type: "Services",
-//     },
-//   ];
-//   const Tabs = ["All", "Latest", "Services", "Useful Tips"];
 
-//   const [activeTab, setActiveTab] = useState("All");
-
-//   const filteredData =
-//     activeTab === "All" ? data : data.filter((item) => item.type === activeTab);
-
-//   const BlogCard = ({ category, title, image }) => {
-//     return (
-//       <div className="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 content ">
-//         <img
-//           src={image}
-//           alt={title}
-//           className="w-full  object-cover rounded-md"
-//         />
-//         <div className="mt-4">
-//           <p className="text-gray-500 text-xs">{category}</p>
-//           <h3 className=" font-semibold line-clamp-2 mt-2">{title}</h3>
-//           <a href="#" className=" mt-4 inline-block">
-//             <div className=" flex items-center">
-//               <p className=" text-sm font-semibold">VIEW</p>{" "}
-//               <img
-//                 src={"./support/Union.png"}
-//                 className=" w-5 h-3 ml-2"
-//                 alt=""
-//               />
-//             </div>
-//           </a>
-//         </div>
-//       </div>
-//     );
-//   };
+  
 
 //   const buttons = [
 //     { label: "Calls & Contacts", id: "calls" },
@@ -222,33 +182,7 @@ export default Support
 //       </div>
 
 //       <div className=" px-10">
-//         <div data-aos="fade-up" className=" grid grid-cols-3 gap-5 px-20">
-//           {card_data.map((data) => {
-//             return (
-//               <>
-//                 <div
-//                   onClick={() => navigate(data.service_name)}
-//                   className="  flex flex-col mt-10 items-center"
-//                 >
-//                   <img className="  " src={data.img} />
-//                   <p className=" text-[#1C1B1B] text-2xl mt-5 tracking-wider  font-semibold">
-//                     {data.service_name}
-//                   </p>
-//                   <div className=" flex justify-center items-center  mt-2">
-//                     <p className=" text-[#1C1B1B] text-sm tracking-wider font-bold">
-//                       READ MORE
-//                     </p>
-//                     <img
-//                       src={"./support/Union.png"}
-//                       className=" w-5 h-3 ml-2"
-//                       alt=""
-//                     />
-//                   </div>
-//                 </div>
-//               </>
-//             );
-//           })}
-//         </div>
+       
 
 //         <p
 //           data-aos="fade-up"
@@ -280,43 +214,7 @@ export default Support
 //           <Accordion />
 //         </div>
 
-//         <div>
-//           <div className=" flex  items-center">
-//             <img src={"./support/Star.png"} alt="" className=" h-12" />
-//             <p className=" text-3xl font-medium ">
-//               Discover itel Mobile Insights
-//             </p>
-//           </div>
-//           <div className="container mx-auto py-8">
-//             {/* Tabs */}
-//             <div className="flex space-x-6 mb-6">
-//               {Tabs.map((tab) => (
-//                 <button
-//                   key={tab}
-//                   className={`px-4 py-2 rounded-full text-sm font-semibold ${activeTab === tab
-//                       ? "bg-black text-white"
-//                       : "bg-gray-200 text-gray-800 hover:bg-gray-300"
-//                     } transition-colors duration-300`}
-//                   onClick={() => setActiveTab(tab)}
-//                 >
-//                   {tab.toUpperCase()}
-//                 </button>
-//               ))}
-//             </div>
-
-//             {/* Cards Grid */}
-//             <div
-//               data-aos="fade-up"
-//               className="grid grid-cols-1 md:grid-cols-3 gap-6"
-//             >
-//               {filteredData.map((item, index) => (
-//                 <BlogCard key={index} {...item} />
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
+      
 //       <div>
 //         <div className=" p-8">
 //           {/* Top Cards Section */}

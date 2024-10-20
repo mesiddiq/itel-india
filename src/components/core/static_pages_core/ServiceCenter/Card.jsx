@@ -29,10 +29,10 @@ const Card = () => {
               />
 
               <div className=" flex flex-col  justify-evenly   lg:items-center fle lg:space-y-[24px]">
-                 <p className="  text-black/1 text-mobile/h5/medium  lg:ext-desktop/h4 ">
+                 <p className="  text-black/1 text-mobile/h5/medium  lg:text-desktop/h4 ">
                 {data.service_name}
               </p>
-              <div className=" flex">
+              <div className=" flex items-center">
                 <p className="  text-mobile/title lg:text-desktop/button font-markot text-brand/black">
                   LEARN MORE
                 </p>

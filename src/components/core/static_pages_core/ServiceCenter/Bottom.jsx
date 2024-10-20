@@ -15,7 +15,7 @@ const Bottom = () => {
         <div className=" lg:space-y-5  space-y-4">
           <div className="  lg:space-y-3 space-y-[10px]">
             <img
-              className=" w-[125px] h-[32px] lg:w-[204px] lg:h-[52px]"
+              className="  h-[32px] lg:w-[204px] lg:h-[52px]"
               src={"./static_page/f1c08f89cb24ebaf7ed62560f4388684 1.png"}
               alt=""
             />
@@ -23,7 +23,7 @@ const Bottom = () => {
               Our Official Service Partner
             </p>
           </div>
-          <div className=" flex p-3 lg:w-[275px] w-[198px] h-10 lg:h-12  justify-evenly items-center rounded-full bg-brand/black text-white">
+          <div className=" flex p-3 lg:w-[275px] h-10 lg:h-12  justify-evenly items-center rounded-full bg-brand/black text-white">
             <p className=" text-mobile/button lg:text-desktop/button">
               Search on Carlcare
             </p>
