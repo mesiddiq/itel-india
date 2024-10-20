@@ -1,8 +1,6 @@
 import React from 'react'
 
-const MasonaryCards = (props) => {
-	const {scrollY} = props;
-
+const MasonaryCards = () => {
   return (
       <div className='flex relative w-full px-[16px] md:px-0 py-[40px] md:py-[120px] bg-[#181818]' style={{ marginTop: '0px' }}>
       	<div className='content'>
@@ -71,14 +69,15 @@ const MasonaryCards = (props) => {
 	      				</div>
 	      			</div>
 	      		</div>
-	      		<div className='col-span-1 rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
-	      			<div className='flex h-full'>
-    						<img src="/SmartPhone/p55T/MasonaryCardFour.png"  />
+	      		<div className='col-span-1 h-[245px] md:h-[375px] p-5 rounded-[16px] bg-[url("/SmartPhone/p55T/MasonaryCardFour.png")] bg-cover bg-center' style={{ backgroundColor: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      			<div className='flex h-full relative text-center'>
+      					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h3 font-markot top-0'>Level Up with Android 14 Go Edition!</h3>
 	      			</div>
 	      		</div>
-	      		<div className='col-span-1 rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
-	      			<div className='flex h-full'>
-    						<img src="/SmartPhone/p55T/MasonaryCardFive.png"  />
+	      		<div className='col-span-1 h-[245px] md:h-[375px] p-5 rounded-[16px] bg-[url("/SmartPhone/p55T/MasonaryCardFive.png")] bg-cover bg-center' style={{ backgroundColor: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      			<div className='flex h-full relative text-center'>
+      					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h3 font-markot top-0'>Speed and Space to Spare!</h3>
+      					<p className='w-full absolute text-[#FFFFFF] text-left text-mobile/small/body md:text-desktop/h5/medium font-markot bottom-0 left-0'>UFS 2.2 ROM<br />*Memory Fusion</p>
 	      			</div>
 	      		</div>
 	      	</div>

@@ -1,8 +1,6 @@
 import React from 'react'
 
-const StunningScreen = (props) => {
-	const {scrollY} = props;
-
+const StunningScreen = () => {
   return (
     <div className='flex relative w-full md:h-[700px] bg-[#173145]' style={{ marginTop: '0px' }}>
     	<div className='content'>
