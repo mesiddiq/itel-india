@@ -13,8 +13,8 @@ const Endinformation = () => {
     },
   ];
   return (
-    <div className="content  font-markot text-brand/black ">
-      <div className=" lg:space-y-[120px] space-y-[60px]">
+    <div className="lg:content px-3  font-markot text-brand/black ">
+      <div className=" lg:space-y-[120px]  space-y-[60px]">
         {data.map((data, index) => {
           return (
             <Accordian key={index} title={data.title} data={data.content} />

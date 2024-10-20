@@ -11,9 +11,9 @@ import PFiftyFive from './pages/p_series/PFiftyFive'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import Footer from './components/common/Footer'
 import Support from './pages/static_pages/header/Support'
-import ScreenReplacement from './pages/static_pages/header/Support/ScreenReplacement'
-import Promise100 from './pages/static_pages/header/Support/Promise100'
-import EWaste from './pages/static_pages/header/Support/E-Waste'
+import ScreenReplacement from './pages/static_pages/ScreenReplacement'
+import Promise100 from './pages/static_pages/Promise100'
+import EWaste from './pages/static_pages/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
@@ -23,6 +23,7 @@ import ServiceCenters from './pages/static_pages/ServiceCenters'
 import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
 import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
+import NotFound from './pages/static_pages/NotFound'
 
 import A_Series_Parent from './pages/a_series/A_Series_Parent'
 import A05i from './pages/a_series/A05i'
@@ -56,8 +57,28 @@ function App() {
 	return (
 		<main>
 			<Routes>
-
-				<Route path='/' element={<HomePageButtons/>} />
+				<Route path='/' element={
+					<div className='flex flex-col gap-4'>
+						<Link className='text-blue-500 underline' to='/homepage'>Home</Link>
+						<Link className='text-blue-500 underline' to='/smartphones/s-series/s23'>s-23</Link>
+						<Link className='text-blue-500 underline' to='/smartphones/s-series/s23p'>s-23-plus</Link>
+						<Link className='text-blue-500 underline' to='/smartphones/s-series/s24'>s-24</Link>
+						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55-5g'>p-55 5G</Link>
+						<Link className='text-blue-500 underline' to='/smartphones/p-series/p55'>p-55</Link>
+						<Link className='text-blue-500 underline' to='/featurephones/super-guru-4g'>s guru 4g</Link>
+						<Link className='text-blue-500 underline' to='/featurephones/super-guru-400'>s guru 400</Link>
+						<Link className='text-blue-500 underline' to='/featurephones/super-guru-600'>s guru 600</Link>
+						<Link className='text-blue-500 underline' to='/support'>Support</Link>
+						<Link className='text-blue-500 underline' to='/csr'>CSR</Link>
+						<Link className='text-blue-500 underline' to='/aboutus'>About us</Link>
+						<Link className='text-blue-500 underline' to='/contactus'>Contact us</Link>
+						<Link className='text-blue-500 underline' to='/servicecenters'>Service Centers</Link>
+						<Link className='text-blue-500 underline' to='/screenreplacement'>Screen Replacement</Link>
+						<Link className='text-blue-500 underline' to='/e-waste-management'>E-Waste Management</Link>
+						<Link className='text-blue-500 underline' to='/100-days-promise'>100 Days Promise</Link>
+                         
+					</div>} />
+	
 				{/********************************************************/}
 				{/* 					Static Pages					 */}
 				{/********************************************************/}
@@ -65,14 +86,15 @@ function App() {
 
 				<Route path='/homepage' element={<HomePage />} />
 				<Route path='/support' element={<Support />} />
-				<Route path='/support/screenreplacement' element={<ScreenReplacement />} />
-				<Route path='/support/e-waste-management' element={<EWaste />} />
-				<Route path='/support/100-days-promise' element={<Promise100 />} />
+				<Route path='/screenreplacement' element={<ScreenReplacement />} />
+				<Route path='/e-waste-management' element={<EWaste />} />
+				<Route path='/100-days-promise' element={<Promise100 />} />
 				<Route path='/csr' element={<CSR />} />
 				<Route path='/aboutus' element={<Aboutus />} />
 				<Route path='/contactus' element={<Contactus />} />
 				<Route path='/servicecenters' element={<ServiceCenters />} />
 				<Route path='/FAQ' element={<FAQ/>} />
+				<Route path='/pagenotfound' element={<NotFound/>} />
 				
 
 				{/* ***************************************************************************************************/}
