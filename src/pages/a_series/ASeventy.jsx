@@ -1,5 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 // import HeroSectionOfPage from "./components/core/a_series_core/a70/HeroSectionOfPage";
+import StickyHeader from "../../components/common/StickyHeader";
 import HeroSectionOfPage from "../../components/core/a_series_core/a70/HeroSectionOfPage";
 import Section1Entertainment from "../../components/core/a_series_core/a70/Section1Entertainment";
 import Section2DisplayWithDynamicIsland from "../../components/core/a_series_core/a70/Section2DisplayWithDynamicIsland";
@@ -13,7 +14,7 @@ const ASeventy = () => {
   return (
     <div className="">
       <HeroSectionOfPage/>
-      {/* <StickyHeader title="A70"  purchaseLink={''} icon={'/a70/stickyeHeaderIcon.svg'} bgColor={'#FFFFFF'} /> */}
+      <StickyHeader title="A70"  purchaseLink={''} icon={'/SmartPhone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
 
       <div
         className="md:rounded-[64px] rounded-[16px]  my-10 p-2 content"
@@ -22,7 +23,7 @@ const ASeventy = () => {
           padding: '1px',
         }}
       >
-        <div className="bg-white md:rounded-[64px] rounded-[16px]  space-y-5 p-[16px]">
+        <div className="bg-white md:rounded-[64px] rounded-[16px] text-black  space-y-5 p-[16px]">
           <Section1Entertainment />
           <Section2DisplayWithDynamicIsland />
           <Section3CamersSpecs />

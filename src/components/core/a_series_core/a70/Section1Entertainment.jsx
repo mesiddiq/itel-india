@@ -19,7 +19,7 @@ const Section1Entertainment = () => {
                 </div>
                 <span className='text-[8px] block md:hidden'>With Memory Fusion Technology</span>
                 <div className='mt-5 md:mt-0 relative lg:left-[-121px] lg:top-[-29px]'>
-                    <img src={'/a70/partypop.svg'} alt="popImg"  className='md:w-[1160px] w-[300px]' />
+                    <img src={'/SmartPhone/a70/partypop.svg'} alt="popImg"  className='md:w-[1160px] w-[300px]' />
                 </div>
             </div>
         </GradientBackgroundWrapper>

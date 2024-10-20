@@ -1,19 +1,19 @@
 import GradientBackgroundWrapper from './GradientBackgroundWrapper ';
 
 const features = [
-  { img: '/a70/beautymode.svg', alt: 'beautyMode', text: '5 AI Beauty Mode' },
-  { img: '/a70/portraight.svg', alt: 'portraitMode', text: 'Portrait Lowlight' },
-  { img: '/a70/promode.svg', alt: 'proMode', text: 'Pro Mode' },
-  { img: '/a70/paranoma.svg', alt: 'panoramaMode', text: 'Panorama' },
-  { img: '/a70/hdrmode.svg', alt: 'hdrMode', text: 'HDR Mode' },
+  { img: '/SmartPhone/a70/beautymode.svg', alt: 'beautyMode', text: '5 AI Beauty Mode' },
+  { img: '/SmartPhone/a70/portraight.svg', alt: 'portraitMode', text: 'Portrait Lowlight' },
+  { img: '/SmartPhone/a70/promode.svg', alt: 'proMode', text: 'Pro Mode' },
+  { img: '/SmartPhone/a70/paranoma.svg', alt: 'panoramaMode', text: 'Panorama' },
+  { img: '/SmartPhone/a70/hdrmode.svg', alt: 'hdrMode', text: 'HDR Mode' },
 ];
 
 const Section3CamersSpecs = () => (
   <GradientBackgroundWrapper
-    bgImage='/a70/A70CameraBG.webp'
+    bgImage='/SmartPhone/a70/A70CameraBG.webp'
     paddingStart='48px'
     padding='10px'
-    mobileBgImage='/a70/A70CameraBg-Mobile.webp'
+    mobileBgImage='/SmartPhone/a70/A70CameraBg-Mobile.webp'
   >
     <div className='relative flex flex-col lg:flex-row h-[390px] lg:justify-between lg:pt-[28px] gap-2 md:gap-5 md:h-[600px] lg:h-[739px] overflow-hidden'>
       <div className='lg:w-[455px] text-center lg:text-left lg:h-[455px] relative lg:gap-6 lg:flex lg:flex-col'>
