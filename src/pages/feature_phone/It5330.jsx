@@ -9,8 +9,10 @@ import {
     FeatureRichDatait5330,
     FullSpecificationsDatait5330,
     KingVoiceDatait5330,
-    TechSpecsDatait5330
+    TechSpecsDatait5330,
+    ProductGalleryDatait5330
 } from '../../data/featurephonedata/it5330Data'
+import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 
 const It5330 = () => {
     return (
@@ -21,6 +23,7 @@ const It5330 = () => {
             <PhoneSliderAnimation />
             <KingVoice {...KingVoiceDatait5330} />
             <TechSpecs {...TechSpecsDatait5330} />
+            <FeaturePhoneProductGallery {...ProductGalleryDatait5330}  />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5330} mode={'light'} />
         </div>
     )

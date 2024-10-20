@@ -14,11 +14,11 @@ const TechSpecs = ({ phoneUrl, cards }) => {
                         <h3 className='uppercase text-mobile/title lg:text-[14px] lg:leading-[17px] font-medium text-smoky/black' data-aos="fade-left">Tech Specs</h3>
                         <h3 className=' text-mobile/h4 lg:text-desktop/h3 text-black/1' data-aos="fade-left">Power Packed Features</h3>
                     </div>
-                    <div className="grid grid-cols-2 gap-x-4 lg:gap-x-5 gap-y-3 lg:gap-y-10 max-w-[516px]">
+                    <div className="grid grid-cols-2 gap-x-4 lg:gap-x-5 gap-y-3 lg:gap-y-10 max-w-[516px] md:max-w-full">
                         <For each={cards} render={({ label, id, icon },idx) =>
                             <div className="gap-x-2 lg:gap-x-4 flex items-center" key={id} data-aos="fade-right" data-aos-delay={idx*100}>
                                 <img src={icon} alt={label} className='size-[54px]' />
-                                <h3 className='text-grey/grey/5 text-mobile/h7 lg:text-desktop/h5/medium'>{label}</h3>
+                                <h3 className='text-grey/grey/5 text-mobile/h7 md:text-mobile/h6 lg:text-desktop/h5/medium'>{label}</h3>
                             </div>
                         } />
                     </div>

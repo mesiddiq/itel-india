@@ -137,3 +137,38 @@ export const TechSpecsDataPower450 = {
         { id: '8', label: 'Super LED Torch', icon: '/featurephone/common/torch.svg' },
     ]
 }
+
+export const ProductGalleryDataPower450 = {
+    bgUrl: '/featurephone/Power_450/Backgrounds/phone_preview.webp',
+    bgUrlMobile: '/featurephone/Power_450/Backgrounds/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/Power_450/product_gallery/lightgreen_front.webp",
+                "/featurephone/Power_450/product_gallery/lightgreen_angular.webp",
+            ],
+            buttonLabel: 'light green',
+            buttonColor: '#CBD8C6'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/Power_450/product_gallery/blue_front.webp",
+                "/featurephone/Power_450/product_gallery/blue_back.webp",
+            ],
+            buttonLabel: ' Deep Blue',
+            buttonColor: '#1C3B7C'
+        },
+        {
+            id: 3,
+            images: [
+                "/featurephone/Power_450/product_gallery/black_front.webp",
+                "/featurephone/Power_450/product_gallery/black_angular.webp",
+            ],
+            buttonLabel: 'deep grey',
+            buttonColor: '#393D46'
+        },
+        // 'Light Green, Deep Blue, Dark Grey' 
+    ]
+}

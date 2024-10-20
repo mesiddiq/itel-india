@@ -10,7 +10,6 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
 
     const [selectedData, setselectedData] = useState(null)
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
-    const [animationActive, setAnimationActive] = useState(false)
 
 
     // Function to handle left navigation
@@ -67,16 +66,16 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
                     </div>
                 }
             </div>
-            <div className='flex flex-col lg:flex-row text-center lg:items-center justify-center gap-4 content'>
+            <div className='flex flex-col md:flex-row text-center md:items-center justify-center gap-4 content'>
                 <h1 className="text-desktop/title uppercase text-black/1">color</h1>
-                <div className="flex gap-3 flex-col lg:flex-row">
+                <div className="flex gap-3 flex-col md:flex-row">
                     {products.map((item) => (
-                        <button onClick={() => setselectedData(item)} className={` rounded-full flex gap-3 h-9 lg:h-auto items-center font-markot ${item.id === selectedData.id ? 'border-itel-red border-2 py-[6px] lg:px-3' : 'text-lg'}`}>
+                        <button key={item.id} onClick={() => setselectedData(item)} className={` rounded-full flex gap-3 h-9 lg:h-auto items-center font-markot ${item.id === selectedData.id ? 'border-itel-red border-2 py-[6px] md:px-3' : 'text-lg'}`}>
                             {item.id === selectedData.id &&
-                                <span className=' text-desktop/button text-black/1 uppercase hidden lg:block'>{item.buttonLabel}</span>
+                                <span className=' text-desktop/button text-black/1 uppercase hidden md:block'>{item.buttonLabel}</span>
                             }
-                            <div className={` rounded-full bg-red-50 ${item.id === selectedData.id ? 'size-[26px] lg:ml-0 ml-[40%]' : 'lg:size-10 size-[26px] ml-[40%] lg:ml-0'}`} style={{ background: item.buttonColor }}></div>
-                            <span className=' text-mobile/h6 text-black/1 uppercase lg:hidden '>{item.buttonLabel}</span>
+                            <div className={` rounded-full bg-red-50 ${item.id === selectedData.id ? 'size-[26px] md:ml-0 ml-[40%]' : 'md:size-10 size-[26px] ml-[40%] md:ml-0'}`} style={{ background: item.buttonColor }}></div>
+                            <span className=' text-mobile/h6 text-black/1 uppercase md:hidden '>{item.buttonLabel}</span>
                         </button>
                     ))}
                 </div>

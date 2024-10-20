@@ -8,8 +8,10 @@ import {
     FeatureRichDataPower120,
     FullSpecificationsDataPower120,
     KingVoiceDataPower120,
-    TechSpecsDataPower120
+    TechSpecsDataPower120,
+    ProductGalleryDataPower120
 } from '../../data/featurephonedata/power120'
+import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 
 const Power120 = () => {
     return (
@@ -20,6 +22,7 @@ const Power120 = () => {
             <PhoneSliderAnimation />
             <KingVoice {...KingVoiceDataPower120} />
             <TechSpecs {...TechSpecsDataPower120} />
+            <FeaturePhoneProductGallery {...ProductGalleryDataPower120} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataPower120} mode={'light'} />
         </div>
     )
