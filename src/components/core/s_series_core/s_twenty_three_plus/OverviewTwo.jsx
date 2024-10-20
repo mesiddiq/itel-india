@@ -22,7 +22,7 @@ const OverviewTwo = (props) => {
         <div className='h-[16px] md:h-[80px]'></div>
         <div className='grid grid-cols-1 md:grid-cols-3'>
           <div className='col-span-1 p-[16px] md:p-[40px] mx-0 md:mx-[25px] my-[16px] md:my-0 rounded-[16px] min-h-[210px] md:min-h-[360px]' style={{ border: '1px solid rgba(202, 134, 255, 0.1)' }}>
-            <img src='/s_twenty_three_plus/OverviewCardOne.svg' alt='OverviewCardOne' data-aos='fade-up' />
+            <img src='/SmartPhone/S23+/Backgrounds/OverviewCardOne.svg' alt='OverviewCardOne' data-aos='fade-up' />
             <h3 className={`text-mobile/h5/medium md:text-desktop/h4 font-markot text-[#FFFFFF] py-[10px] md:py-[20px]`} data-aos='fade-up'>
               3D Curved Brilliance: 6.78” FHD+ AMOLED Display
             </h3>
@@ -31,7 +31,7 @@ const OverviewTwo = (props) => {
             </p>
           </div>
           <div className='col-span-1 p-[16px] md:p-[40px] mx-0 md:mx-[25px] my-[16px] md:my-0 rounded-[16px] min-h-[210px] md:min-h-[360px]' style={{ border: '1px solid rgba(202, 134, 255, 0.1)' }}>
-            <img src='/s_twenty_three_plus/OverviewCardTwo.svg' alt='OverviewCardTwo' data-aos='fade-up' />
+            <img src='/SmartPhone/S23+/Backgrounds/OverviewCardTwo.svg' alt='OverviewCardTwo' data-aos='fade-up' />
             <h3 className={`text-mobile/h5/medium md:text-desktop/h4 font-markot text-[#FFFFFF] py-[10px] md:py-[20px]`} data-aos='fade-up'>
               Snap in Style with 50MP AI Dual Rear Camera & 32MP Front Camera
             </h3>
@@ -40,7 +40,7 @@ const OverviewTwo = (props) => {
             </p>
           </div>
           <div className='col-span-1 p-[16px] md:p-[40px] mx-0 md:mx-[25px] my-[16px] md:my-0 rounded-[16px] min-h-[210px] md:min-h-[360px]' style={{ border: '1px solid rgba(202, 134, 255, 0.1)' }}>
-            <img src='/s_twenty_three_plus/OverviewCardThree.svg' alt='OverviewCardThree' data-aos='fade-up' />
+            <img src='/SmartPhone/S23+/Backgrounds/OverviewCardThree.svg' alt='OverviewCardThree' data-aos='fade-up' />
             <h3 className={`text-mobile/h5/medium md:text-desktop/h4 font-markot text-[#FFFFFF] py-[10px] md:py-[20px]`} data-aos='fade-up'>
               5000 mAh Battery with 18W Type-C Charger
             </h3>

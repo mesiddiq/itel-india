@@ -13,16 +13,16 @@ const UltraHDMode = () => {
   const [isMobile, setIsMobile] = useState(false);
   const slides = [
     {
-      image: "/s_twenty_three_plus/UltraHDModeOne.png",
+      image: "/SmartPhone/S23+/Backgrounds/UltraHDMode.webp",
       text: "Ultra HD Mode"
     },
     {
-      image: "/s_twenty_three_plus/UltraHDModeOneBg.png",
-      text: "Ultra HD Mode 2"
+      image: "/SmartPhone/S23+/Backgrounds/WideSelfieMode.webp",
+      text: "Wide Selfie Mode"
     },
     {
-      image: "/s_twenty_three_plus/AmoledDisplay.jpg",
-      text: "Ultra HD Mode 3"
+      image: "/SmartPhone/S23+/Backgrounds/TimeLapseMode.webp",
+      text: "Time Lapse Mode"
     }
   ]
 
@@ -33,23 +33,9 @@ const UltraHDMode = () => {
     transform: 'translate(-50%, -50%)',
   }
 
-  const bulletStyle = {
-    position: 'absolute',
-    bottom: '0px',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-  }
-
   const textStyleSM = {
     position: 'absolute',
     bottom: '6%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-  }
-
-  const bulletStyleSM = {
-    position: 'absolute',
-    bottom: '-18px',
     left: '50%',
     transform: 'translate(-50%, -50%)',
   }
@@ -76,7 +62,7 @@ const UltraHDMode = () => {
       className="mySwiper max-h-screen w-full"
     >
       {slides.map((slide, slideIndex) => (
-        <SwiperSlide>
+        <SwiperSlide key={slideIndex}>
           <div className="relative h-[300px] md:h-[800px] xl:h-[950px] flex justify-center">
             <div className='w-full h-full bg-center bg-cover duration-500' style={{ backgroundImage: `url(${slide.image})`}}>
               <h3 style={isMobile ? textStyleSM : textStyle} className='text-[#FFFFFF] text-mobile/h7 md:text-desktop/h3 font-markot'>{slide.text}</h3>

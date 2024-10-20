@@ -15,9 +15,10 @@ import ThinDesign from '../../components/core/s_series_core/s_twenty_three_plus/
 import TimeLapse from '../../components/core/s_series_core/s_twenty_three_plus/TimeLapse';
 import UnlockTouch from '../../components/core/s_series_core/s_twenty_three_plus/UnlockTouch';
 import Video from '../../components/core/s_series_core/s_twenty_three_plus/Video';
-import BlogCardsNew from '../../components/core/s_series_core/S_Twenty_Three_Plus/BlogCardsNew';
+import BlogCards from '../../components/core/s_series_core/S_Twenty_Three_Plus/BlogCards';
 import PicturePerfect from '../../components/core/s_series_core/s_twenty_three_plus/PicturePerfect';
-import { FullSpecificationsDataS23Plus } from '../../data/smartphonedata/S23PlusData';
+import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
+import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/S23PlusData';
 
 const STwentyThreePlus = () => {
 
@@ -26,23 +27,22 @@ const STwentyThreePlus = () => {
       <div>
         {/* <Navbar /> */}
         <HeroBanner />
-        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/s_twenty_three_plus/overview.png'} />
+        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/SmartPhone/S23+/Backgrounds/OverviewIcon.webp'} />
         <OverviewTwo />
         <Video />
         <AmoledDisplay />
         <NewVision />
         <ImmersiveEntertainment />
         <PicturePerfect />
-
         <SharpFocus />
         <TimeLapse />
         <SnapFlawlessSelfie />
-        {/* Use https://swiperjs.com/react for the slider in the below component */}
         <UltraHDMode />
         <UnlockTouch />
         <ThinDesign />
-        <BlogCardsNew />
-        <FullSpecifications FullSpecificationsData={FullSpecificationsDataS23Plus} mode='dark' />
+        <BlogCards />
+        <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false}/>
+        <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
       </div>
     </>
   )
