@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 
-const StickyHeader = ({ title, purchaseLink, icon }) => {
+const StickyHeader = ({ title, purchaseLink, icon, bgColor }) => {
     return (
-        <div className='bg-black/1 px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-50'>
+        <div className='px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]' style={{ backgroundColor: bgColor ? bgColor : '#181818' }}>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
-                    <img src='/featurephone/superguru4g/buynowlogo.svg' alt="Icon" className='size-10' />
+                    <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className='size-10' />
                     <h1 className='text-mobile/h5 md:text-desktop/h4 font-bold'>{title}</h1>
                 </div>
                 <div className="hidden md:flex gap-8 items-center">
@@ -13,7 +15,7 @@ const StickyHeader = ({ title, purchaseLink, icon }) => {
                     <a href="#specifications" className='text-desktop/body/1'>Specifications</a>
                 </div>
                 <button className='flex py-3 px-[14px] md:px-6 rounded-[24px] bg-white gap-2'>
-                    <p className='text-mobile/button md:text-desktop/button text-black/1 uppercase font-medium'>{purchaseLink}</p>
+                    <p className='text-mobile/button md:text-desktop/button text-black/1 uppercase font-medium'>Buy Now</p>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/twotone/arrow-right">
                             <g id="vuesax/twotone/arrow-right_2">

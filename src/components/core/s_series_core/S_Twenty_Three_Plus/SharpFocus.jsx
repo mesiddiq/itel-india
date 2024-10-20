@@ -1,7 +1,6 @@
 import React from 'react';
 
-const SharpFocus = (props) => {
-  const { scrollY } = props;
+const SharpFocus = () => {
 
   return (
     <div className='flex flex-col relative w-full px-[16px] md:px-0 py-[12px] md:py-[120px]' style={{ marginTop: '0px' }}>

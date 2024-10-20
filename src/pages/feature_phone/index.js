@@ -12,3 +12,5 @@ export {default as Power450} from './Power450'
 export {default as SuperGuru4G} from './SuperGuru4G'
 export {default as SuperGuru400} from './SuperGuru400'
 export {default as SuperGuru600} from './SuperGuru600'
+
+export {default as Ace2Power} from './Ace2Power'

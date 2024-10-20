@@ -1,0 +1,72 @@
+// A05i
+// update background image urls for every shape
+export const ImageCarouselData = [
+    {
+        id: 1,
+        color: "orange",
+        buttonText: "Orange",
+        buttonGradient: "bg-[#F6C174]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer:"",
+        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        images: [
+            "/smartphone/A05i/mobileGreen1.png",
+            "/smartphone/A05i/mobileGreen2.png",
+            "/smartphone/A05i/mobileGreen3.png",
+            "/smartphone/A05i/mobileGreen4.png",
+            "/smartphone/A05i/mobileGreen5.png",
+        ],
+    },
+    {
+        id: 2,
+        color: "green",
+        buttonText: "Green",
+        buttonGradient: "bg-[#AFE1C1]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer:"",
+        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        images: [
+            "/smartphone/A05i/mobileGreen1.png",
+            "/smartphone/A05i/mobileGreen2.png",
+            "/smartphone/A05i/mobileGreen3.png",
+            "/smartphone/A05i/mobileGreen4.png",
+            "/smartphone/A05i/mobileGreen5.png",
+        ],
+    },
+    {
+        id: 3,
+        color: "blue",
+        buttonText: "Blue",
+        buttonGradient: "bg-[#58ACE8]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer:"",
+        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        images: [
+            "/smartphone/A05i/mobileBlue1.png",
+            "/smartphone/A05i/mobileBlue2.png",
+            "/smartphone/A05i/mobileBlue3.png",
+            "/smartphone/A05i/mobileBlue4.png",
+            "/smartphone/A05i/mobileBlue5.png",
+        ]
+    },
+    {
+        id: 4,
+        color: "black",
+        buttonText: "Black",
+        buttonGradient: "bg-[#013142]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer:"",
+        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        images: [
+            "/smartphone/A05i/mobileGreen1.png",
+            "/smartphone/A05i/mobileGreen2.png",
+            "/smartphone/A05i/mobileGreen3.png",
+            "/smartphone/A05i/mobileGreen4.png",
+            "/smartphone/A05i/mobileGreen5.png",
+        ],
+    },
+];

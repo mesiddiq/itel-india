@@ -2,7 +2,7 @@ import React from 'react'
 
 const StunningScreen = () => {
   return (
-    <div className='flex relative w-full md:h-[700px] bg-[#173145]' style={{ marginTop: '0px' }}>
+    <div class='flex relative w-full h-[640px] md:h-[700px] bg-[url("/SmartPhone/p55T/Backgrounds/StunningScreenBgSmall.webp")] md:bg-[url("/SmartPhone/p55T/Backgrounds/StunningScreenBg.webp")] bg-cover md:bg-contain bg-center md:bg-right bg-no-repeat' style={{ marginTop: '0px', backgroundColor: '#173145' }}>
     	<div className='content'>
       	<div className='flex flex-col md:flex-row h-full'>
       		<div className='w-full md:w-[40%] px-[18px] md:px-0 py-[28px] md:py-[68px]'>
@@ -39,9 +39,6 @@ const StunningScreen = () => {
       					</div>
       				</div>
       			</div>
-      		</div>
-      		<div className='w-full md:w-[60%]'>
-      			<img src="/SmartPhone/p55T/StunningScreen.png" className='md:absolute md:right-0' />
       		</div>
       	</div>
     	</div>

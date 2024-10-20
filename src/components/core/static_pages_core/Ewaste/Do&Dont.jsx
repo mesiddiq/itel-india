@@ -54,14 +54,14 @@ const DoDont = () => {
         <div>
         <p className="lg:text-desktop/h3 text-brand/black  text-mobile/h3">Don’ts</p>
 
-        <div  className=" mt-10  grid grid-cols-1  gap-10 md:grid-cols-4">
+        <div  className=" mt-10  lg:grid lg:grid-cols-4 space-y-6  lg:space-y-0 lg:gap-10 ">
            {
             data2.map((data,index)=>{
                 return(
                     <>
-                      <div key={index} className="  space-y-4">
-            <img src="https://dummyimage.com/50" alt="" />
-            <p  className="  text-grey/grey/5 lg:text-desktop/body/1 text-desktop/body/2/regular">
+                      <div key={index} className=" flex flex-row lg:flex-col  lg:space-y-4">
+            <img className="h-[48px] w-[48px] lg:h-[64px] lg:w-[64px] " src="https://dummyimage.com/50" alt="" />
+            <p  className=" ml-3 lg:ml-0  text-grey/grey/5 lg:text-desktop/body/1 text-desktop/body/2/regular">
              {data.description}
             </p>
           </div>

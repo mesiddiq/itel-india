@@ -5,6 +5,7 @@ import {
     FullSpecificationsDataSuperGuru400,
     HeroDataSuperGuru400,
     KingVoiceDataSuperGuru400,
+    ProductGalleryDataSuperGuru400,
     TechSpecsDataSuperGuru400
 } from '../../data/featurephonedata/SGuru400Data'
 import Hero from '../../components/common/feature_phone_common/Hero'
@@ -12,6 +13,10 @@ import PayAnywhere from '../../components/common/feature_phone_common/PayAnywher
 import { KingVoice, TechSpecs } from '../../components/core/feature_phone/s_guru_4g'
 import FullSpecifications from '../../components/common/FullSpecifications'
 import StickyHeader from '../../components/common/StickyHeader'
+import UltraFastSupport from '../../components/common/feature_phone_common/UltraFastSupport'
+import ExtendedTalktime from '../../components/core/feature_phone/s_guru_400/ExtendedTalktime'
+import PhoneSliderAnimation from '../../components/common/feature_phone_common/PhoneSliderAnimation'
+import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 
 
 const SuperGuru400 = () => {
@@ -20,9 +25,13 @@ const SuperGuru400 = () => {
             <Hero {...HeroDataSuperGuru400} />
             <StickyHeader {...HeroDataSuperGuru400} />
             <FeatureRich {...FeatureRichDataSuperGuru400} />
-            <PayAnywhere />
+            <PhoneSliderAnimation />
+            <ExtendedTalktime />
+            <PayAnywhere upiImageUrl="/featurephone/superguru400/upi.webp" />
+            <UltraFastSupport />
             <KingVoice {...KingVoiceDataSuperGuru400} />
             <TechSpecs {...TechSpecsDataSuperGuru400} />
+            <FeaturePhoneProductGallery {...ProductGalleryDataSuperGuru400} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataSuperGuru400} mode={'light'} />
         </div>
     )

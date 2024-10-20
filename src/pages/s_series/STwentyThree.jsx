@@ -22,9 +22,9 @@ import StickyHeader from '../../components/common/StickyHeader'
 
 const STwentyThree = () => {
     return (
-        <div className='overflow-hidden '>
+        <div className=''>
             <HeroSection />
-            <StickyHeader title="S23" icon={'/smartphone/S_Twenty_Three/HeadIcon.webp'} purchaseLink={''} />
+            <StickyHeader title="S23"  purchaseLink={''} icon={''} bgColor={'#181818'} />
             <FeatureSection />
             <ScrollingBanner />
             <VideoSection />

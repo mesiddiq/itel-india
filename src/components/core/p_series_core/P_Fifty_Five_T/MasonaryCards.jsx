@@ -5,7 +5,7 @@ const MasonaryCards = () => {
       <div className='flex relative w-full px-[16px] md:px-0 py-[40px] md:py-[120px] bg-[#181818]' style={{ marginTop: '0px' }}>
       	<div className='content'>
 	      	<div className='grid grid-cols-2 md:grid-cols-[40%_30%_30%] gap-4'>
-	      		<div className='col-span-2 md:col-span-3 md:h-[470px] rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      		<div className='col-span-2 md:col-span-3 h-[250px] md:h-[470px] rounded-[16px] bg-[url("/SmartPhone/p55T/Backgrounds/MobileGrid1.webp")] md:bg-[url("/SmartPhone/p55T/Backgrounds/WebGrid1.webp")] bg-cover bg-center bg-no-repeat'>
 	      			<div className='flex flex-col md:flex-row h-full'>
 	      				<div className='flex md:flex-col justify-between md:w-[30%] p-5 md:p-7 pb-14'>
 	      					<div>
@@ -17,12 +17,10 @@ const MasonaryCards = () => {
 	      						<h4 className='text-[#FFFFFF] text-mobile/body/2 md:text-desktop/h4 font-markot md:w-[309px] pl-[40px] md:pl-0'>Big 6000 mAh battery with 18W Type-C fast charging. No more low battery drama!</h4>
 	      					</div>
 	      				</div>
-	      				<div className='md:w-[70%] md:relative'>
-	      					<img src="/SmartPhone/p55T/MasonaryCardOne.png" className='md:absolute md:bottom-0 md:right-0' />
-	      				</div>
+	      				<div className='md:w-[70%] md:relative'></div>
 	      			</div>
 	      		</div>
-	      		<div className='col-span-2 md:col-span-1 md:row-span-2 rounded-[16px] bg-[#173145]'>
+	      		<div className='col-span-2 md:col-span-1 md:row-span-2 h-[520px] md:h-auto rounded-[16px] bg-[url("/SmartPhone/p55T/Backgrounds/MobileGrid2.webp")] md:bg-[url("/SmartPhone/p55T/Backgrounds/WebGrid2.webp")] bg-cover bg-center bg-no-repeat'>
 	      			<div className='flex flex-col justify-between h-full'>
       					<div className='p-5 md:p-7 pb-14'>
       						<img src="/SmartPhone/p55T/PowerPlay.svg" className='h-[16px]' />
@@ -46,10 +44,10 @@ const MasonaryCards = () => {
       							</div>
       						</div>
       					</div>
-      					<img src="/SmartPhone/p55T/MasonaryCardTwo.svg" />
+      					{/*<img src="/SmartPhone/p55T/MasonaryCardTwo.svg" />*/}
       				</div>
 	      		</div>
-	      		<div className='col-span-2 h-[245px] md:h-[375px] rounded-[16px]' style={{ background: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      		<div className='col-span-2 h-[245px] md:h-[375px] rounded-[16px] bg-[url("/SmartPhone/p55T/Backgrounds/MobileGrid3.webp")] md:bg-[url("/SmartPhone/p55T/Backgrounds/WebGrid3.webp")] bg-cover bg-center bg-no-repeat'>
 	      			<div className='flex flex-col md:flex-row h-full'>
 	      				<div className='flex md:flex-col justify-between md:w-[40%] p-5 md:p-7'>
 	      					<div>
@@ -61,20 +59,17 @@ const MasonaryCards = () => {
 	      						<h4 className='text-[#FFFFFF] text-mobile/body/large md:text-[22px] md:font-[400] md:leading-[28px] font-markot md:w-[250px] pl-[40px] md:pl-0 md:pt-3'><span className='md:font-[700]'>6.6" HD+</span> Punch Hole <span className='md:font-[700]'>90Hz RR</span> Display</h4>
 	      					</div>
 	      				</div>
-	      				<div className='hidden md:block md:w-[70%] md:relative'>
-	      					<img src="/SmartPhone/p55T/MasonaryCardThree.svg" className='md:absolute md:bottom-0 md:right-0' />
-	      				</div>
-	      				<div className='block md:hidden relative w-full h-full'>
-	      					<img src="/SmartPhone/p55T/MasonaryCardThreeSM.svg" className='absolute bottom-0 left-[50%] transform -translate-x-[50%]' />
+	      				<div className='w-[70%]'>
+	      					{/*<img src="/SmartPhone/p55T/MasonaryCardThree.svg" className='md:absolute md:bottom-0 md:right-0' />*/}
 	      				</div>
 	      			</div>
 	      		</div>
-	      		<div className='col-span-1 h-[245px] md:h-[375px] p-5 rounded-[16px] bg-[url("/SmartPhone/p55T/MasonaryCardFour.png")] bg-cover bg-center' style={{ backgroundColor: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      		<div className='col-span-1 h-[210px] md:h-[375px] p-5 rounded-[16px] bg-[url("/SmartPhone/p55T/Backgrounds/MobileGrid4.webp")] md:bg-[url("/SmartPhone/p55T/Backgrounds/WebGrid4.webp")] bg-cover bg-center bg-no-repeat'>
 	      			<div className='flex h-full relative text-center'>
       					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h3 font-markot top-0'>Level Up with Android 14 Go Edition!</h3>
 	      			</div>
 	      		</div>
-	      		<div className='col-span-1 h-[245px] md:h-[375px] p-5 rounded-[16px] bg-[url("/SmartPhone/p55T/MasonaryCardFive.png")] bg-cover bg-center' style={{ backgroundColor: 'radial-gradient(49.88% 130.6% at 68.19% 54.83%, #2B4559 0%, #173145 100%)' }}>
+	      		<div className='col-span-1 h-[210px] md:h-[375px] p-5 rounded-[16px] bg-[url("/SmartPhone/p55T/Backgrounds/MobileGrid5.webp")] md:bg-[url("/SmartPhone/p55T/Backgrounds/WebGrid5.webp")] bg-cover bg-center bg-no-repeat'>
 	      			<div className='flex h-full relative text-center'>
       					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h3 font-markot top-0'>Speed and Space to Spare!</h3>
       					<p className='w-full absolute text-[#FFFFFF] text-left text-mobile/small/body md:text-desktop/h5/medium font-markot bottom-0 left-0'>UFS 2.2 ROM<br />*Memory Fusion</p>
