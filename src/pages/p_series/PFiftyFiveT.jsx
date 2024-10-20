@@ -17,6 +17,7 @@ const PFiftyFiveT = () => {
   return (
     <>
       <main className="bg-[#EBE8E2]">
+        <div className='h-[200px]'></div>
         <LevelUpWithAndroid />
         <StayConnected />
         <StunningScreen />
