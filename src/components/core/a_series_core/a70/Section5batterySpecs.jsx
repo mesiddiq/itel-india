@@ -2,7 +2,7 @@ import GradientBackgroundWrapper from "./GradientBackgroundWrapper "
 
 const Section5batterySpecs = () => {
     return (
-        <GradientBackgroundWrapper bgImage={'/SmartPhone/a70/batteryBg.webp'} paddingStart="57px" padding="0" mobileBgImage={'/SmartPhone/a70/batterybg-mobile.webp'}>
+        <GradientBackgroundWrapper bgImage={'/smartphone/a70/batteryBg.webp'} paddingStart="57px" padding="0" mobileBgImage={'/smartphone/a70/batterybg-mobile.webp'}>
             <div className="flex flex-col lg:flex-row lg:pt-[28px] md:p-[16px] pt-[14px] justify-between">
                 <div className="flex flex-col  justify-between gap-6 lg:gap-0">
                     <div className="lg:w-[513px] text-center md:text-left md:flex md:flex-col md:gap-5">
@@ -24,7 +24,7 @@ const Section5batterySpecs = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={'/SmartPhone/a70/phonebatteryimg.png'} alt="battery" />
+                    <img src={'/smartphone/a70/phonebatteryimg.png'} alt="battery" />
                 </div>
             </div>
 

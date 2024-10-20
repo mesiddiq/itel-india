@@ -4,7 +4,7 @@ const HeroSectionOfPage = () => {
             <div className="flex flex-col gap-4">
                 <div className="border-2 flex items-center px-1 gap-2 font-bold border-[#3A3358] text-[#3A3358] text-center rounded-full max-w-[156px]">
                     <span>Awesome series</span>
-                    <img src="/SmartPhone/a70/UpArrow.svg" alt="A70Badge" className="w-[12px] h-[12px]" />
+                    <img src="/smartphone/a70/UpArrow.svg" alt="A70Badge" className="w-[12px] h-[12px]" />
                 </div>
                 <div>
                     <h1 className="text-mobile/h1 md:text-desktop/large/h py-4">A70</h1>
@@ -24,7 +24,7 @@ const HeroSectionOfPage = () => {
             {/* Desktop View */}
             <div
                 style={{
-                    backgroundImage: `url('/SmartPhone/a70/A70Banner.webp')`,
+                    backgroundImage: `url('/smartphone/a70/A70Banner.webp')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -33,14 +33,14 @@ const HeroSectionOfPage = () => {
             >
                 <div className="md:h-[800px] h-[521px] flex flex-col lg:flex-row md:justify-between">
                     {commonTextContent}
-                    <img src="/SmartPhone/a70/HritikPhotoDashb.png" alt="A70Banner" className="h-[1409px] w-[849px]" />
+                    <img src="/smartphone/a70/HritikPhotoDashb.png" alt="A70Banner" className="h-[1409px] w-[849px]" />
                 </div>
             </div>
 
             {/* Mobile View */}
             <div
                 style={{
-                    backgroundImage: `url('/SmartPhone/a70/A70bannermobile.webp')`,
+                    backgroundImage: `url('/smartphone/a70/A70bannermobile.webp')`,
                     backgroundSize: 'contain',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -49,7 +49,7 @@ const HeroSectionOfPage = () => {
             >
                 <div className="w-[360px] h-[480px] flex flex-col">
                     {commonTextContent}
-                    <img src="/SmartPhone/a70/HritikPhotoDashb.png" alt="A70Banner" className="h-[480px] w-[289px] m-auto " />
+                    <img src="/smartphone/a70/HritikPhotoDashb.png" alt="A70Banner" className="h-[480px] w-[289px] m-auto " />
                 </div>
             </div>
         </div>
