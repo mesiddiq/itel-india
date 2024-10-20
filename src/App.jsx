@@ -8,6 +8,7 @@ import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
 import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
+import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import SuperGuru4G from './pages/feature_phone/SuperGuru4G'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import SuperGuru400 from './pages/feature_phone/SuperGuru400'
@@ -77,7 +78,9 @@ function App() {
 
 				<Route path='/smartphones/p-series' element={<P_Series_Parent />} >
 					<Route path='p55' element={<PFiftyFive />} />
+					<Route path='p55p' element={<PFiftyFivePlus/>} ></Route>
 				</Route>
+               
 
 				{/********************************************************/}
 				{/* 					A series						 */}

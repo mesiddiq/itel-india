@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
+
+
 
 const Storage = () => {
+  const [showImages, setShowImages] = useState(false);
+  const handleClick = () => {
+    setShowImages(!showImages);
+  };
   return (
     <div className='relative text-white w-full flex h-max md:h-[680px] bg-cover bg-center' style={{backgroundImage: "url(/P_Series/storage.png)"}}>
     <div className='content w-full md:flex-row flex flex-col pt-8'>
@@ -26,9 +32,34 @@ const Storage = () => {
 </div>
      </div>
      </div>
-     <div className="w-full md:w-1/2 h-full">
-     <img src='/P_Series/vector4.png' className='w-full h-full bg-cover opacity-50'></img>
-     </div>
+     <div className="w-full md:w-1/2 h-full bg-cover opacity-50" style={{ backgroundImage: "url(/P_Series/vector4.png)" }}>
+      <div className="relative flex justify-center items-center h-screen">
+        {/* Left Mobile Image */}
+        <img
+          src="/P_Series/mob2.png"
+          alt="Left Mobile"
+          className={`absolute transition-all duration-700 ease-in-out ${showImages ? 'transform translate-x-[-150px] translate-y-[-20px] scale-100 rotate-0 z-0' : 'transform translate-x-[0px] scale-0'} z-0`}
+          style={{ width: '400px', height: 'auto' }}
+        />
+
+        {/* Center Mobile Image */}
+        <img
+          src="/P_Series/mob1.png"
+          alt="Center Mobile"
+          onClick={handleClick}
+          className="relative z-10 cursor-pointer"
+          style={{ width: '250px', height: 'auto' }}
+        />
+
+        {/* Right Mobile Image */}
+        <img
+          src="/P_Series/mob3.png"
+          alt="Right Mobile"
+          className={`absolute transition-all duration-700 ease-in-out ${showImages ? 'transform translate-x-[150px] translate-y-[-20px] scale-100 rotate-0 z-0' : 'transform translate-x-[0px] scale-0'} z-0`}
+          style={{ width: '400px', height: 'auto' }}
+        />
+      </div>
+    </div>
     </div></div>
   )
 }

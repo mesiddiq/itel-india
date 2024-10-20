@@ -4,7 +4,7 @@ const Pvideo = () => {
   return (
     <div className='w-full '>
   <video autoPlay muted className="w-full">
-        <source src="https://res.cloudinary.com/djwj42mic/video/upload/v1728627789/S24_Product_Video_1080p_aj36qm.mp4" type="video/mp4"/>
+        <source src="https://res.cloudinary.com/djwj42mic/video/upload/v1728900031/-7ff7-4c4e-bc36-dae98f5fbb24_btkkvk.mp4" type="video/mp4"/>
     </video>
     </div>
   )

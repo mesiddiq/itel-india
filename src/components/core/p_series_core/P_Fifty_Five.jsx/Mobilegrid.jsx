@@ -83,27 +83,27 @@ const MobileGrid = () => {
     </div>
 
     {/* Bottom section */}
-    <div className="relative flex  flex-col lg:flex-row items-center h-[650px] lg:h-[473px] justify-center bg-gradient-to-r from-blue-900 to-transparent w-full overflow-hidden rounded-[16px] mt-8 lg:mt-12">
+    <div className="relative flex  h-[650px] lg:h-[473px] bg-gradient-to-r from-blue-900 to-transparent w-full overflow-hidden rounded-[16px] mt-8 lg:mt-12">
       <div
-        className="absolute lg:top-0 lg:right-0 w-1/2  h-full bg-cover bg-center "
+        className="absolute md:top-0 md:right-0 md:w-2/3 hidden md:flex w-full  h-full bg-cover bg-center "
         style={{
-          backgroundImage: `url('/P_Series/vector.png')`,
+          backgroundImage: `url('/P_Series/gridbg.png')`,
         }}
       />
-      <div className="relative z-10">
-        <img
-          src="/P_Series/screen.png"
-          alt="Mobile display"
-          className="w-[200px] sm:w-[300px] lg:w-[700px] "
-        />
-      </div>
 
+<div
+        className="absolute bottom-0  md:hidden flex w-full  h-1/2 bg-cover bg-center "
+        style={{
+          backgroundImage: `url('/P_Series/gridbg1.png')`,
+        }}
+      />
       {/* Text Section */}
-      <div className="absolute top-2 md:top-1/4 md:left-4 sm:left-10 text-white z-20 font-markot">
-        <h1 className="text-lg sm:text-2xl lg:text-4xl font-bold">Vivid Colors,<br/> Wide Viewing</h1>
-        <p className="mt-2 sm:mt-4 text-sm sm:text-lg">6.6" HD+ IPS Display</p>
-        <p className="mt-1 text-sm sm:text-lg">90Hz Refresh Rate</p>
-      </div>
+      <div className="flex flex-col opacity-[70%] md:justify-between items-start text-white z-20 gap-[20px] p-12 font-markot">
+        <h1 className="text-mobile/h5/medium md:text-desktop/h3 ">Vivid Colors,Wide Viewing</h1>
+        <div className='flex flex-col text-mobile/h6 md:text-desktop/h4'>
+        <p className="">6.6" HD+ IPS Display</p>
+        <p className="">90Hz Refresh Rate</p>
+      </div></div>
     </div>
   </div>
 </div>

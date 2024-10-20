@@ -34,6 +34,7 @@ export default {
 				's23p/to':'#85e2fd',
 				's23/from':'#DACFF9',
 				's23/to':'#5C5C7E',
+				
 			},
 			fontSize: {
 				'desktop/large/h': ['136px', {
@@ -218,6 +219,7 @@ export default {
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
+				
 			},
 			backgroundSize: {
 				'85': '85%',

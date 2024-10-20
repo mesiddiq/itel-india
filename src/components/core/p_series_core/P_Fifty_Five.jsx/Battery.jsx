@@ -1,6 +1,6 @@
 const Battery = () => {
   return (
-    <div className="bg-[#D0E1FC] h-[813px] w-full md:px-[80px] flex items-center justify-center bg-no-repeat bg-cover"
+    <div className="bg-[#D0E1FC] h-[813px] w-full md:px-[80px] flex items-center justify-center bg-no-repeat bg-cover overflow-hidden"
       style={{ backgroundImage: 'url(/P_Series/vector2.png)' }}>
 
       <div className="content relative flex  items-center h-full w-full">

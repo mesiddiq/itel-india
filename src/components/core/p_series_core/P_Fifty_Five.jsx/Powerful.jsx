@@ -2,7 +2,7 @@ import React from 'react';
 
 const Powerful = () => {
   return (
-    <div className="w-full h-max  lg:px-[80px] lg:py-[120px] p-[40px] bg-white">
+    <div className="w-full h-max  lg:px-[80px] lg:py-[120px] p-[40px] bg-white overflow-hidden">
   <div className={`
     flex flex-col items-end md:justify-center w-full  h-[660px] 
     bg-cover overflow-hidden rounded-[16px] 
