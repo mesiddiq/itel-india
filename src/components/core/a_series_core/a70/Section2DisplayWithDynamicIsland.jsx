@@ -1,16 +1,16 @@
 import GradientBackgroundWrapper from './GradientBackgroundWrapper ';
 
 const features = [
-  { img: '/a70/batteryicon.svg', alt: 'battery', text: '6.6inch HD+ Display' },
-  { img: '/a70/mobicon.svg', alt: 'mobile', text: '90% + Screen to Body Ratio' },
-  { img: '/a70/fingericon.svg', alt: 'fingerP', text: '120 Hz Touch Sampling Rate' },
+  { img: '/SmartPhone/a70/batteryicon.svg', alt: 'battery', text: '6.6inch HD+ Display' },
+  { img: '/SmartPhone/a70/mobicon.svg', alt: 'mobile', text: '90% + Screen to Body Ratio' },
+  { img: '/SmartPhone/a70/fingericon.svg', alt: 'fingerP', text: '120 Hz Touch Sampling Rate' },
 ];
 
 const Section2DisplayWithDynamicIsland = () => (
-  <GradientBackgroundWrapper mobileBgImage='/a70/AmpleStorage-Mobile.webp' paddingStart='60px'>
+  <GradientBackgroundWrapper mobileBgImage='/SmartPhone/a70/AmpleStorage-Mobile.webp' paddingStart='60px'>
     <div className='flex lg:flex-row flex-col-reverse justify-end h-[690px] md:h-[850px]'>
       <div className='flex md:justify-start items-end'>
-        <img src='/a70/iphonespecs.svg' loading='lazy' alt='dynamicIsland' className='lg:w-[532px] lg:h-[700px]' />
+        <img src='/SmartPhone/a70/iphonespecs.svg' loading='lazy' alt='dynamicIsland' className='lg:w-[532px] lg:h-[700px]' />
       </div>
       <div className='lg:pt-[148px] lg:ps-[60px]'>
         <div className='lg:w-[502px] lg:h-[545px] flex flex-col gap-8'>
