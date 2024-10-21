@@ -2,16 +2,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 
-const StickyHeader = ({ title, purchaseLink, icon, bgColor }) => {
+const StickyHeader = ({ title, purchaseLink, icon, bgColor, textColor }) => {
     return (
         <div className='px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]' style={{ backgroundColor: bgColor ? bgColor : '#181818' }}>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
                     <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className='size-10' />
-                    <h1 className='text-mobile/h5 md:text-desktop/h4 font-bold'>{title}</h1>
+                    <h1 className={`text-mobile/h5 md:text-desktop/h3 font-bold ${textColor ? 'text-black/1' :'text-white'} `}>{title}</h1>
                 </div>
                 <div className="hidden md:flex gap-8 items-center">
-                    <a href="#overview" className='text-desktop/body/1'>Overview</a>
+                    <a href="#overview" className={`text-desktop/body/1 ${textColor ? 'text-black/1' :'text-white'}`}>Overview</a>
                     <a href="#specifications" className='text-desktop/body/1'>Specifications</a>
                 </div>
                 <button className='flex py-3 px-[14px] md:px-6 rounded-[24px] bg-white gap-2'>
