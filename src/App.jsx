@@ -2,7 +2,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
-import { Link, Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import HomePage from './pages/static_pages/HomePage'
 import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
