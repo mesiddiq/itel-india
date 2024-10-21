@@ -2,7 +2,7 @@ import React from 'react'
 
 const CaptureEveryDetail = () => {
   return (
-    <div className='flex relative w-full h-[700px] md:h-[820px] bg-[url("/SmartPhone/p55T/Backgrounds/CaptureEveryDetailBgSmall.webp")] md:bg-[url("/SmartPhone/p55T/Backgrounds/CaptureEveryDetailBg.webp")] bg-contain md:bg-cover bg-bottom bg-no-repeat' data-aos='zoom-in'>
+    <div className='flex relative w-full h-[700px] md:h-[820px] bg-[url("/smartphone/p55T/Backgrounds/CaptureEveryDetailBgSmall.webp")] md:bg-[url("/smartphone/p55T/Backgrounds/CaptureEveryDetailBg.webp")] bg-contain md:bg-cover bg-bottom bg-no-repeat' data-aos='zoom-in'>
     	<div className='content'>
       	<div className='flex flex-col md:flex-row h-full bg-gradient-to-b from-black md:bg-none'>
       		<div className='w-full md:w-[40%] px-[18px] md:px-0 py-[28px] md:py-[68px]'>
