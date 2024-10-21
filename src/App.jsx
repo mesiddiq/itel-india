@@ -43,6 +43,7 @@ import {
 import HomePageButtons from './components/common/HomePageButtons'
 import ASeventy from './pages/a_series/ASeventy'
 import A05 from './pages/a_series/A05'
+import ATwentyThreeS from './pages/a_series/ATwentyThreeS'
 
 
 function App() {
@@ -108,6 +109,7 @@ function App() {
 					<Route path='a05i' element={<A05i />} />
 					<Route path='a70' element={<ASeventy />} />
 					<Route path='a05' element={<A05/>} />
+					<Route path='a23s' element={<ATwentyThreeS/>} />
 				</Route>
 
 
