@@ -27,7 +27,6 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
     const handleNext = () => {
         if (currentImageIndex === selectedData.images.length - 1) {
             setCurrentImageIndex(0)
-            console.log(currentImageIndex)
         } else {
             setCurrentImageIndex((prevIndex) => {
                 return prevIndex + 1;

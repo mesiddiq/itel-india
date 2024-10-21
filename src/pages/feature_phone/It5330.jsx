@@ -13,6 +13,8 @@ import {
     ProductGalleryDatait5330
 } from '../../data/featurephonedata/it5330Data'
 import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
+import BigScreen from '../../components/core/feature_phone/it5330/BigScreen'
+import StorageSuperstar from '../../components/core/feature_phone/it5330/StorageSuperstar'
 
 const It5330 = () => {
     return (
@@ -21,9 +23,11 @@ const It5330 = () => {
             <StickyHeader {...HeroDatait5330} />
             <FeatureRich {...FeatureRichDatait5330} />
             <PhoneSliderAnimation />
+            <BigScreen />
+            <StorageSuperstar/>
             <KingVoice {...KingVoiceDatait5330} />
             <TechSpecs {...TechSpecsDatait5330} />
-            <FeaturePhoneProductGallery {...ProductGalleryDatait5330}  />
+            <FeaturePhoneProductGallery {...ProductGalleryDatait5330} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5330} mode={'light'} />
         </div>
     )

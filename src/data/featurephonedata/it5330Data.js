@@ -162,27 +162,29 @@ export const ProductGalleryDatait5330 = {
         {
             id: 3,
             images: [
-                "/featurephone/it5330/product_gallery/light_blue_all.webp",
+                "/featurephone/it5330/product_gallery/grey_front.webp",
+                "/featurephone/it5330/product_gallery/grey_all.webp",
             ],
             buttonLabel: 'light blue',
-            buttonColor: '#2B327A'
+            buttonColor: '#C8CDD6'
         },
         {
             id: 4,
             images: [
+                "/featurephone/it5330/product_gallery/light_blue_all.webp",
                 "/featurephone/it5330/product_gallery/blue_front.webp",
             ],
             buttonLabel: 'blue',
             buttonColor: '#2B327A'
         },
-        {
-            id: 5,
-            images: [
-                "/featurephone/it5330/product_gallery/grey_front.webp",
-                "/featurephone/it5330/product_gallery/grey_all.webp",
-            ],
-            buttonLabel: 'grey',
-            buttonColor: '#C8CDD6'
-        },
+        // {
+        //     id: 5,
+        //     images: [
+        //         "/featurephone/it5330/product_gallery/grey_front.webp",
+        //         "/featurephone/it5330/product_gallery/grey_all.webp",
+        //     ],
+        //     buttonLabel: 'light blue',
+        //     buttonColor: '#C8CDD6'
+        // },
     ]
 }

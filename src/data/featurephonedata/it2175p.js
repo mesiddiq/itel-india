@@ -135,7 +135,7 @@ export const ProductGalleryDatait2175p = {
         {
             id: 1,
             images: [
-                "/featurephone/it2175p/product_gallery/deep_blue_front.jpg",
+                "/featurephone/it2175p/product_gallery/deep_blue_front.webp",
             ],
             buttonLabel: 'deep blue',
             buttonColor: '#2D3249'
@@ -143,8 +143,8 @@ export const ProductGalleryDatait2175p = {
         {
             id: 2,
             images: [
-                "/featurephone/it2175p/product_gallery/light_green_front.jpg",
-                // "/featurephone/it2175p/product_gallery/light_green_all.webp",
+                "/featurephone/it2175p/product_gallery/light_green_front.webp",
+                "/featurephone/it2175p/product_gallery/light_green_all.webp",
             ],
             buttonLabel: 'light green',
             buttonColor: '#94E7E9'
@@ -152,8 +152,8 @@ export const ProductGalleryDatait2175p = {
         {
             id: 3,
             images: [
-                "/featurephone/it2175p/product_gallery/blue_front.jpg",
-                // "/featurephone/it2175p/product_gallery/blue_all.webp",
+                "/featurephone/it2175p/product_gallery/blue_front.webp",
+                "/featurephone/it2175p/product_gallery/blue_all.webp",
             ],
             buttonLabel: 'Blue',
             buttonColor: '#6C82D1'

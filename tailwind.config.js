@@ -40,6 +40,15 @@ export default {
 					lineHeight: '149.6px',
 					fontWeight: '500'
 				}],
+				'featurephone/heading': ['60px', {
+					lineHeight: '72px',
+					fontWeight: '500',
+					letterSpacing:'-1.2px'
+				}],
+				'featurephone/paragraph': ['16px', {
+					lineHeight: '22.7px',
+					fontWeight: '400',
+				}],
 				'desktop/h1': ['80px', {
 					lineHeight: '96px',
 					letterSpacing: '-2.4px',
