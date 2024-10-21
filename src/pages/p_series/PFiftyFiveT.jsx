@@ -12,11 +12,13 @@ import ExtendedMemory from '../../components/core/p_series_core/P_Fifty_Five_T/E
 import MasonaryCards from '../../components/core/p_series_core/P_Fifty_Five_T/MasonaryCards';
 
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/P55TData';
+import StickyHeader from '../../components/common/StickyHeader';
 
 const PFiftyFiveT = () => {
   return (
     <>
       <main className="bg-[#EBE8E2]">
+        <StickyHeader bgColor={'#eecf7f'} textColor={true} title={'P55T'}/>
         <div className='h-[200px]'></div>
         <LevelUpWithAndroid />
         <StayConnected />
@@ -28,7 +30,7 @@ const PFiftyFiveT = () => {
         <MasonaryCards />
         <div className="lg:px-0 py-[48px] lg:py-[120px] bg-[#EBE8E2]">
           <div className="lg:content bg-[#EBE8E2]  overflow-hidden">
-            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={true}/>
+            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={true} />
           </div>
         </div>
         <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='' />
