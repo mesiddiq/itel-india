@@ -5,7 +5,6 @@ const KingVoice = ({ phoneUrl, cards, bgColor, borderColor, textColor, linearGra
 
     return (
         <div className={`flex flex-col overflow-hidden items-center  relative gap-6 lg:gap-14 pb-[366px] pt-9 lg:pb-[116px] lg:pt-12`} style={linearGradient ? { backgroundImage: bgGradient } : { background: bgColor }}>
-            <div className="">
                 <div className={`flex justify-center border-2 relative rounded-s `} style={{ borderColor: borderColor }}>
                     <h3 className={`text-mobile/h6 lg:text-desktop/h3 text-white font-markot text-center absolute -translate-y-1/2  px-3 lg:px-5`} style={{ backgroundColor: bgColor }}>A Phone That Speaks For You</h3>
                     <h1 className='uppercase text-[94px] md:text-[150px] text-center md:leading-[140px] lg:text-[240px] lg:leading-[286px] font-bold leading-[94px] font-markot px-5 lg:px-0 py-4 lg:py-5' style={{ color: textColor }}>
@@ -33,7 +32,6 @@ const KingVoice = ({ phoneUrl, cards, bgColor, borderColor, textColor, linearGra
                         </div>
                     </h1>
                 </div>
-            </div>
             <div className="grid gap-x-4 gap-y-3 lg:gap-y-10 grid-cols-2 lg:gap-x-[622px] font-markot relative">
                 <For each={cards} render={({ label, icon }, idx) =>
                     <div className="gap-2 flex  lg:gap-4 lg:w-[259px] items-center" key={idx} data-aos="fade-up">

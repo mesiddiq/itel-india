@@ -12,6 +12,8 @@ import {
     ProductGalleryDataPower120
 } from '../../data/featurephonedata/power120'
 import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
+import StyleAndSubstance from '../../components/core/feature_phone/power_120/StyleAndSubstance'
+import BigScreen from '../../components/core/feature_phone/power_120/BigScreen'
 
 const Power120 = () => {
     return (
@@ -20,7 +22,9 @@ const Power120 = () => {
             <StickyHeader {...HeroDataPower120} />
             <FeatureRich {...FeatureRichDataPower120} />
             <PhoneSliderAnimation />
+            <BigScreen />
             <KingVoice {...KingVoiceDataPower120} />
+            <StyleAndSubstance />
             <TechSpecs {...TechSpecsDataPower120} />
             <FeaturePhoneProductGallery {...ProductGalleryDataPower120} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataPower120} mode={'light'} />

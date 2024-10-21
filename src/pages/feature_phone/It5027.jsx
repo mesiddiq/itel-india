@@ -13,6 +13,9 @@ import {
     ProductGalleryDatait5027,
     TechSpecsDatait5027
 } from '../../data/featurephonedata/it5027'
+import GreatVisuals from '../../components/core/feature_phone/it5027/GreatVisuals'
+import SaveYourContacts from '../../components/core/feature_phone/it5027/SaveYourContacts'
+import YourOwnLanguage from '../../components/core/feature_phone/it5027/YourOwnLanguage'
 
 const It5027 = () => {
     return (
@@ -21,7 +24,10 @@ const It5027 = () => {
             <StickyHeader {...HeroDatait5027} />
             <FeatureRich {...FeatureRichDatait5027} />
             <PhoneSliderAnimation />
+            <GreatVisuals/>
             <KingVoice {...KingVoiceDatait5027} />
+            <SaveYourContacts/>
+            <YourOwnLanguage/>
             <TechSpecs {...TechSpecsDatait5027} />
             <FeaturePhoneProductGallery {...ProductGalleryDatait5027} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5027} mode={'light'} />
