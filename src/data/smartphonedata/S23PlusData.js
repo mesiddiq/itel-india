@@ -230,12 +230,12 @@ export const ImageCarouselData = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-white",
         bgContainer: "bg-[#1c1b1b]",
-        bgURL: '/SmartPhone/S23+/Backgrounds/PhonePreviewBg.webp',
+        bgURL: '/smartphone/S23+/Backgrounds/PhonePreviewBg.webp',
         images: [
-            "/SmartPhone/S23+/ProductGallery/LakeCyan1.webp",
-            "/SmartPhone/S23+/ProductGallery/LakeCyan2.webp",
-            "/SmartPhone/S23+/ProductGallery/LakeCyan3.webp",
-            "/SmartPhone/S23+/ProductGallery/LakeCyan4.webp",
+            "/smartphone/S23+/ProductGallery/LakeCyan1.webp",
+            "/smartphone/S23+/ProductGallery/LakeCyan2.webp",
+            "/smartphone/S23+/ProductGallery/LakeCyan3.webp",
+            "/smartphone/S23+/ProductGallery/LakeCyan4.webp",
         ],
     },
     {
@@ -246,11 +246,11 @@ export const ImageCarouselData = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-white",
         bgContainer: "bg-[#1c1b1b]",
-        bgURL: '/SmartPhone/S23+/Backgrounds/PhonePreviewBg.webp',
+        bgURL: '/smartphone/S23+/Backgrounds/PhonePreviewBg.webp',
         images: [
-            "/SmartPhone/S23+/ProductGallery/ElementalBlue1.webp",
-            "/SmartPhone/S23+/ProductGallery/ElementalBlue2.webp",
-            "/SmartPhone/S23+/ProductGallery/ElementalBlue3.webp",
+            "/smartphone/S23+/ProductGallery/ElementalBlue1.webp",
+            "/smartphone/S23+/ProductGallery/ElementalBlue2.webp",
+            "/smartphone/S23+/ProductGallery/ElementalBlue3.webp",
         ],
     },
 ];

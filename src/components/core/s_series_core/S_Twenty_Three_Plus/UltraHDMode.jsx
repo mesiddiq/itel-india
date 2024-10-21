@@ -13,15 +13,15 @@ const UltraHDMode = () => {
   const [isMobile, setIsMobile] = useState(false);
   const slides = [
     {
-      image: "/SmartPhone/S23+/Backgrounds/UltraHDMode.webp",
+      image: "/smartphone/S23+/Backgrounds/UltraHDMode.webp",
       text: "Ultra HD Mode"
     },
     {
-      image: "/SmartPhone/S23+/Backgrounds/WideSelfieMode.webp",
+      image: "/smartphone/S23+/Backgrounds/WideSelfieMode.webp",
       text: "Wide Selfie Mode"
     },
     {
-      image: "/SmartPhone/S23+/Backgrounds/TimeLapseMode.webp",
+      image: "/smartphone/S23+/Backgrounds/TimeLapseMode.webp",
       text: "Time Lapse Mode"
     }
   ]

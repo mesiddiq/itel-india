@@ -7,7 +7,7 @@ import AmoledDisplay from '../../components/core/s_series_core/s_twenty_three_pl
 import HeroBanner from '../../components/core/s_series_core/s_twenty_three_plus/HeroBanner';
 import ImmersiveEntertainment from '../../components/core/s_series_core/s_twenty_three_plus/ImmersiveEntertainment';
 import NewVision from '../../components/core/s_series_core/s_twenty_three_plus/NewVision';
-import OverviewTwo from '../../components/core/s_series_core/s_twenty_three_plus/OverviewTwo';
+import Overview from '../../components/core/s_series_core/s_twenty_three_plus/Overview';
 import SharpFocus from '../../components/core/s_series_core/s_twenty_three_plus/SharpFocus';
 import SnapFlawlessSelfie from '../../components/core/s_series_core/s_twenty_three_plus/SnapFlawlessSelfie';
 import UltraHDMode from '../../components/core/s_series_core/s_twenty_three_plus/UltraHDMode';
@@ -27,8 +27,8 @@ const STwentyThreePlus = () => {
       <div>
         {/* <Navbar /> */}
         <HeroBanner />
-        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/SmartPhone/S23+/Backgrounds/OverviewIcon.webp'} />
-        <OverviewTwo />
+        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/smartphone/S23+/Backgrounds/OverviewIcon.webp'} />
+        <Overview />
         <Video />
         <AmoledDisplay />
         <NewVision />
