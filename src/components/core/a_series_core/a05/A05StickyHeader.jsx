@@ -14,8 +14,8 @@ const StickyHeader = ({ title, purchaseLink, icon, bgColor }) => {
                 <a href="#overview" className='text-desktop/body/1 text-black/1'>Overview</a>
                 <a href="#specifications" className='text-desktop/body/1 text-black/1'>Specifications</a>
             </div>
-            <button className='flex py-3 px-[14px] md:px-6 rounded-[24px] bg-white gap-2'>
-                <p className='text-mobile/button md:text-desktop/button text-black/1 uppercase font-medium'>Buy Now</p>
+            <button className='flex py-3 px-[14px] md:px-6 rounded-[24px] bg-[#1A1A1A] gap-2'>
+                <p className='text-mobile/button md:text-desktop/button text-white uppercase font-medium'>Buy Now</p>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="vuesax/twotone/arrow-right">
                         <g id="vuesax/twotone/arrow-right_2">
