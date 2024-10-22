@@ -24,6 +24,7 @@ import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
 import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
 import NotFound from './pages/static_pages/NotFound'
+import Investor from './pages/static_pages/Investor'
 
 import { 
 	Circle1, 
@@ -88,6 +89,7 @@ function App() {
 				<Route path='/servicecenters' element={<ServiceCenters />} />
 				<Route path='/FAQ' element={<FAQ/>} />
 				<Route path='/pagenotfound' element={<NotFound/>} />
+				<Route path='/investorrelation' element={<Investor/>} />
 				
 
 				{/* ***************************************************************************************************/}

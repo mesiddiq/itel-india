@@ -1,135 +1,156 @@
-import React from "react";
+import React, { useState } from "react";
+import { data } from "./data,";
 
-const MainBody = () => {
 
-  const Call =[
-    {
-      problem:"How to set music as a ringtone: (Both/F/S)",
-      solution:[
-       " Download the music to your phone.",
-      "For some models, you can just keep pressing the music for seconds, and the secondary menu will pop up automatically. You can choose “set it as ringtone”",
-        "For other models, you need to find the “Ringtone” folder in your document management (file manager). Put your music in the “Ringtone” folder first, then you can go to Settings > Sounds to set it as your ringtone."   
-      ]
-    },
-    {
-      problem:"Cannot make a call after activating data",
-      solution:[
-        "1. IF or not all the contacts cannot be called. If yes, go to step 2\. If not, maybe it's not a phone issue.",
-        "2. Make sure the SIM account has enough balance and the place has a good signal.",
 
-        "3. Check whether the phone is on 4G only mode, if yes, change to other modes.",
+const Accordian = ({ data, title }) => {
+  const [show, setShow] = useState(true);
 
-        "4. Try to reset factory settings, but remember to take data back up first.",
-
-        "5. Visit the nearest customer service center for further check."
-        
-      ]
-    },
- {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-    {
-      problem:"",
-      solution:[
-        
-      ]
-    },
-
-  ]
   return (
-    <div className=" font-markot ">
-      <div className=" lg:content px-4  lg:py-[40px]">
-        <div>
-               <input type="text"  placeholder=" Enter your query" className= "  text-desktop/body/1 text-brand/black  no-underline outline-none w-full lg:rounded-xl  lg:p-5 border-grey/grey/3 border-[1.5px]" />
+    <>
+      <div className="   border-t-2 space-y-2">
+        <div
+          onClick={() => setShow(!show)}
+          className=" flex items-center font-markot justify-between cursor-pointer"
+        >
+          <p className=" lg:text-desktop/h5/medium  text-brand/black">
+            {title}
+          </p>
+          <img
+            src={"/static_page/Right%20Chevron.png"}
+            className={` transform transition-transform duration-300 ease-in-out ${
+              show ? "rotate-180" : "rotate-0"
+            }`}
+            alt=""
+          />
         </div>
-        <div>
-             
+
+        {/* Accordion content with animation */}
+        <div
+          className={`overflow-hidden transition-all space-y-1  duration-300 ease-in-out ${
+            show ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          {data.map((data, index) => {
+            return (
+              <p
+                key={index}
+                className=" text-desktop/body/2/regular text-grey/grey/5  lg:text-desktop/body/"
+              >
+                {data}
+              </p>
+            );
+          })}
         </div>
       </div>
+    </>
+  );
+};
 
+
+const MainBody = () => {
+  // State to track the active button and the search query
+  const [activeCategory, setActiveCategory] = useState("Call");
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Button data for the categories
+  const buttons = [
+    { id: "Call", title: "Calls & Contacts" },
+    { id: "Camera", title: "Camera & Pictures" },
+    { id: "Charging", title: "Charging" },
+    { id: "Internet", title: "Internet & Network" },
+    { id: "Other", title: "Other" },
+  ];
+
+  // Data for each category
+
+
+  // Combine all data into a single array for search across all categories
+  const allData = Object.values(data).flat();
+
+  // Function to handle search filtering
+  const filteredData = (categoryData) => {
+    return categoryData.filter((item) => {
+      const problemContainsQuery = item.problem
+        .toLowerCase()
+        .includes(searchQuery.toLowerCase());
+      const solutionContainsQuery = item.solution.some((sol) =>
+        sol.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      return problemContainsQuery || solutionContainsQuery;
+    });
+  };
+
+  return (
+    <div className="font-markot ">
+      <div className="lg:content px-4 lg:mb-[60px] lg:space-y-10">
+        {/* Search input */}
+        <div>
+          <input
+            type="text"
+            placeholder="Enter your query"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="text-desktop/body/1 text-brand/black no-underline outline-none w-full lg:rounded-xl lg:p-5 border-grey/grey/3 border-[1.5px]"
+          />
+        </div>
+        <div className="lg:space-y-[52px]">
+          {/* Category buttons */}
+          <div className="flex justify-between overflow-x-auto space-x-2">
+            {buttons.map((button) => (
+              <p
+                key={button.id}
+                onClick={() => setActiveCategory(button.id)}
+                className={`lg:text-desktop/button cursor-pointer py-[6px] px-[12px] rounded-[16px] lg:py-4 lg:px-5 shrink-0 ${
+                  activeCategory === button.id
+                    ? " bg-brand/black text-white" // Add your active button style here
+                    : " text-brand/black bg-bg/primary/1 "
+                }`}
+              >
+                {button.title}
+              </p>
+            ))}
+          </div>
+
+          {/* Accordions based on search or category selection */}
+          <div className="  lg:space-y-[40px]">
+            {searchQuery
+              ? filteredData(allData).map((item, index) => (
+                  <Accordian
+                    key={index}
+                    data={item.solution}
+                    title={item.problem}
+                  />
+                ))
+              : activeCategory &&
+                filteredData(data[activeCategory]).map((item, index) => (
+                  <Accordian
+                    key={index}
+                    data={item.solution}
+                    title={item.problem}
+                  />
+                ))}
+
+            {/* Show all filtered results if no search query and no category selected */}
+            {!searchQuery &&
+              !activeCategory &&
+              Object.keys(data).map((category) =>
+                filteredData(data[category]).map((item, index) => (
+                  <Accordian
+                    key={index}
+                    data={item.solution}
+                    title={item.problem}
+                  />
+                ))
+              )}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default MainBody;
+
+
+
