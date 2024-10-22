@@ -1,4 +1,4 @@
-export const FullSpecificationsDataS23Plus = [
+export const FullSpecificationsData = [
     {
         id: 'general',
         label: 'General',
@@ -220,3 +220,37 @@ export const FullSpecificationsDataS23Plus = [
         ]
     }
 ]
+
+export const ImageCarouselData = [
+    {
+        id: 1,
+        color: "cyan",
+        buttonText: "Lake cyan",
+        buttonGradient: "bg-gradient-to-br from-[#CA86FF] to-[#85E2FD]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-white",
+        bgContainer: "bg-[#1c1b1b]",
+        bgURL: '/smartphone/S23+/Backgrounds/PhonePreviewBg.webp',
+        images: [
+            "/smartphone/S23+/ProductGallery/LakeCyan1.webp",
+            "/smartphone/S23+/ProductGallery/LakeCyan2.webp",
+            "/smartphone/S23+/ProductGallery/LakeCyan3.webp",
+            "/smartphone/S23+/ProductGallery/LakeCyan4.webp",
+        ],
+    },
+    {
+        id: 2,
+        color: "blue",
+        buttonText: "Elemental Blue",
+        buttonGradient: "bg-gradient-to-br from-[#1F3357] to-[#1F3357]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-white",
+        bgContainer: "bg-[#1c1b1b]",
+        bgURL: '/smartphone/S23+/Backgrounds/PhonePreviewBg.webp',
+        images: [
+            "/smartphone/S23+/ProductGallery/ElementalBlue1.webp",
+            "/smartphone/S23+/ProductGallery/ElementalBlue2.webp",
+            "/smartphone/S23+/ProductGallery/ElementalBlue3.webp",
+        ],
+    },
+];
