@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
+import StickyHeader from '../../components/common/StickyHeader';
 import FullSpecifications from '../../components/common/FullSpecifications';
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
+import Herobanner from '../../components/core/p_series_core/P_Fifty_Five_T/Herobanner';
+import Overview from '../../components/core/p_series_core/P_Fifty_Five_T/Overview';
+import Scroller from '../../components/core/p_series_core/P_Fifty_Five_T/Scroller';
 import LevelUpWithAndroid from '../../components/core/p_series_core/P_Fifty_Five_T/LevelUpWithAndroid';
 import StayConnected from '../../components/core/p_series_core/P_Fifty_Five_T/StayConnected';
 import StunningScreen from '../../components/core/p_series_core/P_Fifty_Five_T/StunningScreen';
@@ -12,14 +16,15 @@ import ExtendedMemory from '../../components/core/p_series_core/P_Fifty_Five_T/E
 import MasonaryCards from '../../components/core/p_series_core/P_Fifty_Five_T/MasonaryCards';
 
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/P55TData';
-import StickyHeader from '../../components/common/StickyHeader';
 
 const PFiftyFiveT = () => {
   return (
     <>
       <main className="bg-[#EBE8E2]">
+        <Herobanner />
         <StickyHeader bgColor={'#eecf7f'} textColor={true} title={'P55T'}/>
-        <div className='h-[200px]'></div>
+        <Overview />
+        <Scroller />
         <LevelUpWithAndroid />
         <StayConnected />
         <StunningScreen />
