@@ -11,7 +11,7 @@ const SuperCharge = () => {
     <div
       className={`
         absolute top-0 left-0 h-full w-full   {/* Swap width and height */}
-        bg-[url('/SmartPhone/P55plus/storagem.png')] 
+        bg-[url('/smartphone/P55plus/storagem.png')] 
         bg-cover bg-center bg-no-repeat
      
       `}
@@ -33,7 +33,7 @@ const SuperCharge = () => {
 
             <div className="flex gap-[12px] font-markot opacity-[50%]">
               <span className="text-[16px]">Powered by</span>
-              <img src="/SmartPhone/P55plus/name.png" alt="Powered by" />
+              <img src="/smartphone/P55plus/name.png" alt="Powered by" />
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ const SuperCharge = () => {
           className={`
             flex flex-col items-end justify-center w-full
             bg-cover overflow-hidden h-full
-            bg-[url('/SmartPhone/P55plus/beastmode.png')]  {/* Desktop Background */}
+            bg-[url('/smartphone/P55plus/beastmode.png')]  {/* Desktop Background */}
             bg-center bg-no-repeat
           `}
         >
@@ -67,7 +67,7 @@ const SuperCharge = () => {
 
               <div className="flex gap-[12px] font-markot opacity-[50%]">
                 <span className="text-[16px]">Powered by</span>
-                <img src="/SmartPhone/P55plus/name.png" alt="Powered by" />
+                <img src="/smartphone/P55plus/name.png" alt="Powered by" />
               </div>
             </div>
           </div>

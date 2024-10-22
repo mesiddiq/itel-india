@@ -8,11 +8,11 @@ const MemoryFusion = () => {
       <div
         className=" hidden lg:block h-[813px] w-full bg-white px-12 content"
         style={{
-          WebkitMaskImage: "url('/SmartPhone/P55plus/shape.svg')",
+          WebkitMaskImage: "url('/smartphone/P55plus/shape.svg')",
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskSize: "contain",
           WebkitMaskPosition: "center",
-          backgroundImage: "url('/SmartPhone/P55plus/storage.png')",
+          backgroundImage: "url('/smartphone/P55plus/storage.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -39,11 +39,11 @@ const MemoryFusion = () => {
         {/* Wrapper for Mask Rotation */}
         <div
           style={{
-            WebkitMaskImage: "url('/SmartPhone/P55plus/shape.svg')",
+            WebkitMaskImage: "url('/smartphone/P55plus/shape.svg')",
             WebkitMaskRepeat: "no-repeat",
             WebkitMaskSize: "contain",
             WebkitMaskPosition: "center",
-            backgroundImage: "url('/SmartPhone/P55plus/storage.png')",
+            backgroundImage: "url('/smartphone/P55plus/storage.png')",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

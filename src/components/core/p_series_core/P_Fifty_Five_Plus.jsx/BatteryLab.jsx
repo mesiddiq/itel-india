@@ -8,21 +8,21 @@ const BatteryLab = () => {
 <h2 className='text-mobile/h4 md:text-desktop/h2 text-center'>Stay Supercharged; Battery Lab</h2>
 <div className='flex flex-col md:flex-row gap-[16px] justify-around '>
   <div className="flex gap-[8px]">
-    <img src='/SmartPhone/P55plus/one.png' alt='one' className='h-[25px] w-[25px]'></img>
+    <img src='/smartphone/P55plus/one.png' alt='one' className='h-[25px] w-[25px]'></img>
     <span className='text-[#B3D98E] text-mobile/button md:text-desktop/h4'>PowerBoost</span>
   </div>
   <div className="flex gap-[8px]">
-  <img src='/SmartPhone/P55plus/two.png' alt='one' className='h-[25px] w-[25px]'></img>
+  <img src='/smartphone/P55plus/two.png' alt='one' className='h-[25px] w-[25px]'></img>
     <span className='text-[#B3D98E] text-mobile/button md:text-desktop/h4'>Ultra Power Saving</span>
   </div>
   <div className="flex gap-[8px]">
-  <img src='/SmartPhone/P55plus/three.png' alt='one' className='h-[25px] w-[25px]'></img>
+  <img src='/smartphone/P55plus/three.png' alt='one' className='h-[25px] w-[25px]'></img>
     <span className='text-[#B3D98E] text-mobile/button md:text-desktop/h4'>Battery Saving Setting</span>
   </div>
 </div>
 </div>
 <div className='overflow-hidden'>
-  <img src='/SmartPhone/P55plus/mobile.png' className='md:w-[900px] md:h-[500px] h-[350px]'></img>
+  <img src='/smartphone/P55plus/mobile.png' className='md:w-[900px] md:h-[500px] h-[350px]'></img>
 </div>
         </div>
     </div>
