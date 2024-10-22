@@ -7,12 +7,12 @@ const features = [
 ];
 
 const Section2DisplayWithDynamicIsland = () => (
-  <GradientBackgroundWrapper mobileBgImage='/smartphone/a70/AmpleStorage-Mobile.webp' paddingStart='60px'>
-    <div className='flex lg:flex-row flex-col-reverse justify-end h-[690px] md:h-[850px]'>
-      <div className='flex md:justify-start items-end'>
-        <img src='/smartphone/a70/iphonespecs.svg' loading='lazy' alt='dynamicIsland' className='lg:w-[532px] lg:h-[700px]' />
+  <GradientBackgroundWrapper mobileBgImage='/smartphone/a70/AmpleStorage-Mobile.webp' paddingStart='0px'>
+    <div className='flex lg:flex-row flex-col-reverse justify-end h-[690px] md:h-[690px] xl:h-[850px]'>
+      <div className='flex md:justify-start items-end mx-auto lg:mx-0'>
+        <img src='/smartphone/a70/iphonespecs.svg' alt='dynamicIsland' className='xl:w-[532px] h-[400px] lg:h-auto xl:h-[700px]' />
       </div>
-      <div className='lg:pt-[148px] lg:ps-[60px]'>
+      <div className='xl:pt-[148px] lg:pt-[90px] xl:ps-[60px]'>
         <div className='lg:w-[502px] lg:h-[545px] flex flex-col gap-8'>
           <div className='flex flex-col gap-5 text-center lg:text-left'>
             <p className='md:text-desktop/h2 text-mobile/h4'>Vivid 6.6” HD+ Display with Integrated Dynamic Bar</p>

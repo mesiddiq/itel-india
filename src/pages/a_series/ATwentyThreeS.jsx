@@ -1,6 +1,9 @@
 import FullSpecifications from "../../components/common/FullSpecifications"
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
+import StickyHeader from "../../components/common/StickyHeader"
+import FeatureSectionA23s from "../../components/core/a_series_core/a23S/FeatureSectionA23s"
 import HeroSectionOfA23SPage from "../../components/core/a_series_core/a23S/HeroSectionOfA23SPage"
+import ScrollingBannerA23S from "../../components/core/a_series_core/a23S/ScrollingBannerA23s"
 import Section1TechPartner from "../../components/core/a_series_core/a23S/Section1TechPartner"
 import Section2FastWork from "../../components/core/a_series_core/a23S/Section2FastWork"
 import Section3EnhanceBattery from "../../components/core/a_series_core/a23S/Section3EnhanceBattery"
@@ -15,18 +18,21 @@ const ATwentyThreeS = () => {
   return (
     <div className="bg-white">
       <HeroSectionOfA23SPage />
+      <StickyHeader title="A23s" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
+      <FeatureSectionA23s />
+      <ScrollingBannerA23S />
       <div
-        className="md:rounded-[64px] rounded-[16px] border-[#00000033] border-2 text-black p-2 content flex flex-col gap-10"
+        className="md:rounded-[64px] lg:my-[100px] py-[80px] lg:py-2 rounded-[16px] border-[#00000033] border-2 text-black p-2 content flex flex-col gap-10"
 
       >
         <Section1TechPartner />
         <Section2FastWork />
-        <Section3EnhanceBattery/>
-        <Section4SpecialOsFeatures/>
-        <Section5MultiLanguageSupport/>
+        <Section3EnhanceBattery />
+        <Section4SpecialOsFeatures />
+        <Section5MultiLanguageSupport />
       </div>
-      <Section6MobileShowcase/>
-      <Section7PhonesSpecs/>
+      <Section6MobileShowcase />
+      <Section7PhonesSpecs />
 
       <div className="lg:px-0 py-[48px] lg:py-[80px] bg-[#ffffff]">
         <div className="lg:content bg-[#ffffff]  overflow-hidden">

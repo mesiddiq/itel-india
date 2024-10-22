@@ -3,7 +3,9 @@
 import FullSpecifications from "../../components/common/FullSpecifications";
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel";
 import StickyHeader from "../../components/common/StickyHeader";
+import FeatureSection70 from "../../components/core/a_series_core/a70/FeatureSectionA70";
 import HeroSectionOfPage from "../../components/core/a_series_core/a70/HeroSectionOfPage";
+import ScrollingBannerA70 from "../../components/core/a_series_core/a70/ScrollingBannerA70";
 import Section1Entertainment from "../../components/core/a_series_core/a70/Section1Entertainment";
 import Section2DisplayWithDynamicIsland from "../../components/core/a_series_core/a70/Section2DisplayWithDynamicIsland";
 import Section3CamersSpecs from "../../components/core/a_series_core/a70/Section3CamersSpecs";
@@ -11,6 +13,7 @@ import Section4Securitypage from "../../components/core/a_series_core/a70/Sectio
 import Section5batterySpecs from "../../components/core/a_series_core/a70/Section5batterySpecs";
 import Section6MobileShowcase from "../../components/core/a_series_core/a70/Section6MobileShowcase";
 import Section7PhonesSpecs from "../../components/core/a_series_core/a70/Section7PhonesSpecs";
+import VideoA70 from "../../components/core/a_series_core/a70/VideoSectionA70";
 import { FullSpecificationsA70 } from "../../data/smartphonedata/A70Data";
 import { ImageCarouselDataA70 } from "../../data/smartphonedata/A70ImageCarouselData";
 
@@ -19,6 +22,9 @@ const ASeventy = () => {
     <div className="bg-white">
       <HeroSectionOfPage />
       <StickyHeader title="A70" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
+      <FeatureSection70/>
+      <ScrollingBannerA70/>
+      <VideoA70/>
       <div
         className="md:rounded-[64px] rounded-[16px]  my-10 p-2 content"
         style={{

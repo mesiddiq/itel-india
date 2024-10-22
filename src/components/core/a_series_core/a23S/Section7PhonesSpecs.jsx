@@ -55,7 +55,7 @@ const Section7PhonesSpecs = () => {
                     padding="0"
                 >
                     <div className="flex flex-col lg:w-full h-[250px] md:h-[380px]">
-                        <div className="md:py-6  py-2px-4 text-mobile/h5/medium md:text-desktop/h3 text-left">
+                        <div className="md:py-6  py-2 px-4 text-mobile/h5/medium md:text-desktop/h3 text-left">
                             4GB* (2GB+2GB*) RAM : <br className="lg:block hidden" /> Enhanced Productivity
                         </div>
 

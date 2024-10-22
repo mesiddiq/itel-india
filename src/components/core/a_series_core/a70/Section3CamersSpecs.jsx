@@ -12,11 +12,11 @@ const Section3CamersSpecs = () => (
   <GradientBackgroundWrapper
     bgImage='/smartphone/a70/A70CameraBG.webp'
     paddingStart='48px'
-    padding='10px'
+    padding='5px'
     mobileBgImage='/smartphone/a70/A70CameraBg-Mobile.webp'
   >
-    <div className='relative flex flex-col lg:flex-row h-[390px] lg:justify-between lg:pt-[28px] gap-2 md:gap-5 md:h-[600px] lg:h-[739px] overflow-hidden'>
-      <div className='lg:w-[455px] text-center lg:text-left lg:h-[455px] relative lg:gap-6 lg:flex lg:flex-col'>
+    <div className='relative flex flex-col lg:flex-row h-[390px] md:h-[739px] lg:justify-between lg:pt-[28px] gap-2 md:gap-5 overflow-hidden'>
+      <div className='lg:w-[455px] text-center lg:text-left relative lg:gap-6 lg:flex lg:flex-col h-auto'>
         <p className='md:text-desktop/h2 text-mobile/h4'>Unleash Pure Beauty with Enhanced HDR</p>
         <span className='md:text-desktop/body/large text-mobile/body/2'>
           Featuring an 8MP AI Front Camera and 13MP AI Dual Rear Camera, every shot is infused with stunning detail and clarity.

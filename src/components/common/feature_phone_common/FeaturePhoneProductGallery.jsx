@@ -1,5 +1,5 @@
-import Aos from 'aos'
-import React, { useEffect, useRef, useState } from 'react'
+/* eslint-disable react/prop-types */
+import  { useEffect, useRef, useState } from 'react'
 import { useSize } from 'react-haiku'
 
 const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
