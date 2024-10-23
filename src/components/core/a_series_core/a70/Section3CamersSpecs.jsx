@@ -17,7 +17,9 @@ const Section3CamersSpecs = () => (
   >
     <div className='relative flex flex-col lg:flex-row h-[390px] md:h-[739px] lg:justify-between lg:pt-[28px] gap-2 md:gap-5 overflow-hidden'>
       <div className='lg:w-[455px] text-center lg:text-left relative lg:gap-6 lg:flex lg:flex-col h-auto'>
-        <p className='md:text-desktop/h2 text-mobile/h4'>Unleash Pure Beauty with Enhanced HDR</p>
+        <p className='md:text-desktop/h2 text-mobile/h4'>
+          Unleash Pure Beauty with Enhanced HDR
+        </p>
         <span className='md:text-desktop/body/large text-mobile/body/2'>
           Featuring an 8MP AI Front Camera and 13MP AI Dual Rear Camera, every shot is infused with stunning detail and clarity.
         </span>

@@ -22,7 +22,7 @@ const ATwentyThreeS = () => {
       <FeatureSectionA23s />
       <ScrollingBannerA23S />
       <div
-        className="md:rounded-[64px] lg:my-[100px] py-[80px] lg:py-2 rounded-[16px] border-[#00000033] border-2 text-black p-2 content flex flex-col gap-10"
+        className="md:rounded-[64px] lg:my-[100px] my-[80px] lg:py-2 rounded-[16px] border-[#00000033] border-2 text-black p-2 content flex flex-col gap-10"
 
       >
         <Section1TechPartner />

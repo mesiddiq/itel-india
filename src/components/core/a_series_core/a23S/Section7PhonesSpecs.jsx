@@ -3,6 +3,7 @@ import GradientBackgroundWrapper from "./GradientBackgroundWrapper ";
 const Section7PhonesSpecs = () => {
     return (
         <div className="flex flex-col lg:flex-row gap-6 px-4 lg:px-0 text-black py-10 content">
+            {/* Face Unlock Section */}
             <GradientBackgroundWrapper
                 bgImage={'/smartphone/A23s/Backgrounds/FaceunlockgridBG.webp'}
                 mobileBgImage={'/smartphone/A23s/Backgrounds/FaceunlockgridBG.webp'}
@@ -16,7 +17,7 @@ const Section7PhonesSpecs = () => {
                     <div
                         className="mx-auto w-full max-w-[316px] lg:w-full lg:h-[784px] h-[430px]"
                         style={{
-                            backgroundImage: `url(${'/smartphone/A23s/Backgrounds/faceunlockgrid-phone.webp'})`,
+                            backgroundImage: `url('/smartphone/A23s/Backgrounds/faceunlockgrid-phone.webp')`,
                             backgroundSize: 'contain',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
@@ -26,16 +27,16 @@ const Section7PhonesSpecs = () => {
             </GradientBackgroundWrapper>
 
             <div className="flex flex-col gap-4 lg:w-[738px]">
+                {/* Battery Section */}
                 <GradientBackgroundWrapper
                     bgImage={'/smartphone/A23s/Backgrounds/batterygridBG.webp'}
                     mobileBgImage={'/smartphone/A23s/Backgrounds/batterygrid-mobileBG.webp'}
                     paddingStart="0"
                     padding="0"
                     mobileBackgroundPosition='right'
-
                 >
-                    <div className="flex flex-col lg:w-full h-[260px] lg:h-[380px] ">
-                        <div className="md:py-6  py-2 px-4 text-mobile/h5/medium md:text-desktop/h3">
+                    <div className="flex flex-col lg:w-full h-[260px] lg:h-[380px]">
+                        <div className="md:py-6 py-2 px-4 text-mobile/h5/medium md:text-desktop/h3">
                             Enjoy Efficient Battery Use All Day
                         </div>
                         <div className="flex justify-center">
@@ -48,6 +49,7 @@ const Section7PhonesSpecs = () => {
                     </div>
                 </GradientBackgroundWrapper>
 
+                {/* RAM Section */}
                 <GradientBackgroundWrapper
                     bgImage={'/smartphone/A23s/Backgrounds/RAMgridBG.webp'}
                     mobileBgImage={'/smartphone/A23s/Backgrounds/RAMgridBG.webp'}
@@ -55,11 +57,10 @@ const Section7PhonesSpecs = () => {
                     padding="0"
                 >
                     <div className="flex flex-col lg:w-full h-[250px] md:h-[380px]">
-                        <div className="md:py-6  py-2 px-4 text-mobile/h5/medium md:text-desktop/h3 text-left">
-                            4GB* (2GB+2GB*) RAM : <br className="lg:block hidden" /> Enhanced Productivity
+                        <div className="md:py-6 py-2 px-4 text-mobile/h5/medium md:text-desktop/h3 text-left">
+                            4GB* (2GB+2GB*) RAM: <br className="lg:block hidden" /> Enhanced Productivity
                         </div>
-
-                        <div className="flex relative left-[2rem] top-[2rem] md:top-0 items-center justify-center ">
+                        <div className="flex relative left-[2rem] top-[2rem] md:top-0 items-center justify-center">
                             <img
                                 src={'/smartphone/A23s/Backgrounds/RAMgridphone.webp'}
                                 alt="RAM"
