@@ -24,83 +24,22 @@ export const a50FeatureRichData = {
 };
 
 
-export const a50ImageCaraousel = [
-    {
-        id: 1,
-        color: "orange",
-        buttonText: "Orange",
-        buttonGradient: "bg-[#FDAB47]",
-        colorSelectorBGColor: "",
-        colorSelectorTextColor: "text-black",
-        bgContainer: "bg-[#FDAB47]",
-        bgURL: '/SmartPhone/a05/galleryBG/orange.png',
-        images: [
-            "/SmartPhone/a05/products/Orange1.webp",
-            "/SmartPhone/a05/products/Orange2.webp",
-        ],
-    },
-    {
-        id: 2,
-        color: "black",
-        buttonText: "Black",
-        buttonGradient: "bg-[#475266]",
-        colorSelectorBGColor: "",
-        colorSelectorTextColor: "text-black",
-        bgContainer: "bg-[#475266]",
-        bgURL: '/SmartPhone/a05/galleryBG/white.png',
-        images: [
-            "/SmartPhone/a05/products/Starry Black 1.webp",
-            "/SmartPhone/a05/products/Starry Black 2.webp",
-            "/SmartPhone/a05/products/Starry Black 3.webp",
-        ]
-    },
-    {
-        id: 3,
-        color: "green",
-        buttonText: "Green",
-        buttonGradient: "bg-[#CDE4DA]",
-        colorSelectorBGColor: "",
-        colorSelectorTextColor: "text-black",
-        bgContainer: "bg-[#CDE4DA]",
-        bgURL: '/SmartPhone/a05/galleryBG/green.png',
-        images: [
-            "/SmartPhone/a05/products/green1.webp",
-            "/SmartPhone/a05/products/green2.webp",
-        ]
-    },
-    {
-        id: 4,
-        color: "blue",
-        buttonText: "Blue",
-        buttonGradient: "bg-[#96CAE5]",
-        colorSelectorBGColor: "",
-        colorSelectorTextColor: "text-black",
-        bgContainer: "bg-[#96CAE5]",
-        bgURL: '/SmartPhone/a05/galleryBG/blue.png',
-        images: [
-            "/SmartPhone/a05/products/blue1.webp",
-            "/SmartPhone/a05/products/blue2.webp",
-        ]
-    },
-];
-
 export const a50FullSpecifications = [
     {
         id:1,
         label:'General',
         data:[
-            {label:'Model',value:'A05s'},
-            {label:'Colors',value:'Crystal Blue, Glorious Orange, Meadow Green & Nebula Black'},
-
+            {label:'Model',value:'A50'},
+            {label:'Colors',value:'Lime Green | Cyan Blue | Shimmer Gold | Misty Black'},
         ]
     },
     {
         id:2,
         label:'Display Features',
         data:[
-            {label:'Display Size',value:'6.56 inch'},
+            {label:'Display Size',value:'6.56" HD+ IPS'},
             {label:'Resolution',value:'1612x720 Pixels'},
-            {label:'Resolution Type',value:'HD + IPS'},
+            {label:'Resolution Type',value:'HD+ IPS'},
             {label:'Dimension',value:'Dimension'},
             {label:'Technology',value:'G+F, Incell'},
             {label:'Refresh Rate',value:'60 Hz'},
@@ -112,8 +51,8 @@ export const a50FullSpecifications = [
         id:3,
         label:'OS & Processor',
         data:[
-            {label:'Operating System',value:'Android 13 Go Edition'},
-            {label:'Chipset',value:'UNISOC SC9863A'},
+            {label:'Operating System',value:'Android 14 Go'},
+            {label:'Chipset',value:'UNISOC T603'},
             {label:'Processor Core',value:'Octa-Core'},
         ]
     },
@@ -121,7 +60,7 @@ export const a50FullSpecifications = [
         id:4,
         label:'Camera',
         data:[
-            {label:'Rear Camera',value:'8MP'},
+            {label:'Rear Camera',value:'8MP AI Camera'},
             {label:'Rear flash',value:'Yes'},
             {label:'Front Camera',value:'5MP'},
             {label:'Front flash',value:'No'},
@@ -131,20 +70,18 @@ export const a50FullSpecifications = [
         id:5,
         label:'Battery',
         data:[
-            {label:'Battery Capacity',value:'4000 mAh'},
+            {label:'Battery Capacity',value:'5000 mAh'},
             {label:'Battery Type',value:'Li-Polymer'},
-            {label:'Fast Charging',value:'No'},
             {label:'USB',value:'Type-C'},
-            {label:'Standby',value:'32 Days'},
-            {label:'Talktime',value:'7.5 Hours'},
-            {label:'',value:'112 Hours'},
+            {label:'Standby',value:'41 Days'},
+            {label:'Talktime',value:'60 Hours'},
         ]
     },
     {
         id:6,
         label:'Memory & Storage',
         data:[
-            {label:'RAM',value:'8GB* (4GB + 4GB*)'},
+            {label:'RAM',value:'12GB*(4GB + 8GB*) / 8GB*(3GB + 5GB*)'},
             {label:'ROM',value:'64 GB'},
             {label:'User Memory',value:'53 GB'},
             {label:'Expandable',value:'UPTO 1 TB'},
@@ -155,9 +92,9 @@ export const a50FullSpecifications = [
         label:'Connectivity',
         data:[
             {label:'Network Type',value:'4G'},
-            {label:'GSM',value:'2G:B3, 5, 8'},
+            {label:'GSM',value:'2G:B3|5|8'},
             {label:'EDGE',value:'Support Download'},
-            {label:'WCDMA',value:'3G:B1, 5, 8'},
+            {label:'WCDMA',value:'3G:B1|5|8'},
             {label:'LTE',value:'B1/B3/B5/B8/B40/B38/B41(120M)'},
             {label:'SIM Slot',value:'Slot1 & Slot2-Nano'},
             {label:'Dual Active/Standby',value:'Dual Active'},
@@ -172,9 +109,10 @@ export const a50FullSpecifications = [
         label:'Additional',
         data:[
             {label:'Earphone Jack',value:'3.5mm'},
-            {label:'Sensors',value:'Fingerprint | Face Unlock | G Sensor'},
+            {label:'Sensors',value:'Side Fingerprint | Face Unlock | G Sensor'},
             {label:'Fingerprint',value:'Side'},
-            {label:'Accessories',value:'5W Adapter(support 10W) | USB Cable | Protective Cover'},
+            {label:'Accessories',value:'10W Adapter(support 10W) | USB Cable | Protective Cover'},
+            {label:'Thickness',value:'8.7mm'},
         ]
     },
 ]
@@ -235,3 +173,66 @@ export const frame4IconsData = [
         title: "UNISOC T603",
     },
 ]
+
+export const a50ImageCaraousel = [
+    {
+        id: 1,
+        color: "green",
+        buttonText: "Lime Green",
+        buttonGradient: "bg-[#AFE1C1]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer: "bg-[#AFE1C1]",
+        bgURL: '/SmartPhone/a05/galleryBG/orange.png',
+        images: [
+            "/SmartPhone/a50/green1.png",
+            "/SmartPhone/a50/green2.png",
+            "/SmartPhone/a50/green3.png"
+        ],
+    },
+    {
+        id: 2,
+        color: "gold",
+        buttonText: "Shimmer Gold",
+        buttonGradient: "bg-[#FBF0CA]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer: "bg-[#FBF0CA]",
+        bgURL: '/SmartPhone/a05/galleryBG/white.png',
+        images: [
+            "/SmartPhone/a50/g1.png",
+            "/SmartPhone/a50/g2.png",
+            "/SmartPhone/a50/g3.png"
+        ]
+    },
+    {
+        id: 3,
+        color: "black",
+        buttonText: "Misty Black",
+        buttonGradient: "bg-[#3B4455]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer: "bg-[#3B4455]",
+        bgURL: '/SmartPhone/a05/galleryBG/green.png',
+        images: [
+            "/SmartPhone/a50/black1.png",
+            "/SmartPhone/a50/black2.png",
+        ]
+    },
+    {
+        id: 4,
+        color: "sky",
+        buttonText: "Cyan Blue",
+        buttonGradient: "bg-[#C3E1F8]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer: "bg-[#C3E1F8]",
+        bgURL: '/SmartPhone/a05/galleryBG/blue.png',
+        images: [
+            "/SmartPhone/a50/b1.png",
+            "/SmartPhone/a50/b2.png",
+            "/SmartPhone/a50/b3.png",
+            "/SmartPhone/a50/b4.png",
+        ]
+    },
+];

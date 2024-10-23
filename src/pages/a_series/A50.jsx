@@ -1,13 +1,12 @@
 import React from 'react'
 import A50Heropage from '../../components/core/a_series_core/a50/A50Heropage'
-import { a50FeatureRichData } from '../../data/smartphonedata/A50Data'
+import { a50FeatureRichData, a50FullSpecifications, a50ImageCaraousel } from '../../data/smartphonedata/A50Data'
 import StickyHeader from '../../components/core/a_series_core/a05/A05StickyHeader'
 import FeatureRich from '../../components/common/feature_phone_common/FeatureRich'
 import A05Video from '../../components/core/a_series_core/a05/A05Video'
 import Frames from '../../components/core/a_series_core/a50/Frames'
 import Sections from '../../components/core/a_series_core/a50/Sections'
 import A05ColorImageCarausel from '../../components/core/a_series_core/a05/A05ColorImageCarausel'
-import { a05FullSpecifications, a05ImageCaraousel } from '../../data/smartphonedata/A05Data'
 import FullSpecifications from '../../components/common/FullSpecifications'
 
 export default function A50() {
@@ -29,11 +28,11 @@ export default function A50() {
         <Sections/>
 
         <A05ColorImageCarausel  
-            ImageCarouselData={a05ImageCaraousel}
+            ImageCarouselData={a50ImageCaraousel}
             showTitleInMobile={true}
           />
 
-          <FullSpecifications FullSpecificationsData={a05FullSpecifications} mode='light' gifStar='/SmartPhone/a05/startImg.png'/>
+          <FullSpecifications FullSpecificationsData={a50FullSpecifications} mode='light' gifStar='/SmartPhone/a05/startImg.png'/>
     </div>
   )
 }

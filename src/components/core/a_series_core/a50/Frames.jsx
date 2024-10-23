@@ -6,9 +6,33 @@ export default function Frames() {
     <div className='min-h-screen w-full flex flex-col justify-center items-center mt-[24px] lg:mt-[100px]'>
         <div className='lg:rounded-[36px] xl:rounded-[54px] lg:border lg:border-[#62b67af4] flex justify-center items-center flex-col lg:p-[16px] content'>
 
+            {/* frame0 */}
+            <div 
+            className="md:w-full w-[328px] h-[556px] py-[20px] rounded-[16px] lg:rounded-[36px] lg:h-[1056px] bg-cover bg-center flex justify-center items-center flex-col bg-[url('/SmartPhone/a50/f0Bg.png')]"
+            
+            >
+                <div className='flex flex-col lg:flex-row lg:justify-between w-full lg:px-[60px] px-[22px]'>
+                    <span className='flex flex-col'>
+                        <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[709px] text-center md:text-start'>Speed & Storage: All for Your Entertainment Needs</h1>
+                        <p className='lg:max-w-[437px] lg:text-mobile/body/large text-desktop/body/2/regular text-[#181818] text-opacity-80 pt-[14px] text-center md:text-start'>
+                        Enjoy high performance, effortless multitasking, and expandable space. 
+                        </p>
+                    </span>
+                    <div className='flex lg:flex-col flex-row lg:justify-center justify-between py-[28px] lg:py-0'>
+                        <div className='flex flex-col mb-[12px]'>
+                            <p className='lg:text-[32px] text-[#181818] font-medium text-mobile/title'><span className='text-[#08E488]'>12GB*</span> (4GB+8GB*)RAM</p>
+                            <p className='text-[#232323] lg:text-[14px] text-[10px] text-opacity-70'>with Memory Fusion Technology*</p>
+                        </div>
+                        <p className=' lg:text-[32px] text-[#181818] font-medium text-mobile/title lg:mt-[22px]'><span className='text-[#08E488]'>64GB</span> ROM</p>
+                    </div>
+                </div>
+
+                <img src="/SmartPhone/a50/f0Hero (1).png" alt="f1Img"  className='object-cover w-full lg:w-[90%]'/>
+            </div>
+
             {/* frame1 */}
             <div 
-            className="md:w-full w-[328px] h-[750px] py-[20px] rounded-[16px] lg:rounded-[36px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col md:bg-[url('/SmartPhone/a50/f2.png')] bg-[url('/SmartPhone/a50/f1Mobile.png')]"
+            className="lg:mt-[60px] mt-[30px] md:w-full w-[328px] h-[750px] py-[20px] rounded-[16px] lg:rounded-[36px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col md:bg-[url('/SmartPhone/a50/f2.png')] bg-[url('/SmartPhone/a50/f1Mobile.png')]"
             
             >
                 <div className='flex flex-col lg:justify-start items-start md:pl-[48px] px-[20px] md:px-0 pt-[20px]'>
