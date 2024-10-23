@@ -1,4 +1,3 @@
-import React from 'react'
 import { For } from 'react-haiku'
 import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../../data/FooterData'
 

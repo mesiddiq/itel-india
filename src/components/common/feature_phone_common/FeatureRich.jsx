@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import { For } from 'react-haiku'
 
 const FeatureRich = ({ title, description, cards }) => {

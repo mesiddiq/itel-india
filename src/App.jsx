@@ -2,7 +2,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
-import { Link, Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import HomePage from './pages/static_pages/HomePage'
 import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
@@ -44,7 +44,7 @@ import {
 import HomePageButtons from './components/common/HomePageButtons'
 import ASeventy from './pages/a_series/ASeventy'
 import A05 from './pages/a_series/A05'
-import A50C from './pages/a_series/A50C'
+import ATwentyThreeS from './pages/a_series/ATwentyThreeS'
 
 
 function App() {
@@ -113,7 +113,8 @@ function App() {
 					<Route path='a05i' element={<A05i />} />
 					<Route path='a50c' element={<A50C />} />
 					<Route path='a70' element={<ASeventy />} />
-					<Route path='a05' element={<A05 />} />
+					<Route path='a05' element={<A05/>} />
+					<Route path='a23s' element={<ATwentyThreeS/>} />
 				</Route>
 
 

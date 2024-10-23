@@ -4,7 +4,7 @@ const Section6MobileShowcase = () => {
     <div>
       <div
         style={{
-          backgroundImage: `url(${'/SmartPhone/a70/phonesbg.webp'})`, // Use mobileBgImage for mobile
+          backgroundImage: `url(${'/smartphone/a70/phonesbg.webp'})`, // Use mobileBgImage for mobile
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           overflow: 'hidden',

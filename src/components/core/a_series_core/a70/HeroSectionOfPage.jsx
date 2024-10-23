@@ -4,7 +4,7 @@ const HeroSectionOfPage = () => {
             <div className="flex flex-col gap-4">
                 <div className="border-2 flex items-center px-1 gap-2 font-bold border-[#3A3358] text-[#3A3358] text-center rounded-full max-w-[156px]">
                     <span>Awesome series</span>
-                    <img src="/SmartPhone/a70/UpArrow.svg" alt="A70Badge" className="w-[12px] h-[12px]" />
+                    <img src="/smartphone/a70/UpArrow.svg" alt="A70Badge" className="w-[12px] h-[12px]" />
                 </div>
                 <div>
                     <h1 className="text-mobile/h1 md:text-desktop/large/h py-4">A70</h1>
@@ -19,39 +19,30 @@ const HeroSectionOfPage = () => {
         </div>
     );
 
+    const renderSection = (bgImage, imgSize, imgSrc, containerClass) => (
+        <div
+            style={{
+                backgroundImage: `url(${bgImage})`,
+                backgroundSize: imgSize,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}
+            className={containerClass}
+        >
+            <div className={containerClass.includes("md:hidden") ? "w-[360px] h-[480px] flex flex-col" : "md:h-[800px] flex flex-col lg:flex-row md:justify-between md:px-[88px] max-w-[1440px] mx-auto"}>
+                {commonTextContent}
+                <img src={imgSrc} alt="A70Banner" className={containerClass.includes("md:hidden") ? "h-[480px] w-[289px] m-auto" : "h-[1409px] w-[849px]"} />
+            </div>
+        </div>
+    );
+
     return (
         <div>
             {/* Desktop View */}
-            <div
-                style={{
-                    backgroundImage: `url('/SmartPhone/a70/A70Banner.webp')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                }}
-                className="hidden md:block overflow-hidden"
-            >
-                <div className="md:h-[800px] h-[521px] flex flex-col lg:flex-row md:justify-between">
-                    {commonTextContent}
-                    <img src="/SmartPhone/a70/HritikPhotoDashb.png" alt="A70Banner" className="h-[1409px] w-[849px]" />
-                </div>
-            </div>
-
+            {renderSection('/smartphone/a70/A70Banner.webp', 'cover', '/smartphone/a70/HritikPhotoDashb.png', 'hidden md:block overflow-hidden')}
+            
             {/* Mobile View */}
-            <div
-                style={{
-                    backgroundImage: `url('/SmartPhone/a70/A70bannermobile.webp')`,
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                }}
-                className="md:hidden overflow-hidden"
-            >
-                <div className="w-[360px] h-[480px] flex flex-col">
-                    {commonTextContent}
-                    <img src="/SmartPhone/a70/HritikPhotoDashb.png" alt="A70Banner" className="h-[480px] w-[289px] m-auto " />
-                </div>
-            </div>
+            {renderSection('/smartphone/a70/A70bannermobile.webp', 'contain', '/smartphone/a70/HritikPhotoDashb.png', 'md:hidden overflow-hidden')}
         </div>
     );
 };

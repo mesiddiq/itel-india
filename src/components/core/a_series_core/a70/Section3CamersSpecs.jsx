@@ -1,23 +1,25 @@
 import GradientBackgroundWrapper from './GradientBackgroundWrapper ';
 
 const features = [
-  { img: '/SmartPhone/a70/beautymode.svg', alt: 'beautyMode', text: '5 AI Beauty Mode' },
-  { img: '/SmartPhone/a70/portraight.svg', alt: 'portraitMode', text: 'Portrait Lowlight' },
-  { img: '/SmartPhone/a70/promode.svg', alt: 'proMode', text: 'Pro Mode' },
-  { img: '/SmartPhone/a70/paranoma.svg', alt: 'panoramaMode', text: 'Panorama' },
-  { img: '/SmartPhone/a70/hdrmode.svg', alt: 'hdrMode', text: 'HDR Mode' },
+  { img: '/smartphone/a70/beautymode.svg', alt: 'beautyMode', text: '5 AI Beauty Mode' },
+  { img: '/smartphone/a70/portraight.svg', alt: 'portraitMode', text: 'Portrait Lowlight' },
+  { img: '/smartphone/a70/promode.svg', alt: 'proMode', text: 'Pro Mode' },
+  { img: '/smartphone/a70/paranoma.svg', alt: 'panoramaMode', text: 'Panorama' },
+  { img: '/smartphone/a70/hdrmode.svg', alt: 'hdrMode', text: 'HDR Mode' },
 ];
 
 const Section3CamersSpecs = () => (
   <GradientBackgroundWrapper
-    bgImage='/SmartPhone/a70/A70CameraBG.webp'
+    bgImage='/smartphone/a70/A70CameraBG.webp'
     paddingStart='48px'
-    padding='10px'
-    mobileBgImage='/SmartPhone/a70/A70CameraBg-Mobile.webp'
+    padding='5px'
+    mobileBgImage='/smartphone/a70/A70CameraBg-Mobile.webp'
   >
-    <div className='relative flex flex-col lg:flex-row h-[390px] lg:justify-between lg:pt-[28px] gap-2 md:gap-5 md:h-[600px] lg:h-[739px] overflow-hidden'>
-      <div className='lg:w-[455px] text-center lg:text-left lg:h-[455px] relative lg:gap-6 lg:flex lg:flex-col'>
-        <p className='md:text-desktop/h2 text-mobile/h4'>Unleash Pure Beauty with Enhanced HDR</p>
+    <div className='relative flex flex-col lg:flex-row h-[390px] md:h-[739px] lg:justify-between lg:pt-[28px] gap-2 md:gap-5 overflow-hidden'>
+      <div className='lg:w-[455px] text-center lg:text-left relative lg:gap-6 lg:flex lg:flex-col h-auto'>
+        <p className='md:text-desktop/h2 text-mobile/h4'>
+          Unleash Pure Beauty with Enhanced HDR
+        </p>
         <span className='md:text-desktop/body/large text-mobile/body/2'>
           Featuring an 8MP AI Front Camera and 13MP AI Dual Rear Camera, every shot is infused with stunning detail and clarity.
         </span>
