@@ -8,7 +8,7 @@ export default function Frames() {
 
             {/* frame0 */}
             <div 
-            className="md:w-full w-[328px] h-[556px] py-[20px] rounded-[16px] lg:rounded-[36px] lg:h-[1056px] bg-cover bg-center flex justify-center items-center flex-col bg-[url('/SmartPhone/a50/f0Bg.png')]"
+            className="md:w-full w-[328px] h-[556px] md:h-[800px] py-[20px] rounded-[16px] lg:rounded-[36px] lg:h-[1056px] bg-cover bg-center flex justify-center items-center flex-col bg-[url('/SmartPhone/a50/f0Bg.png')]"
             
             >
                 <div className='flex flex-col lg:flex-row lg:justify-between w-full lg:px-[60px] px-[22px]'>

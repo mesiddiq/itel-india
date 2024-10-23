@@ -34,6 +34,16 @@ const HomePageButtons = () => {
                         A-70
                     </button>
                 </Link>
+                <Link to='/smartphones/a-series/a50'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        A50
+                    </button>
+                </Link>
+                <Link to='/smartphones/a-series/a05'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        A05s
+                    </button>
+                </Link>
             </div>
             <div className=" flex flex-col gap-10">
                 <h1 className="text-2xl">Smartphones - P series</h1>
