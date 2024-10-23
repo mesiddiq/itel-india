@@ -21,7 +21,7 @@ const Hero = ({ title, subtitle, phoneUrl, purchaseLink, bgDesktop, bgMobile, da
                         <BuyNowSquareBG purchaseLink={purchaseLink} />
                     </div>
                 </div>
-                <img data-aos="fade-up" src={phoneUrl} alt="Super Guru 4g" className='lg:max-w-[319px] max-w-[171px] max-h-[280px] md:max-h-[400px] lg:max-h-[500px] self-end lg:self-start' />
+                <img data-aos="fade-up" data-aos-delay="400" src={phoneUrl} alt="Super Guru 4g" className='lg:max-w-[319px] max-w-[171px]  self-end lg:self-start' />
                 {
                     title === 'Super Guru 4G' &&
                     <div className="text-mobile/small/body lg:text-desktop/body/2/regular text-grey/grey/1 absolute lg:-bottom-16 -bottom-10 max-w-[237px] left-4 lg:max-w-max">*YouTube supported is through third party Cloud App, Conditions apply.</div>
