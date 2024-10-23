@@ -8,12 +8,12 @@ const Accordian = ({ data, title }) => {
 
   return (
     <>
-      <div className="   border-t-2 space-y-2">
+      <div className="   border-t-2 space-y-2 ">
         <div
           onClick={() => setShow(!show)}
           className=" flex items-center font-markot justify-between cursor-pointer"
         >
-          <p className=" lg:text-desktop/h5/medium  text-brand/black">
+          <p className=" lg:text-desktop/h5/medium   text-mobile/h5 text-brand/black">
             {title}
           </p>
           <img
@@ -35,7 +35,7 @@ const Accordian = ({ data, title }) => {
             return (
               <p
                 key={index}
-                className=" text-desktop/body/2/regular text-grey/grey/5  lg:text-desktop/body/"
+                className=" text-desktop/body/2/regular text-grey/grey/5  lg:text-desktop/body/1"
               >
                 {data}
               </p>
@@ -83,7 +83,7 @@ const MainBody = () => {
 
   return (
     <div className="font-markot ">
-      <div className="lg:content px-4 lg:mb-[60px] lg:space-y-10">
+      <div className="lg:content px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
         {/* Search input */}
         <div>
           <input
@@ -113,7 +113,7 @@ const MainBody = () => {
           </div>
 
           {/* Accordions based on search or category selection */}
-          <div className="  lg:space-y-[40px]">
+          <div className=" space-y-5  lg:space-y-[40px]">
             {searchQuery
               ? filteredData(allData).map((item, index) => (
                   <Accordian

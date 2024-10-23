@@ -25,7 +25,7 @@ import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
 import NotFound from './pages/static_pages/NotFound'
 import Investor from './pages/static_pages/Investor'
-
+import Thankyou from './pages/static_pages/Thankyou'
 import { 
 	Circle1, 
 	It2175p, 
@@ -70,7 +70,9 @@ function App() {
 						<Link className='text-blue-500 underline' to='/screenreplacement'>Screen Replacement</Link>
 						<Link className='text-blue-500 underline' to='/e-waste-management'>E-Waste Management</Link>
 						<Link className='text-blue-500 underline' to='/100-days-promise'>100 Days Promise</Link>
-                         
+						<Link className='text-blue-500 underline' to='/FAQ'>FAQ</Link>
+						<Link className='text-blue-500 underline' to='/pagenotfound'>Page not found</Link>
+						<Link className='text-blue-500 underline' to='/investorrelation'>Investor relation</Link>
 					</div>} />
 	
 				{/********************************************************/}
@@ -90,7 +92,7 @@ function App() {
 				<Route path='/FAQ' element={<FAQ/>} />
 				<Route path='/pagenotfound' element={<NotFound/>} />
 				<Route path='/investorrelation' element={<Investor/>} />
-				
+				<Route path='/Thankyou' element={<Thankyou/>} />
 
 				{/* ***************************************************************************************************/}
 				{/* *******************************************SmartPhones*********************************************/}
