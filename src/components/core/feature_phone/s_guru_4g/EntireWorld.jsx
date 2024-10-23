@@ -12,7 +12,7 @@ const FeatureCardData = [
 
 const EntireWorld = () => {
     return (
-        <div className='bg-black/1 px-4 md:px-0 h-[1217px] lg:h-[1440px] pt-9 lg:pt-[120px] overflow-hidden'>
+        <div className='px-4 md:px-0 h-[1217px] lg:h-[1440px] pt-9 lg:pt-[120px] overflow-hidden superguru4g'>
             <div className="flex flex-col lg:flex-row-reverse justify-between font-markot content ">
                 <div className="space-y-5 lg:space-y-[60px] max-w-[518px]">
                     <div className="flex flex-col gap-3 lg:gap-5">

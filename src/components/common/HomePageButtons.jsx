@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const HomePageButtons = () => {
     return (
         <div className='flex gap-4 flex-wrap py-10 justify-center '>
-            <div className=" flex flex-col gap-10">
+            <div className=" flex flex-col gap-4">
                 <h1 className="text-2xl">Smartphones - S series</h1>
                 <Link to='/smartphones/s-series/s23'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
@@ -22,7 +22,7 @@ const HomePageButtons = () => {
                     </button>
                 </Link>
             </div>
-            <div className=" flex flex-col gap-10">
+            <div className=" flex flex-col gap-4">
                 <h1 className="text-2xl">Smartphones - A series</h1>
                 <Link to='/smartphones/a-series/a05i'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
@@ -40,7 +40,7 @@ const HomePageButtons = () => {
                     </button>
                 </Link>
             </div>
-            <div className=" flex flex-col gap-10">
+            <div className=" flex flex-col gap-4">
                 <h1 className="text-2xl">Smartphones - P series</h1>
                 <Link to='/smartphones/p-series/p55-5g'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
@@ -63,7 +63,7 @@ const HomePageButtons = () => {
                     </button>
                 </Link>
             </div>
-            <div className=" flex flex-col gap-10">
+            <div className=" flex flex-col gap-4">
                 <h1 className="text-2xl">Feature Phones</h1>
                 <Link to='/featurephones/ace-2-power'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
@@ -121,7 +121,7 @@ const HomePageButtons = () => {
                     </button>
                 </Link>
             </div>
-            <div className=" flex flex-col gap-10">
+            <div className=" flex flex-col gap-4">
                 <h1 className="text-2xl">Static Pages</h1>
                 <Link to='/homepage'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">

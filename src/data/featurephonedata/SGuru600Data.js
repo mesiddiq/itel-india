@@ -125,3 +125,40 @@ export const TechSpecsDataSuperGuru600 = {
         { icon: '/featurephone/common/battery.svg', label: `20 Days* Standby Time` },
     ]
 }
+
+export const ProductGalleryDataSuperGuru400 = {
+    bgUrl: '/featurephone/superguru600/phone_preview.webp',
+    bgUrlMobile: '/featurephone/superguru600/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/superguru600/product_gallery/orange_front.webp",
+                "/featurephone/superguru600/product_gallery/orange_all.webp",
+                "/featurephone/superguru600/product_gallery/orange_angular.webp",
+                // 'Champagne Gold, Orange, Deep Blue'
+            ],
+            buttonLabel: 'Orange',
+            buttonColor: '#F8B148'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/superguru600/product_gallery/gold_angular.webp",
+                "/featurephone/superguru600/product_gallery/gold_all.webp",
+            ],
+            buttonLabel: 'Champagne gold',
+            buttonColor: '#CFB697'
+        },
+        {
+            id: 3,
+            images: [
+                "/featurephone/superguru600/product_gallery/blue_front.webp",
+                "/featurephone/superguru600/product_gallery/blue_all.webp",
+                "/featurephone/superguru600/product_gallery/blue_angular.webp",
+            ],
+            buttonLabel: 'deep blue',
+            buttonColor: '#394883'
+        }
+    ]
+}

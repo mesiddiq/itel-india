@@ -15,7 +15,7 @@ const GradientBackgroundWrapper = ({ children, bgImage, mobileBgImage, paddingSt
             <div
                 className={`bg-white  lg:block hidden  md:rounded-[${borderRadius}] rounded-[16px]  pb-0 ps-2 `}
                 style={{
-                    backgroundImage: `url(${bgImage || '/SmartPhone/a70/AmpleStorageBG.webp'})`,
+                    backgroundImage: `url(${bgImage || '/smartphone/a70/AmpleStorageBG.webp'})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     overflow:'hidden',

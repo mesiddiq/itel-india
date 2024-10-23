@@ -137,3 +137,39 @@ export const TechSpecsDataPower120 = {
         { id: '8', label: 'Super LED Torch', icon: '/featurephone/common/torch.svg' },
     ]
 }
+
+export const ProductGalleryDataPower120 = {
+    bgUrl: '/featurephone/Power_120/Backgrounds/phone_preview.webp',
+    bgUrlMobile: '/featurephone/Power_120/Backgrounds/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/Power_120/product_gallery/lightblue_front.webp",
+                "/featurephone/Power_120/product_gallery/lightblue_back.webp",
+                "/featurephone/Power_120/product_gallery/lightblue_all.webp",
+            ],
+            buttonLabel: 'light blue',
+            buttonColor: '#D0E2E9'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/Power_120/product_gallery/green_front.webp",
+                "/featurephone/Power_120/product_gallery/green_back.webp",
+            ],
+            buttonLabel: 'interstellar blue',
+            buttonColor: '#55B5B3'
+        },
+        {
+            id: 3,
+            images: [
+                "/featurephone/Power_120/product_gallery/blue_front.webp",
+                "/featurephone/Power_120/product_gallery/blue_back.webp",
+            ],
+            buttonLabel: 'deep blue',
+            buttonColor: '#4D5176'
+        },
+        // 'Light Blue, Deep Blue, Interstellar Blue'
+    ]
+}

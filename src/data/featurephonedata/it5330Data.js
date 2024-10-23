@@ -137,3 +137,54 @@ export const TechSpecsDatait5330 = {
         { id: '8', label: 'Wireless FM with recorder', icon: '/featurephone/common/radio.svg' },
     ]
 }
+
+export const ProductGalleryDatait5330 = {
+    bgUrl: '/featurephone/it5330/Backgrounds/phone_preview.webp',
+    bgUrlMobile: '/featurephone/it5330/Backgrounds/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/it5330/product_gallery/black_front.webp",
+                // 'Blue, Light Green, Light Blue, Black'
+            ],
+            buttonLabel: 'black',
+            buttonColor: '#454B54'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/it5330/product_gallery/green_front.webp",
+            ],
+            buttonLabel: 'light green',
+            buttonColor: '#BDE5B7'
+        },
+        {
+            id: 3,
+            images: [
+                "/featurephone/it5330/product_gallery/grey_front.webp",
+                "/featurephone/it5330/product_gallery/grey_all.webp",
+            ],
+            buttonLabel: 'light blue',
+            buttonColor: '#C8CDD6'
+        },
+        {
+            id: 4,
+            images: [
+                "/featurephone/it5330/product_gallery/light_blue_all.webp",
+                "/featurephone/it5330/product_gallery/blue_front.webp",
+            ],
+            buttonLabel: 'blue',
+            buttonColor: '#2B327A'
+        },
+        // {
+        //     id: 5,
+        //     images: [
+        //         "/featurephone/it5330/product_gallery/grey_front.webp",
+        //         "/featurephone/it5330/product_gallery/grey_all.webp",
+        //     ],
+        //     buttonLabel: 'light blue',
+        //     buttonColor: '#C8CDD6'
+        // },
+    ]
+}

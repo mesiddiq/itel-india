@@ -8,7 +8,7 @@ const FeatureRich = ({ title, description, cards }) => {
                 <h1 className="lg:text-desktop/h2 text-mobile/h4 text-itel-red max-w-[450px] " data-aos="fade-up">{title}</h1>
                 <p className=' text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/5 max-w-[674px]' data-aos="fade-left">{description} </p>
             </div>
-            <div className="flex flex-col gap-6 text-dark/card/bg justify-between lg:flex-row ">
+            <div className="flex flex-col gap-6 text-dark/card/bg justify-between md:flex-row flex-wrap md:items-center  ">
                 <For each={cards} render={({ title, description, icon, id }) => (
                     <div className="w-full max-w-[300px] space-y-2 md:space-y-4" key={id} data-aos="fade-up" data-aos-delay={id * 100}>
                         <img src={icon} alt={title} className='size-10 lg:size-[56px]' />

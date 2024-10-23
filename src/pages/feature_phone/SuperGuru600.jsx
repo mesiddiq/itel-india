@@ -10,11 +10,13 @@ import {
     FeatureRichDataSuperGuru600,
     FullSpecificationsDataSuperGuru600,
     KingVoiceDataSuperGuru600,
-    TechSpecsDataSuperGuru600
+    TechSpecsDataSuperGuru600,
+    ProductGalleryDataSuperGuru400
 } from '../../data/featurephonedata/SGuru600Data'
 import UninterruptedConnectivity from '../../components/core/feature_phone/s_guru_600/UninterruptedConnectivity'
 import UltraFastSupport from '../../components/common/feature_phone_common/UltraFastSupport'
 import PhoneSliderAnimation from '../../components/common/feature_phone_common/PhoneSliderAnimation'
+import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 
 const SuperGuru600 = () => {
     return (
@@ -28,6 +30,7 @@ const SuperGuru600 = () => {
             <UltraFastSupport/>
             <KingVoice {...KingVoiceDataSuperGuru600} />
             <TechSpecs {...TechSpecsDataSuperGuru600} />
+            <FeaturePhoneProductGallery  {...ProductGalleryDataSuperGuru400} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataSuperGuru600} mode={'light'} />
         </div>
     )

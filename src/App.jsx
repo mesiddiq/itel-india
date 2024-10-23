@@ -11,9 +11,9 @@ import PFiftyFive from './pages/p_series/PFiftyFive'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import Footer from './components/common/Footer'
 import Support from './pages/static_pages/header/Support'
-import ScreenReplacement from './pages/static_pages/header/Support/ScreenReplacement'
-import Promise100 from './pages/static_pages/header/Support/Promise100'
-import EWaste from './pages/static_pages/header/Support/E-Waste'
+import ScreenReplacement from './pages/static_pages/ScreenReplacement'
+import Promise100 from './pages/static_pages/Promise100'
+import EWaste from './pages/static_pages/E-Waste'
 import CSR from "./pages/static_pages/CSR"
 import Aboutus from './pages/static_pages/Aboutus'
 import Contactus from './pages/static_pages/Contactus'
@@ -23,20 +23,21 @@ import ServiceCenters from './pages/static_pages/ServiceCenters'
 import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
 import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
+import NotFound from './pages/static_pages/NotFound'
 
 import A_Series_Parent from './pages/a_series/A_Series_Parent'
 import A05i from './pages/a_series/A05i'
 
-import { 
-	Circle1, 
-	It2175p, 
-	It5027, 
-	It5262, 
-	It5330, 
-	Power120, 
-	Power450, 
-	SuperGuru400, 
-	SuperGuru4G, 
+import {
+	Circle1,
+	It2175p,
+	It5027,
+	It5262,
+	It5330,
+	Power120,
+	Power450,
+	SuperGuru400,
+	SuperGuru4G,
 	SuperGuru600,
 	Ace2Power
 } from './pages/feature_phone'
@@ -44,6 +45,7 @@ import HomePageButtons from './components/common/HomePageButtons'
 import ASeventy from './pages/a_series/ASeventy'
 import A05 from './pages/a_series/A05'
 import ATwentyThreeS from './pages/a_series/ATwentyThreeS'
+import A50C from './pages/a_series/A50C'
 
 
 function App() {
@@ -57,24 +59,25 @@ function App() {
 	return (
 		<main>
 			<Routes>
+				<Route path='/' element={<HomePageButtons />} />
 
-				<Route path='/' element={<HomePageButtons/>} />
 				{/********************************************************/}
-				{/* 					Static Pages					 */}
+				{/* 					Static Pages					 					*/}
 				{/********************************************************/}
 
 
 				<Route path='/homepage' element={<HomePage />} />
 				<Route path='/support' element={<Support />} />
-				<Route path='/support/screenreplacement' element={<ScreenReplacement />} />
-				<Route path='/support/e-waste-management' element={<EWaste />} />
-				<Route path='/support/100-days-promise' element={<Promise100 />} />
+				<Route path='/screenreplacement' element={<ScreenReplacement />} />
+				<Route path='/e-waste-management' element={<EWaste />} />
+				<Route path='/100-days-promise' element={<Promise100 />} />
 				<Route path='/csr' element={<CSR />} />
 				<Route path='/aboutus' element={<Aboutus />} />
 				<Route path='/contactus' element={<Contactus />} />
 				<Route path='/servicecenters' element={<ServiceCenters />} />
-				<Route path='/FAQ' element={<FAQ/>} />
-				
+				<Route path='/FAQ' element={<FAQ />} />
+				<Route path='/pagenotfound' element={<NotFound />} />
+
 
 				{/* ***************************************************************************************************/}
 				{/* *******************************************SmartPhones*********************************************/}
@@ -100,15 +103,17 @@ function App() {
 					<Route path='p55plus' element={<PFiftyFivePlus />} />
 					<Route path='p55T' element={<PFiftyFiveT />} />
 				</Route>
+               
 
 				{/********************************************************/}
 				{/* 					A series						 */}
 				{/********************************************************/}
-				
+
 				<Route path='/smartphones/a-series' element={<A_Series_Parent />} >
 					<Route path='a05i' element={<A05i />} />
+					<Route path='a50c' element={<A50C />} />
 					<Route path='a70' element={<ASeventy />} />
-					<Route path='a05' element={<A05/>} />
+					<Route path='a05' element={<A05 />} />
 					<Route path='a23s' element={<ATwentyThreeS/>} />
 				</Route>
 

@@ -7,7 +7,7 @@ import AmoledDisplay from '../../components/core/s_series_core/s_twenty_three_pl
 import HeroBanner from '../../components/core/s_series_core/s_twenty_three_plus/HeroBanner';
 import ImmersiveEntertainment from '../../components/core/s_series_core/s_twenty_three_plus/ImmersiveEntertainment';
 import NewVision from '../../components/core/s_series_core/s_twenty_three_plus/NewVision';
-import OverviewTwo from '../../components/core/s_series_core/s_twenty_three_plus/OverviewTwo';
+import Overview from '../../components/core/s_series_core/s_twenty_three_plus/Overview';
 import SharpFocus from '../../components/core/s_series_core/s_twenty_three_plus/SharpFocus';
 import SnapFlawlessSelfie from '../../components/core/s_series_core/s_twenty_three_plus/SnapFlawlessSelfie';
 import UltraHDMode from '../../components/core/s_series_core/s_twenty_three_plus/UltraHDMode';
@@ -15,9 +15,10 @@ import ThinDesign from '../../components/core/s_series_core/s_twenty_three_plus/
 import TimeLapse from '../../components/core/s_series_core/s_twenty_three_plus/TimeLapse';
 import UnlockTouch from '../../components/core/s_series_core/s_twenty_three_plus/UnlockTouch';
 import Video from '../../components/core/s_series_core/s_twenty_three_plus/Video';
-import BlogCardsNew from '../../components/core/s_series_core/S_Twenty_Three_Plus/BlogCardsNew';
+import BlogCards from '../../components/core/s_series_core/S_Twenty_Three_Plus/BlogCards';
 import PicturePerfect from '../../components/core/s_series_core/s_twenty_three_plus/PicturePerfect';
-import { FullSpecificationsDataS23Plus } from '../../data/smartphonedata/S23PlusData';
+import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
+import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/S23PlusData';
 
 const STwentyThreePlus = () => {
 
@@ -26,23 +27,22 @@ const STwentyThreePlus = () => {
       <div>
         {/* <Navbar /> */}
         <HeroBanner />
-        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/s_twenty_three_plus/overview.png'} />
-        <OverviewTwo />
+        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/smartphone/S23+/Backgrounds/OverviewIcon.webp'} />
+        <Overview />
         <Video />
         <AmoledDisplay />
         <NewVision />
         <ImmersiveEntertainment />
         <PicturePerfect />
-
         <SharpFocus />
         <TimeLapse />
         <SnapFlawlessSelfie />
-        {/* Use https://swiperjs.com/react for the slider in the below component */}
         <UltraHDMode />
         <UnlockTouch />
         <ThinDesign />
-        <BlogCardsNew />
-        <FullSpecifications FullSpecificationsData={FullSpecificationsDataS23Plus} mode='dark' />
+        <BlogCards />
+        <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false}/>
+        <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
       </div>
     </>
   )

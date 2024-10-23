@@ -1,87 +1,92 @@
-import React, { useState } from 'react';
-
+import react, {useState} from 'react';
 const Camera = () => {
-  // State to handle the active mode
   const [activeMode, setActiveMode] = useState('super-night-mode');
 
-  // List of camera modes, each with unique background and camera image
   const modes = [
-    { id: 'super-night-mode', icon: '🌙', label: 'Super Night Mode', bgImage: '/P_Series/camera2.png', cameraImage: '/P_Series/camera2.png' },
-    { id: 'storage-mode', icon: '📦', label: 'Storage Mode', bgImage: '/P_Series/storage.png', cameraImage: '/P_Series/storage.png' },
-    { id: 'time-lapse-mode', icon: '⏳', label: 'Time-Lapse Mode', bgImage: '/P_Series/battery.png', cameraImage: '/P_Series/battery.png' },
-   
+    { id: 'super-night-mode', icon: '/P_Series/icon1.png', label: 'Super Night Mode', bgImage: '/P_Series/CameraBG1.png', cameraImage: '/P_Series/supernight.png' ,mobileImage:'/P_Series/camerabg_hori.png'},
+    { id: 'storage-mode', icon: '/P_Series/icon2.png', label: 'Storage Mode', bgImage: '/P_Series/CameraBG2.png', cameraImage: '/P_Series/timelapse.png' ,mobileImage:'/P_Series/camerabg2_hori.png'},
+    { id: 'time-lapse-mode', icon: '/P_Series/icon3.png', label: 'Time-Lapse Mode', bgImage: '/P_Series/CameraBG3.png', cameraImage: '/P_Series/panorama.png',mobileImage:'/P_Series/camerabg3_hori.png' },
+    { id: 'time-mode', icon: '/P_Series/icon4.png', label: 'Time Mode', bgImage: '/P_Series/CameraBG4.png', cameraImage: '/P_Series/pro.png',mobileImage:'/P_Series/camerabg4_hori.png' },
   ];
 
   const currentMode = modes.find(mode => mode.id === activeMode);
 
   return (
-    <div className="relative w-full h-[749px] flex ">
-      
-      {/* Background Image that changes */}
-      <div 
-        className="absolute w-full h-full bg-cover bg-center transition-all duration-300" 
-        style={{ backgroundImage: `url(${currentMode?.bgImage})` }}
-      />
-<div className='content w-full '>
-      {/* Static Content - Text and Info */}
-      <div className="w-1/2 h-full flex justify-center items-center z-20 text-white"> {/* Increased z-index to ensure visibility */}
-        <div className="flex flex-col gap-[48px]">
-          <div className="flex flex-col gap-[12px]">
-            <h2 className="text-desktop/h2">Mega Storage: <br />
-              Multi-task at Ease
-            </h2>
-            <p className="text-desktop/body/large">
-              Unlock endless possibilities with the itel P55 5G's<br /> impressive storage capacity. 
-              Store, game, and <br /> multitask without limits.
-            </p>
-          </div>
-          <div className="flex gap-[24px]">
-            <div className="flex flex-col border-r-white gap-[8px]">
-              <h4 className="text-desktop/h4">12 GB* 6GB + 6GB*</h4>
-              <h4 className="text-desktop/h4">Desktop</h4>
-              <p className="text-desktop/caption">*With Memory Fusion</p>
+    <div className="relative w-full h-[749px] flex bg-cover bg-center" style={{ backgroundImage: `url(${currentMode?.bgImage})` }}>
+      <div className='content w-full h-full  flex-col md:flex-row hidden lg:flex'>
+
+        {/* Left Side: Text Content */}
+        <div className="w-1/2 h-full flex justify-center items-center text-white">
+          <div className="flex flex-col gap-8 items-start justify-center px-6">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-3xl md:text-5xl font-bold">Next-Level Camera Experience</h2>
+              <p className="font-markot text-base md:text-lg leading-relaxed">
+              Capture epic moments and stunning selfies with the itel P55 5G's cutting-edge camera setup. With a 50MP+AI dual rear camera and an 8MP front camera, every shot is Instagram-worthy.
+              </p>
             </div>
-            <div className="flex flex-col gap-[8px]">
-              <h4 className="text-desktop/h4">128 GB</h4>
-              <p className="text-desktop/body/large">ROM Storage</p>
+
+            {/* Mode Selection Icons */}
+            <div className="flex space-x-4 mt-6">
+              {modes.map((mode) => (
+                <div 
+                  key={mode.id} 
+                  onMouseEnter={() => setActiveMode(mode.id)} 
+                  onMouseLeave={() => setActiveMode('super-night-mode')}
+                  className="flex flex-col gap-[24px] cursor-pointer text-white"
+                >
+                  <img src={mode.icon} alt={mode.label} className="w-12 h-12" />
+                  <h6 className='text-desktop/h6/medium'>{mode.label}</h6>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Static Hand Image */}
-      <div className="absolute right-0 bottom-0 z-10">
-        <img 
-          src="/P_Series/camera-hand.png" 
-          alt="Hand holding the camera" 
-          className="w-[400px] md:w-[500px]"
-        />
-      </div>
-
-      {/* Changing Camera Image inside the hand */}
-      <div className="absolute right-[16%] bottom-[26%] z-20">
-        <img 
-          src={currentMode?.cameraImage} 
-          alt={currentMode?.label} 
-          className="w-[100px] md:w-[150px] transition-all duration-300"
-        />
-      </div>
-
-      {/* Icon buttons for selecting modes */}
-      <div className="absolute bottom-10 left-10 flex space-x-4 z-30">
-        {modes.map((mode) => (
-          <div 
-            key={mode.id} 
-            onMouseEnter={() => setActiveMode(mode.id)} 
-            onMouseLeave={() => setActiveMode('super-night-mode')}
-            className="flex flex-col items-center cursor-pointer text-white"
-          >
-            <div className="text-4xl">{mode.icon}</div>
-            <span>{mode.label}</span>
+        {/* Right Side: Hand and Camera Images */}
+        <div className="w-1/2 h-full relative flex justify-end items-end">
+        
+  {/* Hand Image */}
+  <div className="relative w-full h-full">
+    <img 
+      src="/P_Series/hand2.png" 
+      alt="Hand holding the camera" 
+      className="absolute right-0 top-0 h-full object-cover" // Use absolute positioning
+    />
+            {/* Camera Image Inside Hand */}
+            <div className="absolute right-[38%] bottom-[26%] z-20">
+              <img 
+                src={currentMode?.cameraImage} 
+                alt={currentMode?.label} 
+                className="w-[180px] h-[374px] transition-all duration-300 rounded-[8px]"
+              />
+            </div>
           </div>
-        ))}
+          </div>
       </div>
-      </div>
+<div className='h-full w-full content bg-black flex flex-col items-center justify-center lg:hidden' >
+<div className="flex flex-col gap-4 text-center items-center justify-center px-4">
+              <h2 className="text-mobile/h4">Next-Level Camera <br/> Experience</h2>
+              <p className="font-markot text-desktop/body/2/regular leading-relaxed">
+              Capture epic moments and stunning selfies with the itel P55 5G's cutting-edge camera setup. With a 50MP+AI dual rear camera and an 8MP front camera, every shot is Instagram-worthy.
+              </p>
+            </div>
+            <div className="w-full h-[254px] sm:h-[454px] flex bg-cover bg-center py-4" >
+              <img src={currentMode?.mobileImage} className='w-full h-full bg-cover'></img>
+</div>
+<div className="flex flex-wrap items-center justify-center gap-[12px] mt-6">
+              {modes.map((mode) => (
+                <div 
+                  key={mode.id} 
+                  onMouseEnter={() => setActiveMode(mode.id)} 
+                  onMouseLeave={() => setActiveMode('super-night-mode')}
+                  className="flex flex-col items-center gap-[24px] py-4 cursor-pointer text-white"
+                >
+                  <img src={mode.icon} alt={mode.label} className="w-12 h-12" />
+                  <h7 className='text-desktop/h7'>{mode.label}</h7>
+                </div>
+              ))}
+            </div>
+</div>
     </div>
   );
 };

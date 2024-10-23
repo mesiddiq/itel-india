@@ -8,10 +8,12 @@ import {
     FeatureRichDataPower450,
     FullSpecificationsDataPower450,
     KingVoiceDataPower450,
-    TechSpecsDataPower450
+    TechSpecsDataPower450,
+    ProductGalleryDataPower450
 } from '../../data/featurephonedata/power450'
 import ChargeUp from '../../components/core/feature_phone/power_450/ChargeUp'
 import MoreDetails from '../../components/core/feature_phone/power_450/MoreDetails'
+import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 
 const Power450 = () => {
     return (
@@ -24,6 +26,7 @@ const Power450 = () => {
             <MoreDetails />
             <KingVoice linearGradient={true} {...KingVoiceDataPower450} />
             <TechSpecs {...TechSpecsDataPower450} />
+            <FeaturePhoneProductGallery {...ProductGalleryDataPower450} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataPower450} mode={'light'} />
         </div>
     )

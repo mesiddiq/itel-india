@@ -128,15 +128,15 @@ export const TechSpecsDataSuperGuru400 = {
 
 
 export const ProductGalleryDataSuperGuru400 = {
-    bgUrl: '/featurephone/superguru4g/phone_preview.webp',
-    bgUrlMobile: '/featurephone/superguru4g/phone_preview_mobile.webp',
+    bgUrl: '/featurephone/superguru400/phone_preview.webp',
+    bgUrlMobile: '/featurephone/superguru400/phone_preview_mobile.webp',
     products: [
         {
             id: 1,
             images: [
-                "/featurephone/superguru4g/product_gallery/black_front.webp",
-                "/featurephone/superguru4g/product_gallery/black_angular.webp",
-                "/featurephone/superguru4g/product_gallery/black_back.webp",
+                "/featurephone/superguru400/product_gallery/aurora_green_front.webp",
+                "/featurephone/superguru400/product_gallery/aurora_green_all.webp",
+                // Aurora Green, Champagne Gold, Deep Blue
             ],
             buttonLabel: 'aurora green',
             buttonColor: '#31BBCF'
@@ -144,21 +144,19 @@ export const ProductGalleryDataSuperGuru400 = {
         {
             id: 2,
             images: [
-                "/featurephone/superguru4g/product_gallery/blue_front.webp",
-                "/featurephone/superguru4g/product_gallery/blue_angular.webp",
-                "/featurephone/superguru4g/product_gallery/blue_back.webp",
+                "/featurephone/superguru400/product_gallery/champagne_gold_front.webp",
+                "/featurephone/superguru400/product_gallery/champagne_gold_all.webp",
             ],
-            buttonLabel: 'NA',
+            buttonLabel: 'Champagne gold',
             buttonColor: '#CFB697'
         },
         {
             id: 3,
             images: [
-                "/featurephone/superguru4g/product_gallery/green_front.webp",
-                "/featurephone/superguru4g/product_gallery/green_angular.webp",
-                "/featurephone/superguru4g/product_gallery/green_back.webp",
+                "/featurephone/superguru400/product_gallery/deep_blue_front.webp",
+                "/featurephone/superguru400/product_gallery/deep_blue_all.webp",
             ],
-            buttonLabel: 'Blue',
+            buttonLabel: 'deep blue',
             buttonColor: '#394883'
         }
     ]

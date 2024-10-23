@@ -20,28 +20,28 @@ import FullSpecifications from "../../components/common/FullSpecifications"
 
 import { FullSpecificationsP555g } from '../../data/smartphonedata/P555gData'
 const PFiftyFive5g = () => {
-  
-    return (
-      <>
-      <Home/>
+
+  return (
+    <div className='font-markot'>
+      <Home />
       <About />
-      <Pvideo/>
-      <Grayframe/>
+      <Pvideo />
+      <Grayframe />
       <Connectivity />
-      <Powerful/>
-      <Storage/>
-   
+      <Powerful />
+      <Storage />
+
       <Gaming />
-      <Battery/>
-      
-      <Camera/>
-     
-      <Chatgpt/>
-     
-      <Warrenty/>
-     <Mobile_grid/>
-     <FullSpecifications FullSpecificationsData={FullSpecificationsP555g} mode="dark"/>
-      <Accessories/>
+      <Battery />
+
+      <Camera />
+
+      <Chatgpt />
+
+      <Warrenty />
+      <Mobile_grid />
+      <FullSpecifications FullSpecificationsData={FullSpecificationsP555g} mode="dark" />
+      <Accessories />
       <Model />
 
 
@@ -53,7 +53,7 @@ const PFiftyFive5g = () => {
       <Warrenty />
       <Mobile_grid />
 
-    </>
+    </div>
   )
 }
 
