@@ -45,12 +45,12 @@ const A05ColorImageCarausel = ({ ImageCarouselData, showTitleInMobile }) => {
             <div className="flex flex-row justify-between items-center w-full absolute px-5 lg:px-[80px]">
                 {/* Left Arrow */}
                 <button onClick={handlePrev} className="w-8 h-8 lg:w-12 lg:h-12">
-                    <img src="/SmartPhone/a05/leftArrow.png" alt="leftArrowCarousel"/>
+                    <img src="/smartphone/a05/leftArrow.png" alt="leftArrowCarousel"/>
                 </button>
 
                 {/* Right Arrow */}
                 <button onClick={handleNext} className="w-8 h-8 lg:w-12 lg:h-12">
-                        <img src="/SmartPhone/a05/rightArrow.png" alt="leftArrowCarousel"/>
+                        <img src="/smartphone/a05/rightArrow.png" alt="leftArrowCarousel"/>
                 </button>
             </div>
         </div>

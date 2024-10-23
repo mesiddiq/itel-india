@@ -8,7 +8,7 @@ export default function Frames() {
 
             {/* frame0 */}
             <div 
-            className="md:w-full w-[328px] h-[556px] md:h-[800px] py-[20px] rounded-[16px] lg:rounded-[36px] lg:h-[1056px] bg-cover bg-center flex justify-center items-center flex-col bg-[url('/SmartPhone/a50/f0Bg.png')]"
+            className="md:w-full w-[328px] h-[556px] md:h-[800px] py-[20px] rounded-[16px] lg:rounded-[36px] lg:h-[1056px] bg-cover bg-center flex justify-center items-center flex-col bg-[url('/smartphone/a50/f0Bg.webp')]"
             
             >
                 <div className='flex flex-col lg:flex-row lg:justify-between w-full lg:px-[60px] px-[22px]'>
@@ -27,12 +27,12 @@ export default function Frames() {
                     </div>
                 </div>
 
-                <img src="/SmartPhone/a50/f0Hero (1).png" alt="f1Img"  className='object-cover w-full lg:w-[90%]'/>
+                <img src="/smartphone/a50/f0Hero.webp" alt="f1Img"  className='object-cover w-full lg:w-[90%]'/>
             </div>
 
             {/* frame1 */}
             <div 
-            className="lg:mt-[60px] mt-[30px] md:w-full w-[328px] h-[750px] py-[20px] rounded-[16px] lg:rounded-[36px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col md:bg-[url('/SmartPhone/a50/f2.png')] bg-[url('/SmartPhone/a50/f1Mobile.png')]"
+            className="lg:mt-[60px] mt-[30px] md:w-full w-[328px] h-[750px] py-[20px] rounded-[16px] lg:rounded-[36px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col md:bg-[url('/smartphone/a50/f2.webp')] bg-[url('/smartphone/a50/f1Mobile.webp')]"
             
             >
                 <div className='flex flex-col lg:justify-start items-start md:pl-[48px] px-[20px] md:px-0 pt-[20px]'>
@@ -50,16 +50,16 @@ export default function Frames() {
                     </div>
                 </div>
 
-                <img src="/SmartPhone/a50/f1Img.png" alt="f1Img"  className='lg:h-[580px] md:h-[450px] md:w-[462px] lg:mr-[68px] mr-[30px] w-[250px] mt-[20px]'/>
+                <img src="/smartphone/a50/f1Img.webp" alt="f1Img"  className='lg:h-[580px] md:h-[450px] md:w-[462px] lg:mr-[68px] mr-[30px] w-[250px] mt-[20px]'/>
             </div>
 
             {/* frame2 Desktop*/}
             <div 
-            className="relative mt-[20px] xl:w-full lg:rounded-[36px] lg:w-[900px] hidden lg:h-[739px] bg-cover bg-center lg:flex lg:flex-row lg:justify-between justify-center items-center flex-col bg-[url('/SmartPhone/a50/f1.png')]"
+            className="relative mt-[20px] xl:w-full lg:rounded-[36px] lg:w-[900px] hidden lg:h-[739px] bg-cover bg-center lg:flex lg:flex-row lg:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/f1.webp')]"
             
             >
                 
-                <img src="/SmartPhone/a50/f2Hero.png" alt="f1Img"  className='md:h-[650px] lg:py-[20pxpx] lg:pl-[65px] lg:flex hidden'/>
+                <img src="/smartphone/a50/f2Hero.webp" alt="f1Img"  className='md:h-[650px] lg:py-[20pxpx] lg:pl-[65px] lg:flex hidden'/>
                     <div className='flex flex-col justify-start items-start'>
                         <p className='absolute xl:w-[537px] md:w-[337px] font-bold leading-[80%] tracking-[-0.06em] lowercase bg-clip-text text-transparent xl:text-[80px] lg:text-[50px] xl:bottom-[35%] xl:right-[7%] right-0 bottom-[45%]'
                         style={{
@@ -79,7 +79,7 @@ export default function Frames() {
             </div>
 
             {/* frame2 Mobile */}
-            <div className="bg-[url('/SmartPhone/a50/f1Mobile.png')] bg-cover bg-center flex justify-center items-center lg:hidden flex-col w-[328px] h-[624px] rounded-[16px] py-[20px] mt-[20px] md:bg-[url('/SmartPhone/a50/f1.png')] md:w-full md:h-[724px]">
+            <div className="bg-[url('/smartphone/a50/f1Mobile.webp')] bg-cover bg-center flex justify-center items-center lg:hidden flex-col w-[328px] h-[624px] rounded-[16px] py-[20px] mt-[20px] md:bg-[url('/smartphone/a50/f1.webp')] md:w-full md:h-[724px]">
                 <div className='justify-start items-start flex flex-col pl-[30px] pt-[20px]'>
                     <span className='border border-[#08E488] bg-white text-[#181818] rounded-[16px] text-[13px] px-5 py-2 font-medium'>8MP Al Rear Camera</span>
                     <span className=' mt-[14px] font-bold leading-[80%] tracking-[-0.06em] lowercase bg-clip-text text-transparent text-[40px]'
@@ -92,12 +92,12 @@ export default function Frames() {
                     </span>
                     <p className='text-[#46E19B] font-bold text-[70px]'>HDR</p>
                 </div>
-                <img src="/SmartPhone/a50/f2Mob.png" alt="f2Mob" className='pl-[15px] pt-[10px] pb-[21px] md:w-[60%]'/>
+                <img src="/smartphone/a50/f2Mob.webp" alt="f2Mob" className='pl-[15px] pt-[10px] pb-[21px] md:w-[60%]'/>
             </div>
 
             {/* frame3 */}
             <div 
-            className="md:w-full w-[328px] h-[624px] rounded-[16px] py-[20px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/SmartPhone/a50/mobBg.png')] md:bg-[url('/SmartPhone/a50/oBg.png')] mt-[20px]"
+            className="md:w-full w-[328px] h-[624px] rounded-[16px] py-[20px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-[20px]"
             
             >
                 <div className='flex flex-col lg:justify-start items-start md:pl-[48px] px-[20px] md:px-0'>
@@ -115,12 +115,12 @@ export default function Frames() {
                     </div>
                 </div>
 
-                <img src="/SmartPhone/a50/oct.png" alt="octaCoreImg"  className='md:w-[40%] w-[80%] h-auto md:py-[50px] py-[15px] lg:pr-[40px]'/>
+                <img src="/smartphone/a50/oct.webp" alt="octaCoreImg"  className='md:w-[40%] w-[80%] h-auto md:py-[50px] py-[15px] lg:pr-[40px]'/>
             </div>
 
             {/* frame4 */}
             <div 
-            className="md:w-full w-[328px] h-[624px] rounded-[16px] py-[20px] md:h-[626px] bg-cover bg-center flex md:flex-row justify-center items-center flex-col bg-[url('/SmartPhone/a50/mobBg.png')] md:bg-[url('/SmartPhone/a50/oBg.png')] mt-[20px]"
+            className="md:w-full w-[328px] h-[624px] rounded-[16px] py-[20px] md:h-[626px] bg-cover bg-center flex md:flex-row justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-[20px]"
             
             >
                 <div className='flex flex-col lg:justify-start items-start md:pl-[48px] px-[20px] md:px-0'>
@@ -142,7 +142,7 @@ export default function Frames() {
                     </div>
                 </div>
 
-                <img src="/SmartPhone/a50/bird.gif" alt="octaCoreImg"  className='rotate-[30deg] md:w-[30%] w-[40%] h-auto md:py-[50px] py-[15px] lg:pr-[40px]'/>
+                <img src="/smartphone/a50/bird.gif" alt="octaCoreImg"  className='rotate-[30deg] md:w-[30%] w-[40%] h-auto md:py-[50px] py-[15px] lg:pr-[40px]'/>
             </div>
         </div>
 

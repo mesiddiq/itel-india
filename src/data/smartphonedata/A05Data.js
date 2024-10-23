@@ -6,19 +6,19 @@ export const a05FeatureRichData = {
             id: 1,
             title: "Blazing Speed with 8GB*(4GB+4GB*) RAM & 64GB ROM",
             description: "Ensure smooth multitasking and seamless app navigation with 8GB* (4GB+4GB*) RAM using memory fusion technology, combined with ample 64GB ROM.",
-            icon: "/SmartPhone/a05/logos/logo1.png",
+            icon: "/smartphone/a05/logos/logo1.png",
         },
         {
             id: 2,
             title: "Big Screen Brilliance: 6.6” HD+ Drop Notch Display",
             description: "Immerse yourself in every detail with vibrant colours and sharp clarity in our 6.6” HD+ drop notch display.",
-            icon: "/SmartPhone/a05/logos/logo2.png",
+            icon: "/smartphone/a05/logos/logo2.png",
         },
         {
             id: 3,
             title: "Turbocharge Your Day: 4000 mAh Battery & Type-C Charging",
             description: "No more battery anxiety! With lightning-fast Type-C charging & powerful 4000 mAh battery keeps you going non-stop.",
-            icon: "/SmartPhone/a05/logos/logo3.png",
+            icon: "/smartphone/a05/logos/logo3.png",
         }
     ]
 };
@@ -33,10 +33,10 @@ export const a05ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#FDAB47]",
-        bgURL: '/SmartPhone/a05/galleryBG/orange.png',
+        bgURL: '/smartphone/a05/galleryBG/orange.png',
         images: [
-            "/SmartPhone/a05/products/Orange1.webp",
-            "/SmartPhone/a05/products/Orange2.webp",
+            "/smartphone/a05/products/Orange1.webp",
+            "/smartphone/a05/products/Orange2.webp",
         ],
     },
     {
@@ -47,11 +47,11 @@ export const a05ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#475266]",
-        bgURL: '/SmartPhone/a05/galleryBG/white.png',
+        bgURL: '/smartphone/a05/galleryBG/white.png',
         images: [
-            "/SmartPhone/a05/products/Starry Black 1.webp",
-            "/SmartPhone/a05/products/Starry Black 2.webp",
-            "/SmartPhone/a05/products/Starry Black 3.webp",
+            "/smartphone/a05/products/Starry Black 1.webp",
+            "/smartphone/a05/products/Starry Black 2.webp",
+            "/smartphone/a05/products/Starry Black 3.webp",
         ]
     },
     {
@@ -62,10 +62,10 @@ export const a05ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#CDE4DA]",
-        bgURL: '/SmartPhone/a05/galleryBG/green.png',
+        bgURL: '/smartphone/a05/galleryBG/green.png',
         images: [
-            "/SmartPhone/a05/products/green1.webp",
-            "/SmartPhone/a05/products/green2.webp",
+            "/smartphone/a05/products/green1.webp",
+            "/smartphone/a05/products/green2.webp",
         ]
     },
     {
@@ -76,10 +76,10 @@ export const a05ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#96CAE5]",
-        bgURL: '/SmartPhone/a05/galleryBG/blue.png',
+        bgURL: '/smartphone/a05/galleryBG/blue.png',
         images: [
-            "/SmartPhone/a05/products/blue1.webp",
-            "/SmartPhone/a05/products/blue2.webp",
+            "/smartphone/a05/products/blue1.webp",
+            "/smartphone/a05/products/blue2.webp",
         ]
     },
 ];

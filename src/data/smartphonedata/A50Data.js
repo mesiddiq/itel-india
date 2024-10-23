@@ -6,19 +6,19 @@ export const a50FeatureRichData = {
             id: 1,
             title: "Stunning 6.6” HD+ IPS Display with Dynamic Bar",
             description: "Stay effortlessly updated with notifications through the Dynamic Bar, seamlessly integrated into the 6.6-inch HD+ IPS display.",
-            icon: "/SmartPhone/a05/logos/logo2.png",
+            icon: "/smartphone/a05/logos/logo2.png",
         },
         {
             id: 2,
             title: "Ultimate Performance: 12GB* RAM with Memory Fusion",
             description: "Boost performance with 4GB RAM, expandable up to 12GB using memory fusion technology and enjoy ample storage with 64GB ROM.",
-            icon: "/SmartPhone/a05/logos/logo1.png",
+            icon: "/smartphone/a05/logos/logo1.png",
         },
         {
             id: 3,
             title: "Camera Duo: 5MP Front & 8MP AI Rear Camera",
             description: "Snap detailed photos with 5MP Front Camera and 8MP AI Rear Camera, capturing and sharing your memories has never been easier.",
-            icon: "/SmartPhone/a50/camLogo.png",
+            icon: "/smartphone/a50/camLogo.webp",
         }
     ]
 };
@@ -121,42 +121,42 @@ export const a50FullSpecifications = [
 export const frame2IconsData = [
     {
         id: 1,
-        icon: "/SmartPhone/a50/icons/i1.png",
+        icon: "/smartphone/a50/icons/i1.webp",
         title: "Potrait Mode",
     },
     {
         id: 2,
-        icon: "/SmartPhone/a50/icons/i2.png",
+        icon: "/smartphone/a50/icons/i2.webp",
         title: "HDR Mode",
     },
     {
         id: 3,
-        icon: "/SmartPhone/a50/icons/i3.png",
+        icon: "/smartphone/a50/icons/i3.webp",
         title: "Wide Mode",
     },
     {
         id: 4,
-        icon: "/SmartPhone/a50/icons/i4.png",
+        icon: "/smartphone/a50/icons/i4.webp",
         title: "Pro Mode",
     },
     {
         id: 5,
-        icon: "/SmartPhone/a50/icons/i5.png",
+        icon: "/smartphone/a50/icons/i5.webp",
         title: "Panorama",
     },
     {
         id: 6,
-        icon: "/SmartPhone/a50/icons/i6.png",
+        icon: "/smartphone/a50/icons/i6.webp",
         title: "Timelapse",
     },
     {
         id: 7,
-        icon: "/SmartPhone/a50/icons/i7.png",
+        icon: "/smartphone/a50/icons/i7.webp",
         title: "Short Video",
     },
     {
         id: 8,
-        icon: "/SmartPhone/a50/icons/i8.png",
+        icon: "/smartphone/a50/icons/i8.webp",
         title: "AR Shots",
     },
 ];
@@ -164,12 +164,12 @@ export const frame2IconsData = [
 export const frame4IconsData = [
     {
         id: 1,
-        icon: "/SmartPhone/a50/icons/f4Logo.png",
+        icon: "/smartphone/a50/icons/f4Logo.webp",
         title: "Octa-Core Processor",
     },
     {
         id: 2,
-        icon: "/SmartPhone/a50/icons/f4Logo2.png",
+        icon: "/smartphone/a50/icons/f4Logo2.webp",
         title: "UNISOC T603",
     },
 ]
@@ -183,11 +183,11 @@ export const a50ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#AFE1C1]",
-        bgURL: '/SmartPhone/a05/galleryBG/orange.png',
+        bgURL: '/smartphone/a05/galleryBG/orange.webp',
         images: [
-            "/SmartPhone/a50/green1.png",
-            "/SmartPhone/a50/green2.png",
-            "/SmartPhone/a50/green3.png"
+            "/smartphone/a50/green1.webp",
+            "/smartphone/a50/green2.webp",
+            "/smartphone/a50/green3.webp"
         ],
     },
     {
@@ -198,11 +198,11 @@ export const a50ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#FBF0CA]",
-        bgURL: '/SmartPhone/a05/galleryBG/white.png',
+        bgURL: '/smartphone/a05/galleryBG/white.webp',
         images: [
-            "/SmartPhone/a50/g1.png",
-            "/SmartPhone/a50/g2.png",
-            "/SmartPhone/a50/g3.png"
+            "/smartphone/a50/g1.webp",
+            "/smartphone/a50/g2.webp",
+            "/smartphone/a50/g3.webp"
         ]
     },
     {
@@ -213,10 +213,10 @@ export const a50ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#3B4455]",
-        bgURL: '/SmartPhone/a05/galleryBG/green.png',
+        bgURL: '/smartphone/a05/galleryBG/green.webp',
         images: [
-            "/SmartPhone/a50/black1.png",
-            "/SmartPhone/a50/black2.png",
+            "/smartphone/a50/black1.webp",
+            "/smartphone/a50/black2.webp",
         ]
     },
     {
@@ -227,12 +227,12 @@ export const a50ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#C3E1F8]",
-        bgURL: '/SmartPhone/a05/galleryBG/blue.png',
+        bgURL: '/smartphone/a05/galleryBG/blue.webp',
         images: [
-            "/SmartPhone/a50/b1.png",
-            "/SmartPhone/a50/b2.png",
-            "/SmartPhone/a50/b3.png",
-            "/SmartPhone/a50/b4.png",
+            "/smartphone/a50/b1.webp",
+            "/smartphone/a50/b2.webp",
+            "/smartphone/a50/b3.webp",
+            "/smartphone/a50/b4.webp",
         ]
     },
 ];

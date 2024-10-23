@@ -13,16 +13,16 @@ export default function A50() {
   return (
     <div className='bg-white font-markot'>
         <A50Heropage/>
-        <StickyHeader bgColor="#fff" title="A50" icon="/SmartPhone/a05/logos/a05StickyIcon.png" />
+        <StickyHeader bgColor="#fff" title="A50" icon="/smartphone/a05/logos/a05StickyIcon.png" />
         <FeatureRich {...a50FeatureRichData}/>
         <A05Video/>
-        <img src="/SmartPhone/a05/moblePatterns.png" alt="mobilePatterns" className="flex lg:hidden w-full" />
-        <img src="/SmartPhone/a05/Patterns.png" alt="patterns" className="hidden lg:flex w-full" />
+        <img src="/smartphone/a05/moblePatterns.png" alt="mobilePatterns" className="flex lg:hidden w-full" />
+        <img src="/smartphone/a05/Patterns.png" alt="patterns" className="hidden lg:flex w-full" />
         <Frames/>
 
-       <div className='md:h-screen h-[215px] w-full flex items-center justify-center bg-cover bg-center md:bg-[url("/SmartPhone/a50/4mo.png")] bg-[url("/SmartPhone/a50/4mob.png")] my-[40px] md:my-[100px]'>
-          <img src="/SmartPhone/a50/grp.png" alt="grp" className='w-[80%] hidden md:flex lg:pt-[60px] pt-[40px]'/>
-          <img src="/SmartPhone/a50/grpMob.png" alt="grp" className='w-[80%] md:hidden flex pt-[20px]'/>
+       <div className='md:h-screen h-[215px] w-full flex items-center justify-center bg-cover bg-center md:bg-[url("/smartphone/a50/4mo.webp")] bg-[url("/smartphone/a50/4mob.webp")] my-[40px] md:my-[100px]'>
+          <img src="/smartphone/a50/grp.webp" alt="grp" className='w-[80%] hidden md:flex lg:pt-[60px] pt-[40px]'/>
+          <img src="/smartphone/a50/grpMob.webp" alt="grp" className='w-[80%] md:hidden flex pt-[20px]'/>
        </div>
 
         <Sections/>
@@ -32,7 +32,7 @@ export default function A50() {
             showTitleInMobile={true}
           />
 
-          <FullSpecifications FullSpecificationsData={a50FullSpecifications} mode='light' gifStar='/SmartPhone/a05/startImg.png'/>
+          <FullSpecifications FullSpecificationsData={a50FullSpecifications} mode='light' gifStar='/smartphone/a05/startImg.png'/>
     </div>
   )
 }
