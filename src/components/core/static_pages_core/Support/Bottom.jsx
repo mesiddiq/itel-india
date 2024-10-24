@@ -5,18 +5,22 @@ const Bottom = () => {
     {
       img:"/static_page/Support2/Group%201973339728%20(1).png",
       title:"CALL US",
-      reach:"1800-4190-525"
+      reach:"1800-4190-525",
+      link:"tel:18004190525"
     },
     {
       img:"/static_page/Support2/Group%201973339729%20(1).png",
       title:"CHAT WITH US",
-      reach:"1800-4190-525"
+      reach:"CLICK HERE",
+      link: "https://wa.me/18004190525"
     },
     
     {
       img:"/static_page/Support2/Group%201973339730.png",
       title:"E-MAIL US",
-      reach:"1800-4190-525"
+      reach:"info.in@transsion.com",
+      link:"mailto:info.in@transsion.com"
+
     },
     
   ]
@@ -54,7 +58,10 @@ const Bottom = () => {
                         <img className=" h-[29px] w-[29px]" src={data.img} alt="" />
                         <div className="  space-y-[6px] lg:space-y-2">
                          <p className=" text-mobile/title lg:text-desktop/title text-grey/grey/4">{data.title}</p>
-                        <p className=" text-brand/black text-mobile/h6 lg:text-desktop/button">{data.reach}</p>  
+                         <a href={data.link}>
+                           <p className=" text-brand/black text-mobile/h6 lg:text-desktop/button">{data.reach}</p>
+                         </a>
+                         
                         </div>
                        
                       </div>
