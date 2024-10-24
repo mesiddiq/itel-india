@@ -4,7 +4,7 @@ import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../../data/Fo
 const Footer = () => {
     return (
         <>
-            <div className='w-full p-[20px] pt-[40px] md:p-[60px] bg-[#171717]'>
+            <div className='w-full p-[20px] pt-[40px] md:p-[60px] bg-[#171717] font-markot'>
                 <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
                     <div className="col-span-1 md:col-span-2">
                         <div className='pb-3'><img src={'/footer/itel.png'} /></div>
@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full' style={{ marginTop: '0px' }}>
+            <div className='w-full'>
                 <div className='hidden md:flex bg-[#1E1E1E] h-[50px] justify-center items-center text-center'>
                     <p className='text-[12px] mr-[25px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>© 2021 itel. All right reserved.</p>
                     <p className='text-[12px] mx-[25px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>Privacy policy</p>

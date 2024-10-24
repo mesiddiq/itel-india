@@ -19,11 +19,13 @@ import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
 import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
 import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
 import ModernTwist from "../../components/core/s_series_core/S_Twenty_Four/ModernTwist"
+import HeroSection1 from "../../components/core/s_series_core/S_Twenty_Four/HeroSection1"
 
 const STwentyFour = () => {
     return (
         <>
-            <HeroSection />
+            {/* <HeroSection /> */}
+            <HeroSection1 />
 
             <OverViewBanner />
 
@@ -36,7 +38,7 @@ const STwentyFour = () => {
             <FillerFrame />
 
             <CameraSpecifications />
-            
+
             <SensorZoom />
 
             <MultipleCameraModes />
@@ -53,10 +55,10 @@ const STwentyFour = () => {
 
             <MultipleCardComponents />
 
-            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false}/>
+            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false} />
 
             <div className="px-4 py-[60px] lg:py-[120px] bg-[#1c1b1b]">
-                <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark"/>
+                <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark" />
             </div>
         </>
     )

@@ -8,7 +8,9 @@ const ExtendedBattery = () => {
                 <div className="absolute -left-40 -top-48">
                     <div className="relative border border-black">
                         <img src="/featurephone/Ace2Power/Backgrounds/extended_battery_phone.webp" alt="Ace 2 Power" className="" />
-
+                        <h1 className="text-desktop/body/1 absolute right-0 top-1/2">
+                            Press to activate super battery mode
+                        </h1>
                     </div>
                 </div>
 

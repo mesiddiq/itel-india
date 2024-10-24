@@ -16,6 +16,7 @@ import {
 import GreatVisuals from '../../components/core/feature_phone/it5027/GreatVisuals'
 import SaveYourContacts from '../../components/core/feature_phone/it5027/SaveYourContacts'
 import YourOwnLanguage from '../../components/core/feature_phone/it5027/YourOwnLanguage'
+import CreateYourStyle from '../../components/core/feature_phone/it5027/CreateYourStyle'
 
 const It5027 = () => {
     return (
@@ -25,6 +26,7 @@ const It5027 = () => {
             <FeatureRich {...FeatureRichDatait5027} />
             <PhoneSliderAnimation />
             <GreatVisuals/>
+            <CreateYourStyle/>
             <KingVoice {...KingVoiceDatait5027} />
             <SaveYourContacts/>
             <YourOwnLanguage/>

@@ -2,7 +2,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
-import {  Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/static_pages/HomePage'
 import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
@@ -45,6 +45,8 @@ import HomePageButtons from './components/common/HomePageButtons'
 import ASeventy from './pages/a_series/ASeventy'
 import A05 from './pages/a_series/A05'
 import ATwentyThreeS from './pages/a_series/ATwentyThreeS'
+import A50C from './pages/a_series/A50C'
+import Navbar from './pages/Navbar'
 
 
 function App() {
@@ -58,8 +60,9 @@ function App() {
 
 	return (
 		<main>
+			<Navbar />
 			<Routes>
-				<Route path='/' element={<HomePageButtons />} />
+				<Route path='/' element={<HomePage />} />
 
 				{/********************************************************/}
 				{/* 					Static Pages					 					*/}
@@ -103,7 +106,7 @@ function App() {
 					<Route path='p55plus' element={<PFiftyFivePlus />} />
 					<Route path='p55T' element={<PFiftyFiveT />} />
 				</Route>
-               
+
 
 				{/********************************************************/}
 				{/* 					A series						 */}
@@ -113,8 +116,8 @@ function App() {
 					<Route path='a05i' element={<A05i />} />
 					<Route path='a50c' element={<A50C />} />
 					<Route path='a70' element={<ASeventy />} />
-					<Route path='a05' element={<A05/>} />
-					<Route path='a23s' element={<ATwentyThreeS/>} />
+					<Route path='a05' element={<A05 />} />
+					<Route path='a23s' element={<ATwentyThreeS />} />
 				</Route>
 
 
@@ -134,6 +137,7 @@ function App() {
 					<Route path='power-450' element={<Power450 />} />
 					<Route path='ace-2-power' element={<Ace2Power />} />
 				</Route>
+				<Route path="navbar" element={<Navbar />} />
 			</Routes>
 			<Footer />
 		</main>
