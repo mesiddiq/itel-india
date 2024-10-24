@@ -1,6 +1,16 @@
 import Aos from 'aos'
 import React, { useEffect, useRef, useState } from 'react'
-import { useSize } from 'react-haiku'
+import { For, useSize } from 'react-haiku'
+// Import Swiper React components
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+
 
 const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
 
