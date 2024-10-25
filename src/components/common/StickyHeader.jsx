@@ -10,7 +10,7 @@ const StickyHeader = ({
     dark // Pass the dark as true if is dark otherwise don't use it
 }) => {
     return (
-        <div className='px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]' style={{ backgroundColor: bgColor ? bgColor : '#181818' }}>
+        <div className='px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]' style={{ background: bgColor ? bgColor : '#181818' }}>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
                     <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className='size-10' />
