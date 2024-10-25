@@ -233,7 +233,7 @@ const Navbar = () => {
 
                 <div className="h-[50px] max-w-[1281px] w-11/12 mx-auto flex justify-between items-center ">
                     <Link to={'/'} >
-                        <img src="/itel.png" alt="" className="" />
+                        <img src="/static_page/homepage/itel.png" alt="" className="" />
                     </Link>
 
                     <div className="w-[712px] h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">

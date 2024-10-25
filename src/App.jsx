@@ -47,6 +47,7 @@ import A05 from './pages/a_series/A05'
 import ATwentyThreeS from './pages/a_series/ATwentyThreeS'
 import A50C from './pages/a_series/A50C'
 import Navbar from './pages/Navbar'
+import ScrollToTop from './utils/ScrollToTop'
 
 
 function App() {
@@ -62,7 +63,7 @@ function App() {
 		<main>
 			<Navbar />
 			<Routes>
-				<Route path='/' element={<HomePage />} />
+				<Route path='/' element={<HomePageButtons />} />
 
 				{/********************************************************/}
 				{/* 					Static Pages					 					*/}
@@ -71,15 +72,15 @@ function App() {
 
 				<Route path='/homepage' element={<HomePage />} />
 				<Route path='/support' element={<Support />} />
-				<Route path='/screenreplacement' element={<ScreenReplacement />} />
-				<Route path='/e-waste-management' element={<EWaste />} />
-				<Route path='/100-days-promise' element={<Promise100 />} />
-				<Route path='/csr' element={<CSR />} />
-				<Route path='/aboutus' element={<Aboutus />} />
-				<Route path='/contactus' element={<Contactus />} />
-				<Route path='/servicecenters' element={<ServiceCenters />} />
-				<Route path='/FAQ' element={<FAQ />} />
-				<Route path='/pagenotfound' element={<NotFound />} />
+				<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
+				<Route path='/support/e-waste-management' element={<EWaste />} />
+				<Route path='/support/100-days-service-promise' element={<Promise100 />} />
+				<Route path='/corporate-social-responsibility-csr' element={<CSR />} />
+				<Route path='/about-us-itel-mobile-india' element={<Aboutus />} />
+				<Route path='/contact-us' element={<Contactus />} />
+				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
+				<Route path='/support/faqs' element={<FAQ />} />
+				<Route path='/page-not-found' element={<NotFound />} />
 
 
 				{/* ***************************************************************************************************/}
@@ -90,9 +91,9 @@ function App() {
 				{/* 					S series						 */}
 				{/********************************************************/}
 
-				<Route path='/smartphones/s-series' element={<S_Series_Parent />} >
+				<Route path='/product' element={<S_Series_Parent />} >
 					<Route path='s23' element={<STwentyThree />} />
-					<Route path='s23p' element={<STwentyThreePlus />} />
+					<Route path='s23-plus' element={<STwentyThreePlus />} />
 					<Route path='s24' element={<STwentyFour />} />
 				</Route>
 
@@ -100,11 +101,11 @@ function App() {
 				{/* 					P series						 */}
 				{/********************************************************/}
 
-				<Route path='/smartphones/p-series' element={<P_Series_Parent />} >
+				<Route path='/product' element={<P_Series_Parent />} >
 					<Route path='p55-5g' element={<PFiftyFive5g />} />
 					<Route path='p55' element={<PFiftyFive />} />
-					<Route path='p55plus' element={<PFiftyFivePlus />} />
-					<Route path='p55T' element={<PFiftyFiveT />} />
+					<Route path='p55-plus' element={<PFiftyFivePlus />} />
+					<Route path='p55t' element={<PFiftyFiveT />} />
 				</Route>
 
 
@@ -112,27 +113,27 @@ function App() {
 				{/* 					A series						 */}
 				{/********************************************************/}
 
-				<Route path='/smartphones/a-series' element={<A_Series_Parent />} >
-					<Route path='a05i' element={<A05i />} />
-					<Route path='a50c' element={<A50C />} />
+				<Route path='/product' element={<A_Series_Parent />} >
+					<Route path='a05-i' element={<A05i />} />
+					<Route path='a50-c' element={<A50C />} />
 					<Route path='a70' element={<ASeventy />} />
 					<Route path='a05' element={<A05 />} />
-					<Route path='a23s' element={<ATwentyThreeS />} />
+					<Route path='a23-s' element={<ATwentyThreeS />} />
 				</Route>
 
 
 				{/***************************************************************************************************/}
 				{/*****************************************Feature Phoness*******************************************/}
 				{/***************************************************************************************************/}
-				<Route path='/featurephones'>
+				<Route path='/product'>
 					<Route path='super-guru-4g' element={<SuperGuru4G />} />
 					<Route path='super-guru-400' element={<SuperGuru400 />} />
 					<Route path='super-guru-600' element={<SuperGuru600 />} />
 					<Route path='circle-1' element={<Circle1 />} />
-					<Route path='it-2175p' element={<It2175p />} />
-					<Route path='it-5262' element={<It5262 />} />
-					<Route path='it-5027' element={<It5027 />} />
-					<Route path='it-5330' element={<It5330 />} />
+					<Route path='it2175p' element={<It2175p />} />
+					<Route path='it5262' element={<It5262 />} />
+					<Route path='it5027' element={<It5027 />} />
+					<Route path='it5330' element={<It5330 />} />
 					<Route path='power-120' element={<Power120 />} />
 					<Route path='power-450' element={<Power450 />} />
 					<Route path='ace-2-power' element={<Ace2Power />} />
@@ -140,6 +141,7 @@ function App() {
 				<Route path="navbar" element={<Navbar />} />
 			</Routes>
 			<Footer />
+			<ScrollToTop/>
 		</main>
 	)
 }

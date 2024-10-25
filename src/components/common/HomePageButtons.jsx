@@ -153,17 +153,17 @@ const HomePageButtons = () => {
                         Service Centers
                     </button>
                 </Link>
-                <Link to='/support/screenreplacement'>
+                <Link to='/screenreplacement'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Screen Replacement
                     </button>
                 </Link>
-                <Link to='/support/e-waste-management'>
+                <Link to='/e-waste-management'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         E-Waste Management
                     </button>
                 </Link>
-                <Link to='/support/100-days-promise'>
+                <Link to='/100-days-promise'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         100 Days Promise
                     </button>

@@ -29,8 +29,20 @@
 
 @font-face {
   font-family: "BricolageGrotesque";
-  src: url("/fonts/BricolageGrotesque.ttf") format('truetype');
-  font-family: 'BricolageGrotesque', sans-serif;
+  src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-Bold.ttf") format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "BricolageGrotesque";
+  src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-Regular.ttf") format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BricolageGrotesque";
+  src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-ExtraBold.ttf") format('truetype');
+  font-weight: 800;
 }
 
 @layer base {
