@@ -7,7 +7,7 @@ const BuyNowText = ({ content }) => {
         { content }
       </span>
       <span>
-        <img src='/smartphone/S24/rightArrow.svg' alt="arrowRight" className='w-6 h-6'/>
+        <img src='/Arrow_right.svg' alt="arrowRight" className='w-6 h-6'/>
       </span>
     </div>
   )
