@@ -48,6 +48,7 @@ import ATwentyThreeS from './pages/a_series/ATwentyThreeS'
 import A50C from './pages/a_series/A50C'
 import Navbar from './pages/Navbar'
 import ScrollToTop from './utils/ScrollToTop'
+import A50 from './pages/a_series/A50'
 
 
 function App() {
@@ -114,10 +115,11 @@ function App() {
 				{/********************************************************/}
 
 				<Route path='/product' element={<A_Series_Parent />} >
+					<Route path='a05' element={<A05 />} />
 					<Route path='a05-i' element={<A05i />} />
 					<Route path='a50-c' element={<A50C />} />
+					<Route path='a50' element={<A50 />} />
 					<Route path='a70' element={<ASeventy />} />
-					<Route path='a05' element={<A05 />} />
 					<Route path='a23-s' element={<ATwentyThreeS />} />
 				</Route>
 

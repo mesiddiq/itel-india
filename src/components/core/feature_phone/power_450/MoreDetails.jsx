@@ -21,7 +21,7 @@ const MoreDetails = () => {
 
             {/* **************************Section 02**************************** */}
 
-            <div className="pt-[30px] pb-[18px] lg:pt-[118px] px-4 font-markot h-[537px] lg:h-[800px] bg-cover bg-[url('/featurephone/Power_450/Backgrounds/power_style_bg_mobile.webp')] lg:bg-[url('/featurephone/Power_450/Backgrounds/power_style_bg.webp')]">
+            <div className="pt-[30px] pb-[18px] lg:pt-[118px] overflow-hidden px-4 font-markot h-[537px] lg:h-[800px] bg-cover bg-[url('/featurephone/Power_450/Backgrounds/power_style_bg_mobile.webp')] lg:bg-[url('/featurephone/Power_450/Backgrounds/power_style_bg.webp')]">
                 <div className="content flex flex-col lg:flex-row">
                     <div className="max-w-[512px]">
                         <h1 className="text-mobile/h4 lg:text-desktop/h1 ">

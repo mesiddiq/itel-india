@@ -229,7 +229,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='bg-brand/black py-4'>
+            <div className='bg-brand/black py-4 hidden lg:block'>
 
                 <div className="h-[50px] max-w-[1281px] w-11/12 mx-auto flex justify-between items-center ">
                     <Link to={'/'} >
@@ -256,7 +256,7 @@ const Navbar = () => {
                 </div>
 
             </div>
-            <div className='font-markot bg-[#1f1f1f]' ref={navRef} >
+            <div className='font-markot bg-[#1f1f1f] hidden lg:block' ref={navRef} >
                 <div className="max-w-[1050px] mx-auto w-11/12 gap-10 py-4 flex text-white ">
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setSmartPhone(prev => !prev)
