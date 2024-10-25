@@ -23,6 +23,7 @@ import ServiceCenters from './pages/static_pages/ServiceCenters'
 import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
 import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
+import ColorPro5G from './pages/color_series/ColorPro5G'
 import NotFound from './pages/static_pages/NotFound'
 
 import A_Series_Parent from './pages/a_series/A_Series_Parent'
@@ -90,6 +91,10 @@ function App() {
 					<Route path='s23' element={<STwentyThree />} />
 					<Route path='s23p' element={<STwentyThreePlus />} />
 					<Route path='s24' element={<STwentyFour />} />
+				</Route>
+
+				<Route path='/smartphones/color-series' element={<S_Series_Parent />} >
+					<Route path='color-pro-5g' element={<ColorPro5G />} />
 				</Route>
 
 				{/********************************************************/}
