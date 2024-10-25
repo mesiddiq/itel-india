@@ -14,6 +14,9 @@ import {
 import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 import StyleAndSubstance from '../../components/core/feature_phone/power_120/StyleAndSubstance'
 import BigScreen from '../../components/core/feature_phone/power_120/BigScreen'
+import EndlessPowerScreen from '../../components/core/feature_phone/power_120/EndlessPowerScreen'
+import CommunicationPage from '../../components/core/feature_phone/power_120/CommunicationPage'
+import HighIntensityTourch from '../../components/core/feature_phone/power_120/HighIntensityTourch'
 
 const Power120 = () => {
     return (
@@ -23,7 +26,10 @@ const Power120 = () => {
             <FeatureRich {...FeatureRichDataPower120} />
             <PhoneSliderAnimation />
             <BigScreen />
+            <EndlessPowerScreen/>
+            <HighIntensityTourch/>
             <KingVoice {...KingVoiceDataPower120} />
+            <CommunicationPage/>
             <StyleAndSubstance />
             <TechSpecs {...TechSpecsDataPower120} />
             <FeaturePhoneProductGallery {...ProductGalleryDataPower120} />
