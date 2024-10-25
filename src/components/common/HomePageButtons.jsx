@@ -6,17 +6,17 @@ const HomePageButtons = () => {
         <div className='flex gap-4 flex-wrap py-10 justify-center '>
             <div className=" flex flex-col gap-4">
                 <h1 className="text-2xl">S series</h1>
-                <Link to='/product/s-series/s23'>
+                <Link to='/product/s23'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s-23
                     </button>
                 </Link>
-                <Link to='/product/s-series/s23p'>
+                <Link to='/product/s23p'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s-23-plus
                     </button>
                 </Link>
-                <Link to='/product/s-series/s24'>
+                <Link to='/product/s24'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s-24
                     </button>

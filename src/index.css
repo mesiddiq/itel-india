@@ -223,3 +223,6 @@
 }
 
 
+.navbarmobile::-webkit-scrollbar{
+  display: none;
+}

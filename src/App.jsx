@@ -49,6 +49,7 @@ import A50C from './pages/a_series/A50C'
 import Navbar from './pages/Navbar'
 import ScrollToTop from './utils/ScrollToTop'
 import A50 from './pages/a_series/A50'
+import NavbarMobile from './pages/NavbarMobile'
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
 
 	return (
 		<main>
+			<NavbarMobile />
 			<Navbar />
 			<Routes>
 				<Route path='/' element={<HomePageButtons />} />
@@ -143,7 +145,7 @@ function App() {
 				<Route path="navbar" element={<Navbar />} />
 			</Routes>
 			<Footer />
-			<ScrollToTop/>
+			<ScrollToTop />
 		</main>
 	)
 }
