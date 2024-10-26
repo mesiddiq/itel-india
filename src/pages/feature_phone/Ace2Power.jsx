@@ -19,6 +19,8 @@ import {
     TechSpecsDataAce2Power
 } from '../../data/featurephonedata/Ace2Power'
 import { Helmet } from 'react-helmet'
+import DiveIntoWorld from '../../components/core/feature_phone/ace2power/DiveIntoWorld'
+import ExtendedBattery from '../../components/core/feature_phone/ace2power/ExtendedBattery'
 
 const Ace2Power = () => {
     return (
@@ -31,6 +33,8 @@ const Ace2Power = () => {
             <StickyHeader {...HeroDataAce2Power} />
             <FeatureRich {...FeatureRichDataAce2Power} />
             <PhoneSliderAnimation />
+            <ExtendedBattery/>
+            <DiveIntoWorld/>
             <KingVoice {...KingVoiceDataAce2Power} />
             <TechSpecs {...TechSpecsDataAce2Power} />
             <FeaturePhoneProductGallery {...ProductGalleryDataAce2Power} />

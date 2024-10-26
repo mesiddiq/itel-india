@@ -120,7 +120,7 @@ export const KingVoiceDataAce2Power = {
 }
 
 export const TechSpecsDataAce2Power = {
-    phoneUrl: '/featurephone/Ace2Power/Backgrounds/techspecs.webp',
+    phoneUrl: '/featurephone/Ace2Power/Backgrounds/phone_hero.webp',
     cards: [
         { id: '1', label: '4.5 cm (1.8”) Bright Display', icon: '/featurephone/common/connectivity.svg' },
         { id: '4', label: '2000 Phonebook', icon: '/featurephone/common/voice.svg' },

@@ -5,59 +5,74 @@ const HomePageButtons = () => {
     return (
         <div className='flex gap-4 flex-wrap py-10 justify-center '>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">Smartphones - S series</h1>
-                <Link to='/smartphones/s-series/s23'>
+                <h1 className="text-2xl">S series</h1>
+                <Link to='/product/s23'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s-23
                     </button>
                 </Link>
-                <Link to='/smartphones/s-series/s23p'>
+                <Link to='/product/s23p'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s-23-plus
                     </button>
                 </Link>
-                <Link to='/smartphones/s-series/s24'>
+                <Link to='/product/s24'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s-24
                     </button>
                 </Link>
             </div>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">Smartphones - A series</h1>
-                <Link to='/smartphones/a-series/a05i'>
+                <h1 className="text-2xl">A series</h1>
+                <Link to='/product/a05-i'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         A-05i
                     </button>
                 </Link>
-                <Link to='/smartphones/a-series/a70'>
+                <Link to='/product/a70'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         A-70
                     </button>
                 </Link>
-                <Link to='/smartphones/a-series/a23s'>
+                <Link to='/product/a23-s'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         A-23s
                     </button>
                 </Link>
+                <Link to='/product/a50'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        A-50
+                    </button>
+                </Link>
+                <Link to='/product/a50-c'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        A-50 c
+                    </button>
+                </Link>
+                <Link to='/product/a05'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        A-05
+                    </button>
+                </Link>
             </div>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">Smartphones - P series</h1>
-                <Link to='/smartphones/p-series/p55-5g'>
+                <h1 className="text-2xl">product - P series</h1>
+                <Link to='/product/p55-5g'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         p-55 5G
                     </button>
                 </Link>
-                <Link to='/smartphones/p-series/p55'>
+                <Link to='/product/p55'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         p-55
                     </button>
                 </Link>
-                <Link to='/smartphones/p-series/p55plus'>
+                <Link to='/product/p55-plus'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         p-55-plus
                     </button>
                 </Link>
-                <Link to='/smartphones/p-series/p55t'>
+                <Link to='/product/p55-t'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         p-55-T
                     </button>
@@ -65,57 +80,57 @@ const HomePageButtons = () => {
             </div>
             <div className=" flex flex-col gap-4">
                 <h1 className="text-2xl">Feature Phones</h1>
-                <Link to='/featurephones/ace-2-power'>
+                <Link to='/product/ace-2-power'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Ace 2 Power
                     </button>
                 </Link>
-                <Link to='/featurephones/super-guru-4g'>
+                <Link to='/product/super-guru-4g'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s guru 4g
                     </button>
                 </Link>
-                <Link to='/featurephones/super-guru-400'>
+                <Link to='/product/super-guru-400'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s guru 400
                     </button>
                 </Link>
-                <Link to='/featurephones/super-guru-600'>
+                <Link to='/product/super-guru-600'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s guru 600
                     </button>
                 </Link>
-                <Link to='/featurephones/power-120'>
+                <Link to='/product/power-120'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Power 120
                     </button>
                 </Link>
-                <Link to='/featurephones/power-450'>
+                <Link to='/product/power-450'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Power 450
                     </button>
                 </Link>
-                <Link to='/featurephones/it-5027'>
+                <Link to='/product/it5027'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         IT 5027
                     </button>
                 </Link>
-                <Link to='/featurephones/it-5262'>
+                <Link to='/product/it5262'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         IT 5262
                     </button>
                 </Link>
-                <Link to='/featurephones/it-5330'>
+                <Link to='/product/it5330'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         IT 5330
                     </button>
                 </Link>
-                <Link to='/featurephones/it-2175p'>
+                <Link to='/product/it2175p'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         IT 2175P
                     </button>
                 </Link>
-                <Link to='/featurephones/circle-1'>
+                <Link to='/product/circle-1'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Circle 1
                     </button>
@@ -153,17 +168,17 @@ const HomePageButtons = () => {
                         Service Centers
                     </button>
                 </Link>
-                <Link to='/support/screenreplacement'>
+                <Link to='/screenreplacement'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Screen Replacement
                     </button>
                 </Link>
-                <Link to='/support/e-waste-management'>
+                <Link to='/e-waste-management'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         E-Waste Management
                     </button>
                 </Link>
-                <Link to='/support/100-days-promise'>
+                <Link to='/100-days-promise'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         100 Days Promise
                     </button>

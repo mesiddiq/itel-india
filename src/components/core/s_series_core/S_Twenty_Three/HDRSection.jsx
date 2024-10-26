@@ -22,8 +22,8 @@ function HDRSection() {
                 <div className="w-4 h-24 bg-white rounded-full flex items-center justify-center absolute top-[150px] md:top-[190px]  -left-[7px] transform  ">
                 </div>
               </div>}
-              itemOne={<ReactCompareSliderImage src="/smartphone/S_Twenty_Three/HdrLeft.webp" alt="No HDR" className='blur-sm' />}
-              itemTwo={<ReactCompareSliderImage src="/smartphone/S_Twenty_Three/HdrRight.webp" alt="With HDR 4.0" />}
+              itemOne={<ReactCompareSliderImage src="/smartphone/S_Twenty_Three/HdrRight.webp" alt="No HDR" className='blur-sm h-full' />}
+              itemTwo={<ReactCompareSliderImage src="/smartphone/S_Twenty_Three/Hdrleft.webp" alt="With HDR 4.0" />}
               transition='1s ease-in-out'
             />
             <div className="absolute bottom-4 md:bottom-8 left-16 transform -translate-x-1/2 md:left-6 md:transform-none px-6 py-2 bg-gray-400 bg-opacity-30 text-white text-mobile/h7 md:text-desktop/title ">

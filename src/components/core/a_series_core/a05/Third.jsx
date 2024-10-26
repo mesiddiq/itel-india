@@ -1,6 +1,6 @@
 export default function Third() {
   return (
-    <div className="min-h-screen w-full flex md:py-[100px] md:px-[80px] py-[40px] px-[16px]">
+    <div className="w-full flex md:py-[100px] md:px-[80px] py-[40px] px-[16px]">
       
       {/* Parent container to wrap both divs */}
       <div className="flex flex-col md:flex-row w-full h-full justify-center space-y-[12px] md:space-y-0">

@@ -41,7 +41,7 @@ const HeroSection = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="relative h-[627px]" style={{ background: 'url(./herobanner/hero_banner_2.png)' }}>
+                <div className="relative h-[627px]" style={{ background: 'url(/herobanner/hero_banner_2.png)' }}>
                     {/* <img src="./herobanner/hero_banner_2.png" className='w-full object-cover' /> */}
                     adsfjdaskljfklsdaj
                 </div>

@@ -15,6 +15,8 @@ import {
 import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
 import BigScreen from '../../components/core/feature_phone/it5330/BigScreen'
 import StorageSuperstar from '../../components/core/feature_phone/it5330/StorageSuperstar'
+import EpicBatteryPower from '../../components/core/feature_phone/it5330/EpicBatteryPower'
+import GlassDesign from '../../components/core/feature_phone/it5330/GlassDesign'
 
 const It5330 = () => {
     return (
@@ -24,7 +26,9 @@ const It5330 = () => {
             <FeatureRich {...FeatureRichDatait5330} />
             <PhoneSliderAnimation />
             <BigScreen />
-            <StorageSuperstar/>
+            <EpicBatteryPower />
+            <GlassDesign />
+            <StorageSuperstar />
             <KingVoice {...KingVoiceDatait5330} />
             <TechSpecs {...TechSpecsDatait5330} />
             <FeaturePhoneProductGallery {...ProductGalleryDatait5330} />
