@@ -25,8 +25,8 @@ const ATwentyThreeS = () => {
         headingText="A23s"
         price={"4,799"}
         description={'4GB*(2GB+2GB*) RAM + 32GB ROM | Smart Face Unlock | 3020 mAh battery'}
-        bgDesktop={'/smartphone/A23s/Backgrounds/A23S-Hero.webp'}
-        bgMobile={'/smartphone/A23s/Backgrounds/A23sbannermobile.webp'}
+        bgDesktop={'/smartphone/smartphonehero/a23s.webp'}
+        bgMobile={'/smartphone/smartphonehero/a23s_mobile.webp'}
         gradient1='#ca86ff'
         gradient2='#85e2fd'
         theme='dark'

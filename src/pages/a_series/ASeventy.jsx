@@ -29,8 +29,8 @@ const ASeventy = () => {
         headingText="A70"
         price={"6,299"}
         description={'12GB* (4GB+8GB*) RAM + 256GB ROM | Dynamic bar | 13MP AI Dual Rear Camera'}
-        bgDesktop={'/smartphone/a70/A70Banner.webp'}
-        bgMobile={'/smartphone/a70/A70bannermobile.webp'}
+        bgDesktop={'/smartphone/smartphonehero/a70.webp'}
+        bgMobile={'/smartphone/smartphonehero/a70_mobile.webp'}
         gradient1='#ca86ff'
         gradient2='#85e2fd'
         theme='dark'

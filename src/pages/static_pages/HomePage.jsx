@@ -13,7 +13,7 @@ import OurCoolGadgets from '../../components/core/static_pages_core/Homepage/Our
 
 const HomePage = () => {
     return (
-        <div className='bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] px-5 md:px-0 overflow-x-hidden font-markot'>
+        <div className='bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] overflow-x-hidden font-markot'>
             <HeroSection />
             <EnjoyBetterLife />
             {/* <SimilarProducts /> */}
