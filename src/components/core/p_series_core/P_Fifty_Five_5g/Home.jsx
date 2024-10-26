@@ -1,4 +1,5 @@
 import React from 'react';
+import BuyNowText from '../../../common/smartphone_common/BuyNowText';
 
 const Home = () => {
   return (
@@ -30,6 +31,15 @@ const Home = () => {
             Starting from{' '}
             <span className="font-bold text-desktop/h5">₹9,999/-</span>
           </p>
+          <div className="bg-BuyNowSquareBG bg-contain bg-no-repeat relative w-[160px] h-[48px] flex flex-col justify-center items-center">
+          <button className="flex gap-3 items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
+                    <span className="flex overflow-hidden gap-2 items-center">
+                      <span>Buy Now</span>
+                      <img loading="lazy" src="/P_Series/arrow-right.png" alt="" className="object-contain w-6" />
+                    </span>
+                  </button>
+    </div>
+        
         </div>
       </div>
 

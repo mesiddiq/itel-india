@@ -2,20 +2,23 @@ import React from 'react';
 
 const StayPlugged = () => {
     return (
-        <div className='content'>
-            <div className='hidden md:grid md:grid-cols-2 md:gap-4 StayPlugged md:place-items-center w-full h-[650px]'>
-                <div className='pl-[20%] text-white'>
-                    <h2 className='text-[36px] font-[700] leading-[46.8px] pb-3'>Stay Plugged into Your<br/>Go-to Socials with itel</h2>
-                    <p className='text-[16px] font-[300] leading-[20.2px]'>Get all the must-have accessories for your fav itel mobile, like the itel power bank and itel earphone.</p>
+        <div className='content lg:px-[119px] relative h-[462px] lg:h-auto'>
+            <div className='flex flex-col-reverse lg:flex-row justify-between items-center z-20'>
+                <button className="z-20 mt-4 lg:hidden">
+                    <img src="/static_page/homepage/staypluggedcta.png" alt="" className='' />
+                </button>
+                <div className=' text-white max-w-[296px] text-center lg:text-left lg:max-w-[463px] z-20 '>
+                    <h2 className='lg:text-[36px] font-bold lg:leading-[46.8px] text-desktop/h4 '>Stay Plugged into Your<br />Go-to Socials with itel</h2>
+                    <p className='lg:text-desktop/body/1 lg:leading-6 text-[14px] leading-4 -tracking-[0.14px] text-white/80 mt-2 lg:m-4 '>Get all the must-have accessories for your fav itel mobile, like the itel power bank and itel earphone.</p>
+                    <button className="z-20 mt-8 lg:block hidden">
+                        <img src="/static_page/homepage/staypluggedcta.png" alt="" className='' />
+                    </button>
                 </div>
-                <div><img src={'./selfie.png'} /></div>
-            </div>
-            <div className='md:hidden StayPluggedMobile flex flex-col justify-center items-center text-center w-full h-[650px]'>
-                <div className='w-[80%]' style={{ margin: '0 auto' }}><img src={'./selfie.png'} /></div>
-                <div className='w-[80%] text-white' style={{ margin: '0 auto' }}>
-                    <h2 className='text-[24px] md:text-[36px] font-[700] leading-[31px] md:leading-[46.8px] pb-3'>Stay Plugged into Your<br/>Go-to Socials with itel</h2>
-                    <p className='text-[14px] md:text-[16px] font-[300] leading-[16.8px] md:leading-[20.2px]'>Get all the must-have accessories for your fav itel mobile, like the itel power bank and itel earphone.</p>
+                <div className=' max-w-[302px] lg:max-w-[517px] z-20'>
+                    <img src={'/static_page/homepage/selfie.png'} />
                 </div>
+                <img src="/static_page/homepage/stayplugged.png" className='absolute top-0 left-0 z-10 hidden lg:block' />
+                <img src="/static_page/homepage/stayplugged-mobile.png" className='absolute left-1/2 -translate-x-1/2 z-10 top-0 lg:hidden' />
             </div>
         </div>
     )

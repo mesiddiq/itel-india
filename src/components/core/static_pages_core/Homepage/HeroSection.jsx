@@ -20,6 +20,7 @@ const HeroSection = () => {
                 clickable: true,
             }}
             autoplay
+            loop
             modules={[EffectFade, Pagination]}
             className="mySwiper max-h-screen w-full "
         >
@@ -41,8 +42,7 @@ const HeroSection = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="relative h-[627px]" style={{ background: 'url(./herobanner/hero_banner_2.png)' }}>
-                    {/* <img src="./herobanner/hero_banner_2.png" className='w-full object-cover' /> */}
+                <div className="relative h-[627px]" style={{ background: 'url(https://res.cloudinary.com/djwj42mic/image/upload/v1729919870/Hero_Banner_2_vcvtht.png)' }}>
                     adsfjdaskljfklsdaj
                 </div>
             </SwiperSlide>
@@ -53,6 +53,23 @@ const HeroSection = () => {
                         muted
                         loop
                         src="https://res.cloudinary.com/djwj42mic/video/upload/v1728548505/Screen_Recording_2024-10-09_at_2.42.54_PM_v4tncr.mov" className='w-full object-cover absolute top-0'
+                    />
+                    <div className="content space-y-4 absolute">
+                        <div className="w-fit">
+                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from' >coming soon</h3>
+                        </div>
+                        <h1 className='text-desktop/h1 text-white font-bold '>The Ulitimate Hair <br /> Dryer Collection</h1>
+                        <h5 className='font-medium text-[24px] leading-6 text-white'>itel Hair Dryers</h5>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="relative h-[627px] flex justify-center pt-[114px]">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        src="https://res.cloudinary.com/djwj42mic/video/upload/v1729919874/Hero_Banner_1_vs70qm.webm" className='w-full object-cover absolute top-0'
                     />
                     <div className="content space-y-4 absolute">
                         <div className="w-fit">

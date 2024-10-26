@@ -1,5 +1,5 @@
 export const HeroData = {
-    title: "P55 5g",
+    title: "S24",
     subtitle:''
 }
 

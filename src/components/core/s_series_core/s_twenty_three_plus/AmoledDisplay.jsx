@@ -1,41 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const AmoledDisplay = (props) => {
-  const { scrollY } = props;
-  const [startAnimation, setStartAnimation] = useState(false);
-  const [showImages, setShowImages] = useState(false);
-
-  useEffect(() => {
-    if (screen.width > 1000) {
-      setStartAnimation(scrollY >= 2700);
-    } else {
-      setStartAnimation(scrollY >= 1900);
-    }
-  }, [scrollY]);
-
-  useEffect(() => {
-    console.log("startAmoledAnimation", startAnimation);
-    if (startAnimation) {
-      const startVideo = setTimeout(() => {
-        setShowImages(true);
-      }, 500); // Delay before showing the paragraph
-
-      return () => clearTimeout(startVideo);
-    }
-  }, [startAnimation]);
-
+const AmoledDisplay = () => {
   return (
-    <div className='amoled-display-section'>
-      {showImages && (
-        <>
-        	<div className='amoled-display-section-phone'>
-        		<img src='/s_twenty_three_plus/AmoledDisplayPhone.svg' width={840} height={425} />
-        	</div>
-        	<div className='amoled-display-section-text'>
-        		<img src='/s_twenty_three_plus/AmoledDisplayText.svg' width={872} height={401} />
-        	</div>
-        </>
-      )}
+    <div className='flex relative w-full h-[330px] md:h-[800px] p-0 bg-[url("/smartphone/S23+/Backgrounds/AmoledDisplayBg.webp")] bg-cover bg-center overflow-hidden' style={{ marginTop: '0px' }}>
+        <div className='content'>
+          <div className='w-[80%] md:w-auto absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[9]'>
+            <img src='/smartphone/S23+/Backgrounds/AmoledDisplayGraphic.webp' className='transform scale-[1.2]' data-aos="fade-up" />
+          </div>
+        </div>
     </div>
   );
 };

@@ -34,11 +34,21 @@ export default {
 				's23p/to':'#85e2fd',
 				's23/from':'#DACFF9',
 				's23/to':'#5C5C7E',
+				
 			},
 			fontSize: {
 				'desktop/large/h': ['136px', {
 					lineHeight: '149.6px',
 					fontWeight: '500'
+				}],
+				'featurephone/heading': ['60px', {
+					lineHeight: '72px',
+					fontWeight: '500',
+					letterSpacing:'-1.2px'
+				}],
+				'featurephone/paragraph': ['16px', {
+					lineHeight: '22.7px',
+					fontWeight: '400',
 				}],
 				'desktop/h1': ['80px', {
 					lineHeight: '96px',
@@ -212,12 +222,29 @@ export default {
 			backgroundImage: {
 				'ultraStorageVault': "url('/smartphone/S24/ultra-storage-vault.png')",
 				'imageCarouselBackground': "url('/smartphone/S24/imageCarouselBackground.png')",
-				'fullSpecificationsActiveTabgradient': 'linear-gradient(to right, rgba(255, 0, 55, 0.2) 0%, transparent 7%, transparent 50%, transparent 80%, transparent 100%)',
 				'BuyNowSquareBG': "url('/smartphone/S24/ButtonBackground.png')",
 				'dualDTSSpeaker': "url('/smartphone/S24/dualDTSSpeaker.png')",
+				
+				'fullSpecificationsActiveTabgradient': 'linear-gradient(to right, rgba(255, 0, 55, 0.2) 0%, transparent 7%, transparent 50%, transparent 80%, transparent 100%)',
+				
+				'p55SeeMoreCaptureMoreLaptop': "url('/smartphone/P55/SeeMoreCaptureMore-Laptop.png')",
+				'p55SeeMoreCaptureMoreMobile': "url('/smartphone/P55/SeeMoreCaptureMore-Mobile.png')",
+				'superfastUnisocBGLaptop': "url('/smartphone/P55/superfastUnisocBGLaptop.png')",
+				'superfastUnisocBGMobile': "url('/smartphone/P55/superfastUnisocBGMobile.png')",
+				'clearVisionBG': "url('/smartphone/P55/clearVisionBG.png')",
+				'frame24GB': "url('/smartphone/P55/frame24GB.png')",
+
+				'superfastUnisocGradient': 'linear-gradient(101.38deg, #D5EEF9 -22.94%, #70A2E1 77.36%)',
+				'frame24GBGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
+				'multipleCardComponentsGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
+
+				'RAMHighPerformanceGradient': 'linear-gradient(240.94deg, #DFF4FF 0.88%, rgba(230, 221, 255, 0) 56.21%)',
+				'MultiTaskEaseGradient': 'linear-gradient(289.9deg, rgba(221, 248, 255, 0.1) 7.77%, #E6DDFF 92.5%)',
+				'HighPerformanceGradient': 'linear-gradient(251.2deg, rgba(221, 248, 255, 0.3) 0%, #E6DDFF 40.29%)',
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
+				
 			},
 			backgroundSize: {
 				'85': '85%',
