@@ -3,6 +3,21 @@ import { useEffect, useRef } from "react"
 import { useSize } from "react-haiku"
 import { MdCurrencyRupee } from 'react-icons/md'
 
+/**
+ * @function HeroSmartPhoneCommon
+ * @description A common component for smartphone hero sections, with animations and a gradient background.
+ * @param {Object} props Component props
+ * @prop {string} bgDesktop Hero Background url for desktop
+ * @prop {string} bgMobile Hero Background url for mobile
+ * @prop {number} price Product price
+ * @prop {string} headingText Product Heading
+ * @prop {string} tagText Tag text
+ * @prop {string} theme Theme dark | light
+ * @prop {string} purchaseLink Product purchase link
+ * @prop {string} description Product description
+ * @prop {string} [gradient1="#3a3358"] Gradient 1 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
+ * @prop {string} [gradient2="#3a3358"] Gradient 2 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
+ */
 export default function HeroSmartPhoneCommon({
     bgDesktop, // Hero Background url for desktop
     bgMobile, // Hero Background url for mobile

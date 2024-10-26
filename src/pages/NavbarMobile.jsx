@@ -24,6 +24,16 @@ const ArrowRight = ({ isActive }) => {
     )
 }
 
+/**
+ * @description
+ * This component is used to render the navbar on mobile devices. It contains
+ * a hamburger menu button that when clicked, toggles the visibility of the
+ * navbar. The navbar contains a list of links to different pages on the website.
+ * The component also handles the state of the navbar, keeping track of whether
+ * it is visible or not.
+ * @param {object} props - The component props.
+ * @returns {JSX.Element} - The rendered navbar component.
+ */
 const NavbarMobile = () => {
 
     const [isNavActive, setIsNavActive] = useState(false)

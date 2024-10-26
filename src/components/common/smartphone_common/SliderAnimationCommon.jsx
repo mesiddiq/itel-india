@@ -2,6 +2,19 @@ import Marquee from "react-fast-marquee";
 
 // import '../../../../pages/s_series/style.css';
 
+/**
+ * @function SliderAnimationCommon
+ * @description A common component for creating a marquee slider with a icon in the middle. The component also supports a text gradient if required.
+ * @prop {string} text1 Text 1 for the marquee
+ * @prop {string} text2 Text 2 for the marquee
+ * @prop {string} icon Pass the icon (You can pass the svg code no need to download it)
+ * @prop {string} svgCode If you are passing the svg code then pass the svg code
+ * @prop {string} bgColor Pass the background color
+ * @prop {string} textColor Pass the text color (if not gradient then pass the text color)
+ * @prop {string} textGradient1 Pass the text gradient (if not gradient then pass the text color)
+ * @prop {string} textGradient2 Pass the text gradient (if not gradient then pass the text color)
+ * @returns {ReactElement} SliderAnimationCommon component
+ */
 const SliderAnimationCommon = ({
     text1, // Text 1 for the marquee
     text2, // Text 2 for the marquee
