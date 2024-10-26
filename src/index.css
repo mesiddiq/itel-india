@@ -228,15 +228,26 @@
   }
 }
 
-@media (max-width: 380px) {
-  .responsive-bg {
-    background-size: contain !important;
-  }
-  .responsive-bg-height {
-    height: 383px !important;
-  
+@media (width: 1024px) {
+  .responsive-Tab img{
+      width: 600px;
+      left: 16rem;
+      position: absolute;
+      top: 7rem;
   }
 }
-.navbarmobile::-webkit-scrollbar{
+
+@media (max-width: 380px) {
+  .responsive-bg {
+    background-size: 100% 100% !important;
+  }
+
+  .responsive-bg-height {
+    height: 400px !important;
+
+  }
+}
+
+.navbarmobile::-webkit-scrollbar {
   display: none;
 }
