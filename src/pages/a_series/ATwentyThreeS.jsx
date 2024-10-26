@@ -4,8 +4,6 @@ import HeroSmartPhoneCommon from "../../components/common/smartphone_common/Hero
 import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
 import StickyHeader from "../../components/common/StickyHeader"
 import FeatureSectionA23s from "../../components/core/a_series_core/a23S/FeatureSectionA23s"
-import HeroSectionOfA23SPage from "../../components/core/a_series_core/a23S/HeroSectionOfA23SPage"
-import ScrollingBannerA23S from "../../components/core/a_series_core/a23S/ScrollingBannerA23s"
 import Section1TechPartner from "../../components/core/a_series_core/a23S/Section1TechPartner"
 import Section2FastWork from "../../components/core/a_series_core/a23S/Section2FastWork"
 import Section3EnhanceBattery from "../../components/core/a_series_core/a23S/Section3EnhanceBattery"
