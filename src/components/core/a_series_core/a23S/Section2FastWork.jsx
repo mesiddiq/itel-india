@@ -9,8 +9,10 @@ const StorageItem = ({ imgSrc, altText, text }) => (
 );
 
 const Section2FastWork = () => (
-  <GradientBackgroundWrapper bgImage='/smartphone/A23s/Backgrounds/StorageBG.webp' mobileBgImage='/smartphone/A23s/Backgrounds/storageROM-mobile.webp' paddingStart='60px'>
-    <div className='md:h-[739px] h-[444px] text-center lg:pt-[115px] md:text-left text-black flex w-full lg:justify-end justify-center content'>
+  <GradientBackgroundWrapper bgImage='/smartphone/A23s/Backgrounds/StorageBG.webp'
+  
+   mobileBgImage='/smartphone/A23s/Backgrounds/storageROM-mobile.webp' paddingStart='60px'>
+    <div className='md:h-[739px] h-[501px] text-center lg:pt-[115px] md:text-left text-black flex w-full lg:justify-end justify-center content'>
       <div className=''>
         <div className='lg:w-[521px] lg:h-[508px] lg:me-[46px] justify-between flex flex-col gap-4 lg:gap-8'>
           <div className='flex flex-col gap-2 lg:gap-5 text-center lg:text-left'>
@@ -29,7 +31,12 @@ const Section2FastWork = () => (
               <StorageItem imgSrc='/smartphone/A23s/galarrysvgIcon.svg' altText='storage' text='50 Movies' />
             </div>
           </div>
+
         </div>
+        {/* <div>
+          <p className='text-[#6F7384] text-mobile/body/2 lg:text-desktop/body/1'>*Data may vary basis users’ usage pattern</p>
+
+        </div> */}
       </div>
     </div>
   </GradientBackgroundWrapper>
