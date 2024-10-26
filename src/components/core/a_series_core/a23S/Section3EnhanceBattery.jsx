@@ -43,7 +43,7 @@ const Section3EnhanceBattery = () => (
         <div className='flex flex-row gap-4 lg:gap-8  w-[296px] md:w-full lg:w-[399px] md:items-center justify-center lg:justify-start lg:items-start'>
           <div className="px-1 flex flex-col gap-4 lg:gap-8">
             {features.map(({ img, alt, text }) => (
-              <div key={alt} className="flex lg:flex-col items-center lg:items-start gap-2 max-w-[132px]  lg:max-w-[182px]">
+              <div key={alt} className="flex lg:flex-col items-center lg:items-start gap-2 w-[132px] md:w-full  lg:max-w-[182px]">
                 <img src={img} alt={alt} className="w-[30px] h-[30px] md:w-[44px] md:h-[44px]" />
                 <span className="text-mobile/h7 md:text-desktop/h6/medium md:text-center lg:text-left">{text}</span>
               </div>
@@ -51,7 +51,7 @@ const Section3EnhanceBattery = () => (
           </div>
           <div className="px-1 flex flex-col  gap-4 lg:gap">
             {features2.map(({ img, alt, text }) => (
-              <div key={alt} className="flex lg:flex-col items-center lg:items-start gap-2 max-w-[150px]  lg:max-w-[158px]">
+              <div key={alt} className="flex lg:flex-col items-center lg:items-start gap-2 w-[150px] md:w-full  lg:max-w-[158px]">
                 <img src={img} alt={alt} className="w-[30px] h-[30px] md:w-[44px] md:h-[44px]" />
                 <span className="text-mobile/h7 md:text-desktop/h6/medium md:text-center lg:text-left">{text}</span>
               </div>
