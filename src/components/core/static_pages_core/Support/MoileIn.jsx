@@ -36,19 +36,19 @@ const MoileIn = () => {
       category: "NEWS",
       title:
         "Itel India’s Heartwarming World Cup Campaign: Connecting India through the...",
-      image: "./support/Frame 1973341043.png", // Replace with actual image URL
+      image: "/static_page/Support2/Frame 1973341043 (3).png", // Replace with actual image URL
       type: "All",
     },
     {
       category: "BLOG",
       title: "Imagine a day with uninterrupted HiFi Sound.",
-      image: "./support/Frame 1973341043 (1).png", // Replace with actual image URL
+      image: "/static_page/Support2/Frame 1973341043 (4).png", // Replace with actual image URL
       type: "Latest",
     },
     {
       category: "BLOG",
       title: "Unleash the Power of Memory: Itel S23 Redefines Performance",
-      image: "./support/Frame 1973341043 (2).png", // Replace with actual image URL
+      image: "/static_page/Support2/Frame 1973341043 (5).png", // Replace with actual image URL
       type: "Services",
     },
   ];
