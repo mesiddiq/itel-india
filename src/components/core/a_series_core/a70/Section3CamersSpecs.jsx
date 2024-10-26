@@ -18,8 +18,8 @@ const Section3CamersSpecs = () => (
     backgroundSizeDesktop='100% 100%'
     bgClass='responsive-bg'
   >
-    <div className='relative flex flex-col lg:flex-row h-[480px] md:h-[739px] responsive-bg-height lg:justify-between lg:pt-[48px] gap-2 md:gap-5 overflow-hidden'>
-      <div className='lg:w-[455px] text-center lg:text-left relative lg:gap-6 lg:flex lg:flex-col h-auto'>
+    <div className='relative flex flex-col lg:flex-row h-[480px] md:h-[739px] responsive-bg-height lg:justify-between lg:pt-[48px] gap-4 md:gap-5 overflow-hidden'>
+      <div className='lg:w-[455px] w-[289px] md:w-full flex flex-col gap-4 text-center lg:text-left relative lg:gap-6 lg:flex lg:flex-col mx-auto md:mx-0 h-auto'>
         <p className='md:text-desktop/h2 text-mobile/h4'>
           Unleash Pure Beauty with Enhanced HDR
         </p>
