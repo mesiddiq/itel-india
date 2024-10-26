@@ -2,7 +2,7 @@ import GradientBackgroundWrapper from './GradientBackgroundWrapper ';
 
 const Section1Entertainment = () => (
   <GradientBackgroundWrapper mobileBgImage="/a70/AmpleStorage-Mobile.webp">
-    <div className="md:max-w-[735px] md:p-5 lg:p-0 text-center lg:pt-[37px] md:text-left">
+    <div className="md:max-w-[735px] md:p-5 lg:p-0 text-center lg:pt-[57px] md:text-left">
       <p className="lg:text-desktop/h2 text-mobile/h4">
         Ample Storage for Entertainment
       </p>
@@ -12,17 +12,17 @@ const Section1Entertainment = () => (
         possibilities and goodbye to storage worries!
       </p>
     </div>
-    <div className="flex md:flex-row  md:p-5 lg:p-0 flex-col pt-[15px]">
-      <div className="md:py-5 md:space-y-4 flex md:block gap-2 sm:max-w-[297px] max-w-full">
+    <div className="flex md:flex-row  md:p-5 lg:p-0 lg:pt-[16px] flex-col pt-[15px]">
+      <div className="md:py-5 md:space-y-2 flex md:block gap-2 sm:max-w-[297px] max-w-full">
         <p className="md:text-desktop/h3 text-mobile/title sm:max-w-[136px] md:max-w-full">
           12GB* (4GB+8GB*) RAM
         </p>
         <span className="md:text-[16px] hidden md:block text-mobile/h5/medium md:text-desktop/body/1">
           With Memory Fusion <br /> Technology
         </span>
-        <hr className="h-[2px] hidden md:block bg-grey/grey/3" />
-        <hr className="h-[40px] w-[2px] block md:hidden bg-grey/grey/3" />
-        <p className="lg:text-desktop/h3 text-mobile/title sm:max-w-[135px] md:max-w-full">
+        <hr className="h-[2px] hidden  md:block bg-grey/grey/3" style={{margin:"24px 0"}}/>
+        <hr className="h-[40px] w-[2px] block md:hidden bg-grey/grey/3"  style={{margin:"6px 0"}} />
+        <p className="lg:text-desktop/h3 max-w-[431px] text-mobile/title sm:max-w-[135px] md:max-w-full">
           64GB/128GB/256GB ROM
         </p>
       </div>

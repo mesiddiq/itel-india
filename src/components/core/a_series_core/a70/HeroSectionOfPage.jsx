@@ -1,6 +1,6 @@
 const HeroSectionOfPage = () => {
     const commonTextContent = (
-        <div className="lg:gap-16 gap-4 flex flex-col justify-center px-4 pt-14 lg:pt-0 md:ps-[88px]">
+        <div className="lg:gap-16 gap-4 flex flex-col justify-center px-4 pt-14 lg:pt-0 md:ps-[0px]">
             <div className="flex flex-col gap-4">
                 <div className="border-2 flex items-center px-1 gap-2 font-bold border-[#3A3358] text-[#3A3358] text-center rounded-full max-w-[156px]">
                     <span>Awesome series</span>

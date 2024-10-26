@@ -1,5 +1,7 @@
 import FullSpecifications from "../../components/common/FullSpecifications"
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
+import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
+import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
 import StickyHeader from "../../components/common/StickyHeader"
 import FeatureSectionA23s from "../../components/core/a_series_core/a23S/FeatureSectionA23s"
 import HeroSectionOfA23SPage from "../../components/core/a_series_core/a23S/HeroSectionOfA23SPage"
@@ -17,10 +19,32 @@ import { FullSpecificationsA23 } from "../../data/smartphonedata/A23SData"
 const ATwentyThreeS = () => {
   return (
     <div className="bg-white">
-      <HeroSectionOfA23SPage />
+      {/* <HeroSectionOfA23SPage /> */}
+      <HeroSmartPhoneCommon
+        tagText="Awesome series"
+        headingText="A23s"
+        price={"4,799"}
+        description={'4GB*(2GB+2GB*) RAM + 32GB ROM | Smart Face Unlock | 3020 mAh battery'}
+        bgDesktop={'/smartphone/A23s/Backgrounds/A23S-Hero.webp'}
+        bgMobile={'/smartphone/A23s/Backgrounds/A23sbannermobile.webp'}
+        gradient1='#ca86ff'
+        gradient2='#85e2fd'
+        theme='dark'
+      />
+
+
       <StickyHeader title="A23s" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
       <FeatureSectionA23s />
-      <ScrollingBannerA23S />
+      {/* <ScrollingBannerA23S /> */}
+      <SliderAnimationCommon
+        text1="Awesome series"
+        text2="IMPRESSIVELY AWESOME"
+        svgCode={<img src="/smartphone/A23s/scrollA23.svg" alt="star" className="" />}
+        bgColor="#EBE8E2"
+        textGradient1="#6B6682"
+        textGradient2="#6B6682"
+      />
+ 
       <div
         className="md:rounded-[64px] lg:my-[100px] my-[80px] lg:py-2 rounded-[16px] border-[#00000033] border-2 text-black p-2 content flex flex-col gap-10"
 

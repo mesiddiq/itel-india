@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 // import { ArrowRight } from 'lucide-react'
 import { useState, useRef, useEffect, } from 'react'
 import { useClickOutside } from "react-haiku"

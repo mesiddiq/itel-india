@@ -17,8 +17,6 @@ const Section5MultiLanguageSupport = () => {
                         15 Languages Supported: English, Hindi, Gujarati, Tamil, Telugu, Punjabi, Assamese, Bengali, Kannada, Malayalam, Kashmiri, Urdu, Nepali, Marathi, Oriya.
                     </span>
                 </div>
-
-
             </div>
 
         </GradientBackgroundWrapper>

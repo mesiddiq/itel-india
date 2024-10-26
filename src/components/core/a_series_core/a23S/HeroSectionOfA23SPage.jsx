@@ -1,9 +1,9 @@
 const HeroSectionOfA23SPage = () => {
     const commonTextContent = (
-        <div className="lg:gap-16 gap-4 flex flex-col justify-center px-4 pt-12 lg:pt-0 ">
+        <div className="lg:gap-16 gap-4 flex flex-col justify-center pt-12 lg:pt-0 ">
             <div className="flex flex-col gap-4">
-                <div className="border-2 flex items-center px-1 gap-2 font-bold border-[#3A3358] text-[#3A3358] text-center rounded-full max-w-[156px]">
-                    <span>Awesome series</span>
+                <div className="border-2  flex items-center bg-[#F8F6F3] px-[6px] py-[3px] gap-2 font-bold border-[#3A3358] text-[#3A3358] text-center rounded-full max-w-[156px]">
+                    <span className="uppercase text-[14px]">Awesome series</span>
                     <img src="/smartphone/A23s/UpArrow.svg" alt="A23sBadge" className="w-[12px] h-[12px]" />
                 </div>
                 <div className="w-[330px] md:w-[528px] pe-6">
@@ -13,9 +13,12 @@ const HeroSectionOfA23SPage = () => {
                     </p>
                 </div>
             </div>
-            <p className="text-mobile/small/body md:text-desktop/h5/medium">
+     
+
+            <p className="text-[20px] font-normal leading-[24px] tracking-[0.01em]">
                 Available at  <span className="text-mobile/h5 md:text-desktop/h5">₹4,799/-</span>
             </p>
+            
         </div>
     );
 
