@@ -28,8 +28,8 @@ export default function HeroSmartPhoneCommon({
     theme, // Theme dark | light
     purchaseLink, // Product purchase link
     description, // Product description
-    gradient1 = "#3a3358", // Gradient 1 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
-    gradient2 = "#3a3358" // Gradient 2 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
+    gradient1, // Gradient 1 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
+    gradient2 // Gradient 2 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
 }) {
     const textControls = useAnimation()
     const backgroundControls = useAnimation()
@@ -50,7 +50,7 @@ export default function HeroSmartPhoneCommon({
     }, [textControls, backgroundControls])
 
     return (
-        <div ref={ref} className="relative h-[521px] lg:min-h-[750px] w-full overflow-hidden bg-black">
+        <div ref={ref} className={`relative h-[521px] lg:min-h-[750px] w-full overflow-hidden ${theme == "dark" ?'bg-white':'bg-black'}`}>
             <motion.div
                 className={`absolute min-h-[521px] lg:min-h-[750px] min-w-full bg-cover bg-center bg-no-repeat`}
                 initial={{ opacity: 0, y: "100%" }}
@@ -60,7 +60,7 @@ export default function HeroSmartPhoneCommon({
                     background: `url(${width > 1024 ? bgDesktop : bgMobile}) center center/cover no-repeat`,
                 }}
             />
-            <div className="content h-full flex lg:items-center pt-11 lg:pt-0">
+            <div className="content h-full flex lg:items-center pt-11 lg:pt-0 px-4 md:px-0">
                 <div className="relative z-10">
                     <motion.div
                         className=""
@@ -129,9 +129,9 @@ export default function HeroSmartPhoneCommon({
                     >
                         {/* Available at Price */}
                         <div
-                            className="text-white flex flex-col gap-[16px]"
+                            className="flex flex-col gap-[16px]"
                         >
-                            <h1 className="flex flex-row justify-start items-center gap-1 font-markot lg:text-[20px] lg:leading-[24px] lg:tracking-[0.01em] text-mobile/small/body">
+                            <h1 className={`flex flex-row justify-start items-center gap-1 font-markot lg:text-[20px] lg:leading-[24px] lg:tracking-[0.01em] text-mobile/small/body ${theme == "dark" ? 'text-black/1' : 'text-white'}`}>
                                 <span>Available at </span>
                                 <span className="font-markot flex items-center font-bold text-[20px] leading-[26px] tracking-[0.01em] ">
                                     <MdCurrencyRupee /> {price} /-

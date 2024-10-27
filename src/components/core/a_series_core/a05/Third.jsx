@@ -11,7 +11,7 @@ export default function Third() {
             Enjoy High-Speed <span className="block">4G Internet</span>
           </p>
           <img
-            src="/SmartPhone/a05/f5i1.png"
+            src="/smartphone/a05/f5i1.png"
             alt="Background Image"
             className="h-auto w-full mx-auto xl:pt-[30px] md:pt-[100px]"
           />
@@ -25,14 +25,14 @@ export default function Third() {
               4000 mAh Battery Life with Type-C Charging & 10W charging support
             </p>
             <img
-              src="/SmartPhone/a05/f5i2.png"
+              src="/smartphone/a05/f5i2.png"
               alt="Background Image"
               className="h-auto max-w-full"
             />
           </div>
 
           {/* Lower Right Block */}
-          <div className="bg-custom-gradient flex flex-col justify-center min-h-[39.5vh] items-center flex-grow h-full rounded-[16px] border border-[#FCA74180] bg-cover bg-center" style={{ backgroundImage: "url('/SmartPhone/a05/f5i3.png')" }}>
+          <div className="bg-custom-gradient flex flex-col justify-center min-h-[39.5vh] items-center flex-grow h-full rounded-[16px] border border-[#FCA74180] bg-cover bg-center" style={{ backgroundImage: "url('/smartphone/a05/f5i3.png')" }}>
               <div className="flex flex-col justify-center items-center w-full h-full transform xl:-translate-y-16 md:-translate-y-8 -translate-y-12">
                   <span className="pl-6 text-center">
                   <p className="md:text-desktop/h4 xl:text-desktop/h3 font-bold text-[20px] xs:text-[18px] max-w-5xl text-start text-[#050036]">

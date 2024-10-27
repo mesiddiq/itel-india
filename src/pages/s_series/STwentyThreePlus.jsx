@@ -19,14 +19,24 @@ import BlogCards from '../../components/core/s_series_core/S_Twenty_Three_Plus/B
 import PicturePerfect from '../../components/core/s_series_core/s_twenty_three_plus/PicturePerfect';
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/S23PlusData';
+import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon';
 
 const STwentyThreePlus = () => {
 
   return (
     <>
       <div>
-        {/* <Navbar /> */}
-        <HeroBanner />
+        <HeroSmartPhoneCommon
+          tagText="super series"
+          headingText="s23+"
+          price={"12,999"}
+          description={'3D Curved FHD+ AMOLED Display | In-Display Fingerprint| 50MP AI Dual ReaR Camera'}
+          bgDesktop={'/smartphone/smartphonehero/s23p.webp'}
+          bgMobile={'/smartphone/smartphonehero/s23p_mobile.webp'}
+          gradient1='#ca86ff'
+          gradient2='#85e2fd'
+
+        />
         <StickyHeader title={"S23+"} purchaseLink={''} icon={'/smartphone/S23+/Backgrounds/OverviewIcon.webp'} />
         <Overview />
         <Video />
@@ -41,7 +51,7 @@ const STwentyThreePlus = () => {
         <UnlockTouch />
         <ThinDesign />
         <BlogCards />
-        <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false}/>
+        <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false} />
         <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
       </div>
     </>

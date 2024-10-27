@@ -2,7 +2,7 @@ import React from 'react';
 
 const CaptureMore = () => {
   return (
-    <div className='flex w-full items-center h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/CaptureMore/bg.png")] bg-cover bg-center bg-no-repeat overflow-hidden'>
+    <div className='flex w-full md:items-center h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/CaptureMore/bgMobile.webp")] md:bg-[url("/smartphone/color-pro-5g/CaptureMore/bg.png")] bg-cover bg-center bg-no-repeat overflow-hidden'>
       <div className='content relative'>
         <div className='grid grid-cols-1 md:grid-cols-2'>
           <div className='col-span-1'>

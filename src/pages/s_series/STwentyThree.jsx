@@ -25,7 +25,8 @@ const STwentyThree = () => {
                 headingText="s23"
                 price={"8,199"}
                 description={'50MP Super Clear Rear Camera | 16GB* (8GB+8GB*) RAM + 128GB ROM | Photochromic Effects'}
-                bgDesktop={'/smartphone/S_Twenty_Three/S23Hero.webp'}
+                bgDesktop={'/smartphone/smartphonehero/s23.webp'}
+                bgMobile={'/smartphone/smartphonehero/s23_mobile.webp'}
                 gradient1='#ca86ff'
                 gradient2='#85e2fd'
 

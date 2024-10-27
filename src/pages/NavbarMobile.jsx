@@ -110,7 +110,7 @@ const NavbarMobile = () => {
                 </button>
 
             </nav>
-            <div className={`${isNavActive ? 'top-16' : '-top-[1000px]'} transition-[top] navbarmobile duration-700 py-5 px-4 flex flex-col gap-5 bg-[#1f1f1f] font-markot max-h-screen h-screen fixed left-0 w-full z-[1000] overflow-y-scroll`}>
+            <div className={`${isNavActive ? 'top-16' : '-top-[5000px]'} transition-[top] navbarmobile duration-700 py-5 px-4 flex flex-col gap-5 bg-[#1f1f1f] font-markot max-h-screen h-screen fixed left-0 w-full z-[1000] overflow-y-scroll`}>
 
                 {/***************************Smartphone Dropdown********************** */}
 

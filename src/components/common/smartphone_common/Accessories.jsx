@@ -58,7 +58,7 @@ const Accessories = ({ theme = 'light' }) => {
                 <button className={`flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase ${isLightTheme ? 'text-black' : 'text-stone-100'}`}>
                   <span className="flex overflow-hidden gap-2 items-center">
                     <span>Buy Now</span>
-                    <img loading="lazy" src="/P_Series/arrow-right.png" alt="" className="object-contain w-6" />
+                    <img loading="lazy" src="/static_page/homepage/Arrow_right.svg" alt="" className="object-contain w-6" />
                   </span>
                 </button>
               </div>

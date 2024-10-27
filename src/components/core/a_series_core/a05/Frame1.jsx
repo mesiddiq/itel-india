@@ -24,11 +24,11 @@ const data = [
 
 export default function Frame1() {
   return (
-    <div className="md:rounded-[36px] rounded-[16px] bg-[url('/SmartPhone/a05/bgTrees.png')] bg-cover bg-center">
+    <div className="md:rounded-[36px] rounded-[16px] bg-[url('/smartphone/a05/bgTrees.png')] bg-cover bg-center">
             {/* Centered treesMobile image */}
             <div className="md:px-[50px] xl:px-[208px] md:pt-[20px] xl:pt-[80px] px-[14px] pt-[9.2px]">
                 <img
-                    src="/SmartPhone/a05/treesMobile.png"
+                    src="/smartphone/a05/treesMobile.png"
                     alt="Trees"
                     className="h-auto mx-auto w-full" // Adjust the width and margin-top as necessary
                 />

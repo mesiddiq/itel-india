@@ -3,15 +3,25 @@ import { motion } from 'framer-motion'
 
 const TvFrame = () => {
     return (
-        <div className='relative overflow-hidden'>
-            <motion.div
+        <div className=' overflow-hidden'>
+            {/* <motion.div
                 initial={{ scale: 1.5 }}
                 whileInView={{ scale: 0.8}}
                 transition={{ duration: 2, ease: 'easeInOut' }}
-                className="bg-[url('/static_page/homepage/tvframe.png')] scale-150 bg-contain bg-no-repeat bg-center min-w-screen max-h-[800px] h-screen mx-auto ">
-                <video className='absolute w-[68.5%] left-[50.2%] -top-[3%] h-[95%] -translate-x-1/2' src='https://res.cloudinary.com/djwj42mic/video/upload/v1729068937/-d929-440a-b9cb-35701acaf97e_yhtj3r.mp4' autoPlay muted loop >
-                </video>
-            </motion.div>
+                className=" border scale-150 bg-contain bg-no-repeat bg-center max-w-[1440px] max-h-[800px] h-screen mx-auto relative ">
+                    </motion.div> */}
+            <div className="content relative h-screen">
+                <motion.div
+                    initial={{ scale: 1.5 }}
+                    whileInView={{ scale: 0.8 }}
+                    transition={{ duration: 2, ease: 'easeInOut' }}
+                    className="max-w-[900px] w-fit h-full mx-auto relative"
+                >
+                    <img src="/static_page/homepage/tvframe.png" alt="" className='object-contain h-full' />
+                    <video className='absolute w-[97%] left-[50.2%] object-contain -top-[3%] h-[96%] -translate-x-1/2' src='https://res.cloudinary.com/djwj42mic/video/upload/v1729068937/-d929-440a-b9cb-35701acaf97e_yhtj3r.mp4' autoPlay muted loop >
+                    </video>
+                </motion.div>
+            </div>
         </div>
     )
 }

@@ -17,22 +17,22 @@ const OtherCoolGears = ({ theme = 'light' }) => {
                 Smart Gadgets and Wearables, Exquisite Design and Power
               </h3>
               <p className='flex items-center text-mobile/button md:text-desktop/button font-markot'>
-                READ MORE <img src='/arrow.png' alt='arrow' className='ml-2 mt-1' />
+                READ MORE <img src='/static_page/homepage/Arrow_right.svg' alt='arrow' className='ml-2 mt-1' />
               </p>
             </div>
             <div className='col-span-1 flex justify-center items-center h-full'>
               <img 
-                src='/EnjoyBetterLifeCol2Bg.png'
+                src='/static_page/homepage/EnjoyBetterLifeCol2Bg.png'
                 alt="EnjoyBetterLifeCol2Bg" 
                 className={`max-w-full h-auto absolute bottom-0 right-0 transition-transform duration-300 transform scale-100 group-hover:scale-110 ${isDarkTheme ? 'filter brightness-50' : ''}`} 
               />
               <img 
-                src='/OtherCoolGearsCardOne.svg' 
+                src='/static_page/homepage/OtherCoolGearsCardOne.svg' 
                 alt="OtherCoolGearsColOne" 
                 className={`max-w-[50%] md:max-w-auto h-auto absolute bottom-[-15px] right-0 transition-transform duration-300 transform scale-100 group-hover:scale-105`} 
               />
               <img 
-                src='/OtherCoolGearsCardOneTwo.svg' 
+                src='/static_page/homepage/OtherCoolGearsCardOneTwo.svg' 
                 alt="OtherCoolGearsColOneTwo" 
                 className={`max-w-[50%] md:max-w-auto h-auto absolute bottom-0 right-32 md:right-44 transition-transform duration-300 transform scale-100 group-hover:scale-105`} 
               />
@@ -47,17 +47,17 @@ const OtherCoolGears = ({ theme = 'light' }) => {
                 Smart TV, Non-Stop Entertainment
               </h3>
               <p className='flex items-center text-mobile/button md:text-desktop/button font-markot'>
-                READ MORE <img src='/arrow.png' alt='arrow' className='ml-2 mt-1' />
+                READ MORE <img src='/static_page/homepage/Arrow_right.svg' alt='arrow' className='ml-2 mt-1' />
               </p>
             </div>
             <div className='col-span-1 flex justify-center items-center h-full'>
               <img 
-                src='/EnjoyBetterLifeCol3Bg.png'
+                src='/static_page/homepage/EnjoyBetterLifeCol3Bg.png'
                 alt="EnjoyBetterLifeCol3Bg" 
                 className={`max-w-full h-auto absolute bottom-0 right-0 transition-transform duration-300 transform scale-100 group-hover:scale-110 ${isDarkTheme ? 'filter brightness-50' : ''}`} 
               />
               <img 
-                src='/EnjoyBetterLifeCol3.png'
+                src='/static_page/homepage/EnjoyBetterLifeCol3.png'
                 alt="EnjoyBetterLifeCol3" 
                 className={`max-w-full h-auto absolute bottom-0 right-5 transition-transform duration-300 transform scale-100 group-hover:scale-105`} 
               />
@@ -72,17 +72,17 @@ const OtherCoolGears = ({ theme = 'light' }) => {
                 Feature Phones - <span className='text-mobile/h6 md:text-desktop/h6'>Stay Connected All Day Long</span>
               </h3>
               <p className='flex items-center text-mobile/button md:text-desktop/button font-markot'>
-                READ MORE <img src='/arrow.png' alt='arrow' className='ml-2 mt-1' />
+                READ MORE <img src='/static_page/homepage/Arrow_right.svg' alt='arrow' className='ml-2 mt-1' />
               </p>
             </div>
             <div className='col-span-1 flex justify-center items-center h-full'>
               <img 
-                src='/EnjoyBetterLifeCol3Bg.png'
+                src='/static_page/homepage/EnjoyBetterLifeCol3Bg.png'
                 alt="EnjoyBetterLifeCol3Bg" 
                 className={`max-w-full h-auto absolute bottom-0 right-0 transition-transform duration-300 transform scale-100 group-hover:scale-110 ${isDarkTheme ? 'filter brightness-50' : ''}`} 
               />
               <img 
-                src='/OtherCoolGearsCardThree.svg'
+                src='/static_page/homepage/OtherCoolGearsCardThree.svg'
                 alt="OtherCoolGearsCardThree" 
                 className={`max-w-full h-auto absolute bottom-0 transition-transform duration-300 transform scale-100 group-hover:scale-105`} 
               />

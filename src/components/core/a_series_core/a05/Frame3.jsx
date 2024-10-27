@@ -17,11 +17,11 @@ export default function Frame3() {
 
                         <div className="flex md:flex-col flex-row font-bold md:text-[16px] text-[12px] text-left gap-[42px] md:gap-0">
                             <span className="flex items-center md:gap-[14px] gap-[12px] ">
-                                <img src="/SmartPhone/a05/logos/f3l1.png" alt="f3l1" className="w-8 h-8 md:w-12 md:h-12" />
+                                <img src="/smartphone/a05/logos/f3l1.png" alt="f3l1" className="w-8 h-8 md:w-12 md:h-12" />
                                 <p className="text-[black]">Face Unlock</p>
                             </span>
                             <span className="flex md:pt-[36px] items-center md:gap-[14px] gap-[12px]">
-                                <img src="/SmartPhone/a05/logos/f3l2.png" alt="f3l2" className="w-8 h-8 md:w-12 md:h-12" />
+                                <img src="/smartphone/a05/logos/f3l2.png" alt="f3l2" className="w-8 h-8 md:w-12 md:h-12" />
                                 <p className="text-[black]">Finger Print Sensor</p>
                             </span>
                         </div>
@@ -30,12 +30,12 @@ export default function Frame3() {
                     <div>
                         <div className="-z-10 absolute overflow-hidden bottom-0 right-0 md:pt-[20px] xl:pl-[289px] pt-[244px] pl-[140px]">
                             <img
-                                src="/SmartPhone/a05/frame3Vector.png"
+                                src="/smartphone/a05/frame3Vector.png"
                                 alt="Background Vector"
                                 className="xl:max-w-[685px] md:max-w-[325px] w-100% mx-auto h-auto object-cover hidden md:flex"
                             />
                              <img
-                                src="/SmartPhone/a05/vec.png"
+                                src="/smartphone/a05/vec.png"
                                 alt="Background Vector"
                                 className="md:max-w-[685px] w-100% mx-auto h-auto object-cover flex md:hidden xs:hidden"
                             />
@@ -43,7 +43,7 @@ export default function Frame3() {
 
                         <div className="overflow-hidden z-10 absolute bottom-0 right-0 xl:pt-[60px] md:pt-[35px] xl:pr-[80px] md:pr-[15px] pr-[65px]">
                             <img
-                                src="/SmartPhone/a05/frame3.webp"
+                                src="/smartphone/a05/frame3.webp"
                                 alt="Foreground Image"
                                 className="w-[258px] xl:w-[582px] md:w-[482px] h-auto object-cover"
                             />

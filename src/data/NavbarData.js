@@ -90,7 +90,7 @@ export const PhonesData = [
     {id:'5',label:'P55',link:'/product/p55',type:'smartphone'},
     {id:'6',label:'P55 T',link:'/product/p55t',type:'smartphone'},
     {id:'7',label:'P55 PLUS',link:'/product/p55-plus',type:'smartphone'},
-    {id:'8',label:'A95',link:'/product/a05',type:'smartphone'},
+    {id:'8',label:'A05 s',link:'/product/a05',type:'smartphone'},
     {id:'9',label:'AURA 05 I',link:'/product/a05-i',type:'smartphone'},
     {id:'10',label:'A50 C',link:'/product/a50-c',type:'smartphone'},
     {id:'11',label:'A50',link:'/product/a50',type:'smartphone'},

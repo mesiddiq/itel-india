@@ -36,31 +36,31 @@ const StayInTheLoop = ({ theme = 'light' }) => {
       </div>
       <div className={`content hidden md:grid grid-cols-1 md:grid-cols-4 gap-4 px-[16px] md:px-0 pb-[60px] ${isDarkTheme ? 'text-[#F8F6F3]' : 'text-black'}`} style={{ marginTop: '0px' }}>
         <div className='col-span-1'>
-          <img src='/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full' />
+          <img src='/static_page/homepage/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full' />
         </div>
         <div className='col-span-1'>
-          <img src='/StayInTheLoopTwo.svg' alt='StayInTheLoopTwo' className='w-full' />
+          <img src='/static_page/homepage/StayInTheLoopTwo.svg' alt='StayInTheLoopTwo' className='w-full' />
         </div>
         <div className='col-span-1'>
-          <img src='/StayInTheLoopThree.svg' alt='StayInTheLoopThree' className='w-full' />
+          <img src='/static_page/homepage/StayInTheLoopThree.svg' alt='StayInTheLoopThree' className='w-full' />
         </div>
         <div className='col-span-1'>
-          <img src='/StayInTheLoopFour.svg' alt='StayInTheLoopFour' className='w-full' />
+          <img src='/static_page/homepage/StayInTheLoopFour.svg' alt='StayInTheLoopFour' className='w-full' />
         </div>
       </div>
       <div className={`content block md:hidden slider-container px-[16px] md:px-0 h-[430px] ${isDarkTheme ? 'bg-[#121212]' : 'bg-white'}`} style={{ marginTop: '0px' }}>
         <Slider {...settings}>
           <div>
-            <img src='/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full rounded-[16px]' />
+            <img src='/static_page/homepage/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full rounded-[16px]' />
           </div>
           <div>
-            <img src='/StayInTheLoopTwo.svg' alt='StayInTheLoopTwo' className='w-full rounded-[16px]' />
+            <img src='/static_page/homepage/StayInTheLoopTwo.svg' alt='StayInTheLoopTwo' className='w-full rounded-[16px]' />
           </div>
           <div>
-            <img src='/StayInTheLoopThree.svg' alt='StayInTheLoopThree' className='w-full rounded-[16px]' />
+            <img src='/static_page/homepage/StayInTheLoopThree.svg' alt='StayInTheLoopThree' className='w-full rounded-[16px]' />
           </div>
           <div>
-            <img src='/StayInTheLoopFour.svg' alt='StayInTheLoopFour' className='w-full rounded-[16px]' />
+            <img src='/static_page/homepage/StayInTheLoopFour.svg' alt='StayInTheLoopFour' className='w-full rounded-[16px]' />
           </div>
         </Slider>
       </div>

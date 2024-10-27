@@ -5,18 +5,18 @@ const MultipleCardComponents = () => {
       <section className=' content upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
         
           {/* Card 1 */}
-          <div className='w-full border border-[#D7F1FE] lg:w-[40%] min-h-[457px] h-[457px] lg:h-[784px] rounded-2xl overflow-hidden flex flex-col relative group' style={{
+          <div className='w-full border border-[#D7F1FE] lg:w-[40%] min-h-[380px] h-[350px] md:h-[784px] rounded-2xl overflow-hidden flex flex-col relative group' style={{
             backgroundImage: 'url("/smartphone/A05i/Backgrounds/CameraGrid.webp")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
           }}>
             <div className='w-full h-auto p-3 lg:p-6 gap-3 lg:gap-[14px] flex flex-col z-10'>
-              <span className='text-mobile/h5/medium lg:text-desktop/h3 font-markot text-black/1 lg:text-[#050036] lg:max-w-full max-w-[300px]'>
+              <span className='text-mobile/h5/medium md:text-desktop/h3 font-markot text-black/1 lg:text-[#050036] md:max-w-full max-w-[300px]'>
               Your Compact AI Cam: 5MP Front Camera & 5 MP AI Rear Dual Camera
               </span>
 
-              <div className='text-mobile/small/body lg:text-desktop/body/large text-grey/grey/5 max-w-[250px] lg:max-w-[450px]'>
+              <div className='text-mobile/small/body md:text-desktop/body/large text-grey/grey/5 max-w-[250px] md:max-w-[450px]'>
                 <span>Portrait Mode | Pro Mode | HDR Mode | Low Light | Panorama | Wide Selfie Mode</span>
               </div>
             </div>
@@ -51,7 +51,7 @@ const MultipleCardComponents = () => {
               </div>
 
               {/* Card 3 */}
-              <div className='border border-[#D7F1FE] flex flex-col w-full h-[220px] lg:min-h-[380px] lg:h-[380px] rounded-2xl p-4 lg:p-5 group relative overflow-hidden' style={{
+              <div className='border border-[#D7F1FE] flex flex-col w-full h-[220px] md:min-h-[380px] lg:h-[380px] rounded-2xl p-4 lg:p-5 group relative overflow-hidden' style={{
                 backgroundImage: 'url(/smartphone/A05i/Backgrounds/DualSecurityGridBG.webp)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',

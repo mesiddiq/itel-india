@@ -16,13 +16,24 @@ import ExtendedMemory from '../../components/core/p_series_core/P_Fifty_Five_T/E
 import MasonaryCards from '../../components/core/p_series_core/P_Fifty_Five_T/MasonaryCards';
 
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/P55TData';
+import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon';
 
 const PFiftyFiveT = () => {
   return (
     <>
       <main className="bg-[#EBE8E2]">
-        <Herobanner />
-        <StickyHeader bgColor={'#eecf7f'} textColor={true} title={'P55T'}/>
+        <HeroSmartPhoneCommon
+          headingText="P55T"
+          bgDesktop="/smartphone/smartphonehero/p55t.webp"
+          bgMobile="/smartphone/smartphonehero/p55t_mobile.webp"
+          purchaseLink=""
+          description={`Android 14 Go Edition | 6000 mAh battery | 6.6″ HD+ Punch-Hole Display`}
+          gradient1="#EECF7F"
+          gradient2="#D2B363"
+          price="7,999"
+          tagText="power series"
+        />
+        <StickyHeader bgColor={'#eecf7f'} textColor={true} title={'P55T'} />
         <Overview />
         <Scroller />
         <LevelUpWithAndroid />
