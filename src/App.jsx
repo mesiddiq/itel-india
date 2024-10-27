@@ -82,6 +82,7 @@ function App() {
 				<Route path='/contact-us' element={<Contactus />} />
 				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 				<Route path='/support/faqs' element={<FAQ />} />
+				{/* <Route path='/investor' */}
 
 
 				{/* ***************************************************************************************************/}

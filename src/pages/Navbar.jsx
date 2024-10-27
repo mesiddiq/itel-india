@@ -51,7 +51,7 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
     )
 }
 
-const Support = ({ support }) => {
+const Support = ({ support,setSupport }) => {
 
     return (
         <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${support ? 'h-[330px] z-[100]' : 'h-0'}`}>
@@ -59,7 +59,7 @@ const Support = ({ support }) => {
                 {
                     SupportData.map(({ id, label, path }) => (
                         <Link to={path} key={id}>
-                            <div className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-grey/grey/4 to-grey/grey/5">
+                            <div onClick={()=>setSupport(prev=>!prev)} className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-grey/grey/4 to-grey/grey/5">
                                 <h1 className="text-white text-desktop/h5">{label}</h1>
                                 <div className="flex gap-2 items-center">
                                     <h4 className="text-desktop/button">READ MORE</h4>
@@ -379,7 +379,7 @@ const Navbar = () => {
                         </svg>
                         <div className="text-white">
                             <h1 className="text-desktop/overline">itel Customer Care</h1>
-                            <h2 className="text-desktop/caption">1800-4190-525</h2>
+                            <a href="tel:1800-4190-525" className="text-desktop/caption">1800-4190-525</a>
                         </div>
                     </div>
                 </div>
