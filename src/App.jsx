@@ -7,7 +7,7 @@ import HomePage from './pages/static_pages/HomePage'
 import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
 import STwentyFour from './pages/s_series/STwentyFour'
-import PFiftyFive from './pages/p_series/PFiftyFive'
+import PFiftyFive from './pages/p_series/PFiftyFive5g'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import Footer from './components/common/Footer'
 import Support from './pages/static_pages/Support'
@@ -156,10 +156,10 @@ function App() {
 					<Route path='power-450' element={<Power450 />} />
 					<Route path='ace-2-power' element={<Ace2Power />} />
 				</Route>
-				
+
 				{/* ***********************Not Found**************** */}
 				<Route path='/*' element={<NotFound />} />
-				
+
 			</Routes>
 			<Footer />
 			<ScrollToTop />
