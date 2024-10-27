@@ -1,5 +1,5 @@
 import 'aos/dist/aos.css';
-import React from 'react';
+// import React from 'react';
 import FullSpecifications from "../../components/common/FullSpecifications";
 import AutomaticCarousel from '../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel';
 import ChargeUpFull from '../../components/core/p_series_core/P_Fifty_Five/ChargeUpFull';
@@ -10,7 +10,7 @@ import GamingRevolution from '../../components/core/p_series_core/P_Fifty_Five/G
 import MultipleCardComponents from '../../components/core/p_series_core/P_Fifty_Five/MultipleCardComponents';
 import SeeMoreCaptureMore from '../../components/core/p_series_core/P_Fifty_Five/SeeMoreCaptureMore';
 import SuperfastUnisoc from '../../components/core/p_series_core/P_Fifty_Five/SuperfastUnisoc';
-import VideoAsset from '../../components/core/p_series_core/P_Fifty_Five/VideoAsset';
+// import VideoAsset from '../../components/core/p_series_core/P_Fifty_Five/VideoAsset';
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data';
 import ColorImageCarousel from '../../components/common/smartphone_common/ColorImageCarousel';
 import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData';

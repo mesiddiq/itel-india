@@ -125,7 +125,7 @@ const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCu
                         {/* Purple Card */}
                         <div className="flex flex-col justify-center items-center">
                             <div className="w-full pl-[6px]">
-                                <img src={subtract} className="w-full" />
+                                <img src='/product-listing/exploreBannerLaptop.png' className="w-full" />
                             </div>
                         </div>
 
