@@ -22,10 +22,10 @@ const MemoryFusion = () => {
         <div className="content h-full">
           <div className="relative content font-markot h-full w-full flex flex-col justify-center items-start">
             <div className="absolute left-[80px] flex flex-col gap-[9px] z-10">
-              <h1 className="text-desktop/h3 text-[#D4DDF0] max-w-[393px]">
+              <h1 className="text-desktop/h3 text-[#B3D98E] max-w-[393px]">
               8GB RAM, expandable up to 16GB* with Memory Fusion
               </h1>
-              <h1 className="text-base font-normal leading-[22.72px] text-left max-w-[334px]">
+              <h1 className="text-base font-normal leading-[22.72px] text-left max-w-[450px]">
               Level up your device with 8GB RAM & an extra virtual memory, expandable up to 16GB* with Memory Fusion. Say goodbye to lag and hello to seamless app switching.
               </h1>
             </div>

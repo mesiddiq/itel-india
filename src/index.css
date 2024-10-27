@@ -232,7 +232,7 @@
   }
 }
 
-.navbarmobile::-webkit-scrollbar {
+.navbarmobile::-webkit-scrollbar  {
   display: none;
 }
 

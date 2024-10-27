@@ -4,7 +4,7 @@ const Chatgpt = () => {
   return (
     <div 
     className="relative h-max py-8 lg:h-[680px] flex justify-center items-center bg-cover bg-center" 
-    style={{ backgroundImage: 'url(/P_Series/smart-assistant.png)' }}
+    style={{ backgroundImage: 'url(/SmartPhone/P55fiveg/Backgrounds/SmartAssistant.webp)' }}
   >
     <div className='content flex flex-col md:flex-row gap-[24px] justify-center items-center'>
       <div className="flex flex-col gap-[48px] justify-center px-4 lg:px-0" data-aos="fade-right">
@@ -30,13 +30,13 @@ const Chatgpt = () => {
         className="relative h-[530px] w-[318px] sm:w-[500px] md:w-[550px] lg:w-[600px] flex justify-center items-center bg-cover bg-center overflow-hidden" 
       >
         <img 
-          src='/P_Series/chatgpt_bg.png' 
+          src='/SmartPhone/P555g/chatgpt_bg.png' 
           className='relative' 
           alt="ChatGPT background"
         />
         
         <img 
-          src='/P_Series/robot.png' 
+          src='/SmartPhone/P555g/robot.png' 
           className='absolute w-full max-w-[300px] sm:max-w-[400px] object-contain' 
           alt="Robot"
         />

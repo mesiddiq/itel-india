@@ -10,6 +10,7 @@ import SupportChannels from '../../components/core/static_pages_core/Homepage/Su
 import Video from '../../components/core/static_pages_core/Homepage/Video'
 import TvFrame from '../../components/core/static_pages_core/Homepage/TvFrame'
 import OurCoolGadgets from '../../components/core/static_pages_core/Homepage/OurCoolGadgets'
+import HotPicks from '../../components/core/static_pages_core/Homepage/HotPicks'
 
 const HomePage = () => {
     return (
@@ -17,6 +18,7 @@ const HomePage = () => {
             <HeroSection />
             <EnjoyBetterLife />
             {/* <SimilarProducts /> */}
+            <HotPicks />
             <DareToDoIt />
             <TvFrame />
             <StayPlugged />
@@ -24,7 +26,7 @@ const HomePage = () => {
             {/* <Video/> */}
             {/* <ServiceCenters/> */}
             <CountOnItel />
-            <OurCoolGadgets/>
+            <OurCoolGadgets />
             <OurSmartAppliances />
             <div className="">
                 <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729919905/EnjoybetterLife_bpnvdv.gif" alt="" className='hidden md:block' />

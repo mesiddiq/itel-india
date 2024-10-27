@@ -1,120 +1,103 @@
-import { div, p } from "framer-motion/client";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import { data } from "./data,";
 
-const Accordian = ({ data, title }) => {
-  const [show, setShow] = useState(true);
+const Accordion = ({ data, title }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Show only the first 4 items if not expanded
+  const displayedItems = isExpanded ? data : data.slice(0, 4);
 
   return (
-    <>
-      <div className=" space-y-4">
-        <div
-          onClick={() => setShow(!show)}
-          className=" flex items-center font-markot justify-between cursor-pointer"
-        >
-          <p className=" lg:text-desktop/h5/medium  text-brand/black">
-            {title}
-          </p>
-          <img
-            src={"/static_page/Right%20Chevron.png"}
-            className={` transform transition-transform duration-300 ease-in-out ${
-              show ? "rotate-180" : "rotate-0"
-            }`}
-            alt=""
-          />
-        </div>
-
-        {/* Accordion content with animation */}
-        <div
-          className={`overflow-hidden transition-all space-y-4 duration-300 ease-in-out ${
-            show ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+    <div className=" space-y-2">
+      <div
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="flex items-center font-markot justify-between cursor-pointer"
+      >
+        <p className="lg:text-desktop/h5/medium text-mobile/h5 text-brand/black">
+          {title}
+        </p>
+        <img
+          src={"/static_page/Right%20Chevron.png"}
+          className={`transform transition-transform duration-300 ease-in-out ${
+            isExpanded ? "rotate-180" : "rotate-0"
           }`}
-        >
-          {data.map((data, index) => {
-            return (
-              <p
-                key={index}
-                className=" text-desktop/body/2/regular text-grey/grey/5  lg:text-desktop/body/2/regular"
-              >
-                {data}
-              </p>
-            );
-          })}
-        </div>
+          alt="Expand/Collapse"
+        />
       </div>
-    </>
+
+      {/* Accordion content with animation */}
+      <div
+        className={`overflow-hidden transition-all space-y-1 duration-300 ease-in-out ${
+          isExpanded ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        {displayedItems.map((item, index) => (
+          <p
+            key={index}
+            className="text-desktop/body/2/regular text-grey/grey/5 lg:text-desktop/body/1"
+          >
+            {item}
+          </p>
+        ))}
+
+        {/* Read More / Read Less button */}
+        {data.length > 4 && (
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-brand/black underline mt-2"
+          >
+            {isExpanded ? "Read Less" : "Read More"}
+          </button>
+        )}
+      </div>
+    </div>
   );
 };
 
 const FAQ = () => {
-  const Buttondata = [
-    "Calls & contacts",
-    "Camera & picture",
-    "Charging",
-    "internet & network",
+  // State to track the active category
+  const [activeCategory, setActiveCategory] = useState("Call");
+
+  // Button data for the categories
+  const buttons = [
+    { id: "Call", title: "Calls & Contacts" },
+    { id: "Camera", title: "Camera & Pictures" },
+    { id: "Charging", title: "Charging" },
+    { id: "Internet", title: "Internet & Network" },
+    { id: "Other", title: "Other" },
   ];
 
-  const accordiandata = [
-    {
-      title: "lorem ipsum",
-
-      description: [
-        "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
-      ],
-    },
-    {
-      title: "lorem ipsum",
-      description: [
-        "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
-      ],
-    },
-    {
-      title: "lorem ipsum",
-      description: [
-        "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
-      ],
-    },
-    {
-      title: "lorem ipsum",
-      description: [
-        "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
-      ],
-    },
-  ];
   return (
-    <div data-aos="fade-up"  className=" lg:content px-4 lg:space-y-10 lg:px-32 space-y-3   font-markot ">
-      <p className="   text-brand/black lg:text-center text-mobile/h4 lg:text-desktop/h2">
-        Frequently Asked Questions (FAQs)
-      </p>
-      <div className=" space-y-3 lg:space-y-10">
-        {
-          //buttons
-        }
-        <div className="flex overflow-x-auto justify-between space-x-2">
-          {Buttondata.map((data, index) => {
-            return (
+    <div className="font-markot">
+      <div className="lg:content px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
+        <p className="text-brand/black lg:text-center text-mobile/h4 lg:text-desktop/h2">
+          Frequently Asked Questions (FAQs)
+        </p>
+
+        <div className="lg:space-y-[52px] space-y-[40px]">
+          {/* Category buttons */}
+          <div className="flex justify-between overflow-x-auto space-x-2">
+            {buttons.map((button) => (
               <p
-                className="lg:text-desktop/button text-white py-[6px] px-[12px] rounded-[50px] lg:py-4 lg:px-5 bg-brand/black shrink-0"
-                key={index}
+                key={button.id}
+                onClick={() => setActiveCategory(button.id)}
+                className={`lg:text-desktop/button cursor-pointer py-[6px] px-[12px] rounded-[16px] lg:py-4 lg:px-5 shrink-0 ${
+                  activeCategory === button.id
+                    ? "bg-brand/black text-white"
+                    : "text-brand/black bg-bg/primary/1"
+                }`}
               >
-                {data}
+                {button.title}
               </p>
-            );
-          })}
-        </div>
+            ))}
+          </div>
 
-        {
-          //faq accordians
-        }
-
-        <div className="  ">
-          {accordiandata.map((data) => {
-            return (
-              <div className=" border-t-2 py-[10px]  border-grey/grey/2">
-                <Accordian data={data.description} title={data.title} />
-              </div>
-            );
-          })}
+          {/* Accordions based on category selection */}
+          <div className="space-y-5 lg:space-y-[40px]">
+            {data[activeCategory].map((item, index) => (
+              <Accordion key={index} data={item.solution} title={item.problem} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

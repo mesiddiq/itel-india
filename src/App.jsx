@@ -10,7 +10,7 @@ import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import Footer from './components/common/Footer'
-import Support from './pages/static_pages/header/Support'
+import Support from './pages/static_pages/Support'
 import ScreenReplacement from './pages/static_pages/ScreenReplacement'
 import Promise100 from './pages/static_pages/Promise100'
 import EWaste from './pages/static_pages/E-Waste'
@@ -84,6 +84,7 @@ function App() {
 				<Route path='/contact-us' element={<Contactus />} />
 				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 				<Route path='/support/faqs' element={<FAQ />} />
+				{/* <Route path='/investor' */}
 
 
 				{/* ***************************************************************************************************/}
@@ -155,10 +156,10 @@ function App() {
 					<Route path='power-450' element={<Power450 />} />
 					<Route path='ace-2-power' element={<Ace2Power />} />
 				</Route>
-				
+
 				{/* ***********************Not Found**************** */}
 				<Route path='/*' element={<NotFound />} />
-				
+
 			</Routes>
 			<Footer />
 			<ScrollToTop />

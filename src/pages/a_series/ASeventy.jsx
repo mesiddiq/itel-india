@@ -22,7 +22,7 @@ import { ImageCarouselDataA70 } from "../../data/smartphonedata/A70ImageCarousel
 
 const ASeventy = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white font-markot">
       {/* <HeroSectionOfPage /> */}
       <HeroSmartPhoneCommon
         tagText="Awesome series"
