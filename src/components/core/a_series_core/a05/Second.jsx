@@ -4,7 +4,7 @@ export default function Second() {
       {/* Background Image */}
       <div
         className='absolute inset-0 bg-no-repeat bg-cover bg-center z-0'
-        style={{ backgroundImage: "url('/SmartPhone/a05/midVector.png')" }}
+        style={{ backgroundImage: "url('/smartphone/a05/midVector.png')" }}
       ></div>
 
       {/* Content */}
@@ -17,7 +17,7 @@ export default function Second() {
       
       <div className='flex-grow'></div> {/* This will push the image to the bottom */}
       <img 
-        src="/SmartPhone/a05/4mobs.png" 
+        src="/smartphone/a05/4mobs.png" 
         alt="4mobs" 
         className='md:w-[1210.8px] w-[100%] max-w-full h-auto mx-auto xl:pt-[40px] pt-0 object-cover z-10' 
       />

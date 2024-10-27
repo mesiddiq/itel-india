@@ -1,9 +1,13 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 // import { ArrowRight } from 'lucide-react'
-import { useState, useRef, } from 'react'
+import { useState, useRef, useEffect, } from 'react'
 import { useClickOutside } from "react-haiku"
 import { Link } from 'react-router-dom'
-import { AccessoriesData, PhoneData, TvData, SupportData } from '../data/NavbarData'
-import { MdCurrencyRupee } from 'react-icons/md'
+import { AccessoriesData, PhoneData, TvData, SupportData, PhonesData } from '../data/NavbarData'
+import { MdCurrencyRupee, MdKeyboardArrowRight } from 'react-icons/md'
+import { useNavigate } from "react-router-dom";
+import { IoCloseSharp } from 'react-icons/io5'
 
 
 const ArrowSvg = ({ isActive }) => {
@@ -208,8 +212,68 @@ const TvDropDown = ({ tv }) => {
 }
 
 
+/**
+ * Highlights a given term in the given text
+ * @param {{text: string, highlight: string}} props
+ * @prop {string} text The text to highlight
+ * @prop {string} highlight The term to highlight
+ * @returns {React.ReactElement} A span with the highlighted text
+ */
+function HighlightedText({ text = "", highlight = "" }) {
+    // If there's no highlight term, return the original text
+    if (!highlight.trim()) {
+        return <span>{text}</span>
+    }
 
+    // Split on highlight term and include term into parts array
+    const parts = text.split(new RegExp(`(${highlight})`, 'gi'))
+
+    return (
+        <span>
+            {parts.map((part, i) =>
+                part.toLowerCase() === highlight.toLowerCase() ? (
+                    <span key={i} className="text-white font-medium">
+                        {part}
+                    </span>
+                ) : (
+                    <span key={i}>{part}</span>
+                )
+            )}
+        </span>
+    )
+}
+
+
+/**
+ * @description This component renders the Navigation Bar at the top of the page.
+ * It contains a search bar, a link to the homepage, and a dropdown menu with links to various pages.
+ * The search bar is a full-text search of the phone database, and the results are displayed in a dropdown.
+ * @returns {JSX.Element} The rendered Navigation Bar component.
+ */
 const Navbar = () => {
+
+
+    const navigate = useNavigate();
+
+    const [searchTerm, setSearchTerm] = useState('')
+    const [results, setResults] = useState({ smartphones: [], featurephones: [] })
+
+    useEffect(() => {
+        if (searchTerm) {
+            const filteredPhones = PhonesData.filter(phone =>
+                phone.label.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+
+            setResults({
+                smartphones: filteredPhones.filter(phone => phone.type === 'smartphone'),
+                featurephones: filteredPhones.filter(phone => phone.type === 'featurephone')
+            })
+        } else {
+            setResults({ smartphones: [], featurephones: [] })
+        }
+    }, [searchTerm])
+
+    const noResults = searchTerm && results.smartphones.length === 0 && results.featurephones.length === 0
 
     const [smartPhone, setSmartPhone] = useState(false)
     const [tv, setTv] = useState(false)
@@ -225,6 +289,11 @@ const Navbar = () => {
         setSupport(false)
     }
 
+    const NavigateToSearch = (path) => {
+        navigate(path)
+        setSearchTerm('')
+    }
+
     useClickOutside(navRef, handleOutside)
 
     return (
@@ -236,15 +305,75 @@ const Navbar = () => {
                         <img src="/static_page/homepage/itel.png" alt="" className="" />
                     </Link>
 
-                    <div className="w-[712px] h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">
+                    <div className="w-[712px] relative h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M22 22L20 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <input type="text" placeholder='What you are looking for' className='text-grey/grey/2 text-desktop/body/1 bg-transparent outline-none border-none w-full' />
+                        <input
+                            type="text"
+                            placeholder='What you are looking for'
+                            className='text-grey/grey/2 text-desktop/body/1 bg-transparent outline-none border-none w-full'
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+
+                        {
+                            searchTerm &&
+                            <button onClick={() => setSearchTerm('')} className="text-white text-2xl">
+                                <IoCloseSharp />
+                            </button>
+                        }
+
+                        {/* Search Result */}
+
+                        {searchTerm && (
+                            <div className="absolute top-16 left-0 p-6 bg-black/1 z-[100] w-full  font-markot">
+                                <div className="space-y-5">
+                                    {noResults ? (
+                                        <div className="p-4 text-center text-muted-foreground text-desktop/h5/medium text-grey/grey/4">
+                                            No results found for "{searchTerm}"
+                                        </div>
+                                    ) : (
+                                        <>
+                                            {results.smartphones.length > 0 && (
+                                                <div className="">
+                                                    <h2 className="text-desktop/caption text-grey/grey/4">Smartphones</h2>
+                                                    <ul className="space-y-2">
+                                                        {results.smartphones.map(phone => (
+
+                                                            <li onClick={() => NavigateToSearch(phone.link)} key={phone.id} className="text-desktop/h6/medium uppercase group cursor-pointer text-grey/grey/3 py-[6px] flex justify-between items-center">
+                                                                <HighlightedText text={phone.label} highlight={searchTerm} />
+                                                                <MdKeyboardArrowRight className='text-white text-2xl group-hover:text-itel-red' />
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
+
+                                            {results.featurephones.length > 0 && (
+                                                <div className="">
+                                                    <h2 className="text-desktop/caption text-grey/grey/4">Featurephones</h2>
+                                                    <ul className="space-y-2">
+                                                        {results.featurephones.map(phone => (
+                                                            <li onClick={() => NavigateToSearch(phone.link)} key={phone.id} className="text-desktop/h6/medium uppercase group cursor-pointer text-grey/grey/3 py-[6px] flex justify-between items-center">
+                                                                <HighlightedText text={phone.label} highlight={searchTerm} />
+                                                                <MdKeyboardArrowRight className='text-white text-2xl group-hover:text-itel-red' />
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
+                                        </>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+
+
                     </div>
 
-                    <div className="flex gap-2 items-center">
+                    <div className="flex gap-2 items-center relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#FF073C" stroke-width="1.5" stroke-miterlimit="10" />
                         </svg>

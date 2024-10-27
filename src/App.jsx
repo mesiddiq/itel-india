@@ -68,14 +68,12 @@ function App() {
 			<NavbarMobile />
 			<Navbar />
 			<Routes>
-				<Route path='/' element={<HomePageButtons />} />
+				<Route path='/' element={<HomePage />} />
 
 				{/********************************************************/}
-				{/* 					Static Pages					 					*/}
+				{/* 					Static Pages	   				*/}
 				{/********************************************************/}
 
-
-				<Route path='/homepage' element={<HomePage />} />
 				<Route path='/products' element={<ProductListing />} />
 				<Route path='/support' element={<Support />} />
 				<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
@@ -86,7 +84,6 @@ function App() {
 				<Route path='/contact-us' element={<Contactus />} />
 				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 				<Route path='/support/faqs' element={<FAQ />} />
-				<Route path='/page-not-found' element={<NotFound />} />
 
 
 				{/* ***************************************************************************************************/}
@@ -133,6 +130,15 @@ function App() {
 				</Route>
 
 
+				{/********************************************************/}
+				{/* 					Color Pro 5g					 */}
+				{/********************************************************/}
+
+				<Route path='/product' element={<A_Series_Parent />} >
+					<Route path='color-pro-5g' element={<ColorPro5G />} />
+				</Route>
+
+
 				{/***************************************************************************************************/}
 				{/*****************************************Feature Phoness*******************************************/}
 				{/***************************************************************************************************/}
@@ -149,7 +155,10 @@ function App() {
 					<Route path='power-450' element={<Power450 />} />
 					<Route path='ace-2-power' element={<Ace2Power />} />
 				</Route>
-				<Route path="navbar" element={<Navbar />} />
+				
+				{/* ***********************Not Found**************** */}
+				<Route path='/*' element={<NotFound />} />
+				
 			</Routes>
 			<Footer />
 			<ScrollToTop />

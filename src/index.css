@@ -101,27 +101,6 @@
   transform: rotate(10deg);
 }
 
-.StayPlugged {
-  background-image: url('../public/subtract.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.StayPlugged h1,
-.StayPlugged h3,
-.StayPluggedMobile h1,
-.StayPluggedMobile h3 {
-  white-space: nowrap;
-  border-collapse: collapse;
-}
-
-.StayPluggedMobile {
-  background-image: url('../public/subtract-mobile.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .inputIcon {
   height: 1.5rem;
@@ -214,15 +193,56 @@
   .custom-lg-style {
     width: 278px;
     top: 15rem;
-    }
+  }
 
-  .custom-lg-h1{
+  .custom-lg-h1 {
     font-size: 36px;
     line-height: 41px;
   }
 }
 
+@media (width: 1024px) {
+  .responsive-width {
+    width: 383px !important;
+  }
+}
 
-.navbarmobile::-webkit-scrollbar{
+@media (width: 1024px) {
+  .responsive-Tab img{
+      width: 600px;
+      left: 16rem;
+      position: absolute;
+      top: 7rem;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .responsive-bg {
+    background-size: 100% 100% !important;
+  }
+
+  .responsive-bg-height {
+    height: 400px !important;
+
+  }
+}
+
+.navbarmobile::-webkit-scrollbar {
   display: none;
+}
+
+@media (min-width: 430px) and (max-width: 700px) {
+  .responsive-LanguageSection {
+    height: 600px;
+  }
+}
+
+@media (width: 1024px) {
+  .responsive-WhatsappSection{
+    width: 351px !important;
+  }
+  .responsive-WhatsappSection div {
+    padding-inline-start: 37px;
+  }
 }

@@ -11,13 +11,14 @@ const PowerThrough = () => {
       entries.forEach(entry => {
         const video = videoRef.current;
         if (entry.isIntersecting) {
-          setStartAnimation(true);
+          console.log("PowerThroughIf", entry.isIntersecting);
           video.currentTime = 0;
           video.play();
           
           const timer = setTimeout(() => {
             video.pause();
           }, 5500);
+          setStartAnimation(true);
 
           // Cleanup the timer on component unmount
           return () => clearTimeout(timer);
@@ -44,17 +45,10 @@ const PowerThrough = () => {
 
   return (
     <div ref={containerRef} className='flex relative w-full h-[650px] md:h-[900px] 2xl:h-[1100px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#0B0518] md:bg-none overflow-hidden'>
-      <video
-        ref={videoRef}
-        className='block md:hidden absolute bottom-[55px] right-[90px] w-auto object-cover transform scale-[1.7]'
-        src='/smartphone/color-pro-5g/PowerThrough/video.mp4'
-        loop={false}
-        muted
-      />
       <div className='content'>
         <video
           ref={videoRef}
-          className='hidden md:block absolute top-0 left-0 w-full h-full object-cover'
+          className='absolute top-[110px] md:top-0 md:left-0 md:w-full md:h-full object-cover transform scale-[1.5] md:scale-[1]'
           src='/smartphone/color-pro-5g/PowerThrough/video.mp4'
           loop={false}
           muted
