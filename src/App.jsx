@@ -51,6 +51,7 @@ import Navbar from './pages/Navbar'
 import ScrollToTop from './utils/ScrollToTop'
 import A50 from './pages/a_series/A50'
 import NavbarMobile from './pages/NavbarMobile'
+import ProductListing from './pages/static_pages/ProductListing'
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
 				{/* 					Static Pages	   				*/}
 				{/********************************************************/}
 
+				<Route path='/products' element={<ProductListing />} />
 				<Route path='/support' element={<Support />} />
 				<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
 				<Route path='/support/e-waste-management' element={<EWaste />} />

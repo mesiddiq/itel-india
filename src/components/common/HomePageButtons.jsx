@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const HomePageButtons = () => {
@@ -141,6 +140,11 @@ const HomePageButtons = () => {
                 <Link to='/homepage'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Home
+                    </button>
+                </Link>
+                <Link to='/products'>
+                    <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
+                        Product Listing
                     </button>
                 </Link>
                 <Link to='/support'>
