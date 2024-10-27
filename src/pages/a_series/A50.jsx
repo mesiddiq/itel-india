@@ -1,4 +1,3 @@
-import React from 'react'
 import A50Heropage from '../../components/core/a_series_core/a50/A50Heropage'
 import { a50FeatureRichData, a50FullSpecifications, a50ImageCaraousel } from '../../data/smartphonedata/A50Data'
 import StickyHeader from '../../components/core/a_series_core/a05/A05StickyHeader'
@@ -8,11 +7,24 @@ import Frames from '../../components/core/a_series_core/a50/Frames'
 import Sections from '../../components/core/a_series_core/a50/Sections'
 import A05ColorImageCarausel from '../../components/core/a_series_core/a05/A05ColorImageCarausel'
 import FullSpecifications from '../../components/common/FullSpecifications'
+import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon'
 
 export default function A50() {
   return (
     <div className='bg-white font-markot'>
         <A50Heropage/>
+        {/* <HeroSmartPhoneCommon
+        tagText="Awesome series"
+        headingText="A50"
+        price={"6,299"}
+        description={'6.6 HD+ DISPLAY WITH DYNAMIC BAR | 12GB*(4GB+8GB*) RAM + 64GB ROM | 8MP AI REAR CAMERA'}
+        bgDesktop={'/smartphone/a70/A70Banner.webp'}
+        bgMobile={'/smartphone/a70/A70bannermobile.webp'}
+        gradient1='#ca86ff'
+        gradient2='#85e2fd'
+        theme='dark'
+      /> */}
+
         <StickyHeader bgColor="#fff" title="A50" icon="/smartphone/a05/logos/a05StickyIcon.png" />
         <FeatureRich {...a50FeatureRichData}/>
         <A05Video/>

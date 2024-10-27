@@ -1,17 +1,18 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 import Slider from 'react-slick';
-
 import Button from '../../common/Button';
 
-const StayInTheLoop = () => {
+const StayInTheLoop = ({ theme = 'light' }) => {
+  const isDarkTheme = theme === 'dark';
+
   const settings = {
-    // dots: true,
     autoplay: true,
     arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   return (
@@ -27,11 +28,13 @@ const StayInTheLoop = () => {
         type='text/css'
         href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
       />
-      <div className='content flex flex-col md:flex-row justify-between px-[16px] md:px-0 pt-[60px] pb-[20px]' style={{ marginTop: '0px' }}>
-        <h3 className='text-mobile/h4 md:text-desktop/h3 font-markot text-[#FFFFFF]'>Stay in the loop: Follow us for updates!</h3>
+      <div className={`content flex flex-col md:flex-row justify-between px-[16px] md:px-0 pt-[60px] pb-[20px] ${isDarkTheme ? 'bg-[#121212]' : 'bg-white'}`} style={{ marginTop: '0px' }}>
+        <h3 className={`text-mobile/h4 md:text-desktop/h3 font-markot ${isDarkTheme ? 'text-[#FFFFFF]' : 'text-black'}`}>
+          Stay in the loop: Follow us for updates!
+        </h3>
         <Button btnLabel='Follow us on Instagram' rounded='mt-[12px] md:mt-0 rounded-full' />
       </div>
-      <div className='content hidden md:grid grid-cols-1 md:grid-cols-4 gap-4 px-[16px] md:px-0 pb-[60px]' style={{ marginTop: '0px' }}>
+      <div className={`content hidden md:grid grid-cols-1 md:grid-cols-4 gap-4 px-[16px] md:px-0 pb-[60px] ${isDarkTheme ? 'text-[#F8F6F3]' : 'text-black'}`} style={{ marginTop: '0px' }}>
         <div className='col-span-1'>
           <img src='/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full' />
         </div>
@@ -45,7 +48,7 @@ const StayInTheLoop = () => {
           <img src='/StayInTheLoopFour.svg' alt='StayInTheLoopFour' className='w-full' />
         </div>
       </div>
-      <div className='content block md:hidden slider-container px-[16px] md:px-0 h-[430px]' style={{ marginTop: '0px' }}>
+      <div className={`content block md:hidden slider-container px-[16px] md:px-0 h-[430px] ${isDarkTheme ? 'bg-[#121212]' : 'bg-white'}`} style={{ marginTop: '0px' }}>
         <Slider {...settings}>
           <div>
             <img src='/StayInTheLoopOne.svg' alt='StayInTheLoopOne' className='w-full rounded-[16px]' />
