@@ -9,14 +9,14 @@ const Gaming = () => {
     <div className={`
     flex flex-col items-end md:justify-center w-full h-full
     bg-cover
-    bg-[url('/P_Series/gaming_mobile.png')]   // For small screens (default)
-    md:bg-[url('/P_Series/gaming.png')]       // For md and larger screens
+    bg-[url('/SmartPhone/P55fiveg/Backgrounds/GamingMobile.webp')]   // For small screens (default)
+    md:bg-[url('/SmartPhone/P55fiveg/Backgrounds/GamingBG.webp')]       // For md and larger screens
     bg-center bg-no-repeat
   `}>
     <div className="content flex flex-col md:flex-row gap-8 w-full p-4 lg:p-0 "  data-aos="fade-right">
-      <div className='flex flex-col justify-between md:gap-[114px] py-8'>
+      <div className='flex flex-col justify-between gap-[54px] md:gap-[114px] py-8'>
         <div className="flex flex-col gap-4 w-full md:w-[542px]">
-          <img src="/P_Series/media2.png" className='h-[23px] w-[92px]' alt="Media Icon"/>
+          <img src="/SmartPhone/P55fiveg/Backgrounds/media2.png" className='h-[23px] w-[92px]' alt="Media Icon"/>
           <h2 className="text-3xl md:text-4xl lg:text-desktop/h2 font-bold text-white">Gaming Made Easy</h2>
           <p className="text-sm md:text-lg lg:text-desktop/body/large text-white">
             Faster & Reliable Network Response | Longer Gameplay | Hassle-free Gaming
@@ -27,11 +27,11 @@ const Gaming = () => {
         </div>
         <div className='flex gap-[28px]'>
           <div className='flex flex-col gap-[8px]'>
-            <img src='/P_Series/game_icon.png' className='h-[40px] w-[40px]' alt="Game Icon"/>
+            <img src='/SmartPhone/P555g/game_icon.png' className='h-[40px] w-[40px]' alt="Game Icon"/>
             <h6 className='text-desktop/h6/medium text-white'>Hyper Engine</h6>
           </div>
           <div className='flex flex-col gap-[8px]'>
-            <img src='/P_Series/game_icon2.png' className='h-[40px] w-[40px]' alt="Game Icon 2"/>
+            <img src='/SmartPhone/P555g/game_icon2.png' className='h-[40px] w-[40px]' alt="Game Icon 2"/>
             <h6 className='text-desktop/h6/medium text-white'>3.0 Lite Gaming Technology</h6>
           </div>
         </div>

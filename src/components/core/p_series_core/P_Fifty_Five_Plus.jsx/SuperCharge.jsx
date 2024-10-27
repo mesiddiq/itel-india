@@ -1,80 +1,40 @@
-import React from 'react';
+import React from 'react'
 
-const SuperCharge = () => {
+const CoreProcessor = () => {
   return (
-    <>
-   
-      {/* Mobile View */}
-      <div className="w-full h-[750px] bg-white md:hidden"> {/* Hide on desktop */}
-  <div className="relative w-full h-full overflow-hidden">
-    {/* Background Image (Rotated) */}
-    <div
-      className={`
-        absolute top-0 left-0 h-full w-full   {/* Swap width and height */}
-        bg-[url('/SmartPhone/P55plus/storagem.png')] 
-        bg-cover bg-center bg-no-repeat
-     
-      `}
-    ></div>
-
-          {/* Content (Unrotated) */}
-          <div className="relative z-10 text-white flex flex-col justify-center items-center gap-[12px]  md:gap-[56px] text-center rounded-[16px] pt-8">
-            <div className="flex flex-col gap-[12px]">
-              <h1 className="font-medium text-mobile/h4 mb-4 text-[#B3D98E]">
-                Beast Mode <br />
-                Octa-Core Processor
-              </h1>
-              <p className="text-desktop/button">Unisoc T606 (12nm)</p>
-            </div>
-            <p className="text-[16px] mb-6">
-              Experience enhanced speed and reliability with the advanced<br /> 
-              capabilities of the UNISOC T606 processor.
-            </p>
-
-            <div className="flex gap-[12px] font-markot opacity-[50%]">
-              <span className="text-[16px]">Powered by</span>
-              <img src="/SmartPhone/P55plus/name.png" alt="Powered by" />
-            </div>
+    <div className="bg-[#D0E1FC] h-[1250px]   lg:h-[720px] relative w-full flex items-center justify-center bg-no-repeat bg-cover"
+    style={{ backgroundImage: 'url(/SmartPhone/P55+/Backgrounds/juiceUpBG.webp)' }}>
+        <div className='content flex w-full h-full font-markot p-4 lg:p-0'>
+        <div className=' flex flex-col justify-between w-2/3 py-8 md:py-20'>
+          <div className="flex flex-col gap-[27px]  ">
+            <h2 className='text-mobile/h3 md:text-desktop/h2 text-[#B3D98E]'>Juice Up Fast:<br/> Supercharge with 45W!</h2>
+            <p className='text-desktop/body/2/regular md:text-desktop/body/1 md:w-[396px]'>With the incredible 45W PowerCharge, your phone zips to 25% charge in just 10 minutes, faster than grabbing a coffee! Get ready for hours of calls, work, and play in a flash. </p>
           </div>
-        </div>
-      </div>
-      {/* Desktop View */}
-      <div className="hidden md:block w-full h-[720px] bg-white"> {/* Hide on mobile */}
-        <div
-          className={`
-            flex flex-col items-end justify-center w-full
-            bg-cover overflow-hidden h-full
-            bg-[url('/SmartPhone/P55plus/beastmode.png')]  {/* Desktop Background */}
-            bg-center bg-no-repeat
-          `}
-        >
-          <div className="content flex flex-row md:flex-col justify-center gap-[56px] items-end rounded-[16px]">
-            <div
-              className="flex flex-col justify-between md:gap-[48px] text-left pt-8"
-              data-aos="fade-left"
-            >
-              <div className="flex flex-col gap-[12px]">
-                <h1 className="font-medium text-desktop/h2 mb-4 text-[#B3D98E]">
-                  Beast Mode <br />
-                  Octa-Core Processor
-                </h1>
-                <p className="text-desktop/button">Unisoc T606 (12nm)</p>
-              </div>
-              <p className="text-[16px] mb-6">
-                Experience enhanced speed and reliability with the advanced<br />
-                capabilities of the UNISOC T606 processor.
-              </p>
 
-              <div className="flex gap-[12px] font-markot opacity-[50%]">
-                <span className="text-[16px]">Powered by</span>
-                <img src="/SmartPhone/P55plus/name.png" alt="Powered by" />
-              </div>
-            </div>
+          <div className="flex flex-col lg:flex-row gap-[47px]">
+<div className="flex flex-col gap-[8px]">
+<img src="/SmartPhone/P55+/Backgrounds/icon3.png" className='h-10 w-10'></img>
+<span className='font-[12px] md:text-desktop/body/large'>Hyper Charge</span>
+<h4 className='text-mobile/h5/medium md:text-desktop/h4'>During Urgency 25% <br/>charge in 10 min</h4>
+</div>
+<div className="flex flex-col gap-[8px]">
+<img src="/SmartPhone/P55+/Backgrounds/icon2.png" className='h-10 w-10'></img>
+<span className='font-[12px] md:text-desktop/body/large'>Smart Charge</span>
+<h4 className='text-mobile/h5/medium md:text-desktop/h4'>Basis Usage Pattern <br/>AI Optimization</h4>
+</div>
+<div className="flex flex-col gap-[8px]">
+<img src="/SmartPhone/P55+/Backgrounds/icon4.png" className='h-10 w-10'></img>
+<span className='font-[12px] md:text-desktop/body/large'>Low-temp Charge</span>
+<h4 className='text-mobile/h5/medium md:text-desktop/h4'>Booyah Mode<br/> No Overheating</h4>
+</div>
           </div>
+</div>
+<div className='absolute bottom-1/3 lg:bottom-0 right-0'
+><img src="/SmartPhone/P55+/Backgrounds/coreimage.png" className='hidden lg:flex'></img>
+<img src="/SmartPhone/P55+/Backgrounds/coremobile.png" className='flex lg:hidden h-[371px] w-[567px]'></img>
         </div>
-      </div>
-    </>
-  );
-};
+        </div></div>
+  )
+}
 
-export default SuperCharge;
+export default CoreProcessor

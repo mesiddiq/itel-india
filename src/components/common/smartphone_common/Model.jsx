@@ -5,7 +5,7 @@ const Model = () => {
   const models = [
     {
       id: 1,
-      image: '/P_Series/bg6.png',
+      image: '/SmartPhone/P555g/bg6.png',
       title: 'S23+',
       price: '₹12,999.00',
       features: [
@@ -19,7 +19,7 @@ const Model = () => {
     },
     {
       id: 2,
-      image: '/P_Series/bg7.png',
+      image: '/SmartPhone/P555g/bg7.png',
       title: 'S24',
       price: '₹10,999.00',
       features: [
@@ -33,7 +33,7 @@ const Model = () => {
     },
     {
       id: 3,
-      image: '/P_Series/bg8.png',
+      image: '/SmartPhone/P555g/bg8.png',
       title: 'A70',
       price: '₹6,799.00',
       features: [
@@ -95,7 +95,7 @@ const Model = () => {
                 <button className="flex gap-3 justify-center border border-white/50 py-[12px] px-[24px] rounded-full items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
                     <span className="flex overflow-hidden gap-2 items-center">
                       <span>Buy Now</span>
-                      <img loading="lazy" src="/P_Series/arrow-right.png" alt="" className="object-contain w-6" />
+                      <img loading="lazy" src="/SmartPhone/P555g/arrow-right.png" alt="" className="object-contain w-6" />
                     </span>
                   </button>
               </div>
