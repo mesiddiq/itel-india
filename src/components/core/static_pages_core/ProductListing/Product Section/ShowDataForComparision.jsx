@@ -53,7 +53,7 @@ const ShowDataForComparision = () => {
                     </div> 
                     
                     {/* Buy Now */}
-                    <div className="bg-white rounded-3xl py-3 px-[14px border-[0.75px] border-black">
+                    <div className="cursor-pointer bg-white rounded-3xl py-3 px-[14px border-[0.75px] border-black">
                         <BuyNowText content="BUY NOW" />
                     </div>    
                 </div>

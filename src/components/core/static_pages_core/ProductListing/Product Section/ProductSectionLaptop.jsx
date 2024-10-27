@@ -136,50 +136,6 @@ const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCu
                             <img src={arrowRightCarousel} className="p-3" onClick={nextPage} disabled={currentPage === totalPagesPerCategory}/>
                         </div>
                     </div>
-
-                    {/* Mobile */}
-                    <div className="md:hidden flex flex-col gap-12">
-                        <div className="flex flex-col gap-5">
-                            <div className="productCards flex flex-row gap-5">
-                                {
-                                    currentPhones.slice(0, 2).map(phone => (
-                                        <ProductCard key={phone.id} {...phone} />
-                                    ))
-                                }
-                            </div>
-                            {/* <img src={life} className="w-full" /> */}
-
-                            <div className="productCards flex flex-row gap-5">
-                                {
-                                    currentPhones.slice(2, 4).map(phone => (
-                                        <ProductCard key={phone.id} {...phone} />
-                                    ))
-                                }
-                            </div>
-                            {/* <img src={life} className="w-full" /> */}
-
-                            <div className="productCards flex flex-row gap-5">
-                                {
-                                    currentPhones.slice(4, 6).map(phone => (
-                                        <ProductCard key={phone.id} {...phone} />
-                                    ))
-                                }
-                            </div>
-                            {/* <img src={life} className="w-full" /> */}
-                        </div>
-
-                        <div className="flex flex-col justify-center items-center">
-                            <div className="w-full pl-[6px]">
-                                <img src={subtract} className="w-full" />
-                            </div>
-                        </div>
-
-                        <div className="sliderCounter flex flex-row gap-2 justify-center items-center w-full">
-                            <img src={arrowLeftCarousel} className="p-3" />
-                            <span className="FFMarkMedium text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">1 of 7</span>
-                            <img src={arrowRightCarousel} className="p-3" />
-                        </div>
-                    </div>
                 </div>
             </section>
         </>
