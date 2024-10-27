@@ -25,7 +25,7 @@ const EnjoyBetterLife = () => {
     <div className="w-full">
       <img src="/static_page/homepage/EnjoyBetterLifeHeader.png" alt="Header" className="w-full" />
       <div className="relative content px-4 sm:px-6 lg:px-0">
-        <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 h-auto lg:h-[812px] lg:mt-[-91px]">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 h-auto lg:h-[545px] lg:mt-[-91px]">
           <RenderContent
             colClass="w-full h-[200px] md:h-[250px] lg:w-[522px] lg:h-[543px]"
             header="Amp Your Style with itel Latest Smartphones"
@@ -66,7 +66,7 @@ const EnjoyBetterLife = () => {
                 colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                 colBgImgHeight="100%" colBgImgWidth="100%"
                 colImgHeight="100%" colImgWidth="100%"
-                posClasses={["top-[25%] left-[5%]", "top-[40%] left-[50%] z-20"]}
+                posClasses={["top-[25%] left-[5%]", "top-[40%] left-[30%] z-20"]}
               />
             </div>
           </div>
@@ -105,8 +105,8 @@ const EnjoyBetterLife = () => {
               colBgImgHeight="120px" colBgImgWidth="100%"
               colImgHeight="100%" colImgWidth="100%"
               posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[20px] top-[6rem] left-[6rem]"]}
-              mobRes="mob-res"
-              mobRes1="mob-res1"
+              mobRes="mob-res-AllDay"
+              mobRes1="mob-res1-AllDay"
             />
           </div>
         </div>

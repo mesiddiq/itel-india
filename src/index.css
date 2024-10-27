@@ -257,7 +257,7 @@
 }
 
 
-@media (max-width: 770px) {
+@media (min-width: 760px) and (max-width: 770px) {
   .responsive-section{
     top: 80px !important;
   }
@@ -273,18 +273,34 @@
     height: 170px !important;
   }
   .mob-res1 {
-    top: 25% !important;
-    left: 26rem !important;
+    top: 45% !important;
+    /* left: 26rem !important; */
   }
   .mob-res1 img{
     height: 190px !important;
   }
   .mob-res {
     top: 3rem !important;
-    left: 26rem !important;
+    /* left: 26rem !important; */
   }
   .mob-res1 img{
     height: 150px !important;
+  }
+
+  .mob-res-AllDay {
+    top: 1% !important;
+    left: 20rem !important;
+  }
+
+  .mob-res-AllDay img {
+    height: 100% !important;
+  }
+  .mob-res1-AllDay img{
+    height: 150px !important;
+  }
+  .mob-res1-AllDay {
+    left: 25rem !important;
+    top: 52px !important;
   }
 }
 
