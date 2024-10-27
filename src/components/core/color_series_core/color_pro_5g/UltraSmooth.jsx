@@ -44,7 +44,13 @@ const UltraSmooth = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className='flex w-full md:items-center h-[270px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#0B0021] overflow-hidden'>
+    <>
+    <div className='flex flex-col md:hidden w-full md:items-center h-[650px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/UltraSmooth/bg.jpeg")] bg-cover bg-left bg-no-repeat overflow-hidden'>
+        <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot md:pt-20 md:w-[40%]'>Ultra-Smooth 6.6" HD+ Display</h2>
+        <p className='text-mobile/body/2 md:text-desktop/body/large text-[#FFFFFF] font-markot pt-5 md:w-[40%]'>Experience stunning visuals on the 6.6-inch HD+ display, featuring a 90Hz refresh rate that reduces visual fatigue and ensures smoother, faster response times.</p>
+        <img src='/smartphone/color-pro-5g/UltraSmooth/Animatedpart1.png' />
+    </div>
+    <div ref={containerRef} className='hidden md:flex w-full md:items-center h-[600px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#0B0021] overflow-hidden'>
       <div className='content relative h-full'>
         <video
           ref={videoRef}
@@ -60,13 +66,14 @@ const UltraSmooth = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 3 }}
             >
-              <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot md:pt-20 md:w-[40%]'>Ultra-Smooth 6.6" HD+ Display</h2>
-              <p className='text-mobile/body/2 md:text-desktop/body/large text-[#FFFFFF] font-markot pt-0 md:w-[40%]'>Experience stunning visuals on the 6.6-inch HD+ display, featuring a 90Hz refresh rate that reduces visual fatigue and ensures smoother, faster response times.</p>
+              <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot md:pl-5 md:w-[40%]'>Ultra-Smooth<br />6.6" HD+ Display</h2>
+              <p className='text-mobile/body/2 md:text-desktop/body/large text-[#FFFFFF] font-markot md:pl-5 pt-5 md:w-[38%]'>Experience stunning visuals on the 6.6-inch HD+ display, featuring a 90Hz refresh rate that reduces visual fatigue and ensures smoother, faster response times.</p>
             </motion.div>
           )}
         </div>
       </div>
     </div>
+    </>
   );
 };
 

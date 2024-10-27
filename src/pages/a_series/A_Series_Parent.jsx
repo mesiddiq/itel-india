@@ -8,7 +8,7 @@ import Model from '../../components/common/smartphone_common/Model'
 
 const A_Series_Parent = () => {
     return (
-        <div className='bg-[#111111]'>
+        <div className='bg-[#111111] overflow-hidden'>
             <Outlet />
             <Accessories />
             <Model />
