@@ -62,6 +62,10 @@
   }
 }
 
+.overflowHidden::-webkit-scrollbar {
+  display: none;
+}
+
 .swiper-pagination-bullet {
   background-color: white;
   color: white;

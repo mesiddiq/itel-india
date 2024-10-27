@@ -14,10 +14,23 @@ import StickyHeader from "../../components/common/StickyHeader"
 
 import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData'
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data'
+import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
 
 const PFiftyFive = () => {
     return (
         <>
+
+            <HeroSmartPhoneCommon
+                bgDesktop={'/smartphone/S24/hero_banner.webp'}
+                bgMobile={'/smartphone/S24/hero_banner_mobile.webp'}
+                description={'24GB* (8GB + 16GB*) RAM + 128GB ROM | 50MP AI Dual Rear Camera | T606 Octacore Processor'}
+                headingText={'P55'}
+                price={'6,999'}
+                tagText={'power series'}
+                gradient1={'#D5EEF9'}
+                gradient2={'#70A2E1'}
+            />
+
             <StickyHeader title="P55" purchaseLink="" icon="/smartphone/P55/P55Logo.svg" bgColor="#91C9EC"/>
 
             <VideoAsset />
