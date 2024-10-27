@@ -20,7 +20,7 @@ export default function A50() {
         purchaseLink=""
         description={`6.6" HD+ Display with Dynamic Bar | 12GB*(4GB+8GB*) RAM + 64GB ROM | 8MP AI Rear Camera`}
         gradient1="#181818"
-        grdient2="#181818"
+        gradient2="#181818"
         price="6,499"
         tagText="awesome series"
       />

@@ -16,7 +16,7 @@ const HomePage = () => {
     return (
         <div className='bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] overflow-x-hidden font-markot'>
             <HeroSection />
-            {/* <EnjoyBetterLife /> */}
+            <EnjoyBetterLife />
             {/* <SimilarProducts /> */}
             <HotPicks />
             <DareToDoIt />

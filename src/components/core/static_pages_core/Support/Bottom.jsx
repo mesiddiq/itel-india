@@ -43,7 +43,7 @@ const Bottom = () => {
            </div>
         </div>
 
-        <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%203.webp")] space-y-9  lg:space-y-0   lg:px-[46px] items-center py-6 px-4 lg:py-9 lg:grid lg:grid-cols-2 font-markot   bg-[url("/static_page/Support2/Grid%20Bloack%203%20Mobile.webp")] bg-cover bg-center bg-no-repeat min-h-[319px] lg:min-h-[252px] '>
+        <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%203.webp")] rounded-xl space-y-9  lg:space-y-0   lg:px-[46px] items-center py-6 px-4 lg:py-9 lg:grid lg:grid-cols-2 font-markot   bg-[url("/static_page/Support2/Grid%20Bloack%203%20Mobile.webp")] bg-cover bg-center bg-no-repeat min-h-[319px] lg:min-h-[252px] '>
       
              <div className=" lg:space-y-[10px] space-y-[2px]">
               <p className=" text-grey/grey/5  text-desktop/body/2/regular lg:text-desktop/body/1">Need our help?</p>
