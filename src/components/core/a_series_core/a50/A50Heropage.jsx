@@ -1,4 +1,3 @@
-import React from 'react'
 import BuyNowSquareBG from '../../../common/smartphone_common/BuyNowSquareBG'
 
 export default function A50Heropage() {

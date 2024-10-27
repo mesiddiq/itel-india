@@ -51,7 +51,7 @@ const MultipleCardComponents = () => {
               </div>
 
               {/* Card 3 */}
-              <div className='border border-[#D7F1FE] flex flex-col w-full h-[220px] md:min-h-[380px] lg:h-[380px] rounded-2xl p-4 lg:p-5 group relative overflow-hidden' style={{
+              <div className='border border-[#D7F1FE] flex flex-col w-full responsive-cards h-[280px] md:min-h-[380px] lg:h-[380px] rounded-2xl p-4 lg:p-5 group relative overflow-hidden' style={{
                 backgroundImage: 'url(/smartphone/A05i/Backgrounds/DualSecurityGridBG.webp)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -68,7 +68,7 @@ const MultipleCardComponents = () => {
                 <img
                   src='/smartphone/A05i/Backgrounds/dualSecurityPhones.webp'
                   alt='quickCharge'
-                  className='absolute left-0 -bottom-[40%] lg:-bottom-[50%] scale-[80%] lg:scale-[90%] group-hover:scale-[90%] lg:group-hover:scale-[95%] transition-transform duration-700'
+                  className='absolute  left-0 bottom-[-20%] md:-bottom-[40%] lg:-bottom-[50%] scale-[80%] lg:scale-[90%] group-hover:scale-[90%] lg:group-hover:scale-[95%] transition-transform duration-700'
                 />
               </div>
 

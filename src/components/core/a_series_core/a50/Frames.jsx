@@ -89,7 +89,7 @@ export default function Frames() {
                 </div>
 
                 {/* Frame 3 */}
-                <div className="md:w-full w-80 h-[624px] border-[#62b67af4] border-2 rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
+                <div className="md:w-full w-80 h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
                     <div className='flex flex-col lg:justify-start items-start md:pl-12 px-5 md:px-0'>
                         <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
                             Minimize Glitches for a Flawless Experience

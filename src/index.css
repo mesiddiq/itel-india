@@ -205,6 +205,15 @@
   .responsive-width {
     width: 383px !important;
   }
+  .responsive-width-Qb{
+    padding-top: 3px !important;
+  }
+  .responsive-width-Qb2{
+    width: 375px !important;
+  }
+  .responsive-cards img{
+    bottom: -23% !important;                                                                        
+  }
 }
 
 @media (width: 1024px) {
