@@ -4,7 +4,6 @@ import FullSpecifications from "../../components/common/FullSpecifications";
 import AutomaticCarousel from '../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel';
 import ChargeUpFull from '../../components/core/p_series_core/P_Fifty_Five/ChargeUpFull';
 import ClearVision from '../../components/core/p_series_core/P_Fifty_Five/ClearVision';
-import ColorImageCarousel from '../../components/core/p_series_core/P_Fifty_Five/ColorImageCarousel';
 import FillerFrame from '../../components/core/p_series_core/P_Fifty_Five/FillerFrame';
 import Frame24GB from '../../components/core/p_series_core/P_Fifty_Five/Frame24GB';
 import GamingRevolution from '../../components/core/p_series_core/P_Fifty_Five/GamingRevolution';
@@ -13,6 +12,8 @@ import SeeMoreCaptureMore from '../../components/core/p_series_core/P_Fifty_Five
 import SuperfastUnisoc from '../../components/core/p_series_core/P_Fifty_Five/SuperfastUnisoc';
 import VideoAsset from '../../components/core/p_series_core/P_Fifty_Five/VideoAsset';
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data';
+import ColorImageCarousel from '../../components/common/smartphone_common/ColorImageCarousel';
+import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData';
 
 const PFiftyFive = () => {
     return (
