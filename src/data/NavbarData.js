@@ -2,31 +2,31 @@ export const PhoneData = [
     {
         id: 'new',
         products: [
-            { id: 10, label: 'Color Pro 5G', price: '9,999.00', thumbnail:'/navbar/colorpro5g.png', link: '' }
+            { id: 10, label: 'Color Pro 5G', price: '9,999.00', thumbnail:'/navbar/colorpro5g.png', link: '/product/color-pro-5g' }
         ]
     },
     {
         id: 's-series',
         products: [
-            { id: 3, label: 'S24', price: '8,199.00', thumbnail: '/navbar/s24.png', link: '/smartphones/s-series/s24' },
-            { id: 2, label: 'S23+', price: '12,999.00',thumbnail: '/navbar/s23p.png', link: '/smartphones/s-series/s23p' },
-            { id: 1, label: 'S23', price: '10,999.09', thumbnail: '/navbar/s23.png', link: '/smartphones/s-series/s23' },
+            { id: 3, label: 'S24', price: '8,199.00', thumbnail: '/navbar/s24.png', link: '/product/s24' },
+            { id: 2, label: 'S23+', price: '12,999.00',thumbnail: '/navbar/s23p.png', link: '/product/s23-plus' },
+            { id: 1, label: 'S23', price: '10,999.09', thumbnail: '/navbar/s23.png', link: '/product/s23' },
         ]
     },
     {
         id: 'p-series',
         products: [
-            { id: 4, label: 'P55 5G', price: '9,999.00',thumbnail: '/navbar/p555g.png', link: '' },
-            { id: 5, label: 'P55+', price: '9,499.00',thumbnail: '/navbar/p55p.png', link: '' },
-            { id: 6, label: 'P55 T', price: '7,999.00',thumbnail: '/navbar/p55t.png', link: '' },
+            { id: 4, label: 'P55 5G', price: '9,999.00',thumbnail: '/navbar/p555g.png', link: '/product/p55' },
+            { id: 5, label: 'P55+', price: '9,499.00',thumbnail: '/navbar/p55p.png', link: '/product/p55-plus' },
+            { id: 6, label: 'P55 T', price: '7,999.00',thumbnail: '/navbar/p55t.png', link: '/product/p55t' },
         ]
     },
     {
         id: 'a-series',
         products: [
-            { id: 7, label: 'A70', price: '6,299.00', thumbnail: '/navbar/a70.png', link: '' },
-            { id: 8, label: 'A50', price: '6,499.00', thumbnail: '/navbar/a50.png', link: '' },
-            { id: 9, label: 'A50C', price: '5,599.00', thumbnail: '/navbar/a50c.png', link: '' },
+            { id: 7, label: 'A70', price: '6,299.00', thumbnail: '/navbar/a70.png', link: '/product/a70' },
+            { id: 8, label: 'A50', price: '6,499.00', thumbnail: '/navbar/a50.png', link: '/product/a50' },
+            { id: 9, label: 'A50C', price: '5,599.00', thumbnail: '/navbar/a50c.png', link: '/product/a50-c' },
         ]
     },
 ]
@@ -80,4 +80,32 @@ export const SupportData = [
     { id: 4, label: 'E-waste Management', path: '/100dayspromise' },
     { id: 5, label: "FAQ's", path: '/100dayspromise' },
     { id: 6, label: 'Contact Us', path: '/100dayspromise' },
+]
+
+export const PhonesData = [
+    {id:'1',label:'S23',link:'/product/s23',type:'smartphone'},
+    {id:'2',label:'S23+',link:'/product/s23-plus',type:'smartphone'},
+    {id:'3',label:'S24',link:'/product/s24',type:'smartphone'},
+    {id:'4',label:'P55 5G',link:'/product/p55-5g',type:'smartphone'},
+    {id:'5',label:'P55',link:'/product/p55',type:'smartphone'},
+    {id:'6',label:'P55 T',link:'/product/p55t',type:'smartphone'},
+    {id:'7',label:'P55 PLUS',link:'/product/p55-plus',type:'smartphone'},
+    {id:'8',label:'A95',link:'/product/a05',type:'smartphone'},
+    {id:'9',label:'AURA 05 I',link:'/product/a05-i',type:'smartphone'},
+    {id:'10',label:'A50 C',link:'/product/a50-c',type:'smartphone'},
+    {id:'11',label:'A50',link:'/product/a50',type:'smartphone'},
+    {id:'12',label:'A70',link:'/product/a70',type:'smartphone'},
+    {id:'13',label:'A23 S',link:'/product/a23-s',type:'smartphone'},
+    {id:'14',label:'COLOR PRO 5G',link:'/product/color-pro-5g',type:'smartphone'},
+    {id:'super-guru-4g',label:'Super Guru 4G',link:'/product/super-guru-4g',type:'featurephone'},
+    {id:'super-guru-400',label:'Super Guru 400',link:'/product/super-guru-400',type:'featurephone'},
+    {id:'super-guru-600',label:'Super Guru 600',link:'/product/super-guru-600',type:'featurephone'},
+    {id:'circle-1',label:'Circle 1',link:'/product/circle-1',type:'featurephone'},
+    {id:'it2175p',label:'IT 2175P',link:'/product/it2175p',type:'featurephone'},
+    {id:'it5262',label:'IT 5262',link:'/product/it5262',type:'featurephone'},
+    {id:'it5027',label:'IT 5027',link:'/product/it5027',type:'featurephone'},
+    {id:'it5330',label:'IT 5330',link:'/product/it5330',type:'featurephone'},
+    {id:'power-120',label:'Power 120',link:'/product/power-120',type:'featurephone'},
+    {id:'power-450',label:'Power 450',link:'/product/power-450',type:'featurephone'},
+    {id:'ace-2-power',label:'Ace 2 Power',link:'/product/ace-2-power',type:'featurephone'},
 ]

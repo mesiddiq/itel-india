@@ -101,27 +101,6 @@
   transform: rotate(10deg);
 }
 
-.StayPlugged {
-  background-image: url('../public/subtract.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.StayPlugged h1,
-.StayPlugged h3,
-.StayPluggedMobile h1,
-.StayPluggedMobile h3 {
-  white-space: nowrap;
-  border-collapse: collapse;
-}
-
-.StayPluggedMobile {
-  background-image: url('../public/subtract-mobile.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .inputIcon {
   height: 1.5rem;
@@ -249,21 +228,63 @@
   }
 }
 
-.navbarmobile::-webkit-scrollbar {
+.navbarmobile::-webkit-scrollbar  {
   display: none;
 }
 
-@media (min-width: 430px) and (max-width: 700px) {
-  .responsive-LanguageSection {
-    height: 600px;
+
+.scale-up {
+  transition: transform 0.5s;
+}
+
+.group:hover .scale-up {
+  transform: scale(1.1);
+}
+.scale-up3 {
+  transition: transform 0.5s;
+  transform-origin: right bottom; /* Scale effect right bottom se hoga */
+}
+.scale-up2 {
+  transition: transform 0.5s;
+  transform-origin: right bottom; /* Scale effect right bottom se hoga */
+}
+
+.group2:hover .scale-up2 {
+  transform: scale(1.1); /* Scale down to 50% */
+}
+.group2:hover .scale-up3 {
+  transform: scale(1.2); /* Scale down to 50% */
+}
+
+
+@media (max-width: 770px) {
+  .responsive-section{
+    top: 80px !important;
+  }
+  .responsive-section img{
+    height: 170px !important;
+  }
+
+  .responsive-section2  {
+    left: 8rem !important;
+    top:80px !important
+  }
+  .responsive-section2 img {
+    height: 170px !important;
+  }
+  .mob-res1 {
+    top: 25% !important;
+    left: 26rem !important;
+  }
+  .mob-res1 img{
+    height: 190px !important;
+  }
+  .mob-res {
+    top: 3rem !important;
+    left: 26rem !important;
+  }
+  .mob-res1 img{
+    height: 150px !important;
   }
 }
 
-@media (width: 1024px) {
-  .responsive-WhatsappSection{
-    width: 351px !important;
-  }
-  .responsive-WhatsappSection div {
-    padding-inline-start: 37px;
-  }
-}

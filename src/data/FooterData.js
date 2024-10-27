@@ -40,27 +40,27 @@ export const SupportLinks = [
     {
         id:2,
         label:'Screen replacement',
-        link:'#'
+        link:'/support/1-time-screen-replacement'
     },
     {
         id:3,
         label:'Service Center',
-        link:'#'
+        link:'/support/service-center-locator'
     },
     {
         id:4,
         label:'100 days promise',
-        link:'#'
+        link:'/support/100-days-service-promise'
     },
     {
         id:5,
         label:'FAQs',
-        link:'#'
+        link:'/support/faqs'
     },
     {
         id:6,
         label:'E-waster management',
-        link:'#'
+        link:'/support/e-waste-management'
     },
 ]
 
@@ -81,7 +81,7 @@ export const AboutItel = [
     {
         id:1,
         label:'About Us',
-        link:'#'
+        link:'/about-us-itel-mobile-india'
     },
     {
         id:2,

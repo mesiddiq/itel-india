@@ -1,92 +1,119 @@
-import React from 'react'
-
+/* eslint-disable react/prop-types */
 const EnjoyBetterLife = () => {
-    return (
-        <div className='w-full'>
-            <img src={'./EnjoyBetterLifeHeader.png'} alt="EnjoyBetterLifeHeader" className='w-full' />
-            <div className='relative w-[90%] mx-auto -mt-[100px]'>
-                <div class="grid grid-cols-3 grid-rows-2 gap-4 h-[545px]">
-                    <div className="group col-span-1 row-span-2 bg-[#232322] p-[20px] rounded-[16px] relative overflow-hidden">
-                        <h3 className="text-[24px] text-[#FFFFFF] w-[70%]">Amp Your Style with itel Latest Smartphones</h3>
-                        <img src={'.//arrow.png'} alt="'.//arrow.png'" className="mt-3" />
-                        <div className="w-full flex justify-center">
-                            <img 
-                                src={'./EnjoyBetterLifeCol1Bg.png'} 
-                                alt="EnjoyBetterLifeCol1Bg" 
-                                className="w-full h-auto absolute bottom-[-30px] transition-transform duration-300 transform scale-100 group-hover:scale-110" 
-                            />
-                            <img 
-                                src={'./EnjoyBetterLifeCol1.png'} 
-                                alt="EnjoyBetterLifeCol1" 
-                                className="max-w-full h-auto absolute bottom-0 transition-transform duration-300 transform scale-100 group-hover:scale-105" 
-                            />
-                        </div>
-                    </div>
-                    <div class="group col-span-2 bg-[#232322] p-[20px] rounded-[16px] relative overflow-hidden">
-                        <div className='grid grid-cols-2'>
-                            <div className='col-span-1'>
-                                <h3 className='text-[24px] text-[#FFFFFF]'>Stay Effortlessly Connected All Day, Every Day</h3>
-                                <img src={'./arrow.png'} alt='arrow' className='mt-3' />
-                            </div>
-                            <div className='col-span-1 flex justify-center items-center h-full'>
-                                <img 
-                                    src={'EnjoyBetterLifeCol2Bg'} 
-                                    alt="EnjoyBetterLifeCol2Bg" 
-                                    className="max-w-full h-auto absolute bottom-0 right-0 transition-transform duration-300 transform scale-100 group-hover:scale-110" 
-                                />
-                                <img 
-                                    src={'./EnjoyBetterLifeCol2.png'} 
-                                    alt="EnjoyBetterLifeCol2" 
-                                    className="max-w-full h-auto absolute bottom-0 transition-transform duration-300 transform scale-100 group-hover:scale-105" 
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="group col-span-1 bg-[#232322] p-[20px] rounded-[16px] relative overflow-hidden">
-                        <div className='grid grid-cols-2'>
-                            <div className='col-span-1'>
-                                <h3 className='text-[24px] text-[#FFFFFF]'>Dive into Endless Entertainment: itel Smart TV</h3>
-                                <img src={'./arrow.png'} alt='arrow' className='mt-3' />
-                            </div>
-                            <div className='col-span-1 flex justify-center items-center h-full'>
-                                <img 
-                                    src={'./EnjoyBetterLifeCol3Bg.png'} 
-                                    alt="EnjoyBetterLifeCol3Bg" 
-                                    className="max-w-full h-auto absolute bottom-0 right-0 transition-transform duration-300 transform scale-100 group-hover:scale-110" 
-                                />
-                                <img 
-                                    src={'./EnjoyBetterLifeCol3.png'} 
-                                    alt="EnjoyBetterLifeCol3" 
-                                    className="max-w-full h-auto absolute bottom-0 transition-transform duration-300 transform scale-100 group-hover:scale-105" 
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="group col-span-1 bg-[#232322] p-[20px] rounded-[16px] relative overflow-hidden">
-                        <div className='grid grid-cols-2'>
-                            <div className='col-span-1'>
-                                <h3 className='text-[24px] text-[#FFFFFF]'>Level up Your Game: itel Smart Gadgets!</h3>
-                                <img src={'./arrow.png'} alt='arrow' className='mt-3' />
-                            </div>
-                            <div className='col-span-1 flex justify-center items-center h-full'>
-                                <img 
-                                    src={'./EnjoyBetterLifeCol4.png'} 
-                                    alt="EnjoyBetterLifeCol3Bg" 
-                                    className="max-w-full h-auto absolute bottom-0 right-0 transition-transform duration-300 transform scale-100 group-hover:scale-110" 
-                                />
-                                <img 
-                                    src={'./EnjoyBetterLifeCol4.png'} 
-                                    alt="EnjoyBetterLifeCol4" 
-                                    className="max-w-full h-auto absolute bottom-0 transition-transform duration-300 transform scale-100 group-hover:scale-105" 
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src={'./EnjoyBetterLifeFooter.png'} alt="EnjoyBetterLifeFooter" className='w-full -mt-[75px]' />
+  const RenderContent = ({ header, colImg, colBgImg, colBgImgHeight, colBgImgWidth, colImgHeight, colImgWidth,mobRes,mobRes1, colClass, posClasses,resClass,resclass2 }) => (
+    <div className={`${colClass} bg-[#232322] rounded-[16px] overflow-hidden group relative`}>
+      <div className="flex flex-col">
+        <div className="pt-4 px-4 md:px-5 gap-2 w-full">
+          <p className="text-sm md:text-lg lg:text-xl ">{header}</p>
+          <img
+            src="/static_page/homepage/Arrow_right.svg"
+            alt="Arrow"
+            className="w-6 h-6 lg:w-8 lg:h-8"
+          />
         </div>
-    )
-}
+        <div className={`absolute ${posClasses[0]} ${resClass} ${mobRes} transition-transform duration-500 group-hover:scale-105`}>
+          <img src={colBgImg} alt="" style={{ height: colBgImgHeight, width: colBgImgWidth }} className="object-cover" />
+        </div>
+        <div className={`absolute ${posClasses[1]} ${resclass2} ${mobRes1} transition-transform duration-500 group-hover:scale-105`}>
+          <img src={colImg} alt="Column Image" style={{ height: colImgHeight, width: colImgWidth }} className="object-cover" />
+        </div>
+      </div>
+    </div>
+  );
 
-export default EnjoyBetterLife
+  return (
+    <div className="w-full">
+      <img src="/static_page/homepage/EnjoyBetterLifeHeader.png" alt="Header" className="w-full" />
+      <div className="relative content px-4 sm:px-6 lg:px-0">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 h-auto lg:h-[812px] lg:mt-[-91px]">
+          <RenderContent
+            colClass="w-full h-[200px] md:h-[250px] lg:w-[522px] lg:h-[543px]"
+            header="Amp Your Style with itel Latest Smartphones"
+            colImg="/static_page/homepage/EnjoyBetterLifeCol1.png"
+            colBgImg="/static_page/homepage/EnjoyBetterLifeCol1Bg.png"
+            colBgImgHeight="100%" colBgImgWidth="100%"
+            colImgHeight="100%" colImgWidth="100%"
+            posClasses={["top-[30%] left-0 lg:top-[158px] lg:left-0", "md:top-[15%] top-[26%] left-[25%] lg:top-[178px] lg:left-0"]}
+            mobRes="mob-res"
+            mobRes1="mob-res1"
+          />
+
+          <div className="hidden lg:flex flex-col w-full lg:w-[738px] gap-5 lg:gap-6">
+            <RenderContent
+              colClass="lg:h-[268px]"
+              header="Stay Effortlessly Connected All Day, Every Day"
+              colImg="/static_page/homepage/EnjoyBetterLifeCol2.png"
+              colBgImg="/static_page/homepage/2CompImg.png"
+              colBgImgHeight="100%" colBgImgWidth="100%"
+              colImgHeight="100%" colImgWidth="100%"
+              posClasses={["top-[10%] left-0 lg:top-[40px]", "top-[20%] left-[50%] z-20 lg:top-[51px] lg:left-[23rem]"]}
+            />
+
+            <div className="flex gap-5">
+              <RenderContent
+                colClass="w-1/2 h-[200px] md:h-[250px] lg:w-[413px] lg:h-[258px]"
+                header="Dive into Endless Entertainment: itel Smart TV"
+                colImg="/static_page/homepage/EnjoyBetterLifeCol3.png"
+                colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
+                colBgImgHeight="100%" colBgImgWidth="100%"
+                colImgHeight="100%" colImgWidth="100%"
+                posClasses={["top-[10%] left-[10%]", "top-[30%] left-[60%] z-20"]}
+              />
+              <RenderContent
+                colClass="w-1/2 h-[200px] md:h-[250px] lg:w-[304px] lg:h-[258px]"
+                header="Enjoy Your Favorite Shows"
+                colImg="/static_page/homepage/EnjoyBetterLifeCol4.png"
+                colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
+                colBgImgHeight="100%" colBgImgWidth="100%"
+                colImgHeight="100%" colImgWidth="100%"
+                posClasses={["top-[25%] left-[5%]", "top-[40%] left-[50%] z-20"]}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-5 lg:hidden">
+            <div className="flex gap-5">
+              <RenderContent
+                colClass="w-1/2 h-[250px]"
+                header="Dive into Endless Entertainment: itel Smart TV"
+                colImg="/static_page/homepage/mobileforM.png"
+                colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
+                colBgImgHeight="100%" colBgImgWidth="100%"
+                colImgHeight="100%" colImgWidth="100%"
+                posClasses={["md:top-[10px] md:left-[60px] top-[11rem] left-0", "md:top-[20px] md:left-[6rem] z-20 top-[9rem] left-[1rem]"]}
+                resClass="responsive-section"
+                resclass2="responsive-section2"
+
+              />
+              <RenderContent
+                colClass="w-1/2 h-[250px]"
+                header="Enjoy Your Favorite Shows"
+                colImg="/static_page/homepage/EnjoyBetterLifeCol3.png"
+                colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
+                colBgImgHeight="100%" colBgImgWidth="100%"
+                colImgHeight="100%" colImgWidth="100%"
+                posClasses={["md:top-[10px] md:left-[60px] top-[11rem] left-0", "md:top-[20px] md:left-[6rem] z-20 top-[9rem] left-[1rem]"]}
+                resClass="responsive-section"
+                resclass2="responsive-section2"
+              />
+            </div>
+            <RenderContent
+              colClass="h-[205px]"
+              header="Stay Effortlessly Connected All Day, Every Day"
+              colImg="/static_page/homepage/EnjoyBetterLifeCol4.png"
+              colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
+              colBgImgHeight="120px" colBgImgWidth="100%"
+              colImgHeight="100%" colImgWidth="100%"
+              posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[20px] top-[6rem] left-[6rem]"]}
+              mobRes="mob-res"
+              mobRes1="mob-res1"
+            />
+          </div>
+        </div>
+      </div>
+      <img src="/static_page/homepage/EnjoyBetterLifeFooter.png" alt="Footer" className="w-full -mt-[50px] md:-mt-[75px]" />
+    </div>
+  );
+};
+
+export default EnjoyBetterLife;
