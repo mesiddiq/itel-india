@@ -1,7 +1,7 @@
 export const HeroDatait5027 = {
     title: "it5027",
     subtitle: '6.1cm (2.4") Display | 11mm Slim body | Kingvoice',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/3XxETjw',
     phoneUrl: '/featurephone/it5027/Backgrounds/phone_hero.webp',
     bgDesktop: '/featurephone/it5027/Backgrounds/hero_banner.webp',
     bgMobile: '/featurephone/it5027/Backgrounds/hero_banner_mobile.webp',

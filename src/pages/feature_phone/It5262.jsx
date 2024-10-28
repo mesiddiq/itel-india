@@ -13,7 +13,7 @@ import UnlimitedEnergy from '../../components/core/feature_phone/it5262/Unlimite
 
 const It5262 = () => {
     return (
-        <div>
+        <>
             <Hero {...HeroDatait5262} />
             <StickyHeader {...HeroDatait5262} />
             <FeatureRich {...FeatureRichDatait5262} />
@@ -26,7 +26,7 @@ const It5262 = () => {
             <TechSpecs {...TechSpecsDatait5262} />
             <FeaturePhoneProductGallery {...ProductGalleryDataIt5262} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5262} mode={'light'} />
-        </div>
+        </>
     )
 }
 

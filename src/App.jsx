@@ -52,6 +52,7 @@ import ScrollToTop from './utils/ScrollToTop'
 import A50 from './pages/a_series/A50'
 import NavbarMobile from './pages/NavbarMobile'
 import ProductListing from './pages/static_pages/ProductListing'
+import FeaturePhoneParent from './pages/feature_phone/FeaturePhoneParent'
 
 
 function App() {
@@ -143,7 +144,7 @@ function App() {
 				{/***************************************************************************************************/}
 				{/*****************************************Feature Phoness*******************************************/}
 				{/***************************************************************************************************/}
-				<Route path='/product'>
+				<Route path='/product' element={<FeaturePhoneParent />}>
 					<Route path='super-guru-4g' element={<SuperGuru4G />} />
 					<Route path='super-guru-400' element={<SuperGuru400 />} />
 					<Route path='super-guru-600' element={<SuperGuru600 />} />

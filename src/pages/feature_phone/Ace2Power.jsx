@@ -25,7 +25,7 @@ import Communicate from '../../components/core/feature_phone/ace2power/Communica
 
 const Ace2Power = () => {
     return (
-        <div>
+        <>
             <Helmet>
                 <title>Ace 2 Power</title>
                 <meta name="description" content="The itel Ace 2 Power" />
@@ -41,7 +41,7 @@ const Ace2Power = () => {
             <TechSpecs {...TechSpecsDataAce2Power} />
             <FeaturePhoneProductGallery {...ProductGalleryDataAce2Power} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataAce2Power} mode={'light'} />
-        </div>
+        </>
     )
 }
 

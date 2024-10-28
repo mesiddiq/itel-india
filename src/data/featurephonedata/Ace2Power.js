@@ -1,7 +1,7 @@
 export const HeroDataAce2Power = {
     title: "ACE 2 Power",
     subtitle: '2500 mAh Battery | 21 Days Battery Backup | Bluetooth',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/4wGKrhY',
     phoneUrl: '/featurephone/Ace2Power/Backgrounds/phone_hero.webp',
     bgDesktop: '/featurephone/Ace2Power/Backgrounds/hero_banner.webp',
     bgMobile: '/featurephone/Ace2Power/Backgrounds/hero_banner_mobile.webp',

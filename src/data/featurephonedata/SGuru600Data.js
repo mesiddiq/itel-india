@@ -5,7 +5,7 @@ export const HeroDataSuperGuru600 = {
     subtitle: '2.8” Display | 1900 mAh Battery | UPI Payments',
     bgDesktop: '/featurephone/superguru600/Hero_banner_desktop.jpg',
     bgMobile: '/featurephone/superguru600/Hero_banner_mobile.webp',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/92Z0tdY',
     icon: '',
     phoneUrl: '/featurephone/superguru600/Hero_mobile.webp'
 }

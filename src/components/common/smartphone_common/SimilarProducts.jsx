@@ -8,29 +8,33 @@ function SimilarProducts({ theme = 'light' }) {
       price: '₹10,999.00',
       originalPrice: null,
       image: '/smartphone/S_Twenty_Three/S24.webp',
+      link:'/product/s24'
     },
     {
       name: 'P55+',
       price: '₹9,499',
       originalPrice: '₹13,999.00',
       image: '/smartphone/S_Twenty_Three/P55.webp',
+      link:'/product/p55-plus'
     },
     {
       name: 'S23',
       price: '₹8,199',
       originalPrice: '₹12,999.00',
       image: '/smartphone/S_Twenty_Three/S23.webp',
+      link:'/product/s23'
     },
     {
       name: 'A70',
       price: '₹6,299',
       originalPrice: '₹7,299.00',
       image: '/smartphone/S_Twenty_Three/A70.webp',
+      link:'/product/a70'
     },
   ];
 
   return (
-    <section className={`flex z-0 flex-col items-center pb-32 max-w-full ${isLightTheme ? 'bg-white' : 'bg-neutral-900'}`}>
+    <section className={`flex font-markot z-0 flex-col items-center pb-32 max-w-full ${isLightTheme ? 'bg-white' : 'bg-[#0A0C08]'}`}>
       <div className="flex flex-col justify-center items-center py-10 w-full">
         <div className="flex flex-col max-w-full w-[1280px]">
           <h2 className={`text-mobile/h4 md:text-desktop/h3 ${isLightTheme ? 'text-black' : 'text-white'} px-8 md:px-2`}>

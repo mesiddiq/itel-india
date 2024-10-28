@@ -18,6 +18,7 @@ function LanyardSection() {
 						<h1 className="text-[14px] lg:text-[20px] leading-4 lg:leading-6 tracking-[0.5px] uppercase font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#242424] to-[#ff073c] ">get free extra lanyard</h1>
 					</div>
 				</div>
+				<img src="/featurephone/Circle_1/Backgrounds/man.png" alt="Circle 1 lanyard" className="absolute bottom-0 left-1/2 -translate-x-1/2  lg:hidden" />
 			</div>
 		</section>
 	);

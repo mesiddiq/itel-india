@@ -3,7 +3,7 @@ export const HeroDataSuperGuru4g = {
     subtitle: '4G VoLTE | YouTube* | YouTube Shorts*| UPI Payments',
     bgDesktop: '/featurephone/superguru4g/banner.png',
     bgMobile: '/featurephone/superguru4g/bannermobile.png',
-    purchaseLink: '',
+    purchaseLink: 'https://www.flipkart.com/itel-super-guru/p/itmeb3e68edea0de?pid=MOBGZFNZ294EHPTH&lid=LSTMOBGZFNZ294EHPTHB1XQ69&marketplace=FLIPKART&cmpid=content_mobile_8965229628_gmc',
     icon: "/featurephone/superguru4g/buynowlogo.svg",
     phoneUrl: '/featurephone/superguru4g/hero.webp'
 }

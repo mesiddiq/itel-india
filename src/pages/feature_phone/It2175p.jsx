@@ -18,7 +18,7 @@ import OtherSections from '../../components/core/feature_phone/it2175p/OtherSect
 
 const It2175p = () => {
     return (
-        <div>
+        <>
             <Hero {...HeroDatait2175p} />
             <StickyHeader {...HeroDatait2175p} />
             <FeatureRich {...FeatureRichDatait2175p} />
@@ -29,7 +29,7 @@ const It2175p = () => {
             <TechSpecs {...TechSpecsDatait2175p} />
             <FeaturePhoneProductGallery {...ProductGalleryDatait2175p} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait2175p} mode={'light'} />
-        </div>
+        </>
     )
 }
 

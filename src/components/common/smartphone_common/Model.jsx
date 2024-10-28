@@ -5,7 +5,7 @@ const Model = ({ theme = 'light' }) => {
   const models = [
     {
       id: 1,
-      image: '/SmartPhone/P555g/bg6.png',
+      image: '/smarthphone/P555g/bg6.png',
       title: 'S23+',
       price: '₹12,999.00',
       features: [
@@ -19,7 +19,7 @@ const Model = ({ theme = 'light' }) => {
     },
     {
       id: 2,
-      image: '/SmartPhone/P555g/bg7.png',
+      image: '/smarthphone/P555g/bg7.png',
       title: 'S24',
       price: '₹10,999.00',
       features: [
@@ -33,7 +33,7 @@ const Model = ({ theme = 'light' }) => {
     },
     {
       id: 3,
-      image: '/SmartPhone/P555g/bg8.png',
+      image: '/smarthphone/P555g/bg8.png',
       title: 'A70',
       price: '₹6,799.00',
       features: [
@@ -49,7 +49,7 @@ const Model = ({ theme = 'light' }) => {
   ];
 
   return (
-    <div className={`py-[60px] h-auto flex justify-center ${isLightTheme ? 'bg-white text-black' : 'bg-[#111111] text-white'}`}>
+    <div className={`py-[60px] font-markot h-auto flex justify-center ${isLightTheme ? 'bg-white text-black' : 'bg-[#0A0C08] text-white'}`}>
       <div className="w-full content flex flex-col gap-[36px] px-4">
         <div className="flex justify-between items-center">
           <h3 className={`${isLightTheme ? 'text-black' : 'text-white'} text-mobile/h5/medium md:text-desktop/h3`}>
@@ -102,14 +102,6 @@ const Model = ({ theme = 'light' }) => {
                     </div>
                   ))}
                 </div>
-<<<<<<< HEAD
-                <button className="flex gap-3 justify-center border border-white/50 py-[12px] px-[24px] rounded-full items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
-                    <span className="flex overflow-hidden gap-2 items-center">
-                      <span>Buy Now</span>
-                      <img loading="lazy" src="/SmartPhone/P555g/arrow-right.png" alt="" className="object-contain w-6" />
-                    </span>
-                  </button>
-=======
                 <button
                   className={`flex gap-3 justify-center border ${isLightTheme ? 'border-black' : 'border-white/50'} py-[12px] px-[24px] rounded-full items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase ${
                     isLightTheme ? 'text-black' : 'text-stone-100'
@@ -120,7 +112,6 @@ const Model = ({ theme = 'light' }) => {
                     <img loading="lazy" src="/P_Series/arrow-right.png" alt="" className="object-contain w-6" />
                   </span>
                 </button>
->>>>>>> 419d79414e1f66a78b643c3a03535a4b6fb631c3
               </div>
             </div>
           ))}

@@ -1,7 +1,7 @@
 export const HeroDatait5330 = {
     title: "it5330",
     subtitle: '7.1cm (2.8") Bright Display | Kingvoice | Glass Finish Design',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/4yCZWpm',
     phoneUrl: '/featurephone/it5330/Backgrounds/phone_hero.webp',
     bgDesktop: '/featurephone/it5330/Backgrounds/hero_banner.jpg',
     bgMobile: '/featurephone/it5330/Backgrounds/hero_banner_mobile.webp',
