@@ -12,7 +12,7 @@ function NightModeSection() {
         </h3>
         <div className='grid grid-cols-[25%_75%] relative md:mt-12 md:mr-12'>
           <div className='col-span-1'>
-            <img src='/smartphone/S_Twenty_Three/Night_Mode.webp' alt='' className='absolute md:left-[8%] md:bottom-[87px] left-[6%] bottom-0 max-md:h-[129px]' />
+            <img src='/smartphone/S_Twenty_Three/Night_Mode.webp' alt='' className='absolute md:left-[8%] md:bottom-[-125px] lg:bottom-[87px] left-[6%] bottom-0 max-md:h-[129px]' />
           </div>
           <div className='col-span-1'>
             <img src='/smartphone/S_Twenty_Three/Night1.webp' alt='Night Mode'

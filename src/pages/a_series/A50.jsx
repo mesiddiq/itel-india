@@ -1,13 +1,12 @@
-import React from 'react'
-import { a50FeatureRichData, a50FullSpecifications, a50ImageCaraousel } from '../../data/smartphonedata/A50Data'
+import { a50FullSpecifications, a50ImageCaraousel } from '../../data/smartphonedata/A50Data'
 import StickyHeader from '../../components/core/a_series_core/a05/A05StickyHeader'
-import FeatureRich from '../../components/common/feature_phone_common/FeatureRich'
 import A05Video from '../../components/core/a_series_core/a05/A05Video'
 import Frames from '../../components/core/a_series_core/a50/Frames'
 import Sections from '../../components/core/a_series_core/a50/Sections'
 import A05ColorImageCarausel from '../../components/core/a_series_core/a05/A05ColorImageCarausel'
 import FullSpecifications from '../../components/common/FullSpecifications'
 import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon'
+import FeatureSectionA50 from '../../components/core/a_series_core/a50/FeatureSectionA50'
 
 export default function A50() {
   return (
@@ -25,7 +24,9 @@ export default function A50() {
         tagText="awesome series"
       />
       <StickyHeader bgColor="#fff" title="A50" icon="/smartphone/a05/logos/a05StickyIcon.png" />
-      <FeatureRich {...a50FeatureRichData} />
+      {/* <FeatureRich {...a50FeatureRichData} /> */}
+      <FeatureSectionA50 />
+
       <A05Video />
       <img src="/smartphone/a05/moblePatterns.png" alt="mobilePatterns" className="flex lg:hidden w-full" />
       <img src="/smartphone/a05/Patterns.png" alt="patterns" className="hidden lg:flex w-full" />
