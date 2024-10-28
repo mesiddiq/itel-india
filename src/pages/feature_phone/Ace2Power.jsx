@@ -21,6 +21,7 @@ import {
 import { Helmet } from 'react-helmet'
 import DiveIntoWorld from '../../components/core/feature_phone/ace2power/DiveIntoWorld'
 import ExtendedBattery from '../../components/core/feature_phone/ace2power/ExtendedBattery'
+import Communicate from '../../components/core/feature_phone/ace2power/Communicate'
 
 const Ace2Power = () => {
     return (
@@ -34,6 +35,7 @@ const Ace2Power = () => {
             <FeatureRich {...FeatureRichDataAce2Power} />
             <PhoneSliderAnimation />
             <ExtendedBattery/>
+            <Communicate/>
             <DiveIntoWorld/>
             <KingVoice {...KingVoiceDataAce2Power} />
             <TechSpecs {...TechSpecsDataAce2Power} />

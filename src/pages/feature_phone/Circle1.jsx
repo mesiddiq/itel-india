@@ -17,7 +17,7 @@ import FullSpecifications from '../../components/common/FullSpecifications'
 const Circle1 = () => {
     return (
         <div className='font-markot'>
-            <Hero {...HeroDataCircle1} />
+            <Hero {...HeroDataCircle1} dark={true} />
             <StickyHeader {...HeroDataCircle1} />
             <FeatureRich {...FeatureRichDataCircle1} />
             <PhoneSliderAnimation />

@@ -6,7 +6,6 @@ export const HeroDataCircle1 = {
     purchaseLink: '',
     icon: "/featurephone/superguru4g/buynowlogo.svg",
     phoneUrl: '/featurephone/Circle_1/Backgrounds/hero.webp',
-    dark: true
 }
 
 export const FullSpecificationsDataCircle1 = [
