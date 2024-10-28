@@ -7,30 +7,30 @@ const featureData = {
   cards: [
     {
       id: 1,
-      title: "6.6 HD+ Waterdrop Display",
+      title: '6.6" HD+ Waterdrop Display',
       description:
         "Enjoy edge-to-edge screen that offers vibrant colors and crisp details, perfect for streaming, gaming, and browsing.",
-      icon: "/smartphone/a70/storageA70.svg",
+      icon: "/smartphone/A05i/displayA05i.svg",
     },
     {
       id: 2,
       title: "Stay Powered All Day: 4000 mAh Battery & Type-C Charging",
       description:
         "Use your itel Aura 05i for long hours with 4000 mAh battery and Type-C fast charging for quick recharge.",
-      icon: "/smartphone/a70/DisplayA70.svg",
+      icon: "/smartphone/A05i/batteryA05i.svg",
     },
     {
       id: 3,
       title: "Peak Awesomeness with 4GB* (2GB + 2GB*) RAM + 32GB ROM",
       description:
         "Get high performance with 4GB* (2GB + 2GB*) RAM for efficient multitasking and 32GB of storage for your apps and media.",
-      icon: "/smartphone/a70/CameraA70.svg",
+      icon: "/smartphone/A05i/ramA05i.svg",
     },
   ],
 };
 
 const FeatureSectionA05i = () => (
-  <div id="overview">
+  <div id="overview" className="bg-white">
     <FeatureRich
       title={featureData.title}
       description={featureData.description}
