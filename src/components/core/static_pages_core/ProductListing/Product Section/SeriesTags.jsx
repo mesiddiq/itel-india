@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const SeriesTags = ({ activeSeries, onSeriesChange }) => {
   return (
-    <div className="text-nowrap tags flex flex-row gap-8 font-bold text-base leading-[19.2px] tracking-[-0.01em]">
+    <div className="overflowHidden overflow-scroll text-nowrap tags flex flex-row gap-8 font-bold text-base leading-[19.2px] tracking-[-0.01em]">
       <button 
         className={`p-[10px] ${activeSeries === 'ALL' ? 'text-white border-b-4 border-red-600 ' : 'border-b-4 border-b-transparent text-gray-400 hover:text-white'}`}
         onClick={() => onSeriesChange('ALL')}

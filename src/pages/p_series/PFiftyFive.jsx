@@ -1,5 +1,5 @@
 import 'aos/dist/aos.css';
-import React from 'react';
+// import React from 'react';
 import FullSpecifications from "../../components/common/FullSpecifications";
 import AutomaticCarousel from '../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel';
 import ChargeUpFull from '../../components/core/p_series_core/P_Fifty_Five/ChargeUpFull';
@@ -10,7 +10,7 @@ import GamingRevolution from '../../components/core/p_series_core/P_Fifty_Five/G
 import MultipleCardComponents from '../../components/core/p_series_core/P_Fifty_Five/MultipleCardComponents';
 import SeeMoreCaptureMore from '../../components/core/p_series_core/P_Fifty_Five/SeeMoreCaptureMore';
 import SuperfastUnisoc from '../../components/core/p_series_core/P_Fifty_Five/SuperfastUnisoc';
-import VideoAsset from '../../components/core/p_series_core/P_Fifty_Five/VideoAsset';
+// import VideoAsset from '../../components/core/p_series_core/P_Fifty_Five/VideoAsset';
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data';
 import ColorImageCarousel from '../../components/common/smartphone_common/ColorImageCarousel';
 import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData';
@@ -18,6 +18,19 @@ import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselDat
 const PFiftyFive = () => {
     return (
         <>
+
+            <HeroSmartPhoneCommon
+                bgDesktop={'/smartphone/S24/hero_banner.webp'}
+                bgMobile={'/smartphone/S24/hero_banner_mobile.webp'}
+                description={'24GB* (8GB + 16GB*) RAM + 128GB ROM | 50MP AI Dual Rear Camera | T606 Octacore Processor'}
+                headingText={'P55'}
+                price={'6,999'}
+                tagText={'power series'}
+                gradient1={'#D5EEF9'}
+                gradient2={'#70A2E1'}
+            />
+
+            <StickyHeader title="P55" purchaseLink="" icon="/smartphone/P55/P55Logo.svg" bgColor="#91C9EC"/>
 
             {/* <VideoAsset /> */}
 
