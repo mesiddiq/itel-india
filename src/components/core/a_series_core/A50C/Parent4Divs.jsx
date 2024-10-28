@@ -1,9 +1,5 @@
 import PowerPerformance from "./PowerPerformance"
 import HighPerformance from "./HighPerformance"
-// import MultiTaskEase from "./MultiTaskEase"
-// import QuickBoost from "./QuickBoost"
-// import RAMHighPerformance from "./RAMHighPerformance"
-// import TimelessLeatherEleganceMobile from "./TimelessLeatherEleganceMobile"
 import ClearCamera from "./ClearCamera"
 import DisplayAnimation from "./DisplayAnimation"
 

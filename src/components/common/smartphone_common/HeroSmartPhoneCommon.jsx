@@ -113,7 +113,7 @@ export default function HeroSmartPhoneCommon({
                         </h1>
                     </motion.div>
                     <motion.div
-                        className={`max-w-[400px] mt-1 lg:mt-6 z-10 font-markot text-mobile/tile lg:text-desktop/title ${theme == "dark" ? "text-black/1" : "text-white/80"}  lg:max-w-[589px] uppercase`}
+                        className={`max-w-[400px] mt-1 lg:mt-6 z-10 font-markot text-mobile/tile lg:text-desktop/title ${theme == "dark" ? "text-black/1" : "text-white/80"}  lg:max-w-[473px] uppercase`}
                         animate={commonControl}
                         initial={{ opacity: 0, x: -500 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
@@ -140,7 +140,7 @@ export default function HeroSmartPhoneCommon({
 
                             {/* Buy Now Button (Visible only on medium and larger screens) */}
                             <a href={purchaseLink} target="_blank">
-                                <button className="">
+                                <button className="hidden lg:block">
                                     <img src={theme == "dark" ? "/static_page/buynowdark.svg" : "/static_page/buynowlight.svg"} alt="Buy Now Button" />
                                 </button>
                             </a>

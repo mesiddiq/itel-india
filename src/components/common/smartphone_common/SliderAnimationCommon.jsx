@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Marquee from "react-fast-marquee";
 
 // import '../../../../pages/s_series/style.css';
@@ -23,7 +24,8 @@ const SliderAnimationCommon = ({
     bgColor, // Pass the background color
     textColor, // Pass the text color (if not grdient then pass the text color)
     textGradient1, // Pass the text gradient (if not grdient then pass the text color)
-    textGradient2 // Pass the text gradient (if not grdient then pass the text color)
+    textGradient2, // Pass the text gradient (if not grdient then pass the text color)
+    svgBgColor
 }) => {
     return (
         <div className='overflow-x-hidden py-[10px]'
@@ -40,7 +42,7 @@ const SliderAnimationCommon = ({
                 >{text1}</h1>
                 {
                     svgCode ?
-                        <span className="mx-4 block">
+                        <span className={`mx-4 block rounded-[38px] py-[3.7px] px-[13.32px] ${svgBgColor}`}>
                             {svgCode}
                         </span>
                         :
@@ -56,7 +58,7 @@ const SliderAnimationCommon = ({
                 >{text2}</h1>
                 {
                     svgCode ?
-                        <span className="mx-4 block">
+                        <span className={`mx-4 block rounded-[38px] py-[3.7px] px-[13.32px] ${svgBgColor}`}>
                             {svgCode}
                         </span>
                         :

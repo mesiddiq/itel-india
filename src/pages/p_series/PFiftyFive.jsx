@@ -14,14 +14,18 @@ import SuperfastUnisoc from '../../components/core/p_series_core/P_Fifty_Five/Su
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data';
 import ColorImageCarousel from '../../components/common/smartphone_common/ColorImageCarousel';
 import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData';
+import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon';
+import StickyHeader from '../../components/common/StickyHeader';
+import FeatureSection from '../../components/core/p_series_core/P_Fifty_Five/FeatureSection';
+import SliderAnimationCommon from '../../components/common/smartphone_common/SliderAnimationCommon';
 
 const PFiftyFive = () => {
     return (
         <>
 
             <HeroSmartPhoneCommon
-                bgDesktop={'/smartphone/S24/hero_banner.webp'}
-                bgMobile={'/smartphone/S24/hero_banner_mobile.webp'}
+                bgDesktop={'/smartphone/smartphonehero/p55.webp'}
+                bgMobile={'/smartphone/smartphonehero/p55_mobile.webp'}
                 description={'24GB* (8GB + 16GB*) RAM + 128GB ROM | 50MP AI Dual Rear Camera | T606 Octacore Processor'}
                 headingText={'P55'}
                 price={'6,999'}
@@ -30,7 +34,18 @@ const PFiftyFive = () => {
                 gradient2={'#70A2E1'}
             />
 
-            <StickyHeader title="P55" purchaseLink="" icon="/smartphone/P55/P55Logo.svg" bgColor="#91C9EC"/>
+            <StickyHeader title="P55" purchaseLink="" icon="/smartphone/P55/P55Logo.svg" bgColor="#91C9EC" dark={true}/>
+
+            <FeatureSection />
+
+            <SliderAnimationCommon
+				text1="Power Series"
+				text2="intensively powerful"
+				svgCode={<img src="/smartphone/P55/P55SliderLightning.svg" alt="star" className="" />}
+				bgColor="#001C3A"
+                textColor="#D5EEF9"
+                svgBgColor='bg-[#4D88D2]'
+			/>
 
             {/* <VideoAsset /> */}
 
@@ -38,9 +53,9 @@ const PFiftyFive = () => {
 
             <Frame24GB />
 
-            <AutomaticCarousel />
-
             <SeeMoreCaptureMore />
+
+            <AutomaticCarousel />
 
             <ChargeUpFull />
 
