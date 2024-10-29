@@ -258,6 +258,7 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const [searchTerm, setSearchTerm] = useState('')
+    const [isFocused, setIsFocused] = useState(false)
     const [results, setResults] = useState({ smartphones: [], featurephones: [] })
 
     useEffect(() => {
@@ -318,6 +319,8 @@ const Navbar = () => {
                             className='text-grey/grey/2 text-desktop/body/1 bg-transparent outline-none border-none w-full'
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
+                            onFocus={() => setIsFocused(true)}
+                            onBlur={() => setIsFocused(false)}
                         />
 
                         {
@@ -329,7 +332,7 @@ const Navbar = () => {
 
                         {/* Search Result */}
 
-                        {searchTerm && (
+                        {searchTerm && isFocused && (
                             <div className="absolute top-16 left-0 p-6 bg-black/1 z-[100] w-full  font-markot">
                                 <div className="space-y-5">
                                     {noResults ? (
