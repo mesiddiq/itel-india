@@ -5,8 +5,15 @@ const UltraSmooth = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
   const [startAnimation, setStartAnimation] = useState(false);
+  const [ultraSmoothVideoSrc, setUltraSmoothVideoSrc] = useState(false);
 
   useEffect(() => {
+    if (screen.width > 1000) {
+      setUltraSmoothVideoSrc("/smartphone/color-pro-5g/UltraSmooth/video.mp4");
+    } else {
+      setUltraSmoothVideoSrc("/smartphone/color-pro-5g/UltraSmooth/videoMobile.mp4");
+    }
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const video = videoRef.current;
@@ -45,21 +52,16 @@ const UltraSmooth = () => {
 
   return (
     <>
-    <div className='flex flex-col md:hidden w-full md:items-center h-[650px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/UltraSmooth/bg.jpeg")] bg-cover bg-left bg-no-repeat overflow-hidden'>
-        <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot md:pt-20 md:w-[40%]'>Ultra-Smooth 6.6" HD+ Display</h2>
-        <p className='text-mobile/body/2 md:text-desktop/body/large text-[#FFFFFF] font-markot pt-5 md:w-[40%]'>Experience stunning visuals on the 6.6-inch HD+ display, featuring a 90Hz refresh rate that reduces visual fatigue and ensures smoother, faster response times.</p>
-        <img src='/smartphone/color-pro-5g/UltraSmooth/Animatedpart1.png' />
-    </div>
-    <div ref={containerRef} className='hidden md:flex w-full md:items-center h-[600px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#0B0021] overflow-hidden'>
+    <div ref={containerRef} className='flex w-full md:items-center h-[600px] md:h-[860px] px-0 md:px-[80px] py-0 md:py-[120px] bg-[#0B0021] overflow-hidden'>
       <div className='content relative h-full'>
         <video
           ref={videoRef}
           className='absolute w-auto object-cover'
-          src='/smartphone/color-pro-5g/UltraSmooth/video.mp4'
+          src={ultraSmoothVideoSrc}
           loop={false}
           muted
         />
-        <div className='flex flex-col justify-center relative h-full z-[2] p-8'>
+        <div className='flex flex-col md:justify-center relative h-full z-[2] p-8'>
           {startAnimation && (
             <motion.div
               initial={{ opacity: 0, y: -20 }}
