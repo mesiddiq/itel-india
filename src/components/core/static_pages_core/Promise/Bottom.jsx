@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 const Bottom = () => {
   return (
@@ -11,19 +11,23 @@ const Bottom = () => {
           src={"/static_page/promise/Shape.webp"}
           alt=""
         />
-        <div className=" lg:space-y-5 text-white space-y-2  lg:min-w-[562px]">
+        <div className=" lg:space-y-5 text-white space-y-2  lg:max-w-[562px]">
           <p className=" lg:text-desktop/h3 text-mobile/h4">Unparalleled Service Guaranteed</p>
           <p className=" text-desktop/caption  lg:text-desktop/body/large">
           With our commitment to excellence, expect unparalleled support and service throughout your journey with us. 
           </p>
-          
-          <button
+          <div>
+              <Link to={"/contact-us"}><button
          
           className="lg:text-desktop/button bg-white h-[40px] lg:h-[48px] text-mobile/button text-brand/black lg:py-3 lg:px-8 py-[12px] px-[14px]   rounded-full hover:bg-brand/black  hover:text-white hover:shadow-2xl hover:border hover:border-black  transition duration-300 flex items-center justify-center"
         >
           CONTACT US
           <span className="ml-2 text-red-500">→</span>
           </button>
+        </Link>
+          
+          </div>
+      
         </div>
       </div>
     </div>

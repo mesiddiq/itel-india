@@ -19,7 +19,7 @@ const BlogCard = ({ category, title, image }) => {
         <a href="#" className=" inline-block">
           <div className=" flex items-center">
             <p className=" lg:text-desktop/button text-mobile/button text-brand/black">VIEW</p>{" "}
-            <img src={"/support/Union.png"} className=" w-5 h-3 ml-2" alt="" />
+            <img src={"/static_page/homepage/Union.png"} className=" w-5 h-3 ml-2" alt="" />
           </div>
         </a>
       </div>
@@ -60,7 +60,7 @@ const MoileIn = () => {
     <div data-aos="fade-up"  className=" content lg:space-y-[40px] space-y-[24px] px-4  font-markot">
       <div className=" flex items-center  lg:space-x-4 ">
         <div className=" ">
-            <img src={"./support/Star.png"} alt="" className="   animate-spin lg:h-[60px]  " />
+            <img src={"static_page/Support2/Star.png"} alt="" className="   animate-spin lg:h-[60px]  " />
         </div>
       
         <p className=" text-brand/black text-mobile/h4 lg:text-desktop/h2">Discover itel Mobile Insights</p>

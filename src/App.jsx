@@ -9,6 +9,7 @@ import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
 import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
+import Investor from './pages/static_pages/Investor'
 import Footer from './components/common/Footer'
 import Support from './pages/static_pages/Support'
 import ScreenReplacement from './pages/static_pages/ScreenReplacement'
@@ -82,6 +83,7 @@ function App() {
 				<Route path='/contact-us' element={<Contactus />} />
 				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 				<Route path='/support/faqs' element={<FAQ />} />
+				<Route path='/investor' element={<Investor/>}/>
 
 
 				{/* ***************************************************************************************************/}

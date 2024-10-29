@@ -8,7 +8,7 @@ const Herosection = () => {
         <p className=" text-mobile/h1  lg:text-desktop/h1">
         100 Days Service Promise
         </p>
-        <p className="  text-desktop/body/1 lg:text-desktop/body/large">
+        <p className=" lg:w-[716px]  text-desktop/body/1 lg:text-desktop/body/large">
         No hassle, no stress—just seamless service with our 100-day replacement promise. Should your mobile show any defects within the first 100 days, we'll swap it out for a brand-new one, absolutely free.
         </p>
       </div>

@@ -52,10 +52,13 @@ const HeroBanner = () => {
           </p>
           <img
             className=" lg:w-[110px] w-[77px]"
-            src={"./static_page/f1c08f89cb24ebaf7ed62560f4388684 1.png"}
+            src={"/static_page/Support2/f1c08f89cb24ebaf7ed62560f43886841(1).png"}
             alt=""
           />
-          <img src={"./static_page/Buttons.png"} alt="" />
+          <a  target="_blank" href="https://www.carlcare.in/in/">
+          <img src={"/static_page/Support2/Buttons.png"} alt="" />
+          </a>
+          
         </div>
 
 

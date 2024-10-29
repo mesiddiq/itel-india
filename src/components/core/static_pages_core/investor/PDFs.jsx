@@ -57,19 +57,19 @@ const pdfdata1 = {
   data: [
     {
       undertitle: "Annual Return 2021-22",
-      link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+      link: "/pdf/Annual-Return-2021-22.pdf",
     },
     {
       undertitle: "Annual Return 2020-21",
-      link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+      link: "/pdf/Annual-Return-2021-22.pdf",
     },
     {
       undertitle: "Annual Return 2019-20",
-      link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+      link: "/pdf/Annual-Return-2021-22.pdf",
     },
     {
       undertitle: "Annual Return 2018-19",
-      link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+      link: "/pdf/Annual-Return-2021-22.pdf",
     },
   ],
 };
@@ -80,23 +80,23 @@ const pdfdata2 =
     data: [
       {
         undertitle: "EGM Notice",
-        link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+        link: "/pdf/Annual-Return-2021-22.pdf",
       },
       {
         undertitle: "AGM Notice 2022",
-        link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+        link: "/pdf/Annual-Return-2021-22.pdf",
       },
       {
         undertitle: "EGM Notice 2021",
-        link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+        link: "/pdf/Annual-Return-2021-22.pdf",
       },
       {
         undertitle: "EGM Notice 2021",
-        link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+        link: "/pdf/Annual-Return-2021-22.pdf",
       },
       {
         undertitle: "AGM Notice 2019",
-        link: "https://www.youtube.com/watch?v=iuJDhFRDx9M",
+        link: "/pdf/Annual-Return-2021-22.pdf",
       },
     ],
   }

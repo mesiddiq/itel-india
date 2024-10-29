@@ -23,7 +23,7 @@ const Accordian = ({ data, title }) => {
 
       {/* Accordion content with animation */}
       <div
-        className={`overflow-hidden transition-all space-y-4 duration-300 ease-in-out ${
+        className={`overflow-hidden transition-all space-y-5 duration-300 ease-in-out ${
           show ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
       >

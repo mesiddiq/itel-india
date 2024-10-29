@@ -3,25 +3,31 @@ import { div } from "framer-motion/client";
 const Card = () => {
   const card_data = [
     {
-      img: "/static_page/ServiceC/Warranty%20Check.webp",
+      img: "/static_page/ServiceC/SparePartsPrice.webp",
       service_name: "Spare Parts Price",
+      link:"https://www.carlcare.in/in/spare-parts-price/"
     },
     {
       img: "/static_page/ServiceC/Warranty%20Check.webp",
       service_name: "Warranty Check",
+      link:"https://www.carlcare.in/in/warranty-check/"
+
     },
     {
-      img: "/static_page/ServiceC/Warranty%20Check.webp",
+      img: "/static_page/ServiceC/RepairStatus.webp",
       service_name: "Repair Status",
+      link:"https://www.carlcare.in/in/repair-status/"
+
     },
+
   ];
 
   return (
-    <div className=" lg:content px-3">
+    <div className=" lg:content font-markot px-3">
       <div className=" grid lg:grid-cols-3 lg:space-y-0 space-y-4 text-black grid-cols-1">
         {card_data.map((data) => {
           return (
-            <div className="  flex lg:flex-col  lg:items-center lg:space-x-0  space-x-4  lg:space-y-[24px]">
+            <div className="  flex lg:flex-col  lg:p-3  lg:items-center lg:space-x-0  space-x-4  lg:space-y-[24px]">
               <img
                 className=" lg:h-[290px] h-[132px] w-[144px] lg:w-[322px]  "
                 src={data.img}
@@ -32,16 +38,20 @@ const Card = () => {
                  <p className="  text-black/1 text-mobile/h5/medium  lg:text-desktop/h4 ">
                 {data.service_name}
               </p>
-              <div className=" flex items-center">
+              <a target="_blank" href={data.link}>
+                   <div className=" flex items-center">
+
                 <p className="  text-mobile/title lg:text-desktop/button font-markot text-brand/black">
                   LEARN MORE
                 </p>
                 <img
-                  src={"./support/Union.png"}
+                  src={"/static_page/homepage/Union.png"}
                   className=" w-5 h-3 ml-2"
                   alt=""
                 />
-              </div>  
+              </div>
+              </a>
+             
               </div>
            
             </div>
