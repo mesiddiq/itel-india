@@ -57,7 +57,7 @@ const Cards = () => {
                 <p className=" text-mobile/h5/medium text-desktop/h4  text-black/1">{data.title}</p>
                 <Link to={data.link}> <div className=" flex  space-x-2 items-center ">
                   <p className=" text-center text-mobile/title lg:text-desktop/button text-brand/black">READ MORE</p>
-                  <img className="lg:w-[20px] lg:h-[14px] "  src={"/Union.png"} alt="" />
+                  <img className="lg:w-[20px] lg:h-[14px] "  src={"/static_page/homepage/Union.png"} alt="" />
                 </div>
                 </Link>
                

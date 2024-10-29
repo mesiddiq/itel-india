@@ -40,7 +40,7 @@ const Accordian2 = ({ data, title,img }) => {
             </p>
           );
         })}
-        <img className="   lg:h-[432px]" src={img} alt="" />
+        <img className="   w-screen lg:h-[432px]" src={img} alt="" />
       </div>
     </div>
     

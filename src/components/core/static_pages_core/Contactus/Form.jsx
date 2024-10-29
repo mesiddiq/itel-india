@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 import React from "react";
 import { useState } from "react";
 
@@ -15,19 +16,29 @@ const SubjectSelector = () => {
   };
 
   return (
-    <div className="flex gap-3 justify-evenly  flex-wrap">
+    <div className="flex   flex-wrap">
       {subjects.map((subject, index) => (
-        <div
-          key={index}
-          className={`flex items-center justify-center w-24 h-12 cursor-pointer rounded-md border-2 transition-all duration-300 ${
+        <div onClick={() => handleSubjectClick(subject)}  className=" flex cursor-pointer px-4  items-center ">
+          <div   className={` h-6 w-6  rounded-full  border-[4px]  transition-all duration-300 ${
             selectedSubject === subject
-              ? 'border-red-500 text-red-500'
-              : 'border-gray-400 text-gray-600'
+              ? 'bg-red-500'
+              : ' text-gray-600'
+          }`} >
+
+          </div>
+          <div
+          key={index}
+          className={`flex items-center lg:text-desktop/body/2/regular  justify-center lg:w-[118px] h-12 cursor-pointer rounded-md  transition-all duration-300 ${
+            selectedSubject === subject
+              ? ' text-red-500'
+              : ' text-gray-600'
           }`}
           onClick={() => handleSubjectClick(subject)}
         >
           {subject}
         </div>
+        </div>
+        
       ))}
     </div>
   );
@@ -108,7 +119,7 @@ const Form = () => {
         </div>
       </div>
 
-      <div className=' lg:bg-[url("/static_page/contactus/Form%20BG.webp")]   bg-[url("/static_page/contactus/Form%20BG%20Mobile.webp")]  lg:space-y-10  space-y-[32px] lg:min-h-[837px] p-4 lg:p-[52px] bg-cover bg-center rounded-2xl'>
+      <div className=' lg:bg-[url("/static_page/contactus/Form%20BG.webp")]   bg-[url("/static_page/contactus/Form%20BG%20Mobile.webp")]  lg:space-y-10  space-y-[32px] lg:min-h-[837px] lg:max-w-[735px] p-4 lg:p-[52px] bg-cover bg-center rounded-2xl'>
         <div className=" flex flex-col  space-y-3  lg:space-y-4 justify-center">
           <p className=" text-center text-brand/black text-mobile/h4 lg:text-desktop/h2 ">
             Inquiry Form
@@ -168,11 +179,11 @@ const Form = () => {
             <div>
               <div className=" space-y-[12px] w-full">
                 <p className="  text-grey/grey/5 text-mobile/h6 lg:text-desktop/h6/medium">
-                Subject
+                Message
                 </p>
                 <textarea
-                  placeholder="E-mail"
-                  className=" h-[143px] px-1 py-3 bg-transparent border border-grey/grey/4 rounded-xl  w-full"
+                  placeholder="Enter your message here"
+                  className=" h-[143px] p-4 bg-transparent border border-grey/grey/4 rounded-xl  w-full"
                   type="text"
                 />
               </div>
@@ -181,9 +192,9 @@ const Form = () => {
 
           </div>
 
-          <div className="  py-3 space-x-2 rounded-full bg-[#1A1A1A] flex w-full items-center justify-center">
+          <div className="   py-3 space-x-2 rounded-full bg-[#1A1A1A] flex w-full items-center justify-center">
             <p className="  text-white  text-desktop/button ">SUBMIT</p>
-            <img src="/arrow.png" alt="" />
+            <img src="/static_page/homepage/arrow.png" alt="" />
           </div>
         </div>
       </div>
