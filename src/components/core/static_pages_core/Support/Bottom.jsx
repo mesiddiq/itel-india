@@ -28,12 +28,12 @@ const Bottom = () => {
     <div data-aos="fade-up" className=" content px-3 text-black font-markot ">
       <div className=" lg:grid   lg:gap-[20px]  lg:space-y-0 space-y-2  grid-cols-1">
         <div className=" lg:grid lg:gap-[36px] lg:space-y-0  space-y-2 lg:grid-cols-2">
-          <div className=' lg:bg-[url("/static_page/Support2/Grid%20Block%201.webp")]   p-[14px] lg:p-[42px] space-y-2 lg:space-y-3  bg-[url("/static_page/Support2/Grid%20Bloack%201%20Mobile.webp")] bg-cover rounded-2xl   bg-center bg-no-repeat min-h-[180px] lg:min-h-[300px]  '>
+          <div className=' lg:bg-[url("/static_page/Support2/Grid%20Block%201.webp")]   p-[14px] lg:p-[42px] space-y-2 lg:space-y-3  bg-[url("/static_page/Support2/Grid%20Bloack%201%20Mobile.webp")] bg-cover rounded-2xl   lg:bg-right bg-no-repeat min-h-[180px] lg:min-h-[300px]  '>
               <p className=" text-mobile/h5/medium lg:text-desktop/h3 text-brand/black">Find Your Nearest itel Store!</p>
               <p className=" text-desktop/body/2/regular text-grey/grey/4 ">We are here to help you find the right phone. </p>
           </div>
          
-          <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%202.webp")] p-[14px] lg:p-[42px]  space-y-2 lg:space-y-3    bg-[url("/static_page/Support2/Grid%20Bloack%202%20Mobile.webp")] rounded-2xl bg-cover bg-center bg-no-repeat min-h-[180px]  lg:min-h-[300px]  '>
+          <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%202.webp")] p-[14px] lg:p-[42px]  space-y-2 lg:space-y-3    bg-[url("/static_page/Support2/Grid%20Bloack%202%20Mobile.webp")] rounded-2xl bg-cover bg-right bg-no-repeat min-h-[180px]  lg:min-h-[300px]  '>
           <p className="  text-mobile/h5/medium lg:text-desktop/h3  text-brand/black">Connect for Business Queries</p>
           <div className="  lg:space-y-[2px] space-y-[4px]">
           <p className=" text-mobile/small/button text-grey/grey/4 lg:text-desktop/title">MAIL US AT</p>
@@ -43,7 +43,7 @@ const Bottom = () => {
            </div>
         </div>
 
-        <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%203.webp")] space-y-9  lg:space-y-0   lg:px-[46px] items-center py-6 px-4 lg:py-9 lg:grid lg:grid-cols-2 font-markot   bg-[url("/static_page/Support2/Grid%20Bloack%203%20Mobile.webp")] bg-cover bg-center bg-no-repeat min-h-[319px] lg:min-h-[252px] '>
+        <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%203.webp")] rounded-xl space-y-9  lg:space-y-0   lg:px-[46px] items-center py-6 px-4 lg:py-9 lg:grid lg:grid-cols-2 font-markot   bg-[url("/static_page/Support2/Grid%20Bloack%203%20Mobile.webp")] bg-cover bg-center bg-no-repeat min-h-[319px] lg:min-h-[252px] '>
       
              <div className=" lg:space-y-[10px] space-y-[2px]">
               <p className=" text-grey/grey/5  text-desktop/body/2/regular lg:text-desktop/body/1">Need our help?</p>

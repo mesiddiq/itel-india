@@ -1,8 +1,25 @@
 import React from 'react'
+import Bottem from '../../components/core/static_pages_core/Aboutus/Bottem'
+import Herosection from '../../components/core/static_pages_core/Aboutus/Herosection'
+import Mission from '../../components/core/static_pages_core/Aboutus/Mission'
+import Cards from '../../components/core/static_pages_core/Aboutus/Cards'
+import Centervid from '../../components/core/static_pages_core/Aboutus/Centervid'
+import Milestone from '../../components/core/static_pages_core/Aboutus/Milestone'
+import Awards from '../../components/core/static_pages_core/Aboutus/Awards'
+import Customer from '../../components/core/static_pages_core/Aboutus/Customer'
 
 const Aboutus = () => {
   return (
-    <div>Aboutus</div>
+    <div className=' lg:space-y-[120px] lg:pb-[120px] pb-[60px]  space-y-[60px]'>
+      <Herosection/>
+      <Mission/>
+      <Cards/>
+      <Centervid/>
+      <Milestone/>
+      <Awards/>
+      <Customer/>
+      <Bottem/>
+    </div>
   )
 }
 
@@ -35,27 +52,7 @@ export default Aboutus
 //     <div className=" font-markot overflow-hidden ">
      
 
-//       <div className="relative h-screen w-full">
-//         {/* Background Video */}
-//         <video
-//           className="absolute top-0 left-0 h-full w-full object-cover"
-//           autoPlay
-//           loop
-//           muted
-//         >
-//           <source src="/mp4/aboutus.mp4" type="video/mp4" />
-//           Your browser does not support the video tag.
-//         </video>
-
-//         {/* Centered Image */}
-//         <div className="relative z-10 flex items-center justify-center h-full">
-//           <img src="/images/Group 13950.png" alt="Centered" className="w-1/3" />
-//         </div>
-
-//         {/* Overlay to darken video if needed */}
-//         <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
-//       </div>
-
+      
 //       <div className=" lg:p-20 p-10 ">
 //         <div className=" space-y-10 lg:p-10 p-5">
 //           <p className=" lg:text-desktop/h2  text-mobile/h4 text-center">Our Mission</p>

@@ -3,10 +3,10 @@ const Camera = () => {
   const [activeMode, setActiveMode] = useState('super-night-mode');
 
   const modes = [
-    { id: 'super-night-mode', icon: '/P_Series/icon1.png', label: 'Super Night Mode', bgImage: '/P_Series/CameraBG1.png', cameraImage: '/P_Series/supernight.png' ,mobileImage:'/P_Series/camerabg_hori.png'},
-    { id: 'storage-mode', icon: '/P_Series/icon2.png', label: 'Storage Mode', bgImage: '/P_Series/CameraBG2.png', cameraImage: '/P_Series/timelapse.png' ,mobileImage:'/P_Series/camerabg2_hori.png'},
-    { id: 'time-lapse-mode', icon: '/P_Series/icon3.png', label: 'Time-Lapse Mode', bgImage: '/P_Series/CameraBG3.png', cameraImage: '/P_Series/panorama.png',mobileImage:'/P_Series/camerabg3_hori.png' },
-    { id: 'time-mode', icon: '/P_Series/icon4.png', label: 'Time Mode', bgImage: '/P_Series/CameraBG4.png', cameraImage: '/P_Series/pro.png',mobileImage:'/P_Series/camerabg4_hori.png' },
+    { id: 'super-night-mode', icon: '/SmartPhone/P55fiveg/Backgrounds/icon1.png', label: 'Super Night Mode', bgImage: '/SmartPhone/P55fiveg/Backgrounds/CameraBG1.png', cameraImage: '/SmartPhone/P55fiveg/Backgrounds/supernight.png' ,mobileImage:'/SmartPhone/P55fiveg/Backgrounds/camerabg_hori.png'},
+    { id: 'storage-mode', icon: '/SmartPhone/P55fiveg/Backgrounds/icon2.png', label: 'Storage Mode', bgImage: '/SmartPhone/P55fiveg/Backgrounds/CameraBG2.png', cameraImage: '/SmartPhone/P55fiveg/Backgrounds/timelapse.png' ,mobileImage:'/SmartPhone/P55fiveg/Backgrounds/camerabg2_hori.png'},
+    { id: 'time-lapse-mode', icon: '/SmartPhone/P55fiveg/Backgrounds/icon3.png', label: 'Time-Lapse Mode', bgImage: '/SmartPhone/P55fiveg/Backgrounds/CameraBG3.png', cameraImage: '/SmartPhone/P55fiveg/Backgrounds/panorama.png',mobileImage:'/SmartPhone/P55fiveg/Backgrounds/camerabg3_hori.png' },
+    { id: 'time-mode', icon: '/SmartPhone/P55fiveg/Backgrounds/icon4.png', label: 'Time Mode', bgImage: '/SmartPhone/P55fiveg/Backgrounds/CameraBG4.png', cameraImage: '/SmartPhone/P55fiveg/Backgrounds/pro.png',mobileImage:'/SmartPhone/P55fiveg/Backgrounds/camerabg4_hori.png' },
   ];
 
   const currentMode = modes.find(mode => mode.id === activeMode);
@@ -48,7 +48,7 @@ const Camera = () => {
   {/* Hand Image */}
   <div className="relative w-full h-full">
     <img 
-      src="/P_Series/hand2.png" 
+      src="/SmartPhone/P55fiveg/Backgrounds/hand2.png" 
       alt="Hand holding the camera" 
       className="absolute right-0 top-0 h-full object-cover" // Use absolute positioning
     />

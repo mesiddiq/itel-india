@@ -1,6 +1,7 @@
 import FullSpecifications from "../../components/common/FullSpecifications"
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
+import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
 import StickyHeader from "../../components/common/StickyHeader"
 import FeatureSectionA05i from "../../components/core/a_series_core/A05i/FeatureSectionA05i"
 import MultipleCardComponents from "../../components/core/a_series_core/A05i/MultipleCardComponents"
@@ -11,23 +12,33 @@ import { ImageCarouselData } from '../../data/smartphonedata/A05iImageCarouselDa
 
 const A05i = () => {
   return (
-    <div className='bg-white font-markot'>
+    <div>
 
-      <HeroSmartPhoneCommon
-        headingText="Aura 05i"
-        bgDesktop="/smartphone/smartphonehero/aura.webp"
-        bgMobile="/smartphone/smartphonehero/aura_mobile.webp"
-        theme="dark"
-        purchaseLink=""
-        description={`6.6" HD+ Waterdrop Display | 4000 mAh Battery with Type-C Charging| 32GB ROM`}
-        gradient1="#181818"
-        gradient2="#181818"
-        price="4,799"
-        tagText="awesome series"
-      />
+        <HeroSmartPhoneCommon
+          headingText="Aura 05i"
+          bgDesktop="/smartphone/smartphonehero/aura.webp"
+          bgMobile="/smartphone/smartphonehero/aura_mobile.webp"
+          theme="dark"
+          purchaseLink=""
+          description={` 6.6" HD+ Waterdrop Display | 4000 mAh Battery with Type-C Charging| 32GB ROM `}
+          gradient1="#181818"
+          grdient2="#181818"
+          price="4,799"
+          tagText="Awesome series"
+        />
 
-      <StickyHeader title="Aura 05i"  purchaseLink="" icon="/smartphone/A05i/A50iLogo.svg"  />
-      <FeatureSectionA05i />
+        <StickyHeader title="A05i" purchaseLink="" icon="/smartphone/A05i/A50iLogo.svg" bgColor="white" dark={true} borderBottom={true} />
+
+        <FeatureSectionA05i />
+
+        <SliderAnimationCommon
+          text1="Awesome series"
+          text2="IMPRESSIVELY AWESOME"
+          svgCode={<img src="/smartphone/A23s/scrollA23.svg" alt="star" className="" />}
+          bgColor="#EBE8E2"
+          textGradient1="#6B6682"
+          textGradient2="#6B6682"
+        />
 
       <Parent4Divs />
       <TimelessLeatherElegance />

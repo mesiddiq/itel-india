@@ -10,8 +10,11 @@ const NotFound = () => {
         <p className='  lg:text-desktop/body/1 text-center'>Sorry, Seems like you might have landed on the  wrong link or the page doesn’t exist or removed. Please press back to continue with the website.</p>
       
        </div>
-          <p className=' bg-white px-4 text-brand/black py-3 rounded-lg text-desktop/button '>BACK TO HOME</p>
-
+        <div className= ' flex items-center justify-center lg:space-x-2 bg-[url("/Buttons.png")]  lg:w-[208px] lg:h-[48px]  bg-no-repeat  bg-cover bg-center rounded-lg '>
+           <p className='  text-brand/black text-desktop/button '>BACK TO HOME</p>
+  <img src={'/static_page/homepage/arrow.png'} alt="" />
+        </div>
+         
        </div>
     </div>
   )

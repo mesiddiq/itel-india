@@ -12,6 +12,8 @@ import { FullSpecificationsA50C } from '../../data/smartphonedata/A50CData'
 import { ImageCarouselData } from '../../data/smartphonedata/A50CImageCarouselData'
 import PhonesImage from "../../components/core/a_series_core/A50C/PhonesImage"
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
+import FeatureSectionA50C from "../../components/core/a_series_core/A50C/FeatureSectionA50C"
+import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
 
 const A50C = () => {
 	return (
@@ -29,7 +31,18 @@ const A50C = () => {
 				tagText="awesome series"
 			/>
 
-			<StickyHeader title="A50C" purchaseLink="" icon="/smartphone/A50C/A50CLogo.svg" bgColor="" />
+			<StickyHeader title="A50C" purchaseLink="" icon="/smartphone/A50C/A50CLogo.svg" bgColor="white" dark={true} borderBottom={true} />
+
+			<FeatureSectionA50C />
+
+			<SliderAnimationCommon
+				text1="Awesome series"
+				text2="IMPRESSIVELY AWESOME"
+				svgCode={<img src="/smartphone/A23s/scrollA23.svg" alt="star" className="" />}
+				bgColor="#EBE8E2"
+				textGradient1="#6B6682"
+				textGradient2="#6B6682"
+			/>
 
 			<Video1 />
 

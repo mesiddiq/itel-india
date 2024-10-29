@@ -8,12 +8,12 @@ const Topbody = () => {
   ];
   
   return(
-    <div className=" font-markot px-3 space-y-9 content">
+    <div className="  font-markot px-3 space-y-9 content">
         {
             data.map((data,index)=>{
                 return(
                 <div key={index}>
-                    <p className=" text-desktop/body/1 text-grey/grey/5 space-y-10">
+                    <p className="  text-desktop/body/1 text-grey/grey/5 space-y-10">
                     {data}
 
                     </p>

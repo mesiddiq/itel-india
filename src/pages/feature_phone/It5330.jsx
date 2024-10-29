@@ -20,7 +20,7 @@ import GlassDesign from '../../components/core/feature_phone/it5330/GlassDesign'
 
 const It5330 = () => {
     return (
-        <div>
+        <>
             <Hero {...HeroDatait5330} />
             <StickyHeader {...HeroDatait5330} />
             <FeatureRich {...FeatureRichDatait5330} />
@@ -33,7 +33,7 @@ const It5330 = () => {
             <TechSpecs {...TechSpecsDatait5330} />
             <FeaturePhoneProductGallery {...ProductGalleryDatait5330} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5330} mode={'light'} />
-        </div>
+        </>
     )
 }
 

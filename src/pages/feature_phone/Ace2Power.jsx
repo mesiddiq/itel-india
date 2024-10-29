@@ -21,10 +21,11 @@ import {
 import { Helmet } from 'react-helmet'
 import DiveIntoWorld from '../../components/core/feature_phone/ace2power/DiveIntoWorld'
 import ExtendedBattery from '../../components/core/feature_phone/ace2power/ExtendedBattery'
+import Communicate from '../../components/core/feature_phone/ace2power/Communicate'
 
 const Ace2Power = () => {
     return (
-        <div>
+        <>
             <Helmet>
                 <title>Ace 2 Power</title>
                 <meta name="description" content="The itel Ace 2 Power" />
@@ -34,12 +35,13 @@ const Ace2Power = () => {
             <FeatureRich {...FeatureRichDataAce2Power} />
             <PhoneSliderAnimation />
             <ExtendedBattery/>
+            <Communicate/>
             <DiveIntoWorld/>
             <KingVoice {...KingVoiceDataAce2Power} />
             <TechSpecs {...TechSpecsDataAce2Power} />
             <FeaturePhoneProductGallery {...ProductGalleryDataAce2Power} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataAce2Power} mode={'light'} />
-        </div>
+        </>
     )
 }
 

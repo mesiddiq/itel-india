@@ -7,10 +7,11 @@ const StickyHeader = ({
     purchaseLink, // Pass the purchase link
     icon, // Pass the icon
     bgColor, // Pass the background color
-    dark // Pass the dark as true if is dark otherwise don't use it
+    dark, // Pass the dark as true if is dark otherwise don't use it
+    borderBottom // When bg is white, make it true
 }) => {
     return (
-        <div className='px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]' style={{ background: bgColor ? bgColor : '#181818' }}>
+        <div className={`${borderBottom ? 'border border-t-white/10' : 'border-none'} px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]`} style={{ background: bgColor ? bgColor : '#181818' }}>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
                     <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className='size-10' />
@@ -18,10 +19,10 @@ const StickyHeader = ({
                 </div>
                 <div className="hidden md:flex gap-8 items-center">
                     <a href="#overview" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Overview</a>
-                    <a href="#specifications" className='text-desktop/body/1'>Specifications</a>
+                    <a href="#specifications" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Specifications</a>
                 </div>
                 <a href={purchaseLink} target='_blank' className={`flex py-3 px-[14px] md:px-6 rounded-[24px] gap-2 ${dark ? 'text-white bg-brand/black' : 'text-black/1 bg-white'}`}>
-                    <p className='text-mobile/button md:text-desktop/button text-black/1 uppercase font-medium'>Buy Now</p>
+                    <p className={`text-mobile/button md:text-desktop/button ${dark ? 'text-white' : 'text-black'} uppercase font-medium`}>Buy Now</p>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/twotone/arrow-right">
                             <g id="vuesax/twotone/arrow-right_2">

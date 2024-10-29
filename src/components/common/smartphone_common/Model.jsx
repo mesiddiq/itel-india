@@ -5,7 +5,7 @@ const Model = ({ theme = 'light' }) => {
   const models = [
     {
       id: 1,
-      image: '/P_Series/bg6.png',
+      image: '/smarthphone/P555g/bg6.png',
       title: 'S23+',
       price: '₹12,999.00',
       features: [
@@ -19,7 +19,7 @@ const Model = ({ theme = 'light' }) => {
     },
     {
       id: 2,
-      image: '/P_Series/bg7.png',
+      image: '/smarthphone/P555g/bg7.png',
       title: 'S24',
       price: '₹10,999.00',
       features: [
@@ -33,7 +33,7 @@ const Model = ({ theme = 'light' }) => {
     },
     {
       id: 3,
-      image: '/P_Series/bg8.png',
+      image: '/smarthphone/P555g/bg8.png',
       title: 'A70',
       price: '₹6,799.00',
       features: [
@@ -49,7 +49,7 @@ const Model = ({ theme = 'light' }) => {
   ];
 
   return (
-    <div className={`py-[60px] h-auto flex justify-center ${isLightTheme ? 'bg-white text-black' : 'bg-[#111111] text-white'}`}>
+    <div className={`py-[60px] font-markot h-auto flex justify-center ${isLightTheme ? 'bg-white text-black' : 'bg-[#0A0C08] text-white'}`}>
       <div className="w-full content flex flex-col gap-[36px] px-4">
         <div className="flex justify-between items-center">
           <h3 className={`${isLightTheme ? 'text-black' : 'text-white'} text-mobile/h5/medium md:text-desktop/h3`}>

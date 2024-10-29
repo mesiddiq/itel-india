@@ -74,12 +74,12 @@ export const TvData = [
 ]
 
 export const SupportData = [
-    { id: 1, label: '100 Days Service Promise', path: '/100dayspromise' },
-    { id: 2, label: 'One-Time Screen Replacement', path: '/100dayspromise' },
-    { id: 3, label: 'Service Center', path: '/100dayspromise' },
-    { id: 4, label: 'E-waste Management', path: '/100dayspromise' },
-    { id: 5, label: "FAQ's", path: '/100dayspromise' },
-    { id: 6, label: 'Contact Us', path: '/100dayspromise' },
+    { id: 1, label: '100 Days Service Promise', path: '/support/100-days-service-promise' },
+    { id: 2, label: 'One-Time Screen Replacement', path: '/support/1-time-screen-replacement' },
+    { id: 3, label: 'Service Center', path: '/support/service-center-locator' },
+    { id: 4, label: 'E-waste Management', path: '/support/e-waste-management' },
+    { id: 5, label: "FAQ's", path: '/support/faqs' },
+    { id: 6, label: 'Contact Us', path: '/contact-us' },
 ]
 
 export const PhonesData = [

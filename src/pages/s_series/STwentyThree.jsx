@@ -9,16 +9,17 @@ import NightModeSection from '../../components/core/s_series_core/S_Twenty_Three
 import ScrollingBanner from '../../components/core/s_series_core/S_Twenty_Three/ScrollingBanner'
 import StyleSection from '../../components/core/s_series_core/S_Twenty_Three/StyleSection'
 import { FullSpecificationsS23 } from '../../data/smartphonedata/S23Data'
-
+import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon'
 import StickyHeader from '../../components/common/StickyHeader'
 import VideoSection from '../../components/core/s_series_core/S_Twenty_Three/VideoSection'
 import SliderAnimationCommon from '../../components/common/smartphone_common/SliderAnimationCommon'
+import { ImageCarouselData } from '../../data/smartphonedata/S23ImageCarouselData'
 
 
 const STwentyThree = () => {
     return (
-        <div className=''>
+        <div className='font-markot'>
             <HeroSmartPhoneCommon
                 tagText="super series"
                 headingText="s23"
@@ -57,6 +58,7 @@ const STwentyThree = () => {
             <MemoryFusionSection />
             <StyleSection />
             <Features />
+            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsS23} mode="dark" />
         </div>
     )

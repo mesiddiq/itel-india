@@ -28,7 +28,7 @@ const StayInTheLoop = ({ theme = 'light' }) => {
         type='text/css'
         href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
       />
-      <div className={`content flex flex-col md:flex-row justify-between px-[16px] md:px-0 pt-[60px] pb-[20px] ${isDarkTheme ? 'bg-[#121212]' : 'bg-white'}`} style={{ marginTop: '0px' }}>
+      <div className={`content flex flex-col md:flex-row justify-between px-[16px] md:px-0 pt-[60px] pb-[20px] ${isDarkTheme ? 'bg-[#0A0C08]' : 'bg-white'}`} style={{ marginTop: '0px' }}>
         <h3 className={`text-mobile/h4 md:text-desktop/h3 font-markot ${isDarkTheme ? 'text-[#FFFFFF]' : 'text-black'}`}>
           Stay in the loop: Follow us for updates!
         </h3>

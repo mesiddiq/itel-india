@@ -8,6 +8,22 @@ import ProductCard from "./ProductCard";
 import ProductSection from "./ProductSection";
 import SeriesTags from "./SeriesTags";
 
+/**
+ * This component renders the product listing page. It contains a filter section
+ * on the left and a product section on the right. The filter section is sticky
+ * and remains on the top of the page when the user scrolls down.
+ *
+ * There are two versions of the component, one for laptop and one for mobile.
+ * The laptop version has a filter section on the left and a product section on
+ * the right. The mobile version has a filter heading and a compare button on
+ * top, followed by a series of tags, a phone banner, and a list of products.
+ *
+ * The list of products is rendered using the ProductCard component. The
+ * ProductCard component accepts a product object as a prop and renders the
+ * product details.
+ *
+ * The component also renders an "Enjoy" component after every 4 products.
+ */
 const ProductList = () => {
     const [isAligned, setIsAligned] = useState(false);
 

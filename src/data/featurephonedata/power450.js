@@ -1,7 +1,7 @@
 export const HeroDataPower450 = {
     title: "Power 450",
     subtitle: 'Type-C Charging | 2500 mAh Battery | 6.1cm (2.4”) QVGA Display ',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/gC42dEG',
     phoneUrl: '/featurephone/Power_450/Backgrounds/hero_mobile.webp',
     bgDesktop: '/featurephone/Power_450/Backgrounds/hero_banner.png',
     bgMobile: '/featurephone/Power_450/Backgrounds/hero_banner_mobile.webp',

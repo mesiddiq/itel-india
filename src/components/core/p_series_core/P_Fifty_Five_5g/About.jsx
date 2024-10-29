@@ -6,7 +6,7 @@ const Example = () => {
     
     return (
         <div className="h-max py-8 lg:h-[701px] flex justify-center items-center w-full bg-cover"
-        style={{ backgroundImage: 'url(/P_Series/banner-image-2.png)' }}>
+        style={{ backgroundImage: 'url(/SmartPhone/P55fiveg/Backgrounds/About.webp)' }}>
         <div className='content flex flex-col justify-center items-center w-full px-4 lg:p-0'>
             <div className="flex flex-col lg:flex-row lg:justify-between items-right gap-3 lg:gap-0">
                 <h2  className="gap-[6px] w-full lg:w-1/2 text-mobile/h4 lg:text-desktop/h2 text-white">
@@ -20,7 +20,7 @@ const Example = () => {
             <div className="flex flex-col md:flex-row gap-4 py-8 lg:gap-6 w-full items-center">
 
                 <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] rounded-2xl flex flex-col gap-2 lg:gap-6">
-                    <img src="/P_Series/about1.png" alt='' className="w-[48px] lg:w-[52px]" />
+                    <img src="/SmartPhone/P55fiveg/Backgrounds/about1.png" alt='' className="w-[48px] lg:w-[52px]" />
                     <div data-aos="fade-up" className="flex flex-col gap-2 w-full">
                         <span className="text-mobile/h4/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white text-[#F2F2F2]">
                             <span className=''>
@@ -37,7 +37,7 @@ const Example = () => {
                 </div>
 
                 <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] rounded-2xl flex flex-col gap-2 lg:gap-6">
-                    <img src="/P_Series/about2.png" alt='' className="w-[48px] lg:w-[52px]" />
+                    <img src="/SmartPhone/P55fiveg/Backgrounds/about2.png" alt='' className="w-[48px] lg:w-[52px]" />
                     <div data-aos="fade-up" className="flex flex-col gap-2 w-full">
                         <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white text-[#F2F2F2]">
                             MediaTek Helio G91:<br />
@@ -52,7 +52,7 @@ const Example = () => {
                 </div>
 
                 <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] rounded-2xl flex flex-col gap-2 lg:gap-6">
-                    <img src="/P_Series/about3.png" alt='' className="w-[48px] lg:w-[52px]" />
+                    <img src="/SmartPhone/P55fiveg/Backgrounds/about3.png" alt='' className="w-[48px] lg:w-[52px]" />
                     <div data-aos="fade-up" className="flex flex-col gap-2 w-full">
                         <span className="text-mobile/h5/medium lg:text-desktop/h4 text-grey/grey/1 lg:text-white text-[#F2F2F2]">
                             6.6&quot; HD+ Punch Hole Display<br />

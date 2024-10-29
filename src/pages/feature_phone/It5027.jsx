@@ -20,7 +20,7 @@ import CreateYourStyle from '../../components/core/feature_phone/it5027/CreateYo
 
 const It5027 = () => {
     return (
-        <div>
+        <>
             <Hero {...HeroDatait5027} />
             <StickyHeader {...HeroDatait5027} />
             <FeatureRich {...FeatureRichDatait5027} />
@@ -33,7 +33,7 @@ const It5027 = () => {
             <TechSpecs {...TechSpecsDatait5027} />
             <FeaturePhoneProductGallery {...ProductGalleryDatait5027} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5027} mode={'light'} />
-        </div>
+        </>
     )
 }
 

@@ -1,25 +1,22 @@
 const Battery = () => {
   return (
-    <div className="bg-[#D0E1FC] h-[813px] w-full md:px-[80px] flex items-center justify-center bg-no-repeat bg-cover overflow-hidden"
-      style={{ backgroundImage: 'url(/P_Series/vector2.png)' }}>
-
-      <div className="content relative flex  items-center h-full w-full">
-
-        {/* Background image as a background cover, centered */}
-        <div className="absolute inset-0 bg-no-repeat bg-center bg-contain transform w-full rotate-90 md:rotate-0"
-          style={{ backgroundImage: 'url(/P_Series/battery_charging.png)' }} />
-
-        {/* Content Section */}
-        <div className="relative left-[100px] hidden md:flex flex-col gap-[24px] w-[90%] md:w-[50%] px-4 lg:px-0 z-10">
+  <>
+  <div className="hidden lg:flex h-[710px] bg-[#D0E1FC] w-full  justify-center items-center py-12"
+  
+  >
+<div className="bg-[url('/SmartPhone/P55fiveg/Backgrounds/PowerBG.webp')] content bg-contain bg-no-repeat h-full w-full">
+<div className="content h-full">
+    <div className="relative content font-markot h-full w-full flex flex-col justify-center items-start bg-superfastUnisocBGLaptop bg-contain bg-center bg-no-repeat">
+        <div className="absolute left-[80px] flex flex-col gap-[9px]">
+        <div className="flex flex-col gap-[24px] w-[90%] px-4 lg:px-0 text-white font-markot">
           <div className="flex">
-            <h3 className="text-white text-mobile/h3 md:text-desktop/h3 font-markot">
-              Ultimate power<br/> boost performance for all day
+            <h3 className="text-mobile/h3 md:text-desktop/h3">
+              Ultimate power<br /> boost performance for all day
             </h3>
-          
           </div>
 
           {/* Stats Section */}
-          <div className="flex gap-[24px] text-white font-markot">
+          <div className="flex gap-[24px]">
             <div className="flex flex-col gap-[8px]">
               <h3 className="text-3xl font-bold">5000mh</h3>
               <p className="text-sm md:text-base">High endurance battery</p>
@@ -29,9 +26,48 @@ const Battery = () => {
               <p className="text-sm md:text-base">Type C Charger</p>
             </div>
           </div>
+          </div>
+        </div>
+    </div>
+</div></div>
+
+</div>
+<div className="lg:hidden flex justify-center items-center h-[810px] bg-[#D0E1FC] w-full py-12">
+  <div className=" justify-center items-center w-full h-full">
+    {/* Background Image */}
+    <div className="flex justify-center items-center bg-[url('/SmartPhone/P55fiveg/Backgrounds/PowerBGMobile.webp')] bg-center bg-contain bg-no-repeat h-full w-full">
+      <div className="content h-full w-full flex justify-center items-center">
+        <div className="relative font-markot h-full w-full flex flex-col justify-start items-center bg-superfastUnisocBGMobile bg-center bg-contain bg-no-repeat">
+          <div className="absolute pt-[60px] flex flex-col gap-[9px] text-center">
+          <div className="flex flex-col gap-[24px] px-4 text-white font-markot">
+          <div className="flex">
+            <h3 className="text-mobile/h3 text-left">
+              Ultimate power<br /> boost performance<br/> for all day
+            </h3>
+          </div>
+
+          {/* Stats Section */}
+          <div className="flex gap-[24px]">
+            <div className="flex flex-col gap-[8px]">
+              <h3 className="text-3xl font-bold">5000mh</h3>
+              <p className="text-sm ">High endurance battery</p>
+            </div>
+            <div className="flex flex-col gap-[8px]">
+              <h3 className="text-3xl font-bold">18W</h3>
+              <p className="text-sm">Type C Charger</p>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div></div>
+  </div>
+</div>
+
+
+</>
+
+  
   );
 };
 

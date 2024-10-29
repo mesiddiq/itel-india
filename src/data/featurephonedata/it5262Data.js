@@ -1,7 +1,7 @@
 export const HeroDatait5262 = {
     title: "it5262",
     subtitle: 'Type-C Charging | Glass Finish Design | 2000 mAh Battery',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/1WzHb2o',
     phoneUrl: '/featurephone/it5262/Backgrounds/phone_hero.webp',
     bgDesktop: '/featurephone/it5262/Backgrounds/hero_banner.webp',
     bgMobile: '/featurephone/it5262/Backgrounds/hero_banner_mobile.webp',

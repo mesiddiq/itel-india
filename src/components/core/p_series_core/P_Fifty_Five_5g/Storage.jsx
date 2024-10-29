@@ -8,7 +8,15 @@ const Storage = () => {
     setShowImages(!showImages);
   };
   return (
-    <div className='relative text-white w-full flex h-max md:h-[680px] bg-cover bg-center' style={{backgroundImage: "url(/P_Series/storage.png)"}}>
+    <div className='relative text-white overflow-hidden w-full flex h-max md:h-[660px] bg-cover bg-center'
+>
+        <div className={`
+    flex  w-full h-full
+    bg-cover
+    bg-[url('/SmartPhone/P55fiveg/Backgrounds/MegaMobile.webp')]   // For small screens (default)
+    md:bg-[url('/SmartPhone/P55fiveg/Backgrounds/MegaBG.webp')]       // For md and larger screens
+    bg-center bg-no-repeat
+  `}>
     <div className='content w-full md:flex-row flex flex-col pt-8'>
      <div data-aos="fade-right"className="w-full md:w-1/2 h-full flex p-4 lg:p-0 items-center px-4 lg:p-0">
      <div className='flex flex-col gap-[48px]  '>
@@ -32,35 +40,35 @@ const Storage = () => {
 </div>
      </div>
      </div>
-     <div className="w-full md:w-1/2 h-full bg-cover opacity-50" style={{ backgroundImage: "url(/P_Series/vector4.png)" }}>
-      <div className="relative flex justify-center items-center h-screen">
+     <div className="w-full md:w-1/2 h-full ">
+      <div className="relative flex justify-center items-center h-max py-8">
         {/* Left Mobile Image */}
         <img
-          src="/P_Series/mob2.png"
+          src="/SmartPhone/P555g/mob2.png"
           alt="Left Mobile"
-          className={`absolute transition-all duration-700 ease-in-out ${showImages ? 'transform translate-x-[-150px] translate-y-[-20px] scale-100 rotate-0 z-0' : 'transform translate-x-[0px] scale-0'} z-0`}
-          style={{ width: '400px', height: 'auto' }}
+          className={`absolute transition-all duration-700 ease-in-out ${showImages ? 'transform translate-x-[-70px] md:translate-x-[-150px] translate-y-[-20px] scale-100 rotate-0 z-0' : 'transform translate-x-[0px] scale-0'} z-0 w-[200px] md:w-[400px]`}
+        
         />
 
         {/* Center Mobile Image */}
         <img
-          src="/P_Series/mob1.png"
+          src="/SmartPhone/P555g/mob1.png"
           alt="Center Mobile"
           onClick={handleClick}
-          className="relative z-10 cursor-pointer"
-          style={{ width: '250px', height: 'auto' }}
+          className="relative z-10 cursor-pointer w-[150px] md:w-[250px]"
+      
         />
 
         {/* Right Mobile Image */}
         <img
-          src="/P_Series/mob3.png"
+          src="/SmartPhone/P555g/mob3.png"
           alt="Right Mobile"
-          className={`absolute transition-all duration-700 ease-in-out ${showImages ? 'transform translate-x-[150px] translate-y-[-20px] scale-100 rotate-0 z-0' : 'transform translate-x-[0px] scale-0'} z-0`}
-          style={{ width: '400px', height: 'auto' }}
+          className={`absolute transition-all duration-700 ease-in-out ${showImages ? 'transform translate-x-[70px] md:translate-x-[150px] translate-y-[-20px] scale-100 rotate-0 z-0' : 'transform translate-x-[0px] scale-0'} z-0 w-[200px] md:w-[400px]`}
+        
         />
       </div>
     </div>
-    </div></div>
+    </div></div></div>
   )
 }
 

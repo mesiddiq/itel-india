@@ -10,19 +10,22 @@ const DoDont = () => {
 
   const data2 = [
     {
-        img:"https://dummyimage.com/50",
+        img:"/static_page/Ewaste/forbidden.png",
         description:"Never dismantle your electronic products yourself at home."
     },
     {
-        img:"https://dummyimage.com/50",
+      img:"/static_page/Ewaste/forbidden3.png",
+
         description:"Never dispose electronic products in bins having ‘Do Not Dispose’ sign."
     },
     {
-        img:"https://dummyimage.com/50",
+      img:"/static_page/Ewaste/forbidden2.png",
+
         description:"Never sell or give e-waste to informal and unorganized sectors like local scrap dealer/ rag pickers."
     },
     {
-        img:"https://dummyimage.com/50",
+      img:"/static_page/Ewaste/forbidden1.png",
+
         description:"Never throw your electronic waste along with municipal waste as they end up reaching landfills."
     }
   ]
@@ -60,7 +63,7 @@ const DoDont = () => {
                 return(
                     <>
                       <div key={index} className=" flex flex-row lg:flex-col  lg:space-y-4">
-            <img className="h-[48px] w-[48px] lg:h-[64px] lg:w-[64px] " src="https://dummyimage.com/50" alt="" />
+            <img className="h-[48px] w-[48px] lg:h-[64px] lg:w-[64px] " src={data.img} alt="" />
             <p  className=" ml-3 lg:ml-0  text-grey/grey/5 lg:text-desktop/body/1 text-desktop/body/2/regular">
              {data.description}
             </p>

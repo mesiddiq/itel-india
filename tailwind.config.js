@@ -34,7 +34,8 @@ export default {
 				's23p/to':'#85e2fd',
 				's23/from':'#DACFF9',
 				's23/to':'#5C5C7E',
-				
+				'p55/from': '#D5EEF9',
+				'p55/to': '#70A2E1'
 			},
 			fontSize: {
 				'desktop/large/h': ['136px', {

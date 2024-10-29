@@ -17,7 +17,7 @@ import FeaturePhoneProductGallery from '../../components/common/feature_phone_co
 
 const Power450 = () => {
     return (
-        <div className=''>
+        <>
             <Hero {...HeroDataPower450} />
             <StickyHeader {...HeroDataPower450} />
             <FeatureRich {...FeatureRichDataPower450} />
@@ -28,7 +28,7 @@ const Power450 = () => {
             <TechSpecs {...TechSpecsDataPower450} />
             <FeaturePhoneProductGallery {...ProductGalleryDataPower450} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataPower450} mode={'light'} />
-        </div>
+        </>
     )
 }
 

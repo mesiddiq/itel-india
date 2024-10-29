@@ -26,8 +26,10 @@ const FilterSection = () => {
   ]
 
   return (
-    <aside className="mt-2" >
-        <FilterHeading />
+    <aside className="mt-2 max-h-[70vh] overflow-y-scroll overflowHidden " >
+        <div className="hidden md:block">
+            <FilterHeading />
+        </div>
         {
             filters.map((filter) => (
                 <FilterCard key={filter.id} typeOfFilter={filter.name} filterOptions={filter.options}/> 

@@ -1,7 +1,7 @@
 export const HeroDataPower120 = {
     title: "Power 120",
     subtitle: '5.08cm (2”) QVGA Display | 2500 mAh Battery | 2000 Contacts with Icons',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/9pwfDJB',
     phoneUrl: '/featurephone/Power_120/Backgrounds/hero_mobile.webp',
     bgDesktop: '/featurephone/Power_120/Backgrounds/hero_banner.webp',
     bgMobile: '/featurephone/Power_120/Backgrounds/hero_banner_mobile.webp',
