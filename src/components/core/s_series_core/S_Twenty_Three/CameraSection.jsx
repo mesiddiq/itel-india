@@ -20,18 +20,18 @@ function CameraSection() {
 
 
 
-        <div className="relative z-10 self-end  -mt-6 md:-mt-12 w-full max-w-[1314px] max-md:max-w-full">
+        <div className="relative z-10 self-end  -mt-6 md:-mt-12 w-full content max-md:max-w-full">
           <div className="flex gap-5 flex-col lg:flex-row">
             <div className="flex flex-col lg:w-[36%] max-md:ml-0 max-md:w-full">
               <div className="flex relative flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
                 <div className="flex relative flex-wrap gap-6 items-start self-start text-5xl font-medium tracking-tighter leading-tight max-md:text-4xl">
                   {/* Hide CamIcon on small screens */}
-                  <div className='absolute hidden lg:hidden top-[7px] left-[-55px]'>
+                  <div className='absolute hidden md:block top-[7px] left-[-55px]'>
                     <img
                       loading="lazy"
                       src="/smartphone/S_Twenty_Three/CamIcon.webp"
                       alt=""
-                      className="object-contain shrink-0 w-[49px] max-md:hidden" // Hide on small screens
+                      className="object-contain shrink-0 w-[49px] " // Hide on small screens
                     />
                   </div>
 
@@ -48,7 +48,7 @@ function CameraSection() {
                   <div className="flex flex-col justify-center max-w-full text-desktop/h5/medium md:text-desktop/h3 font-markot text-white lg:w-[327px]">
                     <h3 className="opacity-80">50MP AI Dual Rear Camera</h3>
                   </div>
-                  <div className="flex flex-col justify-center mt-12 max-w-full lg:w-[335px] max-md:mt-10">
+                  <div className="flex flex-col justify-center md:mt-12 max-w-full lg:w-[335px] mt-5">
                     <div className="flex flex-col justify-center w-full">
                       <h4 className="text-mobile/h5/medium md:text-desktop/h4 font-markot text-white opacity-80">
                         50MP high definition pixel photo system

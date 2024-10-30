@@ -22,7 +22,7 @@ export default function A05() {
         purchaseLink=""
         description={`8GB* (4GB+4GB*) RAM + 64GB ROM | 6.6" HD+ Drop Notch DIsplay | Type-C Charger`}
         gradient1="#181818"
-        grdient2="#181818"
+        gradient2="#181818"
         price="6,499"
         tagText="awesome series"
       />
