@@ -10,7 +10,7 @@ const TvFrame = () => {
                 transition={{ duration: 2, ease: 'easeInOut' }}
                 className=" border scale-150 bg-contain bg-no-repeat bg-center max-w-[1440px] max-h-[800px] h-screen mx-auto relative ">
                     </motion.div> */}
-            <div className="content relative h-screen">
+            <div className="content relative lg:h-screen">
                 <motion.div
                     initial={{ scale: 1.5 }}
                     whileInView={{ scale: 0.8 }}
