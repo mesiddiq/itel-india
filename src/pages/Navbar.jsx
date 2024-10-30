@@ -51,7 +51,7 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
     )
 }
 
-const Support = ({ support,setSupport }) => {
+const Support = ({ support, setSupport }) => {
 
     return (
         <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${support ? 'h-[330px] z-[100]' : 'h-0'}`}>
@@ -59,7 +59,7 @@ const Support = ({ support,setSupport }) => {
                 {
                     SupportData.map(({ id, label, path }) => (
                         <Link to={path} key={id}>
-                            <div onClick={()=>setSupport(prev=>!prev)} className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-grey/grey/4 to-grey/grey/5">
+                            <div onClick={() => setSupport(prev => !prev)} className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-grey/grey/4 to-grey/grey/5">
                                 <h1 className="text-white text-desktop/h5">{label}</h1>
                                 <div className="flex gap-2 items-center">
                                     <h4 className="text-desktop/button">READ MORE</h4>
@@ -110,10 +110,12 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone }) => {
                             ))
                         }
                     </div>
-                    <div className="flex gap-2 items-center justify-end">
-                        <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
-                        <ArrowRight />
-                    </div>
+                    <Link to="/products">
+                        <div className="flex gap-2 items-center justify-end">
+                            <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
+                            <ArrowRight />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -256,6 +258,7 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const [searchTerm, setSearchTerm] = useState('')
+    const [isFocused, setIsFocused] = useState(false)
     const [results, setResults] = useState({ smartphones: [], featurephones: [] })
 
     useEffect(() => {
@@ -298,7 +301,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='bg-brand/black py-4 hidden lg:block'>
+            <div className='bg-brand/black py-4 hidden lg:block font-markot'>
 
                 <div className="h-[50px] max-w-[1281px] w-11/12 mx-auto flex justify-between items-center ">
                     <Link to={'/'} >
@@ -316,6 +319,8 @@ const Navbar = () => {
                             className='text-grey/grey/2 text-desktop/body/1 bg-transparent outline-none border-none w-full'
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
+                            onFocus={() => setIsFocused(true)}
+                            onBlur={() => setIsFocused(false)}
                         />
 
                         {
@@ -327,7 +332,7 @@ const Navbar = () => {
 
                         {/* Search Result */}
 
-                        {searchTerm && (
+                        {searchTerm && isFocused && (
                             <div className="absolute top-16 left-0 p-6 bg-black/1 z-[100] w-full  font-markot">
                                 <div className="space-y-5">
                                     {noResults ? (

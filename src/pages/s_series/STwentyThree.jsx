@@ -1,4 +1,3 @@
-import React from 'react'
 import FullSpecifications from "../../components/common/FullSpecifications"
 import CameraSection from '../../components/core/s_series_core/S_Twenty_Three/CameraSection'
 import ColorChangeSection from '../../components/core/s_series_core/S_Twenty_Three/ColorChangeSection'

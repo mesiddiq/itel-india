@@ -62,10 +62,6 @@
   }
 }
 
-.overflowHidden::-webkit-scrollbar {
-  display: none;
-}
-
 .swiper-pagination-bullet {
   background-color: white;
   color: white;
@@ -209,6 +205,15 @@
   .responsive-width {
     width: 383px !important;
   }
+  .responsive-width-Qb{
+    padding-top: 3px !important;
+  }
+  .responsive-width-Qb2{
+    width: 375px !important;
+  }
+  .responsive-cards img{
+    bottom: -23% !important;                                                                        
+  }
 }
 
 @media (width: 1024px) {
@@ -236,17 +241,69 @@
   display: none;
 }
 
-@media (min-width: 430px) and (max-width: 700px) {
-  .responsive-LanguageSection {
-    height: 600px;
+
+.scale-up {
+  transition: transform 0.5s;
+}
+
+.group:hover .scale-up {
+  transform: scale(1.1);
+}
+.scale-up3 {
+  transition: transform 0.5s;
+  transform-origin: right bottom; /* Scale effect right bottom se hoga */
+}
+.scale-up2 {
+  transition: transform 0.5s;
+  transform-origin: right bottom; /* Scale effect right bottom se hoga */
+}
+
+.group2:hover .scale-up2 {
+  transform: scale(1.1); /* Scale down to 50% */
+}
+.group2:hover .scale-up3 {
+  transform: scale(1.2); /* Scale down to 50% */
+}
+
+
+@media (min-width: 760px) and (max-width: 770px) {
+  .responsive-section{
+    top: 80px !important;
+  }
+  .responsive-section img{
+    height: 170px !important;
+  }
+
+  .responsive-section2  {
+    left: 8rem !important;
+    top:80px !important
+  }
+  .responsive-section2 img {
+    height: 170px !important;
+  }
+  .mob-res1 {
+    top: 45% !important;
+    /* left: 26rem !important; */
+  }
+  .mob-res1 img{
+    height: 190px !important;
+  }
+  .mob-res {
+    top: 3rem !important;
+    /* left: 26rem !important; */
+  }
+  .mob-res1 img{
+    height: 150px !important;
+  }
+
+  .mob-res-AllDay {
+    top: 1% !important;
+    left: 20rem !important;
+  }
+
+  .mob-res-AllDay img {
+    height: 100% !important;
   }
 }
 
-@media (width: 1024px) {
-  .responsive-WhatsappSection{
-    width: 351px !important;
-  }
-  .responsive-WhatsappSection div {
-    padding-inline-start: 37px;
-  }
-}
+

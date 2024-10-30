@@ -20,7 +20,7 @@ import HighIntensityTourch from '../../components/core/feature_phone/power_120/H
 
 const Power120 = () => {
     return (
-        <div>
+        <>
             <Hero {...HeroDataPower120} />
             <StickyHeader {...HeroDataPower120} />
             <FeatureRich {...FeatureRichDataPower120} />
@@ -34,7 +34,7 @@ const Power120 = () => {
             <TechSpecs {...TechSpecsDataPower120} />
             <FeaturePhoneProductGallery {...ProductGalleryDataPower120} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataPower120} mode={'light'} />
-        </div>
+        </>
     )
 }
 

@@ -2,8 +2,8 @@ import React from 'react'
 
 const EpicBatteryPower = () => {
     return (
-        <div className="lg:h-[800px] overflow-hidden h-[694px] px-4 md:px-0 font-markot  bg-[url('/featurephone/it5330/Backgrounds/epic_battery_mobile.webp')] lg:bg-[url('/featurephone/it5330/Backgrounds/epic_battery.webp')] bg-cover">
-            <div className="content pt-8 lg:pt-[130px] justify-between flex">
+        <div className="lg:h-[800px] relative overflow-hidden h-[694px] px-4 md:px-0 font-markot  bg-[url('/featurephone/it5330/Backgrounds/epic_battery_mobile.webp')] lg:bg-[url('/featurephone/it5330/Backgrounds/epic_battery.webp')] bg-cover ">
+            <div className="content  pt-8 lg:pt-[130px] justify-between flex flex-col lg:flex-row items-center">
                 <div className="max-w-[590px]">
                     <h1 className="text-mobile/h4 lg:text-featurephone/heading text-bg/primary/1">Epic Battery Power</h1>
                     <h2 className="lg:text-desktop/h3 text-mobile/h6 lg:mt-5 mt-3">1900 mAh Battery</h2>
@@ -16,7 +16,14 @@ const EpicBatteryPower = () => {
                         </div>
                     </div>
                 </div>
-                <img src="/featurephone/it5330/Backgrounds/epic_battery_phone.webp" alt="it5330" className='max-w-[436px] -translate-x-20 translate-y-4' />
+                <div className="lg:relative absolute bottom-0 lg:-bottom-4">
+                    <div className="absolute bottom-10 right-[200px]  z-10  items-end hidden lg:flex ">
+                        <p className="text-desktop/body/large text-grey/grey/1 text-nowrap">Press to activate <br /> Super Battery Mode</p>
+                        <div className="w-full min-w-[500px] max-w-[500px] h-[2px] bg-white"></div>
+                    </div>
+                    <img src="/featurephone/it5330/Backgrounds/epic_battery_phone.webp" alt="it5330" className='lg:max-w-[436px] max-w-[271px] lg:-translate-x-20 ' />
+                    <img src="/featurephone/it5330/Backgrounds/line.png" alt="line" className='absolute bottom-8 -left-8 lg:hidden' />
+                </div>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ export const HeroDataSuperGuru400 = {
     subtitle: '2.4” Display | 1200 mAh Battery | Crystal Clear Audio ',
     bgDesktop: '/featurephone/superguru400/Hero_banner_desktop.webp',
     bgMobile: '/featurephone/superguru400/Hero_banner_mobile.webp',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/gqvN2J1',
     icon: '',
     phoneUrl: '/featurephone/superguru400/Hero_mobile.webp'
 }

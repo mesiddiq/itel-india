@@ -9,6 +9,7 @@ import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
 import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
+import Investor from './pages/static_pages/Investor'
 import Footer from './components/common/Footer'
 import Support from './pages/static_pages/Support'
 import ScreenReplacement from './pages/static_pages/ScreenReplacement'
@@ -52,6 +53,7 @@ import ScrollToTop from './utils/ScrollToTop'
 import A50 from './pages/a_series/A50'
 import NavbarMobile from './pages/NavbarMobile'
 import ProductListing from './pages/static_pages/ProductListing'
+import FeaturePhoneParent from './pages/feature_phone/FeaturePhoneParent'
 
 
 function App() {
@@ -84,7 +86,7 @@ function App() {
 				<Route path='/contact-us' element={<Contactus />} />
 				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 				<Route path='/support/faqs' element={<FAQ />} />
-				{/* <Route path='/investor' */}
+				<Route path='/investor' element={<Investor/>}/>
 
 
 				{/* ***************************************************************************************************/}
@@ -143,7 +145,7 @@ function App() {
 				{/***************************************************************************************************/}
 				{/*****************************************Feature Phoness*******************************************/}
 				{/***************************************************************************************************/}
-				<Route path='/product'>
+				<Route path='/product' element={<FeaturePhoneParent />}>
 					<Route path='super-guru-4g' element={<SuperGuru4G />} />
 					<Route path='super-guru-400' element={<SuperGuru400 />} />
 					<Route path='super-guru-600' element={<SuperGuru600 />} />

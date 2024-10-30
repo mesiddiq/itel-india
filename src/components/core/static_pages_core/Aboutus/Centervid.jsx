@@ -3,7 +3,7 @@ import React from 'react'
 const Centervid = () => {
   return (
     <div className=' '>
-    <div className="lg:h-[810px]  h-[202px] flex justify-center items-end">
+    <div className="lg:h-[810px]  font-markot h-[202px] flex justify-center items-end">
     <video
                         autoPlay
                         muted

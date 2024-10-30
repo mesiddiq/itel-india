@@ -1,10 +1,10 @@
 import React from 'react'
 
 const TermsAndCondition = () => {  const data = [
-    "1. Certified defective handsets complying with warranty conditions will be swapped with similar units within 100 days of purchase.",
-    "2. Swap units will be the same or similar spec model.",
-    "3. Cosmetic of swap units might be similar if not better than earlier unit.",
-    "4. Beyond 100 days, the normal repair warranty terms would be applicable."
+    " Certified defective handsets complying with warranty conditions will be swapped with similar units within 100 days of purchase.",
+    " Swap units will be the same or similar spec model.",
+    " Cosmetic of swap units might be similar if not better than earlier unit.",
+    " Beyond 100 days, the normal repair warranty terms would be applicable."
     
   
 ];
@@ -19,7 +19,8 @@ const TermsAndCondition = () => {  const data = [
         <div className=" lg:space-y-2">
           {data.map((data, index) => {
             return (
-              <div key={index}>
+              <div className=' flex items-start space-x-1 ' key={index}>
+                <p className="  text-desktop/body/1 text-grey/grey/5">{index+1}.</p>
                 <p className="  text-desktop/body/1 text-grey/grey/5">{data}</p>
               </div>
             );

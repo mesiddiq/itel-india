@@ -25,7 +25,7 @@ import FeaturePhoneProductGallery from '../../components/common/feature_phone_co
 
 const SuperGuru4G = () => {
     return (
-        <div >
+        <>
             <Hero {...HeroDataSuperGuru4g} />
             <StickyHeader {...HeroDataSuperGuru4g} />
             <FeatureRich {...FeatureRichDataSuperGuru4g} />
@@ -38,7 +38,7 @@ const SuperGuru4G = () => {
             <TechSpecs {...TechSpecsDataSuperGuru4g} />
             <FeaturePhoneProductGallery {...ProductGalleryDataSuperGuru4g} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataSuperGuru4g} mode={'light'} />
-        </div>
+        </>
     )
 }
 

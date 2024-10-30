@@ -8,19 +8,19 @@ const Cards = () => {
           "Enjoy peace of mind with our 100-day warranty, ensuring your satisfaction within the initial period of use.",
       },
       {
-        img: "/static_page/screenreplacement/Group 1973339799.png",
+        img: "/static_page/promise/receipttext.png",
         title: "Model-to-Model Swaps",
         description:
           "Exchange your device within our similar models, ensuring you always find the perfect fit for your needs.",
       },
       {
-        img: "/static_page/screenreplacement/receipt-text.png",
+        img: "/static_page/promise/receipt-text2.png",
         title: "Headset Hassle-Free Replacement",
         description:
           "Experience seamless service as defective headsets are swiftly swapped out, ensuring your listening experience remains uninterrupted.",
       },
       {
-        img: "/static_page/screenreplacement/forbidden.png",
+        img: "/static_page/promise/receipt-text1.png",
         title: "Extended Repair Coverage",
         description: "Beyond the initial 100 days, rest assured with our comprehensive repair warranty, providing continued support for your device.",
       },

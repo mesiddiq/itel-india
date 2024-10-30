@@ -1,11 +1,11 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+const Model = ({ theme = 'light' }) => {
+  const isLightTheme = theme === 'light';
 
-const Model = () => {
- 
   const models = [
     {
       id: 1,
-      image: '/SmartPhone/P555g/bg6.png',
+      image: '/smarthphone/P555g/bg6.png',
       title: 'S23+',
       price: '₹12,999.00',
       features: [
@@ -19,7 +19,7 @@ const Model = () => {
     },
     {
       id: 2,
-      image: '/SmartPhone/P555g/bg7.png',
+      image: '/smarthphone/P555g/bg7.png',
       title: 'S24',
       price: '₹10,999.00',
       features: [
@@ -33,7 +33,7 @@ const Model = () => {
     },
     {
       id: 3,
-      image: '/SmartPhone/P555g/bg8.png',
+      image: '/smarthphone/P555g/bg8.png',
       title: 'A70',
       price: '₹6,799.00',
       features: [
@@ -49,22 +49,25 @@ const Model = () => {
   ];
 
   return (
-    <div className="py-[60px] h-auto flex justify-center">
+    <div className={`py-[60px] font-markot h-auto flex justify-center ${isLightTheme ? 'bg-white text-black' : 'bg-[#0A0C08] text-white'}`}>
       <div className="w-full content flex flex-col gap-[36px] px-4">
         <div className="flex justify-between items-center">
-          <h3 className="text-white text-mobile/h5/medium md:text-desktop/h3">Compare Models</h3>
+          <h3 className={`${isLightTheme ? 'text-black' : 'text-white'} text-mobile/h5/medium md:text-desktop/h3`}>
+            Compare Models
+          </h3>
           <div className="flex gap-[8px] mt-4 md:mt-0">
             <img src="/P_Series/red_model.png" className="h-[24px] w-[25px]" alt="Model" />
-            <h2 className="text-white md:text-desktop/tertiary/cta">Compare other models</h2>
+            <h2 className={`${isLightTheme ? 'text-black' : 'text-white'} md:text-desktop/tertiary/cta`}>
+              Compare other models
+            </h2>
           </div>
         </div>
 
-        {/* Responsive card container */}
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-[24px] justify-center">
           {models.map((model, index) => (
             <div
               key={model.id}
-              className={`w-full bg-[#232323] rounded-[16px] p-4 md:p-6 lg:p-[24px] ${
+              className={`w-full ${isLightTheme ? 'bg-gray-100 text-black' : 'bg-[#232323] text-white'} rounded-[16px] p-4 md:p-6 lg:p-[24px] ${
                 index === 2 ? 'hidden lg:block' : 'block'
               }`}
             >
@@ -78,26 +81,37 @@ const Model = () => {
                     />
                   </div>
                   <div className="flex justify-between">
-                    <h4 className="text-white text-mobile/h7 md:text-desktop/h4">{model.title}</h4>
+                    <h4 className={`${isLightTheme ? 'text-black' : 'text-white'} text-mobile/h7 md:text-desktop/h4`}>
+                      {model.title}
+                    </h4>
                     <h5 className="text-[#FF99AF] text-mobile/h7 md:text-desktop/h4">{model.price}</h5>
                   </div>
                 </div>
                 <div className="flex flex-col gap-[8px] md:gap-4">
                   {model.features.map((feature, idx) => (
-                   <div key={idx} className="flex flex-col md:flex-row justify-center md:justify-between gap-[12px] text-center md:gap-[20px] items-center">
-                      <p className="text-[#F8F6F3] font-markot text-desktop/caption md:text-desktop/subtitle">{feature.label}</p>
-                      <p className="text-[#D9D9D9] font-markot text-mobile/small/body md:text-desktop/body/2/regular">{feature.value}</p>
-                      
+                    <div
+                      key={idx}
+                      className="flex flex-col md:flex-row justify-center md:justify-between gap-[12px] text-center md:gap-[20px] items-center"
+                    >
+                      <p className={`${isLightTheme ? 'text-black' : 'text-[#F8F6F3]'} font-markot text-desktop/caption md:text-desktop/subtitle`}>
+                        {feature.label}
+                      </p>
+                      <p className={`${isLightTheme ? 'text-gray-800' : 'text-[#D9D9D9]'} font-markot text-mobile/small/body md:text-desktop/body/2/regular`}>
+                        {feature.value}
+                      </p>
                     </div>
-              
                   ))}
                 </div>
-                <button className="flex gap-3 justify-center border border-white/50 py-[12px] px-[24px] rounded-full items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
-                    <span className="flex overflow-hidden gap-2 items-center">
-                      <span>Buy Now</span>
-                      <img loading="lazy" src="/SmartPhone/P555g/arrow-right.png" alt="" className="object-contain w-6" />
-                    </span>
-                  </button>
+                <button
+                  className={`flex gap-3 justify-center border ${isLightTheme ? 'border-black' : 'border-white/50'} py-[12px] px-[24px] rounded-full items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase ${
+                    isLightTheme ? 'text-black' : 'text-stone-100'
+                  }`}
+                >
+                  <span className="flex overflow-hidden gap-2 items-center">
+                    <span>Buy Now</span>
+                    <img loading="lazy" src="/P_Series/arrow-right.png" alt="" className="object-contain w-6" />
+                  </span>
+                </button>
               </div>
             </div>
           ))}

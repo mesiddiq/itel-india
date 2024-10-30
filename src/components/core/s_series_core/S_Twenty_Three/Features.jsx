@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SmartphoneFeatures() {
   return (
-    <section className="content font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] lg:px-[80px] bg-[#1c1b1b] flex flex-col gap-5">
+    <section className="content font-markot w-full h-full py-[40px]  lg:py-[120px]  bg-[#1c1b1b] flex flex-col gap-5">
       
       <section className="flex flex-col lg:flex-row gap-5 justify-between">
         <div
@@ -21,7 +21,7 @@ export default function SmartphoneFeatures() {
           <img
             src="/smartphone/S_Twenty_Three/Card1.webp"
             alt=""
-            className="absolute bottom-[1%] left-0 w-full h-auto object-cover"
+            className="absolute bottom-[1%] md:bottom-[-25%] lg:bottom-[1%] left-0 w-full h-auto object-cover"
           />
         </div>
 
