@@ -1,3 +1,5 @@
+import { head, title } from "framer-motion/client";
+
 export const a50FeatureRichData = {
     title: "Step into A50's Excellence with the 8 MP AI Rear Camera",
     description: "Introducing the itel A50, your ultimate all-rounder smartphone - with 6.6″ HD+ IPS display for clear visuals, 64GB of storage for plenty of space, 3GB or 4GB RAM for smooth performance, and a 5000 mAh battery for all-day power. Capture crisp photos with the 8MP rear and 5MP front cameras. Powered by the Unisoc T603 Octa-core processor, it handles multitasking with ease. Enjoy a Free Screen Replacement and a 1-year warranty.",
@@ -26,93 +28,93 @@ export const a50FeatureRichData = {
 
 export const a50FullSpecifications = [
     {
-        id:1,
-        label:'General',
-        data:[
-            {label:'Model',value:'A50'},
-            {label:'Colors',value:'Lime Green | Cyan Blue | Shimmer Gold | Misty Black'},
+        id: 1,
+        label: 'General',
+        data: [
+            { label: 'Model', value: 'A50' },
+            { label: 'Colors', value: 'Lime Green | Cyan Blue | Shimmer Gold | Misty Black' },
         ]
     },
     {
-        id:2,
-        label:'Display Features',
-        data:[
-            {label:'Display Size',value:'6.56" HD+ IPS'},
-            {label:'Resolution',value:'1612x720 Pixels'},
-            {label:'Resolution Type',value:'HD+ IPS'},
-            {label:'Dimension',value:'Dimension'},
-            {label:'Technology',value:'G+F, Incell'},
-            {label:'Refresh Rate',value:'60 Hz'},
-            {label:'Touch Sampling Rate',value:'120 Hz'},
-            {label:'Pixel Density',value:'270 PPI'},
+        id: 2,
+        label: 'Display Features',
+        data: [
+            { label: 'Display Size', value: '6.56" HD+ IPS' },
+            { label: 'Resolution', value: '1612x720 Pixels' },
+            { label: 'Resolution Type', value: 'HD+ IPS' },
+            { label: 'Dimension', value: 'Dimension' },
+            { label: 'Technology', value: 'G+F, Incell' },
+            { label: 'Refresh Rate', value: '60 Hz' },
+            { label: 'Touch Sampling Rate', value: '120 Hz' },
+            { label: 'Pixel Density', value: '270 PPI' },
         ]
     },
     {
-        id:3,
-        label:'OS & Processor',
-        data:[
-            {label:'Operating System',value:'Android 14 Go'},
-            {label:'Chipset',value:'UNISOC T603'},
-            {label:'Processor Core',value:'Octa-Core'},
+        id: 3,
+        label: 'OS & Processor',
+        data: [
+            { label: 'Operating System', value: 'Android 14 Go' },
+            { label: 'Chipset', value: 'UNISOC T603' },
+            { label: 'Processor Core', value: 'Octa-Core' },
         ]
     },
     {
-        id:4,
-        label:'Camera',
-        data:[
-            {label:'Rear Camera',value:'8MP AI Camera'},
-            {label:'Rear flash',value:'Yes'},
-            {label:'Front Camera',value:'5MP'},
-            {label:'Front flash',value:'No'},
+        id: 4,
+        label: 'Camera',
+        data: [
+            { label: 'Rear Camera', value: '8MP AI Camera' },
+            { label: 'Rear flash', value: 'Yes' },
+            { label: 'Front Camera', value: '5MP' },
+            { label: 'Front flash', value: 'No' },
         ]
     },
     {
-        id:5,
-        label:'Battery',
-        data:[
-            {label:'Battery Capacity',value:'5000 mAh'},
-            {label:'Battery Type',value:'Li-Polymer'},
-            {label:'USB',value:'Type-C'},
-            {label:'Standby',value:'41 Days'},
-            {label:'Talktime',value:'60 Hours'},
+        id: 5,
+        label: 'Battery',
+        data: [
+            { label: 'Battery Capacity', value: '5000 mAh' },
+            { label: 'Battery Type', value: 'Li-Polymer' },
+            { label: 'USB', value: 'Type-C' },
+            { label: 'Standby', value: '41 Days' },
+            { label: 'Talktime', value: '60 Hours' },
         ]
     },
     {
-        id:6,
-        label:'Memory & Storage',
-        data:[
-            {label:'RAM',value:'12GB*(4GB + 8GB*) / 8GB*(3GB + 5GB*)'},
-            {label:'ROM',value:'64 GB'},
-            {label:'User Memory',value:'53 GB'},
-            {label:'Expandable',value:'UPTO 1 TB'},
+        id: 6,
+        label: 'Memory & Storage',
+        data: [
+            { label: 'RAM', value: '12GB*(4GB + 8GB*) / 8GB*(3GB + 5GB*)' },
+            { label: 'ROM', value: '64 GB' },
+            { label: 'User Memory', value: '53 GB' },
+            { label: 'Expandable', value: 'UPTO 1 TB' },
         ]
     },
     {
-        id:7,
-        label:'Connectivity',
-        data:[
-            {label:'Network Type',value:'4G'},
-            {label:'GSM',value:'2G:B3|5|8'},
-            {label:'EDGE',value:'Support Download'},
-            {label:'WCDMA',value:'3G:B1|5|8'},
-            {label:'LTE',value:'B1/B3/B5/B8/B40/B38/B41(120M)'},
-            {label:'SIM Slot',value:'Slot1 & Slot2-Nano'},
-            {label:'Dual Active/Standby',value:'Dual Active'},
-            {label:'Bluetooth Support',value:'Yes'},
-            {label:'Wi-Fi',value:'Yes'},
-            {label:'GPS',value:'Yes'},
-            {label:'USB Connectivity',value:'Yes'},
+        id: 7,
+        label: 'Connectivity',
+        data: [
+            { label: 'Network Type', value: '4G' },
+            { label: 'GSM', value: '2G:B3|5|8' },
+            { label: 'EDGE', value: 'Support Download' },
+            { label: 'WCDMA', value: '3G:B1|5|8' },
+            { label: 'LTE', value: 'B1/B3/B5/B8/B40/B38/B41(120M)' },
+            { label: 'SIM Slot', value: 'Slot1 & Slot2-Nano' },
+            { label: 'Dual Active/Standby', value: 'Dual Active' },
+            { label: 'Bluetooth Support', value: 'Yes' },
+            { label: 'Wi-Fi', value: 'Yes' },
+            { label: 'GPS', value: 'Yes' },
+            { label: 'USB Connectivity', value: 'Yes' },
         ]
     },
     {
-        id:8,
-        label:'Additional',
-        data:[
-            {label:'Earphone Jack',value:'3.5mm'},
-            {label:'Sensors',value:'Side Fingerprint | Face Unlock | G Sensor'},
-            {label:'Fingerprint',value:'Side'},
-            {label:'Accessories',value:'10W Adapter(support 10W) | USB Cable | Protective Cover'},
-            {label:'Thickness',value:'8.7mm'},
+        id: 8,
+        label: 'Additional',
+        data: [
+            { label: 'Earphone Jack', value: '3.5mm' },
+            { label: 'Sensors', value: 'Side Fingerprint | Face Unlock | G Sensor' },
+            { label: 'Fingerprint', value: 'Side' },
+            { label: 'Accessories', value: '10W Adapter(support 10W) | USB Cable | Protective Cover' },
+            { label: 'Thickness', value: '8.7mm' },
         ]
     },
 ]
@@ -171,6 +173,20 @@ export const frame4IconsData = [
         id: 2,
         icon: "/smartphone/a50/icons/f4Logo2.webp",
         title: "UNISOC T603",
+    },
+]
+
+export const frame5IconsData = [
+    {
+        id: 1,
+        head: "6.6”",
+        title: "Large screen size"
+    },
+    {
+        id: 2,
+        head: "720x1612",
+        title: "Resolution"
+
     },
 ]
 

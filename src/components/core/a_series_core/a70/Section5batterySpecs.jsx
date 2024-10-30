@@ -19,10 +19,10 @@ const Section5batterySpecs = () => {
             </span>
           </div>
           <div className="flex lg:flex-col items-center justify-center lg:justify-start lg:items-start gap-2 md:gap-4 pb-6">
-            <p className="md:text-desktop/h3 text-mobile/h6">5000 mAh Battery</p>
+            <p className="md:text-desktop/h3 text-mobile/h6 text-center">5000 mAh Battery</p>
             <hr className="hidden lg:block lg:w-[300px] h-[3px] bg-black" />
             <div className="lg:hidden w-[2px] h-[20px] md:h-[44px] bg-[#666666]" />
-            <p className="text-mobile/h6 md:text-desktop/h3">Type-C Charging</p>
+            <p className="text-mobile/h6 md:text-desktop/h3 text-center">Type-C Charging</p>
           </div>
         </div>
         <div className="responsive-Tab">

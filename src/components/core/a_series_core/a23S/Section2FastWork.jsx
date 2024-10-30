@@ -13,7 +13,7 @@ const Section2FastWork = () => (
   
    mobileBgImage='/smartphone/A23s/Backgrounds/storageROM-mobile.webp' paddingStart='60px'>
     <div className='md:h-[739px] h-[501px] text-center lg:pt-[115px] md:text-left text-black flex w-full lg:justify-end justify-center content'>
-      <div className=''>
+      <div className='flex flex-col gap-[64px]'>
         <div className='xl:w-[521px] lg:w-[450px] lg:h-[508px] xl:me-[46px]  justify-between flex flex-col gap-4 lg:gap-8'>
           <div className='flex flex-col gap-2 lg:gap-5 text-center lg:text-left'>
             <p className='md:text-desktop/h2 text-mobile/h4'>Work Fast, Store More</p>
@@ -33,10 +33,10 @@ const Section2FastWork = () => (
           </div>
 
         </div>
-        {/* <div>
-          <p className='text-[#6F7384] text-mobile/body/2 lg:text-desktop/body/1'>*Data may vary basis users’ usage pattern</p>
+        <div>
+          <p className='text-[#6F7384] text-end px-[65px] hidden lg:block text-mobile/body/2 lg:text-desktop/body/1'>*Data may vary basis users’ usage pattern</p>
 
-        </div> */}
+        </div>
       </div>
     </div>
   </GradientBackgroundWrapper>
