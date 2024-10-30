@@ -44,7 +44,7 @@ const UnlockBoundless = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className='flex relative w-full h-[630px] md:h-[800px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#121523] md:bg-none overflow-hidden'>
+    <div ref={containerRef} className='flex relative w-full h-[630px] md:h-[800px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/UnlockBoundless/bg.png")] md:bg-none bg-cover bg-top bg-no-repeat overflow-hidden'>
       <div className='content'>
         <video
           ref={videoRef}
@@ -61,7 +61,7 @@ const UnlockBoundless = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: .5, delay: 5 }}
-                  className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot pt-5'>Unlock Boundless Possibilities with Memory Fusion Technology</motion.h2>
+                  className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot md:pt-5'>Unlock Boundless Possibilities with Memory Fusion Technology</motion.h2>
               </div>
             </div>
             <div className='flex md:flex-col gap-4 pt-7'>
@@ -73,6 +73,14 @@ const UnlockBoundless = () => {
                 <h3 className='text-mobile/h6 md:text-desktop/h3 text-[#FFFFFF] font-markot'>12 GB* (6GB + 6GB)*</h3>
                 <h5 className='text-desktop/h7 md:text-[22px] text-[#FFFFFF] font-markot pt-2'>RAM</h5>
                 <p className='text-mobile/small/body md:text-[16px] text-[#FFFFFF] font-[400] font-markot pt-2'>*Using memory fusion Technology</p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: .5, delay: 5.5 }}
+                className='md:hidden'
+              >
+                <img src='/smartphone/color-pro-5g/PowerThrough/line.png' className='h-[75px]' />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}

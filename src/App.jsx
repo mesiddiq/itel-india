@@ -137,7 +137,7 @@ function App() {
 				{/* 					Color Pro 5g					 */}
 				{/********************************************************/}
 
-				<Route path='/product' element={<A_Series_Parent />} >
+				<Route path='/product' element={<S_Series_Parent />} >
 					<Route path='color-pro-5g' element={<ColorPro5G />} />
 				</Route>
 

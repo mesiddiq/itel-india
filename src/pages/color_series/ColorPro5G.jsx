@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import '../../style.css'
 import StickyHeader from '../../components/common/StickyHeader';
 import FullSpecifications from '../../components/common/FullSpecifications';
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"

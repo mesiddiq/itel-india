@@ -6,6 +6,7 @@ const StickyHeader = ({
     title, // Pass the title
     purchaseLink, // Pass the purchase link
     icon, // Pass the icon
+    iconSize,
     bgColor, // Pass the background color
     dark, // Pass the dark as true if is dark otherwise don't use it
     borderBottom // When bg is white, make it true
@@ -14,7 +15,7 @@ const StickyHeader = ({
         <div className={`${borderBottom ? 'border border-t-white/10' : 'border-none'} px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]`} style={{ background: bgColor ? bgColor : '#181818' }}>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
-                    <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className='size-10' />
+                    <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className={iconSize ? iconSize : 'size-10'} />
                     <h1 className={`text-mobile/h5 md:text-desktop/h3 font-bold ${dark ? 'text-black/1' : 'text-white'} `}>{title}</h1>
                 </div>
                 <div className="hidden md:flex gap-8 items-center">
