@@ -2,7 +2,8 @@ const ModernTwist = () => {
   return (
     <div className='bg-[#1C1B1B] '>
       
-      <div className="w-full h-full px-4 lg:px-0 content pt-[50px] lg:pt-[120px]">
+      {/* starryBlackText */}
+      <div className="w-full h-full px-4 lg:px-0 pt-[50px] lg:pt-[120px]">
         <h3 className='content font-markot text-[#FFFFFF] text-mobile/h4 md:text-desktop/h2 mb-10 lg:mb-20'>
         Modern Twist <br />on Timeless Elegance
         </h3>
@@ -17,6 +18,7 @@ const ModernTwist = () => {
         </div>
       </div>
 
+      {/* whiteDawnImage */}
       <div className="md:hidden w-full px-4 h-full content pt-[50px] lg:pt-[120px]">
         <h3 className='text-right content font-markot text-[#FFFFFF] text-mobile/h4 md:text-desktop/h2 mb-4 lg:mb-16'>
         Shimmering Lights <br />with 3D Magnetic Particles 

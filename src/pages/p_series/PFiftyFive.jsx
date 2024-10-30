@@ -10,9 +10,12 @@ import GamingRevolution from '../../components/core/p_series_core/P_Fifty_Five/G
 import MultipleCardComponents from '../../components/core/p_series_core/P_Fifty_Five/MultipleCardComponents';
 import SeeMoreCaptureMore from '../../components/core/p_series_core/P_Fifty_Five/SeeMoreCaptureMore';
 import SuperfastUnisoc from '../../components/core/p_series_core/P_Fifty_Five/SuperfastUnisoc';
+import VideoAsset from '../../components/core/p_series_core/P_Fifty_Five/VideoAsset';
+
+import ColorImageCarousel from '../../components/core/p_series_core/P_Fifty_Five/ColorImageCarousel';
+
 // import VideoAsset from '../../components/core/p_series_core/P_Fifty_Five/VideoAsset';
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data';
-import ColorImageCarousel from '../../components/common/smartphone_common/ColorImageCarousel';
 import { ImageCarouselData } from '../../data/smartphonedata/P55ImageCarouselData';
 import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon';
 import StickyHeader from '../../components/common/StickyHeader';
@@ -47,7 +50,7 @@ const PFiftyFive = () => {
                 svgBgColor='bg-[#4D88D2]'
 			/>
 
-            {/* <VideoAsset /> */}
+            <VideoAsset />
 
             <FillerFrame />
 

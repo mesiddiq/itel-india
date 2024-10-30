@@ -6,6 +6,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			screens: {
+				'xs': '350px',
+			},
 			fontFamily: {
 			'markot': ['Mark_OT'],
 			'bricolage': ['BricolageGrotesque'],
@@ -234,6 +237,13 @@ export default {
 				'superfastUnisocBGMobile': "url('/smartphone/P55/superfastUnisocBGMobile.png')",
 				'clearVisionBG': "url('/smartphone/P55/clearVisionBG.png')",
 				'frame24GB': "url('/smartphone/P55/frame24GB.png')",
+
+				'a05iImageCarouselMobileBG': "url('/smartphone/A05i/a05iImageCarouselMobileBG.webp')", 
+				'a05iImageCarouselLaptopBG': "url('/smartphone/A05i/carouselBG.webp')", 
+
+				'a50cImageCarouselMobileBG': "url('/smartphone/A50C/a50cImageCarouselMobileBG.webp')", 
+				'a50cImageCarouselLaptopBG': "url('/smartphone/A50C/a50cImageCarouselLaptopBG.webp')", 
+
 
 				'superfastUnisocGradient': 'linear-gradient(101.38deg, #D5EEF9 -22.94%, #70A2E1 77.36%)',
 				'frame24GBGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',

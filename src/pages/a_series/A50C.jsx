@@ -1,9 +1,10 @@
+/* eslint-disable react-refresh/only-export-components */
 import FullSpecifications from "../../components/common/FullSpecifications"
-import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import StickyHeader from "../../components/common/StickyHeader"
 
-import Video1 from "../../components/core/a_series_core/A50C/Video1"
+// import Video1 from "../../components/core/a_series_core/A50C/Video1"
 import FillerFrame from "../../components/core/a_series_core/A50C/FillerFrame"
+import ColorImageCarousel from "../../components/core/a_series_core/A50C/ColorImageCarousel"
 
 import MultipleCardComponents from "../../components/core/a_series_core/A50C/MultipleCardComponents"
 import Parent4Divs from "../../components/core/a_series_core/A50C/Parent4Divs"
@@ -26,7 +27,7 @@ const A50C = () => {
 				purchaseLink=""
 				description={`6.6" HD+ Display with Dynamic Bar | 4GB*(2GB+2GB*) RAM + 32GB ROM | 8MP AI Rear Camera `}
 				gradient1="#181818"
-				grdient2="#181818"
+				gradient2="#181818"
 				price="5,599"
 				tagText="awesome series"
 			/>
@@ -44,7 +45,7 @@ const A50C = () => {
 				textGradient2="#6B6682"
 			/>
 
-			<Video1 />
+			{/* <Video1 /> */}
 
 			<FillerFrame />
 
