@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 const CountOnItel = () => {
 
     const CardData = [
-        {id:1,link:'/support/100-days-service-promise',label:'100 Days Promise'},
-        {id:1,link:'/support/1-time-screen-replacement',label:'One-Time Screen Replacement'},
-        {id:1,link:'/support/service-center-locator',label:'Service Center'},
+        { id: 1, link: '/support/100-days-service-promise', label: '100 Days Promise' },
+        { id: 1, link: '/support/1-time-screen-replacement', label: 'One-Time Screen Replacement' },
+        { id: 1, link: '/support/service-center-locator', label: 'Service Center' },
     ]
 
     return (
-        <div className="space-y-[60px]">
+        <div className="lg:space-y-[60px] space-y-8 px-4 md:px-0">
             <div className={`relative content h-[328px] lg:h-[653px] rounded-3xl overflow-hidden`}>
                 <div className="max-w-[577px] mx-auto absolute text-center bottom-[46px] left-1/2 -translate-x-1/2 w-full">
                     <h3 className='lg:text-desktop/h3 text-mobile/h5/medium mx-auto max-w-[290px] lg:max-w-[439px] w-full'>
@@ -31,7 +31,7 @@ const CountOnItel = () => {
 
             <div className="max-w-[1110px] mx-auto flex lg:justify-between flex-col lg:flex-row gap-6 md:gap-8 lg:gap-0">
 
-                
+
                 {CardData.map((card) => (
                     <div key={card.id} className="flex text-white gap-3 flex-col">
                         <img src="/static_page/Hotstar.gif" alt="" className="w-[59px] h-[45px]" />

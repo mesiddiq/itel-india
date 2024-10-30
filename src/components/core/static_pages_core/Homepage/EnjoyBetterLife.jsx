@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 const EnjoyBetterLife = () => {
-  const RenderContent = ({ header, colImg, colBgImg, colBgImgHeight, colBgImgWidth, colImgHeight, colImgWidth,mobRes,mobRes1, colClass, posClasses,resClass,resclass2 }) => (
+  const RenderContent = ({ header,colwidth, colImg, colBgImg, colBgImgHeight, colBgImgWidth, colImgHeight, colImgWidth,mobRes,mobRes1, colClass, posClasses,resClass,resclass2 }) => (
     <div className={`${colClass} bg-[#232322] rounded-[16px] overflow-hidden group relative`}>
-      <div className="flex flex-col">
+      <div className={`flex flex-col ${colwidth}`}>
         <div className="pt-4 px-4 md:px-5 gap-2 w-full">
           <p className="text-sm md:text-lg lg:text-xl ">{header}</p>
           <img
@@ -36,6 +36,7 @@ const EnjoyBetterLife = () => {
             posClasses={["top-[30%] left-0 lg:top-[158px] lg:left-0", "md:top-[15%] top-[26%] left-[25%] lg:top-[178px] lg:left-0"]}
             mobRes="mob-res"
             mobRes1="mob-res1"
+            colwidth="w-[455px]"
           />
 
           <div className="hidden lg:flex flex-col w-full lg:w-[738px] gap-5 lg:gap-6">
@@ -47,6 +48,8 @@ const EnjoyBetterLife = () => {
               colBgImgHeight="100%" colBgImgWidth="100%"
               colImgHeight="100%" colImgWidth="100%"
               posClasses={["top-[10%] left-0 lg:top-[40px]", "top-[20%] left-[50%] z-20 lg:top-[51px] lg:left-[23rem]"]}
+              colwidth="w-[372px]"
+
             />
 
             <div className="flex gap-5">
@@ -58,6 +61,7 @@ const EnjoyBetterLife = () => {
                 colBgImgHeight="100%" colBgImgWidth="100%"
                 colImgHeight="100%" colImgWidth="100%"
                 posClasses={["top-[10%] left-[10%]", "top-[30%] left-[60%] z-20"]}
+                colwidth="w-[254px]"
               />
               <RenderContent
                 colClass="w-1/2 h-[200px] md:h-[250px] lg:w-[304px] lg:h-[258px]"
@@ -67,6 +71,7 @@ const EnjoyBetterLife = () => {
                 colBgImgHeight="100%" colBgImgWidth="100%"
                 colImgHeight="100%" colImgWidth="100%"
                 posClasses={["top-[25%] left-[5%]", "top-[40%] left-[30%] z-20"]}
+                colwidth="w-[258px]"
               />
             </div>
           </div>

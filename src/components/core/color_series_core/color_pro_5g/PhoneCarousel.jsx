@@ -6,12 +6,22 @@ import { ImageCarouselData, FullSpecificationsData } from '../../../../data/smar
 
 const PhoneCarousel = () => {
   const [activeColor, setActiveColor] = useState('lavender');
-  const [activeVideo, setActiveVideo] = useState(`${ImageCarouselData[0].url}`);
+
+  const getInitialVideo = () => {
+    const isDesktop = window.innerWidth > 1000;
+    return isDesktop ? ImageCarouselData[0].url : ImageCarouselData[0].mobileUrl;
+  };
+
+  const [activeVideo, setActiveVideo] = useState(getInitialVideo());
+  
+  const getVideoUrl = (colorData) => {
+    return window.innerWidth > 1000 ? colorData.url : colorData.mobileUrl;
+  };
 
   return (
     <div className='flex w-full items-center px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#111111] overflow-hidden'>
       <div className='content relative h-full'>
-        <div className='h-[160px] md:h-[470px] 2xl:h-[515px]'>
+        <div className='h-[350px] md:h-[470px] 2xl:h-[515px]'>
           <video
             className='rounded-[16px]'
             src={activeVideo}
@@ -25,7 +35,7 @@ const PhoneCarousel = () => {
           {ImageCarouselData.map((colorData) => (
             <div
               key={colorData.id}
-              onClick={() => { setActiveColor(colorData.color); setActiveVideo(colorData.url); }}
+              onClick={() => { setActiveColor(colorData.color); setActiveVideo(getVideoUrl(colorData)); }}
               className={` ${colorData.colorSelectorTextColor} cursor-pointer flex items-center justify-center`}
             >
               {activeColor === colorData.color ? 

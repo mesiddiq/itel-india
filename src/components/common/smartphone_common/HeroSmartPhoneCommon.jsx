@@ -122,7 +122,7 @@ export default function HeroSmartPhoneCommon({
                     </motion.div>
 
                     <motion.div
-                        className="w-full mt-16"
+                        className="w-full mt-4 lg:mt-16"
                         animate={commonControl}
                         initial={{ opacity: 0, x: -550 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}

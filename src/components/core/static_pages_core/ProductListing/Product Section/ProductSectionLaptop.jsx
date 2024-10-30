@@ -10,11 +10,13 @@ import Compare from "./Compare";
 import SeriesTags from "./SeriesTags";
 import Enjoy from "./Enjoy";
 import PhoneBanner from "./PhoneBanner";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { AllPhonesData } from '../../../../../data/AllPhoneData'
 import { seriesStylishTextContent } from '../../../../../data/seriesStylishTextContent'
 import FilterHeading from "../Filter Section/FilterHeading";
+import { useDispatch, useSelector } from "react-redux";
+import { setSmartPhones } from "../../../../../redux/slice/smartPhoneSlice";
 
 const seriesBannerData = {
     "ALL": '/product-listing/banners/allProductsBanner.gif',
@@ -24,25 +26,28 @@ const seriesBannerData = {
 }
 
 
-const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCurrentPage}) => {
-    
+const ProductSectionLaptop = ({ activeSeries, setActiveSeries, currentPage, setCurrentPage }) => {
+
+    const dispatch = useDispatch()
+    const smartPhonesData = useSelector(state=>state.smartPhone.smartPhones)
+
     const phonesPerPageLaptop = 6;
 
-    const filteredPhones = activeSeries === 'ALL' 
-    ? AllPhonesData 
-    : AllPhonesData.filter(phone => phone.category === activeSeries);
+    const filteredPhones = activeSeries === 'ALL'
+        ? AllPhonesData
+        : AllPhonesData.filter(phone => phone.category === activeSeries);
 
-    
+
     const handleSeriesChange = (series) => {
         setActiveSeries(series);
         setCurrentPage(1);
     };
-    
+
     const totalPagesPerCategory = Math.ceil(filteredPhones.length / phonesPerPageLaptop);
     const indexOfLastPhone = currentPage * phonesPerPageLaptop;
     const indexOfFirstPhone = indexOfLastPhone - phonesPerPageLaptop;
     const currentPhones = filteredPhones.slice(indexOfFirstPhone, indexOfLastPhone);
-    
+
     const nextPage = () => {
         if (currentPage < totalPagesPerCategory) setCurrentPage(prev => prev + 1);
     };
@@ -51,8 +56,14 @@ const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCu
         if (currentPage > 1) setCurrentPage(prev => prev - 1);
     };
 
+    useEffect(() => {
+        dispatch(setSmartPhones(AllPhonesData))
+    })
+
+    console.log(smartPhonesData)
+
     return (
-        <>  
+        <>
             {/* Laptop */}
             <section className="hidden lg:flex flex-col gap-8 ">
                 <div className="hidden md:flex flex-row justify-between items-center">
@@ -60,7 +71,7 @@ const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCu
                     <Compare />
                 </div>
 
-                <PhoneBanner source={seriesBannerData[activeSeries]}/>
+                <PhoneBanner source={seriesBannerData[activeSeries]} />
 
                 <div className="tagPlusCards flex flex-col gap-8">
                     {/* Best Camera, Music, Entertainment, Talk Time */}
@@ -69,7 +80,7 @@ const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCu
                     {/* Laptop */}
                     <div className="hidden md:flex flex-col gap-12">
                         <div className="flex flex-col gap-5">
-                            
+
                             {/* Upper 3 Cards */}
                             <div className="productCards flex flex-row gap-5">
                                 {
@@ -78,39 +89,39 @@ const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCu
                                     ))
                                 }
                             </div>
-                            
+
                             {/* Enjoy Section */}
                             <div className="flex flex-row gap-5">
-                                { activeSeries == 'ALL' && (
+                                {activeSeries == 'ALL' && (
                                     <>
-                                        <Enjoy part1="OY" part2="ENJOY" part3="EN"/>
-                                        <Enjoy part1="ER" part2="BETTER" part3="ER"/>
-                                        <Enjoy part1="LIFE" part2="LIFE" part3="LIFE"/>
+                                        <Enjoy part1="OY" part2="ENJOY" part3="EN" />
+                                        <Enjoy part1="ER" part2="BETTER" part3="ER" />
+                                        <Enjoy part1="LIFE" part2="LIFE" part3="LIFE" />
                                     </>
-                                )} 
-                                { activeSeries == 'S Series' && (
+                                )}
+                                {activeSeries == 'S Series' && (
                                     <>
-                                        <Enjoy part1="SH" part2="STYLISH" part3="SH"/>
-                                        <Enjoy part1="SE" part2="FINNESE" part3="FI"/>
-                                        <Enjoy part1="OLD" part2="BOLD" part3="BOL"/>
+                                        <Enjoy part1="SH" part2="STYLISH" part3="SH" />
+                                        <Enjoy part1="SE" part2="FINNESE" part3="FI" />
+                                        <Enjoy part1="OLD" part2="BOLD" part3="BOL" />
                                     </>
-                                )}  
-                                { activeSeries == 'P Series' && (
+                                )}
+                                {activeSeries == 'P Series' && (
                                     <>
-                                        <Enjoy part1="UL" part2="POWERFUL" part3="PO"/>
-                                        <Enjoy part1="IC" part2="ENERGETIC" part3="EN"/>
-                                        <Enjoy part1="NT" part2="PROFICIENT" part3="PR"/>
+                                        <Enjoy part1="UL" part2="POWERFUL" part3="PO" />
+                                        <Enjoy part1="IC" part2="ENERGETIC" part3="EN" />
+                                        <Enjoy part1="NT" part2="PROFICIENT" part3="PR" />
                                     </>
-                                )}    
-                                { activeSeries == 'A Series' && (
+                                )}
+                                {activeSeries == 'A Series' && (
                                     <>
-                                        <Enjoy part1="VE" part2="ACTIVE" part3="AC"/>
-                                        <Enjoy part1="UL" part2="PLAYFUL" part3="PL"/>
-                                        <Enjoy part1="KY" part2="FUNKY" part3="FU"/>
+                                        <Enjoy part1="VE" part2="ACTIVE" part3="AC" />
+                                        <Enjoy part1="UL" part2="PLAYFUL" part3="PL" />
+                                        <Enjoy part1="KY" part2="FUNKY" part3="FU" />
                                     </>
-                                )}  
+                                )}
                             </div>
-                            
+
                             {/* Lower 3 Cards */}
                             <div className="productCards flex flex-row gap-5">
                                 {
@@ -131,9 +142,9 @@ const ProductSectionLaptop = ({activeSeries, setActiveSeries, currentPage, setCu
 
                         {/* Pagination */}
                         <div className="sliderCounter cursor-pointer flex flex-row gap-2 justify-center items-center w-full">
-                            <img src={arrowLeftCarousel} className="p-3" onClick={prevPage} disabled={currentPage === 1}/>
+                            <img src={arrowLeftCarousel} className="p-3" onClick={prevPage} disabled={currentPage === 1} />
                             <span className="text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">{currentPage} of {totalPagesPerCategory}</span>
-                            <img src={arrowRightCarousel} className="p-3" onClick={nextPage} disabled={currentPage === totalPagesPerCategory}/>
+                            <img src={arrowRightCarousel} className="p-3" onClick={nextPage} disabled={currentPage === totalPagesPerCategory} />
                         </div>
                     </div>
                 </div>

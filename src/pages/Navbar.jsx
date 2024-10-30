@@ -8,6 +8,7 @@ import { AccessoriesData, PhoneData, TvData, SupportData, PhonesData } from '../
 import { MdCurrencyRupee, MdKeyboardArrowRight } from 'react-icons/md'
 import { useNavigate } from "react-router-dom";
 import { IoCloseSharp } from 'react-icons/io5'
+// import { useSelector } from 'react-redux'
 
 
 const ArrowSvg = ({ isActive }) => {
@@ -74,7 +75,7 @@ const Support = ({ support, setSupport }) => {
     )
 }
 
-const SmartPhoneDropdown = ({ smartPhone, setSmartPhone }) => {
+const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
 
     const [selectedCategory, setSetselectedCategory] = useState(PhoneData[0])
 
@@ -111,7 +112,7 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone }) => {
                         }
                     </div>
                     <Link to="/products">
-                        <div className="flex gap-2 items-center justify-end">
+                        <div className="flex gap-2 items-center justify-end" onClick={handleOutside}>
                             <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
                             <ArrowRight />
                         </div>
@@ -254,6 +255,7 @@ function HighlightedText({ text = "", highlight = "" }) {
  */
 const Navbar = () => {
 
+    // const {tvActive, smartPhoneActive, accessoriesActive, supportActive } = useSelector(state => state.navbar)
 
     const navigate = useNavigate();
 
@@ -320,7 +322,9 @@ const Navbar = () => {
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             onFocus={() => setIsFocused(true)}
-                            onBlur={() => setIsFocused(false)}
+                            onBlur={() => setTimeout(() => {
+                                setIsFocused(false)
+                            }, 100)}
                         />
 
                         {
@@ -399,11 +403,11 @@ const Navbar = () => {
                         setSupport(false)
                     }}>
                         <span className="text-desktop/body/2/regular">
-                            Smartproducts
+                            Smartphones
                         </span>
                         <ArrowSvg isActive={smartPhone} />
                     </button>
-                    <button className="flex items-center gap-0.5">
+                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
                         <span className="text-desktop/body/2/regular">
                             Feature Phones
                         </span>
@@ -430,21 +434,23 @@ const Navbar = () => {
                         </span>
                         <ArrowSvg isActive={Accessories} />
                     </button>
-                    <button className="flex items-center gap-0.5">
+                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
                         <span className="text-desktop/body/2/regular">
                             Home Care
                         </span>
                     </button>
-                    <button className="flex items-center gap-0.5">
+                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
                         <span className="text-desktop/body/2/regular">
                             Personal Care
                         </span>
                     </button>
-                    <button className="flex items-center gap-0.5">
-                        <span className="text-desktop/body/2/regular">
-                            About Us
-                        </span>
-                    </button>
+                    <Link to="/about-us-itel-mobile-india">
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                About Us
+                            </span>
+                        </button>
+                    </Link>
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setSupport(prev => !prev)
                         setTv(false)
@@ -459,7 +465,7 @@ const Navbar = () => {
                 </div>
                 <div className="relative z-50">
                     <Support support={support} setSupport={setSupport} />
-                    <SmartPhoneDropdown smartPhone={smartPhone} setSmartPhone={setSmartPhone} />
+                    <SmartPhoneDropdown smartPhone={smartPhone} setSmartPhone={setSmartPhone} handleOutside={handleOutside} />
                     <AccessoriesDropDown Accessories={Accessories} setAccessories={setAccessories} />
                     <TvDropDown tv={tv} setTv={setTv} />
                 </div>

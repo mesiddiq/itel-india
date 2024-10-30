@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Revolution = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
   const content = [
     {
       videoSrc: '/smartphone/color-pro-5g/Revolution/BetterExperience.mp4',
@@ -16,22 +17,20 @@ const Revolution = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
-    }, 5000); // 5 seconds delay
+    }, 5000);
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [content.length]);
 
   return (
-    <div className='flex relative text-center w-full h-[430px] md:h-[1000px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/NextGenPerformance/bg.png")] md:bg-none overflow-hidden'>
-      <h2 className='w-full mx-[-16px] md:mx-[-80px] absolute bottom-[25px] md:bottom-[70px] 2xl:bottom-[20px] bg-gradient-to-br from-[#BA69F6] to-[#2768C2] inline-block text-transparent bg-clip-text text-[40px] md:text-[136px] font-[700] font-markot z-[3]'>
-        {content[currentIndex].title}
-      </h2>
-      <div className='content'>
+    <div className='flex text-center w-full h-[490px] md:h-[1200px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/Revolution/bgMobile.png")] md:bg-[url("/smartphone/color-pro-5g/Revolution/bg.png")] bg-cover bg-center bg-no-repeat overflow-hidden'>
+      <div className='content relative'>
+        <h2 className='flex justify-center w-full absolute bottom-0 bg-gradient-to-br from-[#BA69F6] to-[#2768C2] inline-block text-transparent bg-clip-text text-[40px] md:text-[130px] font-[700] font-markot z-[3]'>
+          {content[currentIndex].title}
+        </h2>
         <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot pb-4'>
           5G Revolution:<br />Redefining Connectivity
         </h2>

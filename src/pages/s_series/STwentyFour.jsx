@@ -24,8 +24,8 @@ const STwentyFour = () => {
     return (
         <>
             <HeroSmartPhoneCommon
-                bgDesktop={'/smartphone/S24/hero_banner.webp'}
-                bgMobile={'/smartphone/S24/hero_banner_mobile.webp'}
+                bgDesktop={'/smartphone/smartphonehero/s24.webp'}
+                bgMobile={'/smartphone/smartphonehero/s24_mobile.webp'}
                 description={'108MP AI Camera | 16GB* (8GB+8GB*) RAM + 128GB ROM | Helio G91 Processor'}
                 headingText={'S24'}
                 price={'10,999'}
