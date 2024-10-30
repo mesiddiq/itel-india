@@ -23,7 +23,7 @@ const A05i = () => {
           purchaseLink=""
           description={` 6.6" HD+ Waterdrop Display | 4000 mAh Battery with Type-C Charging| 32GB ROM `}
           gradient1="#181818"
-          grdient2="#181818"
+          gradient2="#181818"
           price="4,799"
           tagText="Awesome series"
         />

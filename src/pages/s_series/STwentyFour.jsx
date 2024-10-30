@@ -1,11 +1,8 @@
-// import HeroSection from "../../components/core/s_series_core/S_Twenty_Four/HeroSection"
 import CameraSpecifications from "../../components/core/s_series_core/S_Twenty_Four/CameraSpecifications"
 import PunchHoleDisplay from "../../components/core/s_series_core/S_Twenty_Four/PunchHoleDisplay"
 import ProcessorSpecifications from "../../components/core/s_series_core/S_Twenty_Four/ProcessorSpecifications"
 import FillerFrame from "../../components/core/s_series_core/S_Twenty_Four/FillerFrame"
-import OverViewBanner from "../../components/core/s_series_core/S_Twenty_Four/OverViewBanner"
 import ProductDescription from "../../components/core/s_series_core/S_Twenty_Four/ProductDescription"
-// import SliderAnimation from "../../components/common/smartphone_common/SliderAnimationCommon"
 import SinglePhoneImageContainer from "../../components/core/s_series_core/S_Twenty_Four/SinglePhoneImageContainer"
 import MultipleCardComponents from "../../components/core/s_series_core/S_Twenty_Four/MultipleCardComponents"
 import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
@@ -19,9 +16,9 @@ import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
 import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
 import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
 import ModernTwist from "../../components/core/s_series_core/S_Twenty_Four/ModernTwist"
-// import HeroSection1 from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
 import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
+import StickyHeader from "../../components/common/StickyHeader"
 
 const STwentyFour = () => {
     return (
@@ -37,7 +34,7 @@ const STwentyFour = () => {
                 gradient2={'#ffe8cb'}
             />
 
-            <OverViewBanner />
+            <StickyHeader title="S24" purchaseLink="" icon="/smartphone/S24/s24Logo.svg" bgColor="#161616" dark={false}/>
 
             <ProductDescription />
 
