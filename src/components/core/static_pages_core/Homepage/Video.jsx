@@ -44,6 +44,7 @@
 // export default Video
 import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
+import HlsPlayer from "../../../../utils/HlsPlayer";
 
 const AutoPlayVideo = () => {
     const wrapperRef = useRef(null);
@@ -80,6 +81,11 @@ const AutoPlayVideo = () => {
                 width="100%"
                 height="100%"
             />
+            {/* <HlsPlayer
+                isMuted={isVisible}
+                src={'https://res.cloudinary.com/djwj42mic/video/upload/v1729068884/-e95e-405f-954a-79e66b2ea7ac_udufbr.mp4'}
+
+            /> */}
         </div>
     );
 };

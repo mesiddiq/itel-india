@@ -3,57 +3,59 @@ import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import HomePage from './pages/static_pages/HomePage'
-import STwentyThree from './pages/s_series/STwentyThree'
-import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
-import STwentyFour from './pages/s_series/STwentyFour'
-import PFiftyFive from './pages/p_series/PFiftyFive'
-import S_Series_Parent from './pages/s_series/S_Series_Parent'
-import Investor from './pages/static_pages/Investor'
-import Footer from './components/common/Footer'
-import Support from './pages/static_pages/Support'
-import ScreenReplacement from './pages/static_pages/ScreenReplacement'
-import Promise100 from './pages/static_pages/Promise100'
-import EWaste from './pages/static_pages/E-Waste'
-import CSR from "./pages/static_pages/CSR"
-import Aboutus from './pages/static_pages/Aboutus'
-import Contactus from './pages/static_pages/Contactus'
-import FAQ from './pages/static_pages/FAQ'
-import P_Series_Parent from './pages/p_series/P_Series_Parent'
-import ServiceCenters from './pages/static_pages/ServiceCenters'
-import PFiftyFive5g from './pages/p_series/PFiftyFive5g'
-import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
-import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
-import ColorPro5G from './pages/color_series/ColorPro5G'
-import NotFound from './pages/static_pages/NotFound'
+import React, { lazy, Suspense } from 'react';
+import SmartPhoneProductPage from './pages/product/SmartPhoneProductPage'
+import Loading from './pages/static_pages/Loading'
 
-import A_Series_Parent from './pages/a_series/A_Series_Parent'
-import A05i from './pages/a_series/A05i'
+const HomePage = lazy(() => import('./pages/static_pages/HomePage'));
+const STwentyThree = lazy(() => import('./pages/s_series/STwentyThree'));
+const STwentyThreePlus = lazy(() => import('./pages/s_series/STwentyThreePlus'));
+const STwentyFour = lazy(() => import('./pages/s_series/STwentyFour'));
+const PFiftyFive = lazy(() => import('./pages/p_series/PFiftyFive'));
+const S_Series_Parent = lazy(() => import('./pages/s_series/S_Series_Parent'));
+const Investor = lazy(() => import('./pages/static_pages/Investor'));
+const Footer = lazy(() => import('./components/common/Footer'));
+const Support = lazy(() => import('./pages/static_pages/Support'));
+const ScreenReplacement = lazy(() => import('./pages/static_pages/ScreenReplacement'));
+const Promise100 = lazy(() => import('./pages/static_pages/Promise100'));
+const EWaste = lazy(() => import('./pages/static_pages/E-Waste'));
+const CSR = lazy(() => import('./pages/static_pages/CSR'));
+const Aboutus = lazy(() => import('./pages/static_pages/Aboutus'));
+const Contactus = lazy(() => import('./pages/static_pages/Contactus'));
+const FAQ = lazy(() => import('./pages/static_pages/FAQ'));
+const P_Series_Parent = lazy(() => import('./pages/p_series/P_Series_Parent'));
+const ServiceCenters = lazy(() => import('./pages/static_pages/ServiceCenters'));
+const PFiftyFive5g = lazy(() => import('./pages/p_series/PFiftyFive5g'));
+const PFiftyFivePlus = lazy(() => import('./pages/p_series/PFiftyFivePlus'));
+const PFiftyFiveT = lazy(() => import('./pages/p_series/PFiftyFiveT'));
+const ColorPro5G = lazy(() => import('./pages/color_series/ColorPro5G'));
+const NotFound = lazy(() => import('./pages/static_pages/NotFound'));
 
-import {
-	Circle1,
-	It2175p,
-	It5027,
-	It5262,
-	It5330,
-	Power120,
-	Power450,
-	SuperGuru400,
-	SuperGuru4G,
-	SuperGuru600,
-	Ace2Power
-} from './pages/feature_phone'
+const A_Series_Parent = lazy(() => import('./pages/a_series/A_Series_Parent'));
+const A05i = lazy(() => import('./pages/a_series/A05i'));
 
-import ASeventy from './pages/a_series/ASeventy'
-import A05 from './pages/a_series/A05'
-import ATwentyThreeS from './pages/a_series/ATwentyThreeS'
-import A50C from './pages/a_series/A50C'
-import Navbar from './pages/Navbar'
-import ScrollToTop from './utils/ScrollToTop'
-import A50 from './pages/a_series/A50'
-import NavbarMobile from './pages/NavbarMobile'
-import ProductListing from './pages/static_pages/ProductListing'
-import FeaturePhoneParent from './pages/feature_phone/FeaturePhoneParent'
+const ASeventy = lazy(() => import('./pages/a_series/ASeventy'));
+const A05 = lazy(() => import('./pages/a_series/A05'));
+const ATwentyThreeS = lazy(() => import('./pages/a_series/ATwentyThreeS'));
+const A50C = lazy(() => import('./pages/a_series/A50C'));
+const Navbar = lazy(() => import('./pages/Navbar'));
+const ScrollToTop = lazy(() => import('./utils/ScrollToTop'));
+const A50 = lazy(() => import('./pages/a_series/A50'));
+const NavbarMobile = lazy(() => import('./pages/NavbarMobile'));
+const ProductListing = lazy(() => import('./pages/static_pages/ProductListing'));
+const FeaturePhoneParent = lazy(() => import('./pages/feature_phone/FeaturePhoneParent'));
+
+const Circle1 = lazy(() => import('./pages/feature_phone/Circle1'));
+const It2175p = lazy(() => import('./pages/feature_phone/It2175p'));
+const It5027 = lazy(() => import('./pages/feature_phone/It5027'));
+const It5262 = lazy(() => import('./pages/feature_phone/It5262'));
+const It5330 = lazy(() => import('./pages/feature_phone/It5330'));
+const Power120 = lazy(() => import('./pages/feature_phone/Power120'));
+const Power450 = lazy(() => import('./pages/feature_phone/Power450'));
+const SuperGuru400 = lazy(() => import('./pages/feature_phone/SuperGuru400'));
+const SuperGuru4G = lazy(() => import('./pages/feature_phone/SuperGuru4G'));
+const SuperGuru600 = lazy(() => import('./pages/feature_phone/SuperGuru600'));
+const Ace2Power = lazy(() => import('./pages/feature_phone/Ace2Power'));
 
 
 function App() {
@@ -66,106 +68,109 @@ function App() {
 	}, [])
 
 	return (
-		<main>
-			<NavbarMobile />
-			<Navbar />
-			<Routes>
-				<Route path='/' element={<HomePage />} />
+		<Suspense fallback={<Loading />}>
 
-				{/********************************************************/}
-				{/* 					Static Pages	   				*/}
-				{/********************************************************/}
+			<main>
+				<NavbarMobile />
+				<Navbar />
+				<Routes>
+					<Route path='/' element={<HomePage />} />
 
-				<Route path='/products' element={<ProductListing />} />
-				<Route path='/support' element={<Support />} />
-				<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
-				<Route path='/support/e-waste-management' element={<EWaste />} />
-				<Route path='/support/100-days-service-promise' element={<Promise100 />} />
-				<Route path='/corporate-social-responsibility-csr' element={<CSR />} />
-				<Route path='/about-us-itel-mobile-india' element={<Aboutus />} />
-				<Route path='/contact-us' element={<Contactus />} />
-				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
-				<Route path='/support/faqs' element={<FAQ />} />
-				<Route path='/investor' element={<Investor/>}/>
+					{/********************************************************/}
+					{/* 					Static Pages	   				*/}
+					{/********************************************************/}
 
-
-				{/* ***************************************************************************************************/}
-				{/* *******************************************SmartPhones*********************************************/}
-				{/* ***************************************************************************************************/}
-
-				{/********************************************************/}
-				{/* 					S series						 */}
-				{/********************************************************/}
-
-				<Route path='/product' element={<S_Series_Parent />} >
-					<Route path='s23' element={<STwentyThree />} />
-					<Route path='s23-plus' element={<STwentyThreePlus />} />
-					<Route path='s24' element={<STwentyFour />} />
-				</Route>
-
-				<Route path='/smartphones/color-series' element={<S_Series_Parent />} >
-					<Route path='color-pro-5g' element={<ColorPro5G />} />
-				</Route>
-
-				{/********************************************************/}
-				{/* 					P series						 */}
-				{/********************************************************/}
-
-				<Route path='/product' element={<P_Series_Parent />} >
-					<Route path='p55-5g' element={<PFiftyFive5g />} />
-					<Route path='p55' element={<PFiftyFive />} />
-					<Route path='p55-plus' element={<PFiftyFivePlus />} />
-					<Route path='p55t' element={<PFiftyFiveT />} />
-				</Route>
+					<Route path='/products' element={<SmartPhoneProductPage />} />
+					<Route path='/support' element={<Support />} />
+					<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
+					<Route path='/support/e-waste-management' element={<EWaste />} />
+					<Route path='/support/100-days-service-promise' element={<Promise100 />} />
+					<Route path='/corporate-social-responsibility-csr' element={<CSR />} />
+					<Route path='/about-us-itel-mobile-india' element={<Aboutus />} />
+					<Route path='/contact-us' element={<Contactus />} />
+					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
+					<Route path='/support/faqs' element={<FAQ />} />
+					<Route path='/investor' element={<Investor />} />
 
 
-				{/********************************************************/}
-				{/* 					A series						 */}
-				{/********************************************************/}
+					{/* ***************************************************************************************************/}
+					{/* *******************************************SmartPhones*********************************************/}
+					{/* ***************************************************************************************************/}
 
-				<Route path='/product' element={<A_Series_Parent />} >
-					<Route path='a05' element={<A05 />} />
-					<Route path='a05-i' element={<A05i />} />
-					<Route path='a50-c' element={<A50C />} />
-					<Route path='a50' element={<A50 />} />
-					<Route path='a70' element={<ASeventy />} />
-					<Route path='a23-s' element={<ATwentyThreeS />} />
-				</Route>
+					{/********************************************************/}
+					{/* 					S series						 */}
+					{/********************************************************/}
+
+					<Route path='/product' element={<S_Series_Parent />} >
+						<Route path='s23' element={<STwentyThree />} />
+						<Route path='s23-plus' element={<STwentyThreePlus />} />
+						<Route path='s24' element={<STwentyFour />} />
+					</Route>
+
+					<Route path='/smartphones/color-series' element={<S_Series_Parent />} >
+						<Route path='color-pro-5g' element={<ColorPro5G />} />
+					</Route>
+
+					{/********************************************************/}
+					{/* 					P series						 */}
+					{/********************************************************/}
+
+					<Route path='/product' element={<P_Series_Parent />} >
+						<Route path='p55-5g' element={<PFiftyFive5g />} />
+						<Route path='p55' element={<PFiftyFive />} />
+						<Route path='p55-plus' element={<PFiftyFivePlus />} />
+						<Route path='p55t' element={<PFiftyFiveT />} />
+					</Route>
 
 
-				{/********************************************************/}
-				{/* 					Color Pro 5g					 */}
-				{/********************************************************/}
+					{/********************************************************/}
+					{/* 					A series						 */}
+					{/********************************************************/}
 
-				<Route path='/product' element={<S_Series_Parent />} >
-					<Route path='color-pro-5g' element={<ColorPro5G />} />
-				</Route>
+					<Route path='/product' element={<A_Series_Parent />} >
+						<Route path='a05' element={<A05 />} />
+						<Route path='a05-i' element={<A05i />} />
+						<Route path='a50-c' element={<A50C />} />
+						<Route path='a50' element={<A50 />} />
+						<Route path='a70' element={<ASeventy />} />
+						<Route path='a23-s' element={<ATwentyThreeS />} />
+					</Route>
 
 
-				{/***************************************************************************************************/}
-				{/*****************************************Feature Phoness*******************************************/}
-				{/***************************************************************************************************/}
-				<Route path='/product' element={<FeaturePhoneParent />}>
-					<Route path='super-guru-4g' element={<SuperGuru4G />} />
-					<Route path='super-guru-400' element={<SuperGuru400 />} />
-					<Route path='super-guru-600' element={<SuperGuru600 />} />
-					<Route path='circle-1' element={<Circle1 />} />
-					<Route path='it2175p' element={<It2175p />} />
-					<Route path='it5262' element={<It5262 />} />
-					<Route path='it5027' element={<It5027 />} />
-					<Route path='it5330' element={<It5330 />} />
-					<Route path='power-120' element={<Power120 />} />
-					<Route path='power-450' element={<Power450 />} />
-					<Route path='ace-2-power' element={<Ace2Power />} />
-				</Route>
+					{/********************************************************/}
+					{/* 					Color Pro 5g					 */}
+					{/********************************************************/}
 
-				{/* ***********************Not Found**************** */}
-				<Route path='/*' element={<NotFound />} />
+					<Route path='/product' element={<S_Series_Parent />} >
+						<Route path='color-pro-5g' element={<ColorPro5G />} />
+					</Route>
 
-			</Routes>
-			<Footer />
-			<ScrollToTop />
-		</main>
+
+					{/***************************************************************************************************/}
+					{/*****************************************Feature Phoness*******************************************/}
+					{/***************************************************************************************************/}
+					<Route path='/product' element={<FeaturePhoneParent />}>
+						<Route path='super-guru-4g' element={<SuperGuru4G />} />
+						<Route path='super-guru-400' element={<SuperGuru400 />} />
+						<Route path='super-guru-600' element={<SuperGuru600 />} />
+						<Route path='circle-1' element={<Circle1 />} />
+						<Route path='it2175p' element={<It2175p />} />
+						<Route path='it5262' element={<It5262 />} />
+						<Route path='it5027' element={<It5027 />} />
+						<Route path='it5330' element={<It5330 />} />
+						<Route path='power-120' element={<Power120 />} />
+						<Route path='power-450' element={<Power450 />} />
+						<Route path='ace-2-power' element={<Ace2Power />} />
+					</Route>
+
+					{/* ***********************Not Found**************** */}
+					<Route path='/*' element={<NotFound />} />
+
+				</Routes>
+				<Footer />
+				<ScrollToTop />
+			</main>
+		</Suspense>
 	)
 }
 
