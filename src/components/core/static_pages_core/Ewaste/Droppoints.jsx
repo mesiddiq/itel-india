@@ -395,7 +395,7 @@ const Droppoints = () => {
 
 
 {showpannel && 
-  <div className="   bg-black bg-opacity-30  p-10 bg:opacity-10 flex flex-col items-center  absolute   justify-center w-full h-screen  ">
+  <div className="   bg-black font-markot bg-opacity-30  p-10 bg:opacity-10 flex flex-col items-center  absolute   justify-center w-full h-screen  ">
 
      <div className=" w-[990px] flex justify-end">
       <img className=" cursor-pointer" onClick={() => setshowpannel(false)} src="/add.png" alt="" />
@@ -449,7 +449,7 @@ const Droppoints = () => {
 
       <p onClick={() => setshowpannel(true)} className=" text-brand/black underline  cursor-pointer  text-desktop/tertiary/cta">See The Table</p>
 
-        <div className=" w-full  space-y-2 lg:space-x-2 lg:w-[882px] lg:space-y-0 text-brand/black grid grid-cols-2">
+        <div className=" w-full  space-y-4 lg:space-x-2  lg:w-[882px] lg:space-y-0 text-brand/black grid grid-cols-1 lg:grid-cols-2">
           {/* State Dropdown */}
           <div className="flex   flex-col items-start ">
             <label className="mb-2 text-grey/grey/5  font-medium text-mobile/h6 lg:text-desktop/h6/medium">

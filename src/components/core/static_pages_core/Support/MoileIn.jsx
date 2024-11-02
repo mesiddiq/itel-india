@@ -68,14 +68,14 @@ const MoileIn = () => {
    
       <div className=" lg:space-y-6  space-y-[20px]">
         {/* Tabs */}
-        <div className="  flex">
+        <div className="flex  overflow-x-auto space-x-2">
           {Tabs.map((tab) => (
             <button
               key={tab}
-              className={`lg:py-3 lg:px-5 py-[6px] px-[12px]  rounded-full text-desktop/body/2/medium  lg:text-desktop/button ${
+              className={`lg:py-3 lg:px-5 py-[6px] px-[12px]  rounded-full shrink-0  text-desktop/body/2/regular  lg:text-desktop/button ${
                 activeTab === tab
                   ? " lg:bg-bg/secondry bg-brand/black  lg:text-brand/black"
-                  : "  text-brand/black "
+                  : "  text-brand/black border border-brand/black first-line: "
               } transition-colors duration-300`}
               onClick={() => setActiveTab(tab)}
             >
