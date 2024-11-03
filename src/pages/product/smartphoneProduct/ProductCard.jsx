@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import AnimatedBuyButton from '../../../components/core/static_pages_core/ProductListing/Product Section/AnimatedBuyButton'
 
 export default function ProductCard({ product }) {

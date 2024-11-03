@@ -20,9 +20,7 @@ const filterReducer = (state = initialState, action) => {
         case TOGGLE_SERIES_FILTER:
             return {
                 ...state,
-                series: state.series.includes(action.payload)
-                    ? state.series.filter(item => item !== action.payload)
-                    : [...state.series, action.payload]
+                series: [action.payload] // Only one series can be selected at a time
             }
         case TOGGLE_PRICE_FILTER:
             return {
