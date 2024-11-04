@@ -25,7 +25,7 @@ const CountOnItel = () => {
                     </button>
                 </div>
                 <video className="object-cover w-full h-full" autoPlay loop muted>
-                    <source src="https://res.cloudinary.com/djwj42mic/video/upload/v1729069051/-5f0c-433d-81e1-ac57b0c1c32c_rirml6.mp4" type="video/mp4" />
+                    <source src="/videos/homepage/service.webm" type="video/mp4" />
                 </video>
             </div>
 

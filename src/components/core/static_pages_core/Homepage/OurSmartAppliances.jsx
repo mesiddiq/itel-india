@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 
 const OurSmartAppliances = () => {
     return (
@@ -11,7 +12,15 @@ const OurSmartAppliances = () => {
                             <h1 className='lg:text-desktop/h3 text-desktop/h4'>Home Care</h1>
                             <p className='lg:text-desktop/body/1 text-desktop/body/2/regular text-white/90'>Enhance home care by automating tasks, improving efficiency, and ensuring convenience</p>
                         </div>
-                        <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729919900/V_Cleanr_fglrnb.gif" alt="Home care" className='h-full w-full hidden lg:block' />
+                        <ReactPlayer
+                            url={['/videos/homepage/vcleaner.webm']}
+                            width={"100%"}
+                            height={"100%"}
+                            playing
+                            loop
+                            muted
+                            className='h-full w-full hidden lg:block z-20 '
+                        />
                         <div className="rounded-[16px] overflow-hidden">
                             <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920401/Trimmer_xhyuyc.gif" alt="Home care" className='lg:hidden rounded-[16px] overflow-hidden w-full object-cover' />
                         </div>
@@ -21,7 +30,15 @@ const OurSmartAppliances = () => {
                             <h1 className='lg:text-desktop/h3 text-desktop/h4'>Personal Care</h1>
                             <p className='lg:text-desktop/body/1 text-desktop/body/2/regular text-white/90'>Innovative smart hair dryers feature AI temperature control and customizable settings</p>
                         </div>
-                        <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729919890/Dryer_cjytpj.gif" alt="Personal Care" className='h-full w-full hidden lg:block' />
+                        <ReactPlayer
+                            url={['/videos/homepage/trimmer.webm']}
+                            width={"100%"}
+                            height={"100%"}
+                            playing
+                            loop
+                            muted
+                            className='h-full w-full hidden lg:block'
+                        />
                         <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920398/vcleaner_1_qwdmjw.gif" alt="Personal Care" className='lg:hidden rounded-[16px] overflow-hidden w-full object-cover' />
                     </div>
                 </div>

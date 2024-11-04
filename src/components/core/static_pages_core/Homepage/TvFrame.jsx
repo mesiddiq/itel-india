@@ -18,7 +18,7 @@ const TvFrame = () => {
                     className="max-w-[900px] w-fit h-full mx-auto relative"
                 >
                     <img src="/static_page/homepage/tvframe.png" alt="" className='object-contain h-full' />
-                    <video className='absolute w-[97%] left-[50.2%] object-contain -top-[3%] h-[96%] -translate-x-1/2' src='https://res.cloudinary.com/djwj42mic/video/upload/v1729068937/-d929-440a-b9cb-35701acaf97e_yhtj3r.mp4' autoPlay muted loop >
+                    <video className='absolute w-[97%] left-[50.2%] object-contain -top-[3%] h-[96%] -translate-x-1/2' src='/videos/homepage/tv.webm' autoPlay muted loop >
                     </video>
                 </motion.div>
             </div>
