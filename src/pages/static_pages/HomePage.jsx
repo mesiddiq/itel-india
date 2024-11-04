@@ -28,10 +28,10 @@ const HomePage = () => {
             <HotPicks />
             <Video />
             <DareToDoIt />
+            <StayPlugged />
             <TvFrame />
             <Transform />
             <DiscoverNextGen />
-            <StayPlugged />
             <Product />
             <CountOnItel />
             <OurCoolGadgets />
@@ -46,7 +46,15 @@ const HomePage = () => {
                     muted
                     className='hidden md:block z-20'
                 />
-                <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920395/d2d_qcs7zp.gif" alt="" className='md:hidden rounded-[16px] overflow-hidden mx-auto lg:rounded-none' />
+                <ReactPlayer
+                    url={['/videos/homepage/enjoybetterlife_mobile.mp4']}
+                    width={"100%"}
+                    height={"100%"}
+                    playing
+                    loop
+                    muted
+                    className='md:hidden rounded-[16px] overflow-hidden mx-auto lg:rounded-none'
+                />
             </div>
         </div>
     )

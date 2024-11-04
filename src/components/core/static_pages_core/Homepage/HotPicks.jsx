@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import { MdCurrencyRupee } from "react-icons/md"
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { HotPicksData } from '../../../../data/HomePage'
 
 const CardData = [
     { id: 2, path: '/product/s24', descriptoin: 'Your Ideal Storyteller: Stunning 108MP AI Camera', image: "/smartphone/S24/Starry Black 1.png", name: "S24", price: "10,999.00" },
@@ -8,7 +9,23 @@ const CardData = [
     { id: 1, path: '/product/super-guru-4g', descriptoin: 'Feature-Rich Phone with 4G VoLTE Connectivity', image: "/featurephone/superguru4g/hero.webp", name: "Super Guru 4G", price: "1,799.00" },
 ]
 
+const LabelData = [
+    {id:'all',label:'All'},
+    {id:'bestdeals',label:'Best Deals'},
+    {id:'smartphone',label:'Smartphone'},
+    {id:'featurephone',label:'Feature Phone'},
+    {id:'smarttv',label:'Smart Tv'},
+]
+
 const HotPicks = () => {
+
+    const [selectedCategory, setselectedCategory] = useState(HotPicksData[0])
+
+    const handleClick = (id) => {
+        const selCatergory = HotPicksData.find((item) => item.id === id)
+        setselectedCategory(selCatergory)
+    }
+
     return (
         <div className='content flex flex-col gap-10 px-4 md:px-0 font-markot'>
             <div className="flex gap-4 items-center">
@@ -19,18 +36,18 @@ const HotPicks = () => {
                 <div className="flex gap-3 items-center overflow-x-scroll navbarmobile">
                     {/* Tabs */}
                     {
-                        ['All', 'Best Deals', 'Smartphone', 'Feature Pone', 'Smart Tv'].map((tab) => (
-                            <button className="px-3 text-nowrap lg:px-5 lg:py-3 py-[6px] text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/3 rounded-full border-[1.5px] border-white/10">{tab}</button>
+                        LabelData.map((tab) => (
+                            <button key={tab.id} onClick={() => handleClick(tab.id)} className={`px-3 text-nowrap lg:px-5 lg:py-3 py-[6px] text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/3 rounded-full border-[1.5px] border-white/10 ${tab.id === selectedCategory.id ? 'bg-white/10' : ''}`}>{tab.label}</button>
                         ))}
                 </div>
-                <div className="lg:mt-6 mt-4 flex  justify-around flex-wrap items-center gap-4">
+                <div className="lg:mt-6 mt-4 flex  justify-around overflow-scroll items-center gap-4 overflowHidden">
                     {
-                        CardData.map((card) => (
-                            <div className="rounded-[8px] lg:rounded-[16px] p-3 lg:px-[85px] lg:pt-[86px] lg:max-w-max bg-dark/card/bg flex gap-3 flex-col h-[227px] lg:h-[526px] max-w-[156px]">
+                        selectedCategory?.products?.map((card) => (
+                            <div className="rounded-[8px] lg:rounded-[16px] p-3 lg:px-[85px] lg:pt-[86px] lg:max-w-max bg-dark/card/bg flex gap-3 flex-col h-[227px] lg:h-[526px] min-w-[156px] ">
                                 <img src={card.image} alt="" className='h-[100px] lg:h-[230px] object-contain' />
                                 <div className="text-center max-w-[243px]">
                                     <h1 className="text-mobile/h6 lg:text-desktop/h4">{card.name}</h1>
-                                    <p className="text-mobile/small/body text-grey/grey/3 lg:text-desktop/body/2/regular mt-1 lg:mt-2">{card.descriptoin}</p>
+                                    <p className="text-mobile/small/body text-grey/grey/3 lg:text-desktop/body/2/regular mt-1 lg:mt-2">{card.descriptoin.substring(0, 50)}</p>
                                     <Link to={card.path} className="flex gap-[6px] items-center justify-center mx-auto lg:py-2 lg:px-5 lg:rounded-[24px] lg:bg-[#2c2c2c] lg:border-[#4f4f4f] lg:border w-full lg:mt-3">
                                         <span>
                                             <MdCurrencyRupee />

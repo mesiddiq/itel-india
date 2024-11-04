@@ -3,9 +3,9 @@ import React from 'react'
 const Transform = () => {
     return (
         <div>
-            <div className='bg-[#111] relative lg:py-[100px] font-markot h-[436px] lg:h-auto'>
+            <div className='bg-[#111] relative lg:py-[100px] font-markot h-[436px] md:h-auto'>
                 <div className="content px-4 md:px-0">
-                    <div className="lg:max-w-[600px] max-w-[290px] flex flex-col lg:gap-4 gap-3">
+                    <div className="xl:max-w-[600px] md:max-w-[500px] max-w-[290px] flex flex-col lg:gap-4 gap-3">
                         <h1 className="lg:text-desktop/h3 text-mobile/h5/medium">
                             Transform Every Moment with itel's Family-Friendly Smart TVs!
                         </h1>

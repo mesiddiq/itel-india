@@ -17,6 +17,7 @@ const TvFrame = () => {
                     transition={{ duration: 2, ease: 'easeInOut' }}
                     className="max-w-[900px] w-fit h-full mx-auto relative"
                 >
+                    <h1 className="lg:text-[107px] lg:leading-[109px] text-[21px] leading-6 font-bold text-center z-50 absolute top-[40%] lg:scale-[0.6] mx-auto left-1/2 -translate-x-1/2">Endless Entertainment <br /> Awaits </h1>
                     <img src="/static_page/homepage/tvframe.png" alt="" className='object-contain h-full' />
                     <video className='absolute w-[97%] left-[50.2%] object-contain -top-[3%] h-[96%] -translate-x-1/2' src='/videos/homepage/tv.webm' autoPlay muted loop >
                     </video>

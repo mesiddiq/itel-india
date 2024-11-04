@@ -22,7 +22,7 @@ const Section1TechPartner = () => {
                         </div>
 
                         <hr className='lg:hidden h-[48px] w-[1px] bg-[#666666] ' />
-                        <hr className='hidden lg:block bg-[#000000] h-[2px] w-full ' />
+                        <hr className='hidden lg:block bg-[#000000] h-[2px] w-full opacity-40' />
 
                         <div className="flex flex-col gap-[2px]  items-center md:items-start">
                             <p className='md:opacity-80 text-mobile/body/large lg:text-mobile/h3 font-medium'>
@@ -34,7 +34,7 @@ const Section1TechPartner = () => {
                         </div>
 
                         <hr className='lg:hidden h-[38px] w-[1px] bg-[#666666] ' />
-                        <hr className='hidden lg:block bg-[#000000] h-[2px] w-full ' />
+                        <hr className='hidden lg:block bg-[#000000] h-[2px] w-full opacity-40' />
 
                         <p className='lg:opacity-80 text-mobile/body/large lg:text-mobile/h3 text-black text-center lg:text-left'>
                             Smart <br className='lg:hidden' /> Unlock

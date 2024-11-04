@@ -44,7 +44,7 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
                 }}
                 autoplay
                 modules={[EffectFade, Navigation]}
-                className=" relative content px-4 md:px-0"
+                className=" relative content !px-4 md:!px-0"
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
                 }}
@@ -53,7 +53,7 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
                     selectedData?.images.map((image, index) => (
                         <SwiperSlide>
                             <div className="lg:rounded-[20px] rounded-[16px] min-h-[400px] lg:min-h-[calc(100vh-100px)] w-full bg-black flex items-center justify-center" style={{ background: `url('${width > 1024 ? bgUrl : bgUrlMobile}') center center/cover` }}>
-                                <img src={image} alt="Phone Image" className={`lg:max-h-[550px] max-h-[264px]`} />
+                                <img src={image} alt="Phone Image" className={`lg:max-h-[530px] max-h-[264px]`} />
                             </div>
                         </SwiperSlide>
                     ))

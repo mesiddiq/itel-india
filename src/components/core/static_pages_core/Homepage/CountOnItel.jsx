@@ -12,25 +12,26 @@ const CountOnItel = () => {
     return (
         <div className="lg:space-y-[60px] space-y-8 px-4 md:px-0">
             <div className={`relative content h-[328px] lg:h-[653px] rounded-3xl overflow-hidden`}>
-                <div className="max-w-[577px] mx-auto absolute text-center bottom-[46px] left-1/2 -translate-x-1/2 w-full">
+                <div className="max-w-[577px] mx-auto absolute z-10 text-center bottom-[46px] left-1/2 -translate-x-1/2 w-full">
                     <h3 className='lg:text-desktop/h3 text-mobile/h5/medium mx-auto max-w-[290px] lg:max-w-[439px] w-full'>
                         Count on itel: You, Your Phone: Our Priority
                     </h3>
                     <p className="lg:text-desktop/body/1 text-desktop/overline mt-1 lg:mt-2 max-w-[290px] mx-auto lg:max-w-max">
                         At itel, we ensure top-notch quality through rigorous product testing. We're here to listen and help, ensuring you stay connected and worry-free.
                     </p>
-                    <button className='uppercase flex items-center gap-2 rounded-[24px] bg-[#111111] py-[6px] lg:py-[14px] px-[14px] lg:px-6 mx-auto mt-5'>
-                        <p className=" text-mobile/button lg:text-desktop/button">get support</p>
-                        <img src="/static_page/homepage/Union.svg" alt="Arrow" className='size-5 lg:size-6' />
-                    </button>
+                    <Link to={'/support'}>
+                        <button className='uppercase flex items-center gap-2 rounded-[24px] bg-[#111111] py-[6px] lg:py-[14px] px-[14px] lg:px-6 mx-auto mt-5'>
+                            <p className=" text-mobile/button lg:text-desktop/button">get support</p>
+                            <img src="/static_page/homepage/Union.svg" alt="Arrow" className='size-5 lg:size-6' />
+                        </button>
+                    </Link>
                 </div>
                 <video className="object-cover w-full h-full" autoPlay loop muted>
                     <source src="/videos/homepage/service.webm" type="video/mp4" />
                 </video>
             </div>
 
-            <div className="max-w-[1110px] mx-auto flex lg:justify-between flex-col lg:flex-row gap-6 md:gap-8 lg:gap-0">
-
+            <div className="max-w-[1110px] mx-auto flex lg:justify-between flex-col lg:flex-row gap-6 md:gap-8 lg:gap-0 md:w-11/12">
 
                 {CardData.map((card) => (
                     <div key={card.id} className="flex text-white gap-3 flex-col">

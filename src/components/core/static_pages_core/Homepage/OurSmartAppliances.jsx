@@ -22,7 +22,15 @@ const OurSmartAppliances = () => {
                             className='h-full w-full hidden lg:block z-20 '
                         />
                         <div className="rounded-[16px] overflow-hidden">
-                            <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920401/Trimmer_xhyuyc.gif" alt="Home care" className='lg:hidden rounded-[16px] overflow-hidden w-full object-cover' />
+                            <ReactPlayer
+                                url={['/videos/homepage/vcleaner_mobile.mp4']}
+                                width={"100%"}
+                                height={"100%"}
+                                playing
+                                loop
+                                muted
+                                className='lg:hidden rounded-[16px] overflow-hidden w-full object-cover'
+                            />
                         </div>
                     </div>
                     <div className="rounded-2xl relative overflow-hidden">
@@ -39,7 +47,14 @@ const OurSmartAppliances = () => {
                             muted
                             className='h-full w-full hidden lg:block'
                         />
-                        <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920398/vcleaner_1_qwdmjw.gif" alt="Personal Care" className='lg:hidden rounded-[16px] overflow-hidden w-full object-cover' />
+                        <ReactPlayer
+                            url={['/videos/homepage/trimmer_mobile.mp4']}
+                            width={"100%"}
+                            height={"100%"}
+                            playing
+                            loop
+                            muted
+                            className='lg:hidden rounded-[16px] overflow-hidden w-full object-cover' />
                     </div>
                 </div>
             </div>
