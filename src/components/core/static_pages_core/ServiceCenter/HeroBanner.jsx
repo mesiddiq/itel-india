@@ -20,7 +20,7 @@ const HeroBanner = () => {
   ];
   return (
     
-    <div className='lg:bg-[url("/banners/Frame%201973341368.png")] flex items-center font-markot   bg-[url("/banners/moblie%20-%20service%20center%20BG.png")] bg-cover bg-center bg-no-repeat lg:min-h-[520px]  min-h-[400px]'>
+    <div className='lg:bg-[url("/static_page/ServiceC/scd.png")] flex items-center font-markot   bg-[url("/static_page/ServiceC/scm.png")] bg-cover bg-center bg-no-repeat lg:min-h-[520px]  min-h-[400px]'>
       <div className=" lg:content px-3 ">
         <div className=" lg:w-[918px] py-[22px] text-white  lg:space-y-[52px]  space-y-[12px]  ">
           <p className=" text-mobile/h1  lg:text-desktop/h1">

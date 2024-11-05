@@ -8,6 +8,7 @@ import Accessories from '../../components/common/smartphone_common/Accessories'
 import Model from '../../components/common/smartphone_common/Model'
 import NearestStoreDark from '../../components/common/NearestStoreDark'
 import NearestStore from '../../components/common/NearestStore'
+import { SmartPhoneModelData } from '../../data/SmartPhoneModelData'
 
 const P_Series_Parent = () => {
     return (
