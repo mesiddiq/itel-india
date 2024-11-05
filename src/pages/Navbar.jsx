@@ -436,16 +436,20 @@ const Navbar = () => {
                         </span>
                         <ArrowSvg isActive={tv} />
                     </button>
-                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
-                        <span className="text-desktop/body/2/regular">
-                            Home Care
-                        </span>
-                    </button>
-                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
-                        <span className="text-desktop/body/2/regular">
-                            Personal Care
-                        </span>
-                    </button>
+                    <Link to={'/coming-soon'}>
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                Home Care
+                            </span>
+                        </button>
+                    </Link>
+                    <Link to={'/coming-soon'}>
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                Personal Care
+                            </span>
+                        </button>
+                    </Link>
                     <Link to="/about-us-itel-mobile-india">
                         <button className="flex items-center gap-0.5" onClick={handleOutside}>
                             <span className="text-desktop/body/2/regular">

@@ -4,9 +4,13 @@ import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react';
-import SmartPhoneProductPage from './pages/product/SmartPhoneProductPage'
-import FeaturePhoneProductPage from './pages/product/FeaturePhoneProductPage'
-import Loading from './pages/static_pages/Loading'
+const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
+const FeaturePhoneProductPage = lazy(() => import('./pages/product/FeaturePhoneProductPage'));
+const Loading = lazy(() => import('./pages/static_pages/Loading'));
+const Blog = lazy(() => import('./pages/static_pages/Blog'));
+const BlogListing = lazy(() => import('./pages/static_pages/BlogListing'));
+const Thankyou = lazy(() => import('./pages/static_pages/Thankyou'));
+const Commingsoon = lazy(() => import('./pages/static_pages/Commingsoon'));
 
 const HomePage = lazy(() => import('./pages/static_pages/HomePage'));
 const STwentyThree = lazy(() => import('./pages/s_series/STwentyThree'));
@@ -94,6 +98,10 @@ function App() {
 					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 					<Route path='/support/faqs' element={<FAQ />} />
 					<Route path='/investor' element={<Investor />} />
+					<Route path='/blog' element={<Blog />} />
+					<Route path='/bloglisting' element={<BlogListing />} />
+					<Route path='/submitted' element={<Thankyou />} />
+					<Route path='/coming-soon' element={<Commingsoon />} />
 
 
 					{/* ***************************************************************************************************/}
