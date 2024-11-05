@@ -11,7 +11,7 @@ const Bottom = () => {
     {
       img:"/static_page/Support2/Group%201973339729%20(1).png",
       title:"CHAT WITH US",
-      reach:"CLICK HERE",
+      reach:"Click Here",
       link: "https://wa.me/18004190525"
     },
     
@@ -29,12 +29,12 @@ const Bottom = () => {
       <div className=" lg:grid   lg:gap-[20px]  lg:space-y-0 space-y-2  grid-cols-1">
         <div className=" lg:grid lg:gap-[36px] lg:space-y-0  space-y-2 lg:grid-cols-2">
           <div className=' lg:bg-[url("/static_page/Support2/Grid%20Block%201.webp")]   p-[14px] lg:p-[42px] space-y-2 lg:space-y-3  bg-[url("/static_page/Support2/Grid%20Bloack%201%20Mobile.webp")] bg-cover rounded-2xl   lg:bg-right bg-no-repeat min-h-[180px] lg:min-h-[300px]  '>
-              <p className=" text-mobile/h5/medium lg:text-desktop/h3 text-brand/black">Find Your Nearest itel Store!</p>
+              <p className=" text-mobile/h5/medium lg:text-desktop/h3 text-brand/black">Find Your Nearest itel <br/>Store!</p>
               <p className=" text-desktop/body/2/regular text-grey/grey/4 ">We are here to help you find the right phone. </p>
           </div>
          
           <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%202.webp")] p-[14px] lg:p-[42px]  space-y-2 lg:space-y-3    bg-[url("/static_page/Support2/Grid%20Bloack%202%20Mobile.webp")] rounded-2xl bg-cover bg-right bg-no-repeat min-h-[180px]  lg:min-h-[300px]  '>
-          <p className="  text-mobile/h5/medium lg:text-desktop/h3  text-brand/black">Connect for Business Queries</p>
+          <p className="  text-mobile/h5/medium lg:text-desktop/h3  text-brand/black">Connect for<br/> Business Queries</p>
           <div className="  lg:space-y-[2px] space-y-[4px]">
           <p className=" text-mobile/small/button text-grey/grey/4 lg:text-desktop/title">MAIL US AT</p>
               <p className=" lg:text-desktop/body/1 text-desktop/body/2/regular text-grey/grey/4 ">itelmarketing.in@transsion.com</p>
@@ -47,9 +47,9 @@ const Bottom = () => {
       
              <div className=" lg:space-y-[10px] space-y-[2px]">
               <p className=" text-grey/grey/5  text-desktop/body/2/regular lg:text-desktop/body/1">Need our help?</p>
-              <p className=" text-mobile/h3  text-brand/black lg:text-desktop/h3">Contact us</p>
+              <p className=" text-mobile/h3   text-brand/black lg:text-desktop/h3">Contact us</p>
              </div>
-             <div className=" lg:grid lg:space-y-0 space-y-5 lg:grid-cols-3">
+             <div className=" lg:grid lg:space-y-0 lg:pr-10 space-y-5 lg:grid-cols-3">
                 {
                   data.map((data)=>{
                     return(
@@ -59,7 +59,7 @@ const Bottom = () => {
                         <div className="  space-y-[6px] lg:space-y-2">
                          <p className=" text-mobile/title lg:text-desktop/title text-grey/grey/4">{data.title}</p>
                          <a href={data.link}>
-                           <p className=" text-brand/black text-mobile/h6 lg:text-desktop/button">{data.reach}</p>
+                         <p className={`text-brand/black ${data.reach=="Click Here" ? 'lg:uppercase underline' :' lowercase '} lg:uppercase text-mobile/h6 lg:text-desktop/button`}>{data.reach}</p>
                          </a>
                          
                         </div>

@@ -7,7 +7,7 @@ const Accordian = ({ data, title }) => {
   return (
     <>
     <div className=" space-y-4">
-          <div onClick={() => setShow(!show)} className=" flex items-center font-markot justify-between cursor-pointer">
+          <div onClick={() => setShow(!show)} className=" flex  items-start font-markot justify-between cursor-pointer">
         <p className=" text-mobile/h3 lg:text-desktop/h3 text-brand/black">
           {title}
         </p>

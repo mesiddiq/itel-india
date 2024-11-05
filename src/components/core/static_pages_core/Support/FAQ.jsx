@@ -60,7 +60,7 @@ const FAQ = () => {
     { id: "Camera", title: "Camera & Pictures" },
     { id: "Charging", title: "Charging" },
     { id: "Internet", title: "Internet & Network" },
-    { id: "Other", title: "Other" },
+    
   ];
 
   return (
@@ -79,8 +79,8 @@ const FAQ = () => {
                 onClick={() => setActiveCategory(button.id)}
                 className={`lg:text-desktop/button cursor-pointer py-[6px] px-[12px] rounded-full lg:py-4 lg:px-5 shrink-0 ${
                   activeCategory === button.id
-                    ? "bg-brand/black text-white"
-                    : "text-brand/black bg-bg/primary/1"
+                    ? "bg-brand/black  text-white"
+                    : "text-brand/black border  border-b-2 border-brand/black  bg-bg/primary/1"
                 }`}
               >
                 {button.title}
