@@ -407,11 +407,13 @@ const Navbar = () => {
                         </span>
                         <ArrowSvg isActive={smartPhone} />
                     </button>
-                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
-                        <span className="text-desktop/body/2/regular">
-                            Feature Phones
-                        </span>
-                    </button>
+                    <Link to={'/featurephones'}>
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                Feature Phones
+                            </span>
+                        </button>
+                    </Link>
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setAccessories(prev => !prev)
                         setSupport(false)
