@@ -38,7 +38,7 @@ export default function FilterComponent() {
               className="ml-2 text-xs cursor-pointer hover:text-gray-300"
               onClick={() => toggleFilter(filter)}
             >
-              <img src={cross} alt="cross" />
+              {/* <img src={cross} alt="cross" /> */}
             </span>
           )}
         </button>
@@ -46,3 +46,4 @@ export default function FilterComponent() {
     </div>
   );
 }
+

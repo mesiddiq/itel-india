@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const TransformYourPhone = () => {
+  const [transformYourPhoneVideoSrc, setTransformYourPhoneVideoSrc] = useState(false);
+
+  useEffect(() => {
+    if (screen.width > 1000) {
+      setTransformYourPhoneVideoSrc("/smartphone/color-pro-5g/TransformYourPhone/video.mp4");
+    } else {
+      setTransformYourPhoneVideoSrc("/smartphone/color-pro-5g/TransformYourPhone/videoMobile.mp4");
+    }
+  }, []);
+
   return (
     <div className='flex relative w-full h-[650px] md:h-[800px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#000000] md:bg-none overflow-hidden'>
-      <video
-        className='block md:hidden absolute bottom-[55px] right-[90px] w-auto object-cover transform scale-[1.7]'
-        src='/smartphone/color-pro-5g/TransformYourPhone/video.mp4'
-        autoPlay
-        loop
-        muted
-      />
       <div className='content'>
         <video
-          className='hidden md:block absolute top-0 left-0 w-full h-full object-cover'
-          src='/smartphone/color-pro-5g/TransformYourPhone/video.mp4'
+          className='absolute bottom-0 md:top-0 left-0 w-full h-full object-cover'
+          src={transformYourPhoneVideoSrc}
           autoPlay
           loop
           muted
         />
-        <div className='relative z-[2]'>
+        <div className='relative z-20'>
           <div className='grid grid-cols-2'>
             <div className='col-span-2 md:col-span-1'>
               <img src='/smartphone/color-pro-5g/TransformYourPhone/ivco.png' />

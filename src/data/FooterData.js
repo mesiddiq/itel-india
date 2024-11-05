@@ -86,6 +86,6 @@ export const AboutItel = [
     {
         id:2,
         label:'Investor quick links',
-        link:'#'
+        link:'/investor'
     }
 ]

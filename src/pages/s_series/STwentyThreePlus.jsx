@@ -8,7 +8,7 @@ import HeroBanner from '../../components/core/s_series_core/s_twenty_three_plus/
 import ImmersiveEntertainment from '../../components/core/s_series_core/s_twenty_three_plus/ImmersiveEntertainment';
 import NewVision from '../../components/core/s_series_core/s_twenty_three_plus/NewVision';
 import Overview from '../../components/core/s_series_core/s_twenty_three_plus/Overview';
-import SharpFocus from '../../components/core/s_series_core/s_twenty_three_plus/SharpFocus';
+// import SharpFocus from '../../components/core/s_series_core/s_twenty_three_plus/SharpFocus';
 import SnapFlawlessSelfie from '../../components/core/s_series_core/s_twenty_three_plus/SnapFlawlessSelfie';
 import UltraHDMode from '../../components/core/s_series_core/s_twenty_three_plus/UltraHDMode';
 import ThinDesign from '../../components/core/s_series_core/s_twenty_three_plus/ThinDesign';
@@ -17,12 +17,12 @@ import UnlockTouch from '../../components/core/s_series_core/s_twenty_three_plus
 import Video from '../../components/core/s_series_core/s_twenty_three_plus/Video';
 import BlogCards from '../../components/core/s_series_core/S_Twenty_Three_Plus/BlogCards';
 import PicturePerfect from '../../components/core/s_series_core/s_twenty_three_plus/PicturePerfect';
+import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon';
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/S23PlusData';
-import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon';
+import SharpFoucsNew from '../../components/core/s_series_core/S_Twenty_Three_Plus/SharpFoucsNew';
 
 const STwentyThreePlus = () => {
-
   return (
     <>
       <div>
@@ -35,7 +35,6 @@ const STwentyThreePlus = () => {
           bgMobile={'/smartphone/smartphonehero/s23p_mobile.webp'}
           gradient1='#ca86ff'
           gradient2='#85e2fd'
-
         />
         <StickyHeader title={"S23+"} purchaseLink={''} icon={'/smartphone/S23+/Backgrounds/OverviewIcon.webp'} />
         <Overview />
@@ -44,7 +43,8 @@ const STwentyThreePlus = () => {
         <NewVision />
         <ImmersiveEntertainment />
         <PicturePerfect />
-        <SharpFocus />
+        {/* <SharpFocus /> */}
+        <SharpFoucsNew/>
         <TimeLapse />
         <SnapFlawlessSelfie />
         <UltraHDMode />

@@ -2,35 +2,36 @@
 export const ImageCarouselData = [
     {
         id: 1,
+        color: "white",
+        buttonText: "Moonlit Black",
+        buttonGradient: "bg-gradient-to-br from-[#ACB1B7] to-[#060708]",
+        colorSelectorBGColor: "bg-white",
+        colorSelectorTextColor: "text-black",
+        bgContainer: "",
+        bgURL: '/smartphone/P55/bg_p55.png',
+        images: [
+            "/smartphone/P55/black1.webp",
+            "/smartphone/P55/black2.webp",
+            "/smartphone/P55/black3.webp",
+        ]
+    },
+    {
+        id: 2,
         color: "black",
         buttonText: "Aurora Blue",
         buttonGradient: "bg-gradient-to-br from-[#4DB7D9] to-[#CAF0FB]",
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
-        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        bgURL: '/smartphone/P55/bg_p55.png',
         images: [
-            "/smartphone/P55/mobileBlack1.png",
-            "/smartphone/P55/mobileBlack2.png",
-            "/smartphone/P55/mobileBlack3.png",
+            "/smartphone/P55/blue1.webp",
+            "/smartphone/P55/blue2.webp",
+            "/smartphone/P55/blue3.webp",
+            "/smartphone/P55/blue4.webp",
+            "/smartphone/P55/blue5.webp",
         ],
     },
-    {
-        id: 2,
-        color: "white",
-        buttonText: "Starry Black",
-        buttonGradient: "bg-gradient-to-br from-[#ACB1B7] to-[#060708]",
-        colorSelectorBGColor: "bg-white",
-        colorSelectorTextColor: "text-black",
-        bgContainer: "",
-        bgURL: '/smartphone/S24/imageCarouselBackground.png',
-        images: [
-            "/smartphone/P55/mobileBlue1.png",
-            "/smartphone/P55/mobileBlue2.png",
-            "/smartphone/P55/mobileBlue3.png",
-            "/smartphone/P55/mobileBlue4.png",
-            "/smartphone/P55/mobileBlue5.png",
-        ]
-    },
+    
     {
         id: 3,
         color: "gold",
@@ -39,11 +40,11 @@ export const ImageCarouselData = [
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgContainer: "",
-        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        bgURL: '/smartphone/P55/bg_p55.png',
         images: [
-            "/smartphone/P55/mobileGold1.png",
-            "/smartphone/P55/mobileGold2.png",
-            "/smartphone/P55/mobileGold3.png",
+            "/smartphone/P55/gold1.webp",
+            "/smartphone/P55/gold2.webp",
+            "/smartphone/P55/gold3.webp",
         ]
     },
 ];

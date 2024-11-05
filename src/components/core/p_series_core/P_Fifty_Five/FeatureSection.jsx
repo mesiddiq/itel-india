@@ -37,7 +37,7 @@ function FeatureSection() {
         </div>
         <div className="flex flex-wrap gap-10 justify-between items-start mt-32 w-full max-md:mt-10 max-md:flex-col ">
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col flex-1  shrink rounded-2xl basis-0 min-h-[316px] min-w-[240px] max-w-[337px] max-md:px-5 max-md:w-full h-[356px]">
+            <div key={index} className="flex flex-col flex-1  shrink rounded-2xl basis-0 min-h-[216px] min-w-[240px] max-w-[337px] max-md:px-5 max-md:w-full h-[356px]">
               <img loading="lazy" src={feature.icon} alt="arrow icon" className="object-contain aspect-square w-[52px]" />
               <div className="flex flex-col mt-6 w-full">
                 <h3 className="text-mobile/h5 md:text-desktop/h4  bg-clip-text text-transparent bg-gradient-to-r from-p55/from to-p55/to">{feature.title}</h3>

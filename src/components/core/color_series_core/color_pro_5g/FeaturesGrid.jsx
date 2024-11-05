@@ -44,7 +44,7 @@ const FeaturesGrid = () => {
               <div className='col-span-1'>
                 <img src='/smartphone/color-pro-5g/FeatureGrid/grid_screen_phone.png' />
               </div>
-              <div className='hidden md:block col-span-1 md:col-span-2'>
+              <div className='col-span-1 md:col-span-2'>
                 <p className='w-full text-center text-[25px] md:text-[91px] 2xl:text-[99px] text-[#FFFFFF] md:mt-[-27px] 2xl:mt-[-62px] opacity-20 font-markot'>Free Screen Replacement</p>
               </div>
             </div>
