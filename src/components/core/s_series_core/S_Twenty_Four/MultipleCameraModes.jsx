@@ -20,7 +20,7 @@ const MultipleCameraModes = () => {
                     </span>
                 </div>
                 
-                <div className="hidden lg:flex flex-row justify-between lg:gap-[42px] w-full">
+                <div className="hidden lg:flex flex-row justify-between lg:gap-[42px]">
                     <div className="flex flex-row justify-between items-end gap-6">
                         <img src='/smartphone/S24/superNightModeText.svg' alt='superNightModeText' className="w-[30%] "/>
                         <img src='/smartphone/S24/superNightMode.png' alt='superNightModeImage' />

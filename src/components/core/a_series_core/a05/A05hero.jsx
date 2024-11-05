@@ -17,7 +17,7 @@ export default function A05hero() {
             <h1 className='lg:text-desktop/large/h text-mobile/h1 text-[#181818]'>A05s</h1>
             <p className='text-mobile/h7 lg:text-desktop/title text-[#181818] text-opacity-70 max-w-[300px] md:max-w-[500px]'>8GB* (4GB+4GB*) RAM + 64GB ROM | 6.6" HD+ DROP NOTCH DISPLAY | TYPE-C CHARGER</p>
             <p className='text-mobile/small/body md:text-[20px] font-normal leading-[24px] text-[#181818] md:pt-[40px] lg:pt-[64px]'>Available at <span className='font-bold text-mobile/h5 md:text-[20px]'>₹ 6,499/-</span></p>
-            <BuyNowSquareBG/>
+            <BuyNowSquareBG purchaseLink="" content="BUY NOW"/>
         </div>
 
         <img 

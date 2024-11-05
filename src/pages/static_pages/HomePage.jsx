@@ -1,4 +1,3 @@
-import React from 'react'
 import CountOnItel from '../../components/core/static_pages_core/Homepage/CountOnItel'
 import DareToDoIt from '../../components/core/static_pages_core/Homepage/DareToDoIt'
 import DiscoverNextGen from '../../components/core/static_pages_core/Homepage/DiscoverNextGen'

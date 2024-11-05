@@ -48,7 +48,7 @@ export default function Filters() {
                     ))}
                 </div>
             </div>
-            <div className='border-[1px] border-white/20 w-full mb-6'></div>
+            <div className='border-[1px] border-white/20 w-full mb-4'></div>
         </>
     )
 

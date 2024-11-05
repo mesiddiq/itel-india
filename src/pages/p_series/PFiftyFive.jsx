@@ -35,9 +35,16 @@ const PFiftyFive = () => {
                 tagText={'power series'}
                 gradient1={'#D5EEF9'}
                 gradient2={'#70A2E1'}
+                purchaseLink="https://www.amazon.in/dp/B0CSKKNLTT?ie=UTF8&ref_=itel_P55_PDP_WS&th=1"
             />
 
-            <StickyHeader title="P55" purchaseLink="" icon="/smartphone/P55/P55Logo.svg" bgColor="#91C9EC" dark={true}/>
+            <StickyHeader 
+                title="P55" 
+                purchaseLink="https://www.amazon.in/dp/B0CSKKNLTT?ie=UTF8&ref_=itel_P55_PDP_WS&th=1" 
+                icon="/smartphone/P55/P55Logo.svg" 
+                bgColor="#91C9EC" 
+                dark={true}
+            />
 
             <FeatureSection />
 

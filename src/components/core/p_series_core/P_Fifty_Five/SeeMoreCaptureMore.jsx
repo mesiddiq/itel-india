@@ -68,7 +68,7 @@ const SeeMoreCaptureMore = () => {
                                 <img src='/smartphone/P55/cameraIcon.svg' alt="cameraIcon" className="w-[26px] h-[26px]" />
                                 <span className="text-[#050036] text-mobile/title">8MP Front Camera</span>
                             </div>
-                            <h1 className="text-mobile/body/2 text-black/1 max-w-[284px]">Ultra HD | Beauty | Wide Selfie | Short Video | Super Night | AR Shots | Time Lapse | Portrait Modes</h1>
+                            <h1 className="text-mobile/body/2 text-black/1 max-w-[307px]">Ultra HD | Beauty | Wide Selfie | Short Video | Super Night | AR Shots | Time Lapse | Portrait Modes</h1>
                         </div>
                     </div>
 
