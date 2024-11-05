@@ -1,5 +1,5 @@
-import React from 'react'
 import { useSelector } from 'react-redux'
+import { useState } from 'react'
 import ProductCard from './ProductCard'
 
 // Import the AllPhonesData
@@ -7,6 +7,8 @@ import { AllPhonesData } from '../../../data/AllPhoneData'
 
 export default function ProductList() {
     const filters = useSelector(state => state.filters.filters)
+    const [currentPage, setCurrentPage] = useState(1)
+    const phonesPerPage = 6
 
     const filteredPhones = AllPhonesData.filter(phone => {
         if (filters.series.length > 0 && !filters.series.includes(phone.category) && !filters.series.includes('All')) return false
@@ -52,16 +54,36 @@ export default function ProductList() {
         return true
     })
 
+    const totalPages = Math.ceil(filteredPhones.length / phonesPerPage)
+    const indexOfLastPhone = currentPage * phonesPerPage
+    const indexOfFirstPhone = indexOfLastPhone - phonesPerPage
+    const currentPhones = filteredPhones.slice(indexOfFirstPhone, indexOfLastPhone)
+
+    const nextPage = () => {
+        if (currentPage < totalPages) setCurrentPage(prev => prev + 1)
+    }
+
+    const prevPage = () => {
+        if (currentPage > 1) setCurrentPage(prev => prev - 1)
+    }
+
     return (
         <div>
-            <h2 className="text-2xl font-bold mb-6">Available Smartphones</h2>
-            {filteredPhones.length === 0 ? (
-                <p className="text-gray-600">No smartphones match your selected filters.</p>
+            {currentPhones.length === 0 ? (
+                <p className="text-gray-300">No smartphones match your selected filters.</p>
             ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border">
-                    {filteredPhones.map(phone => (
-                        <ProductCard key={phone.id} product={phone} />
-                    ))}
+                <div>
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {currentPhones.map(phone => (
+                            <ProductCard key={phone.id} product={phone} />
+                        ))}
+                    </div>
+                    
+                    <div className="flex justify-center items-center mt-4">
+                        <img src='/product-listing/arrow-left-carousel.svg' onClick={prevPage} disabled={currentPage === 1} className="p-3 cursor-pointer" />
+                        <span className="text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">{currentPage} of {totalPages}</span>
+                        <img src='/product-listing/arrow-right-carousel.svg' onClick={nextPage} disabled={currentPage === totalPages} className="p-3 cursor-pointer" />
+                    </div>
                 </div>
             )}
         </div>

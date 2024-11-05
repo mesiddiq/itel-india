@@ -32,9 +32,16 @@ const STwentyFour = () => {
                 tagText={'super series'}
                 gradient1={'#ffcf92'}
                 gradient2={'#ffe8cb'}
+                purchaseLink="https://www.amazon.in/dp/B0CZNV9YCX?ie=UTF8&ref_=itel_S24_PDP_WS"
             />
 
-            <StickyHeader title="S24" purchaseLink="" icon="/smartphone/S24/s24Logo.svg" bgColor="#161616" dark={false}/>
+            <StickyHeader 
+                title="S24" 
+                purchaseLink="https://www.amazon.in/dp/B0CZNV9YCX?ie=UTF8&ref_=itel_S24_PDP_WS" 
+                icon="/smartphone/S24/s24Logo.svg"
+                bgColor="#161616"
+                dark={false}
+            />
 
             <ProductDescription />
 

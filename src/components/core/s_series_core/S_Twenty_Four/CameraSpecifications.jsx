@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import FeatureSpecifications from '../../../common/smartphone_common/FeatureSpecifications';
@@ -39,7 +40,7 @@ const CameraSpecifications = () => {
         initial={{ scale: 1.2 }}
         animate={inView ? { scale: 1 } : { scale: 1.2 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        src="/smartphone/S24/s23Camera.png"
+        src="/smartphone/S24/s24Camera.webp"
         alt="Camera Specifications"
         className="w-full"
       />

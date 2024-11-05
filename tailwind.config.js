@@ -224,7 +224,7 @@ export default {
 				// }],
 			},
 			backgroundImage: {
-				'ultraStorageVault': "url('/smartphone/S24/ultra-storage-vault.png')",
+				'ultraStorageVault': "url('/smartphone/S24/ultra-storage-vault.webp')",
 				'imageCarouselBackground': "url('/smartphone/S24/imageCarouselBackground.png')",
 				'BuyNowSquareBG': "url('/smartphone/S24/ButtonBackground.png')",
 				'dualDTSSpeaker': "url('/smartphone/S24/dualDTSSpeaker.png')",
@@ -255,7 +255,6 @@ export default {
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
-				
 			},
 			backgroundSize: {
 				'85': '85%',

@@ -1,7 +1,8 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom'
 import AnimatedBuyButton from '../../../components/core/static_pages_core/ProductListing/Product Section/AnimatedBuyButton'
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, purchaseLink }) {
 
     const { isNew, specification, thumbnail, title, description } = product
     return (
@@ -43,7 +44,12 @@ export default function ProductCard({ product }) {
 
 
             {/* PriceButton */}
-            <AnimatedBuyButton price={specification?.price} />
+            <Link to={purchaseLink} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="w-full flex justify-center items-center">
+                <AnimatedBuyButton price={specification?.price}/>
+            </Link>
 
         </div>
     )

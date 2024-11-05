@@ -12,7 +12,9 @@ const HeroBanner = () => {
             <h1 className='bg-gradient-to-br from-[#EECF7F] to-[#D2B363] inline-block text-transparent bg-clip-text text-mobile/h1 md:text-desktop/large/h font-markot md:h-[150px] mt-[20px] md:mt-0' data-aos='fade-right'>P55T</h1>
             <p className='text-mobile/title md:text-desktop/title uppercase text-[#D9D9D9] font-markot' data-aos='fade-right'>Android 14 Go Edition | 6000 mAh battery | 6.6″ HD+ Punch-Hole Display</p>
             <p className='text-mobile/small/body text-[#FFFFFF] md:text-[20px] font-[400] pt-[30px] md:pt-[50px] font-markot' data-aos='fade-right'>Available at <span className='text-mobile/h5 md:text-desktop/h5'>₹7,999/-</span></p>
-            <span className='hidden md:block pt-5' data-aos='fade-right'><BuyNowSquareBG /></span>
+            <span className='hidden md:block pt-5' data-aos='fade-right'>
+            <BuyNowSquareBG purchaseLink="" content="BUY NOW"/>
+              </span>
           </div>
           <div className='col-span-1'>
             <h3 className='bg-gradient-to-br from-[#EECF7F] to-[#D2B363] inline-block text-transparent bg-clip-text text-[32px] md:text-[100px] font-[350] rotate-90 absolute bottom-[35px] md:bottom-[120px] right-0 md:right-[-100px] font-markot'>P55T</h3>

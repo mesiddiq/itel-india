@@ -9,7 +9,7 @@ const SeeMoreCaptureMore = () => {
         }}>
             
             <div className="content">
-                <div className="font-markot w-[40%] py-[80px] h-full flex flex-col justify-between items-start">
+                <div className="w-[40%] py-[80px] h-full flex flex-col justify-between items-start">
 
                     <div className="flex flex-col justify-between gap-[24px] ">
                         <h1 className="text-black/1 text-desktop/h2 max-w-[400px]">See More. Capture More. Experience More. </h1>
@@ -68,7 +68,7 @@ const SeeMoreCaptureMore = () => {
                                 <img src='/smartphone/P55/cameraIcon.svg' alt="cameraIcon" className="w-[26px] h-[26px]" />
                                 <span className="text-[#050036] text-mobile/title">8MP Front Camera</span>
                             </div>
-                            <h1 className="text-mobile/body/2 text-black/1 max-w-[284px]">Ultra HD | Beauty | Wide Selfie | Short Video | Super Night | AR Shots | Time Lapse | Portrait Modes</h1>
+                            <h1 className="text-mobile/body/2 text-black/1 max-w-[307px]">Ultra HD | Beauty | Wide Selfie | Short Video | Super Night | AR Shots | Time Lapse | Portrait Modes</h1>
                         </div>
                     </div>
 

@@ -1,6 +1,6 @@
-import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { togglePriceFilter, toggleCameraFilter, toggleScreenFilter, toggleStorageFilter } from '../../../redux/reducers/actions'
+import FilterHeading from './FilterHeading'
 
 export default function Filters() {
     const dispatch = useDispatch()
@@ -31,31 +31,38 @@ export default function Filters() {
     }
 
     const renderFilter = (name, options, currentValues, action) => (
-        <div className="mb-6">
-            <h3 className="font-semibold mb-2 text-lg">{name}</h3>
-            <div className="space-y-2">
-                {options.map(option => (
-                    <label key={option.value} className="flex items-center space-x-2">
-                        <input
-                            type="checkbox"
-                            className="form-checkbox h-5 w-5 text-blue-600"
-                            checked={currentValues.includes(option.value)}
-                            onChange={() => dispatch(action(option.value))}
-                        />
-                        <span className="text-gray-700">{option.label}</span>
-                    </label>
-                ))}
+        <>
+            <div className="mb-6">
+                <h3 className="mb-3 text-desktop/title uppercase">{name}</h3>
+                <div className="space-y-3">
+                    {options.map(option => (
+                        <label key={option.value} className="flex items-center space-x-2">
+                            <input
+                                type="checkbox"
+                                className="form-checkbox h-5 w-5 text-blue-600"
+                                checked={currentValues.includes(option.value)}
+                                onChange={() => dispatch(action(option.value))}
+                            />
+                            <span className="text-white text-desktop/body/2/regular">{option.label}</span>
+                        </label>
+                    ))}
+                </div>
             </div>
-        </div>
+            <div className='border-[1px] border-white/20 w-full mb-4'></div>
+        </>
     )
 
     return (
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-6">Filters</h2>
-            {renderFilter('Price Range', filterOptions.price, filters.price, togglePriceFilter)}
-            {renderFilter('Primary Camera', filterOptions.camera, filters.camera, toggleCameraFilter)}
-            {renderFilter('Screen Size', filterOptions.screen, filters.screen, toggleScreenFilter)}
-            {renderFilter('Storage', filterOptions.storage, filters.storage, toggleStorageFilter)}
+        <div className=" text-white pr-5 rounded-lg shadow-md">
+            <div className="pt-2">
+                <FilterHeading />
+            </div>
+            <div className='hidden lg:block'>
+                {renderFilter('Price Range', filterOptions.price, filters.price, togglePriceFilter)}
+                {renderFilter('Primary Camera', filterOptions.camera, filters.camera, toggleCameraFilter)}
+                {renderFilter('Screen Size', filterOptions.screen, filters.screen, toggleScreenFilter)}
+                {renderFilter('Storage', filterOptions.storage, filters.storage, toggleStorageFilter)}
+            </div>
         </div>
     )
 }

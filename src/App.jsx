@@ -3,8 +3,9 @@ import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import SmartPhoneProductPage from './pages/product/SmartPhoneProductPage'
+import FeaturePhoneProductPage from './pages/product/FeaturePhoneProductPage'
 import Loading from './pages/static_pages/Loading'
 
 const HomePage = lazy(() => import('./pages/static_pages/HomePage'));
@@ -80,7 +81,9 @@ function App() {
 					{/* 					Static Pages	   				*/}
 					{/********************************************************/}
 
+					<Route path='/aryan' element={<ProductListing />} />
 					<Route path='/products' element={<SmartPhoneProductPage />} />
+					<Route path='/featurephones' element={<FeaturePhoneProductPage />} />
 					<Route path='/support' element={<Support />} />
 					<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
 					<Route path='/support/e-waste-management' element={<EWaste />} />

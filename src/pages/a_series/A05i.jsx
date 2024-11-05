@@ -20,7 +20,7 @@ const A05i = () => {
           bgDesktop="/smartphone/smartphonehero/aura.webp"
           bgMobile="/smartphone/smartphonehero/aura_mobile.webp"
           theme="dark"
-          purchaseLink=""
+          purchaseLink="https://www.amazon.in/Memory-Fusion-Charging-Display-Nebula/dp/B0CMQQ8VSZ?ref_=ast_sto_dp&th=1"
           description={` 6.6" HD+ Waterdrop Display | 4000 mAh Battery with Type-C Charging| 32GB ROM `}
           gradient1="#181818"
           gradient2="#181818"
@@ -28,7 +28,14 @@ const A05i = () => {
           tagText="Awesome series"
         />
 
-        <StickyHeader title="A05i" purchaseLink="" icon="/smartphone/A05i/A50iLogo.svg" bgColor="white" dark={true} borderBottom={true} />
+        <StickyHeader 
+          title="A05i" 
+          purchaseLink="https://www.amazon.in/Memory-Fusion-Charging-Display-Nebula/dp/B0CMQQ8VSZ?ref_=ast_sto_dp&th=1" 
+          icon="/smartphone/A05i/A50iLogo.svg" 
+          bgColor="white" 
+          dark={true} 
+          borderBottom={true} 
+        />
 
         <FeatureSectionA05i />
 

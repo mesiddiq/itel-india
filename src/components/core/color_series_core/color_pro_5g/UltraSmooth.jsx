@@ -66,7 +66,7 @@ const UltraSmooth = () => {
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 3 }}
+              transition={{ duration: 1, delay: 2 }}
             >
               <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot md:pl-5 md:w-[40%]'>Ultra-Smooth<br />6.6" HD+ Display</h2>
               <p className='text-mobile/body/2 md:text-desktop/body/large text-[#FFFFFF] font-markot md:pl-5 pt-5 md:w-[38%]'>Experience stunning visuals on the 6.6-inch HD+ display, featuring a 90Hz refresh rate that reduces visual fatigue and ensures smoother, faster response times.</p>
