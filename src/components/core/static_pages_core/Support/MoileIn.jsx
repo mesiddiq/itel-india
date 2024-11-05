@@ -60,7 +60,7 @@ const MoileIn = () => {
     <div data-aos="fade-up"  className=" content lg:space-y-[40px] space-y-[24px] px-4  font-markot">
       <div className=" flex items-center  lg:space-x-4 ">
         <div className=" ">
-            <img src={"static_page/Support2/Star.png"} alt="" className="   animate-spin lg:h-[60px]  " />
+            <img src={"static_page/Hotstar.gif"} alt="" className="lg:h-[60px]  " />
         </div>
       
         <p className=" text-brand/black text-mobile/h4 lg:text-desktop/h2">Discover itel Mobile Insights</p>

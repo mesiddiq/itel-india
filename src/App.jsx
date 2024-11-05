@@ -2,7 +2,9 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom' 
+import Blog from './pages/static_pages/Blog'
+import BlogListing from './pages/static_pages/BlogListing'
 import HomePage from './pages/static_pages/HomePage'
 import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
@@ -26,7 +28,7 @@ import PFiftyFivePlus from './pages/p_series/PFiftyFivePlus'
 import PFiftyFiveT from './pages/p_series/PFiftyFiveT'
 import ColorPro5G from './pages/color_series/ColorPro5G'
 import NotFound from './pages/static_pages/NotFound'
-
+import Thankyou from './pages/static_pages/Thankyou'
 import A_Series_Parent from './pages/a_series/A_Series_Parent'
 import A05i from './pages/a_series/A05i'
 
@@ -84,6 +86,13 @@ function App() {
 				<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 				<Route path='/support/faqs' element={<FAQ />} />
 				<Route path='/investor' element={<Investor/>}/>
+				<Route path='/blog' element={<Blog/>}/>
+				<Route path='/bloglisting' element={<BlogListing/>}/>
+				<Route path='/submitted' element={<Thankyou/>}/>
+
+
+				
+				
 
 
 				{/* ***************************************************************************************************/}

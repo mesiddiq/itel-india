@@ -11,7 +11,7 @@ const Centervid = () => {
         className="absolute inset-0 h-full w-full object-cover"
       />
 
-      <p className="absolute bottom-2 lg:bottom-20 left-1/2 transform -translate-x-1/2 text-center text-white text-mobile/h7 lg:text-desktop/h2">
+      <p className="absolute lg:w-[883px] w-[260px] bottom-2 lg:bottom-20 left-1/2 transform -translate-x-1/2 text-center text-white text-mobile/h7 lg:text-desktop/h2">
         Connecting Hearts, Everyday with itel!
       </p>
     </div>
