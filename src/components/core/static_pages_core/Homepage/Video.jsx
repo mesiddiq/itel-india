@@ -75,7 +75,7 @@ const AutoPlayVideo = () => {
     return (
         <div ref={wrapperRef} style={{ width: "100%", height: "auto" }}>
             <ReactPlayer
-                url="https://res.cloudinary.com/djwj42mic/video/upload/v1729068884/-e95e-405f-954a-79e66b2ea7ac_udufbr.mp4"
+                url="/videos/homepage/ad.webm"
                 playing={isVisible}
                 muted={!isVisible}
                 width="100%"

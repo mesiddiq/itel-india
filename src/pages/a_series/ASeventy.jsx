@@ -6,6 +6,7 @@ import ColorImageCarousel from "../../components/common/smartphone_common/ColorI
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon";
 import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon";
 import StickyHeader from "../../components/common/StickyHeader";
+import A05ColorImageCarausel from "../../components/core/a_series_core/a05/A05ColorImageCarausel";
 import FeatureSection70 from "../../components/core/a_series_core/a70/FeatureSectionA70";
 import HeroSectionOfPage from "../../components/core/a_series_core/a70/HeroSectionOfPage";
 import ScrollingBannerA70 from "../../components/core/a_series_core/a70/ScrollingBannerA70";
@@ -31,8 +32,8 @@ const ASeventy = () => {
         description={'12GB* (4GB+8GB*) RAM + 256GB ROM | Dynamic bar | 13MP AI Dual Rear Camera'}
         bgDesktop={'/smartphone/smartphonehero/a70.webp'}
         bgMobile={'/smartphone/smartphonehero/a70_mobile.webp'}
-        gradient1='#ca86ff'
-        gradient2='#85e2fd'
+        gradient1='#000'
+        gradient2='#000'
         theme='dark'
       />
       <StickyHeader title="A70" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
@@ -69,7 +70,11 @@ const ASeventy = () => {
 
       <div className="lg:px-0 py-[48px] lg:py-[80px] bg-[#ffffff]">
         <div className="lg:content bg-[#ffffff]  overflow-hidden">
-          <ColorImageCarousel ImageCarouselData={ImageCarouselDataA70} showTitleInMobile={true} />
+          {/* <ColorImageCarousel ImageCarouselData={ImageCarouselDataA70} showTitleInMobile={true} /> */}
+          <A05ColorImageCarausel
+            ImageCarouselData={ImageCarouselDataA70}
+            showTitleInMobile={true}
+          />
         </div>
       </div>
 

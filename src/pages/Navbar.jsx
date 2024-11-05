@@ -310,7 +310,7 @@ const Navbar = () => {
                         <img src="/static_page/homepage/itel.png" alt="" className="" />
                     </Link>
 
-                    <div className="w-[712px] relative h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">
+                    <div className="xl:w-[712px] lg:w-[500px] relative h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M22 22L20 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -324,7 +324,7 @@ const Navbar = () => {
                             onFocus={() => setIsFocused(true)}
                             onBlur={() => setTimeout(() => {
                                 setIsFocused(false)
-                            }, 100)}
+                            }, 200)}
                         />
 
                         {
@@ -336,7 +336,7 @@ const Navbar = () => {
 
                         {/* Search Result */}
 
-                        {searchTerm && isFocused && (
+                        {searchTerm && (
                             <div className="absolute top-16 left-0 p-6 bg-black/1 z-[100] w-full  font-markot">
                                 <div className="space-y-5">
                                     {noResults ? (
@@ -395,7 +395,7 @@ const Navbar = () => {
 
             </div>
             <div className='font-markot bg-[#1f1f1f] hidden lg:block' ref={navRef} >
-                <div className="max-w-[1050px] mx-auto w-11/12 gap-10 py-4 flex text-white ">
+                <div className="max-w-[1050px] mx-auto w-11/12 justify-between py-4 flex text-white ">
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setSmartPhone(prev => !prev)
                         setTv(false)
@@ -413,17 +413,6 @@ const Navbar = () => {
                         </span>
                     </button>
                     <button className="flex items-center gap-0.5" onClick={() => {
-                        setTv(prev => !prev)
-                        setAccessories(false)
-                        setSupport(false)
-                        setSmartPhone(false)
-                    }}>
-                        <span className="text-desktop/body/2/regular">
-                            Smart TVs
-                        </span>
-                        <ArrowSvg isActive={tv} />
-                    </button>
-                    <button className="flex items-center gap-0.5" onClick={() => {
                         setAccessories(prev => !prev)
                         setSupport(false)
                         setSmartPhone(false)
@@ -433,6 +422,17 @@ const Navbar = () => {
                             Smart Gadgets
                         </span>
                         <ArrowSvg isActive={Accessories} />
+                    </button>
+                    <button className="flex items-center gap-0.5" onClick={() => {
+                        setTv(prev => !prev)
+                        setAccessories(false)
+                        setSupport(false)
+                        setSmartPhone(false)
+                    }}>
+                        <span className="text-desktop/body/2/regular">
+                            Smart TVs
+                        </span>
+                        <ArrowSvg isActive={tv} />
                     </button>
                     <button className="flex items-center gap-0.5" onClick={handleOutside}>
                         <span className="text-desktop/body/2/regular">

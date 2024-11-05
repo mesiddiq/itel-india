@@ -1,4 +1,4 @@
-import { frame2IconsData, frame4IconsData } from '../../../../data/smartphonedata/A50Data';
+import { frame2IconsData, frame4IconsData, frame5IconsData } from '../../../../data/smartphonedata/A50Data';
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { useRef } from "react";
@@ -215,7 +215,42 @@ export default function Frames() {
                             ))}
                         </div>
                     </div>
-                    <img src="/smartphone/a50/A501080p.gif" alt="f1Img" className='lg:h-[580px] md:h-[450px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] mt-5' />
+                    {/* <img src="/smartphone/a50/A501080p.gif" alt="f1Img" className='lg:h-[580px] md:h-[450px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] mt-5' /> */}
+                    <img src="/smartphone/a50/oct.webp" alt="f1Img" className='lg:w-[606.59px]  md:w-[462px] lg:pr-10 lg:pt-16 pr-7.5 w-[250px] mt-5' />
+                </div>
+
+                {/* Frame 4*/}
+                <div className="md:w-full w-80 h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
+                    <div className='flex flex-col lg:justify-start items-start xl:pl-12 px-5 md:ps-4 md:px-0'>
+                        <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
+                            6.6” Big Display with Dynamic Bar
+                        </h1>
+                        <p className='lg:max-w-[437px] lg:text-mobile/body/large text-desktop/body/2/regular text-[#181818] text-opacity-80 pt-4 text-center md:text-start'>
+                            The spacious display, featuring a 90% screen-to-body ratio, provides an immersive viewing experience. Keeping up with your dynamic lifestyle, the integrated dynamic bar delivers essential notifications more seamlessly than ever - from battery status to calls and unlocking.                        </p>
+                        <div className='gap-8 lg:gap-10 pt-5 md:pt-12 flex justify-center md:justify-start items-center w-full'>
+                            {frame5IconsData.map((data) => (
+                                <div key={data.id} className='flex flex-col justify-start items-start md:max-w-[438px]'>
+                                   
+                                    <p
+                                        style={{
+                                            backgroundImage: 'linear-gradient(98.38deg, #08E488 -17.43%, #047E4B 91.28%)',
+                                            mixBlendMode: 'normal',
+                                        }}
+                                        className='text-desktop/h3 lg:text-desktop/h3 text-transparent bg-clip-text pt-2 md:pt-4 w-full'
+                                    >
+
+                                        {data.head}
+                                    </p>
+
+                                    <p className='text-mobile/h7 lg:text-desktop/h6/medium text-[#232323] pt-2 md:pt-4 w-full'>
+                                        {data.title}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <img src="/smartphone/a50/A501080p.gif" alt="f1Img" className='lg:h-[600px] lg:w-[725px] md:h-[400px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] md:mt-5' />
+                    {/* <img src="/smartphone/a50/oct.webp" alt="f1Img" className='lg:w-[606.59px]  md:w-[462px] lg:pr-10 lg:pt-16 pr-7.5 w-[250px] mt-5' /> */}
                 </div>
             </div>
         </div>

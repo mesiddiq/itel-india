@@ -1,15 +1,34 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
+import ReactPlayer from 'react-player'
 
 const DiscoverNextGen = () => {
     return (
-        <div>
-            <div className="content lg:h-[620px] h-[375px] overflow-hidden relative bg-[url('https://res.cloudinary.com/djwj42mic/image/upload/v1730287575/nextgen_mobile_xburr0.gif')] lg:bg-[url('https://res.cloudinary.com/djwj42mic/image/upload/v1729919880/Feature_Phone_docxtv.gif')] p-5 flex items-center lg:pl-[88px]">
-                <div className="flex flex-col lg:gap-6 gap-3 max-w-[400px]">
+        <div className='px-4 md:px-0'>
+            <div className="content lg:h-[620px] h-[375px] overflow-hidden relative lg:bg-none p-5 flex lg:items-center lg:pl-[88px]">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    src="/videos/homepage/nextgen.webm"
+                    className="absolute z-10 left-0 top-0 object-cover h-full rounded-xl overflow-hidden hidden lg:block"
+                />
+                <video src="/videos/homepage/nextgen_mobile.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full absolute left-0 lg:hidden">
+                </video>
+                <div className="flex flex-col lg:gap-6 gap-3 max-w-[400px] z-20 pt-4">
                     <h1 className="lg:text-desktop/h2 text-mobile/h5/medium">Discover the Next-Gen Feature Phones with itel</h1>
                     <p className="lg:text-desktop/body/large text-desktop/body/2/regular text-[#ceccd5]">itel's feature phones blend classic simplicity with modern style.</p>
                 </div>
-                <div className="absolute left-0 bottom-10 hidden lg:block">
+                <div className="z-20 ml-64 hidden lg:block ">
+                    <img src="/static_page/homepage/nextgenmobile.webp" alt="" />
+                </div>
+                <div className="z-20 absolute left-0 bottom-10 lg:flex hidden">
                     <Marquee
                         direction='left'
                         autoFill={true}
@@ -28,8 +47,8 @@ const DiscoverNextGen = () => {
                     </Marquee>
                 </div>
             </div>
-
         </div>
+
     )
 }
 

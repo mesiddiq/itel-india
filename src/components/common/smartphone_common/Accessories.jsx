@@ -58,7 +58,7 @@ const Accessories = ({ theme = 'light' }) => {
 
                 <button className="flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
                   <span className="flex overflow-hidden gap-2 items-center">
-                    <span>Buy Now</span>
+                    <span className={` ${isLightTheme ? ' text-black' : ' text-white'}`}>Buy Now</span>
                     <img loading="lazy" src="/smartphone/P555g/arrow-right.png" alt="" className="object-contain w-6" />
                   </span>
                 </button>

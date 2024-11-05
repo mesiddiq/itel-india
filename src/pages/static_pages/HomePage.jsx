@@ -11,26 +11,49 @@ import StayPlugged from '../../components/core/static_pages_core/Homepage/StayPl
 import Transform from '../../components/core/static_pages_core/Homepage/Transform'
 import TvFrame from '../../components/core/static_pages_core/Homepage/TvFrame'
 import Video from '../../components/core/static_pages_core/Homepage/Video'
+import { Helmet } from 'react-helmet'
+import ReactPlayer from 'react-player'
 
 const HomePage = () => {
     return (
         <div className='bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] overflow-x-hidden font-markot'>
+            <Helmet>
+                <title>itel India | Best Smartphones, Televisions, Home Appliances and Gadgets | Affordable Prices</title>
+                <meta name="description" content="itel India is a leading and popular electronics brand for latest smartphones, televisions, home appliances and gadgets. We offer affordable prices for premium quality products." />
+                <meta name="keywords" content="itel ka phone, itel, itel new model, itel cellphone, itel new mobile, itel mobile price, itel phone, itel phone price,itel new model price,itel cell phone" />
+            </Helmet>
             <HeroSection />
             <EnjoyBetterLife />
             <HotPicks />
             <Video />
             <DareToDoIt />
+            <StayPlugged />
             <TvFrame />
             <Transform />
             <DiscoverNextGen />
-            <StayPlugged />
             <Product />
             <CountOnItel />
             <OurCoolGadgets />
             <OurSmartAppliances />
             <div className="px-4 md:px-0">
-                <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729919905/EnjoybetterLife_bpnvdv.gif" alt="" className='hidden md:block' />
-                <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920395/d2d_qcs7zp.gif" alt="" className='md:hidden rounded-[16px] overflow-hidden mx-auto lg:rounded-none' />
+                <ReactPlayer
+                    url={['/videos/homepage/enjoybetterlife.webm']}
+                    width={"100%"}
+                    height={"100%"}
+                    playing
+                    loop
+                    muted
+                    className='hidden md:block z-20'
+                />
+                <ReactPlayer
+                    url={['/videos/homepage/enjoybetterlife_mobile.mp4']}
+                    width={"100%"}
+                    height={"100%"}
+                    playing
+                    loop
+                    muted
+                    className='md:hidden rounded-[16px] overflow-hidden mx-auto lg:rounded-none'
+                />
             </div>
         </div>
     )

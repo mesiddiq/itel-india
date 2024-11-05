@@ -67,16 +67,16 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: white;
-  color: white;
+  background-color: white !important;
+  color: white !important;
   opacity: 100;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #ff0037;
-  width: 56px;
-  border-radius: 10px;
-  transition: width 0.1s linear;
+  background-color: #ff0037 !important;
+  width: 56px !important;
+  border-radius: 10px !important;
+  transition: width 0.1s linear !important;
 }
 
 .inputIcon {
