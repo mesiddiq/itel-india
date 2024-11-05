@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 
 const DropDownComponent = ({data, setCurrentPhone}) => {
     const [isOpen, setIsOpen] = useState(false)
-    const [selectedOption, setSelectedOption] = useState('itel P55')
+    const [selectedOption, setSelectedOption] = useState('Select')
     const dropdownRef = useRef(null)
 
     const options = data.map(phone => phone.title)

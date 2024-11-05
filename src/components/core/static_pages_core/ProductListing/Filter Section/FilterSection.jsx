@@ -150,7 +150,7 @@ const FilterSection = () => {
                                         onChange={(checked) => {
                                             handleFilterChange(filter.filterName, option.value, checked)
                                         }}
-                                        className="h-5 w-5 rounded-sm border-gray-400 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
+                                        className="h-5 w-5 rounded-sm border-gray-400 data-[state=checked]:bg-primary data-[state=checked]:border-primary "
                                     />
                                     <label
                                         htmlFor={option.id}
