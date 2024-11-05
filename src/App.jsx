@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react';
+import Footer from './components/common/footer'
 const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
 const FeaturePhoneProductPage = lazy(() => import('./pages/product/FeaturePhoneProductPage'));
 const Loading = lazy(() => import('./pages/static_pages/Loading'));
@@ -19,7 +20,7 @@ const STwentyFour = lazy(() => import('./pages/s_series/STwentyFour'));
 const PFiftyFive = lazy(() => import('./pages/p_series/PFiftyFive'));
 const S_Series_Parent = lazy(() => import('./pages/s_series/S_Series_Parent'));
 const Investor = lazy(() => import('./pages/static_pages/Investor'));
-const Footer = lazy(() => import('./components/common/Footer'));
+// const Footer = lazy(() => import('./components/common/Footer'));
 const Support = lazy(() => import('./pages/static_pages/Support'));
 const ScreenReplacement = lazy(() => import('./pages/static_pages/ScreenReplacement'));
 const Promise100 = lazy(() => import('./pages/static_pages/Promise100'));

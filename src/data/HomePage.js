@@ -73,7 +73,7 @@ export const HotPicksData = [
                 path: '/product/a05-i',
                 descriptoin: '6.6" HD+ Waterdrop Display | 4000 mAh Battery with Type-C Charging| 32GB ROM',
                 image: "/smartphone/A05i/ProductGallery/6.webp",
-                name: "AURO 05 i",
+                name: "AURA 05 i",
                 price: "4,799",
             },
             {

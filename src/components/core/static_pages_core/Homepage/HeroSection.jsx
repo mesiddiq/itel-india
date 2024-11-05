@@ -58,7 +58,7 @@ const Banner1 = ({ activeSlide }) => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, delay: 0.2 }}
                             >
-                                <img src="/static_page/buynowlight.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28' />
+                                <img src="/static_page/buynowlight.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
                             </motion.button>
                         </Link>
                     </div>

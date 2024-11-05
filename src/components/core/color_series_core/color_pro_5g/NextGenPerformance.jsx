@@ -58,7 +58,7 @@ const NextGenPerformance = () => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: .5, delay: 3.5 }}
+              transition={{ duration: .5, delay: 2.5 }}
               className='flex justify-center items-center'>
               <img src='/smartphone/color-pro-5g/NextGenPerformance/mediatek.png'  className='w-[75px] md:w-[150px] pr-2 md:pr-5' />
               <h6 className='text-[16px] md:text-[23px] font-[500] md:font-[400] text-[#FFFFFF] font-markot'><span className='md:font-[700]'>Dimensity</span> 6080 Octa Core</h6>
@@ -66,12 +66,12 @@ const NextGenPerformance = () => {
             <motion.h2 
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: .5, delay: 3 }}
+              transition={{ duration: .5, delay: 2 }}
               className='text-mobile/h4 md:text-[60px] text-[#FFFFFF] md:leading-[72px] font-markot py-4'>Next-Gen Performance</motion.h2>
             <motion.p 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: .5, delay: 3.5 }}
+              transition={{ duration: .5, delay: 2.5 }}
               className='text-[12px] md:text-[20px] text-[#FFFFFF] leading-[18px] md:leading-[32px] font-markot'>Obliterates Lag | Blazing-fast Speed | Better Image Processing</motion.p>
           </div>
         )}

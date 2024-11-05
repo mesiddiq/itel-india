@@ -80,6 +80,14 @@ const NavbarMobile = () => {
         setAccessoriesActive(false)
     }
 
+    function toggleNavActive(){
+        setIsNavActive(false)
+        setSmartphoneActive(false)
+        setAccessoriesActive(false)
+        setSupportActive(false)
+        setSmartTvActive(false)
+    }
+
     useEffect(() => {
         if (isNavActive) {
             document.body.style.overflow = 'hidden';
@@ -124,8 +132,8 @@ const NavbarMobile = () => {
                     <div className="pl-6 flex flex-col gap-5 text-white">
                         {
                             PhoneData.map(({ id, title }) => (
-                                <Link to={'/Smartphone'} key={id}>
-                                    <div className="flex items-center gap-2">
+                                <Link to={'/products'} key={id}>
+                                    <div className="flex items-center gap-2" onClick={toggleNavActive}>
                                         <span className="text-desktop/button uppercase">{id}</span>
                                         <ArrowRight />
                                     </div>
@@ -136,10 +144,11 @@ const NavbarMobile = () => {
                 }
 
                 {/* ***************************Feature Phone********************** */}
-
-                <button className="flex items-center gap-0.5">
-                    <span className="text-desktop/body/2/regular text-white">Feature Phones</span>
-                </button>
+                <Link to={'/featurephones'}>
+                    <button className="flex items-center gap-0.5" onClick={toggleNavActive}>
+                        <span className="text-desktop/body/2/regular text-white">Feature Phones</span>
+                    </button>
+                </Link>
 
                 {/* ***************************TV Dropdown********************** */}
 
@@ -153,8 +162,8 @@ const NavbarMobile = () => {
                     <div className="pl-6 flex flex-col gap-5 text-white">
                         {
                             TvData.map(({ id, title }) => (
-                                <Link to={'/Smartphone'} key={id}>
-                                    <div className="flex items-center gap-2">
+                                <Link to={'/coming-soon'} key={id}>
+                                    <div className="flex items-center gap-2" onClick={toggleNavActive}>
                                         <span className="text-desktop/button uppercase">{id}</span>
                                         <ArrowRight />
                                     </div>
@@ -176,7 +185,7 @@ const NavbarMobile = () => {
                     <div className="pl-6 flex flex-col gap-5 text-white">
                         {
                             AccessoriesData.map(({ id, title }) => (
-                                <Link to={'/Smartphone'} key={id}>
+                                <Link to={'/coming-soon'} key={id} onClick={toggleNavActive}>
                                     <div className="flex items-center gap-2">
                                         <span className="text-desktop/button uppercase">{id}</span>
                                         <ArrowRight />
@@ -188,22 +197,26 @@ const NavbarMobile = () => {
                 }
 
                 {/* ***************************Home Care********************** */}
-
-                <button className="flex items-center gap-0.5">
-                    <span className="text-desktop/body/2/regular text-white">Home Care</span>
-                </button>
+                <Link to={'/coming-soon'}>
+                    <button className="flex items-center gap-0.5" onClick={toggleNavActive}>
+                        <span className="text-desktop/body/2/regular text-white">Home Care</span>
+                    </button>
+                </Link>
 
                 {/* ***************************Personal Care********************** */}
 
-                <button className="flex items-center gap-0.5">
-                    <span className="text-desktop/body/2/regular text-white">Personal Care</span>
-                </button>
+                <Link to={'/coming-soon'}>
+                    <button className="flex items-center gap-0.5" onClick={toggleNavActive}>
+                        <span className="text-desktop/body/2/regular text-white">Personal Care</span>
+                    </button>
+                </Link>
 
                 {/* ***************************About Us********************** */}
-
-                <button className="flex items-center gap-0.5">
-                    <span className="text-desktop/body/2/regular text-white">About Us</span>
-                </button>
+                <Link to={'/about-us-itel-mobile-india'}>
+                    <button className="flex items-center gap-0.5" onClick={toggleNavActive}>
+                        <span className="text-desktop/body/2/regular text-white">About Us</span>
+                    </button>
+                </Link>
 
                 {/* ***************************Support Dropdown********************** */}
 
@@ -216,9 +229,9 @@ const NavbarMobile = () => {
                     supportActive &&
                     <div className="pl-6 flex flex-col gap-5 text-white">
                         {
-                            SupportData.map(({ id, label }) => (
-                                <Link to={'/Smartphone'} key={id}>
-                                    <div className="flex items-center gap-2">
+                            SupportData.map(({ id, label,path }) => (
+                                <Link to={path} key={id}>
+                                    <div className="flex items-center gap-2" onClick={toggleNavActive}>
                                         <span className="text-desktop/button uppercase">{label}</span>
                                     </div>
                                 </Link>
