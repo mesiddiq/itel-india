@@ -5,11 +5,11 @@ export const FullSpecificationsData = [
     data: [
       {
         label: 'Model',
-        value: 'S23+',
+        value: 'P55T',
       },
       {
         label: 'Colors',
-        value: 'Elemental Blue & Lake Cyan',
+        value: 'Astral Black, Astral Gold',
       }
     ]
   },
@@ -19,19 +19,19 @@ export const FullSpecificationsData = [
     data: [
       {
         label: 'Display Size',
-        value: '6.78" FHD+ AMOLED Curved Screen',
+        value: '6.56" HD+ IPS Display',
       },
       {
         label: 'Resolution',
-        value: '1080*2400 Pixels',
+        value: '1612x720 Pixels',
       },
       {
         label: 'Resolution Type',
-        value: 'AMOLED',
+        value: 'HD + IPS',
       },
       {
         label: 'Dimension',
-        value: '164.4 x 75.1 x 7.9mm',
+        value: '164.4 * 76* 9.2 mm',
       },
       {
         label: 'Technology',
@@ -39,15 +39,15 @@ export const FullSpecificationsData = [
       },
       {
         label: 'Refresh Rate',
-        value: '60Hz',
+        value: '90Hz',
       },
       {
         label: 'Touch Sampling Rate',
-        value: '240 Hz',
+        value: '180 Hz',
       },
       {
         label: 'Pixel Density',
-        value: '388 PPI',
+        value: '267 PPI',
       },
     ]
   },
@@ -57,11 +57,11 @@ export const FullSpecificationsData = [
     data: [
       {
         label: 'Operating System',
-        value: 'Android 13',
+        value: 'Android 14 Go',
       },
       {
         label: 'Chipset',
-        value: 'Unisoc Tiger T616',
+        value: 'Unisoc T606(12nm)',
       },
       {
         label: 'Processor Core',
@@ -83,7 +83,7 @@ export const FullSpecificationsData = [
       },
       {
         label: 'Front Camera',
-        value: '32MP',
+        value: '8MP',
       },
       {
         label: 'Front Flash',
@@ -97,7 +97,7 @@ export const FullSpecificationsData = [
     data: [
       {
         label: 'Battery Capacity',
-        value: '5000mAh',
+        value: '6000mAh',
       },
       {
         label: 'Battery Type',
@@ -113,15 +113,15 @@ export const FullSpecificationsData = [
       },
       {
         label: 'Standby',
-        value: '32 Days',
+        value: '45 Days',
       },
       {
         label: 'Talktime',
-        value: '7.5 Hours',
+        value: '30 Hours',
       },
       {
         label: 'Media Playback Time',
-        value: '112 Hours',
+        value: '155 Hours',
       },
     ]
   },
@@ -131,15 +131,15 @@ export const FullSpecificationsData = [
     data: [
       {
         label: 'RAM',
-        value: '8GB+8GB*',
+        value: '8GB*(4GB+8GB*)',
       },
       {
         label: 'ROM',
-        value: '256GB',
+        value: '128GB',
       },
       {
         label: 'User Memory',
-        value: '238GB',
+        value: '113GB',
       },
       {
         label: 'Expandable',
@@ -157,7 +157,7 @@ export const FullSpecificationsData = [
       },
       {
         label: 'GSM',
-        value: '2G:B3/B5/B8',
+        value: '2G:B3,5,8',
       },
       {
         label: 'EDGE',
@@ -181,7 +181,7 @@ export const FullSpecificationsData = [
       },
       {
         label: 'Bluetooth Support',
-        value: 'Yes',
+        value: '5.0',
       },
       {
         label: 'Wi-Fi',
@@ -203,19 +203,20 @@ export const FullSpecificationsData = [
     data: [
       {
         label: 'Earphone Jack',
-        value: 'Type-C interface',
+        value: '3.5mm',
       },
-      {
-        label: 'Thickness',
-        value: '7.9mm',
-      },
+  
       {
         label: 'Sensors',
-        value: 'In Display Fingerprint | Face Unlock | G Sensor',
+        value: 'Fingerprint | Face Unlock | G Sensor',
+      },
+      {
+        label: 'Fingerprint',
+        value: 'Side',
       },
       {
         label: 'Accessories',
-        value: '18W Adapter | USB Cable | Protective Cover | Screen Film Protection',
+        value: 'Handset, Charger, USB Cable, Sim Ejector Tool, User Guide',
       },
     ]
   }

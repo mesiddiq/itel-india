@@ -33,7 +33,7 @@ const PFiftyFiveT = () => {
           price="7,999"
           tagText="power series"
         />
-        <StickyHeader bgColor={'#eecf7f'} textColor={true} title={'P55T'} />
+        <StickyHeader bgColor={'#eecf7f'} icon={'/smartphone/p55T/headerIcon.svg'} textColor={true} dark title={'P55T'} />
         <Overview />
         <Scroller />
         <LevelUpWithAndroid />

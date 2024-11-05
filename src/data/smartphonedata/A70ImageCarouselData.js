@@ -19,8 +19,9 @@ export const ImageCarouselDataA70 = [
     {
         id: 2,
         color: "white",
-        buttonText: "Starry Black",
-        buttonGradient: "bg-gradient-to-br from-[#ACB1B7] to-[#060708]",
+        buttonText: "Field Green",
+        buttonGradient: "bg-gradient-to-br from-[#97D3BF] to-[#97D3BF]",
+
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgContainer: "",

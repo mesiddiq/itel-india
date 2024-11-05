@@ -62,13 +62,13 @@ const MasonaryCards = () => {
 	      		</div>
 	      		<div className='col-span-1 h-[210px] md:h-[375px] p-5 rounded-[16px] bg-[url("/smartphone/p55T/Backgrounds/MobileGrid4.webp")] md:bg-[url("/smartphone/p55T/Backgrounds/WebGrid4.webp")] bg-cover bg-center bg-no-repeat' data-aos='zoom-up' data-aos-delay='1500'>
 	      			<div className='flex h-full relative text-center'>
-      					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h3 font-markot top-0'>Level Up with Android 14 Go Edition!</h3>
+      					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h5 font-markot top-0'>Level Up with Android 14 Go Edition!</h3>
 	      			</div>
 	      		</div>
 	      		<div className='col-span-1 h-[210px] md:h-[375px] p-5 rounded-[16px] bg-[url("/smartphone/p55T/Backgrounds/MobileGrid5.webp")] md:bg-[url("/smartphone/p55T/Backgrounds/WebGrid5.webp")] bg-cover bg-center bg-no-repeat' data-aos='zoom-up' data-aos-delay='1500'>
 	      			<div className='flex h-full relative text-center'>
-      					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h3 font-markot top-0'>Speed and Space to Spare!</h3>
-      					<p className='w-full absolute text-[#FFFFFF] text-left text-mobile/small/body md:text-desktop/h5/medium font-markot bottom-0 left-0'>UFS 2.2 ROM<br />*Memory Fusion</p>
+      					<h3 className='w-full absolute text-[#FFFFFF] text-[14px] md:text-desktop/h5 font-markot top-0'>Speed and Space to Spare!</h3>
+      					<p className='w-full absolute text-[#FFFFFF] text-left text-mobile/small/body md:text-desktop/h6/medium font-markot bottom-0 left-0'>UFS 2.2 ROM<br />*Memory Fusion</p>
 	      			</div>
 	      		</div>
 	      	</div>

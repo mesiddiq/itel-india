@@ -3,8 +3,10 @@ export const ImageCarouselDataA23 = [
     {
         id: 1,
         color: "black",
-        buttonText: "Aurora Blue",
-        buttonGradient: "bg-gradient-to-br from-[#4DB7D9] to-[#CAF0FB]",
+        buttonText: "Saphire Black",
+        buttonGradient: "bg-gradient-to-br from-[#384455] to-[#CAF0FB]",
+        // background: #384455;
+
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgURL: '/smartphone/A23s/Backgrounds/a23sBgimg.png',
@@ -19,8 +21,8 @@ export const ImageCarouselDataA23 = [
     {
         id: 2,
         color: "white",
-        buttonText: "Starry Black",
-        buttonGradient: "bg-gradient-to-br from-[#ACB1B7] to-[#060708]",
+        buttonText: "Morandi Green",
+        buttonGradient: "bg-gradient-to-br from-[#B9D9B0] to-[#B9D9B0]",
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgContainer: "",
@@ -36,8 +38,8 @@ export const ImageCarouselDataA23 = [
     {
         id: 3,
         color: "gold",
-        buttonText: "Brilliant Gold",
-        buttonGradient: "bg-gradient-to-br from-[#FFE092] to-[#FFF0CB]",
+        buttonText: "Coastal Gold",
+        buttonGradient: "bg-gradient-to-br from-[#DDD2C2] to-[#DDD2C2]",
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgContainer: "",
