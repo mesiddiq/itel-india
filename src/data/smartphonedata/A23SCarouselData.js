@@ -3,47 +3,52 @@ export const ImageCarouselDataA23 = [
     {
         id: 1,
         color: "black",
-        buttonText: "Aurora Blue",
-        buttonGradient: "bg-gradient-to-br from-[#4DB7D9] to-[#CAF0FB]",
+        buttonText: "Saphire Black",
+        buttonGradient: "bg-gradient-to-br from-[#384455] to-[#CAF0FB]",
+        // background: #384455;
+
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgURL: '/smartphone/A23s/Backgrounds/a23sBgimg.png',
         images: [
-            "/smartphone/P55/mobileBlack1.png",
-            "/smartphone/P55/mobileBlack2.png",
-            "/smartphone/P55/mobileBlack3.png",
+            "/smartphone/A23s/ProductGallery/blue1.webp",
+            "/smartphone/A23s/ProductGallery/blue2.webp",
+            "/smartphone/A23s/ProductGallery/blue3.webp",
+            "/smartphone/A23s/ProductGallery/blue4.webp",
+           
         ],
     },
     {
         id: 2,
         color: "white",
-        buttonText: "Starry Black",
-        buttonGradient: "bg-gradient-to-br from-[#ACB1B7] to-[#060708]",
+        buttonText: "Morandi Green",
+        buttonGradient: "bg-gradient-to-br from-[#B9D9B0] to-[#B9D9B0]",
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgContainer: "",
         bgURL: '/smartphone/A23s/Backgrounds/a23sBgimg.png',
         images: [
-            "/smartphone/P55/mobileBlue1.png",
-            "/smartphone/P55/mobileBlue2.png",
-            "/smartphone/P55/mobileBlue3.png",
-            "/smartphone/P55/mobileBlue4.png",
-            "/smartphone/P55/mobileBlue5.png",
+            "/smartphone/A23s/ProductGallery/green1.webp",
+            "/smartphone/A23s/ProductGallery/green2.webp",
+            "/smartphone/A23s/ProductGallery/green3.webp",
+            "/smartphone/A23s/ProductGallery/green4.webp",
+
         ]
     },
     {
         id: 3,
         color: "gold",
-        buttonText: "Brilliant Gold",
-        buttonGradient: "bg-gradient-to-br from-[#FFE092] to-[#FFF0CB]",
+        buttonText: "Coastal Gold",
+        buttonGradient: "bg-gradient-to-br from-[#DDD2C2] to-[#DDD2C2]",
         colorSelectorBGColor: "bg-white",
         colorSelectorTextColor: "text-black",
         bgContainer: "",
         bgURL: '/smartphone/A23s/Backgrounds/a23sBgimg.png',
         images: [
-            "/smartphone/P55/mobileGold1.png",
-            "/smartphone/P55/mobileGold2.png",
-            "/smartphone/P55/mobileGold3.png",
+            "/smartphone/A23s/ProductGallery/pink1.webp",
+            "/smartphone/A23s/ProductGallery/pink2.webp",
+            "/smartphone/A23s/ProductGallery/pink3.webp",
+            "/smartphone/A23s/ProductGallery/pink14.webp",
         ]
     },
 ];

@@ -29,10 +29,11 @@ const ATwentyThreeS = () => {
         gradient1='#000'
         gradient2='#000'
         theme='dark'
+        purchaseLink={'https://amzn.in/d/0jGRm3r'}
       />
 
 
-      <StickyHeader title="A23s" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
+      <StickyHeader title="A23s" purchaseLink={'https://amzn.in/d/0jGRm3r'} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
       <FeatureSectionA23s />
       {/* <ScrollingBannerA23S /> */}
       <SliderAnimationCommon

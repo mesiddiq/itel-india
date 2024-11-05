@@ -25,7 +25,7 @@ const EnjoyBetterLife = () => {
 
   return (
     <div className="w-full">
-      <img src="/static_page/homepage/EnjoyBetterLifeHeader.png" alt="Header" className="w-full" />
+      <img src="/static_page/homepage/EnjoyBetterLifeHeader.png" alt="Header" className="w-full hidden lg:block" />
       <div className="relative content px-4 sm:px-6 lg:px-0">
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 h-auto lg:h-[545px] lg:mt-[-91px]">
           <Link to='/products'>
@@ -126,7 +126,7 @@ const EnjoyBetterLife = () => {
           </div>
         </div>
       </div>
-      <img src="/static_page/homepage/EnjoyBetterLifeFooter.png" alt="Footer" className="w-full -mt-[50px] md:-mt-[75px]" />
+      <img src="/static_page/homepage/EnjoyBetterLifeFooter.png" alt="Footer" className="w-full -mt-[50px] md:-mt-[75px] hidden lg:block" />
     </div>
   );
 };

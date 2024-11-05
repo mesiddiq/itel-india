@@ -3,13 +3,13 @@ const SeeMoreCaptureMore = () => {
     <>
         {/* Laptop */}
         <div className="hidden lg:flex flex-row w-full h-screen lg:min-h-[720px] bg-[#91C9EC] bg-cover lg:bg-contain" style={{ 
-            backgroundImage: 'url(/smartphone/P55/SeeMoreCaptureMore-Laptop.png)', 
+            backgroundImage: 'url(/smartphone/P55/SeeMoreCaptureMore-Laptop.webp)', 
             backgroundPosition: 'right',
             backgroundRepeat: 'no-repeat', 
         }}>
             
             <div className="content">
-                <div className="font-markot w-[40%] py-[80px] h-full flex flex-col justify-between items-start">
+                <div className="w-[40%] py-[80px] h-full flex flex-col justify-between items-start">
 
                     <div className="flex flex-col justify-between gap-[24px] ">
                         <h1 className="text-black/1 text-desktop/h2 max-w-[400px]">See More. Capture More. Experience More. </h1>

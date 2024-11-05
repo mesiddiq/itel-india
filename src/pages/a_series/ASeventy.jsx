@@ -35,8 +35,9 @@ const ASeventy = () => {
         gradient1='#000'
         gradient2='#000'
         theme='dark'
+        purchaseLink={'https://www.amazon.in/dp/B0CQ7MKZ1F?ie=UTF8&ref_=itel_A70_Launch_Web'}
       />
-      <StickyHeader title="A70" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
+      <StickyHeader title="A70" purchaseLink={'https://www.amazon.in/dp/B0CQ7MKZ1F?ie=UTF8&ref_=itel_A70_Launch_Web'} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
       <FeatureSection70 />
       {/* <ScrollingBannerA70 /> */}
       <SliderAnimationCommon

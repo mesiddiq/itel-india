@@ -6,7 +6,7 @@ const SnapFlawlessSelfie = () => {
     <div className='flex relative w-full h-[468px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/smartphone/S23+/Backgrounds/SnapFlawlessSelfieBg.webp")] bg-cover bg-center overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='content'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-          <div className='col-span-1 text-center md:text-left'>
+          <div className='col-span-1 text-center md:text-left lg:h-[620px] lg:flex lg:flex-col lg:justify-center'>
             <h1 className='bg-gradient-to-br from-[#CA86FF] to-[#85E2FD] inline-block text-transparent bg-clip-text text-mobile/h4 md:text-desktop/h2 font-markot mb-[20px]'>Snap Your Flawless Selfie</h1>
             <p className='text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large font-markot mb-[20px] md:mb-[80px]' data-aos="fade-down">Capture flawless selfies with advanced features like Ultra HD resolution, Beauty mode, and Wide Selfie for expansive group shots.</p>
 

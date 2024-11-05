@@ -16,14 +16,14 @@ export default function A50() {
         bgDesktop="/smartphone/smartphonehero/a50.webp"
         bgMobile="/smartphone/smartphonehero/a50_mobile.webp"
         theme="dark"
-        purchaseLink=""
+        purchaseLink="https://www.amazon.in/Display-Dynamic-Octacore-Processor-Battery/dp/B0DBR1CMQ2"
         description={`6.6" HD+ Display with Dynamic Bar | 12GB*(4GB+8GB*) RAM + 64GB ROM | 8MP AI Rear Camera`}
         gradient1="#181818"
         gradient2="#181818"
         price="6,499"
         tagText="awesome series"
       />
-      <StickyHeader bgColor="#fff" title="A50" icon="/smartphone/a05/logos/a05StickyIcon.png" />
+      <StickyHeader bgColor="#fff" title="A50" icon="/smartphone/a05/logos/a05StickyIcon.png" purchaseLink={'https://www.amazon.in/Display-Dynamic-Octacore-Processor-Battery/dp/B0DBR1CMQ2'}/>
       {/* <FeatureRich {...a50FeatureRichData} /> */}
       <FeatureSectionA50 />
 

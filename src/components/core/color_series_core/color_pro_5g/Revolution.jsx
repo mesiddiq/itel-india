@@ -8,7 +8,7 @@ const Revolution = () => {
       title: 'Better Experience',
     },
     {
-      videoSrc: '/smartphone/color-pro-5g/Revolution/HighSpeed.mp4',
+      videoSrc: '/smartphone/color-pro-5g/Revolution/HighSpeed.webm',
       title: 'High Speed',
     },
     {
@@ -28,7 +28,7 @@ const Revolution = () => {
   return (
     <div className='flex text-center w-full h-[490px] md:h-[1200px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/Revolution/bgMobile.png")] md:bg-[url("/smartphone/color-pro-5g/Revolution/bg.png")] bg-cover bg-center bg-no-repeat overflow-hidden'>
       <div className='content relative'>
-        <h2 className='flex justify-center w-full absolute bottom-0 bg-gradient-to-br from-[#BA69F6] to-[#2768C2] inline-block text-transparent bg-clip-text text-[40px] md:text-[130px] font-[700] font-markot z-[3]'>
+        <h2 className='flex justify-center w-full absolute bottom-0 bg-gradient-to-br from-[#BA69F6] to-[#2768C2]  text-transparent bg-clip-text text-[40px] md:text-[110px] font-[700] font-markot z-[3]'>
           {content[currentIndex].title}
         </h2>
         <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot pb-4'>

@@ -100,7 +100,7 @@ export default function Frames() {
                             <motion.img
                                 src="/smartphone/a50/img4.webp"
                                 alt="f1Img2"
-                                className="absolute top-[6rem] left-[-6rem] w-[200px] md:left-[-9rem] md:top-[13rem] md:w-[400px] lg:top-[24rem] lg:left-[-17rem] lg:w-[800px]"
+                                className="absolute top-[6rem] left-[-6rem] w-[200px] md:left-[-9rem] md:top-[13rem] md:w-[400px] lg:top-[25rem] lg:left-[-20rem] lg:w-[800px]"
                                 initial={{ x: -200, opacity: 0 }}
                                 animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ x: -200, opacity: 0 }} // Fade out effect when exiting

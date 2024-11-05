@@ -24,7 +24,7 @@ const A50C = () => {
 				bgDesktop="/smartphone/smartphonehero/a50c.webp"
 				bgMobile="/smartphone/smartphonehero/a50c_mobile.webp"
 				theme="dark"
-				purchaseLink=""
+				purchaseLink="https://www.flipkart.com/itel-a50c-misty-aqua-32-gb/p/itm2032e2f53466f?pid=MOBH4HFHPP9FMYZS&lid=LSTMOBH4HFHPP9FMYZS7IQNAK&marketplace=FLIPKART&cmpid=content_mobile_8965229628_gmc"
 				description={`6.6" HD+ Display with Dynamic Bar | 4GB*(2GB+2GB*) RAM + 32GB ROM | 8MP AI Rear Camera `}
 				gradient1="#181818"
 				gradient2="#181818"
@@ -32,7 +32,7 @@ const A50C = () => {
 				tagText="awesome series"
 			/>
 
-			<StickyHeader title="A50C" purchaseLink="" icon="/smartphone/A50C/A50CLogo.svg" bgColor="white" dark={true} borderBottom={true} />
+			<StickyHeader title="A50C" purchaseLink="https://www.flipkart.com/itel-a50c-misty-aqua-32-gb/p/itm2032e2f53466f?pid=MOBH4HFHPP9FMYZS&lid=LSTMOBH4HFHPP9FMYZS7IQNAK&marketplace=FLIPKART&cmpid=content_mobile_8965229628_gmc" icon="/smartphone/A50C/A50CLogo.svg" bgColor="white" dark={true} borderBottom={true} />
 
 			<FeatureSectionA50C />
 

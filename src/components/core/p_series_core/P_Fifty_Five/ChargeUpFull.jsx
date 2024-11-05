@@ -26,7 +26,7 @@ const ChargeUpFull = () => {
                     </div>
 
                     <h1 className="text-desktop/body/1">
-                        Battery Lab: Power Boost | Ultra Power Saving | Battery Optimization
+                        Battery : Power Boost | Ultra Power Saving | Battery Optimization
                     </h1>
                 </div>
             </div>

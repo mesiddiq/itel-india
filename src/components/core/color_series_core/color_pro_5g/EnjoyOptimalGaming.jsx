@@ -16,7 +16,7 @@ const EnjoyOptimalGaming = () => {
                   <h4 className='text-mobile/h5 md:text-desktop/h4 text-[#FFFFFF] font-markot pt-0'>6nm</h4>
                 </div>
                 <div className='col-span-1 pt-5 md:pt-10'>
-                	<img src='/smartphone/color-pro-5g/EnjoyOptimalGaming/folder.png' className='w-[32px] md:w-[40px]' />
+                  <img src='/smartphone/color-pro-5g/EnjoyOptimalGaming/folder.png' className='w-[32px] md:w-[40px]' />
                   <h6 className='text-mobile/desktop/caption md:text-desktop/h6/medium text-[#FFFFFF] font-markot pt-5 pb-3'>Storage Type</h6>
                   <h4 className='text-mobile/h5 md:text-desktop/h4 text-[#FFFFFF] font-markot pt-0'>UMCP</h4>
                 </div>
@@ -28,6 +28,10 @@ const EnjoyOptimalGaming = () => {
               </div>
               <h2 className='text-mobile/h1 md:text-desktop/h1 text-[#FFFFFF] font-markot md:w-[90%] pt-5 md:pt-20 pb-0'>4,20,000*</h2>
               <h6 className='text-mobile/body/2/regular md:text-desktop/h6/medium text-[#FFFFFF] font-markot md:w-[90%]'>AnTutu Score</h6>
+
+              <div className='relative left-[75rem] top-[3rem]'>
+                *Under Lab Testing
+              </div>
             </div>
           </div>
         </div>
