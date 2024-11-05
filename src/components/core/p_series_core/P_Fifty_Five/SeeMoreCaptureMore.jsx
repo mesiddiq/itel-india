@@ -3,7 +3,7 @@ const SeeMoreCaptureMore = () => {
     <>
         {/* Laptop */}
         <div className="hidden lg:flex flex-row w-full h-screen lg:min-h-[720px] bg-[#91C9EC] bg-cover lg:bg-contain" style={{ 
-            backgroundImage: 'url(/smartphone/P55/SeeMoreCaptureMore-Laptop.png)', 
+            backgroundImage: 'url(/smartphone/P55/SeeMoreCaptureMore-Laptop.webp)', 
             backgroundPosition: 'right',
             backgroundRepeat: 'no-repeat', 
         }}>
