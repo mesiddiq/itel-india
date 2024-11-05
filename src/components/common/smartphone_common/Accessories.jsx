@@ -3,25 +3,25 @@ const Accessories = () => {
   
   const accessoriesData = [
     {
-      imageSrc: '/SmartPhone/P555g/bg2.png',
+      imageSrc: '/smartphone/P555g/bg2.png',
       title: 'Earbuds T1Pro',
       price: '₹849.00',
       url:'',
     },
     {
-      imageSrc: '/SmartPhone/P555g/bg3.png',
+      imageSrc: '/smartphone/P555g/bg3.png',
       title: 'Icon 2',
       price: '₹1,099.00',
       url:'',
     },
     {
-      imageSrc: '/SmartPhone/P555g/bg4.png',
+      imageSrc: '/smartphone/P555g/bg4.png',
       title: 'N82',
       price: '₹999.00',
       url:'',
     },
     {
-      imageSrc: '/SmartPhone/P555g/bg5.png',
+      imageSrc: '/smartphone/P555g/bg5.png',
       title: 'Smartwatch 2 Ultra',
       price: '₹2,099.00',
       url:'',
@@ -59,7 +59,7 @@ const Accessories = () => {
 <button className="flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
                     <span className="flex overflow-hidden gap-2 items-center">
                       <span>Buy Now</span>
-                      <img loading="lazy" src="/SmartPhone/P555g/arrow-right.png" alt="" className="object-contain w-6" />
+                      <img loading="lazy" src="/smartphone/P555g/arrow-right.png" alt="" className="object-contain w-6" />
                     </span>
                   </button>
   </div></div>

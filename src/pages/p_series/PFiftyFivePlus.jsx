@@ -1,5 +1,6 @@
 
 import React from 'react'
+import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
 import Pvideo from '../../components/core/p_series_core/P_Fifty_Five_Plus.jsx/PVideo';
 import MemoryFusion from '../../components/core/p_series_core/P_Fifty_Five_Plus.jsx/MemoryFusion';
@@ -13,18 +14,23 @@ import BatteryLab from '../../components/core/p_series_core/P_Fifty_Five_Plus.js
 import FullSpecifications from "../../components/common/FullSpecifications"
 import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
 import { FullSpecificationsP55 } from '../../data/smartphonedata/P55PLUSData'
+import { ImageCarouselData } from '../../data/smartphonedata/P55PLUSImageCarouselData';
+import StickyHeader from '../../components/common/StickyHeader';
+import Grayframe from '../../components/core/p_series_core/P_Fifty_Five_5g/Grayframe'
 const PFiftyFivePlus = () => {
   return (
     <>
     <HeroSmartPhoneCommon
-                bgDesktop={'/SmartPhone/P55+/Backgrounds/HeroBG.webp'}
-                bgMobile={'/SmartPhone/P55+/Backgrounds/HeroBGMobile.webp'}
-                description={'45W super Charging | 16GB* (8GB+8GB*) RAM & 256GB ROM | 50MP AI Camera '}
-                headingText={'P55+'}
-                price={'9,499'}
-                tagText={'power series'}
-            
+                bgDesktop='/smartphone/smartphonehero/p55p.webp'
+                bgMobile='/smartphone/smartphonehero/p55p_mobile.webp'
+                description='45W super Charging | 16GB* (8GB+8GB*) RAM & 256GB ROM | 50MP AI Camera '
+                headingText='P55+'
+                price='9,499'
+                tagText='power series'
+             gradient1="#FFFFFF"
+          gradient2="#FFFFFF"
             />
+               <StickyHeader bgColor={'#AEC68F'} textColor={true} title={'P55+'} />
     <About/>
     <SliderAnimationCommon
                 bgColor={'#181818'}
@@ -42,9 +48,10 @@ const PFiftyFivePlus = () => {
                 text1={'power series'}
                 text2={'Intensively powerful'}
                 textGradient1={'#AEC68F'}
-                textGradient2={'#ffe8cb'}
+                textGradient2={'#AEC68F'}
             />
    <Pvideo/>
+   <Grayframe/>
    <SuperCharge/>
    
     <BatteryLab/>
@@ -55,6 +62,11 @@ const PFiftyFivePlus = () => {
     <CoreProcessor/>
   
     <Grid />
+    <div className="lg:px-0 py-[48px] lg:py-[120px] bg-[#131C0E]">
+          <div className="lg:content  overflow-hidden">
+            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={true} />
+          </div>
+        </div>
     <FullSpecifications FullSpecificationsData={FullSpecificationsP55} mode="dark"/>
     
     </>

@@ -6,13 +6,14 @@ import SimilarProducts from '../../components/common/smartphone_common/SimilarPr
 import SupportChannels from '../../components/common/smartphone_common/SupportChannels'
 import Accessories from '../../components/common/smartphone_common/Accessories'
 import Model from '../../components/common/smartphone_common/Model'
-
+import NearestStore from '../../components/core/p_series_core/P_Fifty_Five_5g/NearestStore'
 const P_Series_Parent = () => {
     return (
         <div className='bg-[#111111]'>
             <Outlet />
             <Accessories />
             <Model />
+            <NearestStore/>
             <SimilarProducts />
             <SupportChannels />
             <OtherCoolGears />
