@@ -29,8 +29,9 @@ const PFiftyFivePlus = () => {
                 tagText='power series'
              gradient1="#FFFFFF"
           gradient2="#FFFFFF"
+          purchaseLink="https://www.amazon.in/dp/B0CSKJZH44?ie=UTF8&ref_=itel_P55Plus_PDP_WS"
             />
-               <StickyHeader bgColor={'#AEC68F'} textColor={true} title={'P55+'} />
+               <StickyHeader bgColor={'#AEC68F'} title={'P55+'} dark purchaseLink="https://www.amazon.in/dp/B0CSKJZH44?ie=UTF8&ref_=itel_P55Plus_PDP_WS"/>
     <About/>
     <SliderAnimationCommon
                 bgColor={'#181818'}

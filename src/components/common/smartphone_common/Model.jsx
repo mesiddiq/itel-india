@@ -53,9 +53,9 @@ const Model = () => {
     <div className="py-[60px] h-auto flex justify-center">
       <div className="w-full content flex flex-col gap-[36px] px-4">
         <div className="flex justify-between items-center">
-          <h3 className="text-white text-mobile/h5/medium md:text-desktop/h3">Compare Models</h3>
+          <h3 className="text-white text-mobile/h5/medium md:text-desktop/h3 flex"> Compare <span className='hidden md:block pl-1'> Models</span></h3>
           <div className="flex gap-[8px] mt-4 md:mt-0">
-            <img src="/smartphone/P_Series/red_model.png" className="h-[24px] w-[25px]" alt="Model" />
+            <img src="/smartphone/P55fiveg/Backgrounds/red_icon.png" className="h-[24px] w-[25px]" alt="Model" />
             <h2 className="text-white md:text-desktop/tertiary/cta">Compare other models</h2>
           </div>
         </div>

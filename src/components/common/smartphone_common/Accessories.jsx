@@ -48,8 +48,8 @@ const Accessories = () => {
                   className="w-full h-auto max-w-[150px] md:max-w-[220px] object-contain"
                 />
               </div>
-              <div className="flex flex-col gap-[24px]">
-              <div className="flex flex-col gap-[12px]">
+              <div className="flex flex-col gap-[12px] md:gap-[24px]">
+              <div className="flex flex-col gap-[6px] md:gap-[12px]">
               <h4 className="text-mobile/h6 md:text-desktop/h4 mt-4 font-markot">
                 {accessory.title}
               </h4>

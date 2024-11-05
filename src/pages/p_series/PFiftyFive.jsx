@@ -1,11 +1,13 @@
 import 'aos/dist/aos.css';
 import React from 'react';
+import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
 import FullSpecifications from "../../components/common/FullSpecifications";
 import AutomaticCarousel from '../../components/core/p_series_core/P_Fifty_Five/AutomaticCarousel';
 import ChargeUpFull from '../../components/core/p_series_core/P_Fifty_Five/ChargeUpFull';
 import ClearVision from '../../components/core/p_series_core/P_Fifty_Five/ClearVision';
 import FillerFrame from '../../components/core/p_series_core/P_Fifty_Five/FillerFrame';
 import Frame24GB from '../../components/core/p_series_core/P_Fifty_Five/Frame24GB';
+import StickyHeader from '../../components/common/StickyHeader';
 import GamingRevolution from '../../components/core/p_series_core/P_Fifty_Five/GamingRevolution';
 import MultipleCardComponents from '../../components/core/p_series_core/P_Fifty_Five/MultipleCardComponents';
 import SeeMoreCaptureMore from '../../components/core/p_series_core/P_Fifty_Five/SeeMoreCaptureMore';
@@ -19,8 +21,20 @@ const PFiftyFive = () => {
     return (
         <>
 
-            {/* <VideoAsset /> */}
-
+           
+            <HeroSmartPhoneCommon
+       headingText='P55'
+        bgDesktop='/smartphone/smartphonehero/p55.webp'
+        bgMobile='/smartphone/smartphonehero/p55_mobile.webp'
+        description='24GB* (8GB + 16GB*) RAM + 128GB ROM | 50MP AI Dual Rear Camera | T606 Octacore Processor'
+       gradient1="#FFFFFF"
+          gradient2="#FFFFFF"
+        price={'6,999'}
+        tagText={'power-series'}
+         purchaseLink="https://www.amazon.in/dp/B0CSKKNLTT?ie=UTF8&ref_=itel_P55_PDP_WS&th=1"
+      />
+       <StickyHeader bgColor={'#91C9EC'} title={'P55'} purchaseLink="https://www.amazon.in/dp/B0CSKKNLTT?ie=UTF8&ref_=itel_P55_PDP_WS&th=1" dark/>
+             {/* <VideoAsset /> */}
             <FillerFrame />
 
             <Frame24GB />

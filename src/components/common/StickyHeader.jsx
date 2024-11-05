@@ -18,10 +18,10 @@ const StickyHeader = ({
                 </div>
                 <div className="hidden md:flex gap-8 items-center">
                     <a href="#overview" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Overview</a>
-                    <a href="#specifications" className='text-desktop/body/1'>Specifications</a>
+                    <a href="#specifications" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Specifications</a>
                 </div>
                 <a href={purchaseLink} target='_blank' className={`flex py-3 px-[14px] md:px-6 rounded-[24px] gap-2 ${dark ? 'text-white bg-brand/black' : 'text-black/1 bg-white'}`}>
-                    <p className='text-mobile/button md:text-desktop/button text-black/1 uppercase font-medium'>Buy Now</p>
+                    <p className='text-mobile/button md:text-desktop/button uppercase font-medium'>Buy Now</p>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/twotone/arrow-right">
                             <g id="vuesax/twotone/arrow-right_2">

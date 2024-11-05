@@ -6,7 +6,7 @@ const Example = () => {
     
     return (
         <div className="h-max py-8 lg:h-[701px] flex px-4 lg:px-0 justify-center font-markot items-center w-full bg-cover"
-        style={{ backgroundImage: 'url(/smartphone/P55fiveg/Backgrounds/About.webp)' }}>
+        style={{ backgroundImage: 'url(/smartphone/P55fiveg/Backgrounds/About.webp)' }} id='overview'>
         <div className='content flex flex-col justify-center items-center gap-6 w-full '>
             <div className="flex flex-col lg:flex-row lg:justify-between items-right gap-3 lg:gap-0">
                 <h2  className="gap-[6px] w-full lg:w-1/2 text-mobile/h4 font-markot lg:text-desktop/h2 text-white">

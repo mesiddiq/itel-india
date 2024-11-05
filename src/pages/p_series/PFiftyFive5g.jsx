@@ -35,9 +35,9 @@ const PFiftyFive = () => {
           gradient2="#FFFFFF"
         price={'9,999'}
         tagText={'power-series'}
-         purchaseLink=""
+         purchaseLink="https://www.amazon.in/dp/B0CHJN2HNZ"
       />
-       <StickyHeader bgColor={'#013EA3'} textColor={true} title={'P55 5g'} />
+       <StickyHeader bgColor={'#013EA3'} textColor={true} title={'P55 5g'} purchaseLink="https://www.amazon.in/dp/B0CHJN2HNZ" />
       <About />
       <SliderAnimationCommon
         bgColor={'#000032'}
