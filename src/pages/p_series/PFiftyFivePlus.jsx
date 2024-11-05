@@ -25,6 +25,7 @@ const PFiftyFivePlus = () => {
         tagText={'power series'}
               />
       <About />
+      
       <SliderAnimationCommon
         bgColor={'#181818'}
         svgCode={<svg xmlns="http://www.w3.org/2000/svg" width="39" height="24" viewBox="0 0 39 24" fill="none">

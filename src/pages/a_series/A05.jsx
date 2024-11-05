@@ -19,14 +19,14 @@ export default function A05() {
         bgDesktop="/smartphone/smartphonehero/a05.webp"
         bgMobile="/smartphone/smartphonehero/a05_mobile.webp"
         theme="dark"
-        purchaseLink=""
+        purchaseLink="https://www.flipkart.com/itel-a05s-orange-orange-32-gb/p/itmf0a5403570bdd"
         description={`8GB* (4GB+4GB*) RAM + 64GB ROM | 6.6" HD+ Drop Notch DIsplay | Type-C Charger`}
         gradient1="#181818"
         gradient2="#181818"
         price="6,499"
         tagText="awesome series"
       />
-      <StickyHeader bgColor="#fff" title="A05s" icon="/smartphone/a05/logos/a05StickyIcon.png" />
+      <StickyHeader bgColor="#fff" title="A05s" icon="/smartphone/a05/logos/a05StickyIcon.png" purchaseLink={'https://www.flipkart.com/itel-a05s-orange-orange-32-gb/p/itmf0a5403570bdd'}/>
       <FeatureRich {...a05FeatureRichData} />
       <A05Video />
       <img src="/smartphone/a05/moblePatterns.png" alt="mobilePatterns" className="flex lg:hidden w-full" />
