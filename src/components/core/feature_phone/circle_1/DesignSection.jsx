@@ -21,7 +21,7 @@ function DesignSection() {
 					</div>
 					<div className="flex gap-2 md:gap-3 lg:gap-4">
 
-						<img src="/featurephone/Circle_1/Backgrounds/three.webp" alt="Circle 1" className="lg:max-w-[282px] md:w-8/12 md:max-h-[288px] lg:max-h-max max-w-[125px]" data-aos="fade-up" data-aos-delay="300"/>
+						<img src="/featurephone/Circle_1/Backgrounds/three.webp" alt="Circle 1" className="lg:max-w-[282px]  md:min-w-[280px] md:max-h-[288px] lg:max-h-max max-w-[125px]" data-aos="fade-up" data-aos-delay="300"/>
 
 						<div className="flex flex-col gap-2 md:gap-3 lg:gap-4 ">
 

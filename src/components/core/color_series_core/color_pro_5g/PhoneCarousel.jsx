@@ -2,48 +2,40 @@ import React, { useState } from 'react';
 
 import ColorSelectorButtonActive from "../../../common/smartphone_common/ColorSelectorButtonActive";
 import ColorSelectorButtonInactive from "../../../common/smartphone_common/ColorSelectorButtonInactive";
+import { ImageCarouselData, FullSpecificationsData } from '../../../../data/smartphonedata/ColorPro5GData';
 
 const PhoneCarousel = () => {
   const [activeColor, setActiveColor] = useState('lavender');
-  const [activeVideo, setActiveVideo] = useState('/smartphone/color-pro-5g/PhoneCarousel/lavender.mp4');
 
-  const ImageCarouselData = [
-    {
-      id: 1,
-      color: "lavender",
-      buttonText: "Lavender Fantasy",
-      buttonGradient: "bg-[#C2AFE3]",
-      colorSelectorBGColor: "",
-      colorSelectorTextColor: "text-white",
-      url: "/smartphone/color-pro-5g/PhoneCarousel/lavender.mp4"
-    },
-    {
-      id: 2,
-      color: "blue",
-      buttonText: "River Blue",
-      buttonGradient: "bg-[#76C7E9]",
-      colorSelectorBGColor: "",
-      colorSelectorTextColor: "text-white",
-      url: "/smartphone/color-pro-5g/PhoneCarousel/blue.mp4"
-    },
-  ];
+  const getInitialVideo = () => {
+    const isDesktop = window.innerWidth > 1000;
+    return isDesktop ? ImageCarouselData[0].url : ImageCarouselData[0].mobileUrl;
+  };
+
+  const [activeVideo, setActiveVideo] = useState(getInitialVideo());
+  
+  const getVideoUrl = (colorData) => {
+    return window.innerWidth > 1000 ? colorData.url : colorData.mobileUrl;
+  };
 
   return (
     <div className='flex w-full items-center px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[#111111] overflow-hidden'>
       <div className='content relative h-full'>
-        <video
-          className='rounded-[16px]'
-          src={activeVideo}
-          autoPlay
-          loop
-          muted
-        />
+        <div className='h-[350px] md:h-[470px] 2xl:h-[515px]'>
+          <video
+            className='rounded-[16px]'
+            src={activeVideo}
+            autoPlay
+            loop
+            muted
+          />
+        </div>
         <div className='px-5 lg:px-0 font-markot w-full flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-4 pt-10'>
           <h1 className={`text-desktop/title text-white`}>COLOR</h1>
           {ImageCarouselData.map((colorData) => (
             <div
               key={colorData.id}
-              onClick={() => { setActiveColor(colorData.color); setActiveVideo(colorData.url); }}
+              onClick={() => { setActiveColor(colorData.color); setActiveVideo(getVideoUrl(colorData)); }}
               className={` ${colorData.colorSelectorTextColor} cursor-pointer flex items-center justify-center`}
             >
               {activeColor === colorData.color ? 

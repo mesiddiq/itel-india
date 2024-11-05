@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const GradientBackgroundWrapper = ({ children, bgImage, mobileBgImage, paddingStart = '88px',padding="15px",borderRadius="56px" }) => {
+const GradientBackgroundWrapper = ({ children, bgImage , bgClass, backgroundSizeDesktop='cover', backgroundSizeMobile='cover',  mobileBgImage, mobileBgPosition ='center', paddingStart = '88px',padding="15px",borderRadius="56px" }) => {
     return (
         <div
             style={{
@@ -16,7 +16,7 @@ const GradientBackgroundWrapper = ({ children, bgImage, mobileBgImage, paddingSt
                 className={`bg-white  lg:block hidden  md:rounded-[${borderRadius}] rounded-[16px]  pb-0 ps-2 `}
                 style={{
                     backgroundImage: `url(${bgImage || '/smartphone/a70/AmpleStorageBG.webp'})`,
-                    backgroundSize: 'cover',
+                    backgroundSize: backgroundSizeDesktop,
                     backgroundPosition: 'center',
                     overflow:'hidden',
                     paddingLeft:paddingStart,
@@ -28,13 +28,14 @@ const GradientBackgroundWrapper = ({ children, bgImage, mobileBgImage, paddingSt
                 {children}
             </div>
             <div
-                className={`bg-white lg:hidden  md:rounded-[56px] rounded-[16px]  pb-0 ps-2 block `}
+                className={`bg-white lg:hidden  md:[${borderRadius}] rounded-[16px]  pb-0 ps-2 block ${bgClass}`}
                 style={{
                     backgroundImage: `url(${mobileBgImage || '/SmartPhone/a70/Background/AmpleStorageBG.webp'})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundSize: backgroundSizeMobile,
+                    backgroundPosition: mobileBgPosition,
                     overflow:'hidden',
                     padding:padding,
+                    backgroundRepeat:'no-repeat'
                                         
                 }}
             >

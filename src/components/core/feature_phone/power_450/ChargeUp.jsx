@@ -3,7 +3,7 @@ import React from 'react'
 const ChargeUp = () => {
     return (
         <div className=" py-[42px] lg:py-[73px] h-[633px] md:h-[700px] lg:h-auto font-markot px-4 md:px-0 ">
-            <div className={`content border rounded-[24px] bg-bg/primary/1 h-full lg:h-auto relative bg-[url('/featurephone/Power_450/Backgrounds/.webp')] bg-cover bg-no-repeat `}>
+            <div className={`content rounded-[24px] bg-[url('/featurephone/Power_450/Backgrounds/charged_up_mobile.webp')] h-full lg:h-auto relative lg:bg-none bg-cover bg-no-repeat `}>
 
                 <div className="space-y-5 lg:space-y-10 max-w-[437px] lg:absolute right-[119px] top-[245px] px-5 lg:px-0 py-10 lg:py-0">
                     <div className="space-y-3 lg:space-y-8">
@@ -27,6 +27,7 @@ const ChargeUp = () => {
                     </div>
                 </div>
 
+                <img src="/featurephone/Power_450/Backgrounds/phone_charger.webp" alt="Power 450" className='w-full absolute bottom-0 max-w-[300px] left-1/2 -translate-x-1/2 lg:hidden' />
                 <img src="/featurephone/Power_450/Backgrounds/charge_up_bg.webp" alt="" className='hidden lg:block' />
 
             </div>

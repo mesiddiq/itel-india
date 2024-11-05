@@ -233,6 +233,8 @@ export const ImageCarouselData = [
             "/smartphone/color-pro-5g/ProductGallery/LavenderFantasy3.webp",
             "/smartphone/color-pro-5g/ProductGallery/LavenderFantasy4.webp",
         ],
+        url: "/smartphone/color-pro-5g/PhoneCarousel/lavender.mp4",
+        mobileUrl: "/smartphone/color-pro-5g/PhoneCarousel/lavenderMobile.mp4",
     },
     {
         id: 2,
@@ -248,5 +250,7 @@ export const ImageCarouselData = [
             "/smartphone/color-pro-5g/ProductGallery/RiverBlue2.webp",
             "/smartphone/color-pro-5g/ProductGallery/RiverBlue3.webp",
         ],
+        url: "/smartphone/color-pro-5g/PhoneCarousel/blue.mp4",
+        mobileUrl: "/smartphone/color-pro-5g/PhoneCarousel/blueMobile.mp4",
     },
 ];

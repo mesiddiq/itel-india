@@ -34,7 +34,7 @@ const GradientBackgroundWrapper = ({
 
             {/* Mobile view */}
             <div
-                className={`bg-white lg:hidden md:rounded-[56px] rounded-[16px] border-[#00000033] border-2 pb-0 ps-2 block`}
+                className={`bg-white lg:hidden md:rounded-[${borderRadius}] rounded-[16px] border-[#00000033] border-2 pb-0 ps-2 block`}
                 style={{
                     backgroundImage: `url(${mobileBgImage})`,
                     backgroundSize: mobileBackgroundSize,

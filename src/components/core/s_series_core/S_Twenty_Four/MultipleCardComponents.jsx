@@ -41,7 +41,7 @@ const MultipleCardComponents = () => {
                 
                 {/* Image added here */}
                 <img
-                  src='/smartphone/S24/ultra-storage-vault.png'
+                  src='/smartphone/S24/ultra-storage-vault.webp'
                   alt='Ultra Storage Vault'
                   className='absolute lg:top-[50px] lg:left-[50px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700'
                 />

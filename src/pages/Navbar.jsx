@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 // import { ArrowRight } from 'lucide-react'
 import { useState, useRef, useEffect, } from 'react'
 import { useClickOutside } from "react-haiku"
@@ -6,6 +8,7 @@ import { AccessoriesData, PhoneData, TvData, SupportData, PhonesData } from '../
 import { MdCurrencyRupee, MdKeyboardArrowRight } from 'react-icons/md'
 import { useNavigate } from "react-router-dom";
 import { IoCloseSharp } from 'react-icons/io5'
+// import { useSelector } from 'react-redux'
 
 
 const ArrowSvg = ({ isActive }) => {
@@ -49,7 +52,7 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
     )
 }
 
-const Support = ({ support }) => {
+const Support = ({ support, setSupport }) => {
 
     return (
         <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${support ? 'h-[330px] z-[100]' : 'h-0'}`}>
@@ -57,7 +60,7 @@ const Support = ({ support }) => {
                 {
                     SupportData.map(({ id, label, path }) => (
                         <Link to={path} key={id}>
-                            <div className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-grey/grey/4 to-grey/grey/5">
+                            <div onClick={() => setSupport(prev => !prev)} className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-grey/grey/4 to-grey/grey/5">
                                 <h1 className="text-white text-desktop/h5">{label}</h1>
                                 <div className="flex gap-2 items-center">
                                     <h4 className="text-desktop/button">READ MORE</h4>
@@ -72,7 +75,7 @@ const Support = ({ support }) => {
     )
 }
 
-const SmartPhoneDropdown = ({ smartPhone, setSmartPhone }) => {
+const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
 
     const [selectedCategory, setSetselectedCategory] = useState(PhoneData[0])
 
@@ -108,10 +111,12 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone }) => {
                             ))
                         }
                     </div>
-                    <div className="flex gap-2 items-center justify-end">
-                        <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
-                        <ArrowRight />
-                    </div>
+                    <Link to="/products">
+                        <div className="flex gap-2 items-center justify-end" onClick={handleOutside}>
+                            <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
+                            <ArrowRight />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -250,10 +255,12 @@ function HighlightedText({ text = "", highlight = "" }) {
  */
 const Navbar = () => {
 
+    // const {tvActive, smartPhoneActive, accessoriesActive, supportActive } = useSelector(state => state.navbar)
 
     const navigate = useNavigate();
 
     const [searchTerm, setSearchTerm] = useState('')
+    const [isFocused, setIsFocused] = useState(false)
     const [results, setResults] = useState({ smartphones: [], featurephones: [] })
 
     useEffect(() => {
@@ -296,14 +303,14 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='bg-brand/black py-4 hidden lg:block'>
+            <div className='bg-brand/black py-4 hidden lg:block font-markot'>
 
                 <div className="h-[50px] max-w-[1281px] w-11/12 mx-auto flex justify-between items-center ">
                     <Link to={'/'} >
                         <img src="/static_page/homepage/itel.png" alt="" className="" />
                     </Link>
 
-                    <div className="w-[712px] relative h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">
+                    <div className="xl:w-[712px] lg:w-[500px] relative h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M22 22L20 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -314,6 +321,10 @@ const Navbar = () => {
                             className='text-grey/grey/2 text-desktop/body/1 bg-transparent outline-none border-none w-full'
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
+                            onFocus={() => setIsFocused(true)}
+                            onBlur={() => setTimeout(() => {
+                                setIsFocused(false)
+                            }, 200)}
                         />
 
                         {
@@ -377,14 +388,14 @@ const Navbar = () => {
                         </svg>
                         <div className="text-white">
                             <h1 className="text-desktop/overline">itel Customer Care</h1>
-                            <h2 className="text-desktop/caption">1800-4190-525</h2>
+                            <a href="tel:1800-4190-525" className="text-desktop/caption">1800-4190-525</a>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div className='font-markot bg-[#1f1f1f] hidden lg:block' ref={navRef} >
-                <div className="max-w-[1050px] mx-auto w-11/12 gap-10 py-4 flex text-white ">
+                <div className="max-w-[1050px] mx-auto w-11/12 justify-between py-4 flex text-white ">
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setSmartPhone(prev => !prev)
                         setTv(false)
@@ -392,25 +403,14 @@ const Navbar = () => {
                         setSupport(false)
                     }}>
                         <span className="text-desktop/body/2/regular">
-                            Smartproducts
+                            Smartphones
                         </span>
                         <ArrowSvg isActive={smartPhone} />
                     </button>
-                    <button className="flex items-center gap-0.5">
+                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
                         <span className="text-desktop/body/2/regular">
                             Feature Phones
                         </span>
-                    </button>
-                    <button className="flex items-center gap-0.5" onClick={() => {
-                        setTv(prev => !prev)
-                        setAccessories(false)
-                        setSupport(false)
-                        setSmartPhone(false)
-                    }}>
-                        <span className="text-desktop/body/2/regular">
-                            Smart TVs
-                        </span>
-                        <ArrowSvg isActive={tv} />
                     </button>
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setAccessories(prev => !prev)
@@ -423,21 +423,34 @@ const Navbar = () => {
                         </span>
                         <ArrowSvg isActive={Accessories} />
                     </button>
-                    <button className="flex items-center gap-0.5">
+                    <button className="flex items-center gap-0.5" onClick={() => {
+                        setTv(prev => !prev)
+                        setAccessories(false)
+                        setSupport(false)
+                        setSmartPhone(false)
+                    }}>
+                        <span className="text-desktop/body/2/regular">
+                            Smart TVs
+                        </span>
+                        <ArrowSvg isActive={tv} />
+                    </button>
+                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
                         <span className="text-desktop/body/2/regular">
                             Home Care
                         </span>
                     </button>
-                    <button className="flex items-center gap-0.5">
+                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
                         <span className="text-desktop/body/2/regular">
                             Personal Care
                         </span>
                     </button>
-                    <button className="flex items-center gap-0.5">
-                        <span className="text-desktop/body/2/regular">
-                            About Us
-                        </span>
-                    </button>
+                    <Link to="/about-us-itel-mobile-india">
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                About Us
+                            </span>
+                        </button>
+                    </Link>
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setSupport(prev => !prev)
                         setTv(false)
@@ -452,7 +465,7 @@ const Navbar = () => {
                 </div>
                 <div className="relative z-50">
                     <Support support={support} setSupport={setSupport} />
-                    <SmartPhoneDropdown smartPhone={smartPhone} setSmartPhone={setSmartPhone} />
+                    <SmartPhoneDropdown smartPhone={smartPhone} setSmartPhone={setSmartPhone} handleOutside={handleOutside} />
                     <AccessoriesDropDown Accessories={Accessories} setAccessories={setAccessories} />
                     <TvDropDown tv={tv} setTv={setTv} />
                 </div>

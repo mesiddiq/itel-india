@@ -22,7 +22,7 @@ function FeatureSection() {
   return (
     <section className="flex bg-black opacity-90  overflow-hidden z-0 flex-col justify-center px-5 md:px-0 pt-[40px] md:pt-40 pb-32 max-w-full max-md:py-24 ">
 
-      <div className="flex flex-col justify-center w-full max-md:max-w-full content">
+      <div className="flex flex-col md:px-10 lg:px-0 justify-center w-full max-md:max-w-full content">
         <div className="flex flex-wrap justify-between items-start w-full max-md:max-w-full max-md:flex-col">
           <h2 className="flex flex-col flex-1 shrink text-5xl font-medium tracking-tighter basis-0 leading-[58px] min-w-[240px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px] md:gap-[24px]">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-s23/from to-s23/to md:max-w-[90%] max-md:text-mobile/h4  text-desktop/h2  mt-6 font-markot">
@@ -35,7 +35,7 @@ function FeatureSection() {
         </div>
         <div className="flex flex-wrap gap-10 items-start mt-32 w-full max-md:mt-10 max-md:flex-col ">
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col flex-1 shrink px-10 py-12 rounded-2xl basis-0 min-h-[316px] min-w-[240px] max-md:px-5 max-md:w-full border-2 border-gray-200 border-opacity-10 h-[356px]">
+            <div key={index} className="flex flex-col flex-1 shrink px-10 py-8 lg:py-12 rounded-2xl basis-0 min-h-[316px] min-w-[240px] max-md:px-5 max-md:w-full border-2 border-gray-200 border-opacity-10 h-[356px]">
               <img loading="lazy" src={feature.icon} alt="arrow icon" className="object-contain aspect-square w-[52px]" />
               <div className="flex flex-col mt-6 w-full">
                 <h3 className="text-mobile/h5 md:text-desktop/h4  text-white">{feature.title}</h3>

@@ -9,14 +9,14 @@ import Model from '../../components/common/smartphone_common/Model'
 
 const P_Series_Parent = () => {
     return (
-        <div className='bg-[#111111]'>
+        <div className='bg-[#111111] overflow-hidden'>
             <Outlet />
-            <Accessories />
-            <Model />
-            <SimilarProducts />
-            <SupportChannels />
-            <OtherCoolGears />
-            <StayInTheLoop />
+            <Accessories theme='dark' />
+            <Model theme='dark' />
+            <SimilarProducts theme='dark' />
+            <SupportChannels theme='dark' />
+            <OtherCoolGears theme='dark' />
+            <StayInTheLoop theme='dark' />
         </div>
     )
 }

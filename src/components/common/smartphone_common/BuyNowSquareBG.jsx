@@ -1,10 +1,13 @@
+/* eslint-disable react/prop-types */
 import BuyNowText from "./BuyNowText"
 
-const BuyNowSquareBG = () => {
+const BuyNowSquareBG = ({ purchaseLink, content }) => {
   return (
-    <div className="bg-BuyNowSquareBG bg-contain bg-no-repeat relative w-[160px] h-[48px] flex flex-col justify-center items-center cursor-pointer">
-      <BuyNowText content="Buy Now" className=""/>
-    </div>
+    <a href={purchaseLink} target="_blank">
+      <div className="bg-BuyNowSquareBG bg-contain bg-no-repeat relative w-[160px] h-[48px] flex flex-col justify-center items-center cursor-pointer">
+        <BuyNowText content={content} className="" />
+      </div>
+    </a>
   )
 }
 

@@ -1,7 +1,7 @@
 export const HeroDatait2175p = {
     title: "it2175 Pro",
     subtitle: '5.1cm (2”) Display | 1200mAh Battery | King Voice',
-    purchaseLink: '',
+    purchaseLink: 'https://amzn.in/d/gvAaZWV',
     phoneUrl: '/featurephone/it2175p/Backgrounds/phone_hero.webp',
     bgDesktop: '/featurephone/it2175p/Backgrounds/hero_banner.jpg',
     bgMobile: '/featurephone/it2175p/Backgrounds/hero_banner_mobile.webp',

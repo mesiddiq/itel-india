@@ -5,7 +5,7 @@ const MultipleCardComponents = () => {
       <section className='content upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
         
           {/* Card 1 */}
-          <div className='w-full lg:w-[40%] min-h-[506px] h-[506px] lg:h-[771px] rounded-lg overflow-hidden flex flex-col relative bg-multipleCardComponentsGradient group'>
+          <div className=' w-full lg:w-[40%] min-h-[506px] h-[506px] lg:h-[771px] rounded-lg overflow-hidden flex flex-col relative bg-multipleCardComponentsGradient group'>
             
             <div className='text-white w-full h-auto px-5 py-6 lg:px-[36px] lg:pt-[40px] gap-5 lg:gap-10 flex flex-col z-10'>
               <div className='flex flex-col gap-1 lg:gap-3 max-w-[409px]'>
@@ -40,7 +40,7 @@ const MultipleCardComponents = () => {
 
           <div className='w-full lg:w-[60%] flex flex-col gap-5'>
               {/* Card 2 */}
-              <div className='flex flex-col w-full lg:min-h-[375px] lg:h-[375px] min-h-[220px] h-[220px] rounded-lg p-4 lg:p-10 bg-black group relative overflow-hidden'>
+              <div className='bg-multipleCardComponentsGradient flex flex-col w-full lg:min-h-[375px] lg:h-[375px] min-h-[220px] h-[220px] rounded-lg p-4 lg:p-10 bg-black group relative overflow-hidden'>
                 <div className='flex flex-col h-full gap-2 justify-between w-[160px] lg:w-[292px] z-10 rounded-lg'>
 
                   <div className='flex flex-col gap-2 lg:gap-3 lg:max-w-[181px] max-w-[138px]'>
@@ -65,12 +65,12 @@ const MultipleCardComponents = () => {
                 <img
                   src='/smartphone/P55/supremeBattery.png'
                   alt='supremeBattery'
-                  className='absolute w-full z-0 lg:top-0 left-0 bottom-0 scale-130 lg:scale-100 group-hover:scale-[140%] lg:group-hover:scale-[110%] transition-transform duration-700'
+                  className='object-contain absolute w-full z-0 lg:top-0 left-0 bottom-0 scale-130 lg:scale-100 group-hover:scale-[140%] lg:group-hover:scale-[110%] transition-transform duration-700'
                 />
               </div>
 
               {/* Card 3 */}
-              <div className='flex flex-col justify-between w-full lg:min-h-[375px] lg:h-[375px] min-h-[220px] h-[220px] p-4 lg:p-10 rounded-lg lg:px-[32px] lg:py-[40px] group relative overflow-hidden'>
+              <div className='flex flex-col justify-between w-full lg:min-h-[375px] lg:h-[375px] min-h-[220px] h-[220px] p-4 lg:p-10 rounded-lg lg:px-[32px] lg:py-[40px] group relative overflow-hidden bg-multipleCardComponentsGradient'>
                 
                 <div className='flex flex-col h-full gap-2 justify-between w-[292px] z-10 rounded-lg'>
 
@@ -103,7 +103,7 @@ const MultipleCardComponents = () => {
       <section className='content font-markot lower-half-3-divs flex flex-col gap-5 justify-between'>
         
         {/* Card 4 */}
-        <div className='group h-[430px] lg:h-[473px] overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] bg-multipleCardComponentsGradient relative'>
+        <div className='group min-h-[470px] h-[430px] lg:h-[473px] overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] bg-multipleCardComponentsGradient relative'>
           
           <div className='relative z-10 flex flex-col gap-[18px] lg:gap-2 lg:justify-between lg:w-[400px] lg:mt-0 '>
             <div className='flex flex-col gap-1 lg:gap-3 max-w-[339px]'>
@@ -116,8 +116,8 @@ const MultipleCardComponents = () => {
             <span className='max-w-[220px] text-mobile/body/large lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] text-left text-white'>iBoost Gaming Technology</span>
           </div>
 
-          <img src="/smartphone/P55/gridGaming.png" alt='gridGaming' className='hidden lg:block absolute w-full left-0 z-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700'/>
-          <img src="/smartphone/P55/gridGaming.png" alt='gridGaming' className='hidden lg:block absolute w-full left-0 z-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700'/>
+          <img src="/smartphone/P55/gridGaming.png" alt='gridGaming' className='hidden md:block absolute w-full left-0 z-0 top-0 group-hover:scale-[110%] transition-transform duration-700'/>
+          <img src="/smartphone/P55/gridGamingMobile.png" alt='gridGaming' className='block md:hidden absolute w-full left-0 z-0 bottom-0 scale-[75%] group-hover:scale-[110%] transition-transform duration-700'/>
         </div>
 
       </section>

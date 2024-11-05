@@ -1,34 +1,76 @@
-# Project Documentation
+# itel Website Documentation
 
-This project is a mobile phone website built with React. It includes various pages for different series of smartphones and feature phones. The project also includes static pages like About Us, Contact Us, and CSR.
+This is a documentation of the itel website, a react application that serves as the official website of itel mobile.
 
-## Pages
+## Table of Content
 
-- **Home Page**: This is the landing page of the website. It includes links to all the other pages.
-- **S Series**: This page includes the S23 and S23 Plus smartphones. Each phone has its own page with detailed information.
-- **P Series**: This page includes the P55 smartphone. It has its own page with detailed information.
-- **Feature Phones**: This page includes the Super Guru 4G, Super Guru 400, and Super Guru 600 feature phones. Each phone has its own page with detailed information.
-- **Static Pages**: These pages include About Us, Contact Us, and CSR. They provide information about the company and its activities.
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Components](#components)
+- [Pages](#pages)
+- [API](#api)
+- [Testing](#testing)
+- [Deployment](#deployment)
+
+## Getting Started
+
+To get started with the project, follow the following steps:
+
+1. Clone the repository
+2. Install the dependencies using `npm install`
+3. Start the development server using `npm start`
+4. Open the application in your web browser at `http://localhost:3000`
+
+## Project Structure
+
+The project structure is as follows:
+
+- `src/`: The source code of the project
+  - `components/`: Reusable components used throughout the application
+  - `pages/`: The pages of the application
+  - `api/`: The API endpoints of the application
+  - `public/`: The public assets of the application
+  - `utils/`: Utility functions used throughout the application
+  - `App.jsx`: The main application component
+  - `main.jsx`: The main entry point of the application
+  - `index.html`: The main entry point of the application
 
 ## Components
 
-- **Navbar**: This is a common component used in all pages. It includes links to all the pages.
-- **Hero Banner**: This is a common component used in all pages. It includes a hero image and a title.
-- **Overview**: This is a common component used in all pages. It includes a brief overview of the phone.
-- **Video**: This is a common component used in all pages. It includes a video about the phone.
-- **Other Components**: Each phone page includes various other components like Amoled Display, New Vision, Immersive Entertainment, etc.
+The components are reusable pieces of code that can be used throughout the application. They are located in the `src/components/` directory.
 
-## Data
+Some of the components include:
 
-- **Phone Data**: The data for each phone is stored in a separate file. It includes details like the hero image, title, overview, video, and other details.
+- `Header`: The header component that is used on every page
+- `Footer`: The footer component that is used on every page
+- `Hero`: The hero component that is used on the homepage
+- `FeatureRich`: The feature rich component that is used on the homepage
 
-## Styling
+## Pages
 
-- **CSS**: The project uses a combination of inline CSS and external CSS files for styling.
+The pages are the different sections of the application. They are located in the `src/pages/` directory.
 
-## Dependencies
+Some of the pages include:
 
-- **React**: The project is built with React.
-- **React Router**: The project uses React Router for navigation.
-- **AOS**: The project uses AOS for scroll animations.
+- `Home`: The homepage of the application
+- `About`: The about page of the application
+- `Contact`: The contact page of the application
+- `FAQ`: The FAQ page of the application
 
+## API
+
+The API is used to fetch data from the server. It is located in the `src/api/` directory.
+
+Some of the API endpoints include:
+
+- `GET /api/faq`: Fetches the FAQ data from the server
+- `GET /api/smartphones`: Fetches the smartphones data from the server
+- `GET /api/featurephones`: Fetches the featurephones data from the server
+
+## Testing
+
+The testing is done using jest and react testing library. The tests are located in the `src/tests/` directory.
+
+## Deployment
+
+The deployment is done using Vercel. The application is deployed to production whenever code is pushed to the main branch.

@@ -22,9 +22,9 @@ const QuickBoost = () => {
                 <img src="/smartphone/A05i/quickBoost.png"/>
             </div>
             
-            <div className="flex flex-col sm:gap-[20px] lg:gap-[36px] absolute top-0 w-full h-full sm:p-5 lg:px-[90px] lg:pt-[60px] ">
+            <div className="flex flex-col sm:gap-[20px] responsive-width-Qb lg:gap-[36px] absolute top-0 w-full h-full sm:p-5 lg:px-[90px] lg:pt-[60px] ">
 
-                <div className="sm:max-w-[250px] lg:max-w-[482px]">
+                <div className="sm:max-w-[250px] responsive-width-Qb2 lg:max-w-[482px]">
                     <h1 className="sm:text-desktop/h4 lg:text-desktop/h2 text-[#232323]">Quick Boost: 10W Type-C Fast Charging Support</h1>
                 </div>
 

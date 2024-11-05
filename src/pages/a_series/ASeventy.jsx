@@ -1,8 +1,12 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react-refresh/only-export-components */
 // import HeroSectionOfPage from "./components/core/a_series_core/a70/HeroSectionOfPage";
 import FullSpecifications from "../../components/common/FullSpecifications";
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel";
+import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon";
+import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon";
 import StickyHeader from "../../components/common/StickyHeader";
+import A05ColorImageCarausel from "../../components/core/a_series_core/a05/A05ColorImageCarausel";
 import FeatureSection70 from "../../components/core/a_series_core/a70/FeatureSectionA70";
 import HeroSectionOfPage from "../../components/core/a_series_core/a70/HeroSectionOfPage";
 import ScrollingBannerA70 from "../../components/core/a_series_core/a70/ScrollingBannerA70";
@@ -19,12 +23,32 @@ import { ImageCarouselDataA70 } from "../../data/smartphonedata/A70ImageCarousel
 
 const ASeventy = () => {
   return (
-    <div className="bg-white">
-      <HeroSectionOfPage />
+    <div className="bg-white font-markot">
+      {/* <HeroSectionOfPage /> */}
+      <HeroSmartPhoneCommon
+        tagText="Awesome series"
+        headingText="A70"
+        price={"6,299"}
+        description={'12GB* (4GB+8GB*) RAM + 256GB ROM | Dynamic bar | 13MP AI Dual Rear Camera'}
+        bgDesktop={'/smartphone/smartphonehero/a70.webp'}
+        bgMobile={'/smartphone/smartphonehero/a70_mobile.webp'}
+        gradient1='#000'
+        gradient2='#000'
+        theme='dark'
+      />
       <StickyHeader title="A70" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
-      <FeatureSection70/>
-      <ScrollingBannerA70/>
-      <VideoA70/>
+      <FeatureSection70 />
+      {/* <ScrollingBannerA70 /> */}
+      <SliderAnimationCommon
+        text1="Awesome series"
+        text2="IMPRESSIVELY AWESOME"
+        svgCode={<img src="/smartphone/A23s/scrollA23.svg" alt="star" className="" />}
+        bgColor="#EBE8E2"
+        textGradient1="#6B6682"
+        textGradient2="#6B6682"
+      />
+ 
+      <VideoA70 />
       <div
         className="md:rounded-[64px] rounded-[16px]  my-10 p-2 content"
         style={{
@@ -46,14 +70,18 @@ const ASeventy = () => {
 
       <div className="lg:px-0 py-[48px] lg:py-[80px] bg-[#ffffff]">
         <div className="lg:content bg-[#ffffff]  overflow-hidden">
-          <ColorImageCarousel ImageCarouselData={ImageCarouselDataA70} showTitleInMobile={true} />
+          {/* <ColorImageCarousel ImageCarouselData={ImageCarouselDataA70} showTitleInMobile={true} /> */}
+          <A05ColorImageCarausel
+            ImageCarouselData={ImageCarouselDataA70}
+            showTitleInMobile={true}
+          />
         </div>
       </div>
 
       <div className="px-4 py-[60px] lg:py-[80px] bg-[#ffffff]">
         <FullSpecifications FullSpecificationsData={FullSpecificationsA70} mode="light" />
       </div>
-  
+
     </div >
   );
 };

@@ -1,9 +1,8 @@
-import React from 'react';
 
 function StyleSection() {
   return (
     <section
-      className="flex overflow-hidden z-0 flex-col px-4 md:px-0 w-full bg-black bg-opacity-20 h-[652px] md:h-[800px] "
+      className="flex overflow-hidden z-0 flex-col px-4 md:px-0 w-full bg-black bg-opacity-20 h-[452px] md:h-[800px] "
       style={{
         backgroundImage: 'url(/smartphone/S_Twenty_Three/StyleBg.webp)', 
         backgroundPosition: 'center',
@@ -11,11 +10,11 @@ function StyleSection() {
       }}
     >
       <div className="pt-4 content max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:items-center max-md:text-center">
+        <div className="flex gap-5 flex-col lg:flex-row max-md:items-center max-md:text-center">
           
           {/* Text Section */}
-          <div className="flex flex-col w-[30%] max-md:ml-0 max-md:w-full max-md:items-center max-md:justify-center">
-            <div className="flex flex-col justify-center self-stretch mt-48 mr-0 max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col lg:w-[30%] max-md:ml-0 max-md:w-full max-md:items-center max-md:justify-center">
+            <div className="flex flex-col justify-center self-stretch mr-0  lg:mt-10 max-md:max-w-full">
               <h2 className="text-mobile/h4 md:text-desktop/h2  text-white max-md:max-w-full  max-md:text-center">
                 Elevate Your Style with the itel S23
               </h2>
@@ -26,12 +25,12 @@ function StyleSection() {
           </div>
 
           {/* Image Section */}
-          <div className="flex flex-col ml-32 w-[59%] max-md:ml-0 max-md:w-full max-md:items-center">
+          <div className="flex flex-col lg:ml-32 lg:w-[59%] max-md:ml-0 max-md:w-full max-md:items-center">
             <img
               loading="lazy"
               src="/smartphone/S_Twenty_Three/StyleImg.webp"
               alt="itel S23 color variants"
-              className="object-contain grow w-full aspect-[1.11]  max-md:mt-28  md:h-[879px] md:w-[871px]  max-md:max-w-full max-md:mx-auto"
+              className="object-contain grow w-full aspect-[1.11] lg:h-[879px] lg:w-[871px]  max-md:max-w-full max-md:mx-auto"
             />
           </div>
         </div>

@@ -74,12 +74,12 @@ export const TvData = [
 ]
 
 export const SupportData = [
-    { id: 1, label: '100 Days Service Promise', path: '/100dayspromise' },
-    { id: 2, label: 'One-Time Screen Replacement', path: '/100dayspromise' },
-    { id: 3, label: 'Service Center', path: '/100dayspromise' },
-    { id: 4, label: 'E-waste Management', path: '/100dayspromise' },
-    { id: 5, label: "FAQ's", path: '/100dayspromise' },
-    { id: 6, label: 'Contact Us', path: '/100dayspromise' },
+    { id: 1, label: '100 Days Service Promise', path: '/support/100-days-service-promise' },
+    { id: 2, label: 'One-Time Screen Replacement', path: '/support/1-time-screen-replacement' },
+    { id: 3, label: 'Service Center', path: '/support/service-center-locator' },
+    { id: 4, label: 'E-waste Management', path: '/support/e-waste-management' },
+    { id: 5, label: "FAQ's", path: '/support/faqs' },
+    { id: 6, label: 'Contact Us', path: '/contact-us' },
 ]
 
 export const PhonesData = [
@@ -90,7 +90,7 @@ export const PhonesData = [
     {id:'5',label:'P55',link:'/product/p55',type:'smartphone'},
     {id:'6',label:'P55 T',link:'/product/p55t',type:'smartphone'},
     {id:'7',label:'P55 PLUS',link:'/product/p55-plus',type:'smartphone'},
-    {id:'8',label:'A95',link:'/product/a05',type:'smartphone'},
+    {id:'8',label:'A05 s',link:'/product/a05',type:'smartphone'},
     {id:'9',label:'AURA 05 I',link:'/product/a05-i',type:'smartphone'},
     {id:'10',label:'A50 C',link:'/product/a50-c',type:'smartphone'},
     {id:'11',label:'A50',link:'/product/a50',type:'smartphone'},

@@ -1,4 +1,3 @@
-import React from 'react'
 import FullSpecifications from "../../components/common/FullSpecifications"
 import CameraSection from '../../components/core/s_series_core/S_Twenty_Three/CameraSection'
 import ColorChangeSection from '../../components/core/s_series_core/S_Twenty_Three/ColorChangeSection'
@@ -10,22 +9,24 @@ import NightModeSection from '../../components/core/s_series_core/S_Twenty_Three
 import ScrollingBanner from '../../components/core/s_series_core/S_Twenty_Three/ScrollingBanner'
 import StyleSection from '../../components/core/s_series_core/S_Twenty_Three/StyleSection'
 import { FullSpecificationsS23 } from '../../data/smartphonedata/S23Data'
-
+import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon'
 import StickyHeader from '../../components/common/StickyHeader'
 import VideoSection from '../../components/core/s_series_core/S_Twenty_Three/VideoSection'
 import SliderAnimationCommon from '../../components/common/smartphone_common/SliderAnimationCommon'
+import { ImageCarouselData } from '../../data/smartphonedata/S23ImageCarouselData'
 
 
 const STwentyThree = () => {
     return (
-        <div className=''>
+        <div className='font-markot'>
             <HeroSmartPhoneCommon
                 tagText="super series"
                 headingText="s23"
                 price={"8,199"}
                 description={'50MP Super Clear Rear Camera | 16GB* (8GB+8GB*) RAM + 128GB ROM | Photochromic Effects'}
-                bgDesktop={'/smartphone/S_Twenty_Three/S23Hero.webp'}
+                bgDesktop={'/smartphone/smartphonehero/s23.webp'}
+                bgMobile={'/smartphone/smartphonehero/s23_mobile.webp'}
                 gradient1='#ca86ff'
                 gradient2='#85e2fd'
 
@@ -57,6 +58,7 @@ const STwentyThree = () => {
             <MemoryFusionSection />
             <StyleSection />
             <Features />
+            <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsS23} mode="dark" />
         </div>
     )

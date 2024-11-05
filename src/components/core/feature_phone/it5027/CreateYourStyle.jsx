@@ -9,8 +9,8 @@ const CardData = [
 const CreateYourStyle = () => {
     return (
         <div className='px-4 md:px-0 py-11 lg:py-0 lg:pb-[100px]'>
-            <div className="relative content lg:min-h-[800px] h-[568px] font-markot px-[26px] py-10 lg:py-0 rounded-[24px] flex lg:items-center lg:pl-[108px] bg-brand/black">
-                {/* <img src="/featurephone/it5027/Backgrounds/create_your_style.webp" alt="" className='absolute top-0 left-0 w-full h-full object-contain' /> */}
+            <div className="relative content lg:min-h-[800px] h-[584px] font-markot px-[26px] py-10 lg:py-0 rounded-[24px] flex lg:items-center lg:pl-[108px] bg-[url('/featurephone/it5027/Backgrounds/create_your_style_mobile.webp')] overflow-hidden bg-center bg-cover lg:bg-none">
+                <img src="/featurephone/it5027/Backgrounds/boy.webp" alt="" className='absolute right-0 -bottom-4 max-w-[330px] md:max-w-[350px] lg:hidden' />
                 <div className="space-y-5 lg:space-y-9 z-50 max-w-[487px]">
                     <div className="">
                         <h1 className="lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[2.4px] text-white text-mobile/h4">Create Your <br className="hidden lg:block" /> Own Style</h1>

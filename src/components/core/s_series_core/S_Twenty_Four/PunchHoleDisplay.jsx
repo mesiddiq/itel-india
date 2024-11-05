@@ -56,7 +56,7 @@ const PunchHoleDisplay = () => {
     return (
         <div ref={sectionRef} className="flex flex-col relative font-markot lg:h-[1000px] h-[400px] bg-black overflow-hidden">
             <motion.img
-                src="/smartphone/S24/s24_display.png"
+                src="/smartphone/S24/s24_display.webp"
                 alt="Camera Specifications"
                 className="w-full"
                 initial="hidden"

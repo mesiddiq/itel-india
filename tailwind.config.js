@@ -6,6 +6,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			screens: {
+				'xs': '350px',
+			},
 			fontFamily: {
 			'markot': ['Mark_OT'],
 			'bricolage': ['BricolageGrotesque'],
@@ -34,7 +37,8 @@ export default {
 				's23p/to':'#85e2fd',
 				's23/from':'#DACFF9',
 				's23/to':'#5C5C7E',
-				
+				'p55/from': '#D5EEF9',
+				'p55/to': '#70A2E1'
 			},
 			fontSize: {
 				'desktop/large/h': ['136px', {
@@ -220,7 +224,7 @@ export default {
 				// }],
 			},
 			backgroundImage: {
-				'ultraStorageVault': "url('/smartphone/S24/ultra-storage-vault.png')",
+				'ultraStorageVault': "url('/smartphone/S24/ultra-storage-vault.webp')",
 				'imageCarouselBackground': "url('/smartphone/S24/imageCarouselBackground.png')",
 				'BuyNowSquareBG': "url('/smartphone/S24/ButtonBackground.png')",
 				'dualDTSSpeaker': "url('/smartphone/S24/dualDTSSpeaker.png')",
@@ -234,6 +238,13 @@ export default {
 				'clearVisionBG': "url('/smartphone/P55/clearVisionBG.png')",
 				'frame24GB': "url('/smartphone/P55/frame24GB.png')",
 
+				'a05iImageCarouselMobileBG': "url('/smartphone/A05i/a05iImageCarouselMobileBG.webp')", 
+				'a05iImageCarouselLaptopBG': "url('/smartphone/A05i/carouselBG.webp')", 
+
+				'a50cImageCarouselMobileBG': "url('/smartphone/A50C/a50cImageCarouselMobileBG.webp')", 
+				'a50cImageCarouselLaptopBG': "url('/smartphone/A50C/a50cImageCarouselLaptopBG.webp')", 
+
+
 				'superfastUnisocGradient': 'linear-gradient(101.38deg, #D5EEF9 -22.94%, #70A2E1 77.36%)',
 				'frame24GBGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
 				'multipleCardComponentsGradient': 'linear-gradient(335.37deg, #00264E 0%, #001F40 100%)',
@@ -244,7 +255,6 @@ export default {
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
-				
 			},
 			backgroundSize: {
 				'85': '85%',

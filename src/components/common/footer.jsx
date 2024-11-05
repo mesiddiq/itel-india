@@ -1,5 +1,7 @@
+import React from 'react'
 import { For } from 'react-haiku'
 import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../../data/FooterData'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -20,12 +22,12 @@ const Footer = () => {
                         <p className='text-desktop/subtitle pb-[20px] text-white/50'>Products</p>
                         <div className="flex flex-col gap-3">
                             <For each={ProductsLink} render={(item, index) =>
-                                <a href={item.link} className='cursor-pointer'>
+                                <Link to={item.link} className='cursor-pointer'>
                                     <div className='text-desktop/caption text-white flex'>
                                         {item.label}
                                         <img src={'/footer/rightChevron.png'} className='h-[16px]' />
                                     </div>
-                                </a>
+                                </Link>
                             } />
                         </div>
                     </div>
@@ -33,12 +35,12 @@ const Footer = () => {
                         <p className='text-desktop/subtitle pb-[20px] text-white/50'>Support</p>
                         <div className="flex flex-col gap-3">
                             <For each={SupportLinks} render={(item, index) =>
-                                <a href={item.link} className='cursor-pointer'>
+                                <Link to={item.link} className='cursor-pointer'>
                                     <div className='text-desktop/caption text-white flex'>
                                         {item.label}
                                         <img src={'/footer/rightChevron.png'} className='h-[16px]' />
                                     </div>
-                                </a>
+                                </Link>
                             } />
                         </div>
                     </div>
@@ -47,12 +49,12 @@ const Footer = () => {
                             <p className='text-desktop/subtitle pb-[20px] text-white/50'>Media</p>
                             <div className="flex flex-col gap-3">
                                 <For each={MediaLinks} render={(item, index) =>
-                                    <a href={item.link} className='cursor-pointer'>
+                                    <Link to={item.link} className='cursor-pointer'>
                                         <div className='text-desktop/caption text-white flex'>
                                             {item.label}
                                             <img src={'/footer/rightChevron.png'} className='h-[16px]' />
                                         </div>
-                                    </a>
+                                    </Link>
                                 } />
                             </div>
                         </div>
@@ -61,12 +63,12 @@ const Footer = () => {
                             <p className='text-desktop/subtitle pb-[20px] text-white/50'>About</p>
                             <div className="flex flex-col gap-3">
                                 <For each={AboutItel} render={(item, index) =>
-                                    <a href={item.link} className='cursor-pointer'>
+                                    <Link to={item.link} className='cursor-pointer'>
                                         <div className='text-desktop/caption text-white flex'>
                                             {item.label}
                                             <img src={'/footer/rightChevron.png'} className='h-[16px]' />
                                         </div>
-                                    </a>
+                                    </Link >
                                 } />
                             </div>
                         </div>
@@ -75,13 +77,17 @@ const Footer = () => {
                     <div className="col-span-1 md:col-span-1 pt-[20px] md:pt-[0px]">
                         <p className='text-[14px] leading-[22.4px] pb-[20px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>Contact</p>
                         <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'>
-                            <img src={'/footer/phone.png'} className='h-[14px] mr-2' /> +91-120-6650888
+                            <img src={'/footer/phone.png'} className='h-[14px] mr-2' />
+                            <a href="tel:+91-120-6650888" className='text-[#FFFFFF]'>+91-120-6650888</a>
                         </p>
-                        <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'><img src={'/footer/envelope.png'} className='h-[14px] mr-2' /> info.in@transsion.com</p>
+                        <p className='flex items-center text-[14px] text-[#FFFFFF] leading-[22.4px] pb-[15px]'>
+                            <img src={'/footer/envelope.png'} className='h-[14px] mr-2' />
+                            <a href="mailto:itelinfo.in@transsion.com" className='text-[#FFFFFF]'>itelinfo.in@transsion.com</a>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div className='w-full'>
+            <div className='w-full' style={{ marginTop: '0px' }}>
                 <div className='hidden md:flex bg-[#1E1E1E] h-[50px] justify-center items-center text-center'>
                     <p className='text-[12px] mr-[25px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>© 2021 itel. All right reserved.</p>
                     <p className='text-[12px] mx-[25px]' style={{ color: 'rgba(235, 236, 233, 0.5)' }}>Privacy policy</p>

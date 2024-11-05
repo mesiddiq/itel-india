@@ -11,12 +11,15 @@ const S_Series_Parent = () => {
     return (
         <div className='bg-brand/black'>
             <Outlet />
-            <Accessories />
-            <Model />
-            <SimilarProducts />
-            <SupportChannels />
-            <OtherCoolGears />
-            <StayInTheLoop />
+            <div className="bg-[#0A0C08]">
+
+                <Accessories theme='dark' />
+                <Model theme='dark' />
+                <SimilarProducts theme='dark' />
+                <SupportChannels theme='dark' />
+                <OtherCoolGears theme='dark' />
+                <StayInTheLoop theme='dark' />
+            </div>
         </div>
     )
 }

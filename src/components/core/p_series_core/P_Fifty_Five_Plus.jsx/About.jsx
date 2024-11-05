@@ -3,10 +3,10 @@ import React from 'react'
 const About = () => {
   return (
     <div className="h-max py-8 lg:h-[701px] flex justify-center items-center w-full bg-cover"
-    style={{ backgroundImage: 'url(/SmartPhone/P55plus/banner1.png)' }}>
+    style={{ backgroundImage: 'url(/SmartPhone/P55+/Backgrounds/About.webp)' }}>
     <div className='content flex flex-col justify-center items-center w-full px-4 lg:p-0'>
         <div className="flex flex-col lg:flex-row lg:justify-between items-right gap-3 lg:gap-0">
-            <h2  className="gap-[6px] w-full lg:w-1/2 text-mobile/h4 lg:text-desktop/h2 text-transparent bg-clip-text" style={{
+            <h2  className="gap-[6px] w-full lg:w-1/3 text-mobile/h4 lg:text-desktop/h2 text-transparent bg-clip-text" style={{
   backgroundImage: 'linear-gradient(180deg, #ACC887 0%, #3E9C6F 100%)'
 }}>
             Get a 45W Super Charge Smartphone for Under 10k
@@ -17,16 +17,16 @@ const About = () => {
             </h2>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 py-8 lg:gap-6 w-full items-center">
+        <div className="flex flex-col md:flex-row gap-4 py-10 lg:gap-6 w-full items-center">
 
             <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] rounded-2xl flex flex-col gap-2 lg:gap-6">
-                <img src="/P_Series/about1.png" alt='' className="w-[48px] lg:w-[52px]" />
+                <img src="/SmartPhone/P55+/Backgrounds/icon5.png" alt='' className="w-[48px] lg:w-[52px]" />
                 <div data-aos="fade-up" className="flex flex-col gap-2 w-full">
                     <span className="text-mobile/h4/medium lg:text-desktop/h4  text-transparent bg-clip-text "  style={{
   backgroundImage: 'linear-gradient(180deg, #ACC887 0%, #3E9C6F 100%)'
 }}>
                         <span className=''>
-                        45W Ultra Super 
+                        45W Ultra Super <br/>
                         Charging Phone
                         </span>
                     </span>
@@ -37,12 +37,12 @@ const About = () => {
             </div>
 
             <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] rounded-2xl flex flex-col gap-2 lg:gap-6">
-                <img src="/P_Series/about2.png" alt='' className="w-[48px] lg:w-[52px]" />
+                <img src="/SmartPhone/P55+/Backgrounds/icon6.png" alt='' className="w-[48px] lg:w-[52px]" />
                 <div data-aos="fade-up" className="flex flex-col gap-2 w-full">
                     <span className="text-mobile/h5/medium lg:text-desktop/h4  text-transparent bg-clip-text"  style={{
   backgroundImage: 'linear-gradient(180deg, #ACC887 0%, #3E9C6F 100%)'
 }}>
-                    Memory Marvel: 8GB RAM, expandable up to 16GB* with Memory Fusion
+                    Memory Marvel: 8GB RAM,<br/> expandable up to 16GB* with Memory Fusion
                     </span>
                     <span className="text-desktop/body/2/regular lg:text-desktop/body/1 text-grey/grey/3 lg:text-grey/grey/2 opacity-80" >
                     Unleash multitasking prowess and store your world – from apps to shows to memories – all in one powerhouse device.
@@ -51,7 +51,7 @@ const About = () => {
             </div>
 
             <div className="w-full lg:w-1/3 h-[227px] lg:h-[287px] rounded-2xl flex flex-col gap-2 lg:gap-6">
-                <img src="/P_Series/about3.png" alt='' className="w-[48px] lg:w-[52px]" />
+                <img src="/SmartPhone/P55+/Backgrounds/icon7.png" alt='' className="w-[48px] lg:w-[52px]" />
                 <div data-aos="fade-up" className="flex flex-col gap-2 w-full">
                     <span className="text-mobile/h5/medium lg:text-desktop/h4  text-transparent bg-clip-text"  style={{
   backgroundImage: 'linear-gradient(180deg, #ACC887 0%, #3E9C6F 100%)'
