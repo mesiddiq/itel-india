@@ -63,8 +63,8 @@ const UltraHDMode = () => {
     >
       {slides.map((slide, slideIndex) => (
         <SwiperSlide key={slideIndex}>
-          <div className="relative h-[300px] md:h-[800px] xl:h-[950px] flex justify-center">
-            <div className='w-full h-full bg-center bg-cover duration-500' style={{ backgroundImage: `url(${slide.image})`}}>
+          <div className="relative h-[300px] md:h-[800px] xl:h-[700px] flex justify-center">
+            <div className='w-full h-full bg-center bg-contain bg-no-repeat duration-500' style={{ backgroundImage: `url(${slide.image})`}}>
               <h3 style={isMobile ? textStyleSM : textStyle} className='text-[#FFFFFF] text-mobile/h7 md:text-desktop/h3 font-markot'>{slide.text}</h3>
             </div>
           </div>

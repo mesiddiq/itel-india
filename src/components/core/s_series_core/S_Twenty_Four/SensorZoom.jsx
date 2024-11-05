@@ -47,14 +47,14 @@ const SensorZoom = () => {
           className="w-[50%] flex flex-col justify-between items-start overflow-hidden"
         >
           {/* Text Part */}
-          <div className="flex flex-col items-start gap-6">
+          <div className="flex flex-col items-start gap-6 lg:pb-6">
             <h1 className="text-desktop/h2 text-white">
               3X In-sensor{' '}
               <span className="bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
                 Zoom
               </span>
             </h1>
-            <p className="text-desktop/body/large text-grey/grey/2">
+            <p className="text-desktop/body/large text-grey/grey/2 ">
               With the 3X In-sensor Zoom, you can capture distant subjects with
               improved composition and quality.
             </p>

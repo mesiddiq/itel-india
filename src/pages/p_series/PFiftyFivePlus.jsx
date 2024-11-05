@@ -23,6 +23,8 @@ const PFiftyFivePlus = () => {
         headingText={'P55+'}
         price={'9,499'}
         tagText={'power series'}
+        
+        
 
       />
       <About />
