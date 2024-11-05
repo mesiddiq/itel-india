@@ -18,7 +18,7 @@ const Hero = ({ title, subtitle, phoneUrl, purchaseLink, bgDesktop, bgMobile, da
                         <p className={`text-mobile/title lg:text-[20px] lg:leading-6 lg:tracking-[0.2px] font-normal uppercase text-grey/grey/1 ${dark && 'text-grey/grey/5'} max-w-[564px]`} data-aos="fade-right" data-aos-delay="400">{subtitle}</p>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="600" className='w-fit'>
-                        <BuyNowSquareBG purchaseLink={purchaseLink} />
+                        <BuyNowSquareBG purchaseLink={purchaseLink} content={'Buy Now'} />
                     </div>
                 </div>
                 <img data-aos="fade-up" data-aos-delay="400" src={phoneUrl} alt="Super Guru 4g" className='lg:max-w-[319px] max-w-[171px]  self-end lg:self-start max-h-[500px]' />

@@ -2,9 +2,9 @@
 import { Link } from 'react-router-dom'
 import AnimatedBuyButton from '../../../components/core/static_pages_core/ProductListing/Product Section/AnimatedBuyButton'
 
-export default function ProductCard({ product, purchaseLink }) {
+export default function ProductCard({ product }) {
 
-    const { isNew, specification, thumbnail, title, description } = product
+    const { isNew, specification, thumbnail, title, description,purchaseLink } = product
     return (
         <div className=" py-3 md:py-5 px-3 gap-3 rounded-2xl lg:h-[526px] bg-[#232323] flex flex-col flex-wrap justify-around items-center" >
 
@@ -45,7 +45,6 @@ export default function ProductCard({ product, purchaseLink }) {
 
             {/* PriceButton */}
             <Link to={purchaseLink} 
-               target="_blank" 
                rel="noopener noreferrer"
                className="w-full flex justify-center items-center">
                 <AnimatedBuyButton price={specification?.price}/>

@@ -102,6 +102,8 @@ function App() {
 					<Route path='/bloglisting' element={<BlogListing />} />
 					<Route path='/submitted' element={<Thankyou />} />
 					<Route path='/coming-soon' element={<Commingsoon />} />
+					<Route path='/commingsoon' element={<Commingsoon/>} />
+					<Route path='/thankyou' element={<Thankyou/>} />
 
 
 					{/* ***************************************************************************************************/}

@@ -45,7 +45,6 @@ export default function ProductCard({ product }) {
 
             {/* PriceButton */}
             <Link to={purchaseLink} 
-               target="_blank" 
                rel="noopener noreferrer"
                className="w-full flex justify-center items-center">
                 <AnimatedBuyButton price={specification?.price}/>
