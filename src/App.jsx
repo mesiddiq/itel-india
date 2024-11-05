@@ -10,6 +10,7 @@ import STwentyThree from './pages/s_series/STwentyThree'
 import STwentyThreePlus from './pages/s_series/STwentyThreePlus'
 import STwentyFour from './pages/s_series/STwentyFour'
 import PFiftyFive from './pages/p_series/PFiftyFive'
+import Commingsoon from './pages/static_pages/Commingsoon'
 import S_Series_Parent from './pages/s_series/S_Series_Parent'
 import Investor from './pages/static_pages/Investor'
 import Footer from './components/common/Footer'
@@ -89,8 +90,10 @@ function App() {
 				<Route path='/blog' element={<Blog/>}/>
 				<Route path='/bloglisting' element={<BlogListing/>}/>
 				<Route path='/submitted' element={<Thankyou/>}/>
+				<Route path='/commingsoon' element={<Commingsoon/>}/>
 
-
+                
+ 
 				
 				
 
