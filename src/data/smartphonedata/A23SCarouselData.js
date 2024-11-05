@@ -9,9 +9,11 @@ export const ImageCarouselDataA23 = [
         colorSelectorTextColor: "text-black",
         bgURL: '/smartphone/A23s/Backgrounds/a23sBgimg.png',
         images: [
-            "/smartphone/P55/mobileBlack1.png",
-            "/smartphone/P55/mobileBlack2.png",
-            "/smartphone/P55/mobileBlack3.png",
+            "/smartphone/A23s/ProductGallery/blue1.webp",
+            "/smartphone/A23s/ProductGallery/blue2.webp",
+            "/smartphone/A23s/ProductGallery/blue3.webp",
+            "/smartphone/A23s/ProductGallery/blue4.webp",
+           
         ],
     },
     {
@@ -24,11 +26,11 @@ export const ImageCarouselDataA23 = [
         bgContainer: "",
         bgURL: '/smartphone/A23s/Backgrounds/a23sBgimg.png',
         images: [
-            "/smartphone/P55/mobileBlue1.png",
-            "/smartphone/P55/mobileBlue2.png",
-            "/smartphone/P55/mobileBlue3.png",
-            "/smartphone/P55/mobileBlue4.png",
-            "/smartphone/P55/mobileBlue5.png",
+            "/smartphone/A23s/ProductGallery/green1.webp",
+            "/smartphone/A23s/ProductGallery/green2.webp",
+            "/smartphone/A23s/ProductGallery/green3.webp",
+            "/smartphone/A23s/ProductGallery/green4.webp",
+
         ]
     },
     {
@@ -41,9 +43,10 @@ export const ImageCarouselDataA23 = [
         bgContainer: "",
         bgURL: '/smartphone/A23s/Backgrounds/a23sBgimg.png',
         images: [
-            "/smartphone/P55/mobileGold1.png",
-            "/smartphone/P55/mobileGold2.png",
-            "/smartphone/P55/mobileGold3.png",
+            "/smartphone/A23s/ProductGallery/pink1.webp",
+            "/smartphone/A23s/ProductGallery/pink2.webp",
+            "/smartphone/A23s/ProductGallery/pink3.webp",
+            "/smartphone/A23s/ProductGallery/pink14.webp",
         ]
     },
 ];
