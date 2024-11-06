@@ -40,7 +40,7 @@ const ShowDataForComparision = () => {
                         </div>
                         <div className="flex flex-col gap-[2px]">
                             <span className="text-mobile/h7">Dimensions:</span>
-                            <span className="text-mobile/small/body">{dataOfCurrentPhone.specification.screenSize}</span>
+                            <span className="text-mobile/small/body">{dataOfCurrentPhone.specification.screenSizeForCompare}</span>
                         </div>
                         <div className="flex flex-col gap-[2px]">
                             <span className="text-mobile/h7">Processor:</span>

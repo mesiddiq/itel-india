@@ -11,8 +11,8 @@ export const AllFeaturePhoneData = [
             price: "1,499",
             primaryCamera: "1.3 MP",
             storage: "8 MB RAM & 8 MB ROM",
-            screenSize: '6.1 cm (2.4")',
-            screenSizeForCompa: '2.4"',
+            screenSize: '2.4"',
+            screenSizeForCompare: '6.1 cm (2.4")',
             battery: "1900 mAh",
         }
     },
@@ -22,13 +22,15 @@ export const AllFeaturePhoneData = [
         thumbnail: "/product-listing/filterFeaturephoneImages/superguru4g.webp",
         description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
         purchaseLink: "/product/super-guru-4g", 
-         category: "Innovation Series",
+        category: "Innovation Series",
         isNew: false,
         specification: {
             price: "1,799.00",
             primaryCamera: "VGA",
+            network: "4G",
             storage: "64MB RAM & 128MB ROM",
-            screenSize: "(5.08 cm) 2",
+            screenSize: '2"',
+            screenSizeForCompare: '(5.08 cm) 2"',
             battery: "1000mAh",
         }
     },
@@ -43,8 +45,10 @@ export const AllFeaturePhoneData = [
         specification: {
             price: "1,399.00",
             primaryCamera: "VGA",
+            network: "2G",
             storage: "4MB RAM & 4MB ROM",
-            screenSize: '6.1cm (2.4)"',
+            screenSize: '2.4"',
+            screenSizeForCompare: '6.1 cm (2.4")',
             battery: "2000mAh",
         }
     },
@@ -58,9 +62,11 @@ export const AllFeaturePhoneData = [
         isNew: false,
         specification: {
             price: "1,499.00",
+            network: "2G",
             primaryCamera: "VGA",
             storage: "4MB RAM & 4MB ROM",
-            screenSize: '7.1cm (2.8)"',
+            screenSize: '2.8"',
+            screenSizeForCompare: '7.1cm (2.8")',
             battery: "1900mAh",
         }
     },
@@ -74,9 +80,11 @@ export const AllFeaturePhoneData = [
         isNew: true,
         specification: {
             price: "2,099.00",
+            network: "2G",
             primaryCamera: "1.3 MP",
             storage: "8 MB RAM & 8 MB ROM",
-            screenSize: '7.1 cm (2.8")',
+            screenSize: '2.8"',
+            screenSizeForCompare: '7.1 cm (2.8")',
             battery: "1900 mAh",
         }
     },
@@ -90,9 +98,11 @@ export const AllFeaturePhoneData = [
         isNew: true,
         specification: {
             price: "1,599.00",
+            network: "2G",
             primaryCamera: "VGA",
             storage: "4  MB RAM & 4  MB ROM",
-            screenSize: '5.08cm (2")',
+            screenSize: '2"',
+            screenSizeForCompare: '5.08cm (2")',
             battery: "2500 mAh",
         }
     },
@@ -106,9 +116,11 @@ export const AllFeaturePhoneData = [
         isNew: true,
         specification: {
             price: "1,899.00",
+            network: "2G",
             primaryCamera: "VGA",
             storage: "4  MB RAM & 4  MB ROM",
-            screenSize: '6.1cm (2.4")',
+            screenSize: '2.4"',
+            screenSizeForCompare: '6.1 cm (2.4")',
             battery: "2500 mAh",
         }
     },
@@ -122,9 +134,11 @@ export const AllFeaturePhoneData = [
         isNew: true,
         specification: {
             price: "1,899.00",
+            network: "2G",
             primaryCamera: "0.08M",
             storage: "4  MB RAM & 4  MB ROM",
-            screenSize: '3.35 cm (1.32")',
+            screenSize: '1.32"',
+            screenSizeForCompare: '3.35 cm (1.32")',
             battery: "500 mAh",
         }
     },
@@ -138,9 +152,11 @@ export const AllFeaturePhoneData = [
         isNew: true,
         specification: {
             price: "1,399.00",
+            network: "2G",
             primaryCamera: "NA",
             storage: "32 MB RAM & 32 MB ROM",
-            screenSize: '4.5cm (1.8")',
+            screenSize: '1.8"',
+            screenSizeForCompare: '4.5cm (1.8")',
             battery: "2500 mAh",
         }
     },
@@ -154,9 +170,11 @@ export const AllFeaturePhoneData = [
         isNew: false,
         specification: {
             price: "1,499.00",
+            network: "2G",
             primaryCamera: "0.3 MP with Software",
             storage: "4MB RAM & 4MB ROM",
-            screenSize: '6.1cm (2.4)"',
+            screenSize: '2.4"',
+            screenSizeForCompare: '6.1 cm (2.4")',
             battery: "1200mAh",
         }
     },
@@ -170,9 +188,11 @@ export const AllFeaturePhoneData = [
         isNew: false,
         specification: {
             price: "1,499.00",
+            network: "2G",
             primaryCamera: "VGA",
             storage: "4MB RAM & 4MB ROM",
-            screenSize: '5.08 cm (2")',
+            screenSize: '2"',
+            screenSizeForCompare: '5.08 cm (2")',
             battery: "1200mAh",
         }
     },

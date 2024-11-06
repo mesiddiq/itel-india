@@ -44,8 +44,8 @@ export default function ProductList() {
 
         if (filters.network.length > 0) {
             const networkMatch = filters.network.some(value => {
-                if (value === '2G/3G') return phone.specification.network.includes('2G') || phone.specification.network.includes('3G')
-                if (value === '4G') return phone.specification.network.includes('4G')
+                if (value === '2G') return phone.specification.network === '2G';
+                if (value === '4G') return phone.specification.network === '4G';
                 return false
             })
             if (!networkMatch) return false

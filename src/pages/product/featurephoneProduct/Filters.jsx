@@ -25,7 +25,7 @@ export default function Filters() {
             { value: 'above-2500', label: 'Above ₹2,500' }
         ],
         network: [
-            { value: '2G/3G', label: '2G/3G' },
+            { value: '2G', label: '2G/3G' },
             { value: '4G', label: '4G' },
         ],
     }

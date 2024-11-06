@@ -83,7 +83,7 @@ const ProductSectionLaptop = () => {
                         </div> */}
 
 
-                        <div className='content lg:px-[119px] relative w-full h-[462px] lg:min-h-[350px] lg:h-full flex flex-col justify-center items-center'>
+                        {/* <div className='content lg:px-[119px] relative w-full h-[462px] lg:min-h-[350px] lg:h-full flex flex-col justify-center items-center'>
                             <div className='flex flex-col-reverse lg:flex-row justify-between items-center z-20'>
                                 <button className="z-20 mt-4 lg:hidden">
                                     <img src="/static_page/homepage/staypluggedcta.png" alt="" className='' />
@@ -99,7 +99,7 @@ const ProductSectionLaptop = () => {
                                 <img src="/product-listing/exploreBannerLaptop.png" className='absolute top-0 left-0 z-10 hidden lg:block' />
                                 <img src="/product-listing/exploreBannerMobile.png" className='absolute left-1/2 -translate-x-1/2 z-10 top-0 lg:hidden' />
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
