@@ -11,7 +11,6 @@ import FeatureRich from '../../components/common/feature_phone_common/FeatureRic
 import Hero from '../../components/common/feature_phone_common/Hero'
 import PhoneSliderAnimation from '../../components/common/feature_phone_common/PhoneSliderAnimation'
 import Circle1KingVoice from '../../components/core/feature_phone/circle_1/Circle1KingVoice'
-import NearestStoreSection from '../../components/core/feature_phone/circle_1/NearestStoreSection'
 import { TechSpecs } from '../../components/core/feature_phone/s_guru_4g'
 import { FeatureRichDataCircle1, FullSpecificationsDataCircle1, HeroDataCircle1, ProductGalleryDataCircle1, TechSpecsDataCircle1 } from '../../data/featurephonedata/circle1'
 const Circle1 = () => {

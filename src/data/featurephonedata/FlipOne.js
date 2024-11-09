@@ -1,0 +1,171 @@
+export const HeroDataFlipOne = {
+    title: "Flip One",
+    subtitle: 'Leather Premium Design | Type-C Charging | BT Caller',
+    purchaseLink: 'https://amzn.in/d/4wGKrhY',
+    phoneUrl: '/featurephone/flipOne/phone_hero.webp',
+    bgDesktop: '/featurephone/flipOne/hero_banner.webp',
+    bgMobile: '/featurephone/flipOne/hero_banner_mobile.webp',
+}
+
+export const FullSpecificationsDataFlipOne = [
+    {
+        id: 1,
+        label: 'General',
+        data: [
+            { label: 'Model', value: 'Ace 2 Power' },
+            { label: 'Colors', value: 'Light Green, Deep Blue, Black' },
+            { label: 'Display', value: '4.5cm (1.8")' },
+            { label: 'Battery', value: '2500 mAh' },
+            { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada & Malayalam & Marathi)' },
+            { label: 'Phonebook', value: '2000' },
+            { label: 'SMS', value: '500' },
+            { label: 'Torch', value: 'Yes' },
+        ]
+    },
+    {
+        id: 2,
+        label: 'Display Features',
+        data: [
+            { label: 'Display Size', value: '4.5cm (1.8") ' },
+            { label: 'Resolution', value: '128*160' },
+            { label: 'Resolution Type', value: 'QQVGA' },
+            { label: 'Pixel Density', value: '116ppi' },
+        ]
+    },
+    {
+        id: 3,
+        label: 'Battery',
+        data: [
+            { label: 'Battery Capacity', value: '2500 mAh' },
+            { label: 'Battery Type', value: 'Li-ion' },
+        ]
+    },
+    {
+        id: 4,
+        label: 'Camera',
+        data: [
+            { label: 'Rear Camera', value: 'NA' },
+        ]
+    },
+    {
+        id: 5,
+        label: 'Memory & Storage',
+        data: [
+            { label: 'ROM', value: '32 MB' },
+            { label: 'RAM', value: '32 MB' },
+            { label: 'Chipset', value: 'SC6531E' },
+            { label: 'Expandable Memory', value: 'Upto 32GB' },
+            { label: 'Phonebook', value: '1000' },
+            { label: 'Message', value: '500' },
+        ]
+    },
+    {
+        id: 6,
+        label: 'Connectivity',
+        data: [
+            { label: 'Network Type', value: '2G' },
+            { label: 'Earphone Jack', value: '3.5mm' },
+            { label: 'SIM Slot', value: 'Slot 1 & Slot 2 - Standard' },
+            { label: 'Dual Active/Standby', value: 'Dual Standby' },
+            { label: 'FM Radio', value: 'Wireless FM with Recording' },
+            { label: 'GSM', value: '900/1800' },
+        ]
+    },
+    {
+        id: 7,
+        label: 'Additional',
+        data: [
+            { label: 'Languages', value: '9 (English, Hindi, Gujarati, Telugu, Tamil, Punjabi, Kannada, Malayalam, Bengali)' },
+            { label: 'Accessories', value: 'Charger & Battery' }
+        ]
+    },
+]
+
+
+export const FeatureRichDataFlipOne = {
+    title: 'Flip it Like a Boss: Premium Flip Phone with a Nostalgic Touch',
+    description: `Experience nostalgia with a modern twist with our premium flip phone. Crafted with a classic leather design and a vibrant OVGA display, it’s elegance in your hands. Compact yet stylish, it’s perfect for those who want to flip it like a boss. Rediscover the joy of flipping open a phone with unmatched flair.`,
+    cards: [
+        {
+            icon: '/featurephone/common/battery-full-red.svg',
+            title: 'Premium Leather Design: Blend of Luxury ',
+            description: `The leather finish not only looks stunning but also offers exceptional protection for the phone and a secure grip.`
+        },
+        {
+            icon: '/featurephone/common/user-red.svg',
+            title: 'Type-C Charging: Power up with Efficiency  ',
+            description: `Experience fast and convenient charging with Type-C on Flip One, combining modern efficiency with classic design. `
+        },
+        {
+            icon: '/featurephone/common/king-voice-red.svg',
+            title: `BT Caller: Communication Redefined`,
+            description: `Connect your smartphone with BT caller - Now you can operate all smartphone calls using Flip One. `
+        },
+    ]
+}
+
+// export const KingVoiceDataFlipOne = {
+//     phoneUrl: '/featurephone/FlipOne/Backgrounds/kingvoice.webp',
+//     bgColor: '#23293D',
+//     borderColor: '#5BAEAA',
+//     textColor: '#5BAEAA',
+//     cards: [
+//         { id: '1', label: 'Incoming Calls & Message', icon: '/featurephone/common/call-kv.svg' },
+//         { id: '2', label: 'Reading Menu & Phonebook', icon: '/featurephone/common/reading-kv.svg' },
+//         { id: '3', label: 'Dialling Number', icon: '/featurephone/common/dialing-kv.svg' },
+//         { id: '4', label: 'Instant Reading', icon: '/featurephone/common/reading-kv.svg' },
+//         { id: '5', label: 'Customisation Support', icon: '/featurephone/common/support-kv.svg' },
+//         { id: '6', label: 'Time Update', icon: '/featurephone/common/time-kv.svg' },
+//     ]
+// }
+
+// export const TechSpecsDataFlipOne = {
+//     phoneUrl: '/featurephone/FlipOne/Backgrounds/phone_hero.webp',
+//     cards: [
+//         { id: '1', label: '4.5 cm (1.8”) Bright Display', icon: '/featurephone/common/connectivity.svg' },
+//         { id: '4', label: '2000 Phonebook', icon: '/featurephone/common/voice.svg' },
+//         { id: '2', label: '2500mAh Battery', icon: '/featurephone/common/phonebook.svg' },
+//         { id: '3', label: 'King Voice', icon: '/featurephone/common/battery.svg' },
+//         { id: '5', label: 'Smart Notifications', icon: '/featurephone/common/language.svg' },
+//         { id: '6', label: '9 Local Languages', icon: '/featurephone/common/vibration.svg' },
+//         { id: '7', label: 'Wireless FM with recording', icon: '/featurephone/common/camera.svg' },
+//         { id: '8', label: 'Auto Call Recording', icon: '/featurephone/common/radio.svg' },
+//     ]
+// }
+
+export const ProductGalleryDataFlipOne = {
+    bgUrl: '/featurephone/FlipOne/Backgrounds/phone_preview.webp',
+    bgUrlMobile: '/featurephone/FlipOne/Backgrounds/phone_preview_mobile.webp',
+    products: [
+        {
+            id: 1,
+            images: [
+                "/featurephone/FlipOne/product_gallery/black_front.webp",
+                "/featurephone/FlipOne/product_gallery/black_all_on.webp",
+                "/featurephone/FlipOne/product_gallery/black_front_on.webp",
+            ],
+            buttonLabel: 'Black',
+            buttonColor: '#515152'
+        },
+        {
+            id: 2,
+            images: [
+                "/featurephone/FlipOne/product_gallery/deep_blue_front.webp",
+                "/featurephone/FlipOne/product_gallery/deep_blue_all.webp",
+                "/featurephone/FlipOne/product_gallery/deep_blue_front_on.webp",
+            ],
+            buttonLabel: 'Deep Blue',
+            buttonColor: '#4B526D'
+        },
+        {
+            id: 3,
+            images: [
+                "/featurephone/FlipOne/product_gallery/light_green_front.webp",
+                "/featurephone/FlipOne/product_gallery/light_green_all.webp",
+                "/featurephone/FlipOne/product_gallery/light_green_all_on.webp",
+            ],
+            buttonLabel: 'Light Green',
+            buttonColor: '#96C3C2'
+        },
+    ]
+}

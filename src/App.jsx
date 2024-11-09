@@ -5,6 +5,8 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react';
 import Footer from './components/common/footer'
+import BackToTopButton from './utils/BackToTop'
+const FlipOne = lazy(() => import('./pages/feature_phone/FlipOne'));
 const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
 const FeaturePhoneProductPage = lazy(() => import('./pages/product/FeaturePhoneProductPage'));
 const Loading = lazy(() => import('./pages/static_pages/Loading'));
@@ -103,8 +105,8 @@ function App() {
 					<Route path='/bloglisting' element={<BlogListing />} />
 					<Route path='/submitted' element={<Thankyou />} />
 					<Route path='/coming-soon' element={<Commingsoon />} />
-					<Route path='/commingsoon' element={<Commingsoon/>} />
-					<Route path='/thankyou' element={<Thankyou/>} />
+					<Route path='/commingsoon' element={<Commingsoon />} />
+					<Route path='/thankyou' element={<Thankyou />} />
 
 
 					{/* ***************************************************************************************************/}
@@ -175,6 +177,7 @@ function App() {
 						<Route path='power-120' element={<Power120 />} />
 						<Route path='power-450' element={<Power450 />} />
 						<Route path='ace-2-power' element={<Ace2Power />} />
+						<Route path='flip-one' element={<FlipOne />} />
 					</Route>
 
 					{/* ***********************Not Found**************** */}
@@ -183,6 +186,7 @@ function App() {
 				</Routes>
 				<Footer />
 				<ScrollToTop />
+				<BackToTopButton />
 			</main>
 		</Suspense>
 	)

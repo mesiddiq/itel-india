@@ -38,7 +38,7 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
 
 
     return (
-        <Link to={link} onClick={() => fn(prev => !prev)}>
+        <Link key={label} to={link} onClick={() => fn(prev => !prev)}>
             <div className="w-[290px] text-white h-[163px] p-6 flex gap-4 bg-dark/card/bg  rounded-[8px]">
                 <img src={thumbnail} alt={label} className='h-[114px] w-[120px] object-contain' />
                 <div className="flex flex-col gap-4">
@@ -89,8 +89,8 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
             <div className="max-w-[1065px] w-full mx-auto flex gap-11">
                 <div className="flex flex-col gap-3">
                     {
-                        PhoneData.map(({ id }) => (
-                            <button onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
+                        PhoneData.map(({ id }) => ( 
+                            <button key={id} onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
                                 <h1 className="text-desktop/button text-left uppercase text-white">
                                     {id}
                                 </h1>
@@ -138,7 +138,7 @@ const AccessoriesDropDown = ({ Accessories }) => {
                 <div className="flex flex-col gap-3">
                     {
                         AccessoriesData.map(({ id }) => (
-                            <button onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
+                            <button key={id} onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
                                 <h1 className="text-desktop/button text-left uppercase text-white">
                                     {id}
                                 </h1>
@@ -183,7 +183,7 @@ const TvDropDown = ({ tv }) => {
                 <div className="flex flex-col gap-3">
                     {
                         TvData.map(({ id }) => (
-                            <button onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
+                            <button key={id} onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
                                 <h1 className="text-desktop/button text-left uppercase text-white">
                                     {id}
                                 </h1>
