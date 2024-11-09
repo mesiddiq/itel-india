@@ -39,11 +39,11 @@ const MainBody = () => {
     <div className=' lg:content py-[60px] flex  lg:space-y-[120px] flex-col  items-center px-4 font-markot'>
         <div className=' lg:space-y-[60px] lg:w-[846px]'>
             <div className=' space-y-[60px]'>
-               <div className=' lg:space-y-[20px]'>
-                  <p className=' text-desktop/h5/medium text-grey/grey/5'>{Maindata.category}</p>
-                 <p className=' text-desktop/h3 text-brand/black'>{Maindata.title}</p>
-                <div className=' flex justify-between'>
-                    <p className=' text-grey/grey/4 text-desktop/body/1'>{Maindata.publisedon}</p>
+               <div className=' space-y-[16px] lg:space-y-[20px]'>
+                  <p className=' text-mobile/h7 lg:text-desktop/h5/medium text-grey/grey/5'>{Maindata.category}</p>
+                 <p className=' text-mobile/h4 lg:text-desktop/h3 text-brand/black'>{Maindata.title}</p>
+                <div className=' flex lg:flex-row flex-col lg:space-y-0 space-y-[16px] justify-between'>
+                    <p className=' text-grey/grey/4  text-desktop/body/2/regular lg:text-desktop/body/1'>{Maindata.publisedon}</p>
                     <div className=' flex space-x-[6px]'>
                         <p className=' text-grey/grey/4 text-desktop/h6'>Share</p>
                         <p>✨</p>
@@ -57,7 +57,7 @@ const MainBody = () => {
                </div>
               
               <img className=' w-full h-[417px]' src={Maindata.img} alt="" />
-              <div className=' lg:space-y-[30px] text-desktop/body/large  text-black/1'>
+              <div className=' lg:space-y-[30px] space-y-[24px] text-desktop/body/1 lg:text-desktop/body/large  text-black/1'>
                 {
                     Maindata.description.map((data,index) => {
                         return <p key={index}>{data}</p>

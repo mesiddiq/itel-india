@@ -2,7 +2,8 @@ export const data=[
     {
         id:"1",
         title:"Live life SAHI with itel Earbuds T1 , The Perfect Travel Companion",
-        img:"/static_page/BlogListing/ItelBrandFilm2023-1000x565.jpg",
+        img:"/static_page/BlogListing/Earbuds-2-1000x565.png",
+      
         publisedon:"March 10, 2022",
         category:"BLOG",
         description:[
@@ -25,7 +26,8 @@ export const data=[
     {
         id:"2",
         title:"Unleash the Power of Memory: itel S23 Redefines Performance ,Capture Life’s Finest Details with Unparalleled Precision",
-        img:"/static_page/BlogListing/Earbuds-2-1000x565.png",
+        img:"/static_page/BlogListing/itelS23_1000x565_Amazon-RajivMakhni-1536x868.jpg",
+
         publisedon:"June 13, 2023 ",
         category:"BLOG",
         description:[
@@ -45,7 +47,8 @@ export const data=[
     {
         id:"3",
         title:"New Delhi, October 05, 2023: itel, India’s leading smartphone brand, is set to capture hearts",
-        img:"/static_page/BlogListing/52062d59-9090-4635-bbc3-96e14f47d266-1000x565.jpeg",
+        img:"/static_page/BlogListing/itel_Smartwatch_Banner-1000x565.jpg",
+
         publisedon:"October 6, 2023",
         category:"BLOG",
         description:[
@@ -63,7 +66,8 @@ export const data=[
     {
         id:"4",
         title:" In an era where style meets innovation, itel, a leading brand in the technology industry,",
-        img:"/static_page/BlogListing/itel_Smartwatch_Banner-1000x565.jpg",
+        img:"/static_page/BlogListing/52062d59-9090-4635-bbc3-96e14f47d266-1000x565.jpeg",
+
         publisedon:"October 21, 2023",
         category:"BLOG",
         description:[
@@ -81,7 +85,8 @@ export const data=[
     {
         id:"5",
         title:"Revolutionize Your Wearable Tech: Unveiling the itel Smartwatch 2 Ultra with Trendy Design and Unrivaled 600mAh Battery",
-        img:"/static_page/BlogListing/itelS23_1000x565_Amazon-RajivMakhni-1536x868.jpg",
+        img:"/static_page/BlogListing/ItelBrandFilm2023-1000x565.jpg",
+
         publisedon:"August 23, 2023 ",
         category:"BLOG",
         description:[

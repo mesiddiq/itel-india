@@ -36,9 +36,9 @@ const MainBody = () => {
   });
 
   return (
-    <div className='font-markot lg:content lg:space-y-[40px] px-4'>
-      <div className='flex items-center justify-between'>
-        <div className='flex lg:w-[228px] justify-between text-grey/grey/5 lg:text-desktop/h6/medium'>
+    <div className='font-markot lg:content  space-y-[28px]  lg:space-y-[40px] px-4'>
+      <div className='flex lg:items-center lg:flex-row lg:gap-0 gap-7  flex-col-reverse lg:justify-between'>
+        <div className='flex lg:w-[228px] lg:justify-between text-grey/grey/5 lg:text-desktop/h6/medium'>
           <button className={`px-2 ${filterType === 'ALL' ? ' border-b-4 border-itel-red' : ''}`}
              onClick={() => setFilterType('ALL')}>ALL</button>
           <button className={`px-2 ${filterType === 'NEWS' ? 'border-b-4 border-itel-red' : ''}`}
@@ -46,13 +46,13 @@ const MainBody = () => {
           <button className={`px-2 ${filterType === 'BLOG' ? 'border-b-4 border-itel-red' : ''}`}
              onClick={() => setFilterType('BLOG')}>BLOGS</button>
         </div>
-        <div className='lg:w-[88px] flex justify-between items-center'>
+        <div className='w-[88px] flex justify-between items-center'>
           <img src="/static_page/BlogListing/setting-3.png" alt=""/>
           <p className='text-desktop/button text-brand/black'>FILTER</p>
         </div>
       </div>
 
-      <div className='lg:grid lg:gap-x-[20px] gap-y-[52px] lg:grid-cols-3'>
+      <div className='lg:grid lg:gap-x-[20px] lg:space-y-0  space-y-[28px]  gap-y-[52px] lg:grid-cols-3'>
         {
           filteredData.map((data, index) =>
             <BlogCard category={data.category} data={data} image={data.img} key={data.id} title={data.title}/>
