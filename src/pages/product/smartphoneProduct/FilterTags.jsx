@@ -1,7 +1,7 @@
 import { useState } from "react";
 import cross from '/product-listing/cross.svg'
 
-const filtersData = ["Best Camera", "Music", "Entertainment", "Talk Time"];
+const filtersData = ["5G Connectivity", "AI Camera", "Amoled Display", "Big Battery"];
 
 export default function FilterComponent() {
   const [selectedFilters, setSelectedFilters] = useState([]);

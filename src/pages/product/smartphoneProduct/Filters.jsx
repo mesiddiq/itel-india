@@ -53,7 +53,7 @@ export default function Filters() {
     )
 
     return (
-        <div className=" text-white pr-5 rounded-lg shadow-md">
+        <div className=" text-white pr-5 rounded-lg shadow-md no-scrollbar">
             <div className="pt-2">
                 <FilterHeading />
             </div>
