@@ -380,7 +380,7 @@ const Droppoints = () => {
   return (
     <>
       {showpannel && (
-        <div className="bg-black font-markot bg-opacity-30 p-10 flex flex-col items-center absolute justify-center w-full max-h-screen">
+        <div className="font-markot bg-opacity-30 p-10 flex flex-col items-center absolute justify-center w-full max-h-screen">
           <div className="w-[990px] flex justify-end">
             <img
               className="cursor-pointer"

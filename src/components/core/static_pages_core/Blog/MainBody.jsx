@@ -36,20 +36,23 @@ const MainBody = () => {
         window.scrollTo(0,0)
     })
   return (
-    <div className=' lg:content py-[60px] flex  lg:space-y-[120px] flex-col  items-center px-4 font-markot'>
+    <div className=' lg:content py-[60px] flex  lg:space-y-[120px] space-y-10 flex-col  items-center px-4 font-markot'>
         <div className=' lg:space-y-[60px] lg:w-[846px]'>
             <div className=' space-y-[60px]'>
                <div className=' space-y-[16px] lg:space-y-[20px]'>
                   <p className=' text-mobile/h7 lg:text-desktop/h5/medium text-grey/grey/5'>{Maindata.category}</p>
                  <p className=' text-mobile/h4 lg:text-desktop/h3 text-brand/black'>{Maindata.title}</p>
-                <div className=' flex lg:flex-row flex-col lg:space-y-0 space-y-[16px] justify-between'>
+                <div className=' flex lg:flex-row items-start lg:items-center flex-col lg:space-y-0 space-y-[16px] justify-between'>
                     <p className=' text-grey/grey/4  text-desktop/body/2/regular lg:text-desktop/body/1'>{Maindata.publisedon}</p>
-                    <div className=' flex space-x-[6px]'>
-                        <p className=' text-grey/grey/4 text-desktop/h6'>Share</p>
-                        <p>✨</p>
-                        <p>✨</p>
-                        <p>✨</p>
-                        <p>✨</p>
+                    <div className=' flex items-center space-x-[6px]'>
+                        <p className=' text-grey/grey/5 text-desktop/h6'>Share</p>
+                         <img src="/static_page/BlogListing/fb.png" alt="" />
+                         <img src="/static_page/BlogListing/X.png" alt="" />
+
+                         <img src="/static_page/BlogListing/linkedin.png" alt="" />
+
+                         <img src="/static_page/BlogListing/link-circle.png" alt="" />
+
                     </div>
                 </div>
 
@@ -69,7 +72,7 @@ const MainBody = () => {
         </div>
 
 <div className=' space-y-[60px] '>
-    <p className=' text-desktop/h2 text-brand/black'>More Blogs</p>
+    <p className=' text-mobile/h4 lg:text-desktop/h2 text-brand/black'>More Blogs</p>
 
       <div className='lg:grid lg:gap-x-[20px] gap-y-[52px] lg:grid-cols-3'>
         {
