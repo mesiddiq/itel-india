@@ -2,9 +2,9 @@ import React from 'react';
 
 const CaptureMore = () => {
   return (
-    <div className='flex w-full relative md:items-center h-[800px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/CaptureMore/bgMobile.webp")] md:bg-[url("/smartphone/color-pro-5g/CaptureMore/bg.webp")] bg-cover bg-center md:bg-right bg-no-repeat overflow-hidden'>
+    <div className='flex w-full relative md:items-center h-[800px] md:h-[860px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/CaptureMore/bgMobile.webp")] md:bg-[url("/smartphone/color-pro-5g/CaptureMore/bg.webp")] bg-cover bg-center md:bg-right bg-no-repeat overflow-hidden'>
       <div className='content'>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
+        <div className='grid grid-cols-1 md:grid-cols-[40%_60%]'>
           <div className='col-span-1'>
             <div className='flex flex-col'>
               <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot'>Capture More with Smart Scene Detection</h2>

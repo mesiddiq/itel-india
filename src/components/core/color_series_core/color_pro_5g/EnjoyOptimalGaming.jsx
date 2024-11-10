@@ -29,9 +29,7 @@ const EnjoyOptimalGaming = () => {
               <h2 className='text-mobile/h1 md:text-desktop/h1 text-[#FFFFFF] font-markot md:w-[90%] pt-5 md:pt-20 pb-0'>4,20,000*</h2>
               <h6 className='text-mobile/body/2/regular md:text-desktop/h6/medium text-[#FFFFFF] font-markot md:w-[90%]'>AnTutu Score</h6>
 
-              <div className='relative left-[75rem] top-[3rem]'>
-                *Under Lab Testing
-              </div>
+              <div className='absolute bottom-0 right-0'>*Under Lab Testing</div>
             </div>
           </div>
         </div>
