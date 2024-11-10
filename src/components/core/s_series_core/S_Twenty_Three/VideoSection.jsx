@@ -1,38 +1,22 @@
 import React, { useRef } from 'react';
+import ReactPlayer from 'react-player';
 
-const VideoComponent = ({ videoSrc, thumbnailSrc, videoTitle }) => {
-  const videoRef = useRef(null);
+const VideoComponent = () => {
 
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  };
-
-  return (
-    <div className="relative cursor-pointer" onClick={handleVideoClick}>
-      <video
-        ref={videoRef}
-        src="https://res.cloudinary.com/djwj42mic/video/upload/v1728628180/itel___itel_S23_smartphone_1080p_talia7.mp4"
-        className="w-full h-auto"
-        autoPlay
-        muted
-        loop
-      />
-      
-      
-      <a
-        href={videoSrc}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute inset-0 z-10 opacity-0"
-      />
-    </div>
-  );
+	return (
+		<div className="relative">
+			<ReactPlayer
+				url={["/videos/s23specials.webm"]}
+				className="w-full h-auto"
+				playing
+				muted
+				loop
+				width="100%"
+				height="100%"
+				on
+			/>
+		</div>
+	);
 };
 
 

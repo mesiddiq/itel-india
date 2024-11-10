@@ -10,10 +10,15 @@ import GrandScreen from '../../components/core/feature_phone/it5262/GrandScreen'
 import TypeC from '../../components/core/feature_phone/it5262/TypeC'
 import CaptivatingGlass from '../../components/core/feature_phone/it5262/CaptivatingGlass'
 import UnlimitedEnergy from '../../components/core/feature_phone/it5262/UnlimitedEnergy'
+import { Helmet } from 'react-helmet'
 
 const It5262 = () => {
     return (
         <>
+            <Helmet>
+                <title>it5262</title>
+                <meta name="description" content={`Stay lit with the itel it5262 - your perfect companion! Packed with a big 2000 mAh battery, this sleek feature phone keeps you connected all day without the power struggle. Rocking a glass finish design for a modern vibe, kingvoice, and Type-C charging for a quick full charge. Level up with the all-new itel it5262!`} />
+            </Helmet>
             <Hero {...HeroDatait5262} />
             <StickyHeader {...HeroDatait5262} />
             <FeatureRich {...FeatureRichDatait5262} />

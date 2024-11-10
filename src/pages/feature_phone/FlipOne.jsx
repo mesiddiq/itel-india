@@ -12,10 +12,15 @@ import Section3 from '../../components/core/feature_phone/flipOne/Section3'
 import Section4 from '../../components/core/feature_phone/flipOne/Section4'
 import Section5 from '../../components/core/feature_phone/flipOne/Section5'
 import Section6 from '../../components/core/feature_phone/flipOne/Section6'
+import { Helmet } from 'react-helmet'
 
 const FlipOne = () => {
     return (
-        <div className='font-markot'>
+        <>
+            <Helmet>
+                <title>Flip One</title>
+                <meta name="description" content={`Experience nostalgia with a modern twist with our premium flip phone. Crafted with a classic leather design and a vibrant OVGA display, it’s elegance in your hands. Compact yet stylish, it’s perfect for those who want to flip it like a boss. Rediscover the joy of flipping open a phone with unmatched flair..`} />
+            </Helmet>
             <Hero {...HeroDataFlipOne} />
             <StickyHeader {...HeroDataFlipOne} />
             <FeatureRich {...FeatureRichDataFlipOne} />
@@ -28,7 +33,7 @@ const FlipOne = () => {
             <Section5 />
             <FeaturePhoneProductGallery {...ProductGalleryDataFlipOne} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataFlipOne} mode={'light'} />
-        </div>
+        </>
     )
 }
 
