@@ -2,9 +2,9 @@ import React from 'react';
 
 const CaptureMore = () => {
   return (
-    <div className='flex w-full relative md:items-center h-[800px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/CaptureMore/bgMobile.webp")] md:bg-[url("/smartphone/color-pro-5g/CaptureMore/bg.png")] bg-cover bg-center bg-no-repeat overflow-hidden'>
+    <div className='flex w-full relative md:items-center h-[800px] md:h-[860px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/CaptureMore/bgMobile.webp")] md:bg-[url("/smartphone/color-pro-5g/CaptureMore/bg.webp")] bg-cover bg-center md:bg-right bg-no-repeat overflow-hidden'>
       <div className='content'>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
+        <div className='grid grid-cols-1 md:grid-cols-[40%_60%]'>
           <div className='col-span-1'>
             <div className='flex flex-col'>
               <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot'>Capture More with Smart Scene Detection</h2>
@@ -27,9 +27,7 @@ const CaptureMore = () => {
             </div>
           </div>
           <div className='md:hidden col-span-1 text-center'>
-            {/*<h2 className='text-[53px] text-[#FFFFFF] font-[700]'>WIDE SHOT<br />AI CAM</h2>*/}
-            {/*<img src='/smartphone/color-pro-5g/CaptureMore/CaptureMoreGraphic.png' className='absolute bottom-[200px]' />*/}
-            <img src='/smartphone/color-pro-5g/CaptureMore/Untitleddesign.png' className='absolute bottom-0 right-0' />
+            <img src='/smartphone/color-pro-5g/CaptureMore/mobile.webp' className='absolute bottom-0 right-0' />
           </div>
         </div>
       </div>

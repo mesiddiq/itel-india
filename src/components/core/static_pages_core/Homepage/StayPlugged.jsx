@@ -5,7 +5,7 @@ const StayPlugged = () => {
         <div className='content lg:px-[119px] relative h-[462px] lg:h-auto'>
             <div className='flex flex-col-reverse lg:flex-row justify-between items-center z-20'>
                 <button className="z-20 mt-4 lg:hidden">
-                    <img src="/static_page/homepage/staypluggedcta.png" alt="" className='' />
+                    <img src="/static_page/homepage/stayplugged.png" alt="" className='' />
                 </button>
                 <div className=' text-white max-w-[296px] text-center lg:text-left lg:max-w-[463px] z-20 '>
                     <h2 className='lg:text-[36px] font-bold lg:leading-[46.8px] text-desktop/h4 '>Stay Plugged into Your<br />Go-to Socials with itel</h2>
