@@ -57,19 +57,19 @@ const pdfdata1 = {
   data: [
     {
       undertitle: "Annual Return 2021-22",
-      link: "/pdf/Annual-Return-2021-22.pdf",
+      link: "/pdf/InvestorRelations/AnnualReturn/Annual-Return-2021-22.pdf",
     },
     {
       undertitle: "Annual Return 2020-21",
-      link: "/pdf/Annual-Return-2021-22.pdf",
+      link: "/pdf/InvestorRelations/AnnualReturn/Annual-Return_2020-21.pdf",
     },
     {
       undertitle: "Annual Return 2019-20",
-      link: "/pdf/Annual-Return-2021-22.pdf",
+      link: "/pdf/InvestorRelations/AnnualReturn/Annual-Return-2019-20.pdf",
     },
     {
       undertitle: "Annual Return 2018-19",
-      link: "/pdf/Annual-Return-2021-22.pdf",
+      link: "/pdf/InvestorRelations/AnnualReturn/Annual-Return-2018-19.pdf",
     },
   ],
 };
@@ -80,23 +80,23 @@ const pdfdata2 =
     data: [
       {
         undertitle: "EGM Notice",
-        link: "/pdf/Annual-Return-2021-22.pdf",
+        link: "/pdf/InvestorRelations/NoticeofGeneralMeeting/Notice-of-EGM_30-05-2022.pdf",
       },
       {
         undertitle: "AGM Notice 2022",
-        link: "/pdf/Annual-Return-2021-22.pdf",
-      },
+        link: "/pdf/InvestorRelations/NoticeofGeneralMeeting/AGM-Notice-2022.pdf",
+    },
       {
         undertitle: "EGM Notice 2021",
-        link: "/pdf/Annual-Return-2021-22.pdf",
-      },
+        link: "/pdf/InvestorRelations/NoticeofGeneralMeeting/AGM-Notice-2021.pdf",
+         },
       {
-        undertitle: "EGM Notice 2021",
-        link: "/pdf/Annual-Return-2021-22.pdf",
+        undertitle: "EGM Notice 2020",
+        link: "/pdf/InvestorRelations/NoticeofGeneralMeeting/AGM-Notice-2020.pdf",
       },
       {
         undertitle: "AGM Notice 2019",
-        link: "/pdf/Annual-Return-2021-22.pdf",
+        link: "/pdf/InvestorRelations/NoticeofGeneralMeeting/AGM-Notice-2019.pdf",
       },
     ],
   }
