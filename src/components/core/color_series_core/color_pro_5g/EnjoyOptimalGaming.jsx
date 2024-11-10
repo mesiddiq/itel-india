@@ -2,11 +2,12 @@ import React from 'react';
 
 const EnjoyOptimalGaming = () => {
   return (
-    <div className='flex w-full md:items-center h-[700px] md:h-[860px] px-[16px] md:px-[80px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/EnjoyOptimalGaming/bgMobile.webp")] md:bg-[url("/smartphone/color-pro-5g/EnjoyOptimalGaming/bg.webp")] bg-cover bg-center bg-no-repeat overflow-hidden'>
+    <div className='flex w-full md:items-center h-[700px] md:h-[800px] py-[40px] md:py-[120px] bg-[url("/smartphone/color-pro-5g/EnjoyOptimalGaming/bgMobile.webp")] md:bg-[url("/smartphone/color-pro-5g/EnjoyOptimalGaming/bg.webp")] bg-cover bg-center md:bg-right bg-no-repeat overflow-hidden'>
       <div className='content relative'>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
+        <div className='grid grid-cols-1 md:grid-cols-[40%_60%]'>
           <div className='col-span-1'>
             <div className='flex flex-col'>
+              <p className='text-desktop/title text-[#FFFFFF] font-markot uppercase'>PROCESSOR</p>
               <h2 className='text-mobile/h4 md:text-desktop/h2 text-[#FFFFFF] font-markot md:w-[90%]'>Enjoy Optimal Gaming Performance</h2>
               <p className='text-[16px] md:text-desktop/body/large text-[#FFFFFF] font-markot md:w-[80%] pt-5'>The Color Pro 5G is perfect for maximizing your gaming enjoyment with low power consumption, rapid performance, and enhanced image processing.</p>
               <div className='grid grid-cols-[25%_30%_45%] md:grid-cols-[25%_25%_50%] gap-2 md:gap-4'>
