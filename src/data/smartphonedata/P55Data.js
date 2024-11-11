@@ -1,6 +1,13 @@
-export const HeroData = {
-    title: "S24",
-    subtitle:''
+export const HeroDataP55 = {
+    headingText: 'P55',
+    bgDesktop: '/smartphone/smartphonehero/p55.webp',
+    bgMobile: '/smartphone/smartphonehero/p55_mobile.webp',
+    description: '24GB* (8GB + 16GB*) RAM + 128GB ROM | 50MP AI Dual Rear Camera | T606 Octacore Processor',
+    gradient1: "#FFFFFF",
+    gradient2: "#FFFFFF",
+    price: '6,999',
+    tagText: 'power-series',
+    purchaseLink: "https://www.amazon.in/dp/B0CSKKNLTT?ie=UTF8&ref_=itel_P55_PDP_WS&th=1"
 }
 
 export const FullSpecificationsP55 = [
@@ -96,3 +103,53 @@ export const FullSpecificationsP55 = [
         ]
     },
 ]
+
+export const ImageCarouselData = [
+    {
+        id: 1,
+        color: "white",
+        buttonText: "Moonlit Black",
+        buttonGradient: "bg-gradient-to-br from-[#ACB1B7] to-[#060708]",
+        colorSelectorBGColor: "bg-white",
+        colorSelectorTextColor: "text-black",
+        bgContainer: "",
+        bgURL: '/smartphone/P55/bg_p55.png',
+        images: [
+            "/smartphone/P55/black1.webp",
+            "/smartphone/P55/black2.webp",
+            "/smartphone/P55/black3.webp",
+        ]
+    },
+    {
+        id: 2,
+        color: "black",
+        buttonText: "Aurora Blue",
+        buttonGradient: "bg-gradient-to-br from-[#4DB7D9] to-[#CAF0FB]",
+        colorSelectorBGColor: "bg-white",
+        colorSelectorTextColor: "text-black",
+        bgURL: '/smartphone/P55/bg_p55.png',
+        images: [
+            "/smartphone/P55/blue1.webp",
+            "/smartphone/P55/blue2.webp",
+            "/smartphone/P55/blue3.webp",
+            "/smartphone/P55/blue4.webp",
+            "/smartphone/P55/blue5.webp",
+        ],
+    },
+    
+    {
+        id: 3,
+        color: "gold",
+        buttonText: "Brilliant Gold",
+        buttonGradient: "bg-gradient-to-br from-[#FFE092] to-[#FFF0CB]",
+        colorSelectorBGColor: "bg-white",
+        colorSelectorTextColor: "text-black",
+        bgContainer: "",
+        bgURL: '/smartphone/P55/bg_p55.png',
+        images: [
+            "/smartphone/P55/gold1.webp",
+            "/smartphone/P55/gold2.webp",
+            "/smartphone/P55/gold3.webp",
+        ]
+    },
+];
