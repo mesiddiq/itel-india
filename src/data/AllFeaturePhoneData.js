@@ -14,6 +14,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "1900 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -32,6 +38,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2"',
             screenSizeForCompare: '(5.08 cm) 2"',
             battery: "1000mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -50,6 +62,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "2000mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -68,6 +86,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2.8"',
             screenSizeForCompare: '7.1cm (2.8")',
             battery: "1900mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -86,6 +110,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2.8"',
             screenSizeForCompare: '7.1 cm (2.8")',
             battery: "1900 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -104,6 +134,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2"',
             screenSizeForCompare: '5.08cm (2")',
             battery: "2500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -122,6 +158,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "2500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -140,6 +182,12 @@ export const AllFeaturePhoneData = [
             screenSize: '1.32"',
             screenSizeForCompare: '3.35 cm (1.32")',
             battery: "500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -158,6 +206,12 @@ export const AllFeaturePhoneData = [
             screenSize: '1.8"',
             screenSizeForCompare: '4.5cm (1.8")',
             battery: "2500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -176,6 +230,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "1200mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
@@ -194,6 +254,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2"',
             screenSizeForCompare: '5.08 cm (2")',
             battery: "1200mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
 ];

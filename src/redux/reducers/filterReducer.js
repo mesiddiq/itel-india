@@ -4,7 +4,8 @@ import {
     TOGGLE_PRICE_FILTER,
     TOGGLE_CAMERA_FILTER,
     TOGGLE_SCREEN_FILTER,
-    TOGGLE_STORAGE_FILTER
+    TOGGLE_STORAGE_FILTER,
+    TOGGLE_FEATURE_FILTER
 } from './actions'
 
 const initialState = {
@@ -12,7 +13,8 @@ const initialState = {
     price: [],
     camera: [],
     screen: [],
-    storage: []
+    storage: [],
+    features: []
 }
 
 const filterReducer = (state = initialState, action) => {
@@ -49,6 +51,13 @@ const filterReducer = (state = initialState, action) => {
                 storage: state.storage.includes(action.payload)
                     ? state.storage.filter(item => item !== action.payload)
                     : [...state.storage, action.payload]
+            }
+        case TOGGLE_FEATURE_FILTER:
+            return {
+                ...state,
+                features: state.features.includes(action.payload)
+                    ? state.features.filter(item => item !== action.payload)
+                    : [...state.features, action.payload]
             }
         default:
             return state

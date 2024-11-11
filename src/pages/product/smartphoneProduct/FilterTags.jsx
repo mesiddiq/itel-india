@@ -1,22 +1,20 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleFeatureFilter } from '../../../redux/reducers/actions';
 import cross from '/product-listing/cross.svg'
 
 const filtersData = ["5G Connectivity", "AI Camera", "Amoled Display", "Big Battery"];
 
 export default function FilterComponent() {
-  const [selectedFilters, setSelectedFilters] = useState([]);
+  const dispatch = useDispatch();
+  const selectedFeatures = useSelector(state => state.filters.filters.features);
 
   // Toggle filter selection
   const toggleFilter = (filter) => {
-    if (selectedFilters.includes(filter)) {
-      setSelectedFilters(selectedFilters.filter((item) => item !== filter));
-    } else {
-      setSelectedFilters([...selectedFilters, filter]);
-    }
+    dispatch(toggleFeatureFilter(filter));
   };
 
   // Check if filter is active
-  const isActive = (filter) => selectedFilters.includes(filter);
+  const isActive = (filter) => selectedFeatures.includes(filter);
 
   return (
     <div className="flex gap-4 w-auto">
@@ -36,7 +34,10 @@ export default function FilterComponent() {
           {isActive(filter) && (
             <span
               className="ml-2 text-xs cursor-pointer hover:text-gray-300"
-              onClick={() => toggleFilter(filter)}
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleFilter(filter);
+              }}
             >
               <img src={cross} alt="cross" />
             </span>

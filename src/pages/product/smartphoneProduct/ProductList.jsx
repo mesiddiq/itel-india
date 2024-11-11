@@ -51,6 +51,24 @@ export default function ProductList() {
             if (!filters.storage.includes(storage)) return false
         }
 
+        if (filters.features.length > 0) {
+            const hasAllSelectedFeatures = filters.features.every(feature => {
+                switch (feature) {
+                    case "5G Connectivity":
+                        return phone.features?.is5G;
+                    case "AI Camera":
+                        return phone.features?.hasAICamera;
+                    case "Amoled Display":
+                        return phone.features?.hasAmoledDisplay;
+                    case "Big Battery":
+                        return phone.features?.hasBigBattery;
+                    default:
+                        return false;
+                }
+            });
+            if (!hasAllSelectedFeatures) return false;
+        }
+
         return true
     })
 
