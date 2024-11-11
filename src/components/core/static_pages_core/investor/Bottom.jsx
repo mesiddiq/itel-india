@@ -1,6 +1,6 @@
 import { div } from 'framer-motion/client';
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 
 
@@ -84,7 +84,10 @@ const Bottom = () => {
             <p className=' text-desktop/body/1 text-center lg:text-desktop/body/large'>Pathway to a Better India - CSR Endeavor</p>
             <div className=' space-x-2 py-[6px] px-[14px] lg:py-[12px] lg:px-[24px] bg-brand/black rounded-full cursor-pointer flex items-center'>
               <p className='lg:text-desktop/button text-mobile/button'>READ MORE</p>
+              <Link to={"/corporate-social-responsibility-csr"}>
               <img src={"/static_page/homepage/arrow.png"} alt="" />
+              </Link>
+              
             </div>
 
            </div>

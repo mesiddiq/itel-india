@@ -29,7 +29,7 @@ const Terms = () => {
           {data.map((data, index) => {
             return (
               <div className=" space-x-1 flex items-start" key={index+1}>
-                  <p className="  text-desktop/body/1 text-grey/grey/5">{index}. </p>
+                  <p className="  text-desktop/body/1 text-grey/grey/5">{index+1}. </p>
                 <p className="  text-desktop/body/1 text-grey/grey/5">{data}</p>
               </div>
             );

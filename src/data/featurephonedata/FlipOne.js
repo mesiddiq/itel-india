@@ -3,8 +3,8 @@ export const HeroDataFlipOne = {
     subtitle: 'Leather Premium Design | Type-C Charging | BT Caller',
     purchaseLink: 'https://amzn.in/d/4wGKrhY',
     phoneUrl: '/featurephone/flipOne/phone_hero.webp',
-    bgDesktop: '/featurephone/flipOne/hero_banner.webp',
-    bgMobile: '/featurephone/flipOne/hero_banner_mobile.webp',
+    bgDesktop: '/featurephone/flipOne/hero_banner.svg',
+    bgMobile: '/featurephone/flipOne/hero_banner_mobile.svg',
 }
 
 export const FullSpecificationsDataFlipOne = [
@@ -134,38 +134,44 @@ export const FeatureRichDataFlipOne = {
 // }
 
 export const ProductGalleryDataFlipOne = {
-    bgUrl: '/featurephone/FlipOne/Backgrounds/phone_preview.webp',
-    bgUrlMobile: '/featurephone/FlipOne/Backgrounds/phone_preview_mobile.webp',
+    bgUrl: '/featurephone/flipOne/product_preview.svg',
+    bgUrlMobile: '/featurephone/flipOne/product_preview.svg',
     products: [
         {
             id: 1,
             images: [
-                "/featurephone/FlipOne/product_gallery/black_front.webp",
-                "/featurephone/FlipOne/product_gallery/black_all_on.webp",
-                "/featurephone/FlipOne/product_gallery/black_front_on.webp",
+                "/featurephone/flipOne/product_gallery/black1.webp",
+                "/featurephone/flipOne/product_gallery/black2.webp",
+                "/featurephone/flipOne/product_gallery/black3.webp",
+                "/featurephone/flipOne/product_gallery/black4.webp",
+                "/featurephone/flipOne/product_gallery/black5.webp",
             ],
             buttonLabel: 'Black',
-            buttonColor: '#515152'
+            buttonColor: '#000'
         },
         {
             id: 2,
             images: [
-                "/featurephone/FlipOne/product_gallery/deep_blue_front.webp",
-                "/featurephone/FlipOne/product_gallery/deep_blue_all.webp",
-                "/featurephone/FlipOne/product_gallery/deep_blue_front_on.webp",
+                "/featurephone/flipOne/product_gallery/blue1.webp",
+                "/featurephone/flipOne/product_gallery/blue2.webp",
+                "/featurephone/flipOne/product_gallery/blue3.webp",
+                "/featurephone/flipOne/product_gallery/blue4.webp",
+                "/featurephone/flipOne/product_gallery/blue5.webp",
             ],
-            buttonLabel: 'Deep Blue',
-            buttonColor: '#4B526D'
+            buttonLabel: 'Blue',
+            buttonColor: '#BDCDDC'
         },
         {
             id: 3,
             images: [
-                "/featurephone/FlipOne/product_gallery/light_green_front.webp",
-                "/featurephone/FlipOne/product_gallery/light_green_all.webp",
-                "/featurephone/FlipOne/product_gallery/light_green_all_on.webp",
+                "/featurephone/flipOne/product_gallery/orange1.webp",
+                "/featurephone/flipOne/product_gallery/orange2.webp",
+                "/featurephone/flipOne/product_gallery/orange3.webp",
+                "/featurephone/flipOne/product_gallery/orange4.webp",
+                "/featurephone/flipOne/product_gallery/orange5.webp",
             ],
-            buttonLabel: 'Light Green',
-            buttonColor: '#96C3C2'
+            buttonLabel: 'Orange',
+            buttonColor: '#EE6824'
         },
     ]
 }

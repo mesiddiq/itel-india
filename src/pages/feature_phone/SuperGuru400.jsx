@@ -17,13 +17,22 @@ import UltraFastSupport from '../../components/common/feature_phone_common/Ultra
 import ExtendedTalktime from '../../components/core/feature_phone/s_guru_400/ExtendedTalktime'
 import PhoneSliderAnimation from '../../components/common/feature_phone_common/PhoneSliderAnimation'
 import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
+import { Helmet } from 'react-helmet'
+import SuperSeriesHeader from '../../components/common/feature_phone_common/SuperSeriesHeader'
+import SuperSeriesStickyHeader from '../../components/common/feature_phone_common/SuperSeriesStickyHeader'
 
 
 const SuperGuru400 = () => {
     return (
         <>
+            <Helmet>
+                <title>Super Guru 400</title>
+                <meta name="description" content={`Introducing India ka Super Guru—a collection of stylish keypad mobile phones that are the perfect blend of premium design and durability. Featuring a 2.4" display, 1200 mAh battery, crystal clear audio, and 1.3 MP camera, all in a 9.8 mm ultra-thin itel SG400 keypad phone.`} />
+            </Helmet>
+            <SuperSeriesHeader {...HeroDataSuperGuru400} />
             <Hero {...HeroDataSuperGuru400} />
-            <StickyHeader {...HeroDataSuperGuru400} />
+            {/* <StickyHeader {...HeroDataSuperGuru400} /> */}
+            <SuperSeriesStickyHeader {...HeroDataSuperGuru400} />
             <FeatureRich {...FeatureRichDataSuperGuru400} />
             <PhoneSliderAnimation />
             <ExtendedTalktime />

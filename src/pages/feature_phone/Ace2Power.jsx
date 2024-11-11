@@ -28,15 +28,15 @@ const Ace2Power = () => {
         <>
             <Helmet>
                 <title>Ace 2 Power</title>
-                <meta name="description" content="The itel Ace 2 Power" />
+                <meta name="description" content={`itel’s ACE 2 Power delivers unmatched power-packed performance with its big 2500 mAh battery and trendy design. Features a vibrant 4.57cm (1.8") QQVGA Display, Big LED Torch, Smart notifications feature to stay connected, and exclusive LetsChat feature, to stay connected with friends and family effortlessly. Don't miss out on the power and style – grab your itel ACE 2 Power today!`} />
             </Helmet>
             <Hero {...HeroDataAce2Power} />
             <StickyHeader {...HeroDataAce2Power} />
             <FeatureRich {...FeatureRichDataAce2Power} />
             <PhoneSliderAnimation />
-            <ExtendedBattery/>
-            <Communicate/>
-            <DiveIntoWorld/>
+            <ExtendedBattery />
+            <Communicate />
+            <DiveIntoWorld />
             <KingVoice {...KingVoiceDataAce2Power} />
             <TechSpecs {...TechSpecsDataAce2Power} />
             <FeaturePhoneProductGallery {...ProductGalleryDataAce2Power} />

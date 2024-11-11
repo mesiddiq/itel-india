@@ -37,8 +37,8 @@ const Bottom = () => {
           <p className="  text-mobile/h5/medium lg:text-desktop/h3  text-brand/black">Connect for<br/> Business Queries</p>
           <div className="  lg:space-y-[2px] space-y-[4px]">
           <p className=" text-mobile/small/button text-grey/grey/4 lg:text-desktop/title">MAIL US AT</p>
-              <p className=" lg:text-desktop/body/1 text-desktop/body/2/regular text-grey/grey/4 ">itelmarketing.in@transsion.com</p>
-   
+             <a href="mailto:itelmarketing.in@transsion.com"><p className=" lg:text-desktop/body/1 text-desktop/body/2/regular text-grey/grey/4 ">itelmarketing.in@transsion.com</p>
+             </a> 
           </div>
            </div>
         </div>

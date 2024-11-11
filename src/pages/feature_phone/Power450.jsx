@@ -14,10 +14,15 @@ import {
 import ChargeUp from '../../components/core/feature_phone/power_450/ChargeUp'
 import MoreDetails from '../../components/core/feature_phone/power_450/MoreDetails'
 import FeaturePhoneProductGallery from '../../components/common/feature_phone_common/FeaturePhoneProductGallery'
+import { Helmet } from 'react-helmet'
 
 const Power450 = () => {
     return (
         <>
+            <Helmet>
+                <title>Power 450</title>
+                <meta name="description" content={`Meet the itel Power 450, your ultimate feature phone for staying charged and connected on the go! With a 2500 mAh battery, Type-C Charging, and up to 15 days* of battery backup, you can kiss low battery anxiety goodbye. Enjoy a crystal-clear view on the large 6.1cm (2.4”) QVGA display, perfect for browsing, texting, and more. Tune in to your favorite radio stations wherever you are with the built-in wireless FM radio. Slim and stylish, in three eye-catching colors, the itel Power 450 is sure to turn heads wherever you go.`} />
+            </Helmet>
             <Hero {...HeroDataPower450} />
             <StickyHeader {...HeroDataPower450} />
             <FeatureRich {...FeatureRichDataPower450} />

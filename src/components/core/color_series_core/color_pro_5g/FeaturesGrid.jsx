@@ -35,7 +35,7 @@ const FeaturesGrid = () => {
             <h4 className='text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] font-markot'>Endless Battery Power*</h4>
             <h5 className='text-[16px] md:text-desktop/h5/medium leading-[19px] text-[#FFFFFF] font-markot pt-2'>5000 mAh | 18W Fast Charging</h5>
           </div>
-          <div className='col-span-1 md:col-span-3 relative h-[340px] md:h-[375px] rounded-[16px] p-[20px] md:px-[40px] md:py-[30px] bg-[url("/smartphone/color-pro-5g/FeatureGrid/grid_five.jpg")] bg-cover bg-center bg-no-repeat'>
+          <div className='col-span-1 md:col-span-3 relative h-[340px] md:h-[375px] rounded-[16px] p-[20px] pb-0 md:px-[40px] md:pt-[30px] bg-[url("/smartphone/color-pro-5g/FeatureGrid/grid_five.webp")] bg-cover bg-center bg-no-repeat'>
             <div className='grid grid-cols-1 md:grid-cols-2 h-full'>
               <div className='col-span-1'>
                 <h3 className='text-mobile/h5/medium md:text-desktop/h3 text-[#FFFFFF] font-markot z-[2]'>Get a Free Screen Replacement within 100 Days*</h3>
@@ -44,8 +44,8 @@ const FeaturesGrid = () => {
               <div className='col-span-1'>
                 <img src='/smartphone/color-pro-5g/FeatureGrid/grid_screen_phone.png' />
               </div>
-              <div className='col-span-1 md:col-span-2'>
-                <p className='w-full text-center text-[25px] md:text-[91px] 2xl:text-[95px] text-[#FFFFFF] md:mt-[-20px] 2xl:mt-[-55px] opacity-20 font-markot'>Free Screen Replacement</p>
+              <div className='col-span-1 md:col-span-2 relative'>
+                <img src='/smartphone/color-pro-5g/FeatureGrid/Free-Screen-Replacement.webp' className='absolute bottom-0 opacity-40' />
               </div>
             </div>
           </div>
