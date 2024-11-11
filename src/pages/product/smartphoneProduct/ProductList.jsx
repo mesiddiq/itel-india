@@ -9,7 +9,7 @@ export default function ProductList() {
     const filters = useSelector(state => state.filters.filters)
     const [currentPage, setCurrentPage] = useState(1)
     const phonesPerPage = 6
-
+    console.log("feat",filters.features)
     const filteredPhones = AllPhonesData.filter(phone => {
         if (filters.series.length > 0 && !filters.series.includes(phone.category) && !filters.series.includes('All')) return false
 

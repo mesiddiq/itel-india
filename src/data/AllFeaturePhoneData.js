@@ -16,7 +16,7 @@ export const AllFeaturePhoneData = [
             battery: "1900 mAh",
         },
         features: {
-            hasKingVoice: true,
+            hasKingVoice: false,
             hasPowerKeypad: true,
             hasUPI: false,
             hasBluetooth: true
