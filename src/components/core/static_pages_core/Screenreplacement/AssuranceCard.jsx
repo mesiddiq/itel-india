@@ -10,7 +10,7 @@ const AssuranceCard = () => {
             src={"/static_page/screenreplacement/Shape.webp"}
             alt=""
           />
-          <div className=" lg:space-y-5 text-white space-y-2  lg:min-w-[562px]">
+          <div className=" lg:space-y-5 text-white space-y-2  lg:max-w-[562px]">
             <p className=" lg:text-desktop/h3 text-mobile/h4">itel Assurance</p>
             <p className=" text-desktop/body/2/regular lg:text-desktop/body/large">
               Get free original screen replacement: Enjoy your phone without the

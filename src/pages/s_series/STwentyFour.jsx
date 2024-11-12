@@ -9,32 +9,29 @@ import Video1 from "../../components/core/s_series_core/S_Twenty_Four/Video1"
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import SensorZoom from "../../components/core/s_series_core/S_Twenty_Four/SensorZoom"
 import FullSpecifications from "../../components/common/FullSpecifications"
-
-import { ImageCarouselData } from '../../data/smartphonedata/S24ImageCarouselData'
-import { FullSpecificationsS24 } from '../../data/smartphonedata/S24Data'
-
+import { 
+    FullSpecificationsS24,
+    ImageCarouselData,
+    HeroDataS24,
+    SliderAnimationS24
+} from '../../data/smartphonedata/S24Data'
 import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
 import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
 import ModernTwist from "../../components/core/s_series_core/S_Twenty_Four/ModernTwist"
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
 import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
 import StickyHeader from "../../components/common/StickyHeader"
+import { Helmet } from 'react-helmet'
 
 const STwentyFour = () => {
     return (
         <>
-            <HeroSmartPhoneCommon
-                bgDesktop={'/smartphone/smartphonehero/s24.webp'}
-                bgMobile={'/smartphone/smartphonehero/s24_mobile.webp'}
-                description={'108MP AI Camera | 16GB* (8GB+8GB*) RAM + 128GB ROM | Helio G91 Processor'}
-                headingText={'S24'}
-                price={'10,999'}
-                tagText={'super series'}
-                gradient1={'#ffcf92'}
-                gradient2={'#ffe8cb'}
-                purchaseLink="https://www.amazon.in/dp/B0CZNV9YCX?ie=UTF8&ref_=itel_S24_PDP_WS"
-            />
-
+            <Helmet>
+                <title>S24</title>
+                <meta name="description" content={`Capture stories with the all-new itel S24. Packed with a stunning 108MP ultra clear AI camera, bring your pictures to life. Experience blazing-fast speed with 8GB RAM, expandable up to 16GB* with memory fusion and 128GB ROM smartphone. With a 5000 mAh battery and 18W fast charging, always stay on top of your game. Get a super smooth and responsive experience with a 90Hz refresh rate on the 6.6-inch HD+ punch-hole display smartphone.`} />
+                <meta name="keywords" content="itel S24,itel s23+,itel rs4,itel S24 price,itel s23+ price,about itel s24,itel s23 plus,itel s24 mobile,itel s24 smartphone,s23+ itel" />
+            </Helmet>
+            <HeroSmartPhoneCommon {...HeroDataS24}/>
             <StickyHeader 
                 title="S24" 
                 purchaseLink="https://www.amazon.in/dp/B0CZNV9YCX?ie=UTF8&ref_=itel_S24_PDP_WS" 
@@ -42,43 +39,20 @@ const STwentyFour = () => {
                 bgColor="#161616"
                 dark={false}
             />
-
             <ProductDescription />
-
-            <SliderAnimationCommon
-				text1="Super Series"
-				text2="incredibly super"
-				svgCode={<img src="/smartphone/S24/sliderAnimationStar.svg" alt="star" className="" />}
-				bgColor="#120F0D"
-                textGradient1="#FFCF92"
-				textGradient2="#FFE8CB"
-                svgBgColor='bg-[#FFCF92] bg-opacity-[16%]'
-			/>
-
+            <SliderAnimationCommon {...SliderAnimationS24} />
             <Video1 />
-
             <FillerFrame />
-
             <CameraSpecifications />
-
             <SensorZoom />
-
             <MultipleCameraModes />
-
             <StandAloneImage />
-
             <ProcessorSpecifications />
-
             <SinglePhoneImageContainer />
-
             <PunchHoleDisplay />
-
             <ModernTwist />
-
             <MultipleCardComponents />
-
             <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false} />
-
             <div className="px-4 py-[60px] lg:py-[120px] bg-[#1c1b1b]">
                 <FullSpecifications FullSpecificationsData={FullSpecificationsS24} mode="dark" />
             </div>

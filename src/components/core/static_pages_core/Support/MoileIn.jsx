@@ -60,7 +60,7 @@ const MoileIn = () => {
     <div data-aos="fade-up"  className=" content lg:space-y-[40px] space-y-[24px] px-4  font-markot">
       <div className=" flex items-center  lg:space-x-4 ">
         <div className=" ">
-            <img src={"static_page/Support2/Star.png"} alt="" className="   animate-spin lg:h-[60px]  " />
+            <img src={"static_page/Hotstar.gif"} alt="" className="lg:h-[60px]  " />
         </div>
       
         <p className=" text-brand/black text-mobile/h4 lg:text-desktop/h2">Discover itel Mobile Insights</p>
@@ -68,14 +68,14 @@ const MoileIn = () => {
    
       <div className=" lg:space-y-6  space-y-[20px]">
         {/* Tabs */}
-        <div className="  flex">
+        <div className="flex  overflow-x-auto space-x-2">
           {Tabs.map((tab) => (
             <button
               key={tab}
-              className={`lg:py-3 lg:px-5 py-[6px] px-[12px]  rounded-full text-desktop/body/2/medium  lg:text-desktop/button ${
+              className={`lg:py-3 lg:px-5 py-[6px] px-[12px]  rounded-full shrink-0  text-desktop/body/2/regular  lg:text-desktop/button ${
                 activeTab === tab
                   ? " lg:bg-bg/secondry bg-brand/black  lg:text-brand/black"
-                  : "  text-brand/black "
+                  : "  text-brand/black border border-brand/black first-line: "
               } transition-colors duration-300`}
               onClick={() => setActiveTab(tab)}
             >

@@ -52,13 +52,15 @@ const Banner1 = ({ activeSlide }) => {
                             <h5 className='lg:text-desktop/subtitle text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
                             <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold'>&#8377; 6,990 /-</h2>
                         </motion.div>
-                        <motion.button
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }}
-                        >
-                            <img src="/static_page/buynowlight.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28' />
-                        </motion.button>
+                        <Link to={'/products'}>
+                            <motion.button
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.2 }}
+                            >
+                                <img src="/static_page/buynowlight.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
+                            </motion.button>
+                        </Link>
                     </div>
                 </div>
             </motion.div>

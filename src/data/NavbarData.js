@@ -108,4 +108,5 @@ export const PhonesData = [
     {id:'power-120',label:'Power 120',link:'/product/power-120',type:'featurephone'},
     {id:'power-450',label:'Power 450',link:'/product/power-450',type:'featurephone'},
     {id:'ace-2-power',label:'Ace 2 Power',link:'/product/ace-2-power',type:'featurephone'},
+    {id:'flip-one',label:'Flip One',link:'/product/flip-one',type:'featurephone'},
 ]

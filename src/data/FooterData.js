@@ -2,32 +2,32 @@ export const ProductsLink = [
     {
         id:1,
         label:'Smart phones',
-        link:'#'
+        link:'/product'
     },
     {
         id:2,
         label:'Feature phones',
-        link:'#'
+        link:'/featurephones'
     },
     {
         id:3,
         label:'Smart TV',
-        link:'#'
+        link:'/coming-soon'
     },
     {
         id:4,
         label:'Smart Gadgets',
-        link:'#'
+        link:'/coming-soon'
     },
     {
         id:5,
         label:'Home Care',
-        link:'#'
+        link:'/coming-soon'
     },
     {
         id:7,
         label:'Personal Care',
-        link:'#'
+        link:'/coming-soon'
     },
 ]
 
@@ -73,7 +73,7 @@ export const MediaLinks = [
     {
         id:2,
         label:'Blogs',
-        link:'#'
+        link:'/blogs'
     },
 ]
 

@@ -28,7 +28,7 @@ const Informations = () => {
     },
   ];
   return (
-    <div className="lg:content px-3  font-markot text-brand/black ">
+    <div className="lg:content px-4 font-markot text-brand/black ">
       <div className=" lg:space-y-[120px]  space-y-[60px]">
         {data.map((data, index) => {
           return (

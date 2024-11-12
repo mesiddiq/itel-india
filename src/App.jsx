@@ -4,9 +4,16 @@ import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react';
-import SmartPhoneProductPage from './pages/product/SmartPhoneProductPage'
-import FeaturePhoneProductPage from './pages/product/FeaturePhoneProductPage'
-import Loading from './pages/static_pages/Loading'
+import Footer from './components/common/footer'
+import BackToTopButton from './utils/BackToTop'
+const FlipOne = lazy(() => import('./pages/feature_phone/FlipOne'));
+const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
+const FeaturePhoneProductPage = lazy(() => import('./pages/product/FeaturePhoneProductPage'));
+const Loading = lazy(() => import('./pages/static_pages/Loading'));
+const Blog = lazy(() => import('./pages/static_pages/Blog'));
+const BlogListing = lazy(() => import('./pages/static_pages/BlogListing'));
+const Thankyou = lazy(() => import('./pages/static_pages/Thankyou'));
+const Commingsoon = lazy(() => import('./pages/static_pages/Commingsoon'));
 
 const HomePage = lazy(() => import('./pages/static_pages/HomePage'));
 const STwentyThree = lazy(() => import('./pages/s_series/STwentyThree'));
@@ -15,7 +22,7 @@ const STwentyFour = lazy(() => import('./pages/s_series/STwentyFour'));
 const PFiftyFive = lazy(() => import('./pages/p_series/PFiftyFive'));
 const S_Series_Parent = lazy(() => import('./pages/s_series/S_Series_Parent'));
 const Investor = lazy(() => import('./pages/static_pages/Investor'));
-const Footer = lazy(() => import('./components/common/Footer'));
+// const Footer = lazy(() => import('./components/common/Footer'));
 const Support = lazy(() => import('./pages/static_pages/Support'));
 const ScreenReplacement = lazy(() => import('./pages/static_pages/ScreenReplacement'));
 const Promise100 = lazy(() => import('./pages/static_pages/Promise100'));
@@ -94,6 +101,12 @@ function App() {
 					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 					<Route path='/support/faqs' element={<FAQ />} />
 					<Route path='/investor' element={<Investor />} />
+					<Route path='/blog' element={<Blog />} />
+					<Route path='/bloglisting' element={<BlogListing />} />
+					<Route path='/submitted' element={<Thankyou />} />
+					<Route path='/coming-soon' element={<Commingsoon />} />
+					<Route path='/commingsoon' element={<Commingsoon />} />
+					<Route path='/thankyou' element={<Thankyou />} />
 
 
 					{/* ***************************************************************************************************/}
@@ -164,6 +177,7 @@ function App() {
 						<Route path='power-120' element={<Power120 />} />
 						<Route path='power-450' element={<Power450 />} />
 						<Route path='ace-2-power' element={<Ace2Power />} />
+						<Route path='flip-one' element={<FlipOne />} />
 					</Route>
 
 					{/* ***********************Not Found**************** */}
@@ -172,6 +186,7 @@ function App() {
 				</Routes>
 				<Footer />
 				<ScrollToTop />
+				<BackToTopButton />
 			</main>
 		</Suspense>
 	)

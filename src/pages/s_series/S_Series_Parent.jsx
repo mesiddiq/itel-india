@@ -6,6 +6,8 @@ import SimilarProducts from '../../components/common/smartphone_common/SimilarPr
 import SupportChannels from '../../components/common/smartphone_common/SupportChannels'
 import Accessories from '../../components/common/smartphone_common/Accessories'
 import Model from '../../components/common/smartphone_common/Model'
+import NearestStore from '../../components/common/NearestStore'
+import { SmartPhoneModelData } from '../../data/SmartPhoneModelData'
 
 const S_Series_Parent = () => {
     return (
@@ -14,7 +16,8 @@ const S_Series_Parent = () => {
             <div className="bg-[#0A0C08]">
 
                 <Accessories theme='dark' />
-                <Model theme='dark' />
+                <Model theme='dark' models={SmartPhoneModelData} />
+                <NearestStore />
                 <SimilarProducts theme='dark' />
                 <SupportChannels theme='dark' />
                 <OtherCoolGears theme='dark' />

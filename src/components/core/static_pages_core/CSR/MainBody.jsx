@@ -48,6 +48,73 @@ const Accordian2 = ({ data, title,img }) => {
   );
 };
 
+const Accordian3 = ({ data, title }) => {
+  const [show, setShow] = useState(true);
+
+  return (
+    <>
+    <div className=" space-y-4">
+          <div onClick={() => setShow(!show)} className=" flex items-center font-markot justify-between cursor-pointer">
+        <p className=" text-mobile/h3 lg:text-desktop/h3 text-brand/black">
+          {title}
+        </p>
+        <img
+          
+          src={"/static_page/Right%20Chevron.png"}
+          className={` transform transition-transform duration-300 ease-in-out ${
+            show ? "rotate-180" : "rotate-0"
+          }`}
+          alt=""
+        />
+      </div>
+
+      {/* Accordion content with animation */}
+      <div
+        className={`overflow-hidden transition-all space-y-4 duration-300 ease-in-out ${
+          show ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        {data.map((data, index) => {
+          return (
+            <p
+              key={index}
+              className=" text-desktop/body/2/regular text-grey/grey/5  lg:text-desktop/body/1"
+            >
+              {data}
+            </p>
+          );
+        })}
+       
+       <div className="text-black space-y-[24px] lg:space-y-[32px] ">
+
+<div>
+  <p className=" text-mobile/h4 lg:text-desktop/h4 ">Committee Members</p>
+</div>
+<div className=" space-y-[20px] ">
+  <div className=" space-y-[8px]">
+    <p className="  text-mobile/h5 lg:text-desktop/h5/medium">Mrs. Rekha Diwan</p>
+    <p className=" lg:text-desktop/subtitle">Chairperson</p>
+  </div>
+  <div className=" space-y-[8px]">
+    <p className=" text-mobile/h5  lg:text-desktop/h5/medium">Mr. Ravi Garg</p>
+    <p className=" lg:text-desktop/subtitle">Committee member</p>
+  </div>
+  <div className=" space-y-[8px]">
+    <p className=" text-mobile/h5 lg:text-desktop/h5/medium">Mr. Vikas Kumar</p>
+    <p className=" lg:text-desktop/subtitle">Committee member</p>
+  </div>
+</div>
+ 
+</div>
+
+      </div>
+     
+    </div>
+    
+    </>
+  );
+};
+
 const MainBody = () => {
   const data = [
     {
@@ -74,6 +141,17 @@ const MainBody = () => {
 
    
   ];
+
+  const data5=[
+    {
+      
+        title: "Composition of Committee",
+        description: [
+         " The Board of Directors of the Company shall constitute / re-constitute the CSR Committee from time to time in compliance with statutory requirements. The CSR Committee shall comprise of a minimum of two directors.",
+         " The composition and terms of reference of the Committee is available on Company’s website i.e. www.itel-india.com. The CSR Committee may invite members of senior management and other persons as it deems necessary to the committee meetings.",
+        ]
+    }
+  ]
   
   const data3=[
     {
@@ -96,9 +174,10 @@ const MainBody = () => {
         ". Support in nation building and bringing inclusive growth through our CSR programs",
       ],
     },
+  ]
 
-    {
-      title: "Composition of Committee",
+   const data4=[ {
+      title: "CSR Activities",
       description: [
         " The Company will primarily focus on following welfare activities:",
         "1. Eradicating hunger, poverty and malnutrition, ‘promoting health care including preventive health care and sanitation including contribution to the Swach Bharat Kosh set-up by the Central Government for the promotion of sanitation and making available safe drinking water.",
@@ -219,6 +298,18 @@ const MainBody = () => {
           {data2.map((data) => {
             return <Accordian data={data.description} title={data.title} />;
           })}
+
+{data5.map((data) => {
+            return <Accordian data={data.description} title={data.title} />;
+          })}
+
+
+
+{data4.map((data) => {
+            return <Accordian3 data={data.description} title={data.title} />;
+          })}
+
+
         </div>
       </div>
     </div>

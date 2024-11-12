@@ -91,7 +91,7 @@ const ProductSectionLaptop = () => {
                                 <div className=' text-white max-w-[296px] text-center lg:text-left lg:max-w-[463px] z-20 '>
                                     <h2 className='lg:text-[36px] font-bold lg:leading-[46.8px] text-desktop/h4 '>Stay Plugged into Your<br />Go-to Socials with itel</h2>
                                     <p className='mb-8 lg:text-desktop/body/1 lg:leading-6 text-[14px] leading-4 -tracking-[0.14px] text-white/80 mt-2 lg:mt-4 '>Get all the must-have accessories for your fav itel mobile, like the itel power bank and itel earphone.</p>
-                                    <BuyNowSquareBG purchaseLink="" content="EXPLORE"/>
+                                    <BuyNowSquareBG purchaseLink="https://www.instagram.com/itel_india/" content="EXPLORE"/>
                                 </div>
                                 <div className=' max-w-[302px] lg:max-w-[517px] z-20'>
                                     <img src={'/static_page/homepage/selfie.png'} />

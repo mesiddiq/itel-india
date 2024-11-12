@@ -17,19 +17,24 @@ import GreatVisuals from '../../components/core/feature_phone/it5027/GreatVisual
 import SaveYourContacts from '../../components/core/feature_phone/it5027/SaveYourContacts'
 import YourOwnLanguage from '../../components/core/feature_phone/it5027/YourOwnLanguage'
 import CreateYourStyle from '../../components/core/feature_phone/it5027/CreateYourStyle'
+import { Helmet } from 'react-helmet'
 
 const It5027 = () => {
     return (
         <>
+            <Helmet>
+                <title>it5027</title>
+                <meta name="description" content={`Experience the future of connectivity with the it5027 smart feature phone. With a vibrant 6.1cm (2.4”) display, a slim 11mm design, king voice, and wireless FM radio it's your essential tech companion. Enjoy up to 10 days* of battery backup with a 1200 mAh battery. Save contacts with attribute-based naming and icons. Upgrade to smart simplicity with it5027.`} />
+            </Helmet>
             <Hero {...HeroDatait5027} />
             <StickyHeader {...HeroDatait5027} />
             <FeatureRich {...FeatureRichDatait5027} />
             <PhoneSliderAnimation />
-            <GreatVisuals/>
-            <CreateYourStyle/>
+            <GreatVisuals />
+            <CreateYourStyle />
             <KingVoice {...KingVoiceDatait5027} />
-            <SaveYourContacts/>
-            <YourOwnLanguage/>
+            <SaveYourContacts />
+            <YourOwnLanguage />
             <TechSpecs {...TechSpecsDatait5027} />
             <FeaturePhoneProductGallery {...ProductGalleryDatait5027} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDatait5027} mode={'light'} />

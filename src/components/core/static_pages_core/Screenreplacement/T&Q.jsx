@@ -28,8 +28,8 @@ const Terms = () => {
         <div className=" lg:space-y-2">
           {data.map((data, index) => {
             return (
-              <div className=" space-x-1 flex items-start" key={index}>
-                  <p className="  text-desktop/body/1 text-grey/grey/5">{index}. </p>
+              <div className=" space-x-1 flex items-start" key={index+1}>
+                  <p className="  text-desktop/body/1 text-grey/grey/5">{index+1}. </p>
                 <p className="  text-desktop/body/1 text-grey/grey/5">{data}</p>
               </div>
             );
@@ -41,7 +41,7 @@ const Terms = () => {
           <div className=" lg:space-y-2">
             {data2.map((data, index) => {
               return (
-                <div className=" flex items-start" key={index}>
+                <div className=" flex items-start" key={index+1}>
                  
                   <p className="  text-desktop/body/1 text-grey/grey/5">
                     {data}
