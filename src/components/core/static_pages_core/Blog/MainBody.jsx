@@ -3,6 +3,8 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import { data } from '../BlogListing/data'
 import { Link } from 'react-router-dom';
+
+
 const BlogCard = ({ category, title, image,data }) => {
   return (
     <div className="bg-white space-y-[12px] lg:space-y-[16px] ">
@@ -63,7 +65,7 @@ const MainBody = () => {
               <div className=' lg:space-y-[30px] space-y-[24px] text-desktop/body/1 lg:text-desktop/body/large  text-black/1'>
                 {
                     Maindata.description.map((data,index) => {
-                        return <p key={index}>{data}</p>
+                        return <p  key={index}>{data}</p>
                     })
                 }
               </div>
@@ -76,7 +78,7 @@ const MainBody = () => {
 
       <div className='lg:grid lg:gap-x-[20px] gap-y-[52px] lg:grid-cols-3'>
         {
-          data .filter(item => item.id !== Maindata.id).slice(1,4).map((data, index) =>
+          data .filter(item => item.id !== Maindata.id).slice(0,4).map((data, index) =>
         
          <BlogCard category={data.category} data={data} image={data.img} key={data.id} title={data.title}/>
             )

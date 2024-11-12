@@ -130,7 +130,7 @@ const MainBody = () => {
     <div className="font-markot ">
       <div className="lg:content px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
         {/* Search input */}
-        <div>
+        {/* <div>
           <input
             type="text"
             placeholder="Enter your query"
@@ -138,7 +138,7 @@ const MainBody = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="text-desktop/body/1 text-brand/black no-underline outline-none w-full lg:rounded-xl lg:p-5 border-grey/grey/3 border-[1.5px]"
           />
-        </div>
+        </div> */}
         <div className="lg:space-y-[52px]">
           {/* Category buttons */}
           <div className="flex justify-between overflow-x-auto space-x-2">

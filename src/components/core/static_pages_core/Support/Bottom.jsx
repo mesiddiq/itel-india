@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Bottom = () => {
   const data=[
     {
@@ -28,11 +28,13 @@ const Bottom = () => {
     <div data-aos="fade-up" className=" content px-3 text-black font-markot ">
       <div className=" lg:grid   lg:gap-[20px]  lg:space-y-0 space-y-2  grid-cols-1">
         <div className=" lg:grid lg:gap-[36px] lg:space-y-0  space-y-2 lg:grid-cols-2">
-          <div className=' lg:bg-[url("/static_page/Support2/Grid%20Block%201.webp")]   p-[14px] lg:p-[42px] space-y-2 lg:space-y-3  bg-[url("/static_page/Support2/Grid%20Bloack%201%20Mobile.webp")] bg-cover rounded-2xl   lg:bg-right bg-no-repeat min-h-[180px] lg:min-h-[300px]  '>
+          <Link to={"/support/service-center-locator"}>  <div className=' lg:bg-[url("/static_page/Support2/Grid%20Block%201.webp")]   p-[14px] lg:p-[42px] space-y-2 lg:space-y-3  bg-[url("/static_page/Support2/Grid%20Bloack%201%20Mobile.webp")] bg-cover rounded-2xl   lg:bg-right bg-no-repeat min-h-[180px] lg:min-h-[300px]  '>
               <p className=" text-mobile/h5/medium lg:text-desktop/h3 text-brand/black">Find Your Nearest itel <br/>Store!</p>
               <p className=" text-desktop/body/2/regular text-grey/grey/4 ">We are here to help you find the right phone. </p>
           </div>
          
+          </Link>
+        
           <div className='lg:bg-[url("/static_page/Support2/Grid%20Block%202.webp")] p-[14px] lg:p-[42px]  space-y-2 lg:space-y-3    bg-[url("/static_page/Support2/Grid%20Bloack%202%20Mobile.webp")] rounded-2xl bg-cover bg-right bg-no-repeat min-h-[180px]  lg:min-h-[300px]  '>
           <p className="  text-mobile/h5/medium lg:text-desktop/h3  text-brand/black">Connect for<br/> Business Queries</p>
           <div className="  lg:space-y-[2px] space-y-[4px]">
