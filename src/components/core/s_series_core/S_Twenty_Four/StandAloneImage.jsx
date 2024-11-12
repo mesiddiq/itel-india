@@ -42,7 +42,7 @@ const StandAloneImage = () => {
       className="h-full"
     >
       <img
-        src="/smartphone/S24/standAloneImage.webp"
+        src="/smartphone/S24/standAloneImage.jpeg"
         alt="standAloneImage"
         className="w-full h-full object-cover"
       />
