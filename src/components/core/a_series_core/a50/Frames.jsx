@@ -75,8 +75,8 @@ export default function Frames() {
                             </span>
                             <div className="flex lg:flex-col flex-row lg:justify-center justify-between py-7 lg:py-0">
                                 <div className="flex flex-col gap-4 mb-3">
-                                    <p className="lg:text-[32px] text-[#181818] font-medium text-mobile/title">
-                                        <span className="text-[#08E488]">12GB*</span> (4GB+8GB*) RAM
+                                    <p className="lg:text-[32px] text-[#181818] leading-10 font-medium text-mobile/title">
+                                        <span className="text-[#08E488] ">12GB*</span> (4GB+8GB*) RAM
                                     </p>
                                     <p className="text-[#232323] lg:text-[14px] text-[10px] text-opacity-70">
                                         with Memory Fusion Technology*
@@ -87,7 +87,7 @@ export default function Frames() {
                                 </p>
                             </div>
                         </div>
-                        <div className="relative">
+                        <div className="relative responsveImg">
                             <motion.img
                                 src="/smartphone/a50/img2.webp"
                                 alt="f1Img"
@@ -95,7 +95,7 @@ export default function Frames() {
                                 initial={{ x: -200, opacity: 0 }}
                                 animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ x: -200, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                             <motion.img
                                 src="/smartphone/a50/img4.webp"
@@ -104,25 +104,25 @@ export default function Frames() {
                                 initial={{ x: -200, opacity: 0 }}
                                 animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ x: -200, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                             <motion.img
                                 src="/smartphone/a50/img1.webp"
                                 alt="f2Img"
-                                className="absolute h-[200px] left-[12rem] md:left-[28rem] md:h-[380px] lg:left-[51rem] lg:h-[668.21px]"
+                                className="absolute h-[200px] left-[13rem] md:left-[28rem] md:h-[380px] lg:left-[51rem] lg:h-[668.21px]"
                                 initial={{ y: 100, opacity: 0 }}
                                 animate={isInView ? { y: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ y: 100, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                             <motion.img
                                 src="/smartphone/a50/img3.webp"
                                 alt="f2Img2"
-                                className="absolute h-[200px] top-[6rem] left-[6rem] md:top-[13rem] md:left-[15rem] md:h-[380px] lg:top-[25rem] lg:left-[31rem] lg:h-[668.21px]"
+                                className="absolute h-[200px] top-[6rem] left-[7rem] md:top-[13rem] md:left-[16rem] md:h-[380px] lg:top-[25rem] lg:left-[31rem] lg:h-[668.21px]"
                                 initial={{ y: 100, opacity: 0 }}
                                 animate={isInView ? { y: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ y: 100, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                         </div>
                     </motion.div>

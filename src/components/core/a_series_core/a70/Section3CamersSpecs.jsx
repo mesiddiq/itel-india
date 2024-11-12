@@ -38,6 +38,7 @@ const Section3CamersSpecs = () => (
           ))}
         </div>
       </div>
+      {/* <img src="/smartphone/a70/A70CameraBG.webp" alt="" /> */}
     </div>
   </GradientBackgroundWrapper>
 );

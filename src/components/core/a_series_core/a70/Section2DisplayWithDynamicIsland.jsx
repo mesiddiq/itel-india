@@ -8,7 +8,7 @@ const features = [
 
 const Section2DisplayWithDynamicIsland = () => (
   <GradientBackgroundWrapper mobileBgImage="/smartphone/a70/AmpleStorage-Mobile.webp" paddingStart="0px">
-    <div className="flex lg:flex-row flex-col-reverse md:justify-start xl:ps-[60px] justify-end h-[690px] md:h-[690px] xl:h-[850px]">
+    <div className="flex lg:flex-row flex-col-reverse md:justify-start xl:ps-[60px] justify-end h-[690px] md:h-[800px] xl:h-[850px]">
       <div className="flex md:justify-start items-end mx-auto lg:mx-0">
         <img src="/smartphone/a70/iphonespecs.svg" alt="dynamicIsland" className="xl:w-[532px] h-[400px] lg:h-auto xl:h-[700px]" />
       </div>
@@ -32,6 +32,8 @@ const Section2DisplayWithDynamicIsland = () => (
           </div>
         </div>
       </div>
+      {/* <img src="/smartphone/a70/AmpleStorage-Mobile.webp" alt="dynamicIsland" className="xl:w-[532px] h-[400px] lg:h-auto xl:h-[700px]" /> */}
+
     </div>
   </GradientBackgroundWrapper>
 );
