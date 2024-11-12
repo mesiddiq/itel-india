@@ -15,6 +15,12 @@ export const AllPhonesData = [
             processor: "Octacore",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -33,6 +39,12 @@ export const AllPhonesData = [
             processor: "Hexa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: false,
+            hasAICamera: false,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -51,6 +63,12 @@ export const AllPhonesData = [
             processor: "Octacore",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: true,
+            hasBigBattery: true
         }
     },
     {
@@ -69,6 +87,12 @@ export const AllPhonesData = [
             processor: "Hexa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: false,
+            hasAICamera: false,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -87,6 +111,12 @@ export const AllPhonesData = [
             processor: "Hexa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: false,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -105,6 +135,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: false,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -123,6 +159,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: false,
+            hasAICamera: true,
+            hasAmoledDisplay: true,
+            hasBigBattery: true
         }
     },
     {
@@ -141,6 +183,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: false,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -159,6 +207,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -177,6 +231,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "4000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: false
         }
     },
     {
@@ -195,6 +255,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
     {
@@ -213,6 +279,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "4000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: false
         }
     },
     {
@@ -231,6 +303,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "4000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: false
         }
     },
     {
@@ -249,6 +327,12 @@ export const AllPhonesData = [
             processor: "Octa Core",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
+        },
+        features: {
+            is5G: true,
+            hasAICamera: true,
+            hasAmoledDisplay: false,
+            hasBigBattery: true
         }
     },
 ]

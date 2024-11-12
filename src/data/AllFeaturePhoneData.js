@@ -3,7 +3,7 @@ export const AllFeaturePhoneData = [
         id: 1,
         title: "Super Guru 600",
         thumbnail: "/product-listing/filterFeaturephoneImages/superguru600.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "2.8” Display | 1900 mAh Battery | UPI Payments",
         purchaseLink: "/product/super-guru-600",
         category: "",
         isNew: true,
@@ -14,13 +14,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "1900 mAh",
+        },
+        features: {
+            hasKingVoice: false,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 2,
         title: "Super Guru 4G",
         thumbnail: "/product-listing/filterFeaturephoneImages/superguru4g.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "4G VoLTE | YouTube* | YouTube Shorts*| UPI Payments",
         purchaseLink: "/product/super-guru-4g", 
         category: "Innovation Series",
         isNew: false,
@@ -32,13 +38,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2"',
             screenSizeForCompare: '(5.08 cm) 2"',
             battery: "1000mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 3,
         title: "it5262",
         thumbnail: "/product-listing/filterFeaturephoneImages/it5262.png",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "Type-C Charging | Glass Finish Design | 2000 mAh Battery",
         purchaseLink: "/product/it5262",
         category: '2.4" Display',
         isNew: false,
@@ -50,13 +62,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "2000mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 4,
         title: "it5330",
         thumbnail: "/product-listing/filterFeaturephoneImages/superguru4g.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: '7.1cm (2.8") Bright Display | Kingvoice | Glass Finish Design',
         purchaseLink: "/product/it5330",
         category: '2.8" Display',
         isNew: false,
@@ -68,13 +86,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2.8"',
             screenSizeForCompare: '7.1cm (2.8")',
             battery: "1900mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 5,
         title: "Super Guru 400",
         thumbnail: "/product-listing/filterFeaturephoneImages/superguru400.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: '2.4” Display | 1200 mAh Battery | Crystal Clear Audio',
         purchaseLink: "/product/super-guru-400",
         category: "",
         isNew: true,
@@ -86,13 +110,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2.8"',
             screenSizeForCompare: '7.1 cm (2.8")',
             battery: "1900 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 6,
         title: "Power 120",
         thumbnail: "/product-listing/filterFeaturephoneImages/power120.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "5.08cm (2”) QVGA Display | 2500 mAh Battery | 2000 Contacts with Icons",
         purchaseLink: "/product/power-120",
         category: "Entry Level",
         isNew: true,
@@ -104,13 +134,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2"',
             screenSizeForCompare: '5.08cm (2")',
             battery: "2500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 7,
         title: "Power 450",
         thumbnail: "/product-listing/filterFeaturephoneImages/power450.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "Type-C Charging | 2500 mAh Battery | 6.1cm (2.4”) QVGA Display",
         purchaseLink: "/product/power-450",
         category: '2.4" Display',
         isNew: true,
@@ -122,13 +158,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "2500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 8,
         title: "Circle 1",
         thumbnail: "/product-listing/filterFeaturephoneImages/circle1.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "Unique Design with Round Screen | Inbuilt BT Caller | Lanyard to Carry Around",
         purchaseLink: "/product/circle-1",
         category: "Innovation Series",
         isNew: true,
@@ -140,13 +182,19 @@ export const AllFeaturePhoneData = [
             screenSize: '1.32"',
             screenSizeForCompare: '3.35 cm (1.32")',
             battery: "500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 9,
         title: "Ace 2 Power",
         thumbnail: "/product-listing/filterFeaturephoneImages/ace2power.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "2500 mAh Battery | 21 Days Battery Backup | Bluetooth",
         purchaseLink: "/product/ace-2-power",
         category: "Entry Level",
         isNew: true,
@@ -158,13 +206,19 @@ export const AllFeaturePhoneData = [
             screenSize: '1.8"',
             screenSizeForCompare: '4.5cm (1.8")',
             battery: "2500 mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 10,
         title: "it5027",
         thumbnail: "/product-listing/filterFeaturephoneImages/it5027.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: '6.1cm (2.4") Display | 11mm Slim body | Kingvoice',
         purchaseLink: "/product/it5027",
         category: '2.4" Display',
         isNew: false,
@@ -176,13 +230,19 @@ export const AllFeaturePhoneData = [
             screenSize: '2.4"',
             screenSizeForCompare: '6.1 cm (2.4")',
             battery: "1200mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
     {
         id: 11,
         title: "it2175 Pro",
         thumbnail: "/product-listing/filterFeaturephoneImages/it2175p.webp",
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power",
+        description: "5.1cm (2”) Display | 1200mAh Battery | King Voice",
         purchaseLink: "/product/it2175p",
         category: "",
         isNew: false,
@@ -194,6 +254,12 @@ export const AllFeaturePhoneData = [
             screenSize: '2"',
             screenSizeForCompare: '5.08 cm (2")',
             battery: "1200mAh",
+        },
+        features: {
+            hasKingVoice: true,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
         }
     },
 ];

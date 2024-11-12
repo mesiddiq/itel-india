@@ -20,7 +20,9 @@ const ShowDataForComparision = () => {
             {dataOfCurrentPhone && (
                 <div className="w-full bg-[#F8F6F3] rounded-[10px] p-4 flex flex-col gap-3">
                     {/* Product Image */}
-                    <img src={dataOfCurrentPhone.thumbnail} alt={dataOfCurrentPhone.title} />
+                    <div className="w-full flex flex-col justify-center items-center max-h-[200px] ">
+                        <img src={dataOfCurrentPhone.thumbnail} alt={dataOfCurrentPhone.title} className="h-full"/>
+                    </div>
                     
                     {/* Product Title  */}
                     <div className="flex flex-col gap-1">
@@ -53,9 +55,11 @@ const ShowDataForComparision = () => {
                     </div> 
                     
                     {/* Buy Now */}
-                    <div className="cursor-pointer bg-white rounded-3xl py-3 px-[14px border-[0.75px] border-black">
-                        <BuyNowText content="BUY NOW" />
-                    </div>    
+                    <a href={dataOfCurrentPhone.purchaseLink} target="_blank">
+                        <div className="cursor-pointer bg-white rounded-3xl py-3 px-[14px border-[0.75px] border-black">
+                            <BuyNowText content="BUY NOW" />
+                        </div>    
+                    </a>
                 </div>
             )}
         </div>

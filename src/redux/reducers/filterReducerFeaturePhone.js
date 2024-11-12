@@ -4,7 +4,8 @@ import {
     TOGGLE_SCREEN_FILTER,
     TOGGLE_BATTERY_FILTER,
     TOGGLE_PRICE_FILTER,
-    TOGGLE_NETWORK_FILTER
+    TOGGLE_NETWORK_FILTER,
+    TOGGLE_FEATURE_FILTER
 } from './actionsFeaturephone'
 
 const initialState = {
@@ -12,7 +13,8 @@ const initialState = {
     screen: [],
     battery: [],
     price: [],
-    network: []
+    network: [],
+    features: []
 }
 
 const filterReducerFeaturePhone = (state = initialState, action) => {
@@ -49,6 +51,13 @@ const filterReducerFeaturePhone = (state = initialState, action) => {
                 network: state.network.includes(action.payload)
                     ? state.network.filter(item => item !== action.payload)
                     : [...state.network, action.payload]
+            }
+        case TOGGLE_FEATURE_FILTER:
+            return {
+                ...state,
+                features: state.features.includes(action.payload)
+                    ? state.features.filter(item => item !== action.payload)
+                    : [...state.features, action.payload]
             }
         default:
             return state

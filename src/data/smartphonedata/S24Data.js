@@ -1,6 +1,23 @@
-export const HeroData = {
-    title: "S24",
-    subtitle:''
+export const HeroDataS24 = {
+    bgDesktop: '/smartphone/smartphonehero/s24.webp',
+    bgMobile: '/smartphone/smartphonehero/s24_mobile.webp',
+    description: '108MP AI Camera | 16GB* (8GB+8GB*) RAM + 128GB ROM | Helio G91 Processor',
+    headingText: 'S24',
+    price: '10,999',
+    tagText: 'super series',
+    gradient1: '#ffcf92',
+    gradient2: '#ffe8cb',
+    purchaseLink: "https://www.amazon.in/dp/B0CZNV9YCX?ie=UTF8&ref_=itel_S24_PDP_WS"
+}
+
+export const SliderAnimationS24 = {
+    text1: "Super Series",
+    text2: "incredibly super",
+    svgCode: <img src="/smartphone/S24/sliderAnimationStar.svg" alt="star" className="" />,
+    bgColor: "#120F0D",
+    textGradient1: "#FFCF92",
+    textGradient2: "#FFE8CB",
+    svgBgColor: 'bg-[#FFCF92] bg-opacity-[16%]'
 }
 
 export const FullSpecificationsS24 = [
@@ -96,3 +113,38 @@ export const FullSpecificationsS24 = [
         ]
     },
 ]
+
+export const ImageCarouselData = [
+    {
+        id: 1,
+        color: "black",
+        buttonText: "Starry Black",
+        buttonGradient: "bg-gradient-to-br from-[#ACB1B7] to-[#060708]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-white",
+        bgContainer: "bg-[#1c1b1b]",
+        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        images: [
+            "/smartphone/S24/Starry Black 1.png",
+            "/smartphone/S24/Starry Black 2.png",
+            "/smartphone/S24/Starry Black 3.png",
+            "/smartphone/S24/Starry Black 4.png",
+        ],
+    },
+    {
+        id: 2,
+        color: "white",
+        buttonText: "Dawn White",
+        buttonGradient: "bg-gradient-to-br from-[#F4F5F9] to-[#E0E3E8]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-white",
+        bgContainer: "bg-[#1c1b1b]",
+        bgURL: '/smartphone/S24/imageCarouselBackground.png',
+        images: [
+            "/smartphone/S24/Dawn white 1.png",
+            "/smartphone/S24/Dawn white 2.png",
+            "/smartphone/S24/Dawn white 3.png",
+            "/smartphone/S24/Dawn white 4.png",
+        ]
+    },
+];

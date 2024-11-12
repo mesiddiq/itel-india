@@ -9,7 +9,7 @@ export default function ProductList() {
     const filters = useSelector(state => state.filters.filters)
     const [currentPage, setCurrentPage] = useState(1)
     const phonesPerPage = 6
-
+    console.log("feat",filters.features)
     const filteredPhones = AllPhonesData.filter(phone => {
         if (filters.series.length > 0 && !filters.series.includes(phone.category) && !filters.series.includes('All')) return false
 
@@ -49,6 +49,24 @@ export default function ProductList() {
         if (filters.storage.length > 0) {
             const storage = phone.specification.storage.split(' ')[0]
             if (!filters.storage.includes(storage)) return false
+        }
+
+        if (filters.features.length > 0) {
+            const hasAllSelectedFeatures = filters.features.every(feature => {
+                switch (feature) {
+                    case "5G Connectivity":
+                        return phone.features?.is5G;
+                    case "AI Camera":
+                        return phone.features?.hasAICamera;
+                    case "Amoled Display":
+                        return phone.features?.hasAmoledDisplay;
+                    case "Big Battery":
+                        return phone.features?.hasBigBattery;
+                    default:
+                        return false;
+                }
+            });
+            if (!hasAllSelectedFeatures) return false;
         }
 
         return true
