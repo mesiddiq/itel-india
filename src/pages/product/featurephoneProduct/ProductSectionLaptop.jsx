@@ -67,22 +67,6 @@ const ProductSectionLaptop = () => {
                         </div>
 
                         {/* Explore More Section */}
-                        {/* <div className="flex flex-col justify-center items-center h-full bg-no-repeat min-h-[340px] bg-contain" style={{
-                            backgroundImage: 'url("/product-listing/exploreBannerLaptop.png")'
-                        }}>
-                                <div className="flex flex-row justify-center w-full">
-                                    <div className="w-2/3 flex flex-col lg:max-w-[430px] pl-8 ">
-                                        <h2 className='lg:text-[36px] font-bold lg:leading-[46.8px] text-desktop/h4 '>Stay Plugged into Your<br />Go-to Socials with itel</h2>
-                                        <p className='mb-8 lg:text-desktop/body/1 lg:leading-6 text-[14px] leading-4 -tracking-[0.14px] text-white/80 mt-2 lg:mt-4 '>Get all the must-have accessories for your fav itel mobile, like the itel power bank and itel earphone.</p>
-                                        <BuyNowSquareBG purchaseLink="" content="EXPLORE"/>
-                                    </div>
-                                    <div className="w-1/2 flex flex-col justify-center items-center">
-                                        <img src='/product-listing/exploreBannerFamilyGroup.png' className="w-1/2" />
-                                    </div>
-                                </div>
-                        </div> */}
-
-
                         <div className='content lg:px-[119px] relative w-full h-[462px] lg:min-h-[350px] lg:h-full flex flex-col justify-center items-center'>
                             <div className='flex flex-col-reverse lg:flex-row justify-between items-center z-20'>
                                 <button className="z-20 mt-4 lg:hidden">
