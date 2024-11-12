@@ -22,7 +22,7 @@ const GetNotifications = () => {
       			<h4 className='text-[#FFFFFF] text-mobile/h6 font-markot pl-2'>Notifications</h4>
       		</div>
       	</div>
-      	<div className='flex md:hidden relative w-full h-[300px] mt-[-1px] bg-[url("/smartphone/p55T/GetNotificationsBgSM.jpg")] bg-cover bg-center bg-no-repeat overflow-hidden' style={{ borderRadius: '0px 0px 16px 16px' }}>
+      	<div className='flex md:hidden relative w-full h-[301px] mt-[-1px] bg-[url("/smartphone/p55T/GetNotificationsBgSM.jpg")] bg-cover bg-center bg-no-repeat overflow-hidden' style={{ borderRadius: '0px 0px 16px 16px' }}>
     			<img src='/smartphone/p55T/GetNotificationsPhone.jpg' className='h-[210px] absolute bottom-0 left-[50%] transform translate-x-[-50%]' />
       	</div>
       	<div className='hidden md:grid grid-cols-2 md:h-[500px] lg:h-full md:rounded-[16px] bg-[url("/smartphone/p55T/GetNotificationsBgSM.jpg")] md:bg-[url("/smartphone/p55T/GetNotificationsBg.jpg")] bg-cover bg-center bg-no-repeat overflow-hidden'>
