@@ -64,7 +64,7 @@ const Footer = () => {
                         </div>
 
                         <div className="">
-                            <p className='text-desktop/subtitle pb-[20px] text-white/50'>About</p>
+                            <p className='text-desktop/subtitle py-[20px] text-white/50'>About</p>
                             <div className="flex flex-col gap-3">
                                 <For each={AboutItel} render={(item, index) =>
                                     <Link to={item.link} className='cursor-pointer'>
