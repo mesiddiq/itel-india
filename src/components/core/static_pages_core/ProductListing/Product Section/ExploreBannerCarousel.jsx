@@ -8,9 +8,9 @@ const ExploreBannerCarousel = () => {
         <div className="w-full">
             <img src={exploreBanner} className="w-full"/>
         </div>
-        <div className="sliderCounter flex flex-row gap-2 justify-center items-center w-full">
+        <div className="font-markot sliderCounter flex flex-row gap-2 justify-center items-center w-full">
             <img src={arrowLeftCarousel} className="p-3" />
-            <span className="FFMarkMedium text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">1-7 of 35</span>
+            <span className="text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">1-7 of 35</span>
             <img src={arrowRightCarousel} className="p-3" />
         </div>
     </>
