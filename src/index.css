@@ -301,7 +301,7 @@
   }
 
   .mob-res-AllDay {
-    top: 1% !important;
+    top: 32% !important;
     left: 20rem !important;
   }
 
@@ -342,6 +342,14 @@
     height: 410px !important;
   }
   
+}
+
+@media (max-width:1266px) and (min-width:1024px){
+  .mob-effortless {
+    top: 37% !important;
+    left: 19rem !important;
+  }
+
 }
 
 

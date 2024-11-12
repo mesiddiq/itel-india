@@ -12,7 +12,7 @@ const Section7PhonesSpecs = () => {
                 mobileBackgroundPosition="bottom"
                 borderRadius="16px"
             >
-                <div className="flex flex-col justify-between md:h-[118vh] lg:w-[518px] lg:h-[784px] h-[430px]">
+                <div className="flex flex-col justify-between md:h-[100vh] lg:w-[518px] lg:h-[784px] h-[700px]">
                     <div className="lg:pt-10 md:pt-6 md:px-4 text-mobile/h5/medium md:text-desktop/h3 text-left">
                         Effortless Security: <br className="lg:block hidden" /> Smart Face Unlock
                     </div>
@@ -29,7 +29,7 @@ const Section7PhonesSpecs = () => {
                     mobileBackgroundPosition='right'
                     borderRadius="16px"
                 >
-                    <div className="flex flex-col lg:w-full h-[178px] md:h-[260px] lg:h-[380px]">
+                    <div className="flex flex-col lg:w-full h-[300px] md:h-[260px] lg:h-[380px]">
                         <div className="md:py-6 py-2 md:px-4 text-mobile/h5/medium md:text-desktop/h3">
                             Enjoy Efficient Battery Use All Day
                         </div>

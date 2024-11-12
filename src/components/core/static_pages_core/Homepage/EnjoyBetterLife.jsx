@@ -54,7 +54,8 @@ const EnjoyBetterLife = () => {
                 colImgHeight="100%" colImgWidth="100%"
                 posClasses={["top-[10%] left-0 lg:top-[60px]", "top-[20%] left-[50%] z-20 lg:top-[51px] lg:left-[25rem]"]}
                 colwidth="w-[372px]"
-
+                mobRes1="mob-effortless"
+                // mobRes="mob-effortless1"
               />
             </Link>
 
@@ -78,7 +79,7 @@ const EnjoyBetterLife = () => {
                   colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                   colBgImgHeight="100%" colBgImgWidth="100%"
                   colImgHeight="100%" colImgWidth="100%"
-                  posClasses={["top-[25%] left-[5%]", "top-[40%] left-[30%] z-20"]}
+                  posClasses={["top-[39%] left-[5%]", "top-[50%] left-[30%] z-20"]}
                 />
               </Link>
             </div>
@@ -114,10 +115,10 @@ const EnjoyBetterLife = () => {
               colClass="h-[205px]"
               header="Stay Effortlessly Connected All Day, Every Day"
               colImg="/static_page/homepage/EnjoyBetterLifeCol4.png"
-              colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
+              // colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
               colBgImgHeight="120px" colBgImgWidth="100%"
               colImgHeight="100%" colImgWidth="100%"
-              posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[74px] top-[6rem] left-[6rem]"]}
+              posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[74px] top-[5rem] left-[6rem]"]}
               mobRes="mob-res-AllDay"
               mobRes1="mob-res-AllDay"
             />
