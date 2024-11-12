@@ -20,11 +20,11 @@ export const SmartPhoneModelData = [
         price: '₹10,999.00',
         path: '/product/s24',
         features: [
-            { label: 'Camera', value: '50MP Dual Rear' },
-            { label: 'Memory', value: '8GB + 8GB* + 256GB Memory' },
-            { label: 'Dimension', value: '164.4 x 75.1 x 7.9mm' },
+            { label: 'Camera', value: '50MP AI Dual Rear Camera' },
+            { label: 'Memory', value: 'Up to 32+4(2+2)GB*' },
+            { label: 'Dimension', value: '16.4 x 7.6 x 0.8 cm' },
             { label: 'Processor', value: 'Octa-core Processor' },
-            { label: 'Battery', value: '5000mAh' },
+            { label: 'Battery', value: '4000mAh' },
         ],
     },
     {

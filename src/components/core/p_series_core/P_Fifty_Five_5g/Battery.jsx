@@ -4,8 +4,8 @@ const Battery = () => {
   <div className="hidden lg:flex h-[710px] bg-[#D0E1FC] w-full  justify-center items-center py-12"
   
   >
-<div className="bg-[url('/smartphone/P55fiveg/Backgrounds/PowerBG.webp')] content bg-contain bg-no-repeat h-full w-full">
-<div className="content h-full">
+<div className="bg-[url('/smartphone/P55fiveg/Backgrounds/PowerBG.webp')] content bg-contain bg-no-repeat h-full">
+
     <div className="relative font-markot h-full w-full flex flex-col justify-center items-start bg-contain bg-center bg-no-repeat">
         <div className="absolute left-[80px] flex flex-col gap-[9px]">
         <div className="flex flex-col gap-[24px] w-[100%] px-4 lg:px-0 text-white font-markot">
@@ -27,7 +27,7 @@ const Battery = () => {
             </div>
           </div>
           </div>
-        </div>
+  
     </div>
 </div></div>
 
@@ -36,7 +36,7 @@ const Battery = () => {
  
 
     <div className="flex justify-center items-center bg-[url('/smartphone/P55fiveg/Backgrounds/PowerBGMobile.webp')] bg-center bg-contain bg-no-repeat h-full w-full">
-      <div className="content h-full w-full flex justify-center items-center">
+      <div className="content h-full flex justify-center items-center">
         <div className="relative font-markot h-full w-full flex flex-col justify-start items-center bg-center bg-contain bg-no-repeat">
           <div className="absolute pt-[80px] flex flex-col gap-[9px]">
           <div className="flex flex-col gap-[24px] px-4 text-white font-markot">

@@ -5,7 +5,7 @@ const Powerful = () => {
     <div className='bg-white'>
     <div className="w-full h-max content lg:py-[120px] p-10 lg:px-0  bg-white overflow-hidden">
   <div className={`
-    flex flex-col items-end md:justify-center w-full h-[660px] 
+    flex flex-col items-end md:justify-center content h-[660px] 
     bg-cover overflow-hidden rounded-[16px] 
     bg-[url('/smartphone/P55fiveg/Backgrounds/PowerfulBGMobile.webp')]  
     md:bg-[url('/smartphone/P55fiveg/Backgrounds/PowerfulBG.webp')]  

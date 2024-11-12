@@ -3,7 +3,7 @@ import React from 'react';
 const MobileGrid = () => {
   return (
     <div className="flex flex-col justify-center items-center py-[80px] sm:py-[120px] bg-black gap-[16px]">
-  <div className="content w-full h-full px-4 lg:p-0">
+  <div className="content h-full px-4 lg:p-0">
     {/* Left side with a large box */}
     <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-4"
     >

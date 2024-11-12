@@ -13,7 +13,7 @@ const Gaming = () => {
     md:bg-[url('/smartphone/P55fiveg/Backgrounds/GamingBG.webp')]       // For md and larger screens
     bg-center bg-no-repeat
   `}>
-    <div className="content flex flex-col md:flex-row gap-8 w-full p-4 lg:p-0 "  data-aos="fade-right">
+    <div className="content flex flex-col md:flex-row gap-8 p-4 lg:p-0 "  data-aos="fade-right">
       <div className='flex flex-col justify-between gap-[28px] md:gap-[114px] py-8 font-markot'>
         <div className="flex flex-col gap-4 w-full md:w-[542px]">
           <img src="/smartphone/P55fiveg/Backgrounds/media2.png" className='h-[23px] w-[92px]' alt="Media Icon"/>

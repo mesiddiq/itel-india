@@ -6,7 +6,7 @@ const Connectivity = () => {
       className="font-markot relative w-full h-[336px] md:h-[758px] flex items-center justify-center overflow-hidden bg-cover bg-center text-white"
       style={{ backgroundImage: "url(/smartphone/P55fiveg/Backgrounds/5g-revolution.png)" }}
     >
-      <div className="content absolute inset-0 flex text-white h-full w-full flex-col items-center py-7 text-center ">
+      <div className="content absolute inset-0 flex text-white h-full flex-col items-center py-7 text-center ">
         <div className="flex flex-col gap-3" >
           <h2 className="text-mobile/h4 md:text-desktop/h2">
             5G Revolution:<br /> Redefining Connectivity
