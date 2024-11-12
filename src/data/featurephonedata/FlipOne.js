@@ -12,51 +12,54 @@ export const FullSpecificationsDataFlipOne = [
         id: 1,
         label: 'General',
         data: [
-            { label: 'Model', value: 'Ace 2 Power' },
-            { label: 'Colors', value: 'Light Green, Deep Blue, Black' },
-            { label: 'Display', value: '4.5cm (1.8")' },
-            { label: 'Battery', value: '2500 mAh' },
-            { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada & Malayalam & Marathi)' },
-            { label: 'Phonebook', value: '2000' },
-            { label: 'SMS', value: '500' },
-            { label: 'Torch', value: 'Yes' },
+            { label: 'Model', value: 'Flip One' },
+            { label: 'Colors', value: 'Black, Blue & Orange' },
+            { label: 'Display', value: '2.4"' },
+            { label: 'Battery', value: '1200 mAh' },
+            { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada & Malayalam & Punjabi)' },
+            { label: 'Phonebook', value: '500' },
+            { label: 'Message', value: '200' },
         ]
     },
     {
         id: 2,
         label: 'Display Features',
         data: [
-            { label: 'Display Size', value: '4.5cm (1.8") ' },
-            { label: 'Resolution', value: '128*160' },
+            { label: 'Display Size', value: '3.35 cm (1.32")' },
+            { label: 'Resolution', value: '128*128' },
             { label: 'Resolution Type', value: 'QQVGA' },
-            { label: 'Pixel Density', value: '116ppi' },
+            { label: 'Pixel Density', value: '137 ppi' },
         ]
     },
     {
         id: 3,
         label: 'Battery',
         data: [
-            { label: 'Battery Capacity', value: '2500 mAh' },
+            { label: 'Battery Capacity', value: '1200 mAh' },
             { label: 'Battery Type', value: 'Li-ion' },
+            { label: 'Battery Backup', value: '212.7 Hours' },
+            { label: 'Talktime', value: '7.75 Hours' },
         ]
     },
     {
         id: 4,
         label: 'Camera',
         data: [
-            { label: 'Rear Camera', value: 'NA' },
+            { label: 'Rear Camera', value: 'VGA' },
         ]
     },
     {
         id: 5,
         label: 'Memory & Storage',
         data: [
-            { label: 'ROM', value: '32 MB' },
-            { label: 'RAM', value: '32 MB' },
+            { label: 'ROM', value: '4 MB' },
+            { label: 'RAM', value: '4 MB' },
             { label: 'Chipset', value: 'SC6531E' },
+            { label: 'Dimension', value: '97.6 * 49 * 11.2mm' },
             { label: 'Expandable Memory', value: 'Upto 32GB' },
-            { label: 'Phonebook', value: '1000' },
-            { label: 'Message', value: '500' },
+            { label: 'Phonebook', value: '500' },
+            { label: 'Message', value: '200' },
+            { label: 'Processor', value: '208 MHz' },
         ]
     },
     {
@@ -64,6 +67,7 @@ export const FullSpecificationsDataFlipOne = [
         label: 'Connectivity',
         data: [
             { label: 'Network Type', value: '2G' },
+            { label: 'Bluetooth Support', value: 'Yes' },
             { label: 'Earphone Jack', value: '3.5mm' },
             { label: 'SIM Slot', value: 'Slot 1 & Slot 2 - Standard' },
             { label: 'Dual Active/Standby', value: 'Dual Standby' },
@@ -75,7 +79,7 @@ export const FullSpecificationsDataFlipOne = [
         id: 7,
         label: 'Additional',
         data: [
-            { label: 'Languages', value: '9 (English, Hindi, Gujarati, Telugu, Tamil, Punjabi, Kannada, Malayalam, Bengali)' },
+            { label: 'Languages', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada & Malayalam & Punjabi)' },
             { label: 'Accessories', value: 'Charger & Battery' }
         ]
     },

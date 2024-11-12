@@ -31,7 +31,9 @@ const FlipOne = () => {
             <Section4 />
             <Section6 />
             <Section5 />
-            <FeaturePhoneProductGallery {...ProductGalleryDataFlipOne} />
+            <div className="mt-[60px] lg:mt-[120px]">
+                <FeaturePhoneProductGallery {...ProductGalleryDataFlipOne} />
+            </div>
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataFlipOne} mode={'light'} />
         </>
     )
