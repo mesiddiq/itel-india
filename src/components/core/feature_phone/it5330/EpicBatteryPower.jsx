@@ -16,12 +16,12 @@ const EpicBatteryPower = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:relative absolute bottom-0 lg:-bottom-4">
-                    <div className="absolute bottom-10 right-[200px]  z-10  items-end hidden lg:flex ">
+                <div className="xl:relative absolute bottom-0 xl:-bottom-4 lg:right-20 xl:right-0 ">
+                    <div className="absolute bottom-10 right-[100px]  z-10  items-end hidden lg:flex ">
                         <p className="text-desktop/body/large text-grey/grey/1 text-nowrap">Press to activate <br /> Super Battery Mode</p>
                         <div className="w-full min-w-[500px] max-w-[500px] h-[2px] bg-white"></div>
                     </div>
-                    <img src="/featurephone/it5330/Backgrounds/epic_battery_phone.webp" alt="it5330" className='lg:max-w-[436px] max-w-[271px] lg:-translate-x-20 ' />
+                    <img src="/featurephone/it5330/Backgrounds/epic_battery_phone.webp" alt="it5330" className='xl:max-w-[436px] lg:max-w-[350px] max-w-[271px] ' />
                     <img src="/featurephone/it5330/Backgrounds/line.png" alt="line" className='absolute bottom-8 -left-8 lg:hidden' />
                 </div>
             </div>
