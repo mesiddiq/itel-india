@@ -1,4 +1,3 @@
-import React from 'react';
 
 const StayPlugged = () => {
     return (
@@ -17,7 +16,7 @@ const StayPlugged = () => {
                 <div className=' max-w-[302px] lg:max-w-[517px] z-20'>
                     <img src={'/static_page/homepage/selfie.png'} />
                 </div>
-                <img src="/static_page/homepage/stayplugged.png" className='absolute top-0 left-0 z-10 hidden lg:block' />
+                <img src="/static_page/homepage/stayplugged.png" className='absolute top-[-15px] left-0 z-10 hidden lg:block' />
                 <img src="/static_page/homepage/stayplugged-mobile.png" className='absolute left-1/2 -translate-x-1/2 z-10 top-0 lg:hidden' />
             </div>
         </div>

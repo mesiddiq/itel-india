@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const EnjoyBetterLife = () => {
-  const RenderContent = ({ header, colwidth, colImg, colBgImg, colBgImgHeight, colBgImgWidth, colImgHeight, colImgWidth, mobRes, mobRes1, colClass, posClasses, resClass, resclass2 }) => (
+  const RenderContent = ({ header, colwidth, colImg, textWidth, colBgImg, colBgImgHeight, colBgImgWidth, colImgHeight, colImgWidth, mobRes, mobRes1, colClass, posClasses, resClass, resclass2 }) => (
     <div className={`${colClass} bg-[#232322] rounded-[16px] overflow-hidden group relative`}>
       <div className={`flex flex-col ${colwidth}`}>
         <div className="pt-4 px-4 md:px-5 gap-2 w-full">
-          <p className="text-sm md:text-lg lg:text-xl ">{header}</p>
+          <p className={`${textWidth} text-mobile/body/2  md:text-lg lg:text-xl`}>{header}</p>
           <img
             src="/static_page/homepage/Arrow_right.svg"
             alt="Arrow"
@@ -30,7 +30,7 @@ const EnjoyBetterLife = () => {
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 h-auto lg:h-[545px] lg:mt-[-91px]">
           <Link to='/products'>
             <RenderContent
-              colClass="w-full h-[200px] md:h-[250px] lg:w-[522px] lg:h-[543px]"
+              colClass="w-full h-[200px] md:h-[250px] lg:max-w-[522px] lg:h-[543px]"
               header="Amp Your Style with itel Latest Smartphones"
               colImg="/static_page/homepage/EnjoyBetterLifeCol1.png"
               colBgImg="/static_page/homepage/EnjoyBetterLifeCol1Bg.png"
@@ -40,10 +40,11 @@ const EnjoyBetterLife = () => {
               mobRes="mob-res"
               mobRes1="mob-res1"
               colwidth="w-[455px]"
+              textWidth='w-[247px]'
             />
           </Link>
 
-          <div className="hidden lg:flex flex-col w-full lg:w-[738px] gap-5 lg:gap-6">
+          <div className="hidden lg:flex flex-col w-full lg:max-w-[738px] gap-5 lg:gap-6">
             <Link to='/featurephones'>
               <RenderContent
                 colClass="lg:h-[268px]"
@@ -52,35 +53,34 @@ const EnjoyBetterLife = () => {
                 colBgImg="/static_page/homepage/2CompImg.png"
                 colBgImgHeight="100%" colBgImgWidth="100%"
                 colImgHeight="100%" colImgWidth="100%"
-                posClasses={["top-[10%] left-0 lg:top-[40px]", "top-[20%] left-[50%] z-20 lg:top-[51px] lg:left-[23rem]"]}
+                posClasses={["top-[10%] left-0 lg:top-[60px]", "top-[20%] left-[50%] z-20 lg:top-[51px] lg:left-[25rem]"]}
                 colwidth="w-[372px]"
-
+                mobRes1="mob-effortless"
+                // mobRes="mob-effortless1"
               />
             </Link>
 
             <div className="flex gap-5">
               <Link to='/coming-soon'>
                 <RenderContent
-                  colClass="w-1/2 h-[200px] md:h-[250px] lg:w-[413px] lg:h-[258px]"
+                  colClass="w-1/2 lg:w-full h-[200px] md:h-[250px] lg:h-[258px]"
                   header="Dive into Endless Entertainment: itel Smart TV"
                   colImg="/static_page/homepage/EnjoyBetterLifeCol3.png"
                   colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                   colBgImgHeight="100%" colBgImgWidth="100%"
                   colImgHeight="100%" colImgWidth="100%"
                   posClasses={["top-[10%] left-[10%]", "top-[30%] left-[60%] z-20"]}
-                  colwidth="w-[254px]"
                 />
               </Link>
               <Link to='/coming-soon'>
                 <RenderContent
-                  colClass="w-1/2 h-[200px] md:h-[250px] lg:w-[304px] lg:h-[258px]"
+                  colClass="w-1/2 lg:w-full h-[200px] md:h-[250px]  lg:h-[258px]"
                   header="Enjoy Your Favorite Shows"
                   colImg="/static_page/homepage/EnjoyBetterLifeCol4.png"
                   colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                   colBgImgHeight="100%" colBgImgWidth="100%"
                   colImgHeight="100%" colImgWidth="100%"
-                  posClasses={["top-[25%] left-[5%]", "top-[40%] left-[30%] z-20"]}
-                  colwidth="w-[258px]"
+                  posClasses={["top-[39%] left-[5%]", "top-[50%] left-[30%] z-20"]}
                 />
               </Link>
             </div>
@@ -95,7 +95,7 @@ const EnjoyBetterLife = () => {
                 colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                 colBgImgHeight="100%" colBgImgWidth="100%"
                 colImgHeight="100%" colImgWidth="100%"
-                posClasses={["md:top-[10px] md:left-[60px] top-[11rem] left-0", "md:top-[20px] md:left-[6rem] z-20 top-[9rem] left-[1rem]"]}
+                posClasses={["md:top-[10px] md:left-[60px] top-[11rem] left-0", "md:top-[74px] md:left-[6rem] z-20 top-[6rem] left-[1rem]"]}
                 resClass="responsive-section"
                 resclass2="responsive-section2"
 
@@ -107,7 +107,7 @@ const EnjoyBetterLife = () => {
                 colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                 colBgImgHeight="100%" colBgImgWidth="100%"
                 colImgHeight="100%" colImgWidth="100%"
-                posClasses={["md:top-[10px] md:left-[60px] top-[11rem] left-0", "md:top-[20px] md:left-[6rem] z-20 top-[9rem] left-[1rem]"]}
+                posClasses={["md:top-[10px] md:left-[60px] top-[11rem] left-0", "md:top-[74px] md:left-[6rem] z-20 top-[6rem] left-[1rem]"]}
                 resClass="responsive-section"
                 resclass2="responsive-section2"
               />
@@ -116,12 +116,12 @@ const EnjoyBetterLife = () => {
               colClass="h-[205px]"
               header="Stay Effortlessly Connected All Day, Every Day"
               colImg="/static_page/homepage/EnjoyBetterLifeCol4.png"
-              colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
+              // colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
               colBgImgHeight="120px" colBgImgWidth="100%"
               colImgHeight="100%" colImgWidth="100%"
-              posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[20px] top-[6rem] left-[6rem]"]}
+              posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[74px] top-[4rem] left-[6rem]"]}
               mobRes="mob-res-AllDay"
-              mobRes1="mob-res1-AllDay"
+              mobRes1="mob-res-AllDay"
             />
           </div>
         </div>

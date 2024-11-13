@@ -4,11 +4,11 @@ export default function Frame3() {
     <div className="relative mt-[16px] bg-[#FCCE8D] bg-opacity-[20%] border border-[#FCCE8D] w-full h-full min-h-[550px] md:h-[739px] flex flex-col items-center xl:rounded-[36px] rounded-[16px] overflow-hidden">
                 
                 <div className="flex flex-col md:flex-row justify-between items-center w-full h-full">
-                    <div className="flex flex-col justify-center xl:pb-[140px] xl:pt-[110px] md:pb-[50px] md:pt-[36px] pt-[16px] px-[12px] xl:px-[56px] z-20 md:px-[24px]">
-                        <h2 className="text-[#181818] md:text-desktop/h2 text-mobile/h4 text-center md:text-left md:pr-[116px] max-w-[350px]">
+                    <div className="flex flex-col items-center md:items-left justify-center xl:pb-[140px] xl:pt-[110px] md:pb-[50px] md:pt-[36px] pt-[16px] px-[12px] xl:px-[56px] z-20 md:px-[24px]">
+                        <h2 className="text-[#181818] md:text-desktop/h2 text-mobile/h4 text-center md:text-left  max-w-[355px]">
                         Unlock & Roll: Your Phone, Your Style!
                         </h2>
-                        <p className="flex flex-col md:text-desktop/body/large text-desktop/body/2/regular text-[#1C1B1B] text-center md:text-left md:pt-[20px] pt-[12px] md:pb-[36px] pb-[21px] md:max-w-[200px] xl:max-w-[20rem] xs:text-mobile/h7">
+                        <p className="flex flex-col md:text-desktop/body/large max-w-[471px] text-desktop/body/2/regular text-[#1C1B1B] text-center md:text-left md:pt-[20px] pt-[12px] md:pb-[36px] pb-[21px] lg:max-w-[471px]  xs:text-mobile/h7">
                             Step into the future with a phone that's both
                             chic and practical. With its sleek design
                             and fingerprint sensor, you have complete
@@ -41,7 +41,7 @@ export default function Frame3() {
                             />
                         </div>
 
-                        <div className="overflow-hidden z-10 absolute bottom-0 right-0 xl:pt-[60px] md:pt-[35px] xl:pr-[80px] md:pr-[15px] pr-[65px]">
+                        <div className="overflow-hidden z-10 absolute bottom-0 right-0 xl:pt-[60px] md:pt-[35px] xl:pr-[80px] md:pr-[15px] pr-[190px]">
                             <img
                                 src="/smartphone/a05/frame3.webp"
                                 alt="Foreground Image"

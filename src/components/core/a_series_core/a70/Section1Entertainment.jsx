@@ -13,7 +13,7 @@ const Section1Entertainment = () => (
       </p>
     </div>
 
-    <div className="flex md:flex-row  md:p-5 lg:p-0 lg:pt-[16px] flex-col pt-[15px]">
+    <div className="flex md:flex-row md:items-start items-center md:p-5 lg:p-0 lg:pt-[16px] flex-col pt-[15px]">
       <div>
         <div className="md:py-5 md:space-y-2 flex md:block gap-2 sm:w-[320px] ">
           <p className="md:text-desktop/h3 text-mobile/title sm:max-w-[136px] md:w-[335px] md:max-w-[335px]">

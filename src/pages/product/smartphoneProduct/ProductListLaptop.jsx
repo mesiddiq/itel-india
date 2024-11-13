@@ -10,7 +10,7 @@ const ProductListLaptop = () => {
         const handleScroll = () => {
             const leftPane = document.getElementById('filter-section');
             const rightPane = document.getElementById('product-section');
-            
+
             if (leftPane && rightPane) { // Check if elements exist
                 const leftPaneBottom = leftPane.getBoundingClientRect().bottom;
                 const rightPaneBottom = rightPane.getBoundingClientRect().bottom;
@@ -40,7 +40,10 @@ const ProductListLaptop = () => {
                     </div>
                     <div id="product-section" className="w-3/4 overflow-y-auto">
                         <ProductSectionLaptop />
-                    <SupportChannels theme='dark'/>
+                        <div className='lg:pt-12'>
+                            <SupportChannels theme='dark' />
+
+                        </div>
                     </div>
                 </div>
             </section>

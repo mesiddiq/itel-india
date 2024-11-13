@@ -55,7 +55,7 @@ export default function Frames() {
                 {/* Frame 0 */}
                 <div
                     ref={ref}
-                    className="md:w-full overflow-hidden w-80 h-[556px] md:h-[650px] border-[#62b67af4] border-2 py-5 rounded-[16px] md:rounded-[56px] lg:h-[1056px] bg-cover bg-center flex flex-col bg-[url('/smartphone/a50/f0Bg.webp')]"
+                    className="md:w-full overflow-hidden  h-[556px] md:h-[650px] border-[#62b67af4] border-2 py-5 rounded-[16px] md:rounded-[56px] lg:h-[1056px] bg-cover bg-center flex flex-col bg-[url('/smartphone/a50/f0Bg.webp')]"
                 >
                     <motion.div
                         className="flex flex-col gap-2"
@@ -75,8 +75,8 @@ export default function Frames() {
                             </span>
                             <div className="flex lg:flex-col flex-row lg:justify-center justify-between py-7 lg:py-0">
                                 <div className="flex flex-col gap-4 mb-3">
-                                    <p className="lg:text-[32px] text-[#181818] font-medium text-mobile/title">
-                                        <span className="text-[#08E488]">12GB*</span> (4GB+8GB*) RAM
+                                    <p className="lg:text-[32px] text-[#181818] leading-10 font-medium text-mobile/title">
+                                        <span className="text-[#08E488] ">12GB*</span> (4GB+8GB*) RAM
                                     </p>
                                     <p className="text-[#232323] lg:text-[14px] text-[10px] text-opacity-70">
                                         with Memory Fusion Technology*
@@ -87,7 +87,7 @@ export default function Frames() {
                                 </p>
                             </div>
                         </div>
-                        <div className="relative">
+                        <div className="relative responsveImg">
                             <motion.img
                                 src="/smartphone/a50/img2.webp"
                                 alt="f1Img"
@@ -95,7 +95,7 @@ export default function Frames() {
                                 initial={{ x: -200, opacity: 0 }}
                                 animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ x: -200, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                             <motion.img
                                 src="/smartphone/a50/img4.webp"
@@ -104,31 +104,31 @@ export default function Frames() {
                                 initial={{ x: -200, opacity: 0 }}
                                 animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ x: -200, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                             <motion.img
                                 src="/smartphone/a50/img1.webp"
                                 alt="f2Img"
-                                className="absolute h-[200px] left-[12rem] md:left-[28rem] md:h-[380px] lg:left-[51rem] lg:h-[668.21px]"
+                                className="absolute h-[200px] left-[13rem] md:left-[28rem] md:h-[380px] lg:left-[51rem] lg:h-[668.21px]"
                                 initial={{ y: 100, opacity: 0 }}
                                 animate={isInView ? { y: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ y: 100, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                             <motion.img
                                 src="/smartphone/a50/img3.webp"
                                 alt="f2Img2"
-                                className="absolute h-[200px] top-[6rem] left-[6rem] md:top-[13rem] md:left-[15rem] md:h-[380px] lg:top-[25rem] lg:left-[31rem] lg:h-[668.21px]"
+                                className="absolute h-[200px] top-[6rem] left-[7rem] md:top-[13rem] md:left-[16rem] md:h-[380px] lg:top-[25rem] lg:left-[31rem] lg:h-[668.21px]"
                                 initial={{ y: 100, opacity: 0 }}
                                 animate={isInView ? { y: 0, opacity: 1 } : { opacity: 0 }} // Fade effect during animation
                                 exit={{ y: 100, opacity: 0 }} // Fade out effect when exiting
-                                transition={{ duration: 0.5, delay: 0.4 }}
+                                transition={{ duration: 1, delay: 0.4 }}
                             />
                         </div>
                     </motion.div>
                 </div>
                 {/* Frame 1 */}
-                <div className="lg:mt-15 border-[#62b67af4] border-2 mt-7 md:w-full w-80 h-[750px] py-5 rounded-[16px] md:rounded-[56px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col md:bg-[url('/smartphone/a50/f2.webp')] bg-[url('/smartphone/a50/f1Mobile.webp')]">
+                <div className="lg:mt-15 border-[#62b67af4] border-2 mt-7 md:w-full  h-[750px] py-5 rounded-[16px] md:rounded-[56px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col md:bg-[url('/smartphone/a50/f2.webp')] bg-[url('/smartphone/a50/f1Mobile.webp')]">
                     <div className='flex flex-col lg:justify-start items-start md:pl-12 px-5 md:px-0 pt-5'>
                         <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
                             Perfect Shots with AI Camera
@@ -151,7 +151,7 @@ export default function Frames() {
                 </div>
 
                 {/* Frame 2 (Desktop) */}
-                <div className="relative mt-5 xl:w-full border-[#62b67af4] border-2 md:rounded-[56px] lg:w-[900px] hidden lg:h-[739px] bg-cover bg-center lg:flex lg:flex-row lg:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/f1.webp')]">
+                <div className="relative mt-5 w-full border-[#62b67af4] border-2 md:rounded-[56px]  hidden lg:h-[739px] bg-cover bg-center lg:flex lg:flex-row lg:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/f1.webp')]">
                     <img src="/smartphone/a50/f2Hero.webp" alt="f1Img" className='md:h-[650px] lg:py-5 lg:pl-16 lg:flex hidden' />
                     <div className='relative flex flex-col  justify-start items-start xl:bottom-[9%] xl:right-[51%] md:right-[36%] bottom-[2%]'>
                         <div className="absolute xl:w-[537px] md:w-[337px]  top-0">
@@ -179,7 +179,7 @@ export default function Frames() {
                 </div>
 
                 {/* Frame 2 (Mobile) */}
-                <div className="bg-[url('/smartphone/a50/f1Mobile.webp')] border-[#62b67af4] border-2 bg-cover bg-center flex justify-center items-center lg:hidden flex-col w-80 h-[624px] rounded-[16px] py-5 mt-5 md:bg-[url('/smartphone/a50/f1.webp')] md:w-full md:h-[724px]">
+                <div className="bg-[url('/smartphone/a50/f1Mobile.webp')] border-[#62b67af4] border-2 bg-cover bg-center flex justify-center items-center overflow-hidden lg:hidden flex-col   rounded-[16px] py-5 mt-5 md:bg-[url('/smartphone/a50/f1.webp')] md:w-full md:h-[724px]">
                     <div className='justify-start items-start flex flex-col pl-7.5  px-4 pt-5'>
                         <span className='border border-[#08E488] bg-white text-[#181818] rounded-[16px] text-[13px] px-5 py-2 font-medium'>8MP Al Rear Camera</span>
                         <span className='mt-3.5 font-bold leading-[80%] tracking-[-0.06em] lowercase bg-clip-text text-transparent text-[40px]'
@@ -196,7 +196,7 @@ export default function Frames() {
                 </div>
 
                 {/* Frame 3 */}
-                <div className="md:w-full w-80 h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
+                <div className="md:w-full  h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
                     <div className='flex flex-col lg:justify-start items-start md:pl-12 px-5 md:px-0'>
                         <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
                             Minimize Glitches for a Flawless Experience
@@ -220,7 +220,7 @@ export default function Frames() {
                 </div>
 
                 {/* Frame 4*/}
-                <div className="md:w-full w-80 h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
+                <div className="md:w-full  h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
                     <div className='flex flex-col lg:justify-start items-start xl:pl-12 px-5 md:ps-4 md:px-0'>
                         <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
                             6.6” Big Display with Dynamic Bar
