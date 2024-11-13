@@ -23,7 +23,7 @@ function SupportChannels({ theme = 'light' }) {
   ];
 
   return (
-    <section className={`flex flex-col font-markot justify-center items-center w-full font-medium text-center pb-24 ${isLightTheme ? 'bg-white' : 'bg-[#131313]'}`}>
+    <section className={`flex flex-col font-markot justify-center items-center w-full font-medium text-center pb-24 ${isLightTheme ? 'bg-white' : 'bg-[#0A0C08]'}`}>
       <div className="flex flex-col max-w-full w-[1280px]">
         <h2 className={`text-mobile/h4 md:text-desktop/h3 max-md:pt-10 ${isLightTheme ? 'text-black' : 'text-white'} max-md:max-w-full max-md:text-left max-md:px-8`}>
           Support Channels

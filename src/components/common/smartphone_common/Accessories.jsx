@@ -30,7 +30,7 @@ const Accessories = ({ theme = 'light' }) => {
   ];
 
   return (
-    <div className={`h-auto flex justify-center w-full py-[40px] ${isLightTheme ? 'bg-white text-black' : 'bg-[#0A0C08] text-white'}`}>
+    <div className={`h-auto flex justify-center w-full py-[40px] ${isLightTheme ? 'bg-white text-black' : 'bg-[#0A0C08] text-white'} font-markot`}>
       <div className="content w-full flex flex-col gap-[36px] px-4">
         <h3 className={`text-mobile/h4 md:text-desktop/h3 ${isLightTheme ? 'text-black' : 'text-white'}`}>
           Level Up Your Experience with Accessories!

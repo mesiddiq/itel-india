@@ -21,7 +21,7 @@ const Card = ({ card }) => {
                 <h1 className="text-mobile/h6 lg:text-desktop/h4">{card.name}</h1>
                 <p className="text-mobile/small/body text-grey/grey/3 lg:text-desktop/body/2/regular mt-1 lg:mt-2">
                     {readMore ? card.descriptoin : `${card.descriptoin.substring(0, 50)}...`} 
-                    <span onClick={() => setReadMore(!readMore)} className='cursor-pointer text-itel-red'>{readMore ? ' Read Less' : ' Read More'}</span>
+                    {/* <span onClick={() => setReadMore(!readMore)} className='cursor-pointer text-itel-red'>{readMore ? ' Read Less' : ' Read More'}</span> */}
                 </p>
                 <Link to={card.path} className="flex gap-[6px] items-center justify-center mx-auto lg:py-2 lg:px-5 lg:rounded-[24px] lg:bg-[#2c2c2c] lg:border-[#4f4f4f] lg:border w-full lg:mt-3">
                     <span>
