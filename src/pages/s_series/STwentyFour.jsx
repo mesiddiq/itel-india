@@ -13,7 +13,6 @@ import {
     FullSpecificationsS24,
     ImageCarouselData,
     HeroDataS24,
-    SliderAnimationS24
 } from '../../data/smartphonedata/S24Data'
 import MultipleCameraModes from "../../components/core/s_series_core/S_Twenty_Four/MultipleCameraModes"
 import StandAloneImage from "../../components/core/s_series_core/S_Twenty_Four/StandAloneImage"
@@ -40,6 +39,7 @@ const STwentyFour = () => {
                 dark={false}
             />
             <ProductDescription />
+<<<<<<< HEAD
             <SliderAnimationCommon {...SliderAnimationS24} svgCode={<svg
                 width="15"
                 height="14"
@@ -65,6 +65,17 @@ const STwentyFour = () => {
                     </linearGradient>
                 </defs>
             </svg>} />
+=======
+            <SliderAnimationCommon
+				text1="Super Series"
+				text2="incredibly super"
+				svgCode={<img src="/smartphone/S24/sliderAnimationStar.svg" alt="star" className="" />}
+				bgColor="#120F0D"
+                textGradient1="#FFCF92"
+				textGradient2="#FFE8CB"
+                svgBgColor='bg-[#FFCF92] bg-opacity-[16%]'
+			/>
+>>>>>>> 1b084819327c5ffa9ea78368dd48f0be9354261d
             <Video1 />
             <FillerFrame />
             <CameraSpecifications />

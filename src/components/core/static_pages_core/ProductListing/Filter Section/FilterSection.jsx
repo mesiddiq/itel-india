@@ -106,10 +106,10 @@ const FilterSection = () => {
             {
                 filters.map((filter) => (
                     // <section className="pr-5">
-                    //     <h1 className='font-base font-medium FFMarkMedium mb-5'>
+                    //     <h1 className='font-base font-medium mb-5'>
                     //         {filter.name}
                     //     </h1>
-                    //     <ul className='flex flex-col gap-3 justify-center FFMarkMedium'>
+                    //     <ul className='flex flex-col gap-3 justify-center'>
                     //         {
                     //             filter?.options?.map((option) => (
                     //                 <li key={option} className='flex flex-row justify-start items-center gap-2'>
@@ -124,7 +124,7 @@ const FilterSection = () => {
                     //                         </span>
                     //                     </label>
 
-                    //                     <span className='text-sm FFMarkRegular font-normal leading-[22.4px] tracking-[-0.01em] text-[#949494]'>
+                    //                     <span className='text-sm font-normal leading-[22.4px] tracking-[-0.01em] text-[#949494]'>
                     //                         {option}
                     //                     </span>
                     //                 </li>
