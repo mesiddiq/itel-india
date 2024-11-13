@@ -29,7 +29,8 @@ export default function HeroSmartPhoneCommon({
     purchaseLink, // Product purchase link
     description, // Product description
     gradient1, // Gradient 1 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
-    gradient2 // Gradient 2 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
+    gradient2, // Gradient 2 HEX value (Default: #3a3358) [If you page dosen't have gradient then pass same color code in both values]
+    model
 }) {
     const textControls = useAnimation()
     const backgroundControls = useAnimation()
@@ -57,7 +58,7 @@ export default function HeroSmartPhoneCommon({
                 animate={backgroundControls}
                 transition={{ duration: 1, ease: "easeOut" }}
                 style={{
-                    background: `url(${width > 1024 ? bgDesktop : bgMobile}) center center/cover no-repeat`,
+                    background: `url(${width > 768 ? bgDesktop : bgMobile}) center center/cover no-repeat`,
                 }}
             />
             <div className="content h-full flex lg:items-center pt-11 lg:pt-0 px-4 md:px-0">

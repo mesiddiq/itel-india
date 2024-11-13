@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react';
-import Footer from './components/common/footer'
+import Footer from './components/common/Footer'
 import BackToTopButton from './utils/BackToTop'
 const FlipOne = lazy(() => import('./pages/feature_phone/FlipOne'));
 const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));

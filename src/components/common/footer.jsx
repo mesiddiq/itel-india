@@ -79,7 +79,7 @@ const Footer = () => {
                                 )} />
                             </div>
                         </div>
-                        <div className="flex flex-col lg:gap-10 gap-7 ">
+                        <div className="flex flex-col lg:gap-3  gap-7 ">
                             <div className="space-y-4 lg:space-y-5">
                                 <h3 className="text-desktop/subtitle text-white/40">
                                     Media Room

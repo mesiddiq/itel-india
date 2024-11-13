@@ -44,7 +44,7 @@ export default function A50() {
         showTitleInMobile={true}
       />
 
-      <FullSpecifications FullSpecificationsData={a50FullSpecifications} mode='light' gifStar='/smartphone/a05/startImg.png' />
+      <FullSpecifications FullSpecificationsData={a50FullSpecifications} mode='light' gifStar='/static_page/Hotstar.gif' />
     </div>
   )
 }

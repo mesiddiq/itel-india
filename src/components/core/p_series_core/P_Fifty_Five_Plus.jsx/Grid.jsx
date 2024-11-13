@@ -2,9 +2,9 @@ import React from 'react'
 
 const Grid = () => {
   return (
-    <div className='font-markot w-full h-full py-[40px] px-[16px] lg:py-[120px] bg-[#181818] flex flex-col gap-5'>
+    <div className='font-markot text-white w-full h-full py-[40px] px-[16px] lg:py-[120px] bg-[#181818] flex flex-col gap-5'>
  
-    <div className='content upper-half-3-divs flex flex-col lg:flex-row gap-5 justify-between'>
+    <div className='content flex flex-col lg:flex-row gap-5 justify-between'>
       
         <div className='w-full lg:w-[40%] min-h-[506px] h-[506px] lg:h-[771px] rounded-lg overflow-hidden flex flex-col relative group bg-no-repeat bg-cover' style={{backgroundImage: "url(/smartphone/P55+/Backgrounds/grid5.png)"}}>
           
@@ -36,7 +36,7 @@ const Grid = () => {
           <img
             src="/smartphone/P55+/Backgrounds/grid1.png"
             alt="gridimage"
-            className='absolute z-0 right-0 w-[276px] md:w-[383px]  -bottom-10 lg:bottom-0 lg:scale-[100%] group-hover:scale-[110%] transition-transform duration-700'
+            className='absolute z-0 right-0 w-[276px] md:w-[383px]  -bottom-10 lg:bottom-0'
           />
 
         </div>
@@ -92,11 +92,11 @@ const Grid = () => {
     </div>
 
    
-    <div className='content font-markot lower-half-3-divs flex flex-col gap-5 justify-between'>
+    <div className='content font-markot flex flex-col gap-5 justify-between'>
 
     <div
-  className={`group h-[430px] lg:h-[473px] overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] relative bg-cover 
-    bg-[url('/smartphone/P55+/Backgrounds/unisoc_mobile.png')] md:bg-[url('/smartphone/P55+/Backgrounds/grid2.webp')]`} // Mobile and desktop background images
+  className={`content h-[430px] lg:h-[473px] overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] relative bg-cover 
+    bg-[url('/smartphone/P55+/Backgrounds/unisoc_mobile.png')] md:bg-[url('/smartphone/P55+/Backgrounds/grid2.webp')]`}
 >
   <div className='relative z-10 flex flex-col gap-[18px] lg:gap-2 lg:justify-between lg:w-[400px] lg:mt-0'>
     <div className='flex flex-col gap-1 lg:gap-3 max-w-[339px]'>

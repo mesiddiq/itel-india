@@ -389,7 +389,7 @@ const Droppoints = () => {
               alt=""
             />
           </div>
-          <div className="w-[990px] rounded-2xl border overflow-x-scroll h-full">
+          <div className="w-[990px] rounded-2xl border  h-full">
             <div className="py-4 gap-5 border px-5 bg-bg/primary/1 flex text-desktop/subtitle text-[#333333]">
               <p className="w-[31px]">S.N</p>
               <p className="w-[150px]">ASP Name</p>
@@ -484,7 +484,7 @@ const Droppoints = () => {
               className="w-full lg:w-[220px] bg-[#1A1A1A] lg:text-desktop/button text-mobile/button text-white py-3 px-8 rounded-full hover:bg-white hover:text-black hover:shadow-2xl hover:border hover:border-black transition duration-300 flex items-center justify-center"
             >
               SEARCH
-              <span className="ml-2 text-red-500">→</span>
+              <img className="lg:w-[24px] ml-2 lg:h-[15px] "  src={"/static_page/homepage/Union.png"} alt="" />
             </button>
           </div>
         </div>

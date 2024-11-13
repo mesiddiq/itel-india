@@ -2,7 +2,7 @@ import React from 'react'
 
 const NearestStore = () => {
   return (
-    <div className='relative flex justify-center w-full content h-[180px] md:h-[260px] rounded-[16px] items-center content px-2 lg:px-0'>
+    <div className='relative flex justify-center w-full lg:content h-[180px] md:h-[260px] rounded-[16px] items-center content px-2 lg:px-0'>
     <div className='
       flex w-full h-full bg-cover rounded-[16px]
 bg-[url("/smartphone/P55fiveg/Backgrounds/store_mobile.png")] 
@@ -19,7 +19,6 @@ bg-[url("/smartphone/P55fiveg/Backgrounds/store_mobile.png")]
         <h3 className='text-mobile/h5/medium md:text-desktop/h3 '>Find Your Nearest itel Store!</h3>
         <p className='text-mobile/body/2 md:text-desktop/body/1'>We are here to help you find the right phone. </p>
       </div>
-      {/* Gradient overlay using ::before */}
    
       
     </div>

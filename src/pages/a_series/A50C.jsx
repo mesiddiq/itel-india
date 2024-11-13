@@ -44,7 +44,7 @@ const A50C = () => {
 				</div>
 			</div>
 			<div className="px-4 lg:pb-[80px] bg-white">
-				<FullSpecifications FullSpecificationsData={FullSpecificationsA50C} mode="light" gifStar="/smartphone/A05i/StarFullSpecifications.svg" />
+				<FullSpecifications FullSpecificationsData={FullSpecificationsA50C} mode="light" gifStar="/static_page/Hotstar.gif" />
 			</div>
 		</>
 	)

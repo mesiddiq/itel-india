@@ -103,7 +103,7 @@ const Form = () => {
   };
 
   return (
-    <div className="content lg:pb-[120px] lg:space-y-0 space-y-[60px] pb-[60px] font-markot flex lg:flex-row flex-col justify-between px-4">
+    <div className="content lg:pb-[120px] lg:space-y-0 space-y-[60px] pb-[60px] font-markot flex xl:flex-row flex-col  justify-between px-4">
       <div className="lg:space-y-[42px] space-y-[32px] lg:w-[402px]">
         {buttonData.map((data, index) => (
           <div key={index} className="space-x-3 flex items-center">

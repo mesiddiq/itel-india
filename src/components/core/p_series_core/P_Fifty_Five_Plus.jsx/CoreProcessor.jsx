@@ -11,7 +11,7 @@ const SuperCharge = () => {
     <div
       className={`
         absolute top-0 left-0 h-full w-full   {/* Swap width and height */}
-        bg-[url('/smartphone/P55+/Backgrounds/beast_mobile.webp')] 
+        bg-[url('/smartphone/P55+/Backgrounds/uni.png')] 
         bg-cover  bg-no-repeat
    
       `}
@@ -35,16 +35,13 @@ const SuperCharge = () => {
           </div>
           
         </div>
-        <div className="flex gap-[12px] font-markot opacity-[50%] bg-[#0E1316] py-4 justify-center  items-center">
-              <span className="text-[10px] md:text-[16px] text-white">Powered by</span>
-              <img src="/smartphone/P55+/Backgrounds/name.png" alt="Powered by"className='h-[17px]' />
-            </div>
+      
       </div>
       {/* Desktop View */}
       <div className="hidden md:block w-full h-[720px] bg-[#0E1316] " > {/* Hide on mobile */}
         <div
           className={`
-            flex flex-col items-end justify-center w-full
+            flex flex-col items-end justify-center
             bg-cover overflow-hidden h-full
             bg-[url('/smartphone/P55+/Backgrounds/beastmode.webp')]  {/* Desktop Background */}
             bg-center bg-no-repeat
@@ -52,7 +49,7 @@ const SuperCharge = () => {
         >
           <div className="content flex font-markot md:flex-col justify-around h-full  items-end rounded-[16px]">
             <div
-              className="flex flex-col justify-between md:gap-[48px] text-left pt-8"
+              className="flex flex-col text-white justify-around h-full md:gap-[48px] text-left pt-8"
               data-aos="fade-left"
             >
               <div className="flex flex-col font-markot gap-[12px]">
@@ -62,17 +59,17 @@ const SuperCharge = () => {
                 </h1>
                 <p className="text-desktop/button">Unisoc T606 (12nm)</p>
             
-              <p className="text-[16px] mb-6 font-normal ">
+              <p className="text-[16px] mb-6 font-normal text-white">
                 Experience enhanced speed and reliability with the advanced<br />
                 capabilities of the UNISOC T606 processor.
               </p>
               </div>
-            
-            </div>
-            <div className="flex gap-[12px] font-markot opacity-[50%] justify-start text-left w-[37%]">
+              <div className="flex gap-[12px] font-markot opacity-[50%] text-left ">
                 <span className="text-[16px]">Powered by</span>
                 <img src="/smartphone/P55+/Backgrounds/name.png" alt="Powered by" />
               </div>
+            </div>
+           
           </div>
        
         </div>

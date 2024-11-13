@@ -17,7 +17,7 @@ const Storage = () => {
     md:bg-[url('/smartphone/P55fiveg/Backgrounds/MegaBG.webp')]       // For md and larger screens
     bg-center bg-no-repeat
   `}>
-    <div className='content w-full md:flex-row flex flex-col'>
+    <div className='content md:flex-row flex flex-col'>
      <div data-aos="fade-right"className="w-full md:w-1/2 h-full flex items-center px-4 lg:p-0">
      <div className='flex flex-col gap-[20px] md:gap-[48px] font-markot ' data-aos="fade-right">
 <div className="flex flex-col gap-[12px]">

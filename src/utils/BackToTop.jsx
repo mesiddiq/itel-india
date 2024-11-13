@@ -85,7 +85,7 @@ export default function BackToTopButton() {
     return (
         <div onClick={scrollToTop} className={`fixed lg:right-10 right-4 bottom-4 lg:bottom-8 font-markot text-itel-red z-[499] transition-all duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-40'}`}>
             <button className="bttbtn ">
-                <svg width="20" height="20" className='btticon -rotate-90' viewBox="0 0 20 20" classNameName='-rotate-90' fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" className='btticon -rotate-90' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="vuesax/twotone/arrow-right">
                         <g id="vuesax/twotone/arrow-right_2">
                             <g id="arrow-right">

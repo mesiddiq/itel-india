@@ -30,7 +30,7 @@ const Accessories = ({ theme = 'light' }) => {
   ];
 
   return (
-    <div className={`h-auto flex justify-center w-full py-[40px] ${isLightTheme ? 'bg-white text-black' : 'bg-[#0A0C08] text-white'}`}>
+    <div className={`h-auto flex justify-center w-full py-[40px] ${isLightTheme ? 'bg-white text-black' : 'bg-[#0A0C08] text-white'} font-markot`}>
       <div className="content w-full flex flex-col gap-[36px] px-4">
         <h3 className={`text-mobile/h4 md:text-desktop/h3 ${isLightTheme ? 'text-black' : 'text-white'}`}>
           Level Up Your Experience with Accessories!
@@ -39,7 +39,7 @@ const Accessories = ({ theme = 'light' }) => {
           {accessoriesData.map((accessory, index) => (
             <div
               key={index}
-              className={`rounded-[16px] flex flex-col p-4 items-center text-center ${isLightTheme ? 'bg-gray-100 text-black' : 'bg-[#232323] text-white'}`}
+              className={`rounded-[16px] min-h-[202px] flex flex-col md:p-3 py-1  items-center text-center ${isLightTheme ? 'bg-gray-100 text-black' : 'bg-[#232323] text-white'}`}
             >
               <div className="flex justify-center items-center">
                 <img
@@ -48,7 +48,7 @@ const Accessories = ({ theme = 'light' }) => {
                   className="w-full h-auto max-w-[150px] md:max-w-[220px] object-contain"
                 />
               </div>
-              <div className="flex flex-col gap-[24px]">
+              <div className="flex flex-col gap-2">
                 <div className="flex flex-col gap-[12px]">
                   <h4 className="text-mobile/h6 md:text-desktop/h4 mt-4 font-markot">
                     {accessory.title}
@@ -59,7 +59,7 @@ const Accessories = ({ theme = 'light' }) => {
                 <button className="flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
                   <span className="flex overflow-hidden gap-2 items-center">
                     <span className={` ${isLightTheme ? ' text-black' : ' text-white'}`}>Buy Now</span>
-                    <img loading="lazy" src="/smartphone/P555g/arrow-right.png" alt="" className="object-contain w-6" />
+                    <img loading="lazy" src="/smartphone/P555g/arrow-right.png" alt="" className="object-cover w-6" />
                   </span>
                 </button>
               </div></div>

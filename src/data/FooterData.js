@@ -87,6 +87,11 @@ export const AboutItel = [
         id: 2,
         label: 'Investor quick links',
         link: '/investor'
+    },
+    {
+        id: 3,
+        label: 'Corporate Social Responsibility',
+        link: '/corporate-social-responsibility-csr'
     }
 ]
 

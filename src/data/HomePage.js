@@ -80,7 +80,7 @@ export const HotPicksData = [
                 id: 3,
                 path: '/product/a23-s',
                 descriptoin: '4GB*(2GB+2GB*) RAM + 32GB ROM | Smart Face Unlock | 3020 mAh battery',
-                image: "/smartphone/A23s/Produc Gallery/Group 1973340442.webp",
+                image: "/smartphone/A23s/ProductGallery/blue2.webp",
                 name: "A23s",
                 price: "4,799",
             },

@@ -18,14 +18,20 @@ import Battery from '../../components/core/p_series_core/P_Fifty_Five_5g/Battery
 import Camera from '../../components/core/p_series_core/P_Fifty_Five_5g/Camera'
 import FullSpecifications from "../../components/common/FullSpecifications"
 import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon"
-import { FullSpecificationsP55 } from '../../data/smartphonedata/P55Data'
+import { FullSpecificationsP555g } from '../../data/smartphonedata/P555gData'
 import { ImageCarouselData } from '../../data/smartphonedata/P555gImageCarouselData';
 import StickyHeader from '../../components/common/StickyHeader';
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import NearestStore from '../../components/core/p_series_core/P_Fifty_Five_5g/NearestStore';
+import { Helmet } from 'react-helmet'
 const PFiftyFive = () => {
   return (
     <>
+     <Helmet>
+                <title>P55 5g</title>
+                <meta name="description" content={` The powerful itel P55 5G is one of the best phones under ₹12,000, featuring a superfast MediaTek Dimensity 6080 processor, a stunning 6.6" HD+ IPS display, and a robust 5000mAh battery with 18W fast charging. This chic 5G smartphone offers up to 12GB* (6GB+6GB*) RAM, 128GB storage, and a high-camera mobile setup with a 50MP AI Dual Rear and 8MP Selfie Camera. With enhanced security, an elegant design, and a Type-C charger, the itel P55 5G stands out among the latest itel smartphones.`} />
+                <meta name="keywords" content="itel P55 5g,itel P55 +,itel P55 5g smartphone,itel P55 5g mobile price,itel P55 5g phone,itel P55 Plus,itel P55 5g mobile,itel P55 mobile 5g" />
+            </Helmet>
       <HeroSmartPhoneCommon
        headingText='P55 5G'
         bgDesktop='/smartphone/smartphonehero/p555g.webp'
@@ -78,7 +84,7 @@ const PFiftyFive = () => {
             <ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={true} />
           </div>
         </div>
-      <FullSpecifications FullSpecificationsData={FullSpecificationsP55} mode="dark" />
+      <FullSpecifications FullSpecificationsData={FullSpecificationsP555g} mode="dark" />
 
     </>
 

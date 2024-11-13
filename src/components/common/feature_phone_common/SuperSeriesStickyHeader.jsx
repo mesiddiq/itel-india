@@ -26,7 +26,7 @@ const SuperSeriesStickyHeader = ({
                         <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className={iconSize ? iconSize : 'size-10'} />
                         <h1 className={`text-mobile/h5 md:text-desktop/h3 font-bold ${dark ? 'text-black/1' : 'text-white'} `}>{title}</h1>
                     </div>
-                    <div className="gap-3 items-center bg-black/1 justify-center hidden lg:flex absolute left-1/2 -translate-x-1/2 ">
+                    {/* <div className="gap-3 items-center bg-black/1 justify-center hidden lg:flex absolute left-1/2 -translate-x-1/2 ">
                         {RoutesData.map(({ path, alias, label }) => (
                             <Link to={path} key={path}>
                                 <button className={`text-desktop/body/1 uppercase ${pathname === path ? 'text-white border-[#9D99AB] bg-grey/grey/5 border rounded-full py-3 px-5 ' : 'text-grey/grey/4'}`}>
@@ -34,6 +34,10 @@ const SuperSeriesStickyHeader = ({
                                 </button>
                             </Link>
                         ))}
+                    </div> */}
+                    <div className="hidden md:flex gap-8 items-center">
+                        <a href="#overview" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Overview</a>
+                        <a href="#specifications" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Specifications</a>
                     </div>
                     <a href={purchaseLink} target='_blank' className={`flex py-3 px-[14px] md:px-6 rounded-[24px] gap-2 ${dark ? 'text-white bg-brand/black' : 'text-black/1 bg-white'}`}>
                         <span className={`text-mobile/button md:text-desktop/button ${dark ? 'text-white' : 'text-black'} uppercase font-medium`}>Buy Now</span>
@@ -50,10 +54,10 @@ const SuperSeriesStickyHeader = ({
                 </div>
             </div>
 
-            <div className="md:flex gap-8 items-center bg-black/1 justify-center hidden pb-6 ">
+            {/* <div className="md:flex gap-8 items-center bg-black/1 justify-center hidden pb-6 ">
                 <a href="#overview" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Overview</a>
                 <a href="#specifications" className={`text-desktop/body/1 ${dark ? 'text-black/1' : 'text-white'}`}>Specifications</a>
-            </div>
+            </div> */}
         </div>
     )
 }

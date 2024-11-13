@@ -17,9 +17,16 @@ import { FullSpecificationsP55 } from '../../data/smartphonedata/P55PLUSData'
 import { ImageCarouselData } from '../../data/smartphonedata/P55PLUSImageCarouselData';
 import StickyHeader from '../../components/common/StickyHeader';
 import Grayframe from '../../components/core/p_series_core/P_Fifty_Five_5g/Grayframe'
+import { Helmet } from 'react-helmet'
 const PFiftyFivePlus = () => {
   return (
     <>
+      <Helmet>
+        <title>P55+</title>
+        <meta name="description" content={`  Get Ready for Power: Meet itel P55+, a smartphone under 10K with 45W Charging. It is your performance companion with 8GB RAM, expandable up to 16GB* with Memory Fusion, and 256GB ROM. 
+            Experience every detail on the 6.6" HD+ punch-hole display, complete with a smooth 90Hz refresh rate for seamless viewing. The sleek vegan leather finish exudes unparalleled elegance.`} />
+        <meta name="keywords" content="itel P55 5g,itel P55 +,itel P55 5g smartphone,itel P55 5g mobile price,itel P55 5g phone,itel P55 Plus,itel P55 5g mobile,itel P55 mobile 5g" />
+      </Helmet>
       <HeroSmartPhoneCommon
         bgDesktop='/smartphone/smartphonehero/p55p.webp'
         bgMobile='/smartphone/smartphonehero/p55p_mobile.webp'

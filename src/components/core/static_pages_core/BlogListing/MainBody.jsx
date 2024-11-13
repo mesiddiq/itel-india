@@ -3,7 +3,7 @@ import { data } from './data';
 import { Link } from 'react-router-dom';
 const BlogCard = ({ category, title, image,data }) => {
   return (
-    <div className="bg-white space-y-[12px] lg:space-y-[16px] ">
+    <div  className="bg-white space-y-[12px] lg:space-y-[16px] ">
       <img
         src={image}
         alt={title}
@@ -11,7 +11,7 @@ const BlogCard = ({ category, title, image,data }) => {
       />
       <div className=" space-y-3 lg:space-y-4">
         <div className=" space-y-2 ">
-          <p className=" text-desktop/body/2/regular text-grey/grey/5">{category}</p>
+          <p  className=" text-desktop/body/2/regular text-grey/grey/5">{category}</p>
           <p className=" lg:text-desktop/h5/medium text-mobile/h6 line-clamp-2 text-brand/black">{title}</p>
         </div>
         

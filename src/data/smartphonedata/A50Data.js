@@ -199,7 +199,7 @@ export const a50ImageCaraousel = [
         colorSelectorBGColor: "",
         colorSelectorTextColor: "text-black",
         bgContainer: "bg-[#AFE1C1]",
-        bgURL: '/smartphone/a05/galleryBG/orange.webp',
+        bgURL: '/smartphone/a50/productgallerybg.svg',
         images: [
             "/smartphone/a50/green1.webp",
             "/smartphone/a50/green2.webp",

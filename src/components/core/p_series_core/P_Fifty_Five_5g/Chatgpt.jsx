@@ -6,7 +6,7 @@ const Chatgpt = () => {
     className="relative h-max py-8 lg:h-[680px] flex justify-center items-center bg-cover bg-center" 
     style={{ backgroundImage: 'url(/smartphone/P55fiveg/Backgrounds/SmartAssistant.webp)' }}
   >
-    <div className='content flex flex-col md:flex-row gap-[24px] justify-center items-center'>
+    <div className='content flex flex-col lg:flex-row gap-[24px] justify-center items-center'>
       <div className="flex flex-col gap-[48px] font-markot justify-center px-4 lg:px-0" data-aos="fade-right">
         <div className='flex flex-col gap-[12px]'>
           <h2 className='text-mobile/h3 md:text-desktop/h2 text-white'>Smart assistant: itel<br/> Aivana ChatGPT Bot</h2>

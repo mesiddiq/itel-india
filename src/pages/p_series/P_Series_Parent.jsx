@@ -12,7 +12,7 @@ import { SmartPhoneModelData } from '../../data/SmartPhoneModelData'
 
 const P_Series_Parent = () => {
     return (
-        <div className='bg-[#111111] overflow-hidden'>
+        <div className='bg-[#0A0C08] overflow-hidden'>
             <Outlet />
             <Accessories theme='dark' />
             <Model theme='dark' models={SmartPhoneModelData} />
