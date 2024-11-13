@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="h-max py-8 lg:h-[701px] flex justify-center items-center w-full bg-cover"
     style={{ backgroundImage: 'url(/smartphone/P55+/Backgrounds/About.webp)' }} id='overview'>
-    <div className='content font-markot flex flex-col justify-center items-center w-full px-4 lg:p-0'>
+    <div className='lg:content font-markot flex flex-col justify-center items-center w-full px-4 lg:p-0'>
         <div className="flex flex-col lg:flex-row lg:justify-between items-right gap-3 lg:gap-0">
             <h2  className="gap-[6px] font-markot w-full lg:w-1/2 text-mobile/h4 lg:text-desktop/h2 text-transparent bg-clip-text" style={{
   backgroundImage: 'linear-gradient(180deg, #ACC887 0%, #3E9C6F 100%)'

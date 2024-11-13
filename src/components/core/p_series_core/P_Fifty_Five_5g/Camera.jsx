@@ -63,8 +63,8 @@ const Camera = () => {
   const currentMode = modes.find(mode => mode.id === activeMode);
 
   return (
-    <div className="relative overflow-hidden w-full h-[900px] md:h-[770px] font-markot flex bg-cover bg-center" style={{ backgroundImage: `url(${currentMode?.bgImage})` }}>
-      <div className='content w-full h-full  flex-col md:flex-row hidden lg:flex'>
+    <div className="relative overflow-hidden w-full h-[900px] font-markot flex bg-cover bg-center" style={{ backgroundImage: `url(${currentMode?.bgImage})` }}>
+      <div className='content h-full  flex-col md:flex-row hidden lg:flex'>
 
         {/* Left Side: Text Content */}
         <div className="w-1/2 h-full flex justify-center items-center text-white">
@@ -125,7 +125,7 @@ const Camera = () => {
           </div>
           </div>
       </div>
-<div className='h-full py-4 w-full bg-black flex flex-col items-center gap-8 justify-center lg:hidden' >
+<div className='content h-full py-4 w-full bg-black flex flex-col items-center gap-8 justify-center lg:hidden' >
 <div className="flex flex-col gap-4 text-center items-center justify-center px-4">
               <h2 className="text-white text-mobile/h4 ">Next-Level Camera <br/> Experience</h2>
               <p className="text-white font-markot text-desktop/body/2/regular leading-relaxed">
