@@ -1,18 +1,18 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
 import { useState } from 'react';
 import { MdCurrencyRupee } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
 
 // import './styles.css';
 
@@ -36,7 +36,6 @@ const Banner1 = ({ activeSlide }) => {
                     loop
                     src="/videos/homepage/herobanner1_mobile.webm" className='w-full object-cover h-full scale-110 absolute top-0 md:hidden'
                 />
-                {/* <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920397/Hero_Banner_1_gzgabw.gif" alt="" className='w-full object-cover h-full  absolute top-0 md:hidden' /> */}
                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
                     <div className="space-y-4 lg:space-y-0">
                         <motion.h1
@@ -261,7 +260,6 @@ const HeroSection = () => {
             loop
             modules={[Pagination, Autoplay]}
             onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
-
             className="max-h-screen w-full "
         >
 

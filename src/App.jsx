@@ -88,7 +88,7 @@ function App() {
 					{/* 					Static Pages	   				*/}
 					{/********************************************************/}
 
-					<Route path='/aryan' element={<ProductListing />} />
+					<Route path='/loading' element={<Loading />} />
 					<Route path='/products' element={<SmartPhoneProductPage />} />
 					<Route path='/featurephones' element={<FeaturePhoneProductPage />} />
 					<Route path='/support' element={<Support />} />

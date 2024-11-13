@@ -10,6 +10,18 @@ export const HeroDataS24 = {
     purchaseLink: "https://www.amazon.in/dp/B0CZNV9YCX?ie=UTF8&ref_=itel_S24_PDP_WS"
 }
 
+<<<<<<< HEAD
+export const SliderAnimationS24 = {
+    text1: "Super Series",
+    text2: "incredibly super",
+    bgColor: "#120F0D",
+    textGradient1: "#FFCF92",
+    textGradient2: "#FFE8CB",
+    svgBgColor: 'bg-[#FFCF92] bg-opacity-[16%]',
+};
+
+=======
+>>>>>>> 1b084819327c5ffa9ea78368dd48f0be9354261d
 export const FullSpecificationsS24 = [
     {
         id:1,

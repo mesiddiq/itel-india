@@ -55,8 +55,8 @@ const MultipleCameraModes = () => {
                     <img src='/smartphone/S24/timeLapseText.svg' alt='timeLapseText' className="w-[80%]"/>
                     <video autoPlay muted className="w-full">
                         <source
-                        src="https://res.cloudinary.com/djwj42mic/video/upload/v1728627747/S24_Timelapse_nxkur0.mp4"
-                        type="video/mp4"
+                        src="/videos/s24timelapse.webm"
+                        type="video/webm"
                         />
                     </video>
                     {/* <img src='/smartphone/S24/timeLapse.png' alt='timeLapse' className="h-full"/> */}
