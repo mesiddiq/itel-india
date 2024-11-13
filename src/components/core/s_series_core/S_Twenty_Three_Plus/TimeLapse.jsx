@@ -4,11 +4,11 @@ import ReactPlayer from 'react-player'
 const TimeLapse = () => {
 
   return (
-    <div className='hidden md:flex relative w-full h-[250px] md:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/smartphone/S23+/Backgrounds/SnapFlawlessSelfieBg.webp")] bg-cover bg-center' style={{ marginTop: '0px' }}>
+    <div className='hidden md:flex relative w-full h-[250px] md:h-[500px] lg:h-[800px] px-[16px] md:px-0 py-[12px] md:py-[120px] bg-[url("/smartphone/S23+/Backgrounds/SnapFlawlessSelfieBg.webp")] bg-cover bg-center' style={{ marginTop: '0px' }}>
       <div className='content'>
-        <div className='grid grid-cols-[15%_85%] md:grid-cols-[25%_75%] relative'>
+        <div className='grid grid-cols-[15%_85%] lg:grid-cols-[25%_75%] relative'>
           <div className='col-span-1'>
-            <img src='/smartphone/S23+/Backgrounds/TimeLapseText.svg' alt='TimeLapseText' className='absolute w-[120px] md:w-auto left-[120px] bottom-[45px] md:bottom-0' />
+            <img src='/smartphone/S23+/Backgrounds/TimeLapseText.svg' alt='TimeLapseText' className='absolute w-[135px] md:w-[200px] lg:w-auto left-[-12px] lg:left-[80px] bottom-0 lg:top-0' />
           </div>
           <div className='col-span-1'>
             <ReactPlayer

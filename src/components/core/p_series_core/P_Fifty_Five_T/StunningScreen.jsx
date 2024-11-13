@@ -2,10 +2,10 @@ import React from 'react'
 
 const StunningScreen = () => {
   return (
-    <div className='flex relative w-full h-[640px] md:h-[700px] bg-[url("/smartphone/p55T/Backgrounds/StunningScreenBgSmall.webp")] md:bg-[url("/smartphone/p55T/Backgrounds/StunningScreenBg.webp")] bg-cover md:bg-contain bg-center md:bg-right bg-no-repeat' data-aos='fade-right' style={{ backgroundColor: '#173145' }}>
+    <div className='flex relative w-full h-[640px] lg:h-[700px] bg-[url("/smartphone/p55T/Backgrounds/StunningScreenBgSmall.webp")] lg:bg-[url("/smartphone/p55T/Backgrounds/StunningScreenBg.webp")] bg-cover md:bg-contain bg-center md:bg-right bg-no-repeat' data-aos='fade-right' style={{ backgroundColor: '#173145' }}>
     	<div className='content'>
-      	<div className='flex flex-col md:flex-row h-full'>
-      		<div className='w-full md:w-[40%] px-[18px] md:px-0 py-[28px] md:py-[68px]'>
+      	<div className='flex flex-col lg:flex-row h-full'>
+      		<div className='w-full lg:w-[40%] px-[18px] lg:px-0 py-[28px] lg:py-[68px]'>
       			<div className='flex flex-col md:justify-between h-full'>
       				<h3 className='text-[#FFFFFF] text-mobile/h4 md:text-[54px] md:font-[500] md:leading-[65px] font-markot pb-4' data-aos='fade-right' data-aos-delay='500'>Stunning Screen, Ultimate Experience!</h3>
       				<div>
