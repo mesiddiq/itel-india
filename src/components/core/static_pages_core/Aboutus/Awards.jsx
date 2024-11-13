@@ -19,6 +19,7 @@ const Awards = () => {
 
 <Swiper
   spaceBetween={22}
+  loop={true}
   slidesPerView={window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1} // Adjust slides per view based on screen width
   onSlideChange={() => console.log('slide change')}
   onSwiper={(swiper) => console.log(swiper)}

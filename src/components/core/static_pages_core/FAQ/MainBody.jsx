@@ -57,7 +57,7 @@ const Other = ({active}) => {
 
 const Accordian = ({ data, title, isExpanded, onToggle }) => {
   return (
-    <div className="border-t-2 space-y-2">
+    <div className="py-[24px] border-t border-grey/grey/2">
       <div
         onClick={onToggle}
         className="flex items-center font-markot justify-between cursor-pointer"
@@ -128,7 +128,7 @@ const MainBody = () => {
 
   return (
     <div className="font-markot ">
-      <div className="lg:content px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
+      <div className="lg:content  px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
         {/* Search input */}
         {/* <div>
           <input
@@ -181,8 +181,9 @@ const MainBody = () => {
           </div>
 
           {/* Accordions based on search or category selection */}
-          <div className="space-y-5 lg:space-y-[40px]">
-            {(searchQuery ? filteredData(data[activeCategory]) : data[activeCategory]).map(
+          <div className="space-y-5 flex justify-center lg:space-y-[40px]">
+            <div className=" w-[844px]">
+               {(searchQuery ? filteredData(data[activeCategory]) : data[activeCategory]).map(
               (item, index) => (
                 <Accordian
                   key={index}
@@ -193,6 +194,8 @@ const MainBody = () => {
                 />
               )
             )}
+            </div>
+           
           </div>
         </div>
       </div>

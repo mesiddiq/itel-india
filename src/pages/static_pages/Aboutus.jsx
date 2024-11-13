@@ -15,7 +15,7 @@ const Aboutus = () => {
             <title>About US </title>
             <meta name="description" content={`itel,itel electronics,itel product,popular smartphone brands,best budget smart tv india,itel India,mobile excellence awards,itel mobile india`} />
         </Helmet>
-      <div className=' lg:space-y-[120px] lg:pb-[120px] pb-[60px]  space-y-[60px]'>
+      <div className=' overflow-hidden lg:space-y-[120px] lg:pb-[120px] pb-[60px]  space-y-[60px]'>
       <Herosection/>
       <Mission/>
       <Cards/>
