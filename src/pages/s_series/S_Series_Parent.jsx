@@ -8,6 +8,7 @@ import Accessories from '../../components/common/smartphone_common/Accessories'
 import Model from '../../components/common/smartphone_common/Model'
 import NearestStore from '../../components/common/NearestStore'
 import { SmartPhoneModelData } from '../../data/SmartPhoneModelData'
+import FAQ from '../../components/core/static_pages_core/Support/FAQ'
 
 const S_Series_Parent = () => {
     return (
@@ -22,6 +23,8 @@ const S_Series_Parent = () => {
                 <SupportChannels theme='dark' />
                 <OtherCoolGears theme='dark' />
                 <StayInTheLoop theme='dark' />
+                <FAQ theme='dark'/>
+
             </div>
         </div>
     )

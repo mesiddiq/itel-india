@@ -39,7 +39,7 @@ const Accessories = ({ theme = 'light' }) => {
           {accessoriesData.map((accessory, index) => (
             <div
               key={index}
-              className={`rounded-[16px] min-h-[202px] flex flex-col md:p-3 py-1  items-center text-center ${isLightTheme ? 'bg-gray-100 text-black' : 'bg-[#232323] text-white'}`}
+              className={`rounded-[16px] min-h-[202px] flex flex-col md:p-3 py-1 justify-between  items-center text-center ${isLightTheme ? 'bg-gray-100 text-black' : 'bg-[#232323] text-white'}`}
             >
               <div className="flex justify-center items-center">
                 <img

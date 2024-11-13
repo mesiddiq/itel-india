@@ -9,6 +9,7 @@ import Model from '../../components/common/smartphone_common/Model'
 import NearestStoreDark from '../../components/common/NearestStoreDark'
 import NearestStore from '../../components/common/NearestStore'
 import { SmartPhoneModelData } from '../../data/SmartPhoneModelData'
+import FAQ from '../../components/core/static_pages_core/Support/FAQ'
 
 const P_Series_Parent = () => {
     return (
@@ -21,6 +22,7 @@ const P_Series_Parent = () => {
             <SupportChannels theme='dark' />
             <OtherCoolGears theme='dark' />
             <StayInTheLoop theme='dark' />
+            <FAQ theme='dark'/>
         </div>
     )
 }
