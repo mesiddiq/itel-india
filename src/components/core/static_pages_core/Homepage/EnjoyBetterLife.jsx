@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const EnjoyBetterLife = () => {
-  const RenderContent = ({ header, colwidth, colImg, colBgImg, colBgImgHeight, colBgImgWidth, colImgHeight, colImgWidth, mobRes, mobRes1, colClass, posClasses, resClass, resclass2 }) => (
+  const RenderContent = ({ header, colwidth, colImg, textWidth, colBgImg, colBgImgHeight, colBgImgWidth, colImgHeight, colImgWidth, mobRes, mobRes1, colClass, posClasses, resClass, resclass2 }) => (
     <div className={`${colClass} bg-[#232322] rounded-[16px] overflow-hidden group relative`}>
       <div className={`flex flex-col ${colwidth}`}>
         <div className="pt-4 px-4 md:px-5 gap-2 w-full">
-          <p className="text-sm md:text-lg lg:text-xl ">{header}</p>
+          <p className={`${textWidth} text-mobile/body/2  md:text-lg lg:text-xl`}>{header}</p>
           <img
             src="/static_page/homepage/Arrow_right.svg"
             alt="Arrow"
@@ -40,6 +40,7 @@ const EnjoyBetterLife = () => {
               mobRes="mob-res"
               mobRes1="mob-res1"
               colwidth="w-[455px]"
+              textWidth='w-[247px]'
             />
           </Link>
 
@@ -118,7 +119,7 @@ const EnjoyBetterLife = () => {
               // colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
               colBgImgHeight="120px" colBgImgWidth="100%"
               colImgHeight="100%" colImgWidth="100%"
-              posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[74px] top-[5rem] left-[6rem]"]}
+              posClasses={["md:top-[10px] md:left-[60px] top-[5rem] left-[5rem]", "md:top-[74px] top-[4rem] left-[6rem]"]}
               mobRes="mob-res-AllDay"
               mobRes1="mob-res-AllDay"
             />

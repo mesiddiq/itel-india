@@ -6,7 +6,7 @@ const filtersData = ["5G Connectivity", "AI Camera", "Amoled Display", "Big Batt
 
 export default function FilterComponent() {
   const dispatch = useDispatch();
-  const selectedFeatures = useSelector(state => state.filters.filters.features);
+  const selectedFeatures = useSelector(state => (console.log(state), state.filters.filters.features));
 
   // Toggle filter selection
   const toggleFilter = (filter) => {
@@ -22,7 +22,7 @@ export default function FilterComponent() {
         <button
           key={filter}
           onClick={() => toggleFilter(filter)}
-          className={`flex items-center justify-center px-3 py-1 rounded-sm FFMarkRegular text-sm transition-colors 
+          className={`flex items-center justify-center px-3 py-1 rounded-sm text-sm transition-colors 
             ${
               isActive(filter)
                 ? "bg-[#575757] text-white"

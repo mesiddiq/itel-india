@@ -1,9 +1,6 @@
 /* eslint-disable no-unused-vars */
-import FilterCard from "./FilterCard"
-import FilterHeading from "./FilterHeading"
-import { setFeaturePhones, toggleFilter, filterFeaturePhones } from "../../../redux/slice/featurePhoneSlice";
+import { setFeaturePhones, setFilters, updateFilters, filterFeaturePhones } from "../../../redux/slice/featurePhoneSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
 
 const FilterSection = () => {
     const filters = [
@@ -51,11 +48,23 @@ const FilterSection = () => {
     ]
 
     const dispatch = useDispatch()
-    const { filters: selectedFilters } = useSelector((state) => state.featurePhone)
+    const { filters: selectedFilters, featurePhones } = useSelector((state) => state.featurePhone)
 
-    const handleFilterChange = (filterName, value) => {
-        dispatch(toggleFilter({ filterType: filterName, value }));
-        dispatch(filterFeaturePhones());
+    const handleFilterChange = (filterName, value, checked) => {
+        const currentFilters = selectedFilters[filterName]
+        let newValues
+
+        if (checked) {
+            newValues = [...currentFilters, value]
+        } else {
+            newValues = currentFilters.filter((item) =>
+                JSON.stringify(item) !== JSON.stringify(value)
+            )
+        }
+
+        dispatch(updateFilters({ filterName, newValues }))
+        dispatch(filterFeaturePhones())
+        console.log(featurePhones)
     }
 
     return (
@@ -73,8 +82,9 @@ const FilterSection = () => {
                                     <input 
                                         type="checkbox"
                                         id={option.id}
-                                        checked={selectedFilters[filter.filterName].includes(option.value)}
-                                        onChange={() => handleFilterChange(filter.filterName, option.value)}
+                                        onChange={(checked) => {
+                                            handleFilterChange(filter.filterName, option.value, checked)
+                                        }}
                                         className="h-5 w-5 rounded-sm border-gray-400 checked:bg-red-600 checked:border-red-600"
                                     />
                                     <label

@@ -1,10 +1,9 @@
-import React from 'react';
 
 const StayPlugged = () => {
     return (
         <div className='content lg:px-[119px] relative h-[462px] lg:h-auto'>
             <div className='flex flex-col-reverse lg:flex-row justify-between items-center z-20'>
-                <button className="z-20 mt-4 lg:hidden">
+                <button className="z-20 mt-4 hidden">
                     <img src="/static_page/homepage/stayplugged.png" alt="" className='' />
                 </button>
                 <div className=' text-white max-w-[296px] text-center lg:text-left lg:max-w-[463px] z-20 '>
@@ -17,7 +16,7 @@ const StayPlugged = () => {
                 <div className=' max-w-[302px] lg:max-w-[517px] z-20'>
                     <img src={'/static_page/homepage/selfie.png'} />
                 </div>
-                <img src="/static_page/homepage/stayplugged.png" className='absolute top-0 left-0 z-10 hidden lg:block' />
+                <img src="/static_page/homepage/stayplugged.png" className='absolute top-[-15px] left-0 z-10 hidden lg:block' />
                 <img src="/static_page/homepage/stayplugged-mobile.png" className='absolute left-1/2 -translate-x-1/2 z-10 top-0 lg:hidden' />
             </div>
         </div>

@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 const FilterCard = ({typeOfFilter, filterOptions}) => {
 return (
-    <section className="pr-5">
-        <h1 className='font-base font-medium FFMarkMedium mb-5'>
+    <section className="pr-5 font-markot">
+        <h1 className='font-base font-medium mb-5'>
                 {typeOfFilter}
         </h1>
-        <ul className='flex flex-col gap-3 justify-center FFMarkMedium'>
+        <ul className='flex flex-col gap-3 justify-center'>
             {
                 filterOptions.map((option) => (
                     <li key={option} className='flex flex-row justify-start items-center gap-2'>
@@ -20,7 +20,7 @@ return (
                             </span>
                         </label>
                         
-                        <span className='text-sm FFMarkRegular font-normal leading-[22.4px] tracking-[-0.01em] text-[#949494]'>
+                        <span className='text-sm font-normal leading-[22.4px] tracking-[-0.01em] text-[#949494]'>
                             {option}
                         </span>
                     </li>

@@ -1,34 +1,8 @@
 /* eslint-disable no-unused-vars */
-import FilterCard from "./FilterCard"
-import FilterHeading from "./FilterHeading"
 import { setSmartPhones, setFilters, updateFilters, filterSmartPhones } from "../../../redux/slice/smartPhoneSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
 
 const FilterSection = () => {
-    // const filters = [
-    //     {
-    //         id: 1,
-    //         name: 'PRICE RANGE',
-    //         options: ['All Price', 'Under ₹1000', '₹1000 to ₹3000', '₹3000 to ₹5000', 'Upto ₹7500']
-    //     },
-    //     {
-    //         id: 2,
-    //         name: 'PRIMARY CAMERA (FRONT)',
-    //         options: ['8 - 11.9 MP', '12 - 15.9 MP', '16 - 47.9 MP', '48 - 63.9 MP', '64 MP & Above']
-    //     },
-    //     {
-    //         id: 3,
-    //         name: 'SCREEN SIZE',
-    //         options: ['4.5 in', '5 in', '5.5 in', '5.7 in & above', '6 in & above']
-    //     },
-    //     {
-    //         id: 4,
-    //         name: 'STORAGE',
-    //         options: ['32 GB', '64 GB', '128 GB']
-    //     }
-    // ]
-
     const filters = [
         {
             id: 1,
@@ -77,11 +51,6 @@ const FilterSection = () => {
     const dispatch = useDispatch()
     const { filters: selectedFilters, smartPhones } = useSelector((state) => state.smartPhone)
 
-    // Initialize smartphones on component mount
-    // useEffect(() => {
-    //     dispatch(setSmartPhones(sampleSmartphones))
-    // }, [dispatch])
-
     const handleFilterChange = (filterName, value, checked) => {
         const currentFilters = selectedFilters[filterName]
         let newValues
@@ -104,10 +73,10 @@ const FilterSection = () => {
             {
                 filters.map((filter) => (
                     // <section className="pr-5">
-                    //     <h1 className='font-base font-medium FFMarkMedium mb-5'>
+                    //     <h1 className='font-base font-medium mb-5'>
                     //         {filter.name}
                     //     </h1>
-                    //     <ul className='flex flex-col gap-3 justify-center FFMarkMedium'>
+                    //     <ul className='flex flex-col gap-3 justify-center'>
                     //         {
                     //             filter?.options?.map((option) => (
                     //                 <li key={option} className='flex flex-row justify-start items-center gap-2'>
@@ -122,7 +91,7 @@ const FilterSection = () => {
                     //                         </span>
                     //                     </label>
 
-                    //                     <span className='text-sm FFMarkRegular font-normal leading-[22.4px] tracking-[-0.01em] text-[#949494]'>
+                    //                     <span className='text-sm font-normal leading-[22.4px] tracking-[-0.01em] text-[#949494]'>
                     //                         {option}
                     //                     </span>
                     //                 </li>
@@ -142,9 +111,6 @@ const FilterSection = () => {
                                 <div key={option.id} className="flex items-center space-x-2">
                                     <input type="checkbox"
                                         id={option.id}
-                                        // checked={selectedFilters[filter.filterName].some((item) =>
-                                        //     JSON.stringify(item) === JSON.stringify(option.value)
-                                        // )}
                                         onChange={(checked) => {
                                             handleFilterChange(filter.filterName, option.value, checked)
                                         }}
