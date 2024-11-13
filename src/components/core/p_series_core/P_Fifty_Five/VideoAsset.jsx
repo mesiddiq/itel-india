@@ -41,7 +41,7 @@ const Video1 = () => {
     >
       <video autoPlay muted className="w-full">
         <source
-          src="https://res.cloudinary.com/djwj42mic/video/upload/v1728904872/itel_P55_Product_Video_1080p_o7xekp.mp4"
+          src="/videos/p55.webm"
           type="video/mp4"
         />
       </video>

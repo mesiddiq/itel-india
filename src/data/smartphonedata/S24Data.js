@@ -13,12 +13,11 @@ export const HeroDataS24 = {
 export const SliderAnimationS24 = {
     text1: "Super Series",
     text2: "incredibly super",
-    svgCode: <img src="/smartphone/S24/sliderAnimationStar.svg" alt="star" className="" />,
     bgColor: "#120F0D",
     textGradient1: "#FFCF92",
     textGradient2: "#FFE8CB",
-    svgBgColor: 'bg-[#FFCF92] bg-opacity-[16%]'
-}
+    svgBgColor: 'bg-[#FFCF92] bg-opacity-[16%]',
+};
 
 export const FullSpecificationsS24 = [
     {

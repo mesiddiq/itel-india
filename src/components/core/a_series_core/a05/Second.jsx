@@ -17,7 +17,7 @@ export default function Second() {
       
       <div className='flex-grow'></div> {/* This will push the image to the bottom */}
       <img 
-        src="/smartphone/a05/4mobs.png" 
+        src="/smartphone/a05/4mobiles.webp" 
         alt="4mobs" 
         className='md:w-[1210.8px] w-[100%] max-w-full h-auto mx-auto xl:pt-[40px] pt-0 object-cover z-10' 
       />

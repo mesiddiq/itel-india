@@ -13,7 +13,7 @@ const VideoA70 = () => {
           muted={true}
           width='100%'
           height='100%'
-          url={[{ src: 'https://res.cloudinary.com/djwj42mic/video/upload/v1728905021/itel_A70_Product_Video_1080p_udveqi.mp4', type: 'video/mp4' }]}
+          url={[{ src: '/videos/a70.webm', type: 'video/webm' }]}
         />
       </div>
       <img src='/smartphone/a70/A70VideoPattern.png' className='w-full' />
