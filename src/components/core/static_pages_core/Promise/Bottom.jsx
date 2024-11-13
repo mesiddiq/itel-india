@@ -19,10 +19,10 @@ const Bottom = () => {
           <div>
               <Link to={"/contact-us"}><button
          
-          className="lg:text-desktop/button bg-white h-[40px] lg:h-[48px] text-mobile/button text-brand/black lg:py-3 lg:px-8 py-[12px] px-[14px]   rounded-full hover:bg-brand/black  hover:text-white hover:shadow-2xl hover:border hover:border-black  transition duration-300 flex items-center justify-center"
+          className="lg:text-desktop/button bg-white h-[40px] lg:h-[48px] text-mobile/button text-brand/black lg:py-3 lg:px-8 py-[12px] px-[14px]   rounded-full border border-[#4F4F4F] hover:bg-brand/black  hover:text-white hover:shadow-2xl hover:border hover:border-black  transition duration-300 flex items-center justify-center"
         >
           CONTACT US
-          <span className="ml-2 text-red-500">→</span>
+          <img className="lg:w-[24px] ml-2 lg:h-[15px] "  src={"/static_page/homepage/Union.png"} alt="" />
           </button>
         </Link>
           

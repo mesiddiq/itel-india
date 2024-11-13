@@ -2,9 +2,16 @@ import Herosection from "../../components/core/static_pages_core/Screenreplaceme
 import Cards from "../../components/core/static_pages_core/Screenreplacement/Cards"
 import AssuranceCard from "../../components/core/static_pages_core/Screenreplacement/AssuranceCard"
 import Terms from "../../components/core/static_pages_core/Screenreplacement/T&Q"
+import { Helmet } from "react-helmet"
 const ScreenReplacement = () => {
   return (
     <>
+     <Helmet>
+    <title>Get a Free Screen Replacement</title>
+            <meta name="description" content={`itel new phone,new screen replacement,ITEL Free Screen Replacement,itel mobile warranty,itel screen replacement,mobile phone replacement,phone screen repair,one time screen replacement offer`} />
+      
+    </Helmet>
+
     <div className=' lg:space-y-[120px] space-y-[60px]'> 
      <Herosection/>
      <Cards/>
