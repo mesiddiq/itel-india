@@ -17,7 +17,7 @@ const Accordian = ({ data, title }) => {
 
       {/* Accordion content with animation */}
       <div
-        className={`space-y-5 ${
+        className={`space-y-3 ${
           show ? " opacity-100" : "max-h-0 opacity-0"
         }`}
       >

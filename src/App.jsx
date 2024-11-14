@@ -3,6 +3,7 @@ import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
+import Terms from './pages/static_pages/Terms'
 import { lazy, Suspense } from 'react';
 import SmartPhoneProductPage from './pages/product/SmartPhoneProductPage'
 import FeaturePhoneProductPage from './pages/product/FeaturePhoneProductPage'
@@ -102,7 +103,8 @@ function App() {
 					<Route path='/blog' element={<Blog/>} />
 					<Route path='/bloglisting' element={<BlogListing/>} />
 					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
-
+					<Route path='/terms-of-use-itel-mobile-india' element={<Terms/>} />
+                    
 
                    
 

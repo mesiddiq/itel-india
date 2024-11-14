@@ -8,9 +8,10 @@ const Herosection = () => {
       <div className=' flex flex-col lg:space-y-[32px] items-center justify-center space-y-4'>
         <img src={"/static_page/heart.png"} alt="" />
        
-              <p className=' text-mobile/h1 text-center lg:text-desktop/h1'>Privacy Policy
+              <p className=' text-mobile/h1 text-center lg:text-desktop/h1'>Terms of Use
               </p>
-     
+        
+ 
        
            </div>
      
