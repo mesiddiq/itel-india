@@ -9,6 +9,7 @@ import FeaturePhoneProductPage from './pages/product/FeaturePhoneProductPage'
 import Loading from './pages/static_pages/Loading'
 import Blog from './pages/static_pages/Blog'
 import BlogListing from './pages/static_pages/BlogListing'
+import PrivacyAndPolicy from './pages/static_pages/PrivacyAndPolicy'
 const HomePage = lazy(() => import('./pages/static_pages/HomePage'));
 const STwentyThree = lazy(() => import('./pages/s_series/STwentyThree'));
 const STwentyThreePlus = lazy(() => import('./pages/s_series/STwentyThreePlus'));
@@ -100,6 +101,8 @@ function App() {
 					<Route path='/thankyou' element={<Thankyou/>} />
 					<Route path='/blog' element={<Blog/>} />
 					<Route path='/bloglisting' element={<BlogListing/>} />
+					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
+
 
                    
 
