@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
 function SimilarProducts({ theme = 'light' }) {
   const isLightTheme = theme === 'light';
@@ -77,7 +79,9 @@ function SimilarProducts({ theme = 'light' }) {
                     }`}
                   >
                     <span className="flex overflow-hidden gap-2 items-center">
-                      <span>Buy Now</span>
+                      <a href={product.link} >
+                        <span>Buy Now</span>
+                      </a>
                       <img loading="lazy" src="/smartphone/S_Twenty_Three/arrow-right.webp" alt="" className="object-contain w-6" />
                     </span>
                   </button>

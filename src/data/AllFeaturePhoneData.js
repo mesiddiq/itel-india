@@ -18,7 +18,7 @@ export const AllFeaturePhoneData = [
         features: {
             hasKingVoice: false,
             hasPowerKeypad: true,
-            hasUPI: false,
+            hasUPI: true,
             hasBluetooth: true
         }
     },
@@ -42,7 +42,7 @@ export const AllFeaturePhoneData = [
         features: {
             hasKingVoice: true,
             hasPowerKeypad: true,
-            hasUPI: false,
+            hasUPI: true,
             hasBluetooth: true
         }
     },
@@ -67,13 +67,13 @@ export const AllFeaturePhoneData = [
             hasKingVoice: true,
             hasPowerKeypad: true,
             hasUPI: false,
-            hasBluetooth: true
+            hasBluetooth: false
         }
     },
     {
         id: 4,
         title: "it5330",
-        thumbnail: "/product-listing/filterFeaturephoneImages/superguru4g.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/it5330.webp",
         description: '7.1cm (2.8") Bright Display | Kingvoice | Glass Finish Design',
         purchaseLink: "/product/it5330",
         category: '2.8" Display',
@@ -91,7 +91,7 @@ export const AllFeaturePhoneData = [
             hasKingVoice: true,
             hasPowerKeypad: true,
             hasUPI: false,
-            hasBluetooth: true
+            hasBluetooth: false
         }
     },
     {
@@ -114,7 +114,7 @@ export const AllFeaturePhoneData = [
         features: {
             hasKingVoice: true,
             hasPowerKeypad: true,
-            hasUPI: false,
+            hasUPI: true,
             hasBluetooth: true
         }
     },
@@ -139,7 +139,7 @@ export const AllFeaturePhoneData = [
             hasKingVoice: true,
             hasPowerKeypad: true,
             hasUPI: false,
-            hasBluetooth: true
+            hasBluetooth: false
         }
     },
     {
@@ -163,7 +163,7 @@ export const AllFeaturePhoneData = [
             hasKingVoice: true,
             hasPowerKeypad: true,
             hasUPI: false,
-            hasBluetooth: true
+            hasBluetooth: false
         }
     },
     {
@@ -211,7 +211,7 @@ export const AllFeaturePhoneData = [
             hasKingVoice: true,
             hasPowerKeypad: true,
             hasUPI: false,
-            hasBluetooth: true
+            hasBluetooth: false
         }
     },
     {
@@ -235,7 +235,7 @@ export const AllFeaturePhoneData = [
             hasKingVoice: true,
             hasPowerKeypad: true,
             hasUPI: false,
-            hasBluetooth: true
+            hasBluetooth: false
         }
     },
     {
@@ -259,7 +259,7 @@ export const AllFeaturePhoneData = [
             hasKingVoice: true,
             hasPowerKeypad: true,
             hasUPI: false,
-            hasBluetooth: true
+            hasBluetooth: false
         }
     },
 ];

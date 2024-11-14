@@ -26,7 +26,6 @@
   font-weight: 500;
 }
 
-
 @font-face {
   font-family: "BricolageGrotesque";
   src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-Bold.ttf") format('truetype');
@@ -64,6 +63,10 @@
 
 .overflowHidden::-webkit-scrollbar {
   display: none;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: red; /* For modern browsers */
 }
 
 .swiper-pagination-bullet {

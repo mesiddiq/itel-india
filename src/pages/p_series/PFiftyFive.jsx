@@ -18,6 +18,8 @@ import {
     HeroDataP55
 } from '../../data/smartphonedata/P55Data';
 import { Helmet } from 'react-helmet'
+import FeatureSection from '../../components/core/p_series_core/P_Fifty_Five/FeatureSection';
+import SliderAnimationCommon from '../../components/common/smartphone_common/SliderAnimationCommon';
 
 const PFiftyFive = () => {
     return (
@@ -29,6 +31,15 @@ const PFiftyFive = () => {
             </Helmet>
             <HeroSmartPhoneCommon {...HeroDataP55} />
             <StickyHeader bgColor={'#91C9EC'} title={'P55'} purchaseLink="https://www.amazon.in/dp/B0CSKKNLTT?ie=UTF8&ref_=itel_P55_PDP_WS&th=1" dark />
+            <FeatureSection />
+            <SliderAnimationCommon
+				text1="Power Series"
+				text2="intensively powerful"
+				svgCode={<img src="/smartphone/P55/P55SliderLightning.svg" alt="star" className="" />}
+				bgColor="#001C3A"
+                textColor="#D5EEF9"
+                svgBgColor='bg-[#4D88D2]'
+			/>
             <FillerFrame />
             <Frame24GB />
             <SeeMoreCaptureMore />
