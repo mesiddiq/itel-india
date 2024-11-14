@@ -2,7 +2,7 @@ import React from 'react'
 
 const LevelUpWithAndroid = () => {
   return (
-      <div className='flex relative w-full h-[355px] md:h-[720px] pt-[15px] md:pt-[50px] bg-[url("/smartphone/p55T/Backgrounds/Android14GoBgSmall.webp")] md:bg-[url("/smartphone/p55T/Backgrounds/Android14GoBg.webp")] bg-cover bg-center overflow-hidden'>
+      <div className='flex relative w-full h-[355px] md:h-[720px] pt-[15px] md:pt-[50px] bg-[url("/smartphone/p55T/Backgrounds/Android14GoBgSmall.webp")] lg:bg-[url("/smartphone/p55T/Backgrounds/Android14GoBg.webp")] bg-cover bg-center overflow-hidden'>
       	<div className='content relative'>
 	      	<div className='md:w-[680px] mx-auto text-center'>
 	      		<h2 className='text-[#FFFFFF] text-mobile/h4 md:text-desktop/h2 font-markot' data-aos='fade-down'>Level Up with Android 14 Go!</h2>
