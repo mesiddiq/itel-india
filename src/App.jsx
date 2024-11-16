@@ -36,6 +36,7 @@ const ColorPro5G = lazy(() => import('./pages/color_series/ColorPro5G'));
 const NotFound = lazy(() => import('./pages/static_pages/NotFound'));
 import Commingsoon from './pages/static_pages/Commingsoon'
 import Thankyou from './pages/static_pages/Thankyou'
+import Storelocator from './pages/static_pages/Storelocator'
 const A_Series_Parent = lazy(() => import('./pages/a_series/A_Series_Parent'));
 const A05i = lazy(() => import('./pages/a_series/A05i'));
 
@@ -104,6 +105,7 @@ function App() {
 					<Route path='/bloglisting' element={<BlogListing/>} />
 					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
 					<Route path='/terms-of-use-itel-mobile-india' element={<Terms/>} />
+					<Route path='/store-locator' element={<Storelocator/>} />
                     
 
                    
