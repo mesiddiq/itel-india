@@ -55,8 +55,8 @@ const FAQ = ({ theme = "light" }) => {  // theme prop with default value "light"
   ];
 
   return (
-    <div className={`font-markot ${theme === "dark" ? "bg-[#0A0C08] text-white" : "bg-white text-black"} min-h-screen`}>
-      <div className="lg:content lg:w-[834px] px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
+    <div className={`font-markot ${theme === "dark" ? "bg-[#0A0C08] text-white" : "bg-white text-black"} py-10`}>
+      <div className="lg:content lg:w-[834px] px-4 lg:my-[60px] space-y-5 lg:space-y-10">
         <p className={`text-brand/black lg:text-center text-mobile/h4 lg:text-desktop/h2 ${theme === "dark" ? "bg-[#0A0C08] text-white" : "bg-white text-black"} `}>
           Frequently Asked Questions (FAQs)
         </p>

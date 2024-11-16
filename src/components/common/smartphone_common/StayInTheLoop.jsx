@@ -16,7 +16,7 @@ const StayInTheLoop = ({ theme = 'light' }) => {
 	return (
 		<div className={`${isDarkTheme ? 'bg-[#0A0C08]' : 'bg-white'}`}>
 			<div className={`content flex flex-col justify-between px-[16px] md:px-0 pt-[60px] pb-[20px] `}>
-				<div className="flex justify-between">
+				<div className="flex justify-between flex-col md:flex-row">
 					<h3 className={`text-mobile/h4 md:text-desktop/h3 font-markot ${isDarkTheme ? 'text-[#FFFFFF]' : 'text-black'}`}>
 						Stay in the loop: Follow us for updates!
 					</h3>
