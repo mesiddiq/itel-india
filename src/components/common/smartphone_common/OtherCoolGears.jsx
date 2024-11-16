@@ -5,10 +5,13 @@ const GearCard = ({ theme, title, imageSources }) => {
     <div className={`group col-span-1 ${isDarkTheme ? 'bg-[#232322]' : 'bg-bg/primary/1'} p-[20px] rounded-[16px] h-[332px] relative overflow-hidden`}>
       <div className="grid grid-cols-2">
         <div className="col-span-1 w-[200%]">
-          <h3 className={`text-mobile/h5/medium md:text-desktop/h4 font-markot ${isDarkTheme ? 'text-[#FFFFFF]' : 'text-black'} pb-[10px]`}>{title}</h3>
-          <p className="flex items-center text-mobile/button md:text-desktop/button font-markot">
-            READ MORE <img src="/static_page/homepage/Arrow_right.svg" alt="arrow" className="ml-2 mt-1" />
-          </p>
+          <h3 className={`text-mobile/h5/medium md:text-desktop/h4  font-markot ${isDarkTheme ? 'text-[#FFFFFF]' : 'text-black'} pb-[10px]`}>{title}</h3>
+          <a href={'/commingsoon'} className="cursor-pointer ">
+            <p  className="flex items-center text-mobile/button md:text-desktop/button font-markot">
+              READ MORE <img src="/static_page/homepage/Arrow_right.svg" alt="arrow" className="ml-2 mt-1" />
+            </p>
+
+          </a>
         </div>
         <div className="col-span-1 flex justify-center items-center h-full">
           {imageSources.map((src, index) => (
