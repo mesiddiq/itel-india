@@ -5,7 +5,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Terms from './pages/static_pages/Terms'
 import { lazy, Suspense } from 'react';
-import Footer from './components/common/Footer'
+import Footer from './components/common/static_common/Footer'
 import BackToTopButton from './utils/BackToTop'
 const FlipOne = lazy(() => import('./pages/feature_phone/FlipOne'));
 const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
