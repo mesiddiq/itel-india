@@ -5,7 +5,7 @@ import ProductListMobile from './smartphoneProduct/ProductListMobile'
 export default function ProductPage() {
     return (
         <>
-            <main className="font-markot lg:px-8 lg:pt-12 bg-[#131313]">
+            <main className="font-markot lg:px-8 lg:pt-12 bg-[#0A0C08]">
 
                 {/* Adjusted for all devices */}
                 <ProductListingBanner />

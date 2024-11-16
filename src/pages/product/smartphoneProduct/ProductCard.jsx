@@ -11,7 +11,7 @@ export default function ProductCard({ product }) {
             {/* New */}
             {
                 isNew == true ? (
-                    <h1 className="md:w-[30px] lg:w-[55px] rounded-full bg-[#3A3358] px-3 py-[2px] text-[12px] lg:text-sm leading-[22.4px] tracking-[-0.01em]">
+                    <h1 className="md:w-[55px] lg:w-[55px] rounded-full bg-[#3A3358] px-3 py-[2px] text-[12px] lg:text-sm leading-[22.4px] tracking-[-0.01em]">
                         New
                     </h1>
                 ) :
@@ -25,7 +25,7 @@ export default function ProductCard({ product }) {
 
             {/* ProductImage */}
             <div className='product-image-card flex justify-center items-center'>
-                <img src={thumbnail} className='w-2/3 lg:w-2/3' />
+                <img src={thumbnail} className='w-2/3 lg:w-2/3 2xl:w-1/2' />
             </div>
 
 
@@ -46,7 +46,7 @@ export default function ProductCard({ product }) {
             {/* PriceButton */}
             <Link to={purchaseLink} 
                rel="noopener noreferrer"
-               className="w-full flex justify-center items-center">
+               className="w-full flex justify-center items-center max-w-[250px]">
                 <AnimatedBuyButton price={specification?.price}/>
             </Link>
 

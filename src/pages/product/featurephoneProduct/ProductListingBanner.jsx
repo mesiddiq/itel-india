@@ -8,8 +8,8 @@ return (
         
         <div className=' overflow-hidden flex md:flex-row flex-col bg-[#EBE8E2] h-full w-full rounded-2xl bg-no-repeat bg-center md:bg-right bg-cover md:bg-auto' style={{ backgroundImage: `url(${curlyLine})`}}>
             <section className='w-full md:w-1/2 h-full flex justify-center items-end absolute right-0 
-                scale-[80%] xs:scale-[40%] sm:scale-[40%] md:scale-[40%] lg:scale-[40%] xl:scale-[30%] 
-                -bottom-[120px] xs:-bottom-[120px] sm:-bottom-[200px] md:-bottom-[60px] lg:-bottom-[70px] xl:-bottom-[90px]'
+                scale-[80%] xs:scale-[40%] sm:scale-[40%] md:scale-[40%] lg:scale-[40%] xl:scale-[30%] 2xl:scale-[20%]
+                -bottom-[120px] -left-10 sm:left-auto xs:-bottom-[120px] sm:-bottom-[200px] md:-bottom-[60px] lg:-bottom-[70px] xl:-bottom-[90px] 2xl:-bottom-[70px]'
             >
                 <img src="/featurephone/Circle_1/product_gallery/pink_front.webp" className='ml-20'/>
             </section>

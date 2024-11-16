@@ -76,7 +76,7 @@ const CameraSpecifications = () => {
             </span>
           </motion.div>
           <motion.div
-            className="text-mobile/small/body lg:text-desktop/body/large"
+            className="text-mobile/small/body lg:text-desktop/body/large text-center"
             variants={{
               visible: { transition: { duration: 0.6 } },
               hidden: { },

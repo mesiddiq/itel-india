@@ -8,6 +8,8 @@ export default {
 		extend: {
 			screens: {
 				'xs': '350px',
+				'xms': '444px',
+				'4k': '2560px'
 			},
 			fontFamily: {
 			'markot': ['Mark_OT'],

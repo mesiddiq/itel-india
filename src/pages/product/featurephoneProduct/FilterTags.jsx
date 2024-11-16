@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleFeatureFilter } from '../../../redux/reducers/actionsFeaturephone';
 import cross from '/product-listing/cross.svg'
 
-const filtersData = ["King Voice", "Power Keypad", "UPI", "Bluetooth"];
+const filtersData = ["UPI", "Bluetooth"];
 
 export default function FilterComponent() {
   const dispatch = useDispatch();

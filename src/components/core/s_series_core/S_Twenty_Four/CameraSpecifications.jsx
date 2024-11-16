@@ -34,7 +34,7 @@ const CameraSpecifications = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="font-markot relative lg:h-full h-[454px] bg-black overflow-hidden">
+    <div ref={sectionRef} className="h-[400px] xs:h-[450px] xms:h-[500px] sm:h-[550px] md:h-[650px] lg:h-[900px] xl:h-[1000px] 2xl:h-[1300px] 4k:h-[1600px] font-markot relative   bg-black overflow-hidden">
       {/* Image */}
       <motion.img
         initial={{ scale: 1.2 }}
@@ -50,7 +50,7 @@ const CameraSpecifications = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 1.2, delay: 0.5, ease: 'easeInOut' }}
-        className="flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute bottom-16 md:bottom-8 lg:bottom-16 w-full"
+        className="px-2 xs:scale-100 flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute bottom-16 md:bottom-8 lg:bottom-16 w-full"
       >
         <div className="content flex flex-col justify-center items-center gap-2 lg:gap-[14px]">
           <div className="text-mobile/h5/medium lg:text-desktop/h2 text-center">

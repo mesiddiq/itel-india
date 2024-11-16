@@ -128,7 +128,7 @@ const SensorZoom = () => {
             <div className="absolute bottom-3 left-3 z-10">
               <ZoomRectangle active="1X" />
             </div>
-            <div className="h-[80%] relative w-full border-2 border-itel-red overflow-hidden">
+            <div className="h-[80%] relative w-full overflow-hidden">
               <img
                 src="/smartphone/S24/threeXzoomImage.png"
                 alt="threeXzoomImage"

@@ -1,6 +1,6 @@
 import React from 'react'
 import { For } from 'react-haiku'
-import { AboutItel, MediaLinks, ProductsLink, SupportLinks, SocialMediaLinks } from '../../../data/FooterData'
+import { AboutItel, MediaLinks, ProductsLink, SupportLinks } from '../../data/FooterData'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {

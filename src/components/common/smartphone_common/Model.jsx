@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Compare from './Compare'
 
 /* eslint-disable react/prop-types */
 const Model = ({ theme = 'light', models }) => {
@@ -12,9 +13,9 @@ const Model = ({ theme = 'light', models }) => {
             Compare Models
           </h3>
           <div className="flex gap-[8px] mt-4 md:mt-0">
-            <img src="/product-listing/compare.svg" className="h-[24px] w-[25px]" alt="Model" />
+            {/* <img src="/product-listing/compare.svg" className="h-[24px] w-[25px]" alt="Model" /> */}
             <h2 className={`${isLightTheme ? 'text-black' : 'text-white'} md:text-desktop/tertiary/cta`}>
-              Compare other models
+              <Compare theme={theme}/>
             </h2>
           </div>
         </div>

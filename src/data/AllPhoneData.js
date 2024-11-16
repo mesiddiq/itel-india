@@ -19,7 +19,7 @@ export const AllPhonesData = [
         features: {
             is5G: true,
             hasAICamera: true,
-            hasAmoledDisplay: false,
+            hasAmoledDisplay: true,
             hasBigBattery: true
         }
     },
@@ -42,8 +42,8 @@ export const AllPhonesData = [
         },
         features: {
             is5G: false,
-            hasAICamera: false,
-            hasAmoledDisplay: false,
+            hasAICamera: true,
+            hasAmoledDisplay: true,
             hasBigBattery: true
         }
     },
@@ -65,10 +65,10 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
-            hasAICamera: true,
-            hasAmoledDisplay: true,
-            hasBigBattery: true
+            is5G: false,
+            hasAICamera: false,
+            hasAmoledDisplay: false,
+            hasBigBattery: false
         }
     },
     {
@@ -113,10 +113,10 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: false,
+            is5G: true,
             hasAICamera: true,
             hasAmoledDisplay: false,
-            hasBigBattery: true
+            hasBigBattery: false
         }
     },
     {
@@ -139,7 +139,7 @@ export const AllPhonesData = [
         features: {
             is5G: false,
             hasAICamera: true,
-            hasAmoledDisplay: false,
+            hasAmoledDisplay: true,
             hasBigBattery: true
         }
     },
@@ -162,7 +162,7 @@ export const AllPhonesData = [
         },
         features: {
             is5G: false,
-            hasAICamera: true,
+            hasAICamera: false,
             hasAmoledDisplay: true,
             hasBigBattery: true
         }
@@ -209,8 +209,8 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
-            hasAICamera: true,
+            is5G: false,
+            hasAICamera: false,
             hasAmoledDisplay: false,
             hasBigBattery: true
         }
@@ -233,8 +233,8 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
-            hasAICamera: true,
+            is5G: false,
+            hasAICamera: false,
             hasAmoledDisplay: false,
             hasBigBattery: false
         }
@@ -257,7 +257,7 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
+            is5G: false,
             hasAICamera: true,
             hasAmoledDisplay: false,
             hasBigBattery: true
@@ -281,8 +281,8 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
-            hasAICamera: true,
+            is5G: false,
+            hasAICamera: false,
             hasAmoledDisplay: false,
             hasBigBattery: false
         }
@@ -305,8 +305,8 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
-            hasAICamera: true,
+            is5G: false,
+            hasAICamera: false,
             hasAmoledDisplay: false,
             hasBigBattery: false
         }
@@ -329,10 +329,10 @@ export const AllPhonesData = [
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
-            hasAICamera: true,
+            is5G: false,
+            hasAICamera: false,
             hasAmoledDisplay: false,
-            hasBigBattery: true
+            hasBigBattery: false
         }
     },
 ]

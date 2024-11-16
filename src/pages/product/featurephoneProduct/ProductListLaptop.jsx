@@ -41,9 +41,8 @@ const ProductListLaptop = () => {
                     </div>
                     <div id="product-section" className="w-3/4 overflow-y-auto">
                         <ProductSectionLaptop />
-                        <div className='lg:mt-16'>
+                        <div className='md:mt-16'>
                             <SupportChannels theme='dark' />
-
                         </div>
                     </div>
                 </div>
