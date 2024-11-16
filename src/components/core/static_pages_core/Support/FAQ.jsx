@@ -70,8 +70,8 @@ const FAQ = ({ theme = "light" }) => {  // theme prop with default value "light"
                 onClick={() => setActiveCategory(button.id)}
                 className={`lg:text-desktop/button cursor-pointer py-[6px] px-[12px] rounded-full lg:py-4 lg:px-5 shrink-0 ${
                   activeCategory === button.id
-                    ? `${theme === "dark" ? "bg-gray-700 text-white" : "bg-black text-white"}`
-                    : `${theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-200 text-black"}`
+                    ? `${theme === "dark" ? "bg-white text-brand/black" : "bg-black text-white"}`
+                    : `${theme === "dark" ? "border-white border text-white" : "border-black border text-black"}`
                 }`}
               >
                 {button.title}

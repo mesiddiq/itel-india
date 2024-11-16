@@ -2,6 +2,7 @@ import { frame2IconsData, frame4IconsData, frame5IconsData } from '../../../../d
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import ReactPlayer from 'react-player';
 
 export default function Frames() {
     const texts = [
@@ -152,7 +153,19 @@ export default function Frames() {
 
                 {/* Frame 2 (Desktop) */}
                 <div className="relative mt-5 w-full border-[#62b67af4] border-2 md:rounded-[56px]  hidden lg:h-[739px] bg-cover bg-center lg:flex lg:flex-row lg:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/f1.webp')]">
+
+                    <div className="md:h-[557px] lg:flex hidden rounded-[32px] absolute left-[66px] overflow-hidden ">
+                        <video
+                            src="/smartphone/a50/A50Vdo.webm"
+                            autoPlay
+                            muted
+                            loop
+                            className="w-full h-full object-cover"
+                        ></video>
+                    </div>
                     <img src="/smartphone/a50/f2Hero.webp" alt="f1Img" className='md:h-[650px] lg:py-5 lg:pl-16 lg:flex hidden' />
+
+
                     <div className='relative flex flex-col  justify-start items-start xl:bottom-[9%] xl:right-[51%] md:right-[36%] bottom-[2%]'>
                         <div className="absolute xl:w-[537px] md:w-[337px]  top-0">
                             <p
@@ -192,7 +205,29 @@ export default function Frames() {
                         </span>
                         <p className='text-[#46E19B] font-bold text-[70px]'>HDR</p>
                     </div>
-                    <img src="/smartphone/a50/f2Mob.webp" alt="f2Mob" className='pl-4 pt-2.5 pb-5.5 md:w-[60%]' />
+                    <div className="flex overflow-hidden relative md:h-[490px] h-[250px] w-full justify-center">
+                        {/* Image Section */}
+                        <div className="absolute h-full overflow-hidden left-[10rem]  md:left-[20rem] ">
+                            <img
+                                src="/smartphone/a50/sidePhone.webp"
+                                alt="f2Mob"
+                                className="h-full object-contain"
+                            />
+                        </div>
+
+                        {/* Video Section */}
+                        <div className="overflow-hidden rounded-[18px] h-full absolute  ">
+                            <video
+                                src="/smartphone/a50/A50Vdo.webm"
+                                autoPlay
+                                muted
+                                loop
+                                className="h-full w-full object-contain"
+                            ></video>
+                        </div>
+                    </div>
+
+                    {/* <img src="/smartphone/a50/f2Mob.webp" alt="f2Mob" className='pl-4 pt-2.5 pb-5.5 md:w-[60%]' /> */}
                 </div>
 
                 {/* Frame 3 */}
@@ -230,7 +265,7 @@ export default function Frames() {
                         <div className='gap-8 lg:gap-10 pt-5 md:pt-12 flex justify-center md:justify-start items-center w-full'>
                             {frame5IconsData.map((data) => (
                                 <div key={data.id} className='flex flex-col justify-start items-start md:max-w-[438px]'>
-                                   
+
                                     <p
                                         style={{
                                             backgroundImage: 'linear-gradient(98.38deg, #08E488 -17.43%, #047E4B 91.28%)',
