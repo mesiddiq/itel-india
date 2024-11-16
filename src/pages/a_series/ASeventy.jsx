@@ -54,7 +54,7 @@ const ASeventy = () => {
         textGradient1="#6B6682"
         textGradient2="#6B6682"
       />
-
+ 
       <VideoA70 />
       <div
         className="md:rounded-[64px] rounded-[16px]  my-10 p-2 content"
