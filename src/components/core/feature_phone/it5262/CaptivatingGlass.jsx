@@ -3,10 +3,10 @@ import React from 'react'
 const CaptivatingGlass = () => {
     return (
         <div className="bg-[url('/featurephone/it5262/Backgrounds/captivating_mobile.webp')] overflow-hidden relative lg:bg-[url('/featurephone/it5262/Backgrounds/captivating.webp')] bg-cover font-markot">
-            <div className="content lg:h-[800px] h-[600px] pt-8 lg:pt-0 flex lg:items-center lg:justify-end px-4 md:px-0">
-                <div className="absolute lg:-left-28 -left-16 lg:-bottom-80 -bottom-40 right-3/12 ">
-                    <img src="/featurephone/it5262/Backgrounds/captivating_phone.webp" alt="" className=' lg:max-w-[1030px] min-w-[500px] ' />
-                </div>
+            <div className="content relative lg:h-[800px] h-[600px] pt-8 lg:pt-0 flex lg:items-center lg:justify-end px-4 md:px-0">
+                {/* <div className="absolute lg:-left-28 -left-16 lg:-bottom-80 -bottom-40 right-3/12 ">
+                </div> */}
+                <img src="/featurephone/it5262/Backgrounds/captivating_phone.webp" alt="" className=' lg:max-w-[1030px] md:max-w-[700px] max-w-[500px] object-contain absolute -bottom-40 md:-bottom-56 mx-auto lg:-left-40 lg:-bottom-80 lg:w-10/12 ' />
                 <div className="max-w-[530px] space-y-6 lg:space-y-[54px]">
                     <div className="space-y-3 lg:space-y-4">
                         <h1 className="lg:text-featurephone/heading text-mobile/h4 text-bg/primary/1">Captivating Glass Finish Design</h1>

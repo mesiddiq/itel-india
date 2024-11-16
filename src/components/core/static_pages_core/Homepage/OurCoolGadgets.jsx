@@ -10,7 +10,7 @@ const OurCoolGadgets = () => {
                 <p className="text-desktop/body/2/regular lg:hidden mt-[14px]">Check out our lineup of dope gadgets, from itel smartwatches to itel earbuds, blending connectivity with style. Stay ahead of the curve with itel's smart gear—perfect for your vibe!</p>
 
                 <ReactPlayer
-                    url={['/videos/homepage/gadgets_mobile.mp4']}
+                    url={['/videos/homepage/gadgets_mobile.webm']}
                     width={"100%"}
                     height={"100%"}
                     playing

@@ -54,7 +54,7 @@ const PunchHoleDisplay = () => {
     };
 
     return (
-        <div ref={sectionRef} className="flex flex-col relative font-markot lg:h-[1000px] h-[400px] bg-black overflow-hidden">
+        <div ref={sectionRef} className="flex flex-col relative font-markot h-[350px] xs:h-[400px] xms:h-[450px] sm:h-[500px] md:h-[590px] lg:h-[1000px] xl:h-[1200px] 2xl:h-[1300px] 4k:h-[1450px] bg-black overflow-hidden">
             <motion.img
                 src="/smartphone/S24/s24_display.webp"
                 alt="Camera Specifications"
@@ -65,7 +65,7 @@ const PunchHoleDisplay = () => {
             />
 
             <motion.div
-                className="flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute bottom-8 lg:top-[600px] text-center lg:text-left w-full  lg:left-0 transform -translate-x-1/4"
+                className="flex flex-col justify-center items-center gap-4 lg:gap-[42px] text-white absolute bottom-8 top-[150px] xs:top-[200px] sm:top-[280px] md:top-[350px] lg:top-[600px] 2xl:top-[800px] text-center lg:text-left w-full  lg:left-0 transform -translate-x-1/4"
                 initial="hidden"
                 animate={controls}
                 variants={textVariants}

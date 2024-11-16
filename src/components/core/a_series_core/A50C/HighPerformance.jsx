@@ -37,7 +37,7 @@ const HighPerformance = () => {
         </div>
 
         {/* Mobile */}
-        <div className="md:hidden border border-black/10 relative flex flex-col items-center gap-10 py-[37px] overflow-hidden rounded-2xl md:rounded-[56px] bg-HighPerformanceGradient max-h-[575px] h-auto px-5 " style={{
+        <div className="md:hidden border border-black/10 relative flex flex-col items-center gap-10 py-[37px] overflow-hidden rounded-2xl md:rounded-[56px] bg-HighPerformanceGradient max-h-[650px] h-auto px-5 " style={{
             background:'linear-gradient(240.05deg, #CFDCF4 1.69%, rgba(199, 209, 227, 0) 68.28%)'
         }}>
             

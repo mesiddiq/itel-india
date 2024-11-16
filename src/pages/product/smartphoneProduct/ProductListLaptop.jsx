@@ -42,7 +42,6 @@ const ProductListLaptop = () => {
                         <ProductSectionLaptop />
                         <div className='lg:pt-12'>
                             <SupportChannels theme='dark' />
-
                         </div>
                     </div>
                 </div>

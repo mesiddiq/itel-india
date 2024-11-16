@@ -5,7 +5,7 @@ const OtherSections = () => {
     return (
         <>
             <div className="bg-[url('/featurephone/it2175p/Backgrounds/display.webp')] overflow-hidden lg:bg-[url('/featurephone/it2175p/Backgrounds/display.jpg')] bg-cover font-markot px-4 md:px-0 ">
-                <div className="content relative flex flex-col pt-9 gap-12 lg:gap-0 lg:pt-0 lg:flex-row-reverse  items-center justify-between min-h-[572px] lg:min-h-[726px]">
+                <div className="content relative flex flex-col pt-9 gap-12 lg:gap-0 lg:pt-10 xl:pt-0 xl:flex-row-reverse  items-center justify-between min-h-[572px] lg:min-h-[726px]">
                     <div className="flex flex-col max-w-[480px] gap-5">
                         <h1 className="text-mobile/h4 md:text-mobile/h3 lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[1.2px]">The 2.0” Display Advantage</h1>
                         <p className="text-mobile/body/2 lg:text-[16px] font-normal lg:leading-[22px] text-grey/grey/1">Experience a bigger view and elevated style with itel it2175 Pro&apos;s big and bright 5.1cm (2”) Display. Ergonomically designed for your comfort.</p>
@@ -25,7 +25,7 @@ const OtherSections = () => {
                     <div className="lg:translate-y-20">
                         <img src="/featurephone/it2175p/Backgrounds/doublephone.webp" alt="double phone it2175 p" className='lg:max-w-[724px] max-w-[328px]' />
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="156" height="32" className='absolute hidden lg:block top-[480px] left-1/2' viewBox="0 0 156 32" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="156" height="32" className='absolute hidden xl:block top-[480px] left-1/2' viewBox="0 0 156 32" fill="none">
                         <path d="M0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6ZM92 6L92.3624 5.068L92.1876 5H92V6ZM6 7H92V5H6V7ZM91.6376 6.932L154.638 31.432L155.362 29.568L92.3624 5.068L91.6376 6.932Z" fill="white" />
                     </svg>
                 </div>
@@ -34,7 +34,7 @@ const OtherSections = () => {
             {/* Second Section */}
 
             <div className="bg-[url('/featurephone/it2175p/Backgrounds/powermobile.webp')] overflow-hidden lg:bg-[url('/featurephone/it2175p/Backgrounds/power.jpg')] bg-cover font-markot px-4 md:px-0 ">
-                <div className="content relative flex flex-col items-center justify-between lg:flex-row  min-h-[683px] lg:min-h-[800px] pt-8 lg:pt-0">
+                <div className="content relative flex flex-col items-center justify-between lg:flex-col xl:flex-row lg:pt-10 min-h-[683px] lg:min-h-[800px] pt-8 xl:pt-0">
                     <div className="max-w-[530px]">
                         <div className="flex flex-col gap-5">
                             <h1 className="text-mobile/h4 md:text-mobile/h3 lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[1.2px]">The 2.0” Display Advantage</h1>

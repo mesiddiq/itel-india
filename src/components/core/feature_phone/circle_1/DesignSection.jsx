@@ -4,7 +4,7 @@ import React from "react";
 function DesignSection() {
 	return (
 		<section className="relative w-full bg-brand/black  overflow-hidden px-4 md:px-0">
-			<div className="max-w-[1440px] mx-auto md:w-11/12 w-full lg:pl-[102px]   lg:h-[720px] h-[575px] md:h-[700px] flex items-center flex-col lg:flex-row gap-4 justify-between lg:py-0 md:py-10 pt-10 pb-5">
+			<div className="max-w-[1440px] mx-auto md:w-11/12 w-full lg:pl-[102px]   xl:h-[720px] lg:h-auto  h-[575px] md:h-[700px] flex items-center flex-col xl:flex-row gap-4 justify-between py-10 pt-10 pb-5">
 				<div className="max-w-[514px]">
 					<h1 data-aos="fade-up" data-aos-delay="100" className=" text-mobile/h4 lg:text-desktop/h2 text-white">Design Innovation: Unique Round Screen Display</h1>
 					<p data-aos="fade-up" data-aos-delay="200" className="lg:text-featurephone/paragraph text-mobile/body/2 text-grey/grey/2 max-w-[475px] mt-3 lg:mt-[22px]">A feature-rich phone with a unique round screen display that stands out from the crowd. Available in two attractive colors, it is a perfect choice for those seeking innovation and elegance in their phone.</p>
@@ -25,9 +25,9 @@ function DesignSection() {
 
 						<div className="flex flex-col gap-2 md:gap-3 lg:gap-4 ">
 
-							<img src="/featurephone/Circle_1/Backgrounds/four.webp" alt="Circle 1" className="lg:max-w-[440px] md:max-w-[280px] max-w-[195px] w-full" data-aos="fade-left" data-aos-delay="400"/>
+							<img src="/featurephone/Circle_1/Backgrounds/four.webp" alt="Circle 1" className="lg:w-[440px] lg:max-w-max md:max-w-[280px] max-w-[195px] w-full" data-aos="fade-left" data-aos-delay="400"/>
 
-							<img src="/featurephone/Circle_1/Backgrounds/five.webp" alt="Circle 1" className="lg:max-w-[440px] md:max-w-[280px] max-w-[195px] w-full" data-aos="fade-left" data-aos-delay="500"/>
+							<img src="/featurephone/Circle_1/Backgrounds/five.webp" alt="Circle 1" className="lg:w-[440px] lg:max-w-max md:max-w-[280px] max-w-[195px] w-full" data-aos="fade-left" data-aos-delay="500"/>
 
 						</div>
 					</div>

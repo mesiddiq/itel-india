@@ -14,7 +14,7 @@ const DiveIntoWorld = () => {
     return (
         <div className="bg-[url('/featurephone/Ace2Power/Backgrounds/dive_into_mobile.webp')] bg-cover bg-center bg-no-repeat lg:bg-[url('/featurephone/Ace2Power/Backgrounds/dive_into.webp')] px-4 md:px-0 font-markot lg:h-[800px] h-[579px] md:h-[700px] lg:pt-[157px] pt-4 overflow-hidden">
             <div className="content relative h-full">
-                <div className="max-w-[548px]">
+                <div className="max-w-[548px] ">
 
                     <h1 className=" text-mobile/h4 lg:text-desktop/h2 ">Dive into a World of Entertainment</h1>
 
@@ -33,7 +33,7 @@ const DiveIntoWorld = () => {
                         } />
                     </div>
                 </div>
-                <img src="/featurephone/Ace2Power/Backgrounds/dive_into_phone.webp" alt="Ace 2 Power" className='bottom-0 absolute max-h-[253px] md:max-h-[350px] lg:max-h-[680px] lg:left-[75%] left-1/2 -translate-x-1/2 lg:w-9/12 object-contain ' />
+                <img src="/featurephone/Ace2Power/Backgrounds/dive_into_phone.webp" alt="Ace 2 Power" className='bottom-0 absolute max-h-[253px] md:max-h-[350px] lg:max-h-[680px] lg:left-[75%] left-1/2 -translate-x-1/2 lg:w-7/12 xl:w-9/12 object-contain ' />
             </div>
         </div>
     )

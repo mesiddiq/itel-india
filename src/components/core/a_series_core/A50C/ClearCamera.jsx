@@ -12,7 +12,7 @@ const ClearCamera = () => {
             <img 
                 src='/smartphone/A50C/cameraSpecs.png' 
                 alt="cameraSpecs" 
-                className="top-0 absolute w-full h-full object-cover" 
+                className="top-0 absolute w-full h-full object-cover z-0" 
             />
 
             <div className="flex flex-col justify-between h-full">
@@ -71,7 +71,7 @@ const ClearCamera = () => {
                     <h1 className="max-w-[455px] text-mobile/body/2 ">Featuring an 8MP AI rear camera and 5MP selfie camera, every shot is infused with stunning detail and clarity.</h1>
                 </div>
 
-                <div className="flex flex-col gap-[42px] text-[#232323] text-center">
+                <div className="z-10 flex flex-col gap-[42px] text-[#232323] text-center">
                     <div className="flex flex-row gap-4">
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/beautyMode.svg' alt="beautyMode" className="w-[32px] h-[32px]" />
@@ -98,7 +98,7 @@ const ClearCamera = () => {
                         </div>
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/beautyMode.svg' alt="beautyMode" className="w-[32px] h-[32px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">timeLapse</h1>
+                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Time Lapse</h1>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const ClearCamera = () => {
             <img 
                 src='/smartphone/A50C/cameraSpecs.png' 
                 alt="cameraSpecs" 
-                className=" scale-125 sm:scale-100  -translate-x-[10%] -translate-y-[10%] sm:-translate-x-[0%] sm:-translate-y-[0%] w-full h-full object-cover" 
+                className="z-0 scale-125 sm:scale-100  -translate-x-[10%] -translate-y-[10%] sm:-translate-x-[0%] sm:-translate-y-[0%] w-full h-full object-cover" 
             />
 
 

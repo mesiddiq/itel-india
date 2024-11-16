@@ -4,9 +4,9 @@ import React from "react";
 function LanyardSection() {
 	return (
 		<section className="font-markot lg:py-[100px] py-10 px-4 md:px-0">
-			<div className="content relative lg:h-[761px]  flex lg:items-center lg:justify-end lg:pr-32 h-[567px] rounded-[24px] bg-[url('/featurephone/Circle_1/Backgrounds/lanyard_mobile.png')] lg:bg-none bg-cover bg-center ">
+			<div className="content relative lg:h-[761px]  flex xl:items-center lg:pt-32 xl:pt-0 lg:justify-end xl:pr-32 lg:pr-20 h-[567px] rounded-[24px] bg-[url('/featurephone/Circle_1/Backgrounds/lanyard_mobile.png')] lg:bg-none bg-cover bg-center ">
 				<img src="/featurephone/Circle_1/Backgrounds/lanyard.webp" alt="lanyard bg" className="absolute -z-10 top-0 left-0 hidden lg:block" />
-				<div className="max-w-[373px] space-y-4 md:space-y-6 lg:space-y-[75px] lg:mt-0 mt-11 mx-7 lg:mx-0">
+				<div className="max-w-[373px] space-y-4 md:space-y-6 lg:space-y-[75px]  lg:mt-0 mt-11 mx-7 lg:mx-0">
 					<div className="flex flex-col gap-3 lg:gap-4 ">
 						<h4 className="uppercase text-[#050036] text-[14px] font-medium leading-4 tracking-[0.8px]">move in style</h4>
 						<h1 className="text-mobile/h4 lg:text-desktop/h2 text-black/1">Lightweight and Handy to Carry</h1>

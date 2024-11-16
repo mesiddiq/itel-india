@@ -3,8 +3,9 @@ import "aos/dist/aos.css"
 import { useEffect } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
+import Terms from './pages/static_pages/Terms'
 import { lazy, Suspense } from 'react';
-import Footer from './components/common/Footer'
+import Footer from './components/common/static_common/Footer'
 import BackToTopButton from './utils/BackToTop'
 const FlipOne = lazy(() => import('./pages/feature_phone/FlipOne'));
 const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
@@ -38,7 +39,8 @@ const PFiftyFivePlus = lazy(() => import('./pages/p_series/PFiftyFivePlus'));
 const PFiftyFiveT = lazy(() => import('./pages/p_series/PFiftyFiveT'));
 const ColorPro5G = lazy(() => import('./pages/color_series/ColorPro5G'));
 const NotFound = lazy(() => import('./pages/static_pages/NotFound'));
-
+import Storelocator from './pages/static_pages/Storelocator'
+import PrivacyAndPolicy from './pages/static_pages/PrivacyAndPolicy'
 const A_Series_Parent = lazy(() => import('./pages/a_series/A_Series_Parent'));
 const A05i = lazy(() => import('./pages/a_series/A05i'));
 
@@ -101,12 +103,14 @@ function App() {
 					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 					<Route path='/support/faqs' element={<FAQ />} />
 					<Route path='/investor' element={<Investor />} />
-					<Route path='/blog' element={<Blog />} />
-					<Route path='/bloglisting' element={<BlogListing />} />
-					<Route path='/submitted' element={<Thankyou />} />
-					<Route path='/coming-soon' element={<Commingsoon />} />
-					<Route path='/commingsoon' element={<Commingsoon />} />
-					<Route path='/thankyou' element={<Thankyou />} />
+					<Route path='/commingsoon' element={<Commingsoon/>} />
+					<Route path='/thankyou' element={<Thankyou/>} />
+					<Route path='/blog' element={<Blog/>} />
+					<Route path='/bloglisting' element={<BlogListing/>} />
+					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
+					<Route path='/terms-of-use-itel-mobile-india' element={<Terms/>} />
+					<Route path='/store-locator' element={<Storelocator/>} />
+                    
 
 
 					{/* ***************************************************************************************************/}

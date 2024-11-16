@@ -14,10 +14,9 @@ const YourOwnLanguage = () => {
                     </h3>
                     <h4 className="lg:text-desktop/body/1 text-mobile/body/2 text-grey/grey/1 max-w-[407px]">English | Hindi | Gujarati | Punjabi | Tamil | Malayalam | Telugu | Kannada | Bengali </h4>
                 </div>
-                <div className="lg:-translate-y-12 translate-y-8">
-                    <img src="/featurephone/it5027/Backgrounds/communicate_phone.webp" alt="it5027" className='max-w-[328px] lg:max-w-[780px]' />
+                <div className="xl:-translate-y-12 translate-y-8">
+                    <img src="/featurephone/it5027/Backgrounds/communicate_phone.webp" alt="it5027" className='max-w-[328px] xl:max-w-[780px] lg:max-w-[700px]' />
                 </div>
-                {/* <img src="/featurephone/it5027/Backgrounds/smily.webp" alt="smily" className='absolute max-w-[317px] lg:max-w-[464px] -bottom-4 lg:-bottom-8' /> */}
             </div>
         </div>
     )

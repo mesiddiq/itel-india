@@ -5,7 +5,7 @@ const MultipleCardComponents = () => {
       <section className=' content upper-half-3-divs flex flex-col md:flex-row gap-3 md:gap-6 justify-between'>
         
           {/* Card 1 */}
-          <div className='w-full border border-[#93BBFF] md:w-[40%] min-h-[430px] h-[430x] md:h-[784px] rounded-2xl overflow-hidden flex flex-col relative group' style={{
+          <div className='w-full border border-[#93BBFF] md:w-[40%] h-[360px] xs:h-[410px] xms:h-[480px] md:h-[800px] rounded-2xl overflow-hidden flex flex-col relative group' style={{
             background: 'linear-gradient(180.08deg, rgba(175, 203, 255, 0) 0.07%, #AFCBFF 126.64%)'
           }}>
             <div className='w-full h-auto px-3 pt-[26px] md:p-10 gap-[14px] md:gap-[14px] flex flex-col z-10 '>
@@ -27,7 +27,7 @@ const MultipleCardComponents = () => {
 
           <div className='w-full md:w-[60%] flex flex-col gap-3 md:gap-6'>
               {/* Card 2 */}
-              <div className=' border border-[#93BBFF] flex flex-col w-full md:min-h-[260px] md:h-[380px] h-[260px] rounded-2xl p-4 md:px-10 md:pt-10 group relative overflow-hidden' style={{
+              <div className=' border border-[#93BBFF] flex flex-col w-full md:min-h-[260px] md:h-[396px] h-[260px] rounded-2xl p-4 md:px-10 md:pt-10 group relative overflow-hidden' style={{
                 background: 'linear-gradient(121.19deg, #FFFFFF 15.86%, #AFCBFF 89.45%)'
               }}>
                 <div className='flex flex-col md:max-w-[271px] max-w-[150px] gap-2 md:gap-[18px] h-full md:w-full z-10'>
@@ -50,7 +50,7 @@ const MultipleCardComponents = () => {
               </div>
 
               {/* Card 3 */}
-              <div className='border border-[#93BBFF] flex flex-col w-full h-[220px] md:min-h-[380px] md:h-[380px] rounded-2xl p-4 md:p-5 group relative overflow-hidden' style={{
+              <div className='border border-[#93BBFF] flex flex-col w-full h-[220px] xms:h-[240px] sm:h-[250px] md:min-h-[380px] md:h-[380px] rounded-2xl p-4 md:p-5 group relative overflow-hidden' style={{
                 background: 'linear-gradient(164.65deg, rgba(175, 203, 255, 0.8) 16.92%, rgba(175, 203, 255, 0) 76.36%)',
               }}>
                 <div className='flex flex-col gap-2 md:justify-between md:h-[292px] z-10 rounded-lg'>
