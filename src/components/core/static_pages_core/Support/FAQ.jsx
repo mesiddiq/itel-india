@@ -5,7 +5,7 @@ const Accordion = ({ data, title, isActive, onToggle, theme }) => {
   const displayedItems = isActive ? data : data.slice(0, 4);
 
   return (
-    <div className={`py-[24px] border-t ${theme === "dark" ? "border-gray-700" : "border-gray-300"}`}>
+    <div className=" border-t-2 py-3 ">
       <div
         onClick={onToggle}
         className="flex items-center font-markot justify-between cursor-pointer"
@@ -62,7 +62,8 @@ const FAQ = ({ theme = "light" }) => {  // theme prop with default value "light"
         </p>
 
         <div className="lg:space-y-[52px] space-y-[40px]">
-          <div className="flex justify-between overflow-x-auto space-x-2">
+          {/* Category buttons */}
+          <div className="flex justify-between   overflow-x-auto space-x-2">
             {buttons.map((button) => (
               <p
                 key={button.id}
@@ -78,7 +79,8 @@ const FAQ = ({ theme = "light" }) => {  // theme prop with default value "light"
             ))}
           </div>
 
-          <div className="space-y-5 lg:space-y-[40px]">
+          {/* Accordions based on category selection */}
+          <div className="">
             {data[activeCategory].map((item, index) => (
               <Accordion
                 key={index}

@@ -23,8 +23,8 @@ const Accordian = ({ data, title }) => {
 
       {/* Accordion content with animation */}
       <div
-        className={`overflow-hidden transition-all space-y-5 duration-300 ease-in-out ${
-          show ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        className={` transition-all space-y-5 duration-300 ease-in-out ${
+          show ? " opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         {data.map((data, index) => {
