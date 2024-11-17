@@ -114,7 +114,7 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} fn={setSmartPhone} />
+                                <CommonCard key={item.id} {...item} fn={setSmartPhone} />
                             ))
                         }
                     </div>
@@ -156,7 +156,7 @@ const AccessoriesDropDown = ({ Accessories }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} />
+                                <CommonCard key={item.id} {...item} />
                             ))
                         }
                     </div>
@@ -201,7 +201,7 @@ const TvDropDown = ({ tv }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} />
+                                <CommonCard key={item.id} {...item} />
                             ))
                         }
                     </div>

@@ -3,7 +3,7 @@ export const FeaturePhoneModelData = [
         id: 1,
         image: '/featurephone/superguru4g/hero.webp',
         title: 'Super Guru 4G',
-        price: '₹1,799.00',
+        price: '1,799.00',
         path: '/product/super-guru-4g',
         features: [
             { label: 'Camera', value: 'VGA' },
@@ -17,7 +17,7 @@ export const FeaturePhoneModelData = [
         id: 2,
         image: '/featurephone/it5262/Backgrounds/phone_hero.webp',
         title: 'it5262',
-        price: '₹1,399.00',
+        price: '1,399.00',
         path: '/product/it5262',
         features: [
             { label: 'Camera', value: 'VGA' },
@@ -31,7 +31,7 @@ export const FeaturePhoneModelData = [
         id: 3,
         image: '/featurephone/it5330/Backgrounds/phone_hero.webp',
         title: 'it5330',
-        price: '₹1,499.00',
+        price: '1,499.00',
         path: '/product/it5330',
         features: [
             { label: 'Camera', value: 'VGA' },

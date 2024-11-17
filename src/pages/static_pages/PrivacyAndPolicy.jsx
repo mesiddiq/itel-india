@@ -4,10 +4,10 @@ import Herosection from '../../components/core/static_pages_core/privacy&policy/
 
 const PrivacyAndPolicy = () => {
   return (
-    <div className=' lg:space-y-[120px] space-y-[60px]'>
-    <Herosection/>
-    <Mainpage/>
-</div>
+    <div className=' lg:space-y-[120px] space-y-[60px] lg:pb-20 pb-10'>
+      <Herosection />
+      <Mainpage />
+    </div>
   )
 }
 

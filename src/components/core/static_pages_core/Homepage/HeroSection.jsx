@@ -49,7 +49,7 @@ const Banner1 = ({ activeSlide }) => {
                             transition={{ duration: 1, delay: 0.2 }}
                             className="space-y-2">
                             <h5 className='lg:text-desktop/subtitle text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
-                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold'>&#8377; 6,990 /-</h2>
+                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><MdCurrencyRupee /> 6,990 /-</h2>
                         </motion.div>
                         <Link to={'/products'}>
                             <motion.button
