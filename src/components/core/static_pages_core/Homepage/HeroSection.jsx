@@ -141,7 +141,7 @@ const ColorPro5g = () => {
                         <MdCurrencyRupee />
                     </span>
                     <span >
-                        10,999 /-
+                        8,999 /-
                     </span>
                 </h2>
                 <Link to={'/product/color-pro-5g'}>

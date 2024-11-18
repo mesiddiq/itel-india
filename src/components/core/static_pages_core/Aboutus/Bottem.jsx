@@ -47,19 +47,10 @@ import React from "react";
 const Bottem = () => {
   return (
     <div className="content lg:pl-[107px] lg:py-[29px] relative md:h-[478px] px-4">
-      <img className="  object-cover absolute z-[-10] left-0 top-0 h-full w-full" src="/static_page/Aboutus/Group1973340687.png" alt="" />
-      {/* <div className='lg:bg-[url("/static_page/Aboutus/Group1973340687.png")]   font-markot bg-[url("/static_page/Aboutus/Group1973340144.png")] lg:h-[452px]   h-[830px]  bg-center bg-no-repeat '>
-        <div>
-        
-        </div>
-      </div> */}
-      <div>
-          <img
-            className="  w-[70%] z-20"
-            src="/static_page/Aboutus/Group1973340143.png"
-            alt=""
-          />
-      </div>
+    
+    <div>
+      
+    </div>
 
 
     </div>

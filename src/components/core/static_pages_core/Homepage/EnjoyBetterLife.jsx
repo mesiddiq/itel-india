@@ -65,7 +65,7 @@ const EnjoyBetterLife = () => {
               />
               <RenderContent
                 colClass="w-1/2 h-[200px] md:h-[250px] lg:w-[304px] lg:h-[258px]"
-                header="Enjoy Your Favorite Shows"
+                header="Level up Your Game: itel Smart Gadgets!"
                 colImg="/static_page/homepage/EnjoyBetterLifeCol4.png"
                 colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                 colBgImgHeight="100%" colBgImgWidth="100%"
@@ -80,7 +80,7 @@ const EnjoyBetterLife = () => {
             <div className="flex gap-5">
               <RenderContent
                 colClass="w-1/2 h-[250px]"
-                header="Dive into Endless Entertainment: itel Smart TV"
+                header="Stay Effortlessly Connected All Day, Every Day"
                 colImg="/static_page/homepage/mobileforM.png"
                 colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                 colBgImgHeight="100%" colBgImgWidth="100%"
@@ -92,7 +92,7 @@ const EnjoyBetterLife = () => {
               />
               <RenderContent
                 colClass="w-1/2 h-[250px]"
-                header="Enjoy Your Favorite Shows"
+                header="Dive into Endless Entertainment: itel Smart TV"
                 colImg="/static_page/homepage/EnjoyBetterLifeCol3.png"
                 colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
                 colBgImgHeight="100%" colBgImgWidth="100%"
@@ -104,7 +104,7 @@ const EnjoyBetterLife = () => {
             </div>
             <RenderContent
               colClass="h-[205px]"
-              header="Stay Effortlessly Connected All Day, Every Day"
+              header="Level up Your Game: itel Smart Gadgets!"
               colImg="/static_page/homepage/EnjoyBetterLifeCol4.png"
               colBgImg="/static_page/homepage/EnjoyBetterLifeCol3Bg.png"
               colBgImgHeight="120px" colBgImgWidth="100%"
