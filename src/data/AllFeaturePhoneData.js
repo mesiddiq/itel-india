@@ -285,4 +285,28 @@ export const AllFeaturePhoneData = [
             hasBluetooth: false
         }
     },
+    {
+        id: 12,
+        title: "Flip One",
+        thumbnail: "/featurephone/flipOne/phone_hero.webp",
+        description: "Leather Premium Design | Type-C Charging | BT Caller",
+        purchaseLink: "/product/flip-one",
+        category: "Innovation Series",
+        isNew: false,
+        specification: {
+            price: "₹1,049",
+            network: "2G",
+            primaryCamera: "VGA",
+            storage: "4MB RAM & 4MB ROM",
+            screenSize: '1.32"',
+            screenSizeForCompare: '3.35 cm (1.32")',
+            battery: "1200mAh",
+        },
+        features: {
+            hasKingVoice: false,
+            hasPowerKeypad: false,
+            hasUPI: false,
+            hasBluetooth: true
+        }
+    },
 ];

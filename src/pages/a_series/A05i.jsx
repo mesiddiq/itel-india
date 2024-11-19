@@ -5,7 +5,7 @@ import StickyHeader from "../../components/common/StickyHeader"
 import FeatureSectionA05i from "../../components/core/a_series_core/A05i/FeatureSectionA05I"
 import ColorImageCarousel from "../../components/core/a_series_core/A05i/ColorImageCarousel"
 import MultipleCardComponents from "../../components/core/a_series_core/A05i/MultipleCardComponents"
-import Parent4Divs from "../../components/core/a_series_core/A05i/Parent4Divs"
+// import Parent4Divs from "../../components/core/a_series_core/A05i/Parent4Divs"
 import TimelessLeatherElegance from "../../components/core/a_series_core/A05i/TimelessLeatherElegance"
 import {
   FullSpecificationsA05i,
