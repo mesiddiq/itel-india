@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 /* eslint-disable react/prop-types */
 function SimilarProducts({ theme = 'light' }) {
   const isLightTheme = theme === 'light';
