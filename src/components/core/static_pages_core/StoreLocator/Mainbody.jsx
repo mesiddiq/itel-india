@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { tr } from "framer-motion/client";
 
 const Mainbody = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [cities, setCities] = useState([]);
+  const [loader1,setloader1]= useState(true)
+  const [loader2,setloader2]= useState(false)
   const [store, setStores] = useState([]);
   const [state, setState] = useState([]);
   const [showPanel, setShowPanel] = useState(false);
@@ -12,12 +15,18 @@ const Mainbody = () => {
   // Fetch all states
   const fetchStates = async () => {
     try {
+
       const response = await axios.get(
         "https://itel-backend.onrender.com/api/store/getStates"
       );
       setState(response.data.states || []);
+setloader1(false)
+
     } catch (error) {
       console.error("Error fetching states:", error);
+      setState(error)
+      setloader1(false)
+      
     }
   };
 
@@ -29,9 +38,14 @@ const Mainbody = () => {
           `https://itel-backend.onrender.com/api/store/getCitiesByState/${stateName}`
         );
         setCities(response.data.cities || []);
+        setloader2(false)
+      
       }
     } catch (error) {
       console.error("Error fetching cities:", error);
+      setCities(false)
+      setloader2(false)
+     
     }
   };
 
@@ -73,9 +87,9 @@ const Mainbody = () => {
   return (
     <>
  {showPanel && (
-  <div  style={{ backdropFilter: "blur(8px)" }} className="font-markot  bg-black  bg-opacity-30 p-10 flex flex-col items-center absolute justify-center w-full h-full z-50">
+  <div onClick={() => setShowPanel(false)}   style={{ backdropFilter: "blur(8px)" }} className="font-markot  overflow-hidden bg-black  bg-opacity-30 p-10 flex flex-col items-center absolute   justify-center w-full  h-screen  z-50">
     {/* Close Button */}
-    <div className="w-[90%] flex justify-end">
+    <div onClick={(e) => e.stopPropagation()}  className="w-[90%] flex justify-end">
       <img
         className="cursor-pointer w-8 h-8"
         onClick={() => setShowPanel(false)}
@@ -85,7 +99,7 @@ const Mainbody = () => {
     </div>
 
     {/* Panel Container */}
-    <div className="w-[90%] h-[80%] rounded-2xl border bg-white shadow-lg flex flex-col">
+    <div onClick={(e) => e.stopPropagation()}  className="w-[90%] h-[80%] rounded-2xl border bg-white shadow-lg flex flex-col">
       {/* Header */}
       <div className="py-4 gap-5 border-b px-5 rounded-2xl  bg-bg/primary/1 flex text-lg font-semibold text-gray-800">
         <p className="w-[50px]">S.N</p>
@@ -113,8 +127,8 @@ const Mainbody = () => {
             </div>
           ))
         ) : (
-          <div className="py-4 px-5 text-center text-gray-500">
-            No data available.
+          <div className="py-4 px-5 animate-pulse text-center text-gray-500">
+           Loading....
           </div>
         )}
       </div>
@@ -123,8 +137,8 @@ const Mainbody = () => {
 )}
 
 
-      <div className="font-markot">
-        <div className="px-3 space-y-9 content">
+      <div className="font-markot ">
+        <div className="px-3 overflow-hidden space-y-9 content">
           <div className="lg:bg-[url('/static_page/Ewaste/E-Waste%20Drop%20Points%20Banner.webp')] lg:py-[42px] lg:space-y-[32px] space-y-[16px] lg:px-0 px-[16px] py-[32px] rounded-2xl flex flex-col items-center bg-[url('/static_page/Ewaste/E-Waste%20Drop%20Points%20Banner%20Mobile.webp')] bg-center bg-cover lg:min-h-[432px] min-h-[549px]">
             <p className="text-brand/black text-center font-medium text-mobile/h4 lg:text-desktop/h3">
               Store Locator
@@ -146,8 +160,8 @@ const Mainbody = () => {
                   onChange={handleStateChange}
                   className="w-full px-4 py-2 border border-gray-600 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                  <option value="">Select State</option>
-                  {state.map((state) => (
+                  <option value="">{loader1 == false ? "Select State" : <p className=" text-desktop/body/1 text-black/1 animate-pulse">Loading....</p>}</option>
+                  { state.map((state) => (
                     <option key={state} value={state}>
                       {state}
                     </option>
@@ -164,7 +178,7 @@ const Mainbody = () => {
                   onChange={handleCityChange}
                   className="w-full px-4 py-2 border border-gray-600 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                  <option value="">Select City</option>
+                  <option value="">{loader2 == false ?  "Select City" :"Loading"}</option>
                   {cities.map((city) => (
                     <option key={city} value={city}>
                       {city}
