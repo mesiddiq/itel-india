@@ -16,7 +16,7 @@ const LabelData = [
 const Card = ({ card }) => {
     const [readMore, setReadMore] = useState(false)
     return (
-        <div className="rounded-[8px] lg:rounded-[16px] p-3 lg:px-[85px] lg:pt-[86px] lg:max-w-max bg-dark/card/bg flex gap-3 flex-col h-[227px] lg:h-[526px] min-w-[156px] ">
+        <div className="rounded-[8px] lg:rounded-[16px] p-3 lg:px-[85px] lg:pt-[86px] lg:max-w-max bg-dark/card/bg flex gap-3 flex-col h-[235px] lg:h-[526px] min-w-[156px] ">
             <img src={card.image} alt="" className='h-[100px] lg:h-[230px] object-contain' />
             <div className="text-center max-w-[243px]">
                 <h1 className="text-mobile/h6 lg:text-desktop/h4">{card.name}</h1>

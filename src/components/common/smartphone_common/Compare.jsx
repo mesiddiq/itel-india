@@ -27,7 +27,7 @@ const Compare = ({ theme }) => {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50" onClick={closePopup}>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[1000]" onClick={closePopup}>
           <div className="max-h-screen md:max-h-[90vh] overflow-y-scroll overflowHidden flex flex-col gap-5 text-black relative bg-white py-5 px-4 rounded-none md:rounded-lg w-full max-w-md md:max-w-lg lg:max-w-xl md:mx-0">
             
             <div className='flex flex-row justify-between gap-4'>
@@ -41,7 +41,7 @@ const Compare = ({ theme }) => {
             <div className="flex flex-col gap-[10px]">
               <h2 className="text-mobile/title uppercase">Choose the right model</h2>
               
-              <div className='flex flex-row justify-between gap-4 overflow-y-scroll overflowHidden'>
+              <div className='flex flex-row justify-between gap-4  overflow-y-scroll overflow-hidden'>
                   <ShowDataForComparision />
                   <ShowDataForComparision />
               </div>

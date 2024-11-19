@@ -56,11 +56,14 @@ const Accessories = ({ theme = 'light' }) => {
                   <h6 className="text-desktop/h6 font-markot">{accessory.price}</h6>
                 </div>
 
-                <button className="flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
-                  <span className="flex overflow-hidden gap-2 items-center">
-                    <span className={` ${isLightTheme ? ' text-black' : ' text-white'}`}>Buy Now</span>
-                    <img loading="lazy" src="/smartphone/P555g/arrow-right.png" alt="" className="object-cover w-6" />
-                  </span>
+                <button href={'/commingsoon'} className="flex gap-3 justify-center items-center mt-4 w-full text-mobile/small/button md:text-desktop/button text-center uppercase text-stone-100">
+                  <a href={'/commingsoon'} className="cursor-pointer">
+
+                    <span className="flex overflow-hidden gap-2 items-center">
+                      <span className={` ${isLightTheme ? ' text-black' : ' text-white'}`}>Buy Now</span>
+                      <img loading="lazy" src="/smartphone/P555g/arrow-right.png" alt="" className="object-cover w-6" />
+                    </span>
+                  </a>
                 </button>
               </div></div>
 

@@ -23,6 +23,29 @@ export const AllFeaturePhoneData = [
         }
     },
     {
+        id: 12,
+        title: "Flip One",
+        thumbnail: "/product-listing/filterFeaturephoneImages/flipone.webp",
+        description: "Leather Premium Design | Type-C Charging | BT Caller",
+        purchaseLink: "/product/flip-one",
+        category: "",
+        isNew: true,
+        specification: {
+            price: "2,499",
+            primaryCamera: "1.3 MP",
+            storage: "8 MB RAM & 8 MB ROM",
+            screenSize: '2.4"',
+            screenSizeForCompare: '6.1 cm (2.4")',
+            battery: "1900 mAh",
+        },
+        features: {
+            hasKingVoice: false,
+            hasPowerKeypad: true,
+            hasUPI: true,
+            hasBluetooth: true
+        }
+    },
+    {
         id: 2,
         title: "Super Guru 4G",
         thumbnail: "/product-listing/filterFeaturephoneImages/superguru4g.webp",
