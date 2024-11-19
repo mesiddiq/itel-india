@@ -10,6 +10,10 @@ export const HeroDataP55 = {
     purchaseLink: "https://www.amazon.in/dp/B0CSKKNLTT?ie=UTF8&ref_=itel_P55_PDP_WS&th=1"
 }
 
+export const SliderAnimationP55 = {
+
+}
+
 export const FullSpecificationsP55 = [
     {
         id:1,
