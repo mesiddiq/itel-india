@@ -13,9 +13,9 @@ const HeroBanner = () => {
               <img src='/smartphone/color-pro-5g/HeroBanner/Layer_1.png' className='md:hidden block pt-[10px] z-[1] mx-auto' />
               <p className='text-mobile/title md:text-desktop/title uppercase text-[#D9D9D9] font-markot pt-[10px] md:pt-[50px]'>IVCO <span className='lowercase'>itel</span> Vivid Color Technology<br />5G Network Connectivity | 12GB* (6GB + 6Gb*) RAM + 128GB ROM</p>
               <img src='/smartphone/color-pro-5g/HeroBanner/HeroBannerBorderBottom.png' className='px-[16px] pt-[10px] md:pt-[50px] z-[1] mx-auto' />
-              <p className='text-mobile/small/body text-[#FFFFFF] md:text-[20px] font-[400] pt-[10px] md:pt-[20px] font-markot'>Starting from <span className='text-mobile/h5 md:text-desktop/h5'>₹9,999/-</span></p>
+              <p className='text-mobile/small/body text-[#FFFFFF] md:text-[20px] font-[400] pt-[10px] md:pt-[20px] font-markot'>Starting from <span className='text-mobile/h5 md:text-desktop/h5'>₹8,999/-</span></p>
               <div className='hidden md:flex justify-center pt-5'>
-              <BuyNowSquareBG purchaseLink="" content="BUY NOW"/>
+              <BuyNowSquareBG purchaseLink="https://www.amazon.in/dp/B0DHVX144Z?th=1" content="BUY NOW"/>
               </div>
             </div>
             <img src='/smartphone/color-pro-5g/HeroBanner/HeroBannerBorderTop.png' className='pt-[10px] md:pt-[50px] z-[1] mx-auto' />

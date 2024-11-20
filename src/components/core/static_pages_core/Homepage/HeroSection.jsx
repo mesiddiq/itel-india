@@ -57,7 +57,7 @@ const Banner1 = ({ activeSlide }) => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.2 }}
                         >
-                            <img src="/static_page/buynowlight.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28' />
+                            <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28' />
                         </motion.button>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ const ColorPro5g = () => {
                     </span>
                 </h2>
                 <Link to={'/product/color-pro-5g'}>
-                    <img src="/static_page/homepage/checknow.svg" alt="Buy Now" className='max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-4' />
+                    <img src="/static_page/Buttons.svg" alt="Buy Now" className='max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-4' />
                 </Link>
             </div>
             <img src="/static_page/homepage/colorpro5g.webp" alt="Hritik Roshan" className='h-full w-full absolute lg:-right-[17%] lg:bottom-0 top-36 lg:top-0 object-contain scale-110 lg:scale-100 ' />
@@ -221,16 +221,16 @@ const Banner4 = ({ activeSlide }) => {
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ duration: 1, delay: 0.2 }} className="w-fit">
-                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage' >coming soon</h3>
+                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage' >NEW</h3>
                         </motion.div>
                         <motion.h1
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='text-mobile/h2 lg:text-desktop/h1 text-white font-bold'>Coolest & Fastest</motion.h1>
+                            transition={{ duration: 1, delay: 0.2 }} className='text-mobile/h2 lg:text-desktop/h1 text-white font-bold'>Awesome A80</motion.h1>
                         <motion.h5
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] leading-6 text-white/80'>Color Changing Technology | Super Fast 5G++</motion.h5>
+                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] leading-6 text-white/80'>Coming soon</motion.h5>
                     </div>
                 </motion.div>
             </div>
