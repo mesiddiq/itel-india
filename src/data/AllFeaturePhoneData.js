@@ -2,7 +2,7 @@ export const AllFeaturePhoneData = [
     {
         id: 1,
         title: "Super Guru 600",
-        thumbnail: "/product-listing/filterFeaturephoneImages/superguru600.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/SG600.webp",
         description: "2.8” Display | 1900 mAh Battery | UPI Payments",
         purchaseLink: "/product/super-guru-600",
         category: "",
@@ -25,7 +25,7 @@ export const AllFeaturePhoneData = [
     {
         id: 2,
         title: "Super Guru 4G",
-        thumbnail: "/product-listing/filterFeaturephoneImages/superguru4g.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/Super+guru4g.webp",
         description: "4G VoLTE | YouTube* | YouTube Shorts*| UPI Payments",
         purchaseLink: "/product/super-guru-4g", 
         category: "Innovation Series",
@@ -49,7 +49,7 @@ export const AllFeaturePhoneData = [
     {
         id: 3,
         title: "it5262",
-        thumbnail: "/product-listing/filterFeaturephoneImages/it5262.png",
+        thumbnail: "/product-listing/filterFeaturephoneImages/it5262.webp",
         description: "Type-C Charging | Glass Finish Design | 2000 mAh Battery",
         purchaseLink: "/product/it5262",
         category: '2.4" Display',
@@ -97,7 +97,7 @@ export const AllFeaturePhoneData = [
     {
         id: 5,
         title: "Super Guru 400",
-        thumbnail: "/product-listing/filterFeaturephoneImages/superguru400.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/Sg400.webp",
         description: '2.4” Display | 1200 mAh Battery | Crystal Clear Audio',
         purchaseLink: "/product/super-guru-400",
         category: "",
@@ -121,7 +121,7 @@ export const AllFeaturePhoneData = [
     {
         id: 6,
         title: "Power 120",
-        thumbnail: "/product-listing/filterFeaturephoneImages/power120.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/Power+120.webp",
         description: "5.08cm (2”) QVGA Display | 2500 mAh Battery | 2000 Contacts with Icons",
         purchaseLink: "/product/power-120",
         category: "Entry Level",
@@ -145,7 +145,7 @@ export const AllFeaturePhoneData = [
     {
         id: 7,
         title: "Power 450",
-        thumbnail: "/product-listing/filterFeaturephoneImages/power450.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/Power+450.webp",
         description: "Type-C Charging | 2500 mAh Battery | 6.1cm (2.4”) QVGA Display",
         purchaseLink: "/product/power-450",
         category: '2.4" Display',
@@ -169,7 +169,7 @@ export const AllFeaturePhoneData = [
     {
         id: 8,
         title: "Circle 1",
-        thumbnail: "/product-listing/filterFeaturephoneImages/circle1.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/circle+1.webp",
         description: "Unique Design with Round Screen | Inbuilt BT Caller | Lanyard to Carry Around",
         purchaseLink: "/product/circle-1",
         category: "Innovation Series",
@@ -193,7 +193,7 @@ export const AllFeaturePhoneData = [
     {
         id: 9,
         title: "Ace 2 Power",
-        thumbnail: "/product-listing/filterFeaturephoneImages/ace2power.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/Ace+2+power.webp",
         description: "2500 mAh Battery | 21 Days Battery Backup | Bluetooth",
         purchaseLink: "/product/ace-2-power",
         category: "Entry Level",
@@ -265,7 +265,7 @@ export const AllFeaturePhoneData = [
     {
         id: 12,
         title: "Flip One",
-        thumbnail: "/featurephone/flipOne/phone_hero.webp",
+        thumbnail: "/product-listing/filterFeaturephoneImages/flip+one.webp",
         description: "Leather Premium Design | Type-C Charging | BT Caller",
         purchaseLink: "/product/flip-one",
         category: "Innovation Series",

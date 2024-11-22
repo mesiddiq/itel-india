@@ -6,7 +6,7 @@ export default function ProductCard({ product }) {
 
     const { isNew, specification, thumbnail, title, description,purchaseLink } = product
     return (
-        <div className=" py-3 md:py-5 px-3 gap-3 rounded-2xl lg:h-[526px] bg-[#232323] flex flex-col flex-wrap justify-around items-center" >
+        <div className=" py-3 md:py-5 px-3 gap-3 rounded-2xl lg:h-[456px] xl:h-[526px] 2xl:h-[580px] 4k:h-[656px] bg-[#232323] flex flex-col flex-wrap justify-around items-center" >
 
             {/* New */}
             {
@@ -25,7 +25,7 @@ export default function ProductCard({ product }) {
 
             {/* ProductImage */}
             <div className='product-image-card flex justify-center items-center'>
-                <img src={thumbnail} className='w-2/3 lg:w-2/3 xl:w-2/3 2xl:w-2/3 max-h-[280px]' />
+                <img src={thumbnail} className='w-2/3 lg:w-[80%] 2xl:w-2/3 max-h-[280px]'/>
             </div>
 
 

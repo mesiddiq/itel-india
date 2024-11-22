@@ -91,7 +91,7 @@ function App() {
 					{/********************************************************/}
 
 					<Route path='/loading' element={<Loading />} />
-					<Route path='/products' element={<SmartPhoneProductPage />} />
+					<Route path='/smartphones' element={<SmartPhoneProductPage />} />
 					<Route path='/featurephones' element={<FeaturePhoneProductPage />} />
 					<Route path='/support' element={<Support />} />
 					<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
