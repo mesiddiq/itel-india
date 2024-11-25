@@ -8,7 +8,7 @@ export const AllPhonesData = [
         category: "", //Category of the phone
         isNew: true, //Is the phone new or not
         specification: {
-            price: "10,999", //Price of the phone
+            price: "8,999", //Price of the phone
             primaryCamera: "50 MP", //Primary camera of the phone
             storage: "128 GB", //Storage of the phone
             screenSize: '6.56" HD+ IPS', //Screen size of the phone

@@ -8,7 +8,7 @@ export const HotPicksData = [
                 descriptoin: 'IVCO itel Vivid Color Technology 5G Network Connectivity | 12GB* (6GB + 6Gb*) RAM + 128GB ROM',
                 image: "/static_page/homepage/color-pro-5g.webp",
                 name: "Color Pro 5g",
-                price: "9,999",
+                price: "8,999",
             },
             {
                 id: 2,

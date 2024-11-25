@@ -7,7 +7,7 @@ const YourSideKick = () => {
     const { width } = useSize(elementRef);
 
     return (
-        <div ref={elementRef} className='h-[720px] relative bg-bg/secondry px-4 md:px-0 font-markot pt-7 lg:pt-[178px]' style={{ background: `#ebe9e2 ${width < 786 ? 'url(/featurephone/superguru4g/roundbgphone.svg) bottom -10% center/100%  no-repeat' : 'url(/featurephone/superguru4g/roundbg.svg) 100% 100% no-repeat'} ` }}>
+        <div ref={elementRef} className='h-[720px] overflow-hidden relative bg-bg/secondry px-4 md:px-0 font-markot pt-7 lg:pt-[178px]' style={{ background: `#ebe9e2 ${width < 786 ? 'url(/featurephone/superguru4g/roundbgphone.svg) bottom -10% center/100%  no-repeat' : 'url(/featurephone/superguru4g/roundbg.svg) 100% 100% no-repeat'} ` }}>
             <div className="content flex justify-between flex-col lg:flex-row">
                 <div className=" max-w-[514px]">
                     <h3 className="uppercase font-medium text-[16px] leading-5 -tracking-[0.16px] lg:tracking-[0.84px] text-blue/blue/3">supercharged battery</h3>
