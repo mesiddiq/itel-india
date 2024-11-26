@@ -1,43 +1,81 @@
 import { useEffect } from 'react';
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { data } from '../BlogListing/data'
+
 import { Link } from 'react-router-dom';
+import Commingsoon from '../../../../pages/static_pages/Commingsoon';
 
 
-const BlogCard = ({ category, title, image, data }) => {
-	return (
-		<div className="bg-white space-y-[12px] lg:space-y-[16px] ">
-			<img
-				src={image}
-				alt={title}
-				className=" lg:w-[412px] w-[328px] h-[337px] lg:h-[424px]"
-			/>
-			<div className=" space-y-3 lg:space-y-4">
-				<div className=" space-y-2 ">
-					<p className=" text-desktop/body/2/regular text-grey/grey/5">{category}</p>
-					<p className=" lg:text-desktop/h5/medium text-mobile/h6 line-clamp-2 text-brand/black">{title}</p>
-				</div>
 
-				<Link to="/blog" state={{ data }} className=" inline-block">
-					<div className=" flex items-center">
-						<p className=" lg:text-desktop/button text-mobile/button text-brand/black">VIEW</p>
-						<img src={"/static_page/homepage/Union.png"} className=" w-5 h-3 ml-2" alt="" />
-					</div>
-				</Link>
-			</div>
-		</div>
-	);
+
+// const BlogCard = ({ category, title, image, data }) => {
+// 	return (
+// 		<div className="bg-white space-y-[12px] lg:space-y-[16px] ">
+// 			<img
+// 				src={image}
+// 				alt={title}
+// 				className=" lg:w-[412px] w-[328px] h-[337px] lg:h-[424px]"
+// 			/>
+// 			<div className=" space-y-3 lg:space-y-4">
+// 				<div className=" space-y-2 ">
+// 					<p className=" text-desktop/body/2/regular text-grey/grey/5">{category}</p>
+// 					<p className=" lg:text-desktop/h5/medium text-mobile/h6 line-clamp-2 text-brand/black">{title}</p>
+// 				</div>
+
+// 				<Link to="/blog" state={{ data }} className=" inline-block">
+// 					<div className=" flex items-center">
+// 						<p className=" lg:text-desktop/button text-mobile/button text-brand/black">VIEW</p>
+// 						<img src={"/static_page/homepage/Union.png"} className=" w-5 h-3 ml-2" alt="" />
+// 					</div>
+// 				</Link>
+// 			</div>
+// 		</div>
+// 	);
+// }
+const BlogCard = ({ category, title, image,data,id }) => {
+  return (
+    <div className="bg-white space-y-[12px] lg:space-y-[16px] ">
+      <img
+        src={image}
+        alt={title}
+        className=" lg:w-[412px] w-[328px] h-[337px] lg:h-[424px]"
+      />
+      <div className=" space-y-3 lg:space-y-4">
+        <div className=" space-y-2 ">
+          <p className=" text-desktop/body/2/regular text-grey/grey/5">{category}</p>
+          <p className=" lg:text-desktop/h5/medium text-mobile/h6 line-clamp-2 text-brand/black">{title}</p>
+        </div>
+
+        <Link to={`/blog/${id}`}  state={{data}} className=" inline-block">
+          <div className=" flex items-center">
+            <p className=" lg:text-desktop/button text-mobile/button text-brand/black">VIEW</p>
+            <img src={"/static_page/homepage/Union.png"} className=" w-5 h-3 ml-2" alt="" />
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
-const MainBody = ({id}) => {
+const MainBody = () => {
 
-	const title = id.replace('-', ' ').toLowerCase();
+	const { id } = useParams()
+	console.log(id)
 
-	
+	const Maindata = data[id - 1]
+
+	console.log(Maindata)
 	useEffect(() => {
 		window.scrollTo(0, 0)
 	})
+	if (data.length < id) {
+
+		return (
+			<Commingsoon />
+		)
+
+	}
 	return (
 		<div className=' lg:content py-[60px] flex  lg:space-y-[120px] space-y-10 flex-col  items-center px-4 font-markot'>
 			<div className=' lg:space-y-[60px] lg:w-[846px]'>
@@ -77,11 +115,11 @@ const MainBody = ({id}) => {
 			<div className=' space-y-[60px] '>
 				<p className=' text-mobile/h4 lg:text-desktop/h2 text-brand/black'>More Blogs</p>
 
-				<div className='lg:grid lg:gap-x-[20px] gap-y-[52px] lg:grid-cols-3'>
+				<div className='md:grid md:gap-x-[20px]  gap-y-[52px] md:grid-cols-3'>
 					{
 						data.filter(item => item.id !== Maindata.id).slice(0, 4).map((data, index) =>
 
-							<BlogCard category={data.category} data={data} image={data.img} key={data.id} title={data.title} />
+							<BlogCard category={data.category} data={data} image={data.img} key={data.id} id={data.id} title={data.title} />
 						)
 					}
 				</div>
