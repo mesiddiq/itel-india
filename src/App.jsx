@@ -101,7 +101,7 @@ function App() {
 					<Route path='/investor' element={<Investor />} />
 					<Route path='/commingsoon' element={<Commingsoon/>} />
 					<Route path='/thankyou' element={<Thankyou/>} />
-					<Route path='/blog' element={<Blog/>} />
+					<Route path='/blog/:id' element={<Blog/>} />
 					<Route path='/bloglisting' element={<BlogListing/>} />
 					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
 					<Route path='/terms-of-use-itel-mobile-india' element={<Terms/>} />
