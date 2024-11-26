@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
 import React from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import {useParams } from 'react-router-dom'
 import { data } from '../BlogListing/data'
+
 import { Link } from 'react-router-dom';
+import Commingsoon from '../../../../pages/static_pages/Commingsoon';
+
 
 
 
@@ -32,6 +35,7 @@ const BlogCard = ({ category, title, image,data,id }) => {
 };
 
 const MainBody = () => {
+ 
      const {id} = useParams()
      console.log(id)
    
@@ -41,6 +45,13 @@ const MainBody = () => {
     useEffect(() => {
         window.scrollTo(0,0)
     })
+    if(data.length<id){
+        
+         return(
+          <Commingsoon/>
+         )
+         
+    }
   return (
     <div className=' lg:content py-[60px] flex  lg:space-y-[120px] space-y-10 flex-col  items-center px-4 font-markot'>
         <div className=' lg:space-y-[60px] lg:w-[846px]'>
