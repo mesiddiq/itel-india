@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { data } from './data';
 import { Link } from 'react-router-dom';
 const BlogCard = ({ category, title, image,data }) => {
+
+  const slug = title.replace(/\s+/g, '-').toLowerCase();
+
   return (
     <div  className="bg-white space-y-[12px] lg:space-y-[16px] ">
       <img
@@ -15,7 +18,7 @@ const BlogCard = ({ category, title, image,data }) => {
           <p className=" lg:text-desktop/h5/medium text-mobile/h6 line-clamp-2 text-brand/black">{title}</p>
         </div>
         
-        <Link to="/blog"  state={{data}} className=" inline-block">
+        <Link to={`/blogs/${slug}`} className=" inline-block">
           <div className=" flex items-center">
             <p className=" lg:text-desktop/button text-mobile/button text-brand/black">VIEW</p>
             <img src={"/static_page/homepage/Union.png"} className=" w-5 h-3 ml-2" alt="" />

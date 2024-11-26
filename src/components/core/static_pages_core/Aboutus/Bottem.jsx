@@ -2,7 +2,7 @@ import React from "react";
 
 const Bottem = () => {
   return (
-    <div className="lg:content px-4">
+    <div className="lg:content px-4 font-markot">
       <div className=" lg:h-[478px] overflow-hidden max-h-[730px] flex justify-between bg-[#f8f6f3] border-[#ebe8e2]    rounded-3xl lg:rounded-lg border-[24px] ">
         <div className=" flex flex-col justify-between   lg:pl-[60px]  p-3  h-full py-[20px] lg:max-w-[784px]">
           

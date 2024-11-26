@@ -130,7 +130,7 @@ const MainBody = () => {
     <div className="font-markot ">
       <div className="lg:content  px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
         {/* Search input */}
-        {/* <div>
+        <div>
           <input
             type="text"
             placeholder="Enter your query"
@@ -138,12 +138,12 @@ const MainBody = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="text-desktop/body/1 text-brand/black no-underline outline-none w-full lg:rounded-xl lg:p-5 border-grey/grey/3 border-[1.5px]"
           />
-        </div> */}
+        </div>
         <div className="lg:space-y-[52px]">
           {/* Category buttons */}
           <div className="flex justify-between overflow-x-auto space-x-2">
             {buttons.map((button) => (
-              <div  className={` cursor-pointer space-x-2  flex  items-center rounded-[16px] lg:py-4 lg:px-5 ${
+              <div  onClick={() => setActiveCategory(button.id)} className={` cursor-pointer space-x-2  flex  items-center rounded-[16px] lg:py-4 lg:px-5 ${
                 activeCategory === button.id
                   ? " bg-brand/black text-white" // Add your active button style here
                   : " text-brand/black bg-bg/primary/1 "
@@ -167,7 +167,7 @@ const MainBody = () => {
                
                 <p
                   key={button.id}
-                  onClick={() => setActiveCategory(button.id)}
+                  
                   className={`lg:text-desktop/button cursor-pointer  shrink-0 ${
                     activeCategory === button.id
                       ? " bg-brand/black text-white" // Add your active button style here
