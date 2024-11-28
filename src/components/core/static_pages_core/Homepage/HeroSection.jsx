@@ -153,7 +153,7 @@ const ColorPro5g = () => {
     )
 }
 
-const Banner3 = ({ activeSlide }) => {
+const Banner4 = ({ activeSlide }) => {
 
     return (
         <AnimatePresence mode='wait'>
@@ -196,7 +196,7 @@ const Banner3 = ({ activeSlide }) => {
     )
 }
 
-const Banner4 = ({ activeSlide }) => {
+const Banner3 = ({ activeSlide }) => {
 
     return (
         <AnimatePresence mode='wait'>
@@ -221,7 +221,7 @@ const Banner4 = ({ activeSlide }) => {
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ duration: 1, delay: 0.2 }} className="w-fit">
-                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage' >NEW</h3>
+                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage' >Coming soon</h3>
                         </motion.div>
                         <motion.h1
                             initial={{ opacity: 0, y: -50 }}
@@ -230,7 +230,7 @@ const Banner4 = ({ activeSlide }) => {
                         <motion.h5
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] leading-6 text-white/80'>Coming soon</motion.h5>
+                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] leading-6 text-white/80'>Get ready to live in the spotlight</motion.h5>
                     </div>
                 </motion.div>
             </div>
@@ -286,13 +286,13 @@ const HeroSection = () => {
                 <Banner3 activeSlide={activeSlide} />
             </SwiperSlide>
 
-
             {/* *************** Slide 4************************* */}
+
+          
 
             <SwiperSlide>
                 <Banner4 activeSlide={activeSlide} />
             </SwiperSlide>
-
         </Swiper >
     )
 }
