@@ -102,7 +102,7 @@ function App() {
 					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 					<Route path='/support/faqs' element={<FAQ />} />
 					<Route path='/investor' element={<Investor />} />
-					<Route path='/commingsoon' element={<Commingsoon/>} />
+					<Route path='/coming-soon' element={<Commingsoon/>} />
 					<Route path='/thankyou' element={<Thankyou/>} />
 					<Route path='/blog/:id' element={<Blog/>} />
 					<Route path='/blogs' element={<BlogListing/>} />

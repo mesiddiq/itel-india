@@ -39,7 +39,7 @@ const BlogCard = ({ category, title, image,data,id }) => {
       <img
         src={image}
         alt={title}
-        className=" lg:w-[412px] w-[328px] h-[337px] lg:h-[424px]"
+        className=" lg:w-[412px] w-[328px] h-[337px] lg:h-[424px] object-contain"
       />
       <div className=" space-y-3 lg:space-y-4">
         <div className=" space-y-2 ">

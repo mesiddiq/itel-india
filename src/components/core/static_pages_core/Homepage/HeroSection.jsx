@@ -284,14 +284,14 @@ const HeroSection = () => {
             {/* *************** Slide 3************************* */}
 
             <SwiperSlide>
-                <Banner3 activeSlide={activeSlide} />
+                <Banner4 activeSlide={activeSlide} />
             </SwiperSlide>
 
 
             {/* *************** Slide 4************************* */}
 
             <SwiperSlide>
-                <Banner4 activeSlide={activeSlide} />
+                <Banner3 activeSlide={activeSlide} />
             </SwiperSlide>
 
         </Swiper >
