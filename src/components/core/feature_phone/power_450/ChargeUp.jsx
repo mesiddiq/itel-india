@@ -5,7 +5,7 @@ const ChargeUp = () => {
         <div className=" py-[42px] lg:py-[73px] h-[633px] md:h-[700px] lg:h-auto font-markot px-4 md:px-0 ">
             <div className={`content rounded-[24px] bg-[url('/featurephone/Power_450/Backgrounds/charged_up_mobile.webp')] h-full lg:h-auto relative lg:bg-none bg-cover bg-no-repeat `}>
 
-                <div className="space-y-5 lg:space-y-10 max-w-[437px] lg:absolute right-[119px] top-[245px] px-5 lg:px-0 py-10 lg:py-0">
+                <div className="space-y-5 lg:space-y-10 max-w-[437px] lg:absolute xl:right-[119px] right-[80px] xl:top-[245px] top-[160px] px-5 lg:px-0 py-10 lg:py-0">
                     <div className="space-y-3 lg:space-y-8">
                         <h1 className="text-desktop/h4 md:text-desktop/h3 lg:text-[60px] lg:leading-[72px] lg:-tracking-[2.4px] text-black/1">Charge Up in Style!</h1>
                         <p className="text-mobile/body/2 md:text-desktop/body/1 lg:text-desktop/body/1 text-grey/grey/5">Enjoy lightning-fast and secure Type-C charging with the powerful 2500mAh battery. Stay connected longer with reliable performance throughout the day.</p>

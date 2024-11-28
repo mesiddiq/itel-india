@@ -24,7 +24,7 @@ export default function FilterComponent() {
         <button
           key={filter}
           onClick={() => toggleFilter(filter)}
-          className={`flex items-center justify-center px-3 py-1 rounded-sm FFMarkRegular text-sm transition-colors 
+          className={`flex items-center justify-center px-3 py-1 rounded-sm text-sm transition-colors 
             ${
               isActive(filter)
                 ? "bg-[#575757] text-white"

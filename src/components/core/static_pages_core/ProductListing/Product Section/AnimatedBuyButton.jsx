@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+import { MdCurrencyRupee } from 'react-icons/md';
 
 const AnimatedBuyButton = ({ price }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -32,7 +33,7 @@ const AnimatedBuyButton = ({ price }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* White background overlay that slides up */}
-      <div 
+      <div
         className={`
           absolute 
           inset-0 
@@ -46,8 +47,11 @@ const AnimatedBuyButton = ({ price }) => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center gap-[4px] md:gap-3">
-        <span className="text-xs font-bold md:text-base leading-[18px] md:leading-[19.2px] tracking-[-0.02em] md:tracking-[-0.01em]">
-          {isHovered ? 'BUY NOW' : `₹ ${price}`}
+        <span className="text-xs flex items-center font-bold md:text-base leading-[18px] md:leading-[19.2px] tracking-[-0.02em] md:tracking-[-0.01em]">
+          {!isHovered &&
+            <MdCurrencyRupee />
+          }
+          {isHovered ? 'BUY NOW' : `${price}`}
         </span>
         <img src='/product-listing/arrow-right.svg' />
       </div>

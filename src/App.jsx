@@ -5,12 +5,17 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Terms from './pages/static_pages/Terms'
 import { lazy, Suspense } from 'react';
-import SmartPhoneProductPage from './pages/product/SmartPhoneProductPage'
-import FeaturePhoneProductPage from './pages/product/FeaturePhoneProductPage'
-import Loading from './pages/static_pages/Loading'
-import Blog from './pages/static_pages/Blog'
-import BlogListing from './pages/static_pages/BlogListing'
-import PrivacyAndPolicy from './pages/static_pages/PrivacyAndPolicy'
+import Footer from './components/common/static_common/Footer'
+import BackToTopButton from './utils/BackToTop'
+const FlipOne = lazy(() => import('./pages/feature_phone/FlipOne'));
+const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
+const FeaturePhoneProductPage = lazy(() => import('./pages/product/FeaturePhoneProductPage'));
+const Loading = lazy(() => import('./pages/static_pages/Loading'));
+const Blog = lazy(() => import('./pages/static_pages/Blog'));
+const BlogListing = lazy(() => import('./pages/static_pages/BlogListing'));
+const Thankyou = lazy(() => import('./pages/static_pages/Thankyou'));
+const Commingsoon = lazy(() => import('./pages/static_pages/Commingsoon'));
+
 const HomePage = lazy(() => import('./pages/static_pages/HomePage'));
 const STwentyThree = lazy(() => import('./pages/s_series/STwentyThree'));
 const STwentyThreePlus = lazy(() => import('./pages/s_series/STwentyThreePlus'));
@@ -18,7 +23,6 @@ const STwentyFour = lazy(() => import('./pages/s_series/STwentyFour'));
 const PFiftyFive = lazy(() => import('./pages/p_series/PFiftyFive'));
 const S_Series_Parent = lazy(() => import('./pages/s_series/S_Series_Parent'));
 const Investor = lazy(() => import('./pages/static_pages/Investor'));
-const Footer = lazy(() => import('./components/common/Footer'));
 const Support = lazy(() => import('./pages/static_pages/Support'));
 const ScreenReplacement = lazy(() => import('./pages/static_pages/ScreenReplacement'));
 const Promise100 = lazy(() => import('./pages/static_pages/Promise100'));
@@ -34,9 +38,8 @@ const PFiftyFivePlus = lazy(() => import('./pages/p_series/PFiftyFivePlus'));
 const PFiftyFiveT = lazy(() => import('./pages/p_series/PFiftyFiveT'));
 const ColorPro5G = lazy(() => import('./pages/color_series/ColorPro5G'));
 const NotFound = lazy(() => import('./pages/static_pages/NotFound'));
-import Commingsoon from './pages/static_pages/Commingsoon'
-import Thankyou from './pages/static_pages/Thankyou'
-import Storelocator from './pages/static_pages/Storelocator'
+const Storelocator = lazy(() => import('./pages/static_pages/Storelocator'));
+const PrivacyAndPolicy = lazy(() => import('./pages/static_pages/PrivacyAndPolicy'));
 const A_Series_Parent = lazy(() => import('./pages/a_series/A_Series_Parent'));
 const A05i = lazy(() => import('./pages/a_series/A05i'));
 
@@ -86,8 +89,8 @@ function App() {
 					{/* 					Static Pages	   				*/}
 					{/********************************************************/}
 
-					<Route path='/aryan' element={<ProductListing />} />
-					<Route path='/products' element={<SmartPhoneProductPage />} />
+					<Route path='/loading' element={<Loading />} />
+					<Route path='/smartphones' element={<SmartPhoneProductPage />} />
 					<Route path='/featurephones' element={<FeaturePhoneProductPage />} />
 					<Route path='/support' element={<Support />} />
 					<Route path='/support/1-time-screen-replacement' element={<ScreenReplacement />} />
@@ -99,16 +102,15 @@ function App() {
 					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 					<Route path='/support/faqs' element={<FAQ />} />
 					<Route path='/investor' element={<Investor />} />
-					<Route path='/commingsoon' element={<Commingsoon/>} />
-					<Route path='/thankyou' element={<Thankyou/>} />
-					<Route path='/blog/:id' element={<Blog/>} />
-					<Route path='/bloglisting' element={<BlogListing/>} />
-					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
-					<Route path='/terms-of-use-itel-mobile-india' element={<Terms/>} />
-					<Route path='/store-locator' element={<Storelocator/>} />
-                    
+					<Route path='/coming-soon' element={<Commingsoon />} />
+					<Route path='/thankyou' element={<Thankyou />} />
+					<Route path='/blogs/:id' element={<Blog />} />
+					<Route path='/blogs' element={<BlogListing />} />
+					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy />} />
+					<Route path='/terms-of-use-itel-mobile-india' element={<Terms />} />
+					<Route path='/store-locator' element={<Storelocator />} />
 
-                   
+
 
 					{/* ***************************************************************************************************/}
 					{/* *******************************************SmartPhones*********************************************/}
@@ -178,6 +180,7 @@ function App() {
 						<Route path='power-120' element={<Power120 />} />
 						<Route path='power-450' element={<Power450 />} />
 						<Route path='ace-2-power' element={<Ace2Power />} />
+						<Route path='flip-one' element={<FlipOne />} />
 					</Route>
 
 					{/* ***********************Not Found**************** */}
@@ -186,6 +189,7 @@ function App() {
 				</Routes>
 				<Footer />
 				<ScrollToTop />
+				<BackToTopButton />
 			</main>
 		</Suspense>
 	)

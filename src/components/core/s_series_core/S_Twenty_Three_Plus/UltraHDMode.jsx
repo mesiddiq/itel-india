@@ -50,27 +50,32 @@ const UltraHDMode = () => {
 
   return (
     <div className='overflow-hidden'>
-    <Swiper
-      spaceBetween={30}
-      effect={'fade'}
-      navigation={true}
-      pagination={{
+      <Swiper
+        spaceBetween={0}
+        effect={'fade'}
+        navigation={true}
+        pagination={{
           clickable: true,
-      }}
-      autoplay
-      modules={[EffectFade, Pagination]}
-      className="mySwiper max-h-screen w-full"
-    >
-      {slides.map((slide, slideIndex) => (
-        <SwiperSlide key={slideIndex}>
-          <div className="relative h-[300px] md:h-[800px] xl:h-[950px] flex justify-center">
-            <div className='w-full h-full bg-center bg-cover duration-500' style={{ backgroundImage: `url(${slide.image})`}}>
-              <h3 style={isMobile ? textStyleSM : textStyle} className='text-[#FFFFFF] text-mobile/h7 md:text-desktop/h3 font-markot'>{slide.text}</h3>
+        }}
+        loop
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+          waitForTransition: 500
+        }}
+        modules={[EffectFade, Pagination]}
+        className="mySwiper w-full"
+      >
+        {slides.map((slide, slideIndex) => (
+          <SwiperSlide key={slideIndex}>
+            <div className="relative max-h-[300px] h-screen md:max-h-[430px] lg:max-h-[800px] flex justify-center">
+              <div className='w-full h-full bg-center bg-contain bg-no-repeat duration-500' style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover' }}>
+                <h3 style={isMobile ? textStyleSM : textStyle} className='text-[#FFFFFF] text-mobile/h7 lg:text-desktop/h3 font-markot'>{slide.text}</h3>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }

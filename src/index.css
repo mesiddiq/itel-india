@@ -26,7 +26,6 @@
   font-weight: 500;
 }
 
-
 @font-face {
   font-family: "BricolageGrotesque";
   src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-Bold.ttf") format('truetype');
@@ -64,6 +63,10 @@
 
 .overflowHidden::-webkit-scrollbar {
   display: none;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: red; /* For modern browsers */
 }
 
 .swiper-pagination-bullet {
@@ -301,7 +304,7 @@
   }
 
   .mob-res-AllDay {
-    top: 1% !important;
+    top: 32% !important;
     left: 20rem !important;
   }
 
@@ -310,4 +313,78 @@
   }
 }
 
+@media (max-width: 760px) {
+  .mob-res1 img{
+    height: 150px !important;
+  }
+}
 
+@media (min-width: 444px) {
+  .responsoveCardA05{
+    height: 350px !important;
+  }
+  
+}
+
+@media (max-width: 768px) and (min-width:638px){
+  .responsoveCard1A05 img{
+    height: 467px !important;
+  }
+  
+}
+
+@media (max-width:638px){
+  .responsoveCard1A05 img{
+    height: 366px !important;
+  }
+  
+}
+
+@media (max-width:442px){
+  .responsive-LanguageSection{
+    height: 410px !important;
+  }
+  
+}
+
+@media (max-width:1266px) and (min-width:1024px){
+  .mob-effortless {
+    top: 37% !important;
+    left: 19rem !important;
+  }
+
+}
+
+
+@media (max-width: 1308px) and (min-width:1023px) {
+  .responsveImg img:nth-of-type(1) {
+    width: 600px !important;
+    top: 3rem !important;
+  }
+  .responsveImg img:nth-of-type(2) {
+    width: 600px !important;
+    left: -17rem;
+  }
+  .responsveImg img:nth-of-type(3) {
+    height: 600px !important;
+    top: 3rem !important;
+    left: 40rem !important;
+  }
+  .responsveImg img:nth-of-type(4) {
+    left: 21rem !important;
+    height: 600px !important;
+  }
+}
+
+/* Themed Scroll Bar */
+body::-webkit-scrollbar {
+  width: 14px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #1a202c;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ff0037;
+  border: 3px solid #1a202c;
+  border-radius: 7px;
+}

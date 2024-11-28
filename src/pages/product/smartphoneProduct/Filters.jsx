@@ -36,10 +36,10 @@ export default function Filters() {
                 <h3 className="mb-3 text-desktop/title uppercase">{name}</h3>
                 <div className="space-y-3">
                     {options.map(option => (
-                        <label key={option.value} className="flex items-center space-x-2">
+                        <label key={option.value} className="cursor-pointer flex items-center space-x-2">
                             <input
                                 type="checkbox"
-                                className="form-checkbox h-5 w-5 text-blue-600"
+                                className="form-checkbox h-5 w-5 text-red-600 bg-red-600 checked:text-red-600 checked:bg-red-600 checked:border-red-600"
                                 checked={currentValues.includes(option.value)}
                                 onChange={() => dispatch(action(option.value))}
                             />
@@ -53,7 +53,7 @@ export default function Filters() {
     )
 
     return (
-        <div className=" text-white pr-5 rounded-lg shadow-md">
+        <div className=" text-white pr-5 rounded-lg shadow-md no-scrollbar">
             <div className="pt-2">
                 <FilterHeading />
             </div>

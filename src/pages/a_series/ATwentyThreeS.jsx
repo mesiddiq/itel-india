@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet"
 import FullSpecifications from "../../components/common/FullSpecifications"
 // import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon"
@@ -18,6 +19,13 @@ import { FullSpecificationsA23 } from "../../data/smartphonedata/A23SData"
 const ATwentyThreeS = () => {
   return (
     <div className="bg-white">
+
+      <Helmet>
+        <title>A 70</title>
+        <meta name="description" content={`If you’re someone who is taking their first steps into the digital world then the all-new itel A23S is the best bet for you! The A23S is equipped with a robust 3020 mAh battery and Smart Power Master, ensuring all-day performance. With 2GB of RAM, expandable upto 4GB with memory fusion, and 32GB of storage, it’s the ideal package for you. Enjoy the convenience of easy Smart Face Unlock and enhanced WhatsApp features like Peek Mode and Call Recording. Meet your perfect tech partner, wrapped in a trendy design.`} />
+        <meta name="keywords" content={`If you’re someone who is taking their first steps into the digital world then the all-new itel A23S is the best bet for you! The A23S is equipped with a robust 3020 mAh battery and Smart Power Master, ensuring all-day performance. With 2GB of RAM, expandable upto 4GB with memory fusion, and 32GB of storage, it’s the ideal package for you. Enjoy the convenience of easy Smart Face Unlock and enhanced WhatsApp features like Peek Mode and Call Recording. Meet your perfect tech partner, wrapped in a trendy design.`} />
+      </Helmet>
+
       {/* <HeroSectionOfA23SPage /> */}
       <HeroSmartPhoneCommon
         tagText="Awesome series"
@@ -29,10 +37,11 @@ const ATwentyThreeS = () => {
         gradient1='#000'
         gradient2='#000'
         theme='dark'
+        purchaseLink={'https://amzn.in/d/0jGRm3r'}
       />
 
 
-      <StickyHeader title="A23s" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
+      <StickyHeader title="A23s" purchaseLink={'https://amzn.in/d/0jGRm3r'} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
       <FeatureSectionA23s />
       {/* <ScrollingBannerA23S /> */}
       <SliderAnimationCommon

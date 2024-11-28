@@ -34,12 +34,9 @@ const ArrowRight = ({ isActive }) => {
 
 
 const CommonCard = ({ thumbnail, label, price, link, fn }) => {
-
-
-
     return (
-        <Link to={link} onClick={() => fn(prev => !prev)}>
-            <div className="w-[290px] text-white h-[163px] p-6 flex gap-4 bg-dark/card/bg  rounded-[8px]">
+        <Link key={label} to={link} onClick={() => fn(prev => !prev)}>
+            <div className="xl:w-[290px] text-white h-[163px] p-6 flex gap-4 bg-dark/card/bg  rounded-[8px]">
                 <img src={thumbnail} alt={label} className='h-[114px] w-[120px] object-contain' />
                 <div className="flex flex-col gap-4">
                     <h1 className="text-desktop/body/large">{label}</h1>
@@ -60,7 +57,7 @@ const Support = ({ support, setSupport }) => {
                 {
                     SupportData.map(({ id, label, path }) => (
                         <Link to={path} key={id}>
-                            <div onClick={() => setSupport(prev => !prev)} className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-grey/grey/4 to-grey/grey/5">
+                            <div onClick={() => setSupport(prev => !prev)} className="py-[7px] flex flex-col justify-center px-6 space-y-4 w-[230px] h-[106px] rounded-[8px] text-white bg-gradient-to-r from-[rgba(255,7,60,0.2)] to-[rgba(55,63,65,0.2)]">
                                 <h1 className="text-white text-desktop/h5">{label}</h1>
                                 <div className="flex gap-2 items-center">
                                     <h4 className="text-desktop/button">READ MORE</h4>
@@ -86,11 +83,11 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
 
     return (
         <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${smartPhone ? 'h-[330px] py-12 z-[100]' : 'h-0'}`}>
-            <div className="max-w-[1065px] w-full mx-auto flex gap-11">
+            <div className="max-w-[1065px] w-full mx-auto flex lg:gap-6 pl-4 xl:pl-0 xl:gap-11">
                 <div className="flex flex-col gap-3">
                     {
                         PhoneData.map(({ id }) => (
-                            <button onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
+                            <button key={id} onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
                                 <h1 className="text-desktop/button text-left uppercase text-white">
                                     {id}
                                 </h1>
@@ -98,6 +95,13 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
                             </button>
                         ))
                     }
+
+                    <Link to="/smartphones">
+                        <button className="flex w-[114px] justify-between gap-2 items-center" onClick={handleOutside}>
+                            <h1 className=" text-desktop/button text-left uppercase text-white">view all</h1>
+                            <ArrowRight />
+                        </button>
+                    </Link>
                 </div>
                 <div className="flex flex-col gap-5 w-full">
                     <h1 className="text-desktop/h6/medium text-blue/blue/5">
@@ -107,16 +111,10 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} fn={setSmartPhone} />
+                                <CommonCard key={item.id} {...item} fn={setSmartPhone} />
                             ))
                         }
                     </div>
-                    <Link to="/products">
-                        <div className="flex gap-2 items-center justify-end" onClick={handleOutside}>
-                            <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
-                            <ArrowRight />
-                        </div>
-                    </Link>
                 </div>
             </div>
         </div>
@@ -134,11 +132,11 @@ const AccessoriesDropDown = ({ Accessories }) => {
 
     return (
         <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${Accessories ? 'h-[330px] py-12 z-[100] ' : 'h-0'}`}>
-            <div className="max-w-[1065px] w-full mx-auto flex gap-11">
+            <div className="max-w-[1065px] w-full mx-auto flex lg:gap-6 pl-4 xl:pl-0 xl:gap-11">
                 <div className="flex flex-col gap-3">
                     {
                         AccessoriesData.map(({ id }) => (
-                            <button onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
+                            <button key={id} onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
                                 <h1 className="text-desktop/button text-left uppercase text-white">
                                     {id}
                                 </h1>
@@ -155,14 +153,14 @@ const AccessoriesDropDown = ({ Accessories }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} />
+                                <CommonCard key={item.id} {...item} />
                             ))
                         }
                     </div>
-                    <div className="flex gap-2 items-center justify-end">
+                    {/* <div className="flex gap-2 items-center justify-end">
                         <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
                         <ArrowRight />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -179,11 +177,11 @@ const TvDropDown = ({ tv }) => {
 
     return (
         <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${tv ? 'h-[330px] py-12 z-[100]' : 'h-0'}`}>
-            <div className="max-w-[1065px] w-full mx-auto flex gap-11">
+            <div className="max-w-[1065px] w-full mx-auto flex lg:gap-6 pl-4 xl:pl-0 xl:gap-11">
                 <div className="flex flex-col gap-3">
                     {
                         TvData.map(({ id }) => (
-                            <button onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
+                            <button key={id} onClick={() => handleClick(id)} className={`flex w-[114px] justify-between gap-2 items-center`}>
                                 <h1 className="text-desktop/button text-left uppercase text-white">
                                     {id}
                                 </h1>
@@ -200,14 +198,14 @@ const TvDropDown = ({ tv }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} />
+                                <CommonCard key={item.id} {...item} />
                             ))
                         }
                     </div>
-                    <div className="flex gap-2 items-center justify-end">
+                    {/* <div className="flex gap-2 items-center justify-end">
                         <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
                         <ArrowRight />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -407,11 +405,13 @@ const Navbar = () => {
                         </span>
                         <ArrowSvg isActive={smartPhone} />
                     </button>
-                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
-                        <span className="text-desktop/body/2/regular">
-                            Feature Phones
-                        </span>
-                    </button>
+                    <Link to={'/featurephones'}>
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                Feature Phones
+                            </span>
+                        </button>
+                    </Link>
                     <button className="flex items-center gap-0.5" onClick={() => {
                         setAccessories(prev => !prev)
                         setSupport(false)
@@ -434,16 +434,20 @@ const Navbar = () => {
                         </span>
                         <ArrowSvg isActive={tv} />
                     </button>
-                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
-                        <span className="text-desktop/body/2/regular">
-                            Home Care
-                        </span>
-                    </button>
-                    <button className="flex items-center gap-0.5" onClick={handleOutside}>
-                        <span className="text-desktop/body/2/regular">
-                            Personal Care
-                        </span>
-                    </button>
+                    <Link to={'/coming-soon'}>
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                Home Care
+                            </span>
+                        </button>
+                    </Link>
+                    <Link to={'/coming-soon'}>
+                        <button className="flex items-center gap-0.5" onClick={handleOutside}>
+                            <span className="text-desktop/body/2/regular">
+                                Personal Care
+                            </span>
+                        </button>
+                    </Link>
                     <Link to="/about-us-itel-mobile-india">
                         <button className="flex items-center gap-0.5" onClick={handleOutside}>
                             <span className="text-desktop/body/2/regular">

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react-refresh/only-export-components */
 // import HeroSectionOfPage from "./components/core/a_series_core/a70/HeroSectionOfPage";
+import { Helmet } from "react-helmet";
 import FullSpecifications from "../../components/common/FullSpecifications";
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel";
 import HeroSmartPhoneCommon from "../../components/common/smartphone_common/HeroSmartPhoneCommon";
@@ -24,6 +25,11 @@ import { ImageCarouselDataA70 } from "../../data/smartphonedata/A70ImageCarousel
 const ASeventy = () => {
   return (
     <div className="bg-white font-markot">
+
+      <Helmet>
+        <title>A 70</title>
+        <meta name="description" content={`Introducing the itel A70, your gateway to the future of smartphones! With its awesome design and 6.6inch HD+ display, it's the epitome of elegance and functionality. Experience seamless multitasking with 4GB RAM, expandable up to 12GB* with Memory Fusion & Massive 256GB ROM. Powered by an octa-core processor and 5000 mAh battery, and Type-C charging it's built for seamless performance. Get yours today and step into the world of tomorrow!`} />
+      </Helmet>
       {/* <HeroSectionOfPage /> */}
       <HeroSmartPhoneCommon
         tagText="Awesome series"
@@ -35,8 +41,9 @@ const ASeventy = () => {
         gradient1='#000'
         gradient2='#000'
         theme='dark'
+        purchaseLink={'https://www.amazon.in/dp/B0CQ7MKZ1F?ie=UTF8&ref_=itel_A70_Launch_Web'}
       />
-      <StickyHeader title="A70" purchaseLink={''} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
+      <StickyHeader title="A70" purchaseLink={'https://www.amazon.in/dp/B0CQ7MKZ1F?ie=UTF8&ref_=itel_A70_Launch_Web'} icon={'/smartphone/a70/stickyeHeaderIcon.svg'} bgColor={'black'} />
       <FeatureSection70 />
       {/* <ScrollingBannerA70 /> */}
       <SliderAnimationCommon

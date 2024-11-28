@@ -35,8 +35,9 @@ const STwentyThreePlus = () => {
           bgMobile={'/smartphone/smartphonehero/s23p_mobile.webp'}
           gradient1='#ca86ff'
           gradient2='#85e2fd'
+          purchaseLink={'https://www.amazon.in/dp/B0CHJN4R28'}
         />
-        <StickyHeader title={"S23+"} purchaseLink={''} icon={'/smartphone/S23+/Backgrounds/OverviewIcon.webp'} />
+        <StickyHeader title={"S23+"} purchaseLink={'https://www.amazon.in/dp/B0CHJN4R28'} icon={'/smartphone/S23+/Backgrounds/OverviewIcon.webp'} />
         <Overview />
         <Video />
         <AmoledDisplay />

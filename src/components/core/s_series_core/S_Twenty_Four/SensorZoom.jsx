@@ -39,7 +39,7 @@ const SensorZoom = () => {
       className="font-markot lg:h-full lg:w-full bg-[#1c1b1b] px-4 py-9 lg:px-[230px] lg:py-[125px]"
     >
       {/* Laptop Design */}
-      <div className="content hidden lg:flex flex-row justify-between gap-2 h-[704px]">
+      <div className="content hidden lg:flex flex-row justify-between lg:gap-4 xl:gap-2 h-[704px] ">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={inView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
@@ -47,14 +47,14 @@ const SensorZoom = () => {
           className="w-[45%] flex flex-col justify-between items-start overflow-hidden"
         >
           {/* Text Part */}
-          <div className="flex flex-col items-start gap-6 max-w-[407px]">
+          <div className="flex flex-col items-start gap-6 lg:pb-6 max-w-[407px]">
             <h1 className="text-desktop/h2 text-white">
               3X In-sensor{' '}
               <span className="bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
                 Zoom
               </span>
             </h1>
-            <p className="text-desktop/body/large text-grey/grey/2">
+            <p className="text-desktop/body/large text-grey/grey/2 ">
               With the 3X In-sensor Zoom, you can capture distant subjects with
               improved composition and quality.
             </p>
@@ -90,10 +90,11 @@ const SensorZoom = () => {
           <img
             src="/smartphone/S24/threeXzoomImage.png"
             alt="threeXzoomImage"
-            className="z-0 scale-[400%] translate-y-2/3"
+            className="z-0 scale-[430%] translate-y-full "
           />
         </motion.div>
       </div>
+
 
       {/* Mobile Design */}
       <div className="content font-markot lg:hidden flex flex-col items-center gap-5 h-[400px]">
@@ -127,11 +128,11 @@ const SensorZoom = () => {
             <div className="absolute bottom-3 left-3 z-10">
               <ZoomRectangle active="1X" />
             </div>
-            <div className="h-[80%] w-full">
+            <div className="h-[80%] relative w-full overflow-hidden">
               <img
                 src="/smartphone/S24/threeXzoomImage.png"
                 alt="threeXzoomImage"
-                className="absolute z-0 scale-[300%] translate-y-full"
+                className="absolute z-0 scale-[330%] xs:scale-[300%] sm:-top-20 translate-y-full"
               />
             </div>
           </motion.div>

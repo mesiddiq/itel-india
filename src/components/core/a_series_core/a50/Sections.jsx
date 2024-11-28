@@ -7,9 +7,9 @@ export default function Sections() {
         
         {/* div1 */}
         <div className="bg-[url('/smartphone/a50/f1S.webp')] lg:h-[852px] bg-cover bg-center  flex flex-col border rounded-[16px] border-[#41fc6680] md:mr-[24px]">
-          <span className="ml-[23px] lg:ml-[50px]">
+          <span className="md:ml-[23px] xl:ml-[50px]">
           <p className="text-start mt-10 md:text-desktop/h4 xl:text-desktop/h3 px-4 text-[#050036] font-bold text-[20px] xs:text-[18px]">
-          Enhanced Protection: <span className="block">Secure Access</span>
+          Enhanced Protection: <span className="sm:block">Secure Access</span>
           </p>
           <p className="ml-4 md:text-desktop/h5 text-mobile/h6 xs:text-mobile/h7 xl:text-desktop/h4 mt-3 text-[#232323] text-start">
             Face Unlock | Side FingerPrint
@@ -18,7 +18,7 @@ export default function Sections() {
           <img
             src="/smartphone/a50/f1Hero.webp"
             alt="Background Image"
-            className="lg:h-[650px] w-full xl:pt-[30px] md:pt-[100px] lg:px-[50px] px-[23px]"
+            className="xl:h-[650px] w-full xl:pt-[30px] md:pt-[100px] lg:px-[50px] px-[23px]"
           />
         </div>
       

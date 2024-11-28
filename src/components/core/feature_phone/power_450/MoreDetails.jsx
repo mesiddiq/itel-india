@@ -49,8 +49,8 @@ const MoreDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="">
-                        <img src="/featurephone/Power_450/Backgrounds/three_phones.webp" alt="Power 450" className='lg:max-w-[726px] translate-y-10 lg:translate-x-20' />
+                    <div className="mx-auto">
+                        <img src="/featurephone/Power_450/Backgrounds/three_phones.webp" alt="Power 450" className='xl:max-w-[726px] max-w-[500px] translate-y-10 lg:translate-x-20' />
                     </div>
                 </div>
             </div>

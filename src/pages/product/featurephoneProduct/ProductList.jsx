@@ -6,10 +6,10 @@ import ProductCard from './ProductCard'
 import { AllFeaturePhoneData } from '../../../data/AllFeaturePhoneData'
 
 export default function ProductList() {
-    const filters = useSelector(state => state.featurePhone.filters)
+    const filters = useSelector(state => state.filtersFeaturePhone.filtersFeaturePhone)
     const [currentPage, setCurrentPage] = useState(1)
     const phonesPerPage = 6
-
+    
     const filteredPhones = AllFeaturePhoneData.filter(phone => {
         if (filters.series.length > 0 && !filters.series.includes(phone.category) && !filters.series.includes('All')) return false
 
@@ -44,11 +44,29 @@ export default function ProductList() {
 
         if (filters.network.length > 0) {
             const networkMatch = filters.network.some(value => {
-                if (value === '2G/3G') return phone.specification.network.includes('2G') || phone.specification.network.includes('3G')
-                if (value === '4G') return phone.specification.network.includes('4G')
+                if (value === '2G') return phone.specification.network === '2G';
+                if (value === '4G') return phone.specification.network === '4G';
                 return false
             })
             if (!networkMatch) return false
+        }
+
+        if (filters.features.length > 0) {
+            const hasAllSelectedFeatures = filters.features.every(feature => {
+                switch (feature) {
+                    case "King Voice":
+                        return phone.features?.hasKingVoice;
+                    case "Power Keypad":
+                        return phone.features?.hasPowerKeypad;
+                    case "UPI":
+                        return phone.features?.hasUPI;
+                    case "Bluetooth":
+                        return phone.features?.hasBluetooth;
+                    default:
+                        return false;
+                }
+            });
+            if (!hasAllSelectedFeatures) return false;
         }
 
         return true

@@ -16,14 +16,14 @@ export default function A50() {
         bgDesktop="/smartphone/smartphonehero/a50.webp"
         bgMobile="/smartphone/smartphonehero/a50_mobile.webp"
         theme="dark"
-        purchaseLink=""
+        purchaseLink="https://www.amazon.in/Display-Dynamic-Octacore-Processor-Battery/dp/B0DBR1CMQ2"
         description={`6.6" HD+ Display with Dynamic Bar | 12GB*(4GB+8GB*) RAM + 64GB ROM | 8MP AI Rear Camera`}
         gradient1="#181818"
         gradient2="#181818"
         price="6,499"
         tagText="awesome series"
       />
-      <StickyHeader bgColor="#fff" title="A50" icon="/smartphone/a05/logos/a05StickyIcon.png" />
+      <StickyHeader bgColor="#fff" title="A50" icon="/smartphone/a05/logos/a05StickyIcon.png" purchaseLink={'https://www.amazon.in/Display-Dynamic-Octacore-Processor-Battery/dp/B0DBR1CMQ2'}/>
       {/* <FeatureRich {...a50FeatureRichData} /> */}
       <FeatureSectionA50 />
 
@@ -34,7 +34,7 @@ export default function A50() {
 
       <div className='md:h-screen h-[215px] w-full flex items-center justify-center bg-cover bg-center md:bg-[url("/smartphone/a50/4mo.webp")] bg-[url("/smartphone/a50/4mob.webp")] my-[40px] md:my-[100px]'>
         <img src="/smartphone/a50/grp.webp" alt="grp" className='w-[80%] hidden md:flex lg:pt-[60px] pt-[40px]' />
-        <img src="/smartphone/a50/grpMob.webp" alt="grp" className='w-[80%] md:hidden flex pt-[20px]' />
+        <img src="/smartphone/a50/grpMob.webp" alt="grp" className='w-[50%] md:hidden flex pt-[20px]' />
       </div>
 
       <Sections />
@@ -44,7 +44,7 @@ export default function A50() {
         showTitleInMobile={true}
       />
 
-      <FullSpecifications FullSpecificationsData={a50FullSpecifications} mode='light' gifStar='/smartphone/a05/startImg.png' />
+      <FullSpecifications FullSpecificationsData={a50FullSpecifications} mode='light' gifStar='/static_page/Hotstar.gif' />
     </div>
   )
 }

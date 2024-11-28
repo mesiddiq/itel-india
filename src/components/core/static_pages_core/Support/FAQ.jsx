@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { data } from "./data,";
 
-const Accordion = ({ data, title, isActive, onToggle }) => {
+const Accordion = ({ data, title, isActive, onToggle, theme }) => {
   const displayedItems = isActive ? data : data.slice(0, 4);
 
   return (
@@ -10,38 +10,30 @@ const Accordion = ({ data, title, isActive, onToggle }) => {
         onClick={onToggle}
         className="flex items-center font-markot justify-between cursor-pointer"
       >
-        <p className="lg:text-desktop/h5/medium text-mobile/h5 text-brand/black">
+        <p className={`lg:text-desktop/h5/medium text-mobile/h5 ${theme === "dark" ? "text-white" : "text-black"}`}>
           {title}
         </p>
         <img
           src={"/static_page/Right%20Chevron.png"}
-          className={`transform transition-transform duration-300 ease-in-out ${
-            isActive ? "rotate-180" : "rotate-0"
-          }`}
+          className={`transform transition-transform duration-300 ease-in-out ${isActive ? "rotate-180" : "rotate-0"}`}
           alt="Expand/Collapse"
         />
       </div>
 
-      {/* Accordion content with animation */}
-      <div
-        className={`overflow-hidden transition-all space-y-1 duration-300 ease-in-out ${
-          isActive ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
+      <div className={`overflow-hidden transition-all space-y-1 duration-300 ease-in-out ${isActive ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}>
         {displayedItems.map((item, index) => (
           <p
             key={index}
-            className="text-desktop/body/2/regular text-grey/grey/5 lg:text-desktop/body/1"
+            className={`text-desktop/body/2/regular lg:text-desktop/body/1 ${theme === "dark" ? "text-gray-400" : "text-gray-700"}`}
           >
             {item}
           </p>
         ))}
 
-        {/* Read More / Read Less button */}
         {data.length > 4 && (
           <button
             onClick={onToggle}
-            className="text-brand/black underline mt-2"
+            className={`underline mt-2 ${theme === "dark" ? "text-white" : "text-black"}`}
           >
             {isActive ? "Read Less" : "Read More"}
           </button>
@@ -51,7 +43,7 @@ const Accordion = ({ data, title, isActive, onToggle }) => {
   );
 };
 
-const FAQ = () => {
+const FAQ = ({ theme = "light" }) => {  // theme prop with default value "light"
   const [activeCategory, setActiveCategory] = useState("Call");
   const [activeAccordion, setActiveAccordion] = useState(null);
 
@@ -60,13 +52,12 @@ const FAQ = () => {
     { id: "Camera", title: "Camera & Pictures" },
     { id: "Charging", title: "Charging" },
     { id: "Internet", title: "Internet & Network" },
-    
   ];
 
   return (
-    <div className="font-markot ">
-      <div className="lg:content lg:w-[834px] px-4 lg:mb-[60px] space-y-5 lg:space-y-10">
-        <p className="text-brand/black lg:text-center text-mobile/h4 lg:text-desktop/h2">
+    <div className={`font-markot ${theme === "dark" ? "bg-[#0A0C08] text-white" : "bg-white text-black"} py-10`}>
+      <div className="lg:content lg:w-[834px] px-4 lg:my-[60px] space-y-5 lg:space-y-10">
+        <p className={`text-brand/black lg:text-center text-mobile/h4 lg:text-desktop/h2 ${theme === "dark" ? "bg-[#0A0C08] text-white" : "bg-white text-black"} `}>
           Frequently Asked Questions (FAQs)
         </p>
 
@@ -79,8 +70,8 @@ const FAQ = () => {
                 onClick={() => setActiveCategory(button.id)}
                 className={`lg:text-desktop/button cursor-pointer py-[6px] px-[12px] rounded-full lg:py-4 lg:px-5 shrink-0 ${
                   activeCategory === button.id
-                    ? "bg-brand/black  text-white"
-                    : "text-brand/black border  border-b-2 border-brand/black  bg-bg/primary/1"
+                    ? `${theme === "dark" ? "bg-white text-brand/black" : "bg-black text-white"}`
+                    : `${theme === "dark" ? "border-white border text-white" : "border-black border text-black"}`
                 }`}
               >
                 {button.title}
@@ -96,9 +87,8 @@ const FAQ = () => {
                 data={item.solution}
                 title={item.problem}
                 isActive={activeAccordion === index}
-                onToggle={() =>
-                  setActiveAccordion(activeAccordion === index ? null : index)
-                }
+                onToggle={() => setActiveAccordion(activeAccordion === index ? null : index)}
+                theme={theme}  // Pass theme to Accordion
               />
             ))}
           </div>

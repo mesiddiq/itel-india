@@ -8,6 +8,8 @@ export default {
 		extend: {
 			screens: {
 				'xs': '350px',
+				'xms': '444px',
+				'4k': '2560px'
 			},
 			fontFamily: {
 			'markot': ['Mark_OT'],
@@ -121,7 +123,7 @@ export default {
 				}],
 				'desktop/caption': ['12px', {
 					lineHeight: '19.2px',
-					letterSpacing: '-0.24px',
+					letterSpacing: '0.24px',
 					fontWeight: '400'
 				}],
 				'desktop/title': ['16px', {

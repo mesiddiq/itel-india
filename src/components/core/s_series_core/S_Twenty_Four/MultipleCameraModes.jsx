@@ -3,7 +3,7 @@ const MultipleCameraModes = () => {
     <>
         <section className="font-markot h-full w-full bg-[#1c1b1b] py-[20px] px-4 lg:px-[190px]">
 
-            <div className="content flex flex-col gap-5 lg:gap-[60px]">
+            <div className="content flex flex-col items-center gap-5 lg:gap-[60px]">
 
                 {/* Top Most Text */}
                 <div className="flex flex-col gap-4 lg:gap-6 justify-center items-center">
@@ -20,21 +20,21 @@ const MultipleCameraModes = () => {
                     </span>
                 </div>
                 
-                <div className="hidden lg:flex flex-row justify-between lg:gap-[42px]">
-                    <div className="flex flex-row justify-between items-end gap-6">
-                        <img src='/smartphone/S24/superNightModeText.svg' alt='superNightModeText' className="w-[30%] "/>
-                        <img src='/smartphone/S24/superNightMode.png' alt='superNightModeImage' />
+                <div className="hidden lg:flex flex-row justify-center lg:gap-[42px]">
+                    <div className="flex flex-row justify-center items-end gap-6 lg:gap-3">
+                        <img src='/smartphone/S24/superNightModeText.svg' alt='superNightModeText' className="w-[30%] lg:w-[10%]"/>
+                        <img src='/smartphone/S24/superNightMode.png' alt='superNightModeImage' className="w-[90%]"/>
                     </div>
-                    <div className="flex flex-row justify-between items-end gap-6">
-                        <img src='/smartphone/S24/potraitMode.svg' alt='potraitModeText' className="w-[30%] "/>
-                        <img src='/smartphone/S24/potraitMode.png' alt='potraitModeImage' />
+                    <div className="flex flex-row justify-center items-end gap-6 lg:gap-3">
+                        <img src='/smartphone/S24/potraitMode.svg' alt='potraitModeText' className="w-[30%] lg:w-[10%]"/>
+                        <img src='/smartphone/S24/potraitMode.png' alt='potraitModeImage' className="w-[90%]"/>
                     </div>
                 </div>
 
-                <div className="hidden lg:flex flex-row justify-between gap-2 lg:gap-[42px] w-full">
-                    <div className="flex flex-row justify-between items-end gap-2 lg:gap-6">
+                <div className="hidden lg:flex flex-row justify-center gap-2 lg:gap-[42px] w-[90%] 2xl:w-full">
+                    <div className="flex flex-row justify-center items-end gap-2 lg:gap-6">
                         <img src='/smartphone/S24/timeLapseText.svg' alt='timeLapseText' className=""/>
-                        <img src='/smartphone/S24/timeLapse.png' alt='timeLapse' className=""/>
+                        <img src='/smartphone/S24/timeLapse.png' alt='timeLapse' className="2xl:w-[90%]"/>
                     </div>
                 </div>
 
@@ -55,8 +55,8 @@ const MultipleCameraModes = () => {
                     <img src='/smartphone/S24/timeLapseText.svg' alt='timeLapseText' className="w-[80%]"/>
                     <video autoPlay muted className="w-full">
                         <source
-                        src="https://res.cloudinary.com/djwj42mic/video/upload/v1728627747/S24_Timelapse_nxkur0.mp4"
-                        type="video/mp4"
+                        src="/videos/s24timelapse.webm"
+                        type="video/webm"
                         />
                     </video>
                     {/* <img src='/smartphone/S24/timeLapse.png' alt='timeLapse' className="h-full"/> */}

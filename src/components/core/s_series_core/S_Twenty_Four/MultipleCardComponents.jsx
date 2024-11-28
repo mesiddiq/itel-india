@@ -78,22 +78,22 @@ const MultipleCardComponents = () => {
       {/* lower-half-3-divs */}
       <section className='content font-markot lower-half-3-divs flex flex-col gap-5 justify-between'>
         
-        {/* Card 4 */}
-        <div className='group overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] bg-black h-[430px] lg:h-[451px] relative'>
-          <div className='flex flex-col gap-2 lg:justify-between lg:w-[400px] lg:h-[346px] lg:mt-0 mt-[50px]'>
-            <div className='flex flex-col gap-2 lg:gap-4'>
-              <span className='w-[300px] text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>Say Hello to Dynamic Bar</span>
-              <span className='text-mobile/small/body lg:text-desktop/body/1 text-grey/grey/4 lg:text-grey/grey/2'>Check important notifications such as battery status, incoming calls & reminders conveniently than ever before.</span>
+          {/* Card 4 */}
+          <div className='group overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] bg-black h-[430px] xms:h-[490px] md:h-[520px] lg:h-[451px] relative'>
+            <div className='flex flex-col gap-2 lg:justify-between lg:w-[400px] lg:h-[346px] lg:mt-0 mt-[50px]'>
+              <div className='flex flex-col gap-2 lg:gap-4'>
+                <span className='w-[300px] text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>Say Hello to Dynamic Bar</span>
+                <span className='text-mobile/small/body lg:text-desktop/body/1 text-grey/grey/4 lg:text-grey/grey/2'>Check important notifications such as battery status, incoming calls & reminders conveniently than ever before.</span>
+              </div>
+              <span className='text-mobile/body/large lg:text-desktop/h4 text-white'>Seamless Notification Experience</span>
             </div>
-            <span className='text-mobile/body/large lg:text-desktop/h4 text-white'>Seamless Notification Experience</span>
+            <img src="/smartphone/S24/dynamic-bar.png" alt='dynamicBar' className='scale-100 sm:scale-[70%] md:scale-100 lg:scale-[100%] absolute lg:left-[454px] xl:left-[554px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0 sm:-bottom-[12%] group-hover:scale-[110%] transition-transform duration-700'/>
           </div>
-          <img src="/smartphone/S24/dynamic-bar.png" alt='dynamicBar' className='absolute lg:left-[554px] left-1/2 transform -translate-x-1/2 lg:translate-x-0 bottom-0 group-hover:scale-[110%] transition-transform duration-700'/>
-        </div>
-        
-        <div className='w-full flex flex-col lg:flex-row gap-5'>
           
-          {/* Card 5 */}
-          <div className='flex flex-col w-full lg:w-[40%] min-h-[273px] h-[273px] lg:h-[380px] rounded-2xl bg-black p-4 lg:p-[40px] relative overflow-hidden group'>
+          <div className='w-full flex flex-col lg:flex-row gap-5'>
+          
+            {/* Card 5 */}
+            <div className='flex flex-col w-full lg:w-[40%] min-h-[273px] h-[273px] md:h-[300px] lg:h-[430px] rounded-2xl bg-black p-4 lg:p-[40px] relative overflow-hidden group'>
             <div className='flex flex-col gap-2 lg:gap-4 z-10'>
               <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>
                 Dual DTS Speaker
@@ -107,28 +107,31 @@ const MultipleCardComponents = () => {
               <img
                 src='/smartphone/S24/dualDTSSpeaker.png'
                 alt='Dual DTS Speaker'
-                className='absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110 z-0'
+                className='md:scale-[110%] lg:scale-90 xl:scale-100 absolute top-0 left-0 w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110 z-0'
               />
             </div>
 
 
             {/* Card 6 */}
             <div className='group relative overflow-hidden w-full lg:w-[60%] rounded-2xl bg-black p-5 lg:py-[42px] lg:px-[40px] lg:h-auto h-[446px]'>
-              <div className='flex flex-col gap-4 lg:justify-between lg:w-[334px] lg:h-[292px]'>
+              <div className='flex flex-col gap-4 lg:justify-between lg:w-[334px] lg:h-[292px] z-10'>
                 <div className='flex flex-col gap-2 lg:gap-4'>
                   <span className='text-mobile/h5/medium lg:text-desktop/h3 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent'>Sleek Style: Elegant Design</span>
                   <span className='text-desktop/body/2/regular lg:text-desktop/h4 text-grey/grey/2 lg:text-white'>Color Changing Technology</span>
                 </div>
-                <span className='text-desktop/body/large lg:text-desktop/h4 text-white'>Dawn White | Starry Black</span>
+                <span className='text-desktop/body/large lg:text-desktop/h4 text-white z-20'>Dawn White | Starry Black</span>
               </div>
-              <img src="/smartphone/S24/sleekStyle.png" alt='sleekStyle' className='absolute lg:right-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:w-1/2 lg:bottom-0 -bottom-5 group-hover:scale-[110%] transition-transform duration-700' />
+              <img 
+                src="/smartphone/S24/sleekStyle.png" 
+                alt='sleekStyle' 
+                className='xms:scale-[70%] sm:scale-[60%] lg:scale-100 xms:-bottom-[22%] sm:-bottom-[27%] absolute lg:right-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:w-1/2 lg:bottom-0 -bottom-5 group-hover:scale-[110%] transition-transform duration-700 z-0' />
             </div>
 
           </div>
 
-        </section>
-
       </section>
+
+    </section>
   )
 }
 

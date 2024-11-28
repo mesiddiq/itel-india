@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { toggleFilter } from '../../../redux/slice/featurePhoneSlice'
+import { toggleScreenFilter, toggleBatteryFilter, togglePriceFilter, toggleNetworkFilter } from '../../../redux/reducers/actionsFeaturephone'
 import FilterHeading from './FilterHeading'
 
 export default function Filters() {
     const dispatch = useDispatch()
-    const filters = useSelector(state => state.featurePhone.filters)
+    const filters = useSelector(state => state.filtersFeaturePhone.filtersFeaturePhone)
 
     const filterOptions = {
         screen: [
@@ -25,27 +25,23 @@ export default function Filters() {
             { value: 'above-2500', label: 'Above ₹2,500' }
         ],
         network: [
-            { value: '2G/3G', label: '2G/3G' },
+            { value: '2G', label: '2G/3G' },
             { value: '4G', label: '4G' },
         ],
     }
 
-    const handleFilterChange = (filterType, value) => {
-        dispatch(toggleFilter({ filterType, value }));
-    }
-
-    const renderFilter = (name, filterType, options) => (
+    const renderFilter = (title, filterType, options, currentValues, action) => (
         <>
             <div className="mb-6">
-                <h3 className="mb-3 text-desktop/title uppercase">{name}</h3>
+                <h3 className="mb-3 text-desktop/title uppercase">{title}</h3>
                 <div className="space-y-3">
                     {options.map(option => (
-                        <label key={option.value} className="flex items-center space-x-2">
+                        <label key={option.value} className="cursor-pointer flex items-center space-x-2">
                             <input
                                 type="checkbox"
-                                className="form-checkbox h-5 w-5  border-gray-400 rounded-sm checked:bg-red-600 checked:border-red-600"
-                                checked={filters[filterType].includes(option.value)}
-                                onChange={() => handleFilterChange(filterType, option.value)}
+                                className="form-checkbox h-5 w-5 text-red-600 bg-red-600"
+                                checked={currentValues.includes(option.value)}
+                                onChange={() => dispatch(action(option.value))}
                             />
                             <span className="text-white text-desktop/body/2/regular">{option.label}</span>
                         </label>
@@ -62,10 +58,10 @@ export default function Filters() {
                 <FilterHeading />
             </div>
             <div className='hidden lg:block'>
-                {renderFilter('Screen Size', 'screen', filterOptions.screen)}
-                {renderFilter('Battery', 'battery', filterOptions.battery)}
-                {renderFilter('Price', 'price', filterOptions.price)}
-                {renderFilter('Network', 'network', filterOptions.network)}
+                {renderFilter('Screen Size', 'screen', filterOptions.screen, filters.screen, toggleScreenFilter)}
+                {renderFilter('Battery', 'battery', filterOptions.battery, filters.battery, toggleBatteryFilter)}
+                {renderFilter('Price', 'price', filterOptions.price, filters.price, togglePriceFilter)}
+                {renderFilter('Network', 'network', filterOptions.network, filters.network, toggleNetworkFilter)}
             </div>
         </div>
     )

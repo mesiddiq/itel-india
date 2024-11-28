@@ -2,7 +2,7 @@ export const PhoneData = [
     {
         id: 'new',
         products: [
-            { id: 10, label: 'Color Pro 5G', price: '9,999.00', thumbnail:'/navbar/colorpro5g.png', link: '/product/color-pro-5g' }
+            { id: 10, label: 'Color Pro 5G', price: '8,999.00', thumbnail:'/navbar/colorpro5g.png', link: '/product/color-pro-5g' }
         ]
     },
     {
@@ -35,25 +35,25 @@ export const AccessoriesData = [
     {
         id: 'audio',
         products: [
-            { id: 1, label: 'T11 Pro', price: '1,299.00', thumbnail: '/navbar/t11pro.png', link: '' },
-            { id: 2, label: 'T31 Pro', price: '1,499.00', thumbnail: '/navbar/t31pro.png', link: '' },
-            { id: 3, label: 'Buds Ace 2', price: '1,219.00', thumbnail: '/navbar/budsace2.png', link: '' },
+            { id: 1, label: 'T11 Pro', price: '1,299.00', thumbnail: '/navbar/t11pro.png', link: '/coming-soon' },
+            { id: 2, label: 'T31 Pro', price: '1,499.00', thumbnail: '/navbar/t31pro.png', link: '/coming-soon' },
+            { id: 3, label: 'Buds Ace 2', price: '1,219.00', thumbnail: '/navbar/budsace2.png', link: '/coming-soon' },
         ]
     },
     {
         id: 'power',
         products: [
-            { id: 1, label: 'PowerGo Star 200', price: '1,399.00', thumbnail: '/navbar/star200.png', link: '' },
-            { id: 2, label: 'PowerGo Star 100PF', price: '1,099.00', thumbnail: '/navbar/star100pf.png', link: '' },
-            { id: 3, label: 'PowerGo Star 100', price: '899.00', thumbnail: '/navbar/star100.png', link: '' },
+            { id: 1, label: 'PowerGo Star 200', price: '1,399.00', thumbnail: '/navbar/star200.png', link: '/coming-soon' },
+            { id: 2, label: 'PowerGo Star 100PF', price: '1,099.00', thumbnail: '/navbar/star100pf.png', link: '/coming-soon' },
+            { id: 3, label: 'PowerGo Star 100', price: '899.00', thumbnail: '/navbar/star100.png', link: '/coming-soon' },
         ]
     },
     {
         id: 'smart devices',
         products: [
-            { id: 1, label: 'Alpha Pro', price: '1,649.00', thumbnail: '/navbar/alphapro.png', link: '' },
-            { id: 2, label: 'Unicorn', price: '2,599.00', thumbnail: '/navbar/unicorn.png', link: '' },
-            { id: 3, label: 'Unicorn Pro', price: '3,799.00', thumbnail: '/navbar/unicornpro.png', link: '' },
+            { id: 1, label: 'Alpha Pro', price: '1,649.00', thumbnail: '/navbar/alphapro.png', link: '/coming-soon' },
+            { id: 2, label: 'Unicorn', price: '2,599.00', thumbnail: '/navbar/unicorn.png', link: '/coming-soon' },
+            { id: 3, label: 'Unicorn Pro', price: '3,799.00', thumbnail: '/navbar/unicornpro.png', link: '/coming-soon' },
         ]
     },
 ]
@@ -62,13 +62,16 @@ export const TvData = [
     {
         id: 'g series',
         products: [
-            { id: 1, label: 'G50UX', price: '30,599.00', thumbnail: '/navbar/g50ux.png', link: '' }
+            { id: 1, label: 'G50UX', price: 'XX,XXX', thumbnail: '/navbar/g50ux.png', link: '/coming-soon' },
+            { id: 2, label: 'G43', price: 'XX,XXX', thumbnail: '/static_page/homepage/g43.webp', link: '/coming-soon' },
+            { id: 3, label: 'G65', price: 'XX,XXX', thumbnail: '/static_page/homepage/c65.webp', link: '/coming-soon' },
         ]
     },
     {
         id: 'c series',
         products: [
-            { id: 2, label: 'C32HX', price: '9,299.00', thumbnail: '/navbar/c32hx.png', link: '' }
+            { id: 1, label: 'C32HX', price: 'XX,XXX', thumbnail: '/navbar/c32hx.png', link: '/coming-soon' },
+            { id: 2, label: 'C43', price: 'XX,XXX', thumbnail: '/static_page/homepage/c43.webp', link: '/coming-soon' },
         ]
     },
 ]
@@ -108,4 +111,5 @@ export const PhonesData = [
     {id:'power-120',label:'Power 120',link:'/product/power-120',type:'featurephone'},
     {id:'power-450',label:'Power 450',link:'/product/power-450',type:'featurephone'},
     {id:'ace-2-power',label:'Ace 2 Power',link:'/product/ace-2-power',type:'featurephone'},
+    {id:'flip-one',label:'Flip One',link:'/product/flip-one',type:'featurephone'},
 ]

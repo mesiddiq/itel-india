@@ -1,6 +1,14 @@
-export const HeroData = {
-    title: "A50C",
-    subtitle:''
+export const HeroDataA50C = {
+    headingText: "A50 C",
+    bgDesktop: "/smartphone/smartphonehero/a50c.webp",
+    bgMobile: "/smartphone/smartphonehero/a50c_mobile.webp",
+    theme: "dark",
+    purchaseLink: "https://www.flipkart.com/itel-a50c-misty-aqua-32-gb/p/itm2032e2f53466f?pid=MOBH4HFHPP9FMYZS&lid=LSTMOBH4HFHPP9FMYZS7IQNAK&marketplace=FLIPKART&cmpid=content_mobile_8965229628_gmc",
+    description: `6.6" HD+ Display with Dynamic Bar | 4GB*(2GB+2GB*) RAM + 32GB ROM | 8MP AI Rear Camera `,
+    gradient1: "#181818",
+    gradient2: "#181818",
+    price: "5,599",
+    tagText: "awesome series"
 }
 
 export const FullSpecificationsA50C = [
@@ -92,3 +100,50 @@ export const FullSpecificationsA50C = [
         ]
     },
 ]
+
+export const ImageCarouselData = [
+    {
+        id: 1,
+        color: "Sapphire Black",
+        buttonText: "Sapphire Black",
+        buttonGradient: "bg-[#222630]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer:"",
+        bgURL: '/smartphone/A50C/carouselBG.webp',
+        images: [
+            "/smartphone/A50C/mobileBlack1.webp",
+            "/smartphone/A50C/mobileBlack2.webp",
+        ],
+    },
+    {
+        id: 2,
+        color: "green",
+        buttonText: "Misty Dawn",
+        buttonGradient: "bg-[#BACEAE]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer:"",
+        bgURL: '/smartphone/A50C/carouselBG.webp',
+        images: [
+            "/smartphone/A50C/mobileGreen1.webp",
+            "/smartphone/A50C/mobileGreen2.webp",
+        ],
+    },
+    {
+        id: 3,
+        color: "blue",
+        buttonText: "Aqua Blue",
+        buttonGradient: "bg-[#B5CDDF]",
+        colorSelectorBGColor: "",
+        colorSelectorTextColor: "text-black",
+        bgContainer:"",
+        bgURL: '/smartphone/A50C/carouselBG.webp',
+        images: [
+            "/smartphone/A50C/mobileBlue1.webp",
+            "/smartphone/A50C/mobileBlue2.webp",
+            "/smartphone/A50C/mobileBlue3.webp",
+            "/smartphone/A50C/mobileBlue4.webp",
+        ]
+    },
+];

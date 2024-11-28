@@ -4,15 +4,22 @@ import OtherCoolGears from '../../components/common/smartphone_common/OtherCoolG
 import StayInTheLoop from '../../components/common/smartphone_common/StayInTheLoop'
 import SupportChannels from '../../components/common/smartphone_common/SupportChannels'
 import FeaturePhoneSimilarProduct from '../../components/common/feature_phone_common/FeaturePhoneSimilarProduct'
+import NearestStore from '../../components/common/NearestStore'
+import Model from '../../components/common/smartphone_common/Model'
+import { FeaturePhoneModelData } from '../../data/FeaturePhoneModelData'
+import FAQ from '../../components/core/static_pages_core/Support/FAQ'
 
 const FeaturePhoneParent = () => {
     return (
         <div className='font-markot'>
             <Outlet />
-            <FeaturePhoneSimilarProduct/>
+            <Model models={FeaturePhoneModelData} />
+            <NearestStore dark={false} />
+            <FeaturePhoneSimilarProduct />
             <SupportChannels />
             <OtherCoolGears />
             <StayInTheLoop />
+            <FAQ />
         </div>
     )
 }

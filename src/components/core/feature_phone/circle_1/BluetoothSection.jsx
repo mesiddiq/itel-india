@@ -17,7 +17,7 @@ function BluetoothSection() {
 				</p>
 			</div>
 
-			<img src="/featurephone/Circle_1/Backgrounds/bluetooth_calling_phone.webp" alt="Circle 1" className="lg:max-w-6xl md:max-w-lg translate-y-6 md:translate-y-0 mx-auto" />
+			<img src="/featurephone/Circle_1/Backgrounds/bluetooth_calling_phone.webp" alt="Circle 1" className="lg:max-w-6xl md:max-w-lg max-w-[350px] translate-y-6 md:translate-y-0 mx-auto" />
 
 		</div>
 	);

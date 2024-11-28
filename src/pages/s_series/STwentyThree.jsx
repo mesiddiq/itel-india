@@ -29,9 +29,9 @@ const STwentyThree = () => {
                 bgMobile={'/smartphone/smartphonehero/s23_mobile.webp'}
                 gradient1='#ca86ff'
                 gradient2='#85e2fd'
-
+                purchaseLink="https://www.amazon.in/dp/B0C6B25FQ3?ie=UTF8&ref_=itel_Website_ProductPage"
             />
-            <StickyHeader title="S23" purchaseLink={''} icon={''} bgColor={'#181818'} />
+            <StickyHeader title="S23" purchaseLink={'https://www.amazon.in/dp/B0C6B25FQ3?ie=UTF8&ref_=itel_Website_ProductPage'} icon={''} bgColor={'#181818'} />
             <FeatureSection />
             <SliderAnimationCommon
                 text1="super series"

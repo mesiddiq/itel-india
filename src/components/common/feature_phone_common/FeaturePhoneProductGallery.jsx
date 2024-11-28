@@ -48,6 +48,7 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
                 }}
+                ref={elementRef}
             >
                 {
                     selectedData?.images.map((image, index) => (

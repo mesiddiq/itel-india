@@ -22,6 +22,7 @@ const CameraSpecifications = () => {
 
     return () => {
       if (sectionRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(sectionRef.current);
       }
     };
@@ -76,7 +77,7 @@ const CameraSpecifications = () => {
             </span>
           </motion.div>
           <motion.div
-            className="text-mobile/small/body lg:text-desktop/body/large"
+            className="text-mobile/small/body lg:text-desktop/body/large text-center"
             variants={{
               visible: { transition: { duration: 0.6 } },
               hidden: { },

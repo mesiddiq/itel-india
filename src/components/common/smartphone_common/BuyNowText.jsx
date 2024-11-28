@@ -3,7 +3,7 @@
 const BuyNowText = ({ content, color = 'black' }) => {
   return (
     <div className='font-markot flex flex-row gap-2 justify-center items-center'>
-      <span className={`text-${color} text-desktop/button lg:text-desktop/button uppercase`}>
+      <span className={`text-${color} text-mobile/button lg:text-desktop/button uppercase`}>
         { content }
       </span>
       <span>

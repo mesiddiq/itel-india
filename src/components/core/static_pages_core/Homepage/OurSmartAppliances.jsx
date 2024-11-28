@@ -8,7 +8,7 @@ const OurSmartAppliances = () => {
                 <h1 className=' text-mobile/h4  lg:text-desktop/h2 text-white'>Our Smart Appliances</h1>
                 <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 ">
 
-                   <Link to={"/commingsoon"}>
+                   <Link to={"/coming-soon"}>
                       <div className="rounded-2xl relative  overflow-hidden">
                         <div className="absolute z-50 max-w-[394px] space-y-3 top-9 left-4 lg:left-[44px]">
                             <h1 className='lg:text-desktop/h3 text-desktop/h4'>Home Care</h1>
@@ -38,7 +38,7 @@ const OurSmartAppliances = () => {
                    </Link>
 
 
-                   <Link to={"/commingsoon"}>
+                   <Link to={"/coming-soon"}>
                    <div className="rounded-2xl relative overflow-hidden">
                         <div className="absolute z-50 max-w-[394px] space-y-3 top-9 left-4 lg:left-[44px]">
                             <h1 className='lg:text-desktop/h3 text-desktop/h4'>Personal Care</h1>

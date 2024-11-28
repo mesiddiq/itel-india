@@ -12,9 +12,9 @@ const FeatureCardData = [
 
 const EntireWorld = () => {
     return (
-        <div className='px-4 md:px-0 h-[1217px] lg:h-[1440px] pt-9 lg:pt-[120px] overflow-hidden superguru4g'>
+        <div className='px-4 md:px-0 pt-9 lg:pt-[120px] overflow-hidden superguru4g'>
             <div className="flex flex-col lg:flex-row-reverse justify-between font-markot content ">
-                <div className="space-y-5 lg:space-y-[60px] max-w-[518px]">
+                <div className="space-y-5 lg:space-y-[60px] max-w-[518px] mx-auto">
                     <div className="flex flex-col gap-3 lg:gap-5">
                         <h4 className='text-[16px] font-medium leading-[19.2px]-tracking-[0.16px] uppercase'>support</h4>
                         <h4 className='text-mobile/h4 lg:font-normal lg:-tracking-[1.2px] lg:text-[60px]  lg:leading-[72px]  text-bg/primary/1'>Entire World: One Tap!</h4>
@@ -31,19 +31,19 @@ const EntireWorld = () => {
                     </div>
 
                 </div>
-                <div className="mt-8 lg:mt-0">
-                    <img src="/featurephone/superguru4g/mobilescreens.webp" alt="Guper Guru 4g" className='' />
+                <div className="mt-8 lg:mt-0 mx-auto">
+                    <img src="/featurephone/superguru4g/mobilescreens.webp" alt="Guper Guru 4g" className='max-h-[300px]' />
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row justify-between font-markot content pt-[75px] lg:pt-[214px]">
+            <div className="flex flex-col xl:flex-row justify-between font-markot content pt-[75px] lg:pt-[214px]">
                 <div className="space-y-5 lg:space-y-[60px] max-w-[518px]">
                     <div className="flex flex-col gap-3 lg:gap-5">
                         <h4 className='text-mobile/h4 lg:font-normal lg:-tracking-[1.2px] lg:text-[60px]  lg:leading-[72px]  text-bg/primary/1'>King of Media: <br /> Videos, Games, You Name it!</h4>
                         <p className='text-mobile/body/2 text-white max-w-[405px]'>Dive into the latest videos, content and preloaded games for all your entertainment cravings—your one-stop entertainment hub</p>
                     </div>
                 </div>
-                <div className="translate-y-20 lg:translate-y-6">
-                    <img src="/featurephone/superguru4g/kingmedia.webp" alt="Guper Guru 4g" className='lg:max-w-[770px]' />
+                <div className="translate-y-4">
+                    <img src="/featurephone/superguru4g/kingmedia.webp" alt="Guper Guru 4g" className='lg:max-w-[770px] max-w-[320px]' />
                 </div>
             </div>
         </div>

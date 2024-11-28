@@ -1,18 +1,18 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
 import { useState } from 'react';
 import { MdCurrencyRupee } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
 
 // import './styles.css';
 
@@ -36,7 +36,6 @@ const Banner1 = ({ activeSlide }) => {
                     loop
                     src="/videos/homepage/herobanner1_mobile.webm" className='w-full object-cover h-full scale-110 absolute top-0 md:hidden'
                 />
-                {/* <img src="https://res.cloudinary.com/djwj42mic/image/upload/v1729920397/Hero_Banner_1_gzgabw.gif" alt="" className='w-full object-cover h-full  absolute top-0 md:hidden' /> */}
                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
                     <div className="space-y-4 lg:space-y-0">
                         <motion.h1
@@ -50,15 +49,17 @@ const Banner1 = ({ activeSlide }) => {
                             transition={{ duration: 1, delay: 0.2 }}
                             className="space-y-2">
                             <h5 className='lg:text-desktop/subtitle text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
-                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold'>&#8377; 6,990 /-</h2>
+                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><MdCurrencyRupee /> 6,990 /-</h2>
                         </motion.div>
-                        <motion.button
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }}
-                        >
-                            <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28' />
-                        </motion.button>
+                        <Link to={'/smartphones'}>
+                            <motion.button
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.2 }}
+                            >
+                                <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
+                            </motion.button>
+                        </Link>
                     </div>
                 </div>
             </motion.div>
@@ -133,8 +134,9 @@ const ColorPro5g = () => {
                     className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#BA69F6] rounded-[24px] px-[6px] py-[2px] text-white font-bricolage' >
                     featured
                 </motion.h3>
-                <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">Illuminate with Every hue with <br />
-                    IVCO itel Vivid Color Technology</p>
+                <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">IVCO itel Vivid Color Technology
+5G Network Connectivity | <br /> 12GB* (6GB+6GB)/
+8GB* (4GB+4GB) RAM + 128GB ROM</p>
                 <img src="/static_page/homepage/colorpro5gtext.svg" alt="Color Pro 5g" className='absolute lg:top-10 top-14 -left-10 lg:-left-24 -z-[1] max-w-[300px] lg:max-w-max' />
                 <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center lg:mt-14 mt-3'>
                     <span>
@@ -259,7 +261,6 @@ const HeroSection = () => {
             loop
             modules={[Pagination, Autoplay]}
             onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
-
             className="max-h-screen w-full "
         >
 
