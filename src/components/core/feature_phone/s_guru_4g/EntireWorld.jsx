@@ -38,7 +38,11 @@ const EntireWorld = () => {
             <div className="flex flex-col xl:flex-row justify-between font-markot content pt-[75px] lg:pt-[214px]">
                 <div className="space-y-5 lg:space-y-[60px] max-w-[518px]">
                     <div className="flex flex-col gap-3 lg:gap-5">
-                        <h4 className='text-mobile/h4 lg:font-normal lg:-tracking-[1.2px] lg:text-[60px]  lg:leading-[72px]  text-bg/primary/1'>King of Media: <br /> Videos, Games, You Name it!</h4>
+                        <h4 className='text-mobile/h4 lg:font-normal lg:-tracking-[1.2px] lg:text-[60px]  lg:leading-[72px]  text-bg/primary/1'>
+                            <span className='font-extrabold'>
+                                King of Media
+                            </span>
+                            <br /> Videos, Games, You Name it!</h4>
                         <p className='text-mobile/body/2 text-white max-w-[405px]'>Dive into the latest videos, content and preloaded games for all your entertainment cravings—your one-stop entertainment hub</p>
                     </div>
                 </div>

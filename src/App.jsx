@@ -102,14 +102,14 @@ function App() {
 					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 					<Route path='/support/faqs' element={<FAQ />} />
 					<Route path='/investor' element={<Investor />} />
-					<Route path='/coming-soon' element={<Commingsoon />} />
-					<Route path='/thankyou' element={<Thankyou />} />
-					<Route path='/blogs/:id' element={<Blog />} />
-					<Route path='/blogs' element={<BlogListing />} />
-					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy />} />
-					<Route path='/terms-of-use-itel-mobile-india' element={<Terms />} />
-					<Route path='/store-locator' element={<Storelocator />} />
-
+					<Route path='/coming-soon' element={<Commingsoon/>} />
+					<Route path='/thankyou' element={<Thankyou/>} />
+					<Route path='/blog/:id' element={<Blog/>} />
+					<Route path='/blogs' element={<BlogListing/>} />
+					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
+					<Route path='/terms-of-use-itel-mobile-india' element={<Terms/>} />
+					<Route path='/store-locator' element={<Storelocator/>} />
+                    
 
 
 					{/* ***************************************************************************************************/}

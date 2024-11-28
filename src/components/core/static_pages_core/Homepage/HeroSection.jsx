@@ -134,9 +134,8 @@ const ColorPro5g = () => {
                     className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#BA69F6] rounded-[24px] px-[6px] py-[2px] text-white font-bricolage' >
                     featured
                 </motion.h3>
-                <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">IVCO itel Vivid Color Technology
-5G Network Connectivity | <br /> 12GB* (6GB+6GB)/
-8GB* (4GB+4GB) RAM + 128GB ROM</p>
+                <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">IVCO itel Vivid Color Technology |
+5G Network Connectivity | <br /> 12GB/8GB* RAM + 128GB ROM</p>
                 <img src="/static_page/homepage/colorpro5gtext.svg" alt="Color Pro 5g" className='absolute lg:top-10 top-14 -left-10 lg:-left-24 -z-[1] max-w-[300px] lg:max-w-max' />
                 <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center lg:mt-14 mt-3'>
                     <span>
@@ -284,7 +283,7 @@ const HeroSection = () => {
             {/* *************** Slide 3************************* */}
 
             <SwiperSlide>
-                <Banner3 activeSlide={activeSlide} />
+                <Banner4 activeSlide={activeSlide} />
             </SwiperSlide>
 
             {/* *************** Slide 4************************* */}
@@ -292,7 +291,7 @@ const HeroSection = () => {
           
 
             <SwiperSlide>
-                <Banner4 activeSlide={activeSlide} />
+                <Banner3 activeSlide={activeSlide} />
             </SwiperSlide>
         </Swiper >
     )
