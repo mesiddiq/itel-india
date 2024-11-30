@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Helmet } from 'react-helmet'
 const Thankyou = () => {
   return (
     <div className=' lg:bg-[url("/static_page/contactus/Form%20BG.webp")]   bg-[url("/static_page/contactus/Form%20BG%20Mobile.webp")]  flex justify-center items-center  min-h-[837px] bg-cover bg-center rounded-2xl'>
