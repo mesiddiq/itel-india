@@ -503,18 +503,7 @@
           "6. If the problem persists, visit your local customer service center for further assistance."
         ]
       },
-      {
-        problem:"",
-        solution:[
-
-        ]
-      },
-      {
-        problem:"",
-        solution:[
-
-        ]
-      },
+      
     ],
     Internet: [
       {
@@ -664,12 +653,7 @@
 
         ]
       },
-      {
-        problem:"",
-        solution:[
-
-        ]
-      },
+      
     ],
     Other: [
       {
@@ -944,13 +928,7 @@
 
       },
      
-       {
-        problem:"",
-        solution:[
-
-        ]
-
-      },
+      
       
     ],
   };

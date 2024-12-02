@@ -46,7 +46,7 @@ const Footer = () => {
                                     <input type="email" onChange={(e) => setEmail(e.target.value)} name="email" id="email" className='lg:text-desktop/body/2/regular bg-transparent text-white w-full outline-none border-none' placeholder='Enter your email address' />
                                     <button onClick={handleSubmit} type="submit" className='absolute right-2'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4864 17.5L11.091 15.2148L9.72181 16.3628L9.1657 13.9189L15.0954 8.72567L7.98554 12.8097L4.63672 10.3935L17.6367 6.5L14.4864 17.5Z" fill="#FFFEF2" />
+                                            <path fillRule="evenodd" clip-rule="evenodd" d="M14.4864 17.5L11.091 15.2148L9.72181 16.3628L9.1657 13.9189L15.0954 8.72567L7.98554 12.8097L4.63672 10.3935L17.6367 6.5L14.4864 17.5Z" fill="#FFFEF2" />
                                         </svg>
                                     </button>
                                 </label>
@@ -135,10 +135,10 @@ const Footer = () => {
                             &copy; 2021 itel. All right reserved
                         </p>
                         <div className="gap-11 flex">
-                            <Link to={'/'} className="text-desktop/caption text-[#A3A89F]">
+                            <Link to={'/privacy-policy-itel-mobile-india'} className="text-desktop/caption text-[#A3A89F]">
                                 Privacy Policy
                             </Link>
-                            <Link to={'/'} className="text-desktop/caption text-[#A3A89F]">
+                            <Link to={'/terms-of-use-itel-mobile-india'} className="text-desktop/caption text-[#A3A89F]">
                                 Terms of service
                             </Link>
                         </div>

@@ -1,7 +1,7 @@
 
 import FeatureRich from "../../components/common/feature_phone_common/FeatureRich"
 import A05ColorImageCarausel from "../../components/core/a_series_core/a05/A05ColorImageCarausel"
-import StickyHeader from "../../components/core/a_series_core/a05/A05StickyHeader"
+import StickyHeader from "../../components/common/StickyHeader"
 import A05Video from "../../components/core/a_series_core/a05/A05Video"
 import First from "../../components/core/a_series_core/a05/First"
 import Second from "../../components/core/a_series_core/a05/Second"
@@ -31,7 +31,7 @@ export default function A05() {
         price="6,499"
         tagText="awesome series"
       />
-      <StickyHeader bgColor="#fff" title="A05s" icon="/smartphone/a05/logos/a05StickyIcon.png" purchaseLink={'https://www.flipkart.com/itel-a05s-orange-orange-32-gb/p/itmf0a5403570bdd'} />
+      <StickyHeader bgColor="#fff" title="A05s" icon="/smartphone/a05/logos/a05StickyIcon.png" purchaseLink={'https://www.flipkart.com/itel-a05s-orange-orange-32-gb/p/itmf0a5403570bdd'} dark={true}/>
       <FeatureRich {...a05FeatureRichData} />
       <A05Video />
       <img src="/smartphone/a05/moblePatterns.png" alt="mobilePatterns" className="flex lg:hidden w-full" />

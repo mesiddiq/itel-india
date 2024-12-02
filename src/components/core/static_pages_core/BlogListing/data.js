@@ -1,6 +1,6 @@
 export const data = [
   {
-    id: "1",
+    id: 1,
     title: "itel's Color Pro 5G with Groundbreaking IVCO Technology",
     img: "/static_page/BlogListing/Earbuds-2-1000x565.png",
 
@@ -37,7 +37,7 @@ export const data = [
  
  
   {
-    id: "2",
+    id: 2,
     title: " itel Feature Phones: Bridging the Digital Divide",
     img: "/static_page/BlogListing/52062d59-9090-4635-bbc3-96e14f47d266-1000x565.jpeg",
 
@@ -55,7 +55,7 @@ export const data = [
     ],
   },
   {
-    id: "3",
+    id: 3,
     title: " itel Feature Phones: Bridging the Digital Divide",
  
     img: "/static_page/BlogListing/ItelBrandFilm2023-1000x565.jpg",

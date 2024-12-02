@@ -1,7 +1,7 @@
 export const HeroDataFlipOne = {
     title: "Flip One",
     subtitle: 'Leather Premium Design | Type-C Charging | BT Caller',
-    purchaseLink: 'https://amzn.in/d/4wGKrhY',
+    purchaseLink: 'https://www.flipkart.com/itel-flip-1/p/itmde2c8f62e94f3',
     phoneUrl: '/featurephone/flipOne/phone_hero.webp',
     bgDesktop: '/featurephone/flipOne/hero_banner.svg',
     bgMobile: '/featurephone/flipOne/hero_banner_mobile.svg',
@@ -91,17 +91,17 @@ export const FeatureRichDataFlipOne = {
     description: `Experience nostalgia with a modern twist with our premium flip phone. Crafted with a classic leather design and a vibrant OVGA display, it’s elegance in your hands. Compact yet stylish, it’s perfect for those who want to flip it like a boss. Rediscover the joy of flipping open a phone with unmatched flair.`,
     cards: [
         {
-            icon: '/featurephone/common/battery-full-red.svg',
+            icon: '/featurephone/common/slick-red.svg',
             title: 'Premium Leather Design: Blend of Luxury ',
             description: `The leather finish not only looks stunning but also offers exceptional protection for the phone and a secure grip.`
         },
         {
-            icon: '/featurephone/common/user-red.svg',
+            icon: '/featurephone/common/usb-red.svg',
             title: 'Type-C Charging: Power up with Efficiency  ',
             description: `Experience fast and convenient charging with Type-C on Flip One, combining modern efficiency with classic design. `
         },
         {
-            icon: '/featurephone/common/king-voice-red.svg',
+            icon: '/featurephone/common/bluetooth-red.svg',
             title: `BT Caller: Communication Redefined`,
             description: `Connect your smartphone with BT caller - Now you can operate all smartphone calls using Flip One. `
         },

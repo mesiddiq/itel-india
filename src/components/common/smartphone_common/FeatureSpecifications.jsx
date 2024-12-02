@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const FeatureSpecifications = ({featureMetric, featureMetricDescription}) => {
   return (
-    <div className='flex flex-col gap-[4px] lg:gap-2 items-start lg:items-start '>
+    <div className='flex flex-col gap-[4px] lg:gap-2 items-center lg:items-start '>
         <span className='font-markot opacity-80 text-mobile/h6 lg:text-desktop/h3'>
             {featureMetric}
         </span>

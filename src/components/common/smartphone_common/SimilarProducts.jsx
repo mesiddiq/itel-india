@@ -37,9 +37,9 @@ function SimilarProducts({ theme = 'light' }) {
 
   return (
     <section className={` font-markot z-0  items-center px-2 md:px-0 pb-32 max-w-full ${isLightTheme ? 'bg-white' : 'bg-[#0A0C08]'}`}>
-        <div className="flex flex-col gap-6 max-w-full content py-10 ">
+        <div className="flex flex-col gap-6 content py-10 ">
           <h2 className={`text-mobile/h4 text-center md:text-start md:text-desktop/h3 ${isLightTheme ? 'text-black' : 'text-white'} px-8 md:px-2`}>
-            Similar Productss
+            Similar Products
           </h2>
           <div className="grid grid-cols-2  w-full  lg:mx-0 lg:grid-cols-4 gap-[6px] md:gap-[14px] justify-center">
             {products.map((product, index) => (
