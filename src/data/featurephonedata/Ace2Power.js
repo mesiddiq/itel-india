@@ -51,8 +51,8 @@ export const FullSpecificationsDataAce2Power = [
         id: 5,
         label: 'Memory & Storage',
         data: [
-            { label: 'ROM', value: '32 MB' },
-            { label: 'RAM', value: '32 MB' },
+            { label: 'ROM', value: '4 MB' },
+            { label: 'RAM', value: '4 MB' },
             { label: 'Chipset', value: 'SC6531E' },
             { label: 'Expandable Memory', value: 'Upto 32GB' },
             { label: 'Phonebook', value: '1000' },

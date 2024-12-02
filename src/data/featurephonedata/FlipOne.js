@@ -17,8 +17,8 @@ export const FullSpecificationsDataFlipOne = [
             { label: 'Display', value: '2.4"' },
             { label: 'Battery', value: '1200 mAh' },
             { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada & Malayalam & Punjabi)' },
-            { label: 'Phonebook', value: '500' },
-            { label: 'Message', value: '200' },
+            { label: 'Phonebook', value: '2000' },
+            { label: 'Message', value: '500' },
         ]
     },
     {
@@ -26,9 +26,9 @@ export const FullSpecificationsDataFlipOne = [
         label: 'Display Features',
         data: [
             { label: 'Display Size', value: '3.35 cm (1.32")' },
-            { label: 'Resolution', value: '128*128' },
+            { label: 'Resolution', value: '320*240' },
             { label: 'Resolution Type', value: 'QQVGA' },
-            { label: 'Pixel Density', value: '137 ppi' },
+            { label: 'Pixel Density', value: '167 ppi' },
         ]
     },
     {
@@ -37,8 +37,6 @@ export const FullSpecificationsDataFlipOne = [
         data: [
             { label: 'Battery Capacity', value: '1200 mAh' },
             { label: 'Battery Type', value: 'Li-ion' },
-            { label: 'Battery Backup', value: '212.7 Hours' },
-            { label: 'Talktime', value: '7.75 Hours' },
         ]
     },
     {

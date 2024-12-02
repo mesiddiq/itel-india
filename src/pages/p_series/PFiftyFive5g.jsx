@@ -28,9 +28,9 @@ const PFiftyFive = () => {
   return (
     <>
      <Helmet>
-                <title>P55 5g</title>
+                <title>P55 5G</title>
                 <meta name="description" content={` The powerful itel P55 5G is one of the best phones under ₹12,000, featuring a superfast MediaTek Dimensity 6080 processor, a stunning 6.6" HD+ IPS display, and a robust 5000mAh battery with 18W fast charging. This chic 5G smartphone offers up to 12GB* (6GB+6GB*) RAM, 128GB storage, and a high-camera mobile setup with a 50MP AI Dual Rear and 8MP Selfie Camera. With enhanced security, an elegant design, and a Type-C charger, the itel P55 5G stands out among the latest itel smartphones.`} />
-                <meta name="keywords" content="itel P55 5g,itel P55 +,itel P55 5g smartphone,itel P55 5g mobile price,itel P55 5g phone,itel P55 Plus,itel P55 5g mobile,itel P55 mobile 5g" />
+                <meta name="keywords" content="itel P55 5G,itel P55 +,itel P55 5G smartphone,itel P55 5G mobile price,itel P55 5G phone,itel P55 Plus,itel P55 5G mobile,itel P55 mobile 5G" />
             </Helmet>
       <HeroSmartPhoneCommon
        headingText='P55 5G'
@@ -43,7 +43,7 @@ const PFiftyFive = () => {
         tagText={'power-series'}
          purchaseLink="https://www.amazon.in/dp/B0CHJN2HNZ"
       />
-       <StickyHeader bgColor={'#013EA3'} textColor={true} title={'P55 5g'} purchaseLink="https://www.amazon.in/dp/B0CHJN2HNZ" />
+       <StickyHeader bgColor={'#013EA3'} textColor={true} title={'P55 5G'} purchaseLink="https://www.amazon.in/dp/B0CHJN2HNZ" />
       <About />
       <SliderAnimationCommon
         bgColor={'#000032'}

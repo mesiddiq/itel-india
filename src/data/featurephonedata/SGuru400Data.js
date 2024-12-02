@@ -82,7 +82,7 @@ export const FullSpecificationsDataSuperGuru400 = [
         id: 7,
         label: 'Additional',
         data: [
-            { label: 'Languages', value: '9 (English, Hindi, Gujarati, Telugu, Tamil, Punjabi ,Kannada, Malayalam, Bengali)sh, Hindi, Gujarati, Telugu, Tamil, Punjabi, Kannada, Malayalam, Bengali, Oriya, Assamese, Marathi, Urdu)' },
+            { label: 'Languages', value: '9 (English, Hindi, Gujarati, Telugu, Tamil, Punjabi ,Kannada, Malayalam, Bengali)' },
             { label: 'Accessories', value: 'Charger & Battery' }
         ]
     },

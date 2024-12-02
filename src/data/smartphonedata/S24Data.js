@@ -38,7 +38,7 @@ export const FullSpecificationsS24 = [
         label:'OS & Processor',
         data:[
             {label:'Operating System',value:'Android 13'},
-            {label:'Chipset',value:'Unisoc'},
+            {label:'Chipset',value:'MediaTek Helio G91'},
             {label:'Processor Core',value:'Hexa Core'},
         ]
     },

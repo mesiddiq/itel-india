@@ -28,7 +28,7 @@ export const FullSpecificationsDatait2175p = [
         data: [
             { label: 'Display Size', value: '5.08cm (2")' },
             { label: 'Resolution', value: '128 x 160' },
-            { label: 'Resolution Type', value: 'QQVGA' },
+            { label: 'Resolution Type', value: 'QVGA' },
             { label: 'Pixel Density', value: '102 PPI' },
         ]
     },
