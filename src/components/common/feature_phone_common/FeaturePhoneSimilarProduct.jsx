@@ -8,25 +8,25 @@ function FeaturePhoneSimilarProduct({ theme = 'light' }) {
         {
             name: 'it5027',
             price: '1,099.00',
-            image: '/featurephone/it5027/Backgrounds/phone_hero.webp',
+            image: '/featurephone/it5027/Backgrounds/it5027.webp',
             link: '/product/it5027'
         },
         {
             name: 'it5330',
             price: '1,499.00',
-            image: '/featurephone/it5330/Backgrounds/phone_hero.webp',
+            image: '/featurephone/it5330/Backgrounds/techspecs.webp',
             link: '/product/it5330'
         },
         {
             name: 'Circle 1',
             price: '1,499.00',
-            image: '/featurephone/Circle_1/Backgrounds/hero.webp',
+            image: '/featurephone/Circle_1/Backgrounds/circle+1.webp',
             link: '/product/circle-1'
         },
         {
             name: 'Power 120',
             price: '1,249.00',
-            image: '/featurephone/Power_120/Backgrounds/hero_mobile.webp',
+            image: '/featurephone/Power_120/Backgrounds/Power+120.webp',
             link: '/product/power-120'
         },
     ];

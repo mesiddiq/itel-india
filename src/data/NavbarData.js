@@ -2,31 +2,31 @@ export const PhoneData = [
     {
         id: 'new',
         products: [
-            { id: 10, label: 'Color Pro 5G', price: '8,999.00', thumbnail:'/navbar/colorpro5g.png', link: '/product/color-pro-5g' }
+            { id: 10, label: 'Color Pro 5G', price: '8,999.00', thumbnail:'/navbar/colorpro5g.webp', link: '/product/color-pro-5g' }
         ]
     },
     {
         id: 's-series',
         products: [
             { id: 3, label: 'S24', price: '8,199.00', thumbnail: '/navbar/s24.png', link: '/product/s24' },
-            { id: 2, label: 'S23+', price: '12,999.00',thumbnail: '/navbar/s23p.png', link: '/product/s23-plus' },
-            { id: 1, label: 'S23', price: '10,999.09', thumbnail: '/navbar/s23.png', link: '/product/s23' },
+            { id: 2, label: 'S23+', price: '12,999.00',thumbnail: '/navbar/s23p.webp', link: '/product/s23-plus' },
+            { id: 1, label: 'S23', price: '10,999.09', thumbnail: '/navbar/s23.webp', link: '/product/s23' },
         ]
     },
     {
         id: 'p-series',
         products: [
             { id: 4, label: 'P55 5G', price: '9,999.00',thumbnail: '/navbar/p555g.png', link: '/product/p55' },
-            { id: 5, label: 'P55+', price: '9,499.00',thumbnail: '/navbar/p55p.png', link: '/product/p55-plus' },
-            { id: 6, label: 'P55 T', price: '7,999.00',thumbnail: '/navbar/p55t.png', link: '/product/p55t' },
+            { id: 5, label: 'P55+', price: '9,499.00',thumbnail: '/navbar/p55p.webp', link: '/product/p55-plus' },
+            { id: 6, label: 'P55 T', price: '7,999.00',thumbnail: '/navbar/p55t.webp', link: '/product/p55t' },
         ]
     },
     {
         id: 'a-series',
         products: [
-            { id: 7, label: 'A70', price: '6,299.00', thumbnail: '/navbar/a70.png', link: '/product/a70' },
-            { id: 8, label: 'A50', price: '6,499.00', thumbnail: '/navbar/a50.png', link: '/product/a50' },
-            { id: 9, label: 'A50C', price: '5,599.00', thumbnail: '/navbar/a50c.png', link: '/product/a50-c' },
+            { id: 7, label: 'A70', price: '6,299.00', thumbnail: '/navbar/a70.webp', link: '/product/a70' },
+            { id: 8, label: 'A50', price: '6,499.00', thumbnail: '/navbar/a50.webp', link: '/product/a50' },
+            { id: 9, label: 'A50C', price: '5,599.00', thumbnail: '/navbar/a50c.webp', link: '/product/a50-c' },
         ]
     },
 ]

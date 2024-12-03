@@ -1,7 +1,7 @@
 export const SmartPhoneModelData = [
     {
         id: 1,
-        image: '/smartphone/P555g/bg6.png',
+        image: '/smartphone/P555g/bg6.webp',
         title: 'S23+',
         price: '12,999.00',
         path: '/product/s23-plus',
