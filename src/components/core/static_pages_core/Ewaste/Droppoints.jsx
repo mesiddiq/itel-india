@@ -379,46 +379,49 @@ const Droppoints = () => {
 
   return (
     <>
-      {showpannel && (
-        <div className="font-markot bg-opacity-30 p-10 flex flex-col items-center absolute justify-center w-full max-h-screen">
-          <div className="w-[990px] flex justify-end">
-            <img
-              className="cursor-pointer"
-              onClick={() => setshowpannel(false)}
-              src="/add.png"
-              alt=""
-            />
-          </div>
-          <div className="w-[990px] rounded-2xl border  h-full">
-            <div className="py-4 gap-5 border px-5 bg-bg/primary/1 flex text-desktop/subtitle text-[#333333]">
-              <p className="w-[31px]">S.N</p>
-              <p className="w-[150px]">ASP Name</p>
-              <p className="w-[457px]">Address</p>
-              <p className="w-[120px]">City</p>
-              <p className="w-[128px]">State Name</p>
-            </div>
+    {showpannel && (
+  <div   style={{ backdropFilter: "blur(8px)" }} className="font-markot bg-opacity-30 p-4 sm:p-6 lg:p-10 flex flex-col items-center absolute justify-center w-full h-screen">
+    <div  className="w-full sm:w-[990px] flex justify-end">
+      <img
+        className="cursor-pointer"
+        onClick={() => setshowpannel(false)}
+        src="/add.png"
+        alt="Close"
+      />
+    </div>
+    <div className="w-full sm:w-[990px] rounded-2xl border h-full">
+      <div className="py-4 gap-5 border px-5 bg-bg/primary/1 flex text-desktop/subtitle text-[#333333]">
+        <p className="w-[31px] sm:w-[40px]">S.N</p>
+        <p className="w-[150px] sm:w-[180px]">ASP Name</p>
+        <p className="w-[457px] sm:w-[400px]">Address</p>
+        <p className="w-[120px] sm:w-[140px]">City</p>
+        <p className="w-[128px] sm:w-[150px]">State Name</p>
+      </div>
 
-            {filteredData.length > 0 ? (
-              filteredData.map((data, index) => (
-                <div
-                  className="bg-white py-4 gap-5 border px-5 flex text-desktop/body/2/regular text-[#333333]"
-                  key={index}
-                >
-                  <p className="w-[31px]">0{data.id}</p>
-                  <p className="w-[150px]">{data.name}</p>
-                  <p className="w-[457px]">{data.address}</p>
-                  <p className="w-[120px]">{data.city}</p>
-                  <p className="w-[128px]">{data.state}</p>
-                </div>
-              ))
-            ) : (
-              <div className="py-4 px-5 text-desktop/body/2/regular text-[#333333]">
-                No data found for the selected city.
-              </div>
-            )}
+      <div className="overflow-x-auto border bg-white">
+        {filteredData.length > 0 ? (
+          filteredData.map((data, index) => (
+            <div
+              className=" w-full py-4 gap-5  px-5 flex text-desktop/body/2/regular text-[#333333]"
+              key={index}
+            >
+              <p className="w-[31px] sm:w-[40px]">0{data.id}</p>
+              <p className="w-[150px] sm:w-[180px]">{data.name}</p>
+              <p className="w-[457px] sm:w-[400px]">{data.address}</p>
+              <p className="w-[120px] sm:w-[140px]">{data.city}</p>
+              <p className="w-[128px] sm:w-[150px]">{data.state}</p>
+            </div>
+          ))
+        ) : (
+          <div className="py-4 px-5 text-desktop/body/2/regular text-[#333333]">
+            No data found for the selected city.
           </div>
-        </div>
-      )}
+        )}
+      </div>
+    </div>
+  </div>
+)}
+
 
       <div className="font-markot">
         <div className="px-3 space-y-9 content">
