@@ -62,16 +62,16 @@ export const TvData = [
     {
         id: 'g series',
         products: [
-            { id: 1, label: 'G50UX', price: 'XX,XXX', thumbnail: '/navbar/g50ux.png', link: '/coming-soon' },
-            { id: 2, label: 'G43', price: 'XX,XXX', thumbnail: '/static_page/homepage/g43.webp', link: '/coming-soon' },
-            { id: 3, label: 'G65', price: 'XX,XXX', thumbnail: '/static_page/homepage/c65.webp', link: '/coming-soon' },
+            { id: 1, label: 'G50UX', price: '0', thumbnail: '/navbar/g50ux.png', link: '/coming-soon' },
+            { id: 2, label: 'G43', price: '0', thumbnail: '/static_page/homepage/g43.webp', link: '/coming-soon' },
+            { id: 3, label: 'G65', price: '0', thumbnail: '/static_page/homepage/c65.webp', link: '/coming-soon' },
         ]
     },
     {
         id: 'c series',
         products: [
-            { id: 1, label: 'C32HX', price: 'XX,XXX', thumbnail: '/navbar/c32hx.png', link: '/coming-soon' },
-            { id: 2, label: 'C43', price: 'XX,XXX', thumbnail: '/static_page/homepage/c43.webp', link: '/coming-soon' },
+            { id: 1, label: 'C32HX', price: '0', thumbnail: '/navbar/c32hx.png', link: '/coming-soon' },
+            { id: 2, label: 'C43', price: '0', thumbnail: '/static_page/homepage/c43.webp', link: '/coming-soon' },
         ]
     },
 ]

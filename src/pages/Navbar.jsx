@@ -41,8 +41,16 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
                 <div className="flex flex-col gap-4">
                     <h1 className="text-desktop/body/large">{label}</h1>
                     <h1 className="text-desktop/button text-left flex items-center">
-                        <MdCurrencyRupee />
-                        {price}</h1>
+                        {
+                            price == '0' ?
+                                'Coming Soon'
+                                :
+                                <>
+                                    <MdCurrencyRupee />
+                                    {price}
+                                </>
+                        }
+                    </h1>
                 </div>
             </div>
         </Link>
@@ -202,10 +210,6 @@ const TvDropDown = ({ tv }) => {
                             ))
                         }
                     </div>
-                    {/* <div className="flex gap-2 items-center justify-end">
-                        <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
-                        <ArrowRight />
-                    </div> */}
                 </div>
             </div>
         </div>

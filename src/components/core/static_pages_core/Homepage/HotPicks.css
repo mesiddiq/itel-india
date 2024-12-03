@@ -1,0 +1,19 @@
+.react-tabs__tab--selected{
+    background: none !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.react-tabs__tab--selected::after{
+    background:none !important;
+    height: 0 !important;
+    border: none !important;
+}
+
+.react-tabs__tab-list{
+    border: none !important;
+}
+
+.react-tabs__tab{
+    padding: 0 !important;
+}

@@ -41,7 +41,7 @@ export const AllFeaturePhoneData = [
         features: {
             hasKingVoice: false,
             hasPowerKeypad: true,
-            hasUPI: true,
+            hasUPI: false,
             hasBluetooth: true
         }
     },
