@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 const Droppoints = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
@@ -377,51 +377,70 @@ const Droppoints = () => {
     }
   };
 
+  useEffect(() => {
+    if (showpannel) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup function to reset overflow when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showpannel]);
+
   return (
     <>
-    {showpannel && (
-  <div   style={{ backdropFilter: "blur(8px)" }} className="font-markot bg-opacity-30 p-4 sm:p-6 lg:p-10 flex flex-col items-center absolute justify-center w-full h-screen">
-    <div  className="w-full sm:w-[990px] flex justify-end">
-      <img
-        className="cursor-pointer"
-        onClick={() => setshowpannel(false)}
-        src="/add.png"
-        alt="Close"
-      />
-    </div>
-    <div className="w-full sm:w-[990px] rounded-2xl border h-full">
-      <div className="py-4 gap-5 border px-5 bg-bg/primary/1 flex text-desktop/subtitle text-[#333333]">
-        <p className="w-[31px] sm:w-[40px]">S.N</p>
-        <p className="w-[150px] sm:w-[180px]">ASP Name</p>
-        <p className="w-[457px] sm:w-[400px]">Address</p>
-        <p className="w-[120px] sm:w-[140px]">City</p>
-        <p className="w-[128px] sm:w-[150px]">State Name</p>
-      </div>
-
-      <div className="overflow-x-auto border bg-white">
-        {filteredData.length > 0 ? (
-          filteredData.map((data, index) => (
-            <div
-              className=" w-full py-4 gap-5  px-5 flex text-desktop/body/2/regular text-[#333333]"
-              key={index}
-            >
-              <p className="w-[31px] sm:w-[40px]">0{data.id}</p>
-              <p className="w-[150px] sm:w-[180px]">{data.name}</p>
-              <p className="w-[457px] sm:w-[400px]">{data.address}</p>
-              <p className="w-[120px] sm:w-[140px]">{data.city}</p>
-              <p className="w-[128px] sm:w-[150px]">{data.state}</p>
-            </div>
-          ))
-        ) : (
-          <div className="py-4 px-5 text-desktop/body/2/regular text-[#333333]">
-            No data found for the selected city.
+      {showpannel && (
+        <div
+          onClick={() => setshowpannel(false)}
+          style={{ backdropFilter: "blur(8px)" }}
+          className="font-markot bg-opacity-30 p-4 sm:p-6 lg:p-10 flex flex-col items-center absolute justify-center w-full h-screen"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="w-full sm:w-[990px] flex justify-end"
+          >
+            <img
+              className="cursor-pointer"
+              onClick={() => setshowpannel(false)}
+              src="/add.png"
+              alt="Close"
+            />
           </div>
-        )}
-      </div>
-    </div>
-  </div>
-)}
+          <div className="w-full sm:w-[990px] rounded-2xl border h-full">
+            <div className="py-4 gap-5 border px-5 bg-bg/primary/1 flex text-desktop/subtitle text-[#333333]">
+              <p className="w-[31px] sm:w-[40px]">S.N</p>
+              <p className="w-[150px] sm:w-[180px]">ASP Name</p>
+              <p className="w-[457px] sm:w-[400px]">Address</p>
+              <p className="w-[120px] sm:w-[140px]">City</p>
+              <p className="w-[128px] sm:w-[150px]">State Name</p>
+            </div>
 
+            <div className="overflow-x-auto border bg-white">
+              {filteredData.length > 0 ? (
+                filteredData.map((data, index) => (
+                  <div
+                    className="w-full py-4 gap-5 px-5 flex text-desktop/body/2/regular text-[#333333]"
+                    key={index}
+                  >
+                    <p className="w-[31px] sm:w-[40px]">0{data.id}</p>
+                    <p className="w-[150px] sm:w-[180px]">{data.name}</p>
+                    <p className="w-[457px] sm:w-[400px]">{data.address}</p>
+                    <p className="w-[120px] sm:w-[140px]">{data.city}</p>
+                    <p className="w-[128px] sm:w-[150px]">{data.state}</p>
+                  </div>
+                ))
+              ) : (
+                <div className="py-4 px-5 text-desktop/body/2/regular text-[#333333]">
+                  No data found for the selected city.
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="font-markot">
         <div className="px-3 space-y-9 content">
@@ -487,7 +506,11 @@ const Droppoints = () => {
               className="w-full lg:w-[220px] bg-[#1A1A1A] lg:text-desktop/button text-mobile/button text-white py-3 px-8 rounded-full hover:bg-white hover:text-black hover:shadow-2xl hover:border hover:border-black transition duration-300 flex items-center justify-center"
             >
               SEARCH
-              <img className="lg:w-[24px] ml-2 lg:h-[15px] "  src={"/static_page/homepage/Union.png"} alt="" />
+              <img
+                className="lg:w-[24px] ml-2 lg:h-[15px]"
+                src={"/static_page/homepage/Union.png"}
+                alt=""
+              />
             </button>
           </div>
         </div>
