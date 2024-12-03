@@ -71,7 +71,7 @@ export const FullSpecificationsDataSuperGuru4g = [
         id: 6,
         label: 'Connectivity',
         data: [
-            { label: 'Network Type', value: '4G (B1/B3/B5/B8/B28/B40/B41)' },
+            { label: 'Network Type', value: '4G (B1/B3/B5/B8s/B40/B41)' },
             { label: 'Bluetooth Support', value: '4.2' },
             { label: 'Earphone Jack', value: '3.5mm' },
             { label: 'SIM Slot', value: 'Slot 1 & Slot 2- Nano SIM' },

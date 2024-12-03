@@ -43,7 +43,7 @@ const EndlessPowerScreen = () => {
                         <div className='flex lg:flex-col  gap-4'>
                             <img src="/featurephone/Power_120/icons/BatteryIcon.svg" alt="Endless Power Icon" className='w-[32px] h-[32px] lg:w-[48px] lg:h-[48px] ' />
                             <div className='flex flex-col lg:gap-4 text-smoky/black'>
-                                <p className='text-mobile/h6 lg:text-[20px] lg:font-medium leading-[25.6px]'>55 Days* Standby Time</p>
+                                <p className='text-mobile/h6 lg:text-[20px] lg:font-medium leading-[25.6px]'>15 Days* Standby Time</p>
                                 <p className='text-mobile/h6 lg:text-[20px] lg:font-medium leading-[25.6px]'>24 Hours* Talktime</p>
                             </div>
                         </div>

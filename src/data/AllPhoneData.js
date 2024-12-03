@@ -81,7 +81,7 @@ export const AllPhonesData = [
         isNew: false, //Is the phone new or not
         specification: {
             price: "8,199", //Price of the phone
-            primaryCamera: "108 MP", //Primary camera of the phone
+            primaryCamera: "50 MP", //Primary camera of the phone
             storage: "128 GB", //Storage of the phone
             screenSize: '16.76 cm (6.6 inch)', //Screen size of the phone
             processor: "Hexa Core",

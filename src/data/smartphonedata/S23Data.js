@@ -39,7 +39,7 @@ export const FullSpecificationsS23 = [
         id:4,
         label:'Camera',
         data:[
-            {label:'Rear Camera',value:'108MP'},
+            {label:'Rear Camera',value:'50MP'},
             {label:'Rear flash',value:'Yes'},
             {label:'Front Camera',value:'8MP'},
             {label:'Front flash',value:'Yes'},
@@ -51,7 +51,7 @@ export const FullSpecificationsS23 = [
         data:[
             {label:'Battery Capacity',value:'5000 mAh'},
             {label:'Battery Type',value:'Lithium ion'},
-            {label:'Fast Charging',value:'18W'},
+            {label:'Fast Charging',value:'10w'},
             {label:'USB',value:'Type-C'},
             {label:'Standby',value:'15h'},
             {label:'Talktime',value:'12 Hours'},
@@ -63,7 +63,7 @@ export const FullSpecificationsS23 = [
         label:'Memory & Storage',
         data:[
             {label:'RAM',value:'8 GB'},
-            {label:'ROM',value:'128 GB'},
+            {label:'ROM',value:'8 GB'},
             {label:'User Memory',value:'120 GB'},
             {label:'Expandable',value:'120 GB'},
         ]

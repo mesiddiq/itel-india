@@ -238,7 +238,7 @@ export default {
 				'superfastUnisocBGLaptop': "url('/smartphone/P55/superfastUnisocBGLaptop.png')",
 				'superfastUnisocBGMobile': "url('/smartphone/P55/superfastUnisocBGMobile.png')",
 				'clearVisionBG': "url('/smartphone/P55/clearVisionBG.png')",
-				'frame24GB': "url('/smartphone/P55/frame24GB.png')",
+				'frame24GB': "url('/smartphone/P55/frame24GB.webp')",
 
 				'a05iImageCarouselMobileBG': "url('/smartphone/A05i/a05iImageCarouselMobileBG.webp')", 
 				'a05iImageCarouselLaptopBG': "url('/smartphone/A05i/carouselBG.webp')", 

@@ -17,7 +17,7 @@ export const FullSpecificationsDataPower120 = [
             { label: 'Display', value: '5.08cm (2")' },
             { label: 'Battery', value: '2500 mAh' },
             { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Telugu, Tamil, Panjabi, Kannada, Malayalam, Bengali)' },
-            { label: 'Phonebook', value: '2000 with contact photo' },
+            { label: 'Phonebook', value: '1000 with contact photo' },
             { label: 'SMS', value: '250' },
             { label: 'Torch', value: 'Yes' },
         ]
@@ -38,7 +38,7 @@ export const FullSpecificationsDataPower120 = [
         data: [
             { label: 'Battery Capacity', value: '2500 mAh' },
             { label: 'Battery Type', value: 'Li-ion' },
-            { label: 'Battery Backup', value: '17 Days ' },
+            { label: 'Battery Backup', value: '15 Days ' },
             { label: 'Talktime', value: '24 Hours' },
         ]
     },
@@ -89,7 +89,7 @@ export const FullSpecificationsDataPower120 = [
 
 export const FeatureRichDataPower120 = {
     title: 'Power 120 - Phone that Makes You Shine',
-    description: `Fuel your conversations with the itel Power 120.  This beast of a phone keeps you connected all day with its 2500 mAh Battery, straight with an insane standby of 55 Days*! Whoa! Dive into a crisp, clear world on its 5.08cm (2”) display, perfect for a bigger view and an elevated style and experience. Plus, it's got a cool LED torch that you can flick on whenever you need it. Tune into your favorite beats with the wireless FM radio phone, and don't worry about missing out – you can even record tracks for later! `,
+    description: `Fuel your conversations with the itel Power 120.  This beast of a phone keeps you connected all day with its 2500 mAh Battery, straight with an insane standby of 15 Days*! Whoa! Dive into a crisp, clear world on its 5.08cm (2”) display, perfect for a bigger view and an elevated style and experience. Plus, it's got a cool LED torch that you can flick on whenever you need it. Tune into your favorite beats with the wireless FM radio phone, and don't worry about missing out – you can even record tracks for later! `,
     cards: [
         {
             icon: '/featurephone/common/slim-red.svg',
@@ -130,7 +130,7 @@ export const TechSpecsDataPower120 = {
         { id: '1', label: '2500 mAh Battery', icon: '/featurephone/common/battery.svg' },
         { id: '4', label: '2000 Phonebook with contact icons', icon: '/featurephone/common/phonebook.svg' },
         { id: '2', label: 'King Voice', icon: '/featurephone/common/voice.svg' },
-        { id: '3', label: '55 Days* backup with Super Battery Mode', icon: '/featurephone/common/battery.svg' },
+        { id: '3', label: '15 Days* backup with Super Battery Mode', icon: '/featurephone/common/battery.svg' },
         { id: '5', label: 'Wireless Fm with Recording', icon: '/featurephone/common/radio.svg' },
         { id: '6', label: 'Vibration Mode', icon: '/featurephone/common/vibration.svg' },
         { id: '7', label: 'VGA Camera with flash', icon: '/featurephone/common/camera.svg' },

@@ -18,7 +18,7 @@ const SnapFlawlessSelfie = () => {
                 <img src='/smartphone/S23+/Backgrounds/SnapFlawlessSelfieBorder.svg' className='mt-0 lg:mt-[5px]' />
               </div>
               <div className='text-[#FFFFFF] lg:text-left'>
-                <h3 className='text-[#FFFFFF] text-mobile/small/body lg:text-desktop/body/2/regular font-markot my-[8px]'>Front AI<br />Camera</h3>
+                <h3 className='text-[#FFFFFF] text-mobile/small/body lg:text-desktop/body/2/regular font-markot my-[8px]'>Front <br />Camera</h3>
               </div>
             </div>
             <div className='flex lg:hidden gap-4 justify-center align-center' data-aos="fade-down">

@@ -27,7 +27,7 @@ export const FullSpecificationsDatait5027 = [
         data: [
             { label: 'Display Size', value: '6.1cm (2.4")' },
             { label: 'Resolution', value: '240×320 pixels' },
-            { label: 'Resolution Type', value: 'QQVGA' },
+            { label: 'Resolution Type', value: 'QVGA' },
             { label: 'Pixel Density', value: '167 PPI' },
         ]
     },
