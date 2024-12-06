@@ -31,7 +31,7 @@ export const FullSpecificationsS23 = [
         label:'OS & Processor',
         data:[
             {label:'Operating System',value:'Android 13'},
-            {label:'Chipset',value:'Unisoc'},
+            {label:'Chipset',value:'Unisoc T606'},
             {label:'Processor Core',value:'Hexa Core'},
         ]
     },
@@ -51,7 +51,7 @@ export const FullSpecificationsS23 = [
         data:[
             {label:'Battery Capacity',value:'5000 mAh'},
             {label:'Battery Type',value:'Lithium ion'},
-            {label:'Fast Charging',value:'10w'},
+            {label:'Fast Charging',value:'18W'},
             {label:'USB',value:'Type-C'},
             {label:'Standby',value:'15h'},
             {label:'Talktime',value:'12 Hours'},
@@ -63,7 +63,7 @@ export const FullSpecificationsS23 = [
         label:'Memory & Storage',
         data:[
             {label:'RAM',value:'8 GB'},
-            {label:'ROM',value:'8 GB'},
+            {label:'ROM',value:'128 GB'},
             {label:'User Memory',value:'120 GB'},
             {label:'Expandable',value:'120 GB'},
         ]

@@ -81,59 +81,88 @@ setloader1(false)
 
   // Fetch states on component mount
   useEffect(() => {
+
     fetchStates();
-  }, []);
+
+    if (showPanel) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup function to reset overflow when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showPanel]);
 
   return (
     <>
  {showPanel && (
-  <div onClick={() => setShowPanel(false)}   style={{ backdropFilter: "blur(8px)" }} className="font-markot  overflow-hidden bg-black  bg-opacity-30 p-10 flex flex-col items-center absolute   justify-center w-full  h-screen  z-50">
-    {/* Close Button */}
-    <div onClick={(e) => e.stopPropagation()}  className="w-[90%] flex justify-end">
-      <img
-        className="cursor-pointer w-8 h-8"
-        onClick={() => setShowPanel(false)}
-        src="/add.png"
-        alt="Close"
-      />
-    </div>
+ <div
+ onClick={() => setShowPanel(false)}
+ style={{ backdropFilter: "blur(8px)" }}
+ className="font-markot overflow-hidden bg-black bg-opacity-30 p-4 flex flex-col items-center absolute justify-center w-full h-screen z-50"
+>
+ {/* Close Button */}
+ <div onClick={(e) => e.stopPropagation()} className="w-full flex justify-end max-w-[90%]">
+   <img
+     className="cursor-pointer w-8 h-8"
+     onClick={() => setShowPanel(false)}
+     src="/add.png"
+     alt="Close"
+   />
+ </div>
 
-    {/* Panel Container */}
-    <div onClick={(e) => e.stopPropagation()}  className="w-[90%] h-[80%] rounded-2xl border bg-white shadow-lg flex flex-col">
-      {/* Header */}
-      <div className="py-4 gap-5 border-b px-5 rounded-2xl  bg-bg/primary/1 flex text-lg font-semibold text-gray-800">
-        <p className="w-[50px]">S.N</p>
-        <p className="w-[150px]">Shop Name</p>
-        <p className="w-[200px]">Location</p>
-        <p className="w-[150px]">City</p>
-        <p className="w-[150px]">State</p>
-        <p className="w-[150px]">Status</p>
-      </div>
+ {/* Panel Container */}
+ <div
+   onClick={(e) => e.stopPropagation()}
+   className="w-full max-w-4xl h-[80%] rounded-2xl border bg-white shadow-lg flex flex-col overflow-hidden"
+ >
+   {/* Header */}
+   <div className="overflow-x-auto overflow-y-auto h-full">
+   <div className="min-w-[600px]">
+   <div className="py-4 px-5 border-b bg-gray-100 text-gray-800 font-semibold text-sm sm:text-base">
+     <div className="grid grid-cols-[50px_1fr_1fr_1fr_1fr_1fr] gap-4">
+       <p>S.N</p>
+       <p>Shop Name</p>
+       <p>Location</p>
+       <p>City</p>
+       <p>State</p>
+       <p>Status</p>
+     </div>
+   </div>
 
-      {/* Data Rows */}
-      <div className="overflow-y-auto">
-        {store.length > 0 ? (
-          store.map((data, index) => (
-            <div
-              className="py-4 gap-5 border-b px-5 flex text-sm text-gray-700"
-              key={index}
-            >
-              <p className="w-[50px]">{index + 1}</p>
-              <p className="w-[150px]">{data.shopName}</p>
-              <p className="w-[200px]">{data.location}</p>
-              <p className="w-[150px]">{data.city}</p>
-              <p className="w-[150px]">{data.state}</p>
-              <p className="w-[150px]">{data.Status}</p>
-            </div>
-          ))
-        ) : (
-          <div className="py-4 px-5 animate-pulse text-center text-gray-500">
-           Loading....
-          </div>
-        )}
-      </div>
-    </div>
-  </div>
+   {/* Data Rows */}
+  
+       {store.length > 0 ? (
+         store.map((data, index) => (
+           <div
+             className="py-4 px-5 border-b text-gray-700 text-xs sm:text-sm"
+             key={index}
+           >
+             <div className="grid grid-cols-[50px_1fr_1fr_1fr_1fr_1fr] gap-4">
+               <div>{index + 1}</div>  {/* Reduced width for the index */}
+               <div>{data.shopName}</div>
+               <div>{data.location}</div>
+               <div>{data.city}</div>
+               <div>{data.state}</div>
+               <div>{data.Status}</div>
+             </div>
+           </div>
+         ))
+       ) : (
+         <div className="py-4 px-5 animate-pulse text-center text-gray-500">
+           Loading...
+         </div>
+       )}
+     </div>
+   </div>
+ </div>
+</div>
+
+
+
 )}
 
 
@@ -144,11 +173,7 @@ setloader1(false)
               Store Locator
             </p>
             <p className="lg:w-[711px] text-center text-grey/grey/5 text-desktop/body/2/regular">
-              Looking to get rid of your old electronics responsibly? Our Eco
-              Drop Zones make it easy. Find our collection and drop points near
-              you to safely dispose of e-waste. Together, we can recycle and
-              repurpose old gadgets, reducing harmful environmental impact. Join
-              us in making a greener future!
+            Simply enter your location below, and we'll show you a list of the nearest electronics retailers, carrier stores, and shops where you can buy your new itel device.
             </p>
             <div className="w-full space-y-4 lg:space-x-2 lg:w-[882px] lg:space-y-0 text-brand/black grid grid-cols-1 lg:grid-cols-2">
               <div className="flex flex-col items-start">
