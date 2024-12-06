@@ -15,7 +15,7 @@ export const FeaturePhoneModelData = [
     },
     {
         id: 2,
-        image: '/featurephone/it5262/Backgrounds/phone_hero.webp',
+        image: '/featurephone/it5262/Backgrounds/it5262.webp',
         title: 'it5262',
         price: '1,399.00',
         path: '/product/it5262',
@@ -29,7 +29,7 @@ export const FeaturePhoneModelData = [
     },
     {
         id: 3,
-        image: '/featurephone/it5330/Backgrounds/phone_hero.webp',
+        image: '/featurephone/it5330/Backgrounds/techspecs.webp',
         title: 'it5330',
         price: '1,499.00',
         path: '/product/it5330',

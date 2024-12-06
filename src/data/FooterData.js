@@ -2,7 +2,7 @@ export const ProductsLink = [
     {
         id: 1,
         label: 'Smart phones',
-        link: '/products'
+        link: '/smartphones'
     },
     {
         id: 2,
