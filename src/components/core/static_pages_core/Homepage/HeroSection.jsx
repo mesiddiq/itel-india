@@ -47,8 +47,8 @@ const Banner1 = ({ activeSlide }) => {
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.2 }}
-                            className="space-y-2">
-                            <h5 className='lg:text-desktop/subtitle text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
+                            className="space-y-2 lg:space-y-2 lg:pt-4">
+                            <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
                             <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><MdCurrencyRupee /> 6,990 /-</h2>
                         </motion.div>
                         <Link to={'/smartphones'}>
@@ -252,7 +252,7 @@ const Banner3 = ({ activeSlide }) => {
                         <motion.h5
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] leading-6 text-white/80'>Get ready to live in the spotlight</motion.h5>
+                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] lg:leading-7 text-white/80'>Get ready to live in the spotlight. <br /> Coming soon at stores near you.</motion.h5>
                     </div>
                 </motion.div>
             </div>
@@ -293,18 +293,14 @@ const HeroSection = () => {
 
             {/* *************** Slide 2************************* */}
 
-            {/* <SwiperSlide>
-                <Banner2 activeSlide={activeSlide} />
-            </SwiperSlide> */}
-
             <SwiperSlide>
-                <ColorPro5g activeSlide={activeSlide} />
+                <Banner3 activeSlide={activeSlide} />
             </SwiperSlide>
 
             {/* *************** Slide 3************************* */}
 
             <SwiperSlide>
-                <Banner3 activeSlide={activeSlide} />
+                <ColorPro5g activeSlide={activeSlide} />
             </SwiperSlide>
 
             {/* *************** Slide 4************************* */}
