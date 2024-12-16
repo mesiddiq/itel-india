@@ -95,8 +95,8 @@ const Grid = () => {
     <div className='content font-markot flex flex-col gap-5 justify-between'>
 
     <div
-  className={`content h-[430px] lg:h-[473px] overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] relative bg-cover 
-    bg-[url('/smartphone/P55+/Backgrounds/unisoc_mobile.png')] md:bg-[url('/smartphone/P55+/Backgrounds/grid2.webp')]`}
+  className={`content h-[350px] lg:h-[473px] overflow-hidden w-full rounded-2xl flex flex-col lg:flex-row p-4 lg:p-[40px] relative bg-cover 
+    bg-[url('/smartphone/P55+/Backgrounds/unisoc_mobile.webp')] md:bg-[url('/smartphone/P55+/Backgrounds/grid2.webp')]`}
 >
   <div className='relative z-10 flex flex-col gap-[18px] lg:gap-2 lg:justify-between lg:w-[400px] lg:mt-0'>
     <div className='flex flex-col gap-1 lg:gap-3 max-w-[339px]'>

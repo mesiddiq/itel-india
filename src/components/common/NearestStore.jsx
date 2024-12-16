@@ -8,7 +8,7 @@ const NearestStore = ({ dark = true }) => {
                 <h1 className={`lg:text-desktop/h3 text-mobile/h5/medium ${dark ? 'text-white' : 'text-brand/black'}`}>Find Your Nearest itel Store!</h1>
                 <p className={`lg:text-desktop/body/1 text-desktop/body/2/regular ${dark ? 'text-white/80' : 'text-black/80'}`}>We are here to help you find the right phone.</p>
                 <div className='w-fit'>
-                    <Link to={'/support/service-center-locator'}>
+                    <Link to={'/store-locator'}>
                         <button className={`lg:text-desktop/button text-mobile/button ${dark ? 'text-white' : 'text-black/1 '} flex items-center gap-1`}>
                             SEE MORE
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">

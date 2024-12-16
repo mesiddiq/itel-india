@@ -28,7 +28,7 @@ const Banner1 = ({ activeSlide }) => {
                     autoPlay
                     muted
                     loop
-                    src="/videos/homepage/herobanner1.webm" className='w-full object-cover absolute h-full top-0 md:block hidden'
+                    src="/videos/homepage/herobanner1.webm" className='w-full object-cover absolute h-full top-0 md:block hidden object-right'
                 />
                 <video
                     autoPlay
@@ -47,17 +47,17 @@ const Banner1 = ({ activeSlide }) => {
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.2 }}
-                            className="space-y-2">
-                            <h5 className='lg:text-desktop/subtitle text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
-                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold'>&#8377; 6,990 /-</h2>
+                            className="space-y-2 lg:space-y-2 lg:pt-4">
+                            <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
+                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><MdCurrencyRupee /> 6,990 /-</h2>
                         </motion.div>
-                        <Link to={'/products'}>
+                        <Link to={'/smartphones'}>
                             <motion.button
                                 initial={{ opacity: 0, y: 50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, delay: 0.2 }}
                             >
-                                <img src="/static_page/buynowlight.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
+                                <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
                             </motion.button>
                         </Link>
                     </div>
@@ -123,38 +123,59 @@ const Banner1 = ({ activeSlide }) => {
 //     )
 // }
 
-const ColorPro5g = () => {
+const ColorPro5g = ({ activeSlide }) => {
     return (
-        <div className='bg-black relative lg:h-[627px] h-[520px] overflow-hidden font-markot px-4 md:px-0'>
-            <div className="content relative lg:mt-[125px] lg:h-[416px] z-10 h-[238px] pt-6 lg:pt-0">
-                <motion.h3
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                    className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#BA69F6] rounded-[24px] px-[6px] py-[2px] text-white font-bricolage' >
-                    featured
-                </motion.h3>
-                <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">Illuminate with Every hue with <br />
-                    IVCO itel Vivid Color Technology</p>
-                <img src="/static_page/homepage/colorpro5gtext.svg" alt="Color Pro 5g" className='absolute lg:top-10 top-14 -left-10 lg:-left-24 -z-[1] max-w-[300px] lg:max-w-max' />
-                <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center lg:mt-14 mt-3'>
-                    <span>
-                        <MdCurrencyRupee />
-                    </span>
-                    <span >
-                        10,999 /-
-                    </span>
-                </h2>
-                <Link to={'/product/color-pro-5g'}>
-                    <img src="/static_page/homepage/checknow.svg" alt="Buy Now" className='max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-4' />
-                </Link>
+        <AnimatePresence mode='wait'>
+            <div key={activeSlide} className='bg-black relative lg:h-[627px] h-[520px] overflow-hidden font-markot px-4 md:px-0'>
+                <div className="content relative lg:mt-[125px] lg:h-[416px] z-10 h-[238px] pt-6 lg:pt-0">
+                    <motion.h3
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                        className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#BA69F6] rounded-[24px] px-[6px] py-[2px] text-white font-bricolage' >
+                        featured
+                    </motion.h3>
+                    <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">IVCO itel Vivid Color Technology |
+                        5G Network Connectivity | <br /> 12GB/8GB* RAM + 128GB ROM</p>
+                    <motion.img
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                        src="/static_page/homepage/colorpro5gtext.svg"
+                        alt="Color Pro 5g"
+                        className='absolute lg:top-10 top-14 -left-10 lg:-left-24 -z-[1] max-w-[300px] lg:max-w-max'
+                    />
+                    <motion.h2
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                        className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center lg:mt-12 mt-3'>
+                        <span>
+                            <MdCurrencyRupee />
+                        </span>
+                        <span >
+                            8,999 /-
+                        </span>
+                    </motion.h2>
+                    <Link to={'/product/color-pro-5g'}>
+                        <img
+                            src="/static_page/Buttons.svg"
+                            alt="Buy Now"
+                            className='max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-4'
+                        />
+                    </Link>
+                </div>
+                <img
+                    src="/static_page/homepage/colorpro5g.webp"
+                    alt="Hritik Roshan"
+                    className='h-full w-full absolute lg:-right-[17%] lg:bottom-0 top-36 lg:top-0 object-contain scale-110 lg:scale-100 '
+                />
             </div>
-            <img src="/static_page/homepage/colorpro5g.webp" alt="Hritik Roshan" className='h-full w-full absolute lg:-right-[17%] lg:bottom-0 top-36 lg:top-0 object-contain scale-110 lg:scale-100 ' />
-        </div>
+        </AnimatePresence>
     )
 }
 
-const Banner3 = ({ activeSlide }) => {
+const Banner4 = ({ activeSlide }) => {
 
     return (
         <AnimatePresence mode='wait'>
@@ -197,7 +218,7 @@ const Banner3 = ({ activeSlide }) => {
     )
 }
 
-const Banner4 = ({ activeSlide }) => {
+const Banner3 = ({ activeSlide }) => {
 
     return (
         <AnimatePresence mode='wait'>
@@ -208,7 +229,7 @@ const Banner4 = ({ activeSlide }) => {
                         autoPlay
                         muted
                         loop
-                        src="/videos/homepage/herobanner4.webm" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block'
+                        src="/videos/homepage/herobanner4.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
                     />
 
                     <video
@@ -222,16 +243,16 @@ const Banner4 = ({ activeSlide }) => {
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ duration: 1, delay: 0.2 }} className="w-fit">
-                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage' >coming soon</h3>
+                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage' >Coming soon</h3>
                         </motion.div>
                         <motion.h1
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='text-mobile/h2 lg:text-desktop/h1 text-white font-bold'>Coolest & Fastest</motion.h1>
+                            transition={{ duration: 1, delay: 0.2 }} className='text-mobile/h2 lg:text-desktop/h1 text-white font-bold'>Awesome A80</motion.h1>
                         <motion.h5
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] leading-6 text-white/80'>Color Changing Technology | Super Fast 5G++</motion.h5>
+                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] lg:leading-7 text-white/80'>Get ready to live in the spotlight. <br /> Coming soon at stores near you.</motion.h5>
                     </div>
                 </motion.div>
             </div>
@@ -272,27 +293,23 @@ const HeroSection = () => {
 
             {/* *************** Slide 2************************* */}
 
-            {/* <SwiperSlide>
-                <Banner2 activeSlide={activeSlide} />
-            </SwiperSlide> */}
-
             <SwiperSlide>
-                <ColorPro5g activeSlide={activeSlide} />
+                <Banner3 activeSlide={activeSlide} />
             </SwiperSlide>
 
             {/* *************** Slide 3************************* */}
 
             <SwiperSlide>
-                <Banner3 activeSlide={activeSlide} />
+                <ColorPro5g activeSlide={activeSlide} />
             </SwiperSlide>
 
-
             {/* *************** Slide 4************************* */}
+
+
 
             <SwiperSlide>
                 <Banner4 activeSlide={activeSlide} />
             </SwiperSlide>
-
         </Swiper >
     )
 }

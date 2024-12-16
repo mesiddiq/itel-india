@@ -8,7 +8,7 @@ export const AllPhonesData = [
         category: "", //Category of the phone
         isNew: true, //Is the phone new or not
         specification: {
-            price: "10,999", //Price of the phone
+            price: "8,999", //Price of the phone
             primaryCamera: "50 MP", //Primary camera of the phone
             storage: "128 GB", //Storage of the phone
             screenSize: '6.56" HD+ IPS', //Screen size of the phone
@@ -81,7 +81,7 @@ export const AllPhonesData = [
         isNew: false, //Is the phone new or not
         specification: {
             price: "8,199", //Price of the phone
-            primaryCamera: "108 MP", //Primary camera of the phone
+            primaryCamera: "50 MP", //Primary camera of the phone
             storage: "128 GB", //Storage of the phone
             screenSize: '16.76 cm (6.6 inch)', //Screen size of the phone
             processor: "Hexa Core",
@@ -268,7 +268,7 @@ export const AllPhonesData = [
         title: "Aura 05i", //Title of the phone
         thumbnail: "/product-listing/filterPhoneImages/aura+05i.webp", //Thumbnail of the phone
         description: "The Ultimate Fast Wonder with Memory Fusion Technology", //Description of the phone
-        purchaseLink: "/product", //Link to buy the phone
+        purchaseLink: "/product/a05-i", //Link to buy the phone
         category: "A Series", //Category of the phone
         isNew: false, //Is the phone new or not
         specification: {

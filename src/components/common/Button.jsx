@@ -2,8 +2,8 @@ import React from 'react';
 
 const Button = ({ btnLabel, rounded }) => {
     return (
-        <button className={`flex items-center justify-center bg-white text-black font-semibold px-6 py-2.5 ${rounded} shadow-md hover:shadow-lg transition duration-300`}>
-            <span className='uppercase'>{btnLabel}</span>
+        <button className={`flex items-center justify-center border-white border w-[200px] md:w-[350px] text-white font-semibold p-2 md:px-4 ${rounded} shadow-md hover:shadow-lg transition duration-300`}>
+            <span className='uppercase text-mobile/button md:text-desktop/button'>{btnLabel}</span>
             <svg
                 className="ml-2 w-4 h-4 text-red-500"
                 fill="none"

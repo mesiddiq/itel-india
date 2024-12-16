@@ -95,7 +95,7 @@ export const FullSpecificationsA50C = [
         label:'Additional',
         data:[
             {label:'Sensors',value:'Fingerprint, Face Unlock, G Sensor'},
-            {label:'Accessories',value:'5W Adapter (Support 10W) | USB Cable | Protective Cover'},
+            {label:'Accessories',value:'10W Adapter (Support 10W) | USB Cable | Protective Cover'},
             {label:'Earphone Jack',value:'3.5mm'},
         ]
     },

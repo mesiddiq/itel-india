@@ -23,6 +23,29 @@ export const AllFeaturePhoneData = [
         }
     },
     {
+        id: 12,
+        title: "Flip One",
+        thumbnail: "/product-listing/filterFeaturephoneImages/flipone.webp",
+        description: "Leather Premium Design | Type-C Charging | BT Caller",
+        purchaseLink: "/product/flip-one",
+        category: "",
+        isNew: true,
+        specification: {
+            price: "2,499",
+            primaryCamera: "1.3 MP",
+            storage: "8 MB RAM & 8 MB ROM",
+            screenSize: '2.4"',
+            screenSizeForCompare: '6.1 cm (2.4")',
+            battery: "1900 mAh",
+        },
+        features: {
+            hasKingVoice: false,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: true
+        }
+    },
+    {
         id: 2,
         title: "Super Guru 4G",
         thumbnail: "/product-listing/filterFeaturephoneImages/Super+guru4g.webp",
@@ -260,30 +283,6 @@ export const AllFeaturePhoneData = [
             hasPowerKeypad: true,
             hasUPI: false,
             hasBluetooth: false
-        }
-    },
-    {
-        id: 12,
-        title: "Flip One",
-        thumbnail: "/product-listing/filterFeaturephoneImages/flip+one.webp",
-        description: "Leather Premium Design | Type-C Charging | BT Caller",
-        purchaseLink: "/product/flip-one",
-        category: "Innovation Series",
-        isNew: false,
-        specification: {
-            price: "₹1,049",
-            network: "2G",
-            primaryCamera: "VGA",
-            storage: "4MB RAM & 4MB ROM",
-            screenSize: '1.32"',
-            screenSizeForCompare: '3.35 cm (1.32")',
-            battery: "1200mAh",
-        },
-        features: {
-            hasKingVoice: false,
-            hasPowerKeypad: false,
-            hasUPI: false,
-            hasBluetooth: true
         }
     },
 ];

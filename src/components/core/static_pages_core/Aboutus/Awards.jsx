@@ -12,9 +12,9 @@ import "swiper/css/pagination";
 const Awards = () => {
   const data = [
     {
-      img: "/static_page/Aboutus/award.png",
-      title: "“Champions of the year”",
-      year: "2018 | Economic Times",
+      img: "/static_page/Aboutus/dainikjagran.jpg",
+      title: "New India's Most Popular Smartphone Brand”",
+      year: "2023 | Dainik Jagran",
     },
     {
       img: "/static_page/Aboutus/award1.png",
@@ -22,9 +22,9 @@ const Awards = () => {
       year: "2022 | BARC Herala Global",
     },
     {
-      img: "/static_page/Aboutus/award2.png",
-      title: "“Best Progressive Brand of the Year Award”",
-      year: "2018",
+      img: "/static_page/Aboutus/economytimes.jpg",
+      title: "Champions of Rural Markets”",
+      year: "2018,2019 | Economic Times",
     },
     {
       img: "/static_page/Aboutus/award3.png",
@@ -41,6 +41,9 @@ const Awards = () => {
       <Swiper
         spaceBetween={22}
         loop={true}
+        autoplay={{
+          disableOnInteraction: false,
+        }}
         slidesPerView={
           window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1
         } // Adjust slides per view based on screen width
@@ -51,8 +54,8 @@ const Awards = () => {
           return (
             <SwiperSlide>
               <div className=" bg-bg/primary/1 lg:space-y-[20px] rounded-xl overflow-hidden flex flex-col">
-                <img src={data.img} alt="" />
-                <div className=" mx-2 lg:h-[128px] space-x-2 flex items-center justify-between">
+                <img src={data.img} alt="Award Image" className="lg:h-[350px] h-[250px] object-top object-cover" />
+                <div className=" mx-2 lg:h-[128px] space-x-2 flex items-center justify-between py-4 lg:py-0">
                   <svg
                     width="32"
                     height="76"

@@ -5,7 +5,7 @@ const StayConnected = () => {
     <div className='flex relative w-full h-[750px] md:h-[420px] lg:h-[720px] py-[50px] md:pt-[50px]'>
     	<div className='content items-center px-[50px] md:px-[80px] bg-[url("/smartphone/p55T/Backgrounds/StayConnectedBgSmall.webp")] md:bg-[url("/smartphone/p55T/Backgrounds/StayConnectedBg.webp")] bg-contain bg-center bg-no-repeat' data-aos='fade-down'>
       	<div className='grid grid-cols-2 text-center md:text-left md:items-center h-full'>
-      		<div className='col-span-2 md:col-span-1 w-[85%] md:w-[300px] lg:w-[400px] mx-auto md:mx-0 mt-14 md:mt-0'>
+      		<div className='col-span-2 md:col-span-1 w-[85%] max-w-[300px] lg:max-w-[400px] mx-auto md:mx-0 mt-14 md:mt-0'>
 	      		<h3 className='text-[#FFFFFF] text-mobile/h4 lg:text-desktop/h3 font-markot'>Stay Connected from Dawn to Dusk</h3>
 	      		<p className='text-[#FFFFFF] text-mobile/body/2 lg:text-desktop/body/1 font-markot mt-2 md:mt-5'>Power through your day with a 6000mAh battery, 18W fast charging, and 45 days of standby. No more fretting over battery life!</p>
 	      		<div className='flex justify-between md:justify-start text-left pt-5'>

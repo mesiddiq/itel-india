@@ -31,7 +31,7 @@ export const FullSpecificationsS23 = [
         label:'OS & Processor',
         data:[
             {label:'Operating System',value:'Android 13'},
-            {label:'Chipset',value:'Unisoc'},
+            {label:'Chipset',value:'Unisoc T606'},
             {label:'Processor Core',value:'Hexa Core'},
         ]
     },
@@ -39,7 +39,7 @@ export const FullSpecificationsS23 = [
         id:4,
         label:'Camera',
         data:[
-            {label:'Rear Camera',value:'108MP'},
+            {label:'Rear Camera',value:'50MP'},
             {label:'Rear flash',value:'Yes'},
             {label:'Front Camera',value:'8MP'},
             {label:'Front flash',value:'Yes'},

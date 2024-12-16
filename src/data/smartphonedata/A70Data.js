@@ -39,7 +39,7 @@ export const FullSpecificationsA70 = [
         id:4,
         label:'Camera',
         data:[
-            {label:'Rear Camera',value:'13MP AI Dual Cam'},
+            {label:'Rear Camera',value:'13MP Dual Cam'},
             {label:'Rear flash',value:'Yes'},
             {label:'Front Camera',value:'8MP'},
             {label:'Front flash',value:'Yes'},
@@ -51,7 +51,7 @@ export const FullSpecificationsA70 = [
         data:[
             {label:'Battery Capacity',value:'5000 mAh'},
             {label:'Battery Type',value:'Li-Polymer'},
-            {label:'Fast Charging',value:'18W'},
+            {label:'Fast Charging',value:'10W'},
             {label:'USB',value:'Type-C'},
             {label:'Standby',value:'41 Days'},
             {label:'Talktime',value:'60 Hours'},

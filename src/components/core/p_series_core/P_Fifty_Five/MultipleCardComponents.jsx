@@ -84,7 +84,7 @@ const MultipleCardComponents = () => {
 
                   <span className='flex flex-col lg:max-w-full max-w-[120px] opacity-90'>
                     <h1 className="lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] lg:text-left text-mobile/body/large">6.6” HD+</h1>
-                    <h1 className="lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] text-mobile/body/large"><span className="lg:font-normal">Punch Hole Display</span> with 90 Hz Refresh Rate</h1>
+                    <h1 className="lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] text-mobile/body/large"><span className="lg:font-normal">Punch Hole Display</span> <br className="xl:hidden"/> with 90 Hz Refresh Rate</h1>
                   </span>
 
                 </div>

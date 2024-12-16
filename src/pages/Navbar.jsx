@@ -34,9 +34,6 @@ const ArrowRight = ({ isActive }) => {
 
 
 const CommonCard = ({ thumbnail, label, price, link, fn }) => {
-
-
-
     return (
         <Link key={label} to={link} onClick={() => fn(prev => !prev)}>
             <div className="xl:w-[290px] text-white h-[163px] p-6 flex gap-4 bg-dark/card/bg  rounded-[8px]">
@@ -44,8 +41,16 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
                 <div className="flex flex-col gap-4">
                     <h1 className="text-desktop/body/large">{label}</h1>
                     <h1 className="text-desktop/button text-left flex items-center">
-                        <MdCurrencyRupee />
-                        {price}</h1>
+                        {
+                            price == '0' ?
+                                'Coming Soon'
+                                :
+                                <>
+                                    <MdCurrencyRupee />
+                                    {price}
+                                </>
+                        }
+                    </h1>
                 </div>
             </div>
         </Link>
@@ -99,7 +104,7 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
                         ))
                     }
 
-                    <Link to="/products">
+                    <Link to="/smartphones">
                         <button className="flex w-[114px] justify-between gap-2 items-center" onClick={handleOutside}>
                             <h1 className=" text-desktop/button text-left uppercase text-white">view all</h1>
                             <ArrowRight />
@@ -114,7 +119,7 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} fn={setSmartPhone} />
+                                <CommonCard key={item.id} {...item} fn={setSmartPhone} />
                             ))
                         }
                     </div>
@@ -156,7 +161,7 @@ const AccessoriesDropDown = ({ Accessories }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} />
+                                <CommonCard key={item.id} {...item} />
                             ))
                         }
                     </div>
@@ -201,14 +206,10 @@ const TvDropDown = ({ tv }) => {
                     <div className="flex gap-4">
                         {
                             selectedCategory.products.map((item) => (
-                                <CommonCard {...item} />
+                                <CommonCard key={item.id} {...item} />
                             ))
                         }
                     </div>
-                    {/* <div className="flex gap-2 items-center justify-end">
-                        <h1 className=" text-mobile/button text-white text-right uppercase">view all</h1>
-                        <ArrowRight />
-                    </div> */}
                 </div>
             </div>
         </div>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const ProductData = [
     { id: 1, image: '/featurephone/superguru4g/hero.webp', name: 'Super Guru 4G', purchaseLink: '/product/super-guru-4g', price: '1,799.00' },
-    { id: 2, image: '/featurephone/it5262/Backgrounds/phone_hero.webp', name: 'it5262', purchaseLink: '/product/it5262', price: '1,399.00' },
-    { id: 3, image: '/featurephone/it5330/Backgrounds/phone_hero.webp', name: 'it5330', purchaseLink: '/product/it5330', price: '1,499.00' },
-    { id: 4, image: '/featurephone/Power_120/Backgrounds/hero_mobile.webp', name: 'Power120', purchaseLink: '/product/power-120', price: '1,249,00' },
+    { id: 2, image: '/featurephone/it5262/Backgrounds/it5262.webp', name: 'it5262', purchaseLink: '/product/it5262', price: '1,399.00' },
+    { id: 3, image: '/featurephone/it5330/Backgrounds/techspecs.webp', name: 'it5330', purchaseLink: '/product/it5330', price: '1,499.00' },
+    { id: 4, image: '/featurephone/Power_120/Backgrounds/Power+120.webp', name: 'Power120', purchaseLink: '/product/power-120', price: '1,249,00' },
 ]
 
 const ProductCard = ({ image, name, purchaseLink, price }) => {

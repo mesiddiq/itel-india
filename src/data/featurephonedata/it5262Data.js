@@ -16,7 +16,7 @@ export const FullSpecificationsDatait5262 = [
             { label: 'Colors', value: 'Black, Light Blue, Green' },
             { label: 'Display', value: '6.1 cm (2.4")' },
             { label: 'Battery', value: '2000 mAh' },
-            { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada, Punjabi & Malayalam)13 (English, Hindi, Gujarati, Telugu, Tamil, Punjabi, Kannada, Malayalam, Bengali, Oriya, Assamese, Marathi, Urdu)' },
+            { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada, Punjabi & Malayalam)' },
             { label: 'Phonebook', value: '1000' },
             { label: 'SMS', value: '200' },
             { label: 'Torch', value: 'Yes' },
@@ -28,7 +28,7 @@ export const FullSpecificationsDatait5262 = [
         data: [
             { label: 'Display Size', value: '6.1cm (2.4")' },
             { label: 'Resolution', value: '240×320 pixels' },
-            { label: 'Resolution Type', value: 'QQVGA' },
+            { label: 'Resolution Type', value: 'QVGA' },
             { label: 'Pixel Density', value: '167 PPI' },
         ]
     },

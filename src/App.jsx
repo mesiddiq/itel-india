@@ -23,7 +23,6 @@ const STwentyFour = lazy(() => import('./pages/s_series/STwentyFour'));
 const PFiftyFive = lazy(() => import('./pages/p_series/PFiftyFive'));
 const S_Series_Parent = lazy(() => import('./pages/s_series/S_Series_Parent'));
 const Investor = lazy(() => import('./pages/static_pages/Investor'));
-// const Footer = lazy(() => import('./components/common/Footer'));
 const Support = lazy(() => import('./pages/static_pages/Support'));
 const ScreenReplacement = lazy(() => import('./pages/static_pages/ScreenReplacement'));
 const Promise100 = lazy(() => import('./pages/static_pages/Promise100'));
@@ -39,8 +38,8 @@ const PFiftyFivePlus = lazy(() => import('./pages/p_series/PFiftyFivePlus'));
 const PFiftyFiveT = lazy(() => import('./pages/p_series/PFiftyFiveT'));
 const ColorPro5G = lazy(() => import('./pages/color_series/ColorPro5G'));
 const NotFound = lazy(() => import('./pages/static_pages/NotFound'));
-import Storelocator from './pages/static_pages/Storelocator'
-import PrivacyAndPolicy from './pages/static_pages/PrivacyAndPolicy'
+const Storelocator = lazy(() => import('./pages/static_pages/Storelocator'));
+const PrivacyAndPolicy = lazy(() => import('./pages/static_pages/PrivacyAndPolicy'));
 const A_Series_Parent = lazy(() => import('./pages/a_series/A_Series_Parent'));
 const A05i = lazy(() => import('./pages/a_series/A05i'));
 
@@ -103,14 +102,15 @@ function App() {
 					<Route path='/support/service-center-locator' element={<ServiceCenters />} />
 					<Route path='/support/faqs' element={<FAQ />} />
 					<Route path='/investor' element={<Investor />} />
-					<Route path='/commingsoon' element={<Commingsoon/>} />
-					<Route path='/thankyou' element={<Thankyou/>} />
-					<Route path='/blog' element={<Blog/>} />
-					<Route path='/bloglisting' element={<BlogListing/>} />
-					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy/>} />
-					<Route path='/terms-of-use-itel-mobile-india' element={<Terms/>} />
-					<Route path='/store-locator' element={<Storelocator/>} />
-                    
+					<Route path='/coming-soon' element={<Commingsoon />} />
+					<Route path='/thankyou' element={<Thankyou />} />
+					<Route path='/blog/:id' element={<Blog />} />
+					<Route path='/blogs' element={<BlogListing />} />
+					<Route path='/privacy-policy-itel-mobile-india' element={<PrivacyAndPolicy />} />
+					<Route path='/terms-of-use-itel-mobile-india' element={<Terms />} />
+					<Route path='/store-locator' element={<Storelocator />} />
+
+
 
 
 					{/* ***************************************************************************************************/}

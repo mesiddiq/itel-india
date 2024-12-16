@@ -1,26 +1,36 @@
 import { InstagramEmbed } from 'react-social-media-embed';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Button from '../../common/Button';
-
-
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
+import React, { useState, useEffect, useRef } from 'react';
 const StayInTheLoop = ({ theme = 'light' }) => {
 	const isDarkTheme = theme === 'dark';
 
 	return (
 		<div className={`${isDarkTheme ? 'bg-[#0A0C08]' : 'bg-white'}`}>
-			<div className={`content flex flex-col justify-between px-[16px] md:px-0 pt-[60px] pb-[20px] `}>
-				<div className="flex justify-between">
-					<h3 className={`text-mobile/h4 md:text-desktop/h3 font-markot ${isDarkTheme ? 'text-[#FFFFFF]' : 'text-black'}`}>
+			<div className={`content flex font-markot flex-col justify-between px-[16px] md:px-0 pt-[60px] pb-[20px] `}>
+				<div className="flex justify-between flex-col md:flex-row">
+					<h3 className={`text-mobile/h4 md:text-desktop/h3 ${isDarkTheme ? 'text-white' : 'text-black'}`}>
 						Stay in the loop: Follow us for updates!
 					</h3>
-					<Button btnLabel='Follow us on Instagram' rounded='mt-[12px] md:mt-0 rounded-full' />
+					<a href="https://www.instagram.com/itel_india/" target='_blank' className={`flex items-center justify-center border-white border w-[200px] md:w-[350px] text-white font-semibold p-2 md:px-4 mt-3 md:mt-0 rounded-full mt shadow-md hover:shadow-lg transition duration-300`}>
+						<span className={`uppercase text-mobile/button md:text-desktop/button ${isDarkTheme ? 'text-white' : 'text-black'}`}>Follow us on Instagram</span>
+						<svg
+							className="ml-2 w-4 h-4 text-red-500"
+							fill="none"
+							stroke="red"
+							strokeWidth="2"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+						</svg>
+					</a>
 				</div>
 				<Swiper
 					breakpoints={{
@@ -51,7 +61,7 @@ const StayInTheLoop = ({ theme = 'light' }) => {
 				>
 					<SwiperSlide>
 						<div className="flex items-center justify-center">
-							<InstagramEmbed url="https://www.instagram.com/p/DCRoW5mS0Oo" className='md:w-[300px] lg:w-[350px]' />
+							<InstagramEmbed url="https://www.instagram.com/p/C99U-HPywNj" className='md:w-[300px] lg:w-[350px]' />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>

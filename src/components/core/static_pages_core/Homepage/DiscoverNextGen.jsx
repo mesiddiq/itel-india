@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 const DiscoverNextGen = () => {
     return (
         <div className='px-4 md:px-0'>
-            <div className="content lg:h-[620px] h-[375px] overflow-hidden relative lg:bg-none p-5 flex lg:items-center lg:pl-[88px]">
+            <div className="content lg:h-[620px] h-[420px] overflow-hidden relative lg:bg-none p-5 flex lg:items-center lg:pl-[88px]">
                 <video
                     autoPlay
                     loop

@@ -25,7 +25,7 @@ const ColorPro5G = () => {
 	return (
     <>
     	<HeroBanner />
-    	<StickyHeader icon={'/smartphone/color-pro-5g/StickyHeader/image.png'} iconSize={'h-[44px]'} bgColor={'radial-gradient(56.49% 350.52% at 50% 0%, #201853 0%, #12052D 100%)'} />
+    	<StickyHeader purchaseLink={"https://www.amazon.in/dp/B0DHVX144Z?th=1"} icon={'/smartphone/color-pro-5g/StickyHeader/image.png'} iconSize={'h-[44px]'} bgColor={'radial-gradient(56.49% 350.52% at 50% 0%, #201853 0%, #12052D 100%)'} />
     	<BeUnstoppable />
     	<FeaturesGrid />
     	<EnhanceYourStyle />

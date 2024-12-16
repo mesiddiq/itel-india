@@ -2,7 +2,7 @@ export const ProductsLink = [
     {
         id: 1,
         label: 'Smart phones',
-        link: '/product'
+        link: '/smartphones'
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ export const SupportLinks = [
     {
         id: 1,
         label: 'Exchange offer',
-        link: '#'
+        link: '/coming-soon'
     },
     {
         id: 2,

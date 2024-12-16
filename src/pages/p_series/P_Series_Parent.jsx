@@ -13,7 +13,7 @@ import FAQ from '../../components/core/static_pages_core/Support/FAQ'
 
 const P_Series_Parent = () => {
     return (
-        <div className='bg-[#0A0C08] overflow-hidden'>
+        <div className='bg-[#0A0C08]'>
             <Outlet />
             <Accessories theme='dark' />
             <Model theme='dark' models={SmartPhoneModelData} />

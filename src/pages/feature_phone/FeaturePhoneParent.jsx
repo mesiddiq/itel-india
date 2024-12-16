@@ -7,17 +7,19 @@ import FeaturePhoneSimilarProduct from '../../components/common/feature_phone_co
 import NearestStore from '../../components/common/NearestStore'
 import Model from '../../components/common/smartphone_common/Model'
 import { FeaturePhoneModelData } from '../../data/FeaturePhoneModelData'
+import FAQ from '../../components/core/static_pages_core/Support/FAQ'
 
 const FeaturePhoneParent = () => {
     return (
         <div className='font-markot'>
             <Outlet />
-            <Model models={FeaturePhoneModelData}/>
+            <Model models={FeaturePhoneModelData} />
             <NearestStore dark={false} />
             <FeaturePhoneSimilarProduct />
             <SupportChannels />
             <OtherCoolGears />
             <StayInTheLoop />
+            <FAQ />
         </div>
     )
 }

@@ -9,7 +9,6 @@ export default function Frames() {
         "HDR",
         "Beauty",
         "Portrait",
-        "Beauty",
     ];
 
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -17,7 +16,7 @@ export default function Frames() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        }, 2000); // Change text every 2 seconds
+        }, 1500); // Change text every 2 seconds
 
         return () => clearInterval(interval); // Clear interval on component unmount
     }, []);

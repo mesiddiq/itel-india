@@ -31,8 +31,8 @@ const BeUnstoppable = () => {
               </>
             )}
             <div className='hidden md:flex items-center pt-8'>
-              <BuyNowSquareBG purchaseLink="" content="BUY NOW"/>
-              <p className='text-mobile/small/body text-[#FFFFFF] md:text-[20px] font-[400] pl-4 font-markot'>Starting from <span className='text-mobile/h5 md:text-desktop/h5'>₹9,999/-</span></p>
+              <BuyNowSquareBG purchaseLink="https://www.amazon.in/dp/B0DHVX144Z?th=1" content="BUY NOW"/>
+              <p className='text-mobile/small/body text-[#FFFFFF] md:text-[20px] font-[400] pl-4 font-markot'>Starting from <span className='text-mobile/h5 md:text-desktop/h5'>₹8,999/-</span></p>
             </div>
           </div>
         </div>

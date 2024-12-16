@@ -1,5 +1,5 @@
 export const HeroData = {
-    title: "P55 5g",
+    title: "P55 5G",
     subtitle:''
 }
 
@@ -8,7 +8,7 @@ export const FullSpecificationsP555g = [
         id:1,
         label:'General',
         data:[
-            {label:'Model',value:'P55 5g'},
+            {label:'Model',value:'P55 5G'},
             {label:'Colors',value:'Galaxy Blue and Mint Green'},
         ]
     },

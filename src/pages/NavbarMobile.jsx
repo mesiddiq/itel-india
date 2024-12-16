@@ -132,7 +132,7 @@ const NavbarMobile = () => {
                     <div className="pl-6 flex flex-col gap-5 text-white">
                         {
                             PhoneData.map(({ id, title }) => (
-                                <Link to={'/products'} key={id}>
+                                <Link to={'/smartphones'} key={id}>
                                     <div className="flex items-center gap-2" onClick={toggleNavActive}>
                                         <span className="text-desktop/button uppercase">{id}</span>
                                         <ArrowRight />

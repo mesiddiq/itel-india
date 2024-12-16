@@ -71,7 +71,7 @@ export const FullSpecificationsDataSuperGuru4g = [
         id: 6,
         label: 'Connectivity',
         data: [
-            { label: 'Network Type', value: '4G (B1/B3/B5/B8/B28/B40/B41)' },
+            { label: 'Network Type', value: '4G (B1/B3/B5/B8s/B40/B41)' },
             { label: 'Bluetooth Support', value: '4.2' },
             { label: 'Earphone Jack', value: '3.5mm' },
             { label: 'SIM Slot', value: 'Slot 1 & Slot 2- Nano SIM' },
@@ -96,7 +96,7 @@ export const FeatureRichDataSuperGuru4g = {
     description: 'Introducing India ka Super Guru—a collection of stylish keypad mobile phones that are the perfect blend of premium design and durability. Perfect for a busy lifestyle, this phone supports 4G and UPI payments, ensuring you stay connected and efficient. With Kingmedia, access YouTube, YouTube Shorts, news, cricket updates, and weather information effortlessly. The Kingvoice feature lets your phone speak out loud for you. ',
     cards: [
         { icon: '/featurephone/common/wifi-red.svg', title: 'Top-Tier 4G VoLTE Support', description: `Choose your speed with the Super Guru 4G- 4G for lightning fast browsing & 2G/3G to save data. Stay connected wherever you are.` },
-        { icon: '/featurephone/common/music-red.svg', title: 'KingMedia: All in one Entertainment', description: `Make payment without internet. No Internet required, payment can be done through GS Pay.` },
+        { icon: '/featurephone/common/music-red.svg', title: 'King of Media: All in one Entertainment', description: `Make payment without internet. No Internet required, payment can be done through GS Pay.` },
         { icon: '/featurephone/common/upi-red.svg', title: 'UPI Payments', description: `Make payment without internet. No Internet required, payment can be done through GS Pay.` },
     ]
 }

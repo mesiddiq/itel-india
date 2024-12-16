@@ -29,7 +29,6 @@ export const ImageCarouselData = [
             "/smartphone/S24/Dawn white 1.png",
             "/smartphone/S24/Dawn white 2.png",
             "/smartphone/S24/Dawn white 3.png",
-            "/smartphone/S24/Dawn white 4.png",
         ]
     },
 ];

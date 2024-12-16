@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { data } from './data';
 import { Link } from 'react-router-dom';
-const BlogCard = ({ category, title, image,data }) => {
+const BlogCard = ({ category, title,id, image,data }) => {
   return (
     <div  className="bg-white space-y-[12px] lg:space-y-[16px] ">
+      {console.log(id)}
       <img
         src={image}
         alt={title}
-        className=" lg:w-[412px] w-[328px] h-[337px] lg:h-[424px]"
+        className=" lg:w-[412px] w-[328px] h-[337px] lg:h-[424px] object-contain"
       />
       <div className=" space-y-3 lg:space-y-4">
         <div className=" space-y-2 ">
@@ -15,7 +16,7 @@ const BlogCard = ({ category, title, image,data }) => {
           <p className=" lg:text-desktop/h5/medium text-mobile/h6 line-clamp-2 text-brand/black">{title}</p>
         </div>
         
-        <Link to="/blog"  state={{data}} className=" inline-block">
+        <Link t to={`/blog/${id}`}  state={{data}} className=" inline-block">
           <div className=" flex items-center">
             <p className=" lg:text-desktop/button text-mobile/button text-brand/black">VIEW</p>
             <img src={"/static_page/homepage/Union.png"} className=" w-5 h-3 ml-2" alt="" />
@@ -55,7 +56,7 @@ const MainBody = () => {
       <div className='lg:grid lg:gap-x-[20px] lg:space-y-0  space-y-[28px]  gap-y-[52px] lg:grid-cols-3'>
         {
           filteredData.map((data, index) =>
-            <BlogCard category={data.category} data={data} image={data.img} key={data.id} title={data.title}/>
+            <BlogCard category={data.category} data={data} image={data.img} id={data.id} key={data.id} title={data.title}/>
           )
         }
       </div>

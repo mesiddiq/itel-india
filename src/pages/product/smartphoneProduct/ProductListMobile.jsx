@@ -6,24 +6,24 @@ import SupportChannels from '../../../components/common/smartphone_common/Suppor
 const ProductListMobile = () => {
     const [isAligned, setIsAligned] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const leftPane = document.getElementById('filter-section');
-            const rightPane = document.getElementById('product-section');
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const leftPane = document.getElementById('filter-section');
+    //         const rightPane = document.getElementById('product-section');
             
-            const leftPaneBottom = leftPane.getBoundingClientRect().bottom;
-            const rightPaneBottom = rightPane.getBoundingClientRect().bottom;
+    //         const leftPaneBottom = leftPane.getBoundingClientRect().bottom;
+    //         const rightPaneBottom = rightPane.getBoundingClientRect().bottom;
 
-            if (rightPaneBottom <= leftPaneBottom) {
-                setIsAligned(true);
-            } else {
-                setIsAligned(false);
-            }
-        };
+    //         if (rightPaneBottom <= leftPaneBottom) {
+    //             setIsAligned(true);
+    //         } else {
+    //             setIsAligned(false);
+    //         }
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, []);
 
     return (
         <>

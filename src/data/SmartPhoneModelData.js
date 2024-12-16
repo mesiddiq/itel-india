@@ -1,9 +1,9 @@
 export const SmartPhoneModelData = [
     {
         id: 1,
-        image: '/smartphone/P555g/bg6.png',
+        image: '/smartphone/P555g/bg6.webp',
         title: 'S23+',
-        price: '₹12,999.00',
+        price: '12,999.00',
         path: '/product/s23-plus',
         features: [
             { label: 'Camera', value: '108MP Ultra Clear AI Camera' },
@@ -17,7 +17,7 @@ export const SmartPhoneModelData = [
         id: 2,
         image: '/smartphone/P555g/bg7.png',
         title: 'S24',
-        price: '₹10,999.00',
+        price: '10,999.00',
         path: '/product/s24',
         features: [
             { label: 'Camera', value: '50MP AI Dual Rear Camera' },
@@ -31,7 +31,7 @@ export const SmartPhoneModelData = [
         id: 3,
         image: '/smartphone/P555g/bg8.png',
         title: 'A70',
-        price: '₹6,799.00',
+        price: '6,799.00',
         path: '/product/a70',
         features: [
             { label: 'Camera', value: '32MP Dual Rear Camera' },

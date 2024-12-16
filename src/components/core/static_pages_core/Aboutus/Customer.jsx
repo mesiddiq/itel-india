@@ -16,7 +16,7 @@ const Customer = () => {
       <p className='  text-black/1 text-desktop/body/2/regular lg:text-desktop/h4'>Customers across India</p>
       </div>
       <div className=' flex flex-col items-center justify-center  space-y-[2px]  lg:space-y-2'>
-      <p className=' text-mobile/h1 lg:text-desktop/h1 text-itel-red'>1300+</p>
+      <p className=' text-mobile/h1 lg:text-desktop/h1 text-itel-red'>1000+</p>
       <p className='  text-black/1 text-desktop/body/2/regular lg:text-desktop/h4'>Service Centers</p>
       </div>
     </div>

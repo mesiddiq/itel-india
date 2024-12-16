@@ -1,23 +1,23 @@
 export const FeaturePhoneModelData = [
     {
         id: 1,
-        image: '/featurephone/superguru4g/hero.webp',
-        title: 'Super Guru 4G',
-        price: '₹1,799.00',
-        path: '/product/super-guru-4g',
+        image: '/featurephone/flipOne/phone_hero.webp',
+        title: 'Flip One',
+        price: '2,399.00',
+        path: '/product/flip-one',
         features: [
             { label: 'Camera', value: 'VGA' },
-            { label: 'Memory', value: '64MB RAM & 128MB ROM' },
-            { label: 'Dimension', value: '(5.08 cm) 2"' },
-            { label: 'SIM Slot', value: 'Slot 1 & Slot 2- Nano SIM' },
-            { label: 'Battery', value: '1000mAh' },
+            { label: 'Memory', value: '4MB RAM & 4MB ROM' },
+            { label: 'Dimension', value: '97.6*49*11.2mm' },
+            { label: 'SIM Slot', value: 'Slot 1 & Slot 2 - Standard' },
+            { label: 'Battery', value: '1200mAh' },
         ],
     },
     {
         id: 2,
-        image: '/featurephone/it5262/Backgrounds/phone_hero.webp',
+        image: '/featurephone/it5262/Backgrounds/it5262.webp',
         title: 'it5262',
-        price: '₹1,399.00',
+        price: '1,399.00',
         path: '/product/it5262',
         features: [
             { label: 'Camera', value: 'VGA' },
@@ -29,9 +29,9 @@ export const FeaturePhoneModelData = [
     },
     {
         id: 3,
-        image: '/featurephone/it5330/Backgrounds/phone_hero.webp',
+        image: '/featurephone/it5330/Backgrounds/techspecs.webp',
         title: 'it5330',
-        price: '₹1,499.00',
+        price: '1,499.00',
         path: '/product/it5330',
         features: [
             { label: 'Camera', value: 'VGA' },
