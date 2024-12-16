@@ -170,7 +170,6 @@ export const ProductGalleryDataFlipOne = {
                 "/featurephone/flipOne/product_gallery/orange2.webp",
                 "/featurephone/flipOne/product_gallery/orange3.webp",
                 "/featurephone/flipOne/product_gallery/orange4.webp",
-                "/featurephone/flipOne/product_gallery/orange5.webp",
             ],
             buttonLabel: 'Orange',
             buttonColor: '#EE6824'

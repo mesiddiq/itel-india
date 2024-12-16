@@ -35,7 +35,7 @@ export const SupportLinks = [
     {
         id: 1,
         label: 'Exchange offer',
-        link: '#'
+        link: '/coming-soon'
     },
     {
         id: 2,

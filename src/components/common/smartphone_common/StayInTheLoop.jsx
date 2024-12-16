@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
+import React, { useState, useEffect, useRef } from 'react';
 const StayInTheLoop = ({ theme = 'light' }) => {
 	const isDarkTheme = theme === 'dark';
 

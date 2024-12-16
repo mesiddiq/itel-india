@@ -268,7 +268,7 @@ export const AllPhonesData = [
         title: "Aura 05i", //Title of the phone
         thumbnail: "/product-listing/filterPhoneImages/aura+05i.webp", //Thumbnail of the phone
         description: "The Ultimate Fast Wonder with Memory Fusion Technology", //Description of the phone
-        purchaseLink: "/product", //Link to buy the phone
+        purchaseLink: "/product/a05-i", //Link to buy the phone
         category: "A Series", //Category of the phone
         isNew: false, //Is the phone new or not
         specification: {

@@ -162,7 +162,7 @@ const EnjoyBetterLife = () => {
 
 				{/* Grid 1 */}
 
-				<Link to={'/products'} className="h-[328px] group lg:h-full w-full lg:w-5/12 shrink rounded-2xl overflow-hidden bg-[#232322] relative">
+				<Link to={'/smartphones'} className="h-[328px] group lg:h-full w-full lg:w-5/12 shrink rounded-2xl overflow-hidden bg-[#232322] relative">
 					<div className="flex flex-col gap-2 lg:gap-3 max-w-[455px] p-4 md:p-5 lg:p-8">
 						<h3 className="text-mobile/h6 lg:text-desktop/h5 xl:text-desktop/h4">
 							Amp Your Style with itel Latest Smartphones

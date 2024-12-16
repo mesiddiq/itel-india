@@ -32,7 +32,7 @@ const EntireWorld = () => {
 
                 </div>
                 <div className="mt-8 lg:mt-0 mx-auto">
-                    <img src="/featurephone/superguru4g/mobilescreens.webp" alt="Guper Guru 4g" className='max-h-[300px]' />
+                    <img src="/featurephone/superguru4g/mobilescreens.webp" alt="Guper Guru 4g" className='max-h-[450px] ' />
                 </div>
             </div>
             <div className="flex flex-col xl:flex-row justify-between font-markot content pt-[75px] lg:pt-[214px]">

@@ -26,7 +26,7 @@ const BatteryLab = () => {
           </div>
         </div>
         <div className='overflow-hidden'>
-          <img src='/smartphone/P55+/Backgrounds/mobile.png' className='md:w-[900px] md:h-[500px] h-[250px]'></img>
+          <img src='/smartphone/P55+/Backgrounds/mobile.webp' className='md:w-[900px] md:h-[500px] h-[250px]'></img>
         </div>
       </div>
     </div>

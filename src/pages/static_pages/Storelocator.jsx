@@ -6,20 +6,18 @@ const Storelocator = () => {
   return (
 
     <>
-
-<Helmet>
-    <title>Store Locator</title>
-            <meta name="description" content={`Store Locator, stores , store locations`} />
-      
-    </Helmet>
+      <Helmet>
+        <title>Store Locator</title>
+        <meta name="description" content={`Store Locator, stores , store locations`} />
+      </Helmet>
 
 
-     <div className=" lg:space-y-[120px] lg:mb-[120px] mb-[60px] space-y-[60px]">
-        <HeroSection/>
-        <Mainbody/>
-    </div>
+      <section className=" lg:space-y-[120px] lg:mb-[120px] mb-[60px] space-y-[60px]">
+        <HeroSection />
+        <Mainbody />
+      </section>
     </>
-   
+
   )
 }
 

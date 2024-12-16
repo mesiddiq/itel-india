@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { tr } from "framer-motion/client";
+import Modal from 'react-modal';
 
 const Mainbody = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [cities, setCities] = useState([]);
-  const [loader1,setloader1]= useState(true)
-  const [loader2,setloader2]= useState(false)
+  const [loader1, setloader1] = useState(true)
+  const [loader2, setloader2] = useState(false)
   const [store, setStores] = useState([]);
   const [state, setState] = useState([]);
   const [showPanel, setShowPanel] = useState(false);
@@ -20,13 +20,13 @@ const Mainbody = () => {
         "https://itel-backend.onrender.com/api/store/getStates"
       );
       setState(response.data.states || []);
-setloader1(false)
+      setloader1(false)
 
     } catch (error) {
       console.error("Error fetching states:", error);
       setState(error)
       setloader1(false)
-      
+
     }
   };
 
@@ -39,13 +39,13 @@ setloader1(false)
         );
         setCities(response.data.cities || []);
         setloader2(false)
-      
+
       }
     } catch (error) {
       console.error("Error fetching cities:", error);
       setCities(false)
       setloader2(false)
-     
+
     }
   };
 
@@ -96,75 +96,81 @@ setloader1(false)
     };
   }, [showPanel]);
 
+  Modal.setAppElement('#root');
+
   return (
     <>
- {showPanel && (
- <div
- onClick={() => setShowPanel(false)}
- style={{ backdropFilter: "blur(8px)" }}
- className="font-markot overflow-hidden bg-black bg-opacity-30 p-4 flex flex-col items-center absolute justify-center w-full h-screen z-50"
->
- {/* Close Button */}
- <div onClick={(e) => e.stopPropagation()} className="w-full flex justify-end max-w-[90%]">
-   <img
-     className="cursor-pointer w-8 h-8"
-     onClick={() => setShowPanel(false)}
-     src="/add.png"
-     alt="Close"
-   />
- </div>
+      <Modal
+        isOpen={showPanel}
+        shouldCloseOnOverlayClick
+        onRequestClose={() => setShowPanel(false)}
+        style={{
+          content: {
+            background: 'transparent',
+            border: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+          overlay: {
+            background: 'rgba(0,0,0,0.2)',
+            backdropFilter: 'blur(10px)',
+          }
+        }}
+      >
+        {/* Close Button */}
+        <button className="absolute right-0 top-0" title="Close" onClick={() => setShowPanel(false)}>
+          <img
+            className="cursor-pointer w-8 h-8"
+            src="/add.png"
+            alt="Close"
+          />
+        </button>
+        {/* Panel Container */}
+        <div
+          className="w-full max-w-4xl h-[80%] rounded-2xl border bg-white shadow-lg flex flex-col overflow-hidden"
+        >
+          {/* Header */}
+          <div className="overflow-x-auto overflow-y-auto h-full">
+            <div className="min-w-[600px]">
+              <div className="py-4 px-5 border-b bg-gray-100 text-gray-800 font-semibold text-sm sm:text-base">
+                <div className="grid grid-cols-[50px_1fr_1fr_1fr_1fr_1fr] gap-4">
+                  <p>S.N</p>
+                  <p>Shop Name</p>
+                  <p>Location</p>
+                  <p>City</p>
+                  <p>State</p>
+                  <p>Status</p>
+                </div>
+              </div>
 
- {/* Panel Container */}
- <div
-   onClick={(e) => e.stopPropagation()}
-   className="w-full max-w-4xl h-[80%] rounded-2xl border bg-white shadow-lg flex flex-col overflow-hidden"
- >
-   {/* Header */}
-   <div className="overflow-x-auto overflow-y-auto h-full">
-   <div className="min-w-[600px]">
-   <div className="py-4 px-5 border-b bg-gray-100 text-gray-800 font-semibold text-sm sm:text-base">
-     <div className="grid grid-cols-[50px_1fr_1fr_1fr_1fr_1fr] gap-4">
-       <p>S.N</p>
-       <p>Shop Name</p>
-       <p>Location</p>
-       <p>City</p>
-       <p>State</p>
-       <p>Status</p>
-     </div>
-   </div>
+              {/* Data Rows */}
 
-   {/* Data Rows */}
-  
-       {store.length > 0 ? (
-         store.map((data, index) => (
-           <div
-             className="py-4 px-5 border-b text-gray-700 text-xs sm:text-sm"
-             key={index}
-           >
-             <div className="grid grid-cols-[50px_1fr_1fr_1fr_1fr_1fr] gap-4">
-               <div>{index + 1}</div>  {/* Reduced width for the index */}
-               <div>{data.shopName}</div>
-               <div>{data.location}</div>
-               <div>{data.city}</div>
-               <div>{data.state}</div>
-               <div>{data.Status}</div>
-             </div>
-           </div>
-         ))
-       ) : (
-         <div className="py-4 px-5 animate-pulse text-center text-gray-500">
-           Loading...
-         </div>
-       )}
-     </div>
-   </div>
- </div>
-</div>
-
-
-
-)}
-
+              {store.length > 0 ? (
+                store.map((data, index) => (
+                  <div
+                    className="py-4 px-5 border-b text-gray-700 text-xs sm:text-sm"
+                    key={index}
+                  >
+                    <div className="grid grid-cols-[50px_1fr_1fr_1fr_1fr_1fr] gap-4">
+                      <div>{index + 1}</div>  {/* Reduced width for the index */}
+                      <div>{data.shopName}</div>
+                      <div>{data.location}</div>
+                      <div>{data.city}</div>
+                      <div>{data.state}</div>
+                      <div>{data.Status}</div>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="py-4 px-5 animate-pulse text-center text-gray-500">
+                  Loading...
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </Modal>
 
       <div className="font-markot ">
         <div className="px-3 overflow-hidden space-y-9 content">
@@ -173,7 +179,7 @@ setloader1(false)
               Store Locator
             </p>
             <p className="lg:w-[711px] text-center text-grey/grey/5 text-desktop/body/2/regular">
-            Simply enter your location below, and we'll show you a list of the nearest electronics retailers, carrier stores, and shops where you can buy your new itel device.
+              Simply enter your location below, and we'll show you a list of the nearest electronics retailers, carrier stores, and shops where you can buy your new itel device.
             </p>
             <div className="w-full space-y-4 lg:space-x-2 lg:w-[882px] lg:space-y-0 text-brand/black grid grid-cols-1 lg:grid-cols-2">
               <div className="flex flex-col items-start">
@@ -186,7 +192,7 @@ setloader1(false)
                   className="w-full px-4 py-2 border border-gray-600 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                   <option value="">{loader1 == false ? "Select State" : <p className=" text-desktop/body/1 text-black/1 animate-pulse">Loading....</p>}</option>
-                  { state.map((state) => (
+                  {state.map((state) => (
                     <option key={state} value={state}>
                       {state}
                     </option>
@@ -203,7 +209,7 @@ setloader1(false)
                   onChange={handleCityChange}
                   className="w-full px-4 py-2 border border-gray-600 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                  <option value="">{loader2 == false ?  "Select City" :"Loading"}</option>
+                  <option value="">{loader2 == false ? "Select City" : "Loading"}</option>
                   {cities.map((city) => (
                     <option key={city} value={city}>
                       {city}
