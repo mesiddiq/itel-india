@@ -78,7 +78,7 @@ export const a05ImageCaraousel = [
         bgContainer: "bg-[#96CAE5]",
         bgURL: '/smartphone/a05/galleryBG/blue.png',
         images: [
-            "/smartphone/a05/products/blue1.webp",
+            "/smartphone/a05/products/6.webp",
             "/smartphone/a05/products/blue2.webp",
         ]
     },

@@ -21,7 +21,7 @@ const features2 = [
 const Section3EnhanceBattery = () => (
   <GradientBackgroundWrapper
     bgImage='/smartphone/A23s/Backgrounds/batterySectionBg.png'
-    paddingStart='48px'
+    paddingStart='48px pb-[0]'
     padding='0'
     mobileBgImage='/smartphone/A23s/Backgrounds/batterySectionBg.png'
   >

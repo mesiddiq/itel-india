@@ -130,7 +130,7 @@ export const TechSpecsDataPower450 = {
         { id: '1', label: '2500 mAh Battery', icon: '/featurephone/common/battery.svg' },
         { id: '4', label: '2000 Phonebook with contact icons', icon: '/featurephone/common/phonebook.svg' },
         { id: '2', label: 'King Voice', icon: '/featurephone/common/voice.svg' },
-        { id: '3', label: '55 Days* backup with Super Battery Mode', icon: '/featurephone/common/battery.svg' },
+        { id: '3', label: '15 Days* backup with Super Battery Mode', icon: '/featurephone/common/battery.svg' },
         { id: '5', label: 'Wireless Fm with Recording', icon: '/featurephone/common/radio.svg' },
         { id: '6', label: 'Vibration Mode', icon: '/featurephone/common/vibration.svg' },
         { id: '7', label: 'VGA Camera with flash', icon: '/featurephone/common/camera.svg' },
