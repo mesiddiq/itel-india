@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import Modal from "react-modal";
 const Droppoints = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
@@ -393,23 +394,34 @@ const Droppoints = () => {
   return (
     <>
       {showpannel && (
-        <div
-          onClick={() => setshowpannel(false)}
-          style={{ backdropFilter: "blur(8px)" }}
-          className="font-markot bg-opacity-30 p-4 sm:p-6 lg:p-10 flex flex-col items-center absolute justify-center w-full h-screen"
-        >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className="w-full sm:w-[990px] flex justify-end"
-          >
-            <img
-              className="cursor-pointer"
-              onClick={() => setshowpannel(false)}
-              src="/add.png"
-              alt="Close"
-            />
-          </div>
-          <div className="w-full sm:w-[990px] rounded-2xl border h-full">
+          <Modal
+                isOpen={showpannel}
+                shouldCloseOnOverlayClick
+                onRequestClose={() => setshowpannel(false)}
+                style={{
+                  content: {
+                    background: 'transparent',
+                    border: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  },
+                  overlay: {
+                    background: 'rgba(0,0,0,0.2)',
+                    backdropFilter: 'blur(10px)',
+                  }
+                }}
+              >
+      
+        
+      <button className="absolute   right-0 top-0" title="Close" onClick={() => setshowpannel(false)}>
+          <img
+            className="cursor-pointer w-8 h-8"
+            src="/add.png"
+            alt="Close"
+          />
+        </button>
+          <div className="w-full sm:w-[990px]  rounded-2xl overflow-hidden border h-full">
             <div className="py-4 gap-5 border px-5 bg-bg/primary/1 flex text-desktop/subtitle text-[#333333]">
               <p className="w-[31px] sm:w-[40px]">S.N</p>
               <p className="w-[150px] sm:w-[180px]">ASP Name</p>
@@ -439,7 +451,8 @@ const Droppoints = () => {
               )}
             </div>
           </div>
-        </div>
+        
+        </Modal>
       )}
 
       <div className="font-markot">
