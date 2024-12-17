@@ -142,7 +142,7 @@ export const ImageCarouselData = [
         images: [
             "/smartphone/A50C/mobileBlue1.webp",
             "/smartphone/A50C/mobileBlue2.webp",
-            "/smartphone/A50C/mobileBlue3.webp",
+            "/smartphone/A50C/mobileBlue3.png",
             "/smartphone/A50C/mobileBlue4.webp",
         ]
     },

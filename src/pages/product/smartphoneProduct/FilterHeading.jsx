@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import filter from '/product-listing/setting-3.svg'
 // import ShowDataForComparision from '../Product Section/ShowDataForComparision';
-import FilterSection from './FilterSection';
+import Filters from './Filters';
 import BuyNowText from '../../../components/common/smartphone_common/BuyNowText';
 
 const FilterHeading = () => {
