@@ -41,7 +41,7 @@ const Battery = () => {
           <div className="absolute pt-[80px] flex flex-col gap-[9px]">
           <div className="flex flex-col gap-[24px] px-4 text-white font-markot">
           <div className="flex">
-            <h3 className="text-mobile/h3 text-left">
+            <h3 className="text-mobile/h3 pt-10 md:pt-0 text-left">
               Ultimate power<br /> boost performance<br/> for all day
             </h3>
           </div>

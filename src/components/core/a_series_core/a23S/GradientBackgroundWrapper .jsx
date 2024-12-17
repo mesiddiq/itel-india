@@ -26,7 +26,7 @@ const GradientBackgroundWrapper = ({
                     overflow: overflow,
                     paddingLeft: paddingStart,
                     paddingRight: padding,
-                    backgroundRepeat: 'no-repeat'
+                    backgroundRepeat: 'no-repeat',
                 }}
             >
                 {children}
@@ -41,7 +41,9 @@ const GradientBackgroundWrapper = ({
                     backgroundPosition: mobileBackgroundPosition,
                     overflow: mobileOverflow,
                     padding: mobilePadding,
-                    backgroundRepeat: 'no-repeat'
+                    backgroundRepeat: 'no-repeat',
+                    paddingBottom:0
+
                 }}
             >
                 {children}

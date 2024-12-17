@@ -27,7 +27,7 @@ export const FullSpecificationsDataFlipOne = [
         data: [
             { label: 'Display Size', value: '3.35 cm (1.32")' },
             { label: 'Resolution', value: '320*240' },
-            { label: 'Resolution Type', value: 'QQVGA' },
+            { label: 'Resolution Type', value: 'QVGA' },
             { label: 'Pixel Density', value: '167 ppi' },
         ]
     },
@@ -55,8 +55,8 @@ export const FullSpecificationsDataFlipOne = [
             { label: 'Chipset', value: 'SC6531E' },
             { label: 'Dimension', value: '97.6 * 49 * 11.2mm' },
             { label: 'Expandable Memory', value: 'Upto 32GB' },
-            { label: 'Phonebook', value: '500' },
-            { label: 'Message', value: '200' },
+            { label: 'Phonebook', value: '2000' },
+            { label: 'Message', value: '500' },
             { label: 'Processor', value: '208 MHz' },
         ]
     },

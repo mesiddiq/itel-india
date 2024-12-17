@@ -82,7 +82,7 @@ export default function Frames() {
                                         with Memory Fusion Technology*
                                     </p>
                                 </div>
-                                <p className="lg:text-[32px] text-[#181818] font-medium text-mobile/title lg:mt-5">
+                                <p className="lg:text-[32px] text-[#181818] pt-[9px] md:pt-0 font-medium text-mobile/title lg:mt-5">
                                     <span className="text-[#08E488]">64GB</span> ROM
                                 </p>
                             </div>
