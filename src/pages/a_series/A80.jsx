@@ -1,0 +1,80 @@
+/* eslint-disable react-refresh/only-export-components */
+// import HeroSectionOfPage from "./components/core/a_series_core/a70/HeroSectionOfPage";
+import { Helmet } from "react-helmet";
+import FullSpecifications from "../../components/common/FullSpecifications";
+import StickyHeader from "../../components/common/StickyHeader";
+import A05ColorImageCarausel from "../../components/core/a_series_core/a05/A05ColorImageCarausel";
+import { ImageCarouselDataA80 } from "../../data/smartphonedata/A80ImageCarouselData";
+import { FullSpecificationsA80 } from "../../data/smartphonedata/A80Data";
+import GridSectionDispaly from "../../components/core/a_series_core/a80/GridSectionDispaly";
+import SliderAnimationCommon from "../../components/common/smartphone_common/SliderAnimationCommon";
+import NewOs14GridSection from "../../components/core/a_series_core/a80/NewOs14GridSection";
+import ColorVariantsSection from "../../components/core/a_series_core/a80/ColorVariantsSection ";
+import CreativeFilterA80 from "../../components/core/a_series_core/a80/CreativeFilterA80";
+import HeroSectionA80 from "../../components/core/a_series_core/a80/HeroSectionA80";
+
+const A80 = () => {
+    return (
+        <div className="bg-[#FAFAFA] font-markot">
+
+            <Helmet>
+                <title>A 80</title>
+                <meta name="description" content={`Introducing the itel A80, your gateway to the future of smartphones! With its awesome design and 6.6inch HD+ display, it's the epitome of elegance and functionality. Experience seamless multitasking with 4GB RAM, expandable up to 12GB* with Memory Fusion & Massive 256GB ROM. Powered by an octa-core processor and 5000 mAh battery, and Type-C charging it's built for seamless performance. Get yours today and step into the world of tomorrow!`} />
+            </Helmet>
+            {/* <HeroSectionOfPage /> */}
+            <HeroSectionA80
+                tagText="Awesome series"
+                headingText="A80"
+                price={"6,299"}
+                description={'12GB* (4GB+8GB*) RAM + 256GB ROM | Dynamic bar | 13MP AI Dual Rear Camera'}
+                bgDesktopVideo={'/smartphone/A80/AllSections/Banner/bbannervideo.webm'}
+                bgMobile={'/smartphone/A80/AllSections/Banner/Herobg.webp'}
+                gradient1='#ffff'
+                gradient2='#ffff'
+                theme='light'
+                purchaseLink={'#'}
+            />
+            <StickyHeader
+                title="A80"
+                purchaseLink={'#'}
+                icon={'/smartphone/a70/stickyeHeaderIcon.svg'}
+                bgColor={'#FFBD6D'}
+                dark={true} />
+
+            <GridSectionDispaly />
+
+            <SliderAnimationCommon
+                text1="Awesome series"
+                text2="IMPRESSIVELY AWESOME"
+                svgCode={<img src="/smartphone/A23s/scrollA23.svg" alt="star" className="" />}
+                bgColor="#EBE8E2"
+                textGradient1="#6B6682"
+                textGradient2="#6B6682"
+            />
+
+
+            <CreativeFilterA80 />
+            <NewOs14GridSection />
+
+            <ColorVariantsSection />
+
+
+            <div className="lg:px-0 py-[48px] lg:py-[80px] bg-[#ffffff]">
+                <div className="lg:content bg-[#ffffff]  overflow-hidden">
+                    {/* <ColorImageCarousel ImageCarouselData={ImageCarouselDataA70} showTitleInMobile={true} /> */}
+                    <A05ColorImageCarausel
+                        ImageCarouselData={ImageCarouselDataA80}
+                        showTitleInMobile={true}
+                    />
+                </div>
+            </div>
+
+            <div className="px-4 py-[60px] lg:py-[80px] bg-[#ffffff]">
+                <FullSpecifications FullSpecificationsData={FullSpecificationsA80} mode="light" />
+            </div>
+
+        </div >
+    );
+}
+
+export default A80

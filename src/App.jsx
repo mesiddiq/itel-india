@@ -46,6 +46,7 @@ const A05i = lazy(() => import('./pages/a_series/A05i'));
 const ASeventy = lazy(() => import('./pages/a_series/ASeventy'));
 const A05 = lazy(() => import('./pages/a_series/A05'));
 const ATwentyThreeS = lazy(() => import('./pages/a_series/ATwentyThreeS'));
+const A80 = lazy(() => import('./pages/a_series/A80'));
 const A50C = lazy(() => import('./pages/a_series/A50C'));
 const Navbar = lazy(() => import('./pages/Navbar'));
 const ScrollToTop = lazy(() => import('./utils/ScrollToTop'));
@@ -154,6 +155,7 @@ function App() {
 						<Route path='a50' element={<A50 />} />
 						<Route path='a70' element={<ASeventy />} />
 						<Route path='a23-s' element={<ATwentyThreeS />} />
+						<Route path='a80' element={<A80 />} />
 					</Route>
 
 
