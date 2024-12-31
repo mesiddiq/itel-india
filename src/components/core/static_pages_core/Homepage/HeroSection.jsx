@@ -248,7 +248,7 @@ const Banner3 = ({ activeSlide }) => {
                         <motion.h1
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='text-mobile/h2 lg:text-desktop/h1 text-white font-bold'>Awesome A80</motion.h1>
+                            transition={{ duration: 1, delay: 0.2 }} className='text-mobile/h2 lg:text-desktop/h1 text-white font-bold'>India ka-WOW</motion.h1>
                         <motion.h5
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}

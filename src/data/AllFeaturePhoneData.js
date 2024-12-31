@@ -28,7 +28,7 @@ export const AllFeaturePhoneData = [
         thumbnail: "/product-listing/filterFeaturephoneImages/flipone.webp",
         description: "Leather Premium Design | Type-C Charging | BT Caller",
         purchaseLink: "/product/flip-one",
-        category: "",
+        category: "Innovation Series",
         isNew: true,
         specification: {
             price: "2,499",

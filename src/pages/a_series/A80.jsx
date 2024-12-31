@@ -12,16 +12,24 @@ import NewOs14GridSection from "../../components/core/a_series_core/a80/NewOs14G
 import ColorVariantsSection from "../../components/core/a_series_core/a80/ColorVariantsSection ";
 import CreativeFilterA80 from "../../components/core/a_series_core/a80/CreativeFilterA80";
 import HeroSectionA80 from "../../components/core/a_series_core/a80/HeroSectionA80";
+import AutomaticScene from "../../components/core/a_series_core/a80/AutomaticScene";
+import ImageProperties from "../../components/core/a_series_core/a80/ImageProperties";
+import BuiltForLife from "../../components/core/a_series_core/a80/BuiltForLife";
+import MobileFrame from "../../components/core/a_series_core/a80/MobileFrame";
+import VisualExperience from "../../components/core/a_series_core/a80/VisualExperience";
+import FlawlessIllumination from "../../components/core/a_series_core/a80/FlawlessIllumination";
+import PerfectSelfies from "../../components/core/a_series_core/a80/PerfectSelfies";
+import ProductVideo from "../../components/core/a_series_core/a80/ProductVideo";
+import HeaderA80 from "../../components/core/a_series_core/a80/HeaderA80";
 
 const A80 = () => {
     return (
         <div className="bg-[#FAFAFA] font-markot">
 
             <Helmet>
-                <title>A 80</title>
+                <title>A80</title>
                 <meta name="description" content={`Introducing the itel A80, your gateway to the future of smartphones! With its awesome design and 6.6inch HD+ display, it's the epitome of elegance and functionality. Experience seamless multitasking with 4GB RAM, expandable up to 12GB* with Memory Fusion & Massive 256GB ROM. Powered by an octa-core processor and 5000 mAh battery, and Type-C charging it's built for seamless performance. Get yours today and step into the world of tomorrow!`} />
             </Helmet>
-            {/* <HeroSectionOfPage /> */}
             <HeroSectionA80
                 tagText="Awesome series"
                 headingText="A80"
@@ -34,12 +42,13 @@ const A80 = () => {
                 theme='light'
                 purchaseLink={'#'}
             />
-            <StickyHeader
+            <HeaderA80
                 title="A80"
                 purchaseLink={'#'}
                 icon={'/smartphone/a70/stickyeHeaderIcon.svg'}
                 bgColor={'#FFBD6D'}
-                dark={true} />
+                dark={true}
+            />
 
             <GridSectionDispaly />
 
@@ -52,16 +61,28 @@ const A80 = () => {
                 textGradient2="#6B6682"
             />
 
+            <BuiltForLife />
+            <ProductVideo />
+            {/* <MobileFrame /> */}
+            <VisualExperience />
+            <PerfectSelfies />
+            <FlawlessIllumination />
+
+
 
             <CreativeFilterA80 />
+
+            <AutomaticScene />
+
+            <ImageProperties />
+
             <NewOs14GridSection />
 
             <ColorVariantsSection />
 
 
-            <div className="lg:px-0 py-[48px] lg:py-[80px] bg-[#ffffff]">
+            <div className="lg:px-0 py-[48px] lg:pt-[80px] bg-[#ffffff]">
                 <div className="lg:content bg-[#ffffff]  overflow-hidden">
-                    {/* <ColorImageCarousel ImageCarouselData={ImageCarouselDataA70} showTitleInMobile={true} /> */}
                     <A05ColorImageCarausel
                         ImageCarouselData={ImageCarouselDataA80}
                         showTitleInMobile={true}
@@ -69,7 +90,7 @@ const A80 = () => {
                 </div>
             </div>
 
-            <div className="px-4 py-[60px] lg:py-[80px] bg-[#ffffff]">
+            <div className="px-4 bg-white">
                 <FullSpecifications FullSpecificationsData={FullSpecificationsA80} mode="light" />
             </div>
 

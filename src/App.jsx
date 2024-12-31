@@ -66,11 +66,22 @@ const SuperGuru400 = lazy(() => import('./pages/feature_phone/SuperGuru400'));
 const SuperGuru4G = lazy(() => import('./pages/feature_phone/SuperGuru4G'));
 const SuperGuru600 = lazy(() => import('./pages/feature_phone/SuperGuru600'));
 const Ace2Power = lazy(() => import('./pages/feature_phone/Ace2Power'));
-
+import 'lenis/dist/lenis.css'
+import Lenis from 'lenis'
 
 function App() {
 
 	useEffect(() => {
+
+		const lenis = new Lenis()
+
+		function raf(time) {
+			lenis.raf(time)
+			requestAnimationFrame(raf)
+		}
+
+		requestAnimationFrame(raf)
+
 		Aos.init({
 			duration: 1000,
 			once: true

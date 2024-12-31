@@ -1,6 +1,6 @@
 import curlyLine from '/product-listing/curlyHeader.svg'
 import readmore from '/product-listing/read-more.svg'
-import hritik from '/product-listing/banner-asset-image.png'
+// import hritik from '/product-listing/banner-asset-image.png'
 
 const ProductListingBanner = () => {
 return (
@@ -8,9 +8,9 @@ return (
     <section className=" w-full h-[400px] md:h-[329px] font-markot bg-[#EBE8E2] lg:rounded-2xl relative overflow-hidden">
         
         <div className=' overflow-hidden flex md:flex-row flex-col bg-[#EBE8E2] h-full w-full rounded-2xl bg-no-repeat bg-center md:bg-right bg-cover md:bg-auto' style={{ backgroundImage: `url(${curlyLine})`}}>
-            <section className='w-full md:w-1/2 h-full flex justify-center items-end absolute -bottom-5 md:top-5 right-0'>
+            {/* <section className='w-full md:w-1/2 h-full flex justify-center items-end absolute -bottom-5 md:top-5 right-0'>
                 <img src={hritik} className=''/>
-            </section>
+            </section> */}
             
             <section className='pl-5 md:pl-10 py-5 md:py-11 md:h-full md:w-1/2 w-full flex flex-col md:justify-between'>
                 <div className='flex flex-col'>

@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React from 'react'
 
-const StickyHeader = ({
+const HeaderA80 = ({
     title, // Pass the title
     purchaseLink, // Pass the purchase link
     icon, // Pass the icon
@@ -12,7 +10,7 @@ const StickyHeader = ({
     borderBottom // When bg is white, make it true
 }) => {
     return (
-        <div className={`${borderBottom ? 'border border-t-white/10' : 'border-none'} px-4 md:px-0 py-4 md:py-6 font-markot !sticky top-0 z-[999]`} style={{ background: bgColor ? bgColor : '#181818' }}>
+        <div className={`${borderBottom ? 'border border-t-white/10' : 'border-none'} px-4 md:px-0 py-4 md:py-6 font-markot z-[999]`} style={{ background: bgColor ? bgColor : '#181818' }}>
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
                     <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className={iconSize ? iconSize : 'size-10'} />
@@ -39,4 +37,4 @@ const StickyHeader = ({
     )
 }
 
-export default StickyHeader
+export default HeaderA80

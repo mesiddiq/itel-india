@@ -31,7 +31,7 @@ const FeaturesGrid = () => {
             <h4 className='text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] font-markot'>Superior Processor Power</h4>
             <h5 className='text-[16px] md:text-desktop/h5/medium leading-[19px] text-[#FFFFFF] font-markot pt-2'>MediaTek Dimensity 6080 (4,20,000 AnTuTu Score)</h5>
           </div>
-          <div className='col-span-1 h-[340px] md:h-[375px] rounded-[16px] p-[20px] bg-[url("/smartphone/color-pro-5g/FeatureGrid/grid_ramrom.webp")] bg-cover bg-center bg-no-repeat'>
+          <div className='col-span-1 h-[340px] md:h-[375px] rounded-[16px] p-[20px] bg-[url("/smartphone/color-pro-5g/FeatureGrid/grid_battery.webp")] bg-cover bg-center bg-no-repeat'>
             <h4 className='text-mobile/h5/medium md:text-desktop/h4 text-[#FFFFFF] font-markot'>Endless Battery Power*</h4>
             <h5 className='text-[16px] md:text-desktop/h5/medium leading-[19px] text-[#FFFFFF] font-markot pt-2'>5000 mAh | 18W Fast Charging</h5>
           </div>

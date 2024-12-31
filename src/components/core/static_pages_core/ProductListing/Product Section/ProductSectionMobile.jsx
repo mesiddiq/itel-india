@@ -1,19 +1,15 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import FilterTags from "../Filter Section/FilterTags";
 import ProductCard from "./ProductCard";
 // import life from '../../assets/life.svg';
-import subtract from '/product-listing/Group 1973339759.png';
-import arrowLeftCarousel from '/product-listing/arrow-left-carousel.svg';
-import arrowRightCarousel from '/product-listing/arrow-right-carousel.svg';
 import Compare from "./Compare";
-import SeriesTags from "./SeriesTags";
 import Enjoy from "./Enjoy";
 import PhoneBanner from "./PhoneBanner";
-import { useState } from "react";
+import SeriesTags from "./SeriesTags";
+import arrowLeftCarousel from '/product-listing/arrow-left-carousel.svg';
+import arrowRightCarousel from '/product-listing/arrow-right-carousel.svg';
 
-import { AllPhonesData } from '../../../../../data/AllPhoneData'
-import { seriesStylishTextContent } from '../../../../../data/seriesStylishTextContent'
+import { AllPhonesData } from '../../../../../data/AllPhoneData';
 import FilterHeading from "../Filter Section/FilterHeading";
 
 const seriesBannerData = {
