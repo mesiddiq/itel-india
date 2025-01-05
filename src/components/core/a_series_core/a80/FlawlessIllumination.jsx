@@ -33,7 +33,7 @@ const FlawlessIllumination = () => {
 
     return (
         <div className='bg-black h-[400vh] relative' ref={sectionRef}>
-            <div className="h-screen sticky top-0 w-full ">
+            <div className="h-screen sticky top-0 w-full overflow-hidden ">
                 <div className="relative h-full w-full overflow-hidden lg:pt-[60px] pt-8">
                     <img ref={ringLightRef} className='h-full z-10 scale-150 object-contain opacity-0 absolute top-32 -left-10  md:left-0 w-full' src="/smartphone/A80/AllSections/flashlight/o.png" alt="Flawless Illumination" />
                     <img ref={smartPhoneRef} className='w-full -z-10 h-full object-cover absolute top-0 hidden md:block' src="/smartphone/A80/AllSections/flashlight/smartphone.webp" alt="Flawless Illumination" />

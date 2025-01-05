@@ -68,6 +68,7 @@ const SuperGuru600 = lazy(() => import('./pages/feature_phone/SuperGuru600'));
 const Ace2Power = lazy(() => import('./pages/feature_phone/Ace2Power'));
 import 'lenis/dist/lenis.css'
 import Lenis from 'lenis'
+import ComingSoonZeno from './pages/zeno/ComingSoonZeno'
 
 function App() {
 
@@ -122,7 +123,9 @@ function App() {
 					<Route path='/terms-of-use-itel-mobile-india' element={<Terms />} />
 					<Route path='/store-locator' element={<Storelocator />} />
 
+					{/************************************ZENO***************************************************************/}
 
+					<Route path='/zeno' element={<ComingSoonZeno />} />
 
 
 					{/* ***************************************************************************************************/}

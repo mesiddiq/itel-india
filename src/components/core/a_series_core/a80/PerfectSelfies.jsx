@@ -33,7 +33,7 @@ const PerfectSelfies = () => {
 
     return (
         <div className='bg-[#161410] h-[300vh] relative' ref={sectionRef} >
-            <div className="h-screen sticky top-0 w-full">
+            <div className="h-screen sticky top-0 w-full overflow-hidden">
                 <div className="h-full w-full relative overflow-hidden flex pt-8 lg:pt-0 justify-center lg:items-center ">
                     <div className="content flex justify-center lg:justify-start">
                         <div className="space-y-2 lg:space-y-4 max-w-[436px] text-center lg:text-left  " ref={textRef}>

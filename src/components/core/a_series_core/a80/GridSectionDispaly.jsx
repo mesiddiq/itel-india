@@ -8,11 +8,11 @@ const GridSectionDisplay = () => {
         backgroundImage: "url('/smartphone/A80/AllSections/Banner/Herobg.webp')",
       }}
     >
-      <div className="content flex flex-col gap-6 justify-center items-center pt-14 px-4">
+      <div className="content overflow-hidden flex flex-col gap-6 justify-center items-center pt-14 px-4 ">
         {/* Top Row */}
         <div className="flex flex-wrap gap-4 justify-center">
           {/* First Card */}
-          <div className="w-full xl:w-[762px] border pb-0 gap-6 p-4 flex flex-col lg:flex-row justify-between items-center border-[#FFBD6D] rounded-lg h-auto lg:h-[272px] overflow-hidden">
+          <div className="w-full xl:max-w-[762px] border pb-0 gap-6 p-4 flex flex-col lg:flex-row justify-between items-center border-[#FFBD6D] rounded-lg h-auto lg:h-[272px] overflow-hidden">
             <div className="w-full lg:w-[300px] pt-6 lg:pt-5 px-2 text-center lg:text-left">
               <img
                 src="/smartphone/A80/AllSections/Grid/smartPhone.svg"

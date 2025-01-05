@@ -1,11 +1,35 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import ReactPlayer from "react-player";
 
 const CreativeFilterA80 = () => {
+
+  const images = [
+    '/smartphone/A80/AllSections/creativefilter/1.webp',
+    '/smartphone/A80/AllSections/creativefilter/2.webp',
+    '/smartphone/A80/AllSections/creativefilter/3.webp',
+    '/smartphone/A80/AllSections/creativefilter/4.webp',
+  ];
+
+  const [currentImage, setCurrentImage] = useState(images[0]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage(prevImage => {
+        const currentIndex = images.indexOf(prevImage);
+        const nextIndex = (currentIndex + 1) % images.length;
+        return images[nextIndex];
+      });
+    }, 1500);
+    return () => clearInterval(interval);
+  }, [images]);
+
+
   return (
-    <div className="bg-[#161410]">
-      <div className="content relative flex flex-col lg:flex-row items-center gap-6 pt-14 px-4">
+    <div className="bg-[#161410] ">
+      <div className="content overflow-hidden h-[480px] lg:h-[620px] relative flex flex-col justify-between lg:flex-row items-center gap-6 pt-8 px-4">
         {/* Text Section */}
-        <div className="w-full lg:w-[496px] relative lg:absolute lg:top-1/2 lg:left-12 transform lg:-translate-y-1/2 z-10">
+        <div className="w-full lg:max-w-[496px] relative  text-center lg:text-left">
           <h1
             className="text-mobile/h3 lg:text-desktop/h2 text-white py-4"
             data-aos="fade-up"
@@ -22,39 +46,12 @@ const CreativeFilterA80 = () => {
           </p>
         </div>
 
+        <div className="">
+          <img  src={currentImage} alt="" />
+        </div>
+
         {/* Video Section */}
-        <div className="w-full overflow-hidden hidden lg:block">
-          <ReactPlayer
-            playing
-            controls={false}
-            loop
-            muted
-            width="100%"
-            height="100%"
-            url={[
-              {
-                src: "/smartphone/A80/AllSections/9creativefilter/bg.webm",
-                type: "video/webm",
-              },
-            ]}
-          />
-        </div>
-        <div className="w-full overflow-hidden block lg:hidden">
-          <ReactPlayer
-            playing
-            controls={false}
-            loop
-            muted
-            width="100%"
-            height="100%"
-            url={[
-              {
-                src: "/smartphone/A80/AllSections/9creativefilter/bgMobile.mp4",
-                type: "video/mp4",
-              },
-            ]}
-          />
-        </div>
+
       </div>
     </div>
   );

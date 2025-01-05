@@ -36,29 +36,28 @@ export default function HeroSectionA80({
     }, [textControls, backgroundControls])
 
     return (
-        <div ref={ref} className={`relative h-[680px] lg:min-h-[750px] w-full overflow-hidden ${theme == "dark" ? 'bg-white' : 'bg-black'}`}>
-            {width > 768 ? (
-                <motion.video
-                    className="absolute min-h-[521px] lg:min-h-[750px] min-w-full object-cover"
-                    initial={{ opacity: 0, y: "100%" }}
-                    animate={backgroundControls}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                    src={bgDesktopVideo}
-                    autoPlay
-                    muted
-                    loop
-                />
-            ) : (
-                <motion.div
-                    className={`absolute min-h-[521px] lg:min-h-[750px] min-w-full bg-cover bg-center bg-no-repeat`}
-                    initial={{ opacity: 0, y: "100%" }}
-                    animate={backgroundControls}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                    style={{
-                        background: `url(${bgMobile}) center center/cover no-repeat`,
-                    }}
-                />
-            )}F
+        <div ref={ref} className={`relative h-[520px] lg:h-[750px] w-full overflow-hidden ${theme == "dark" ? 'bg-white' : 'bg-black'}`}>
+            <motion.video
+                className="absolute min-h-[521px] lg:h-[750px] min-w-full object-cover hidden lg:block"
+                initial={{ opacity: 0, y: "100%" }}
+                animate={backgroundControls}
+                transition={{ duration: 1, ease: "easeOut" }}
+                src={bgDesktopVideo}
+                autoPlay
+                muted
+                loop
+            />
+
+            <motion.video
+                className={`absolute lg:hidden min-h-[521px] lg:min-h-[750px] min-w-full bg-cover bg-center bg-no-repeat`}
+                initial={{ opacity: 0, y: "100%" }}
+                animate={backgroundControls}
+                transition={{ duration: 1, ease: "easeOut" }}
+                src={'/smartphone/A80/AllSections/Banner/bannermobile.mp4'}
+                autoPlay
+                loop
+            />
+ 
             <div className="content h-full justify-between flex-col md:flex-row  flex lg:items-center pt-11 lg:pt-0  md:px-0">
                 <div className="relative z-10 px-4">
                     <motion.div
@@ -147,20 +146,6 @@ export default function HeroSectionA80({
                     </motion.div>
                 </div>
                 <img src="/smartphone/A80/AllSections/Banner/HR+with+A80+(2).webp" alt="" className="z-20 relative hidden lg:block md:top-14 p-10 md:h-[710px]" />
-                <div className="lg:hidden block px-0">
-                    <motion.video
-                        className="absolute min-h-[521px] lg:min-h-[750px] min-w-full object-cover"
-                        initial={{ opacity: 0, y: "100%" }}
-                        animate={backgroundControls}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        src={'/smartphone/A80/AllSections/Banner/animationbg.webm'}
-                        autoPlay
-                        muted
-                        loop
-                    />
-                    <img src="/smartphone/A80/AllSections/Banner/HR+with+A80+(2).webp" alt="" className="z-20 relative md:top-14 p-10 md:h-[710px]" />
-
-                </div>
             </div>
         </div>
     )

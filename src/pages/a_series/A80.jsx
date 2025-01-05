@@ -21,6 +21,8 @@ import FlawlessIllumination from "../../components/core/a_series_core/a80/Flawle
 import PerfectSelfies from "../../components/core/a_series_core/a80/PerfectSelfies";
 import ProductVideo from "../../components/core/a_series_core/a80/ProductVideo";
 import HeaderA80 from "../../components/core/a_series_core/a80/HeaderA80";
+import ExperienceTheCamera from "../../components/core/a_series_core/a80/ExperienceTheCamera";
+import OneFullCharge from "../../components/core/a_series_core/a80/OneFullCharge";
 
 const A80 = () => {
     return (
@@ -30,6 +32,7 @@ const A80 = () => {
                 <title>A80</title>
                 <meta name="description" content={`Introducing the itel A80, your gateway to the future of smartphones! With its awesome design and 6.6inch HD+ display, it's the epitome of elegance and functionality. Experience seamless multitasking with 4GB RAM, expandable up to 12GB* with Memory Fusion & Massive 256GB ROM. Powered by an octa-core processor and 5000 mAh battery, and Type-C charging it's built for seamless performance. Get yours today and step into the world of tomorrow!`} />
             </Helmet>
+
             <HeroSectionA80
                 tagText="Awesome series"
                 headingText="A80"
@@ -51,7 +54,6 @@ const A80 = () => {
             />
 
             <GridSectionDispaly />
-
             <SliderAnimationCommon
                 text1="Awesome series"
                 text2="IMPRESSIVELY AWESOME"
@@ -60,20 +62,18 @@ const A80 = () => {
                 textGradient1="#6B6682"
                 textGradient2="#6B6682"
             />
-
-            <BuiltForLife />
+            <MobileFrame />
             <ProductVideo />
-            {/* <MobileFrame /> */}
+            <BuiltForLife />
+
+
             <VisualExperience />
-            <PerfectSelfies />
+            <OneFullCharge />
+            <ExperienceTheCamera />
             <FlawlessIllumination />
-
-
-
             <CreativeFilterA80 />
-
             <AutomaticScene />
-
+            <PerfectSelfies />
             <ImageProperties />
 
             <NewOs14GridSection />

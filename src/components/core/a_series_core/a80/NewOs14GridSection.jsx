@@ -1,6 +1,6 @@
 const NewOs14GridSection = () => {
     return (
-        <div className="content flex flex-col gap-10 mt-10 text-black ">
+        <div className="content flex flex-col gap-10 mt-10 text-black px-4 md:px-0 ">
             <h1 className="text-mobile/h5/medium text-center md:text-desktop/h2">
                 Dwelling with Beauty The New OS 14
             </h1>

@@ -49,7 +49,7 @@ const Banner1 = ({ activeSlide }) => {
                             transition={{ duration: 1, delay: 0.2 }}
                             className="space-y-2 lg:space-y-2 lg:pt-4">
                             <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80'>Snag your itel smartphone starting at just</h5>
-                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><MdCurrencyRupee /> 6,990 /-</h2>
+                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><MdCurrencyRupee /> 5,599 /-</h2>
                         </motion.div>
                         <Link to={'/smartphones'}>
                             <motion.button
@@ -259,6 +259,32 @@ const Banner3 = ({ activeSlide }) => {
         </AnimatePresence>
     )
 }
+const ZenoComingSoon = ({ activeSlide }) => {
+
+    return (
+        <AnimatePresence mode='wait'>
+            <Link to={'/zeno'}>
+                <div className="relative">
+                    <motion.div key={activeSlide} className=" h-[520px] md:h-[550px] lg:h-[627px] content flex lg:justify-center lg:pt-[114px]">
+                        <video
+                            autoPlay
+                            muted
+                            loop
+                            src="/videos/zeno/homepage.mp4" className='w-full object-cover absolute left-0 top-0 h-full object-right'
+                        />
+
+                        {/* <video
+                        autoPlay
+                        muted
+                        loop
+                        src="/videos/homepage/herobanner4_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
+                        /> */}
+                    </motion.div>
+                </div>
+            </Link>
+        </AnimatePresence>
+    )
+}
 
 
 const HeroSection = () => {
@@ -284,12 +310,15 @@ const HeroSection = () => {
             className="max-h-screen w-full "
         >
 
-
             {/* *************** Slide 1************************* */}
             <SwiperSlide>
                 <Banner1 activeSlide={activeSlide} />
             </SwiperSlide>
 
+
+            <SwiperSlide>
+                <ZenoComingSoon activeSlide={activeSlide} />
+            </SwiperSlide>
 
             {/* *************** Slide 2************************* */}
 
