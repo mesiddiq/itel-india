@@ -35,7 +35,7 @@ const Grid = () => {
 
           <img
             src="/smartphone/P55+/Backgrounds/grid1.png"
-            alt="gridimage"
+            alt="Every Shot Pixel Perfect"
             className='absolute z-0 right-0 w-[276px] md:w-[383px]  -bottom-10 lg:bottom-0'
           />
 

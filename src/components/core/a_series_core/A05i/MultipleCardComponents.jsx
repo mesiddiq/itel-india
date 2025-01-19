@@ -23,7 +23,7 @@ const MultipleCardComponents = () => {
 
             <img
               src="/smartphone/A05i/Backgrounds/yourCompactAI.webp"
-              alt="yourCompactAI"
+              alt="Dual 5MP AI Cameras"
               className='absolute z-0 -bottom-[20%] lg:right-auto right-0 lg:-bottom-[10%] scale-75 md:scale-50 md:-bottom-[250px] lg:scale-[90%] group-hover:scale-[85%] lg:group-hover:scale-[100%] transition-transform duration-700'
             />
           </div>
@@ -67,7 +67,7 @@ const MultipleCardComponents = () => {
                 {/* Image added here */}
                 <img
                   src='/smartphone/A05i/Backgrounds/dualSecurityPhones.webp'
-                  alt='quickCharge'
+                  alt='Dual Security Features'
                   className='absolute  left-0 bottom-[-20%] sm:bottom-[-60%] md:-bottom-[40%] lg:-bottom-[50%] scale-[80%] lg:scale-[90%] group-hover:scale-[90%] lg:group-hover:scale-[95%] transition-transform duration-700'
                 />
               </div>

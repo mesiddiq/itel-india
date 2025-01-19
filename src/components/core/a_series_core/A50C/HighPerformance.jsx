@@ -7,7 +7,7 @@ const HighPerformance = () => {
         }}>
             
             <div className="flex flex-col justify-center items-center h-full w-1/2 rounded-2xl md:rounded-[56px]">
-                <img src="/smartphone/A50C/highPerformance.png"/>
+                <img alt="Unisoc T603 Processor" src="/smartphone/A50C/highPerformance.png"/>
             </div>
 
             <div className="md:scale-75 lg:scale-100 flex flex-col justify-center items-center h-full w-1/2 rounded-2xl md:rounded-[56px] font-markot">
@@ -42,7 +42,7 @@ const HighPerformance = () => {
         }}>
             
             <div className="flex flex-col justify-center items-center h-full max-w-[250px] w-full rounded-2xl md:rounded-[56px]">
-                <img src="/smartphone/A50C/highPerformance.png"/>
+                <img alt="Unisoc T603 Processor" src="/smartphone/A50C/highPerformance.png"/>
             </div>
 
             <div className="md:scale-75 lg:scale-100 flex flex-col justify-center items-center h-full w-full rounded-2xl md:rounded-[56px] font-markot">

@@ -18,7 +18,7 @@ const HeroBanner = () => {
           </div>
           <div className='col-span-1'>
             <h3 className='bg-gradient-to-br from-[#EECF7F] to-[#D2B363] inline-block text-transparent bg-clip-text text-[32px] md:text-[100px] font-[350] rotate-90 absolute bottom-[35px] md:bottom-[120px] right-0 md:right-[-100px] font-markot'>P55T</h3>
-            <img src='/smartphone/p55T/Backgrounds/HeroImage.webp' className='absolute bottom-0 right-0 h-[375px] md:h-full' alt='heroImage' data-aos='fade-up' />
+            <img src='/smartphone/p55T/Backgrounds/HeroImage.webp' className='absolute bottom-0 right-0 h-[375px] md:h-full' alt='ITEL Color Pro 5G' data-aos='fade-up' />
           </div>
         </div>
       </div>

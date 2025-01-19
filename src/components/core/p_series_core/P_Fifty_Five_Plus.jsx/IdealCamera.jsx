@@ -24,7 +24,7 @@ const IdealCamera = () => {
     </div>
      </div> </div>
       <div className=" flex justify-center items-center w-full px-4 md:p-0 md:w-1/2">
-      <img src='/smartphone/P55+/Backgrounds/IdealCameraGraphic.webp' className='lg:h-[600px]'></img>
+      <img src='/smartphone/P55+/Backgrounds/IdealCameraGraphic.webp' alt='Versatile High-Quality Camera' className='lg:h-[600px]'></img>
       </div>
       </div></div>
   )

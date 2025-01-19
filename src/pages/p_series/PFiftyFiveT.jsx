@@ -14,13 +14,21 @@ import CaptureEveryDetail from '../../components/core/p_series_core/P_Fifty_Five
 import BoosterEngine from '../../components/core/p_series_core/P_Fifty_Five_T/BoosterEngine';
 import ExtendedMemory from '../../components/core/p_series_core/P_Fifty_Five_T/ExtendedMemory';
 import MasonaryCards from '../../components/core/p_series_core/P_Fifty_Five_T/MasonaryCards';
-
+import { Helmet } from 'react-helmet'
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/P55TData';
 import HeroSmartPhoneCommon from '../../components/common/smartphone_common/HeroSmartPhoneCommon';
 
 const PFiftyFiveT = () => {
   return (
     <>
+
+
+<Helmet>
+                <title>itel P55T - Powerful 6000mAh Battery & Features | itel India</title>
+                <meta name="description" content={`Explore the itel P55T with a robust 6000mAh battery and incredible features. Experience innovation and reliability with itel India’s latest smartphone!`} />
+            </Helmet>
+
+
       <main className="bg-[#EBE8E2]">
         <HeroSmartPhoneCommon
           headingText="P55T"

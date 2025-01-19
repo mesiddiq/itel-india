@@ -44,7 +44,7 @@ export default function Frame3() {
                         <div className="overflow-hidden z-10 absolute bottom-0 right-0 xl:pt-[60px] md:pt-[35px] xl:pr-[80px] md:pr-[15px] pr-[190px]">
                             <img
                                 src="/smartphone/a05/frame3.webp"
-                                alt="Foreground Image"
+                                alt="Capture Twice the Detail"
                                 className="w-[258px] xl:w-[582px] md:w-[482px] h-auto object-cover"
                             />
                         </div>

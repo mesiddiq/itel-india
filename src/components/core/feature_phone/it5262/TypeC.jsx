@@ -8,7 +8,7 @@ const TypeC = () => {
                     <h1 className="xl:text-featurephone/heading lg:text-desktop/h2 text-mobile/h4 font-normal text-black/1 max-w-[486px]">Type-C Charging Onboard</h1>
                     <h3 className="xl:text-desktop/body/1 lg:text-desktop/body/large text-desktop/body/2/regular text-grey/grey/5 max-w-[402px]">Equipped with a Type-C charger for faster, secure, and reliable charging, simplify your power needs with modern connectivity.</h3>
                 </div>
-                <img src="/featurephone/it5262/Backgrounds/typec_phone.webp" alt="phone image" className='xl:max-h-[1080px] lg:max-h-[700px] max-h-[504px] absolute xl:right-40 lg:right-20 -bottom-44 lg:bottom-[-250px] xl:-bottom-[370px]' />
+                <img src="/featurephone/it5262/Backgrounds/typec_phone.webp" alt="Type-C Charging Onboard" className='xl:max-h-[1080px] lg:max-h-[700px] max-h-[504px] absolute xl:right-40 lg:right-20 -bottom-44 lg:bottom-[-250px] xl:-bottom-[370px]' />
             </div>
         </div>
     )

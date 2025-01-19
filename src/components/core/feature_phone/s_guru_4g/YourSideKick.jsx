@@ -18,7 +18,7 @@ const YourSideKick = () => {
                     <p className='text-mobile/small/body lg:text-desktop/body/1 text-dark/card/bg mt-12 lg:mt-[120px]'>*Under ideal testing conditions</p>
                 </div>
                 <div className="relative">
-                    <img src="/featurephone/superguru4g/battery.webp" alt="Super Guru 4g" className='max-w-[797px]  -translate-y-20 hidden lg:block' />
+                    <img src="/featurephone/superguru4g/battery.webp" alt="Reliable Everyday Companion" className='max-w-[797px]  -translate-y-20 hidden lg:block' />
                 </div>
                 <img src="/featurephone/superguru4g/batterymobile.webp" alt="super guru 4g" className='absolute -left-20 -bottom-10 lg:hidden max-w-[450px] md:max-w-[550px]' />
             </div>

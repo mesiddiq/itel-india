@@ -18,14 +18,14 @@ export default function Frame2() {
     <div className="xl:px-[101px] xl:pt-[220px] xl:pb-[52px] md:px-[12px] md:pb-[64px] md:pt-[160px] absolute z-0 md:flex hidden">
         <img
         src="/smartphone/a05/orange.png"
-        alt="Trees"
+        alt="Seamless App Performance"
         className="w-[1000px] h-full mx-auto"
         />
     </div>
     <div className="px-[12px] pb-[64px] xs:pb-0 pt-[160px] absolute z-0 md:hidden flex">
         <img
         src="/smartphone/a05/orange.png"
-        alt="Trees"
+        alt="Seamless App Performance"
         className="w-[304px] h-full mx-auto"
         />
     </div>

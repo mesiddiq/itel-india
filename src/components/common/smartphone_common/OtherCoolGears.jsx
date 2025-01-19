@@ -46,7 +46,7 @@ const OtherCoolGears = ({ theme = 'light' }) => {
       title: 'Smart TV, Non-Stop Entertainment',
       imageSources: [
         { src: '/static_page/homepage/EnjoyBetterLifeCol3Bg.png', alt: 'Background', className: `max-w-full h-auto absolute bottom-0 right-0 transition-transform duration-300 transform scale-100 group-hover:scale-110 ${isDarkTheme ? 'filter brightness-50' : ''}` },
-        { src: '/static_page/homepage/EnjoyBetterLifeCol3.png', alt: 'Foreground', className: 'max-w-full h-auto absolute bottom-0 right-5 transition-transform duration-300 transform scale-100 group-hover:scale-105' },
+        { src: '/static_page/homepage/EnjoyBetterLifeCol3.png', alt: 'Endless entertainment experience', className: 'max-w-full h-auto absolute bottom-0 right-5 transition-transform duration-300 transform scale-100 group-hover:scale-105' },
       ],
     },
     {

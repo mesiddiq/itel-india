@@ -18,8 +18,8 @@ const FlipOne = () => {
     return (
         <>
             <Helmet>
-                <title>Flip One</title>
-                <meta name="description" content={`Experience nostalgia with a modern twist with our premium flip phone. Crafted with a classic leather design and a vibrant OVGA display, it’s elegance in your hands. Compact yet stylish, it’s perfect for those who want to flip it like a boss. Rediscover the joy of flipping open a phone with unmatched flair..`} />
+                <title>itel Flip One - Stylish Slim Flip Phone | itel India</title>
+                <meta name="description" content={`Experience the sleek design of itel Flip One, a slim flip phone that redefines style and functionality. Discover itel Flip One price in India with itel India!`} />
             </Helmet>
             <Hero {...HeroDataFlipOne} />
             <StickyHeader {...HeroDataFlipOne} />

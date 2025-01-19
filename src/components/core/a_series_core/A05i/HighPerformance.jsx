@@ -5,7 +5,7 @@ const HighPerformance = () => {
         <div className="hidden border border-black/10 relative md:flex flex-row overflow-hidden rounded-2xl md:rounded-[56px] bg-HighPerformanceGradient h-[740px] px-5 pt-5">
             
             <div className="flex flex-col justify-center items-center h-full w-1/2 rounded-2xl md:rounded-[56px]">
-                <img src="/smartphone/A05i/highPerformance.png"/>
+                <img alt="Powerful Octa-Core Processor" src="/smartphone/A05i/highPerformance.png"/>
             </div>
 
             <div className="md:scale-75 lg:scale-100 flex flex-col justify-center items-center h-full w-1/2 rounded-2xl md:rounded-[56px] font-markot">
@@ -37,7 +37,7 @@ const HighPerformance = () => {
         <div className="md:hidden border border-black/10 relative flex flex-col items-center gap-10 py-12 overflow-hidden rounded-2xl md:rounded-[56px] bg-HighPerformanceGradient h-auto px-5 ">
             
             <div className="flex flex-col justify-center items-center h-full max-w-[250px] w-full rounded-2xl md:rounded-[56px]">
-                <img src="/smartphone/A05i/highPerformance.png"/>
+                <img alt="Powerful Octa-Core Processor" src="/smartphone/A05i/highPerformance.png"/>
             </div>
 
             <div className="md:scale-75 lg:scale-100 flex flex-col justify-center items-center h-full w-full rounded-2xl md:rounded-[56px] font-markot">

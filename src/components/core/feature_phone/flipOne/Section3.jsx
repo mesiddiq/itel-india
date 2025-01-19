@@ -32,7 +32,7 @@ const Section3 = () => {
                 <div className="lg:w-8/12 h-full relative">
                     <img src="/featurephone/flipOne/wahwah.webp" alt="Wah wah " className='absolute right-0 lg:-top-28 xl:top-20 top-0 ' />
                     <img src="/featurephone/flipOne/charcter2.webp" alt="charcter" className='max-w-[715px] absolute lg:bottom-0 -bottom-10  lg:-right-20' />
-                    <img src="/featurephone/flipOne/flipphone1.webp" alt="Flip Phone 1" className='absolute max-w-[250px] md:max-w-[400px] lg:max-w-max md:top-0 md:left-0 left-10 lg:-left-20 lg:-top-10 top-32' />
+                    <img src="/featurephone/flipOne/flipphone1.webp" alt="Vivid 2.4” Display" className='absolute max-w-[250px] md:max-w-[400px] lg:max-w-max md:top-0 md:left-0 left-10 lg:-left-20 lg:-top-10 top-32' />
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="521" height="362" className='absolute bottom-0 left-0 hidden lg:block z-10' viewBox="0 0 521 362" fill="none">

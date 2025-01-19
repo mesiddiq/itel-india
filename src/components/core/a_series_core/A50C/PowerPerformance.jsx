@@ -27,7 +27,7 @@ const PowerPerformance = () => {
 
       <div className="h-full flex flex-col justify-end items-center mb-10">
         {/* Image comes here */}
-        <img src='/smartphone/A50C/powerPerformance.png' alt="powerPerformance" className="w-3/4" />
+        <img src='/smartphone/A50C/powerPerformance.png' alt="Powerful 4GB RAM" className="w-3/4" />
       </div>
 
       <h1 className="absolute bottom-6 right-12 font-markot text-desktop/caption text-[#232323]">Memory Fusion Technology*</h1>
@@ -62,7 +62,7 @@ const PowerPerformance = () => {
 
       <div className="h-full flex flex-col justify-end items-center mb-10">
         {/* Image comes here */}
-        <img src='/smartphone/A50C/powerPerformance.png' alt="powerPerformance" className="w-3/4" />
+        <img src='/smartphone/A50C/powerPerformance.png' alt="Powerful 4GB RAM" className="w-3/4" />
       </div>
 
       <h1 className="absolute bottom-4 right-4 font-markot text-[10px] font-normal leading-4 text-[#232323]">Memory Fusion Technology*</h1>

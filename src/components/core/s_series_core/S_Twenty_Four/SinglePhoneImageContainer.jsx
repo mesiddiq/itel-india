@@ -6,7 +6,7 @@ const SinglePhoneImageContainer = () => {
               <div className="w-full h-full content md:content relative">
                   <img 
                     src='/smartphone/S24/Dawn white 4.png' 
-                    alt='Dawn white' 
+                    alt='Dreamy Colour Shift' 
                     className='w-2/3 absolute top-1/2 -translate-y-1/2'
                   />
                   
@@ -28,7 +28,7 @@ const SinglePhoneImageContainer = () => {
           <div className="font-markot flex flex-col justify-start items-center lg:hidden bg-[#010101] w-full relative overflow-hidden h-[485px]">
               <img 
                 src='/smartphone/S24/Dawn white 4.png' 
-                alt='Dawn white' 
+                alt='Dreamy Colour Shift' 
                 className='absolute md:-top-[120px] sm:-top-[0px] top-[63.89px] md:left-0 left-[87px] md:scale-75 sm:scale-90 sm:left-0 scale-150'/>
               
               <div className='md:content content absolute text-center flex flex-col gap-2 w-[350px] top-[24px]'>

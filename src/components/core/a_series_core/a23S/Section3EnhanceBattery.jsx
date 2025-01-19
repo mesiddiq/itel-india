@@ -29,7 +29,7 @@ const Section3EnhanceBattery = () => (
       <div className='flex justify-center lg:justify-end items-end w-full lg:w-[50%] relative lg:left-[3rem]'>
         <img
           src='/smartphone/A23s/Backgrounds/a23Battery.png'
-          alt='battery'
+          alt='a23Battery.png'
           className='w-[70%] lg:w-[535px]  object-contain'
         />
       </div>

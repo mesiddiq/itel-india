@@ -11,7 +11,7 @@ const ClearCamera = () => {
             
             <img 
                 src='/smartphone/A50C/cameraSpecs.png' 
-                alt="cameraSpecs" 
+                alt="Clear Camera Recording" 
                 className="top-0 absolute w-full h-full object-cover z-0" 
             />
 
@@ -106,7 +106,7 @@ const ClearCamera = () => {
 
             <img 
                 src='/smartphone/A50C/cameraSpecs.png' 
-                alt="cameraSpecs" 
+                alt="Clear Camera Recording" 
                 className="z-0 scale-125 sm:scale-100  -translate-x-[10%] -translate-y-[10%] sm:-translate-x-[0%] sm:-translate-y-[0%] w-full h-full object-cover" 
             />
 

@@ -14,7 +14,7 @@ const Section6 = () => {
                     <img src="/featurephone/flipOne/languagetext.webp" alt="FLIP KAREIEN" className='lg:max-w-[500px] md:max-w-[400px] max-w-[300px] ' />
 
                     {/* Language Phone */}
-                    <img src="/featurephone/flipOne/languagephone.webp" alt="Flip one phone" className='self-end lg:max-w-max md:max-w-[250px] max-w-[200px]' />
+                    <img src="/featurephone/flipOne/languagephone.webp" alt="Multiple language support" className='self-end lg:max-w-max md:max-w-[250px] max-w-[200px]' />
 
                 </div>
                 {/* Peoples Image */}

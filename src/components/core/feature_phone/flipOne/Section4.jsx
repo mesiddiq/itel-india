@@ -4,7 +4,7 @@ const Section4 = () => {
     return (
         <section className='lg:h-[800px] h-[680px] md:h-[750px] relative bg-[radial-gradient(71.13%_100%_at_50.87%_100%,_#732706_0%,_#D85820_100%)] px-4 md:px-2 overflow-hidden'>
 
-            <img src="/featurephone/flipOne/SquarePattern.svg" alt="Square Pattern" className='absolute left-1/2 -translate-x-1/2  bottom-10 lg:bottom-0 lg:scale-100 scale-150 ' />
+            <img src="/featurephone/flipOne/SquarePattern.svg" alt="7 days power backup" className='absolute left-1/2 -translate-x-1/2  bottom-10 lg:bottom-0 lg:scale-100 scale-150 ' />
             <div className="content lg:pb-[55px] h-full flex flex-col lg:flex-row lg:items-end pt-10 lg:pt-0">
                 <div className="max-w-[386px]">
                     <h1 className="text-mobile/h4 md:text-desktop/h3 lg:text-desktop/h2 text-white">7 Days Power Backup</h1>
@@ -27,7 +27,7 @@ const Section4 = () => {
                 </div>
                 <div className="lg:static">
                     <img src="/featurephone/flipOne/flipphone3.webp" alt="Flip Phone" className='absolute -bottom-20 lg:bottom-0 left-1/2 -translate-x-1/2 z-10 max-w-[259px] lg:max-w-max' />
-                    <img src="/featurephone/flipOne/battery.webp" alt="Battery" className='absolute z-20 bottom-0 right-1/2 max-w-[180px] lg:max-w-max ' />
+                    <img src="/featurephone/flipOne/battery.webp" alt="Long Lasting Experience" className='absolute z-20 bottom-0 right-1/2 max-w-[180px] lg:max-w-max ' />
                     <img src="/featurephone/flipOne/charcter3.webp" alt="Character" className='absolute z-20 bottom-0 -right-1/3 lg:right-0' />
                     <img src="/featurephone/flipOne/flipkiya.webp" alt="Flip Kiya" className='absolute lg:top-10 left-1/2 -translate-x-1/2 top-1/3' />
                 </div>

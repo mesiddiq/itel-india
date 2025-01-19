@@ -41,7 +41,7 @@ const CameraSpecifications = () => {
         animate={inView ? { scale: 1 } : { scale: 1.2 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         src="/smartphone/S24/s24Camera.webp"
-        alt="Camera Specifications"
+        alt="s24Camera.webp"
         className="w-full"
       />
 

@@ -30,7 +30,7 @@ const GetNotifications = () => {
 	      		<h3 className='text-[#FFFFFF] text-desktop/h3 font-markot'>Light Up the Lume Ring: Get Notifications Instantly</h3>
 	      		<p className='text-[#FFFFFF] text-desktop/body/1 font-markot mt-2 md:mt-5'>Get notified with ring-style flash.</p>
       			<img src='/smartphone/p55T/GetNotificationsVector.png' className='absolute md:w-[65%] lg:w-auto md:right-[-28px] lg:right-[-162px] md:top-[260px] lg:top-[280px] z-[10]' />
-      			<img src='/smartphone/p55T/GetNotificationsVectorShadow.png' className='absolute md:w-[67%] lg:w-auto md:right-[-35px] lg:right-[-169px] md:top-[252px] lg:top-[272px] z-[9]' />
+      			<img  alt='Instant Notification Alerts' src='/smartphone/p55T/GetNotificationsVectorShadow.png' className='absolute md:w-[67%] lg:w-auto md:right-[-35px] lg:right-[-169px] md:top-[252px] lg:top-[272px] z-[9]' />
 	      		<div className='flex items-center md:pt-10 lg:pt-14'>
     					<img src='/smartphone/p55T/call-calling.png' className='w-[34px]' />
 	      			<h4 className='text-[#FFFFFF] text-desktop/h5/medium font-markot pl-4 w-[100px]'>Incoming Calls</h4>

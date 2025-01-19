@@ -22,7 +22,7 @@ const Section7PhonesSpecs = () => {
           <div className="mx-auto w-[316px] pt-[74px] md:pt-0 h-auto lg:w-[522px] lg:h-auto">
             <img
               src="/smartphone/a70/displaygrid-phone.webp"
-              alt="Display"
+              alt="Ultra-Smooth Precision Display"
               className="md:w-full w-[316px] h-[250px] md:h-auto object-contain"
             />
           </div>
@@ -72,7 +72,7 @@ const Section7PhonesSpecs = () => {
             <div className="flex items-center justify-center lg:w-1/2">
               <img
                 src="/smartphone/a70/processorchip.webp"
-                alt="Processor"
+                alt="Octa-Core T603 Processor"
                 className="z-10 w-[246px] h-auto lg:w-[300px] lg:h-auto"
               />
             </div>

@@ -20,7 +20,7 @@ const MultipleCardComponents = () => {
 
             <img
               src="/smartphone/A50C/rearCamera.png"
-              alt="yourCompactAI"
+              alt="8MP AI Rear Camera"
               className='absolute z-0 md:right-auto right-0 -bottom-[25%] md:-bottom-[0%] left-1/2 -translate-x-1/2 scale-75 md:scale-[100%] group-hover:scale-[85%] md:group-hover:scale-[105%] transition-transform duration-700'
             />
           </div>
@@ -44,7 +44,7 @@ const MultipleCardComponents = () => {
                 {/* Image added here */}
                 <img
                   src='/smartphone/A50C/fastCamera.png'
-                  alt='BatteryPhone'
+                  alt='Fast Charging Power'
                   className='absolute -right-[30%] scale-[150%] -bottom-16 sm:-bottom-56 sm:scale-110 md:-bottom-[60%]   md:scale-[125%] group-hover:scale-[105%] md:group-hover:scale-[135%] transition-transform duration-700'
                 />
               </div>
@@ -62,7 +62,7 @@ const MultipleCardComponents = () => {
                 {/* Image added here */}
                 <img
                   src='/smartphone/A50C/backFingerprint.png'
-                  alt='quickCharge'
+                  alt='Back Fingerprint Unlock'
                   className='absolute -bottom-[10%] left-1/2 -translate-x-1/2 md:bottom-0 scale-[80%] sm:scale-[70%] sm:-bottom-[20%] md:scale-[100%] group-hover:scale-[90%] md:group-hover:scale-[110%] transition-transform duration-700'
                 />
               </div>

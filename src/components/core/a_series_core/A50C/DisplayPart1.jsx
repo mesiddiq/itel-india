@@ -25,7 +25,7 @@ const DisplayPart1 = () => {
     
             <div className="w-1/2 h-full flex flex-col justify-end items-center">
             {/* Image comes here */}
-            <img src='/smartphone/A50C/displayImage1.png' alt="displayImage1" className="w-full" />
+            <img src='/smartphone/A50C/displayImage1.png' alt="6.6” HD+ IPS Display" className="w-full" />
             </div>
         </div>
 
@@ -53,7 +53,7 @@ const DisplayPart1 = () => {
     
             <div className="w-full h-full flex flex-col justify-end items-center">
                 {/* Image comes here */}
-                <img src='/smartphone/A50C/displayImage1.png' alt="displayImage1" className="w-full" />
+                <img src='/smartphone/A50C/displayImage1.png' alt="6.6” HD+ IPS Display" className="w-full" />
             </div>
         </div>
     </>

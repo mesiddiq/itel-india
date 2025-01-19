@@ -22,9 +22,8 @@ const PFiftyFivePlus = () => {
   return (
     <>
       <Helmet>
-        <title>P55+</title>
-        <meta name="description" content={`  Get Ready for Power: Meet itel P55+, a smartphone under 10K with 45W Charging. It is your performance companion with 8GB RAM, expandable up to 16GB* with Memory Fusion, and 256GB ROM. 
-            Experience every detail on the 6.6" HD+ punch-hole display, complete with a smooth 90Hz refresh rate for seamless viewing. The sleek vegan leather finish exudes unparalleled elegance.`} />
+        <title>itel P55 Plus | Affordable Smartphone with 8MP Camera | itel India</title>
+        <meta name="description" content={`Discover the itel P55 Plus with 8MP front camera, sleek design, and unbeatable specifications. Check out the itel P55 Plus price in India today!`} />
         <meta name="keywords" content="itel P55 5g,itel P55 +,itel P55 5g smartphone,itel P55 5g mobile price,itel P55 5g phone,itel P55 Plus,itel P55 5g mobile,itel P55 mobile 5g" />
       </Helmet>
       <HeroSmartPhoneCommon

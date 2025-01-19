@@ -25,8 +25,8 @@ const SuperGuru600 = () => {
     return (
         <>
             <Helmet>
-                <title>Super Guru 600</title>
-                <meta name="description" content={`Introducing India ka Super Guru—a collection of stylish keypad mobile phones that are the perfect blend of premium design and durability. Featuring a 2.8" large display, 1900 mAh battery, and 1.3 MP camera, itel SG600 offers sleek metal finish design paired with a long-lasting battery.Introducing India ka Super Guru—a collection of stylish keypad mobile phones that are the perfect blend of premium design and durability. Perfect for a busy lifestyle, this phone supports 4G and UPI payments, ensuring you stay connected and efficient. With Kingmedia, access YouTube, YouTube Shorts, news, cricket updates, and weather information effortlessly. The Kingvoice feature lets your phone speak out loud for you.`} />
+                <title>itel Super Guru 600 - Long-Lasting 1900mAh Battery | itel India</title>
+                <meta name="description" content={`Stay connected with the itel Super Guru 600, featuring a powerful 1900mAh battery. Explore the reliability of itel keypad phones with itel India!`} />
             </Helmet>
             <SuperSeriesHeader {...HeroDataSuperGuru600} />
             <Hero {...HeroDataSuperGuru600} />

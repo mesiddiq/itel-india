@@ -15,11 +15,19 @@ import StickyHeader from '../../components/common/StickyHeader'
 import VideoSection from '../../components/core/s_series_core/S_Twenty_Three/VideoSection'
 import SliderAnimationCommon from '../../components/common/smartphone_common/SliderAnimationCommon'
 import { ImageCarouselData } from '../../data/smartphonedata/S23ImageCarouselData'
-
+import { Helmet } from 'react-helmet'
 
 const STwentyThree = () => {
     return (
         <div className='font-markot'>
+
+        <Helmet>
+              <title>itel S23 | Best Affordable Smartphone in India | itel India</title>
+              <meta name="description" content={`Explore the itel S23, a dual SIM phone packed with features at an unbeatable price. Discover the best affordable smartphone in India today with itel!`} />
+              <meta name="keywords" content="itel P55 5g,itel P55 +,itel P55 5g smartphone,itel P55 5g mobile price,itel P55 5g phone,itel P55 Plus,itel P55 5g mobile,itel P55 mobile 5g" />
+            </Helmet>
+
+
             <HeroSmartPhoneCommon
                 tagText="super series"
                 headingText="s23"

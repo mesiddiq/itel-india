@@ -65,7 +65,7 @@ const MultipleCardComponents = () => {
                 {/* Image added here */}
                 <img
                   src='/smartphone/P55/supremeBattery.png'
-                  alt='supremeBattery'
+                  alt='Supreme 5000mAh Battery'
                   className='object-contain absolute w-full z-0 lg:top-16 left-0 bottom-0 scale-130 lg:scale-[150%] group-hover:scale-[140%] lg:group-hover:scale-[110%] transition-transform duration-700'
                 />
               </div>
@@ -117,7 +117,7 @@ const MultipleCardComponents = () => {
             <span className='max-w-[220px] text-mobile/body/large lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] text-left text-white'>iBoost Gaming Technology</span>
           </div>
 
-          <img src="/smartphone/P55/gridGaming.png" alt='gridGaming' className='hidden md:block absolute w-full left-0 z-0 top-0 group-hover:scale-[110%] transition-transform duration-700'/>
+          <img src="/smartphone/P55/gridGaming.png" alt='Unisoc T606 Processor' className='hidden md:block absolute w-full left-0 z-0 top-0 group-hover:scale-[110%] transition-transform duration-700'/>
           <img src="/smartphone/P55/gridGamingMobile.png" alt='gridGaming' className='block md:hidden absolute xs:-bottom-[20px] w-full left-0 z-0 group-hover:scale-[110%] transition-transform duration-700'/>
         </div>
 

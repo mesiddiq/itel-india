@@ -30,7 +30,7 @@ const GrandScreen = () => {
 					</div>
 				</div>
 				<div className="max-w-[457px] lg:translate-y-40  max-h-[450px] lg:max-h-max">
-					<img src="/featurephone/it5262/Backgrounds/grandscreen.webp" alt="it5262" className=' object-contain' />
+					<img src="/featurephone/it5262/Backgrounds/grandscreen.webp" alt="Immersive Large Display" className=' object-contain' />
 				</div>
 			</div>
 		</div>

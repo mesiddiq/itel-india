@@ -25,8 +25,8 @@ const PFiftyFive = () => {
     return (
         <>
             <Helmet>
-                <title>P55</title>
-                <meta name="description" content={`Fuel your conversations with the itel Power 120. This beast of a phone keeps you connected all day with its 2500 mAh Battery, straight with an insane standby of 55 Days*! Whoa! Dive into a crisp, clear world on its 5.08cm (2”) display, perfect for a bigger view and an elevated style and experience. Plus, it's got a cool LED torch that you can flick on whenever you need it. Tune into your favorite beats with the wireless FM radio phone, and don't worry about missing out – you can even record tracks for later!`} />
+                <title>Discover the itel P55 5G Mobile: Fast, Fun, Affordable! | itel India</title>
+                <meta name="description" content={`Discover the itel P55 5G mobile, packed with cutting-edge features and impressive performance. Explore its price, specs, and more on our exclusive product page!`} />
                 <meta name="keywords" content="itel P55 5g,itel P55 +,itel P55 5g smartphone,itel P55 5g mobile price,itel P55 5g phone,itel P55 Plus,itel P55 5g mobile,itel P55 mobile 5g" />
             </Helmet>
             <HeroSmartPhoneCommon {...HeroDataP55} />

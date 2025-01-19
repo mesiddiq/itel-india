@@ -21,7 +21,7 @@ const UninterruptedConnectivity = () => {
                         </div>
                     </div>
                     <div className="mt-8 lg:mt-0 max-h-[604px]" data-aos="fade-up">
-                        <img src="/featurephone/superguru600/Unexperienced Connectivity Graphic.webp" loading='lazy' alt="Guper Guru 4g" className='translate-x-10 lg:translate-x-0 mx-auto max-w-[330px] lg:max-w-[520px]' />
+                        <img src="/featurephone/superguru600/Unexperienced Connectivity Graphic.webp" loading='lazy' alt="Reliable 1900mAh Battery" className='translate-x-10 lg:translate-x-0 mx-auto max-w-[330px] lg:max-w-[520px]' />
                     </div>
                 </div>
             </div>
