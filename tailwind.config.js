@@ -15,8 +15,11 @@ export default {
 			'markot': ['Mark_OT'],
 			'bricolage': ['BricolageGrotesque'],
 			'be_vietnam_pro': ['Be Vietnam Pro'],
+			'clash': ['ClashDisplay'],
 			},
 			colors: {
+				'zeno-solid':'#ec1f26',
+				'dull-white':'#F3F3F3',
 				'itel-red':'#ff0037',
 				'bg/primary/1': '#f8f6f3',
 				'bg/secondry': '#ebe8e2',

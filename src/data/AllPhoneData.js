@@ -1,23 +1,23 @@
 export const AllPhonesData = [
     {
         id: 1, //Unique id of the phone
-        title: "Color Pro 5G", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/color+pro+5g.webp", //Thumbnail of the phone
-        description: "Be Unstoppable: Color Changing Back Technology with 5G Power", //Description of the phone
-        purchaseLink: "/product/color-pro-5g",
+        title: "A 80", //Title of the phone
+        thumbnail: "/smartphone/A80/AllSections/a80image.webp", //Thumbnail of the phone
+        description: "Built for Life’s Unexpected Moments", //Description of the phone
+        purchaseLink: "/product/a80",
         category: "", //Category of the phone
         isNew: true, //Is the phone new or not
         specification: {
-            price: "8,999", //Price of the phone
-            primaryCamera: "50 MP", //Primary camera of the phone
+            price: "6,999", //Price of the phone
+            primaryCamera: "13 MP", //Primary camera of the phone
             storage: "128 GB", //Storage of the phone
-            screenSize: '6.56" HD+ IPS', //Screen size of the phone
+            screenSize: '6.6" ', //Screen size of the phone
             processor: "Octacore",
             battery: "5000 mAh",
             topSpecification: "" //Top specification of the phone (if any)
         },
         features: {
-            is5G: true,
+            is5G: false,
             hasAICamera: true,
             hasAmoledDisplay: false,
             hasBigBattery: true

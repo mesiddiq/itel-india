@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="679" height="378" viewBox="0 0 679 378" fill="none">
+  <g filter="url(#filter0_bi_682_4158)">
+    <path d="M679 195.5V331C679 356.957 657.957 378 632 378H264.691H132.345H47C21.0426 378 0 356.957 0 331V286.75V195.5V47C0 21.0426 21.0426 0 47 0H264.691H532.022C541.552 0 550.856 2.89667 558.701 8.30591L658.679 77.239C671.402 86.0116 679 100.478 679 115.933V195.5Z" fill="#F8EAEA" fill-opacity="0.1"/>
+    <path d="M677.5 331V195.5V115.933C677.5 100.972 670.145 86.9665 657.828 78.4739L557.85 9.54083C550.255 4.30423 541.248 1.5 532.022 1.5H264.691H47C21.8711 1.5 1.5 21.8711 1.5 47V195.5V286.75V331C1.5 356.129 21.8711 376.5 47 376.5H132.345H264.691H632C657.129 376.5 677.5 356.129 677.5 331Z" stroke="url(#paint0_linear_682_4158)" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <filter id="filter0_bi_682_4158" x="-30" y="-30" width="739" height="438" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="15"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_682_4158"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_682_4158" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="8" dy="8"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0"/>
+      <feBlend mode="normal" in2="shape" result="effect2_innerShadow_682_4158"/>
+    </filter>
+    <linearGradient id="paint0_linear_682_4158" x1="-1.65432" y1="376.859" x2="168.919" y2="129.467" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+</svg>

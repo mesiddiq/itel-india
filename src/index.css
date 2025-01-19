@@ -44,6 +44,37 @@
   font-weight: 800;
 }
 
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/clashdisplay/ClashDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/clashdisplay/ClashDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/clashdisplay/ClashDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/clashdisplay/ClashDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/clashdisplay/ClashDisplay-Semibold.otf') format('opentype');
+  font-weight: 600;
+}
+
 @layer base {
   .content {
     @apply mx-auto max-w-7xl w-full md:w-11/12 text-white;

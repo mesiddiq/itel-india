@@ -1,0 +1,4 @@
+User-agent: *          # Targets all crawlers
+Disallow: /admin       # Blocks the /admin route from being crawled
+Allow: /smartphones           # Allows the /blog route to be crawled
+Sitemap: https://itel-india.com/sitemap.xml  # Provides the sitemap URL

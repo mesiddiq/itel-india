@@ -2,7 +2,8 @@ export const PhoneData = [
     {
         id: 'new',
         products: [
-            { id: 10, label: 'Color Pro 5G', price: '8,999.00', thumbnail:'/navbar/colorpro5g.webp', link: '/product/color-pro-5g' }
+            { id: 10, label: 'Color Pro 5G', price: '8,999.00', thumbnail:'/navbar/colorpro5g.webp', link: '/product/color-pro-5g' },
+            { id: 11, label: 'A 80', price: '6,999.00', thumbnail:'/smartphone/A80/AllSections/a80image.webp', link: '/product/a80' }
         ]
     },
     {

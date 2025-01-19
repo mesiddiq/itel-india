@@ -96,9 +96,9 @@ const BuiltForLife = () => {
                                 </svg>
                                 <h5 className="lg:text-[20px] text-[16px] font-medium lg:leading-6 lg:-tracking-[0.8px] text-[#000]  ">Dust Resistant</h5>
                             </div>
-                            <img src="/smartphone/A80/AllSections/builtfor/splash.webp" className=' ' alt="" />
+                            <img src="/smartphone/A80/AllSections/builtfor/dust.webp" className=' ' alt="" />
                         </div>
-                        <img src="/smartphone/A80/AllSections/builtfor/dust.webp" alt="" className='absolute lg:top-0 top-20 left-1/2 scale-150 lg:scale-100 -translate-x-1/2 opacity-0' />
+                        {/* <img src="/smartphone/A80/AllSections/builtfor/dust.webp" alt="" className='absolute lg:top-0 top-20 left-1/2 scale-150 lg:scale-100 -translate-x-1/2 opacity-0' /> */}
                         <img ref={lastImage} src="/smartphone/A80/AllSections/builtfor/phonewithtext.png" alt="" className='absolute top-full left-1/2 -translate-x-1/2 opacity-0' />
                     </div>
                 </div>

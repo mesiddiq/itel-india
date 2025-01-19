@@ -59,12 +59,12 @@ const MobileFrame = () => {
                         autoPlay={true}
                         loop
                     >
-                        <source src="/smartphone/A80/AllSections/120HZdisplay/120hz video.mp4" type="video/mp4" />
+                        <source src="/smartphone/A80/AllSections/120HZdisplay/beachvideo.mp4" type="video/mp4" />
                     </video>
                     <img
                         ref={mobileFrameRef}
                         src="/smartphone/A80/AllSections/120HZdisplay/Mobile landscape.webp"
-                        className="md:w-1/2 w-11/12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-10"
+                        className="md:w-1/2 w-11/12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-10 max-w-[880px]"
                         alt="mobile landscape"
                     />
                     <div className="content relative">

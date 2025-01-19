@@ -222,40 +222,63 @@ const Banner3 = ({ activeSlide }) => {
 
     return (
         <AnimatePresence mode='wait'>
+            <motion.div
+                key={activeSlide}
+                className="relative h-[520px] md:h-[550px] lg:h-[627px]  flex justify-center  lg:pt-[114px]">
 
-            <div className="relative">
-                <motion.div key={activeSlide} className=" h-[520px] md:h-[550px] lg:h-[627px] content flex lg:justify-center lg:pt-[114px]">
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        src="/videos/homepage/herobanner4.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
-                    />
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    src="/videos/homepage/herobanner4.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
+                />
 
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        src="/videos/homepage/herobanner4_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
-                    />
-                    <div className="content space-y-4 absolute px-4 md:px-0 pt-6 lg:pt-0">
-                        <motion.div
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    src="/videos/homepage/herobanner4_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
+                />
+                <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
+                    <div className="space-y-4 lg:space-y-3">
+                        <motion.h3
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
-                            transition={{ duration: 1, delay: 0.2 }} className="w-fit">
-                            <h3 className='text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage' >Coming soon</h3>
-                        </motion.div>
-                        <motion.h1
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#F4A23B] rounded-[24px] px-[6px] py-[2px] text-[#C0CDEE] font-bricolage' >
+                            featured
+                        </motion.h3>
+                        <motion.div
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='text-mobile/h2 lg:text-desktop/h1 text-white font-bold'>India ka-WOW</motion.h1>
-                        <motion.h5
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className='flex items-center lg:gap-6 gap-3'
+                        >
+                            <img src="smartphone\A80\AllSections/a80logo.png" alt="A80 logo" className='lg:max-w-[190px] max-w-[103px]' />
+                            <h1 className="lg:text-desktop/h2 text-mobile/h4">Awesome <br />
+                                All-in-One</h1>
+                        </motion.div>
+                        <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }} className='font-medium text-mobile/small/button lg:text-[24px] lg:leading-7 text-white/80'>Get ready to live in the spotlight. <br /> Coming soon at stores near you.</motion.h5>
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className="space-y-2 lg:space-y-2 lg:pt-4">
+                            <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80 max-w-[600px]'>Supports 3 years Lag-Free | 6.7" Punch Hole | IP 54 Certified | 120Hz Refresh Rate | Up to 128+8GB*                        </h5>
+                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><MdCurrencyRupee /> 6,999 /-</h2>
+                        </motion.div>
+                        <Link to={'/product/a80'}>
+                            <motion.button
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.2 }}
+                            >
+                                <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
+                            </motion.button>
+                        </Link>
                     </div>
-                </motion.div>
-            </div>
+                </div>
+            </motion.div>
+
         </AnimatePresence>
     )
 }

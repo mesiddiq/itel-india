@@ -69,6 +69,8 @@ const Ace2Power = lazy(() => import('./pages/feature_phone/Ace2Power'));
 import 'lenis/dist/lenis.css'
 import Lenis from 'lenis'
 import ComingSoonZeno from './pages/zeno/ComingSoonZeno'
+import Zeno10 from './pages/zeno/Zeno10'
+import ZenoParent from './pages/zeno/ZenoParent'
 
 function App() {
 
@@ -125,7 +127,11 @@ function App() {
 
 					{/************************************ZENO***************************************************************/}
 
+
 					<Route path='/zeno' element={<ComingSoonZeno />} />
+					<Route path='/product' element={<ZenoParent />} >
+						<Route path='zeno-10' element={<Zeno10 />} />
+					</Route>
 
 
 					{/* ***************************************************************************************************/}

@@ -36,18 +36,18 @@ const A80 = () => {
             <HeroSectionA80
                 tagText="Awesome series"
                 headingText="A80"
-                price={"6,299"}
+                price={"6,999"}
                 description={'12GB* (4GB+8GB*) RAM + 256GB ROM | Dynamic bar | 13MP AI Dual Rear Camera'}
                 bgDesktopVideo={'/smartphone/A80/AllSections/Banner/bbannervideo.webm'}
                 bgMobile={'/smartphone/A80/AllSections/Banner/Herobg.webp'}
                 gradient1='#ffff'
                 gradient2='#ffff'
                 theme='light'
-                purchaseLink={'#'}
+                purchaseLink={'https://amzn.in/d/iJyvoK0'}
             />
             <HeaderA80
                 title="A80"
-                purchaseLink={'#'}
+                purchaseLink={'https://amzn.in/d/iJyvoK0'}
                 icon={'/smartphone/a70/stickyeHeaderIcon.svg'}
                 bgColor={'#FFBD6D'}
                 dark={true}
