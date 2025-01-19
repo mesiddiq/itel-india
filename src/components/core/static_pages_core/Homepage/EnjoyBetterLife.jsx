@@ -169,7 +169,7 @@ const EnjoyBetterLife = () => {
 						</h3>
 						<ArrowRight />
 					</div>
-					<img src="/static_page/homepage/EnjoyBetterLifeCol1.png" alt="Smartphone image" className='max-w-[212px] z-20 group-hover:scale-125 transition-all duration-700 md:max-w-[280px] lg:max-w-[418px] absolute bottom-0 left-1/2 -translate-x-1/2 ' />
+					<img src="/static_page/homepage/EnjoyBetterLifeCol1.png" alt="Sleek modern design" className='max-w-[212px] z-20 group-hover:scale-125 transition-all duration-700 md:max-w-[280px] lg:max-w-[418px] absolute bottom-0 left-1/2 -translate-x-1/2 ' />
 					<img src="/static_page/homepage/EnjoyBetterLifeCol1Bg.png" className='absolute bottom-0 left-1/2 z-10 -translate-x-1/2 object-cover w-full group-hover:scale-125 transition-all duration-700' />
 				</Link>
 
@@ -184,7 +184,7 @@ const EnjoyBetterLife = () => {
 							</h3>
 							<ArrowRight />
 						</div>
-						<img src="/static_page/homepage/EnjoyBetterLifeCol2.png" alt="Featurephone" className='z-20 absolute bottom-0 right-0 group-hover:scale-125 transition-all duration-700 max-w-[117px] md:max-w-[212px] lg:max-w-[280px] xl:max-w-[418px]' />
+						<img src="/static_page/homepage/EnjoyBetterLifeCol2.png" alt="Effortless connectivity daily" className='z-20 absolute bottom-0 right-0 group-hover:scale-125 transition-all duration-700 max-w-[117px] md:max-w-[212px] lg:max-w-[280px] xl:max-w-[418px]' />
 						<img src="/static_page/homepage/EnjoyBetterLifeCol2Bg.png" className='absolute bottom-0 right-0 md:-right-16 z-10 object-cover w-full group-hover:scale-125 transition-all duration-700 object-center' />
 					</Link>
 
@@ -197,7 +197,7 @@ const EnjoyBetterLife = () => {
 							</h3>
 							<ArrowRight />
 						</div>
-						<img src="/static_page/homepage/EnjoyBetterLifeCol3.png" alt="Television" className='md:max-w-[212px] z-20 absolute bottom-0 right-10 group-hover:scale-125 transition-all duration-700 max-w-[100px] lg:max-w-[140px] xl:max-w-[418px]' />
+						<img src="/static_page/homepage/EnjoyBetterLifeCol3.png" alt="Endless entertainment experience" className='md:max-w-[212px] z-20 absolute bottom-0 right-10 group-hover:scale-125 transition-all duration-700 max-w-[100px] lg:max-w-[140px] xl:max-w-[418px]' />
 						<img src="/static_page/homepage/EnjoyBetterLifeCol3Bg.png" className='absolute bottom-0 right-0 z-10 object-cover w-full lg:scale-125 transition-all duration-700 group-hover:-translate-y-10' />
 					</Link>
 
@@ -210,7 +210,7 @@ const EnjoyBetterLife = () => {
 							</h3>
 							<ArrowRight />
 						</div>
-						<img src="/static_page/homepage/EnjoyBetterLifeCol4.png" alt="Smart Gadgets" className='max-w-[212px] z-20 absolute bottom-0 right-0 group-hover:scale-125 transition-all duration-700 md:max-w-[280px] lg:max-w-[418px]' />
+						<img src="/static_page/homepage/EnjoyBetterLifeCol4.png" alt="ITEL Smart Gadgets" className='max-w-[212px] z-20 absolute bottom-0 right-0 group-hover:scale-125 transition-all duration-700 md:max-w-[280px] lg:max-w-[418px]' />
 						<img src="/static_page/homepage/EnjoyBetterLifeCol3Bg.png" alt='bg-pattern' className=' bottom-0 left-0 absolute z-10 object-cover w-full scale-125  transition-all duration-700 group-hover:-translate-y-4 ' />
 					</Link>
 				</div>

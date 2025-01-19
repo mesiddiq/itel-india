@@ -9,7 +9,7 @@ const Section2 = () => {
                     <p className="lg:text-featurephone/paragraph text-mobile/body/2 md:text-mobile/body/large text-grey/grey/1 max-w-[475px]">The itel Flip One is incredibly light and slim, making it easy to slip into your pocket or purse - Pocket Friendly Convenience</p>
                 </div>
                 <div className="">
-                    <img src="/featurephone/flipOne/flipphone2.webp" alt="Flip One" className='max-h-[274px] md:max-h-max' />
+                    <img src="/featurephone/flipOne/flipphone2.webp" alt="Compact and Portable" className='max-h-[274px] md:max-h-max' />
                 </div>
                 <div className="absolute bottom-0 flex items-center right-0 overflow-hidden ">
                     <img src="/featurephone/flipOne/bosskaorder.webp" alt="Boss ka order text" className='w-1/2 lg:self-start md:self-auto self-start max-w-[303px] md:max-h-max lg:translate-x-20 ' />

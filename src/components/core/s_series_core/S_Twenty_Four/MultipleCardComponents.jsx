@@ -106,7 +106,7 @@ const MultipleCardComponents = () => {
               {/* Image added here */}
               <img
                 src='/smartphone/S24/dualDTSSpeaker.png'
-                alt='Dual DTS Speaker'
+                alt='Dual DTS Surround'
                 className='md:scale-[110%] lg:scale-90 xl:scale-100 absolute top-0 left-0 w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110 z-0'
               />
             </div>

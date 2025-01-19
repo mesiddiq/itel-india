@@ -18,8 +18,8 @@ const HomePage = () => {
     return (
         <div className='bg-[#111111] min-h-screen space-y-[60px] md:space-y-[120px] overflow-x-hidden font-markot'>
             <Helmet>
-                <title>itel India | Best Smartphones, Televisions, Home Appliances and Gadgets | Affordable Prices</title>
-                <meta name="description" content="itel India is a leading and popular electronics brand for latest smartphones, televisions, home appliances and gadgets. We offer affordable prices for premium quality products." />
+                <title>itel India | Latest Smartphones, Television and Gadgets </title>
+                <meta name="description" content="itel India is a leading and popular electronics brand for latest smartphones, televisions and gadgets. We are the apex electronics icon." />
                 <meta name="keywords" content="itel ka phone, itel, itel new model, itel cellphone, itel new mobile, itel mobile price, itel phone, itel phone price,itel new model price,itel cell phone" />
             </Helmet>
             <HeroSection />

@@ -36,7 +36,7 @@ const Section1Entertainment = () => (
       <div className="mt-5 md:mt-0 relative lg:left-[-121px] lg:top-[-29px]">
         <img
           src="/smartphone/a70/partypop.svg"
-          alt="popImg"
+          alt="Ample Storage Multitasking"
           className="md:w-[1160px] w-[300px]"
         />
       </div>

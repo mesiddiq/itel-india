@@ -30,7 +30,7 @@ const CoreProcessor = () => {
           </div>
         </div>
         <div className='absolute bottom-1/4 lg:bottom-0 t  md:right-0 right-[-90px]'
-        ><img src="/smartphone/P55+/Backgrounds/coreimage.png" className='hidden lg:flex max-w-[600px]'></img>
+        ><img src="/smartphone/P55+/Backgrounds/coreimage.png" alt='Rapid 45W Charging' className='hidden lg:flex max-w-[600px]'></img>
           <img src="/smartphone/P55+/Backgrounds/coremobile.png" className='flex lg:hidden h-[371px] max-w-[567px]'></img>
         </div>
       </div></div>

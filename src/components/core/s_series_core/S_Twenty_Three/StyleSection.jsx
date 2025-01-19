@@ -29,7 +29,7 @@ function StyleSection() {
             <img
               loading="lazy"
               src="/smartphone/S_Twenty_Three/StyleImg.webp"
-              alt="itel S23 color variants"
+              alt="Stylish Premium Design"
               className="object-contain grow w-full aspect-[1.11] lg:h-[879px] lg:w-[871px]  max-md:max-w-full max-md:mx-auto"
             />
           </div>

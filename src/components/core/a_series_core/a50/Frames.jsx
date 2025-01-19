@@ -147,7 +147,7 @@ export default function Frames() {
                             ))}
                         </div>
                     </div>
-                    <img src="/smartphone/a50/f1Img.webp" alt="f1Img" className='lg:h-[580px] md:h-[450px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] mt-5' />
+                    <img src="/smartphone/a50/f1Img.webp" alt="SMP Selfie Cemera" className='lg:h-[580px] md:h-[450px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] mt-5' />
                 </div>
 
                 {/* Frame 2 (Desktop) */}
@@ -162,7 +162,7 @@ export default function Frames() {
                             className="w-full h-full object-cover"
                         ></video>
                     </div>
-                    <img src="/smartphone/a50/f2Hero.webp" alt="f1Img" className='md:h-[650px] lg:py-5 lg:pl-16 lg:flex hidden' />
+                    <img src="/smartphone/a50/f2Hero.webp" alt="8MP AI Rear Camera" className='md:h-[650px] lg:py-5 lg:pl-16 lg:flex hidden' />
 
 
                     <div className='relative flex flex-col  justify-start items-start xl:bottom-[9%] xl:right-[51%] md:right-[36%] bottom-[2%]'>
@@ -250,7 +250,7 @@ export default function Frames() {
                         </div>
                     </div>
                     {/* <img src="/smartphone/a50/A501080p.gif" alt="f1Img" className='lg:h-[580px] md:h-[450px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] mt-5' /> */}
-                    <img src="/smartphone/a50/oct.webp" alt="f1Img" className='lg:w-[606.59px]  md:w-[462px] lg:pr-10 lg:pt-16 pr-7.5 w-[250px] mt-5' />
+                    <img src="/smartphone/a50/oct.webp" alt="Minimize Glitches Experience" className='lg:w-[606.59px]  md:w-[462px] lg:pr-10 lg:pt-16 pr-7.5 w-[250px] mt-5' />
                 </div>
 
                 {/* Frame 4*/}
@@ -283,7 +283,7 @@ export default function Frames() {
                             ))}
                         </div>
                     </div>
-                    <img src="/smartphone/a50/A501080p.gif" alt="f1Img" className='lg:h-[600px] lg:w-[725px] md:h-[400px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] md:mt-5' />
+                    <img src="/smartphone/a50/A501080p.gif" alt="6.6” Big Display phone" className='lg:h-[600px] lg:w-[725px] md:h-[400px] md:w-[462px] lg:mr-17 mr-7.5 w-[250px] md:mt-5' />
                     {/* <img src="/smartphone/a50/oct.webp" alt="f1Img" className='lg:w-[606.59px]  md:w-[462px] lg:pr-10 lg:pt-16 pr-7.5 w-[250px] mt-5' /> */}
                 </div>
             </div>

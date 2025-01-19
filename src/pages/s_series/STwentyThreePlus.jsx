@@ -21,11 +21,16 @@ import HeroSmartPhoneCommon from '../../components/common/smartphone_common/Hero
 import ColorImageCarousel from "../../components/common/smartphone_common/ColorImageCarousel"
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/S23PlusData';
 import SharpFoucsNew from '../../components/core/s_series_core/S_Twenty_Three_Plus/SharpFoucsNew';
-
+import { Helmet } from 'react-helmet'
 const STwentyThreePlus = () => {
   return (
     <>
       <div>
+      <Helmet>
+                <title>Discover the itel S23+: Stunning 3D Curved Display | itel India</title>
+                <meta name="description" content={`The itel S23+ combines stunning specifications with a remarkable 3D curved display. Get ready for an unparalleled smartphone experience with itel.`} />
+                <meta name="keywords" content="itel S24,itel s23+,itel rs4,itel S24 price,itel s23+ price,about itel s24,itel s23 plus,itel s24 mobile,itel s24 smartphone,s23+ itel" />
+            </Helmet>
         <HeroSmartPhoneCommon
           tagText="super series"
           headingText="s23+"

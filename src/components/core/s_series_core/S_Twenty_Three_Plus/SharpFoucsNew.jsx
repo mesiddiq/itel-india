@@ -10,7 +10,7 @@ const SharpFoucsNew = () => {
                         <img src='/smartphone/S23+/Backgrounds/SharpFocusCardOneText.svg' alt='SharpFocusCardOneText' className='absolute w-[135px] md:w-[200px] lg:w-auto left-[-12px] lg:left-[80px] bottom-0 lg:top-0' />
                     </div>
                     <div className='col-span-1'>
-                        <img src='/smartphone/S23+/Backgrounds/SharpFocusCardOneImage.webp' alt='SharpFocusCardOneImage'
+                        <img src='/smartphone/S23+/Backgrounds/SharpFocusCardOneImage.webp' alt='Flawless Selfie Capture'
                         />
                     </div>
                 </div>

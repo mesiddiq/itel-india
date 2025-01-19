@@ -22,8 +22,8 @@ const HeroBanner = () => {
             <img src='/smartphone/color-pro-5g/HeroBanner/HeroTitle.svg' className='z-[1] pr-5' />
           </div>
           <div className='col-span-1'>
-            <img src='/smartphone/color-pro-5g/HeroBanner/HeroImage.webp' className='hidden md:block absolute bottom-0 right-0 h-[300px] z-[2] md:h-[700px]' alt='heroImage' data-aos='fade-up' />
-            <img src='/smartphone/color-pro-5g/HeroBanner/HeroImage.webp' className='md:hidden absolute bottom-0 left-[50%] h-[300px] z-[2] md:h-[700px]' alt='heroImage' data-aos='fade-up' style={{ transform: 'translate(-50%)' }} />
+            <img src='/smartphone/color-pro-5g/HeroBanner/HeroImage.webp' className='hidden md:block absolute bottom-0 right-0 h-[300px] z-[2] md:h-[700px]' alt='ITEL Color Pro 5G' data-aos='fade-up' />
+            <img src='/smartphone/color-pro-5g/HeroBanner/HeroImage.webp' className='md:hidden absolute bottom-0 left-[50%] h-[300px] z-[2] md:h-[700px]' alt='ITEL Color Pro 5G' data-aos='fade-up' style={{ transform: 'translate(-50%)' }} />
           </div>
         </div>
       </div>

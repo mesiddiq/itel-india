@@ -12,7 +12,7 @@ export default function Third() {
           </p>
           <img
             src="/smartphone/a05/f5i1.png"
-            alt="Background Image"
+            alt="Blazing Fast 4G"
             className="h-auto w-full mx-auto xl:pt-[30px] md:pt-[100px]"
           />
         </div>
@@ -26,7 +26,7 @@ export default function Third() {
             </p>
             <img
               src="/smartphone/a05/f5i2.png"
-              alt="Background Image"
+              alt="Long-Lasting 4000mAh Battery"
               className="h-auto max-w-full"
             />
           </div>

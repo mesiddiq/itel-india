@@ -36,7 +36,7 @@ const Section7PhonesSpecs = () => {
                         <div className="flex justify-center">
                             <img
                                 src={'/smartphone/A23s/Backgrounds/batterygridphone.webp'}
-                                alt="Battery"
+                                alt="All-Day Battery Efficiency"
                                 className="h-auto max-h-[225px] md:w-[370px] lg:w-[534px] object-cover"
                             />
                         </div>
@@ -58,7 +58,7 @@ const Section7PhonesSpecs = () => {
                         <div className="flex relative left-[2rem] top-[2rem] md:top-0 items-center justify-center">
                             <img
                                 src={'/smartphone/A23s/Backgrounds/RAMgridphone.webp'}
-                                alt="RAM"
+                                alt="Boosted 4GB RAM"
                                 className="h-[170px] md:h-[233px]"
                             />
                         </div>

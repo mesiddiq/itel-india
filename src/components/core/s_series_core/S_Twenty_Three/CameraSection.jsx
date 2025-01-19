@@ -73,7 +73,7 @@ function CameraSection() {
               <img
                 loading="lazy"
                 src="/smartphone/S_Twenty_Three/Camphone.webp"
-                alt="itel S23 camera showcase"
+                alt="50MP AI Dual Rear Camera"
                 className="object-contain grow w-full hidden lg:block aspect-[1.11] max-md:mt-4 max-md:ml-10 max-md:max-w-full"
               />
        

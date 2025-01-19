@@ -12,7 +12,7 @@ function ColorChangeSection() {
           <div className="absolute lg:top-[75px] lg:left-[227px] left-[-156px] top-0 w-[493px] h-[709px] max-md:static max-md:w-[80%] max-md:h-auto max-md:mx-auto ">
             <img
               src="/smartphone/S_Twenty_Three/ColorPhone.webp"
-              alt="Phone"
+              alt="Vibrant Color Shift"
               className="w-full h-full object-cover"
             />
           </div>

@@ -16,8 +16,8 @@ const It5262 = () => {
     return (
         <>
             <Helmet>
-                <title>it5262</title>
-                <meta name="description" content={`Stay lit with the itel it5262 - your perfect companion! Packed with a big 2000 mAh battery, this sleek feature phone keeps you connected all day without the power struggle. Rocking a glass finish design for a modern vibe, kingvoice, and Type-C charging for a quick full charge. Level up with the all-new itel it5262!`} />
+                <title>itel it5262 - 2000mAh Battery with Type-C Charging | itel India</title>
+                <meta name="description" content={`Experience convenience with itel it5262, featuring a 2000mAh battery and Type-C charging. Discover this durable mobile phone today with itel India!`} />
             </Helmet>
             <Hero {...HeroDatait5262} />
             <StickyHeader {...HeroDatait5262} />

@@ -20,8 +20,8 @@ const A50C = () => {
 	return (
 		<>
 			<Helmet>
-				<title>A50C</title>
-				<meta name="description" content={`Experience top performance and style with the itel A50C, India's true all-rounder. It features 2GB RAM, expandable to 4GB with memory fusion technology, for smooth multitasking. Enjoy vibrant visuals on the 6.6″ HD+ display with a dynamic bar. Capture detailed photos with the 8MP AI rear camera and perfect selfies with the 5MP front camera. The Unisoc T603 Octa-core processor ensures seamless performance, while the 4000 mAh battery and 10W charging keep you powered all day. Plus, get a Free Screen Replacement and a 1-year warranty.`} />
+				<title>itel A50C | Dual Camera Phone with Side Fingerprint Sensor | itel India</title>
+				<meta name="description" content={`Discover the itel A50C, a feature-packed dual camera phone with a side fingerprint sensor for quick access and stunning photography. Elevate your smartphone experience!`} />
 			</Helmet>
 			<HeroSmartPhoneCommon {...HeroDataA50C} />
 			<StickyHeader title="A50C" purchaseLink="https://www.flipkart.com/itel-a50c-misty-aqua-32-gb/p/itm2032e2f53466f?pid=MOBH4HFHPP9FMYZS&lid=LSTMOBH4HFHPP9FMYZS7IQNAK&marketplace=FLIPKART&cmpid=content_mobile_8965229628_gmc" icon="/smartphone/A50C/A50CLogo.svg" bgColor="white" dark={true} borderBottom={true} />

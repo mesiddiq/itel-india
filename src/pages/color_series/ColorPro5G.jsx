@@ -20,10 +20,17 @@ import EnjoyOptimalGaming from '../../components/core/color_series_core/color_pr
 import UltraSmooth from '../../components/core/color_series_core/color_pro_5g/UltraSmooth';
 import PowerThrough from '../../components/core/color_series_core/color_pro_5g/PowerThrough';
 import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphonedata/ColorPro5GData';
-
+import { Helmet } from "react-helmet";
 const ColorPro5G = () => {
 	return (
     <>
+
+<Helmet>
+        <title>itel Color Pro 5G | Best 5G Phone Under 10000 | itel India</title>
+        <meta name="description" content={`Experience blazing-fast 5G with itel Color Pro 5G, the latest and most affordable smartphone under 10000. Enjoy smooth performance, sleek design, and advanced features`} />
+      </Helmet>
+
+
     	<HeroBanner />
     	<StickyHeader purchaseLink={"https://www.amazon.in/dp/B0DHVX144Z?th=1"} icon={'/smartphone/color-pro-5g/StickyHeader/image.png'} iconSize={'h-[44px]'} bgColor={'radial-gradient(56.49% 350.52% at 50% 0%, #201853 0%, #12052D 100%)'} />
     	<BeUnstoppable />

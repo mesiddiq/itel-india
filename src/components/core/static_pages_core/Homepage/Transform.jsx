@@ -14,7 +14,7 @@ const Transform = () => {
                         </h4>
                     </div>
                 </div>
-                <img src="/static_page/homepage/movie.png" alt="watching moview" className='absolute bottom-0 right-0 max-w-[345px] lg:max-w-[525px]' />
+                <img src="/static_page/homepage/movie.png" alt="Family-friendly TV" className='absolute bottom-0 right-0 max-w-[345px] lg:max-w-[525px]' />
             </div>
             <img src="/static_page/homepage/pattern.svg" alt="pattern" className='w-screen object-cover h-[80px] lg:h-auto' />
         </div>

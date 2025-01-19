@@ -11,7 +11,7 @@ const SharpFocus = () => {
 						<img src='/smartphone/S23+/Backgrounds/SharpFocusCardOneText.svg' alt='SharpFocusCardOneText' className='absolute w-[135px] md:w-auto left-[-12px] md:left-[80px] bottom-0 md:top-0' />
 					</div>
 					<div className='col-span-1'>
-						<img src='/smartphone/S23+/Backgrounds/SharpFocusCardOneImage.webp' alt='SharpFocusCardOneImage'
+						<img src='/smartphone/S23+/Backgrounds/SharpFocusCardOneImage.webp' alt='Sharp Focus'
 						/>
 					</div>
 				</div>

@@ -29,8 +29,8 @@ const A80 = () => {
         <div className="bg-[#FAFAFA] font-markot">
 
             <Helmet>
-                <title>A80</title>
-                <meta name="description" content={`Introducing the itel A80, your gateway to the future of smartphones! With its awesome design and 6.6inch HD+ display, it's the epitome of elegance and functionality. Experience seamless multitasking with 4GB RAM, expandable up to 12GB* with Memory Fusion & Massive 256GB ROM. Powered by an octa-core processor and 5000 mAh battery, and Type-C charging it's built for seamless performance. Get yours today and step into the world of tomorrow!`} />
+                <title>itel A80 - Best Budget Smartphone Under 10000 | itel India</title>
+                <meta name="description" content={`Discover the itel A80, one of the best mobile phones in India. Packed with advanced features, it’s the perfect budget smartphone under 10000. Buy now!`} />
             </Helmet>
 
             <HeroSectionA80

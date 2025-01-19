@@ -11,7 +11,7 @@ const UnlockTouch = () => {
             <p className='w-[55%] lg:w-[70%] text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large font-markot mb-[20px] lg:mb-[80px]' data-aos="fade-down">Effortlessly access your device with the touch of a finger - seamless security and convenience with in-display finger unlock.</p>
           </div>
           <div className='col-span-1'>
-            <img src='/smartphone/S23+/Backgrounds/UnlockTouchPhone.webp' className='hidden lg:flex absolute right-0 bottom-[-510px]' data-aos="fade-down" />
+            <img src='/smartphone/S23+/Backgrounds/UnlockTouchPhone.webp' alt='Touch In-Display Unlock' className='hidden lg:flex absolute right-0 bottom-[-510px]' data-aos="fade-down" />
             <img src='/smartphone/S23+/Backgrounds/UnlockTouchPhoneSmall.webp' className='flex lg:hidden absolute bottom-[-75px] left-[-20px] md:left-[-50px]' data-aos="fade-down" />
           </div>
         </div>

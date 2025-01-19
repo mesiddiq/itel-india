@@ -13,7 +13,7 @@ const ModernTwist = () => {
               <img src='/smartphone/S24/starryBlackText.svg' alt='starryBlackText' className='w-[40%] left-[2%] absolute bottom-1' />
             </div>
             <div className=''>
-              <img src='/smartphone/S24/starryBlackImage.png' alt='starryBlackImage'  />
+              <img src='/smartphone/S24/starryBlackImage.png' alt='Starry Black'  />
             </div>
         </div>
       </div>

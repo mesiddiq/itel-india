@@ -32,7 +32,7 @@ const EntireWorld = () => {
 
                 </div>
                 <div className="mt-8 lg:mt-0 mx-auto">
-                    <img src="/featurephone/superguru4g/mobilescreens.webp" alt="Guper Guru 4g" className='max-h-[450px] ' />
+                    <img src="/featurephone/superguru4g/mobilescreens.webp" alt="Global Access Anytime" className='max-h-[450px] ' />
                 </div>
             </div>
             <div className="flex flex-col xl:flex-row justify-between font-markot content pt-[75px] lg:pt-[214px]">
@@ -47,7 +47,7 @@ const EntireWorld = () => {
                     </div>
                 </div>
                 <div className="translate-y-4">
-                    <img src="/featurephone/superguru4g/kingmedia.webp" alt="Guper Guru 4g" className='lg:max-w-[770px] max-w-[320px]' />
+                    <img src="/featurephone/superguru4g/kingmedia.webp" alt="Ultimate Media Experience" className='lg:max-w-[770px] max-w-[320px]' />
                 </div>
             </div>
         </div>

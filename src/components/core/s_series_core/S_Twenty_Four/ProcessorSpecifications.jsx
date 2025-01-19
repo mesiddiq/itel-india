@@ -49,7 +49,7 @@ const CameraSpecifications = () => {
       {/* Processor Image */}
       <img
         src="/smartphone/S24/processor.png"
-        alt="Processor Image"
+        alt="Pro Gaming Performance"
         className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] absolute top-[65%] sm:top-[65%] md:top-[70%] lg:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2"
       />
 

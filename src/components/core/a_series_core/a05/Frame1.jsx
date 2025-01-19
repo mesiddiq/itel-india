@@ -29,7 +29,7 @@ export default function Frame1() {
             <div className="md:px-[50px] xl:px-[208px] md:pt-[20px] xl:pt-[80px] px-[14px] pt-[9.2px]">
                 <img
                     src="/smartphone/a05/treesMobile.png"
-                    alt="Trees"
+                    alt="6.6 HD+"
                     className="h-auto mx-auto w-full" // Adjust the width and margin-top as necessary
                 />
             </div>

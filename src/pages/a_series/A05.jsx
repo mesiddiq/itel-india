@@ -15,8 +15,8 @@ export default function A05() {
   return (
     <div className="bg-white font-markot">
       <Helmet>
-        <title>A05s</title>
-        <meta name="description" content={`Experience breathtaking visuals on the itel A05s smartphone with its expansive 6.6-inch HD+ Drop Notch Display, featuring a crisp 1612 x 720 pixel resolution. Stay powered all day with the robust 4000 mAh battery and Type-C charging support. Effortlessly multitask with 8GB* (4GB+4GB*) RAM and 64GB ROM. Capture stunning photos with the 5MP dual rear camera and enjoy enhanced security with dual protection for your device.`} />
+        <title>itel A05s - 5G Smartphone with Top Features | itel India</title>
+        <meta name="description" content={`Step into the future with itel A05s. Packed with 5G capability and standout features, it’s the perfect blend of style and performance. Explore now at itel India!`} />
         <meta name="keywords" content={`a05s, 4000mah battery ,mobile large display phones, 2gb ram 32gb internal memory mobiles,60hz refresh rate,5mp camera`} />
       </Helmet>
       <HeroSmartPhoneCommon

@@ -26,7 +26,7 @@ const Section5batterySpecs = () => {
           </div>
         </div>
         <div className="responsive-Tab">
-          <img src="/smartphone/a70/phonebatteryimg.png" alt="battery" />
+          <img src="/smartphone/a70/phonebatteryimg.png" alt="Endless Energy Support" />
         </div>
       </div>
     </GradientBackgroundWrapper>

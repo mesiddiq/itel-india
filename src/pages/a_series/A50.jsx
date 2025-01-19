@@ -14,8 +14,10 @@ export default function A50() {
   return (
     <div className='bg-white font-markot'>
       <Helmet>
-        <title>A50</title>
-        <meta name="description" content={`Experience breathtaking visuals on the itel A50 smartphone with its expansive 6.6-inch HD+ Drop Notch Display, featuring a crisp 1612 x 720 pixel resolution. Stay powered all day with the robust 4000 mAh battery and Type-C charging support. Effortlessly multitask with 8GB* (4GB+4GB*) RAM and 64GB ROM. Capture stunning photos with the 5MP dual rear camera and enjoy enhanced security with dual protection for your device.`} />
+        <title>itel A50 | Affordable 3GB & 2GB RAM Smartphone | itel India</title>
+
+        <meta name="description" 
+        content={`Explore the itel A50, a budget-friendly smartphone with 3GB and 2GB RAM options, powerful performance, and sleek design. Perfect for smooth multitasking on the go.`} />
       </Helmet>
       <HeroSmartPhoneCommon
         headingText="A50"

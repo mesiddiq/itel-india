@@ -27,7 +27,7 @@ const CaptureMore = () => {
             </div>
           </div>
           <div className='md:hidden col-span-1 text-center'>
-            <img src='/smartphone/color-pro-5g/CaptureMore/mobile.webp' className='absolute bottom-0 right-0' />
+            <img src='/smartphone/color-pro-5g/CaptureMore/mobile.webp'alt='Long-lasting Battery Performance' className='absolute bottom-0 right-0' />
           </div>
         </div>
       </div>

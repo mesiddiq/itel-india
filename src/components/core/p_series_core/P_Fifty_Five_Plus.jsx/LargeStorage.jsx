@@ -13,7 +13,7 @@ const LargeStorage = () => {
       <p className='text-desktop/button text-white'>1000+ TV Series Episodes* | 100,000+ photos* | 5000+ Apps*</p>
       </div>
       <div className=" flex justify-center items-center w-full px-4 md:p-0 md:w-1/2">
-      <img src='/smartphone/P55+/Backgrounds/LargeStorageGraphic.webp'></img>
+      <img alt='256 GB Large Storage' src='/smartphone/P55+/Backgrounds/LargeStorageGraphic.webp'></img>
       </div>
       </div>
 <p className='content px-4 lg:px-0 text-right lg:text-left text-desktop/body/1 py-8'>*depends on the file size</p>

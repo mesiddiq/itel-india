@@ -43,7 +43,7 @@ const StandAloneImage = () => {
     >
       <img
         src="/smartphone/S24/standAloneImage.jpeg"
-        alt="standAloneImage"
+        alt="Impeccable Clarity Video"
         className="w-full h-full object-cover"
       />
     </motion.div>

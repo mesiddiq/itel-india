@@ -9,7 +9,7 @@ return (
         
         <div className=' overflow-hidden flex md:flex-row flex-col bg-[#EBE8E2] h-full w-full rounded-2xl bg-no-repeat bg-center md:bg-right bg-cover md:bg-auto' style={{ backgroundImage: `url(${curlyLine})`}}>
             <section className='z-0 w-full md:w-1/2 h-full flex justify-center items-end absolute right-0 scale-[80%] xs:scale-[60%] sm:scale-[40%] md:scale-[80%] lg:scale-[60%] -bottom-[100px] xs:-bottom-[120px] sm:-bottom-[120px] md:-bottom-[120px] lg:-bottom-[180px]'>
-                <img src={hritik} className=''/>
+                <img src={hritik} alt='ITEL Color Pro 5G' className=''/>
             </section>
             
             <section className='pl-5 md:pl-10 py-5 md:py-11 md:h-full md:w-1/2 w-full flex flex-col md:justify-between'>

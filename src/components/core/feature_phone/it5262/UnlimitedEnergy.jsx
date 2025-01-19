@@ -26,7 +26,7 @@ const UnlimitedEnergy = () => {
                     </div>
                 </div>
                 <div className="lg:pt-20 pt-10 pr-[55px]">
-                    <img src="/featurephone/it5262/Backgrounds/unlimited_energy.webp" alt="it5262" className='lg:max-h-[602px] max-h-[393px]' />
+                    <img src="/featurephone/it5262/Backgrounds/unlimited_energy.webp" alt="Powerful 2000mAh Battery" className='lg:max-h-[602px] max-h-[393px]' />
                 </div>
                 <h1 className="text-mobile/small/body lg:text-desktop/body/1 text-grey/grey/2/80 absolute bottom-1 right-0">*theoretical value in ideal conditions</h1>
             </div>

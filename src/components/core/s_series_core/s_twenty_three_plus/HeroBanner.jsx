@@ -15,7 +15,7 @@ const HeroBanner = () => {
             </span>
           </div>
           <div className='col-span-1'>
-            <img src='/smartphone/S23+/Backgrounds/HeroImage.webp' className='absolute bottom-0 right-0 h-[375px] md:h-full' alt='heroImage' data-aos='fade-up' />
+            <img src='/smartphone/S23+/Backgrounds/HeroImage.webp' className='absolute bottom-0 right-0 h-[375px] md:h-full' alt='ITEL Color Pro 5G' data-aos='fade-up' />
           </div>
         </div>
       </div>

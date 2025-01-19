@@ -18,7 +18,7 @@ const PayAnywhere = ({ upiImageUrl }) => {
                         </div>
                     </div>
                 </div>
-                <img src={upiImageUrl} alt="UPI Enabled Phone" className='absolute -bottom-10 lg:bottom-0 object-contain right-0 h-[284px] lg:h-[450px] w-[209px] lg:object-contain md:w-auto' data-aos="zoom-in" />
+                <img src={upiImageUrl} alt="Reliable 1900mAh Battery" className='absolute -bottom-10 lg:bottom-0 object-contain right-0 h-[284px] lg:h-[450px] w-[209px] lg:object-contain md:w-auto' data-aos="zoom-in" />
             </div>
         </div>
     )

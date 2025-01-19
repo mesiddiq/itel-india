@@ -20,7 +20,7 @@ export default function SmartphoneFeatures() {
           </div>
           <img
             src="/smartphone/S_Twenty_Three/Card1.webp"
-            alt=""
+            alt="Stunning Immersive Screen"
             className="absolute bottom-[1%] md:bottom-[-25%] lg:bottom-[1%] left-0 w-full h-auto object-cover"
           />
         </div>
@@ -43,7 +43,7 @@ export default function SmartphoneFeatures() {
             </div>
             <img
               src="/smartphone/S_Twenty_Three/Battery.webp"
-              alt=""
+              alt="Long Lasting Experience"
               className="absolute bottom-0 right-0.5  md:right-9 object-cover"
             />
           </div>
@@ -103,7 +103,7 @@ export default function SmartphoneFeatures() {
           </div>
           <img
             src="/smartphone/S_Twenty_Three/p1.webp"
-            alt=""
+            alt="itel S23's HD Pixel Lens"
             className="absolute bottom-0 right-0 object-cover"
           />
         </div>

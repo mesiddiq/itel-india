@@ -5,7 +5,7 @@ const MultiTaskEase = () => {
         <div className="hidden border border-black/10 relative lg:flex flex-row overflow-hidden rounded-2xl md:rounded-[56px] bg-MultiTaskEaseGradient h-[740px] px-5 ">
             
             <div className="flex flex-col justify-center items-center h-full w-[60%] rounded-2xl md:rounded-[56px]">
-                <img src="/smartphone/A05i/MultiTaskEaseImage.png" className="mt-20"/>
+                <img alt="Multi-task at Ease: 32GB ROM" src="/smartphone/A05i/MultiTaskEaseImage.png" className="mt-20"/>
             </div>
 
             <div className="md:scale-75 lg:scale-100 flex flex-col justify-center items-center h-full w-[40%] rounded-2xl md:rounded-[56px] font-markot">
@@ -48,7 +48,7 @@ const MultiTaskEase = () => {
         <div className="lg:hidden border border-black/10 pt-12 pb-16 relative flex flex-col gap-4 items-center overflow-hidden rounded-2xl md:rounded-[56px] bg-MultiTaskEaseGradient h-auto px-5 ">
             
             <div className="flex flex-col justify-center items-center h-full max-w-[300px] w-full rounded-2xl md:rounded-[56px]">
-                <img src="/smartphone/A05i/MultiTaskEaseImage.png" className=""/>
+                <img alt="Multi-task at Ease: 32GB ROM" src="/smartphone/A05i/MultiTaskEaseImage.png" className=""/>
             </div>
 
             <div className="max-w-[350px] lg:scale-100 flex flex-col justify-center items-center h-full w-full md:rounded-[56px] font-markot">

@@ -23,18 +23,18 @@ const MultipleCameraModes = () => {
                 <div className="hidden lg:flex flex-row justify-center lg:gap-[42px]">
                     <div className="flex flex-row justify-center items-end gap-6 lg:gap-3">
                         <img src='/smartphone/S24/superNightModeText.svg' alt='superNightModeText' className="w-[30%] lg:w-[10%]"/>
-                        <img src='/smartphone/S24/superNightMode.png' alt='superNightModeImage' className="w-[90%]"/>
+                        <img src='/smartphone/S24/superNightMode.png' alt='	Super Night Mode' className="w-[90%]"/>
                     </div>
                     <div className="flex flex-row justify-center items-end gap-6 lg:gap-3">
                         <img src='/smartphone/S24/potraitMode.svg' alt='potraitModeText' className="w-[30%] lg:w-[10%]"/>
-                        <img src='/smartphone/S24/potraitMode.png' alt='potraitModeImage' className="w-[90%]"/>
+                        <img src='/smartphone/S24/potraitMode.png' alt='Potrait Mode' className="w-[90%]"/>
                     </div>
                 </div>
 
                 <div className="hidden lg:flex flex-row justify-center gap-2 lg:gap-[42px] w-[90%] 2xl:w-full">
                     <div className="flex flex-row justify-center items-end gap-2 lg:gap-6">
                         <img src='/smartphone/S24/timeLapseText.svg' alt='timeLapseText' className=""/>
-                        <img src='/smartphone/S24/timeLapse.png' alt='timeLapse' className="2xl:w-[90%]"/>
+                        <img src='/smartphone/S24/timeLapse.png' alt='Time Lapse' className="2xl:w-[90%]"/>
                     </div>
                 </div>
 
@@ -42,11 +42,11 @@ const MultipleCameraModes = () => {
                 <div className="lg:hidden grid grid-cols-[50%_50%] gap-x-2">
                     <div className="grid grid-cols-[10%_80%] items-end gap-x-2">
                         <img src='/smartphone/S24/superNightModeText.svg' alt='superNightModeText' className="w-full "/>
-                        <img src='/smartphone/S24/superNightMode.png' alt='superNightModeImage' className="w-full "/>
+                        <img src='/smartphone/S24/superNightMode.png' alt='	Super Night Mode' className="w-full "/>
                     </div>
                     <div className="grid grid-cols-[10%_80%] items-end gap-x-3">
                         <img src='/smartphone/S24/potraitMode.svg' alt='potraitModeText' className=" "/>
-                        <img src='/smartphone/S24/potraitMode.png' alt='potraitModeImage' className="w-full"/>
+                        <img src='/smartphone/S24/potraitMode.png' alt='Potrait Mode' className="w-full"/>
                     </div>
                 </div>
 

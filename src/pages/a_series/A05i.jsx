@@ -23,8 +23,8 @@ const A05i = () => {
   return (
     <>
       <Helmet>
-        <title>Aura 05i</title>
-        <meta name="description" content={`Presenting itel Aura 05i with 6.6-inch HD+ display, a 4000 mAh battery, 10W Type-C fast charging support, and 32GB ROM. Snap pics with its 5 MP dual rear camera and 5 MP front camera. Running on Android 13, it has fingerprint and Face unlock for extra security.`} />
+        <title>itel Aura 05i - Sleek Design with 5MP Camera | itel India</title>
+        <meta name="description" content={`Explore the itel Aura 05i, the latest itel phone with a 5MP front camera and stylish design. Experience innovation and reliability with itel India!`} />
       </Helmet>
       <HeroSmartPhoneCommon {...HeroDataA05i} />
       <StickyHeader

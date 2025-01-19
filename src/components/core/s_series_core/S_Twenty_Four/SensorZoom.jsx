@@ -71,7 +71,7 @@ const SensorZoom = () => {
             </div>
             <img
               src="/smartphone/S24/threeXzoomImage.png"
-              alt="threeXzoomImage"
+              alt="	3X In-sensor Zoom"
               className="z-0 scale-[300%] translate-y-1/2"
             />
           </motion.div>
@@ -89,7 +89,7 @@ const SensorZoom = () => {
           </div>
           <img
             src="/smartphone/S24/threeXzoomImage.png"
-            alt="threeXzoomImage"
+            alt="	3X In-sensor Zoom"
             className="z-0 scale-[430%] translate-y-full "
           />
         </motion.div>
@@ -131,7 +131,7 @@ const SensorZoom = () => {
             <div className="h-[80%] relative w-full overflow-hidden">
               <img
                 src="/smartphone/S24/threeXzoomImage.png"
-                alt="threeXzoomImage"
+                alt="	3X In-sensor Zoom"
                 className="absolute z-0 scale-[330%] xs:scale-[300%] sm:-top-20 translate-y-full"
               />
             </div>
@@ -148,7 +148,7 @@ const SensorZoom = () => {
             </div>
             <img
               src="/smartphone/S24/threeXzoomImage.png"
-              alt="threeXzoomImage"
+              alt="	3X In-sensor Zoom"
               className="z-0 scale-[400%] translate-y-2/3"
             />
           </motion.div>

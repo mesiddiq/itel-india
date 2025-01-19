@@ -5,7 +5,7 @@ const PicturePerfect = () => {
     <div className='block lg:flex relative w-full h-[790px] md:h-[1200px] lg:h-[800px] px-[16px] lg:px-0 pt-[12px] lg:pt-[120px] pb-0 lg:pb-[120px] bg-[url("/smartphone/S23+/Backgrounds/PicturePerfectBg.webp")] bg-cover bg-center overflow-hidden' style={{ marginTop: '0px' }}>
       <div className='lg:flex lg:content gap-4'>
         <div className='hidden lg:flex w-[60%]'>
-          <img src='/smartphone/S23+/Backgrounds/PicturePerfectPhone.webp' className='absolute bottom-0' data-aos="fade-right" />
+          <img src='/smartphone/S23+/Backgrounds/PicturePerfectPhone.webp' alt='Picture Perfect Camera' className='absolute bottom-0' data-aos="fade-right" />
         </div>
         <div className='w-full lg:w-[40%]'>
           <h3 className='linear-gradient text-[24px] md:text-[48px] font-markot font-[500] w-[60%] md:w-full'>Picture Perfect Ultra Clear Camera</h3>

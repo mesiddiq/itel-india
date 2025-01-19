@@ -26,8 +26,8 @@ const STwentyFour = () => {
     return (
         <>
             <Helmet>
-                <title>S24</title>
-                <meta name="description" content={`Capture stories with the all-new itel S24. Packed with a stunning 108MP ultra clear AI camera, bring your pictures to life. Experience blazing-fast speed with 8GB RAM, expandable up to 16GB* with memory fusion and 128GB ROM smartphone. With a 5000 mAh battery and 18W fast charging, always stay on top of your game. Get a super smooth and responsive experience with a 90Hz refresh rate on the 6.6-inch HD+ punch-hole display smartphone.`} />
+                <title>itel S24 | 108MP Camera, 5000mAh Battery | itel India</title>
+                <meta name="description" content={`Meet the itel S24! Capture life's moments in stunning detail with a 108MP camera and stay powered up all day with a 5000mAh battery. Power and style, redefined.`} />
                 <meta name="keywords" content="itel S24,itel s23+,itel rs4,itel S24 price,itel s23+ price,about itel s24,itel s23 plus,itel s24 mobile,itel s24 smartphone,s23+ itel" />
             </Helmet>
             <HeroSmartPhoneCommon {...HeroDataS24} model="S24" />

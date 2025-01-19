@@ -9,7 +9,7 @@ function MemoryFusionSection() {
             <div className="flex shrink-0 max-w-full h-[800px] w-full max-md:h-auto md:mt-10">
               <img
                 src="/smartphone/S_Twenty_Three/Memory.webp"  
-                alt="Memory Fusion"
+                alt="Enhanced Memory Performance"
                 className="w-full h-full object-cover"
               />
             </div>
