@@ -1,14 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-// import { ArrowRight } from 'lucide-react'
 import { useState, useRef, useEffect, } from 'react'
 import { useClickOutside } from "react-haiku"
 import { Link } from 'react-router-dom'
 import { AccessoriesData, PhoneData, TvData, SupportData, PhonesData } from '../data/NavbarData'
-import { MdCurrencyRupee, MdKeyboardArrowRight } from 'react-icons/md'
 import { useNavigate } from "react-router-dom";
-import { IoCloseSharp } from 'react-icons/io5'
-// import { useSelector } from 'react-redux'
+import Rupee, { ArrowRight as MdKeyboardArrowRight, Close } from '../components/icons/Rupee'
 
 
 const ArrowSvg = ({ isActive }) => {
@@ -46,7 +43,7 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
                                 'Coming Soon'
                                 :
                                 <>
-                                    <MdCurrencyRupee />
+                                    <Rupee />
                                     {price}
                                 </>
                         }
@@ -309,7 +306,7 @@ const Navbar = () => {
 
                 <div className="h-[50px] max-w-[1281px] w-11/12 mx-auto flex justify-between items-center ">
                     <Link to={'/'} >
-                        <img src="/static_page/homepage/itel.png" alt="" className="" />
+                        <img src="/static_page/homepage/itel.png" alt="Itel India Logo" loading='lazy' />
                     </Link>
 
                     <div className="xl:w-[712px] lg:w-[500px] relative h-full bg-white/10 py-[14px] px-5 flex gap-3 items-center">
@@ -332,7 +329,7 @@ const Navbar = () => {
                         {
                             searchTerm &&
                             <button onClick={() => setSearchTerm('')} className="text-white text-2xl">
-                                <IoCloseSharp />
+                                <Close />
                             </button>
                         }
 

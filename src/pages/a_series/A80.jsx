@@ -37,17 +37,17 @@ const A80 = () => {
                 tagText="Awesome series"
                 headingText="A80"
                 price={"6,999"}
-                description={'12GB* (4GB+8GB*) RAM + 256GB ROM | Dynamic bar | 13MP AI Dual Rear Camera'}
+                description={'12GB* (4GB+8GB*) RAM + 256GB ROM | Dynamic bar | 50MP AI Dual Rear Camera'}
                 bgDesktopVideo={'/smartphone/A80/AllSections/Banner/bbannervideo.webm'}
                 bgMobile={'/smartphone/A80/AllSections/Banner/Herobg.webp'}
                 gradient1='#ffff'
                 gradient2='#ffff'
                 theme='light'
-                purchaseLink={'https://amzn.in/d/iJyvoK0'}
+                purchaseLink={'https://www.flipkart.com/itel-a80-sandstone-black-128-gb/p/itm7c178f92f5d64?pid=MOBH7RJZNAUWUHGS'}
             />
             <HeaderA80
                 title="A80"
-                purchaseLink={'https://amzn.in/d/iJyvoK0'}
+                purchaseLink={'https://www.flipkart.com/itel-a80-sandstone-black-128-gb/p/itm7c178f92f5d64?pid=MOBH7RJZNAUWUHGS'}
                 icon={'/smartphone/a70/stickyeHeaderIcon.svg'}
                 bgColor={'#FFBD6D'}
                 dark={true}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Compare from './Compare'
-import { MdCurrencyRupee } from "react-icons/md";
+import Rupee from "../../icons/Rupee";
 
 /* eslint-disable react/prop-types */
 const Model = ({ theme = 'light', models }) => {
@@ -33,7 +33,7 @@ const Model = ({ theme = 'light', models }) => {
 											{title}
 										</h1>
 										<p className="price text-desktop/button text-itel-red flex items-center">
-											<MdCurrencyRupee />
+											<Rupee />
 											{price}
 										</p>
 									</div>

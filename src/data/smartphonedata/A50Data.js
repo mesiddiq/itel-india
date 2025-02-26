@@ -1,5 +1,3 @@
-import { head, title } from "framer-motion/client";
-
 export const a50FeatureRichData = {
     title: "Step into A50's Excellence with the 8 MP AI Rear Camera",
     description: "Introducing the itel A50, your ultimate all-rounder smartphone - with 6.6″ HD+ IPS display for clear visuals, 64GB of storage for plenty of space, 3GB or 4GB RAM for smooth performance, and a 5000 mAh battery for all-day power. Capture crisp photos with the 8MP rear and 5MP front cameras. Powered by the Unisoc T603 Octa-core processor, it handles multitasking with ease. Enjoy a Free Screen Replacement and a 1-year warranty.",

@@ -30,7 +30,7 @@ const Hero = () => {
 
 
     return (
-        <section ref={sectionRef} className="relative">
+        <section ref={sectionRef} className="relative overflow-hidden">
             <div className="lg:h-[824px] -z-10 h-[480px] md:h-[580px] bg-[url('/smartphone/zeno10/hero/bghero.webp')] bg-cover bg-center relative">
                 <img ref={image1} src="/smartphone/zeno10/hero/frontglass.webp" alt="Zeno Front Face" className="absolute bottom-0  left-1/2 -translate-x-1/2 lg:max-h-[716px] md:max-h-[400px] max-h-[265px] z-30" />
                 <img ref={image2} src="/smartphone/zeno10/hero/greenback.webp" alt="Zeno Green Back" className="absolute bottom-0 left-1/2 -translate-x-1/2 lg:max-h-[650px] md:max-h-[350px] max-h-[235px] rotate-[35deg] origin-bottom-right" />

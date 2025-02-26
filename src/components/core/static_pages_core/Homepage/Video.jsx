@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-import HlsPlayer from "../../../../utils/HlsPlayer";
 
 const AutoPlayVideo = () => {
     const wrapperRef = useRef(null);

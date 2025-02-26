@@ -1,5 +1,3 @@
-import { desc } from "framer-motion/client"
-
 export const HeroDataSuperGuru600 = {
     title: "Super Guru 600",
     subtitle: '2.8” Display | 1900 mAh Battery | UPI Payments',

@@ -5,20 +5,19 @@ export const FullSpecificationsA80 = [
         label:'General',
         data:[
             {label:'Model',value:'A80'},
-            {label:'Colors',value:'Starry Black, Dawn White & Costaline Blue'},
+            {label:'Colors',value:'Sandstone Black, Glacier White, Wave Blue'},
         ]
     },
     {
         id:2,
         label:'Display Features',
         data:[
-            {label:'Display Size',value:'6.6 inch   '},
-            {label:'Resolution',value:'1612x720 Pixels'},
+            {label:'Display Size',value:'6.7 inch   '},
+            {label:'Resolution',value:'1600x720 Pixels'},
             {label:'Resolution Type',value:'HD+'},
-            {label:'Dimension',value:'16.3*75.7*8.6 mm'},
+            {label:'Dimension',value:'165.9 x 77.3 x 8.54 mm'},
             {label:'Technology',value:'G+F, Incell'},
-            {label:'Refresh Rate',value:'60 Hz'},
-            {label:'Touch Sampling Rate',value:'120Hz'},
+            {label:'Refresh Rate',value:'120 Hz'},
             {label:'Pixel Density',value:'267 ppi'},
         ]
     },
@@ -26,8 +25,8 @@ export const FullSpecificationsA80 = [
         id:3,
         label:'OS & Processor',
         data:[
-            {label:'Operating System',value:'Android 13'},
-            {label:'Chipset',value:'Unisoc'},
+            {label:'Operating System',value:'Android 14 (U - Go)'},
+            {label:'Chipset',value:'Unisoc T603'},
             {label:'Processor Core',value:'Octa Core'},
         ]
     },
@@ -35,7 +34,7 @@ export const FullSpecificationsA80 = [
         id:4,
         label:'Camera',
         data:[
-            {label:'Rear Camera',value:'13MP Dual Cam'},
+            {label:'Rear Camera',value:'50MP AF+AI'},
             {label:'Rear flash',value:'Yes'},
             {label:'Front Camera',value:'8MP'},
             {label:'Front flash',value:'Yes'},
@@ -59,8 +58,8 @@ export const FullSpecificationsA80 = [
         label:'Memory & Storage',
         data:[
             {label:'RAM',value:'(4GB+8GB)*RAM'},
-            {label:'ROM',value:'64GB/128GB/256GB'},
-            {label:'Expandable',value:'1TB'},
+            {label:'ROM',value:'128GB'},
+            {label:'Expandable',value:'2TB'},
         ]
     },
     {
@@ -85,7 +84,7 @@ export const FullSpecificationsA80 = [
         label:'Additional',
         data:[
             {label:'Earphone Jack',value:'3.5mm'},
-            {label:'Sensors',value:'Fingerprint | Face Unlock | G Sensor'},
+            {label:'Sensors',value:'Fingerprint | Face Unlock | Electronic compass | ambient light and distance sensor | G-sensor'},
             {label:'Fingerprint',value:'Side'},
             {label:'Accessories',value:'Handset, Charger, USB Cable, Sim Ejector Tool, User Guide'},
         ]

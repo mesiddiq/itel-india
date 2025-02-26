@@ -30,6 +30,12 @@ export const PhoneData = [
             { id: 9, label: 'A50C', price: '5,599.00', thumbnail: '/navbar/a50c.webp', link: '/product/a50-c' },
         ]
     },
+    {
+        id: 'zeno',
+        products: [
+            { id: 7, label: 'Zeno 10', price: '5,699.00', thumbnail: '/smartphone/zeno10/hero/frontglass.webp', link: '/product/zeno-10' }
+        ]
+    },
 ]
 
 export const AccessoriesData = [
@@ -101,6 +107,8 @@ export const PhonesData = [
     {id:'12',label:'A70',link:'/product/a70',type:'smartphone'},
     {id:'13',label:'A23 S',link:'/product/a23-s',type:'smartphone'},
     {id:'14',label:'COLOR PRO 5G',link:'/product/color-pro-5g',type:'smartphone'},
+    {id:'a-80',label:'A80',link:'/product/a80',type:'smartphone'},
+    {id:'zeno-10',label:'ZENO 10',link:'/product/zeno-10',type:'smartphone'},
     {id:'super-guru-4g',label:'Super Guru 4G',link:'/product/super-guru-4g',type:'featurephone'},
     {id:'super-guru-400',label:'Super Guru 400',link:'/product/super-guru-400',type:'featurephone'},
     {id:'super-guru-600',label:'Super Guru 600',link:'/product/super-guru-600',type:'featurephone'},

@@ -52,7 +52,6 @@ const Navbar = lazy(() => import('./pages/Navbar'));
 const ScrollToTop = lazy(() => import('./utils/ScrollToTop'));
 const A50 = lazy(() => import('./pages/a_series/A50'));
 const NavbarMobile = lazy(() => import('./pages/NavbarMobile'));
-const ProductListing = lazy(() => import('./pages/static_pages/ProductListing'));
 const FeaturePhoneParent = lazy(() => import('./pages/feature_phone/FeaturePhoneParent'));
 
 const Circle1 = lazy(() => import('./pages/feature_phone/Circle1'));
@@ -68,7 +67,6 @@ const SuperGuru600 = lazy(() => import('./pages/feature_phone/SuperGuru600'));
 const Ace2Power = lazy(() => import('./pages/feature_phone/Ace2Power'));
 import 'lenis/dist/lenis.css'
 import Lenis from 'lenis'
-import ComingSoonZeno from './pages/zeno/ComingSoonZeno'
 import Zeno10 from './pages/zeno/Zeno10'
 import ZenoParent from './pages/zeno/ZenoParent'
 
@@ -128,7 +126,6 @@ function App() {
 					{/************************************ZENO***************************************************************/}
 
 
-					<Route path='/zeno' element={<ComingSoonZeno />} />
 					<Route path='/product' element={<ZenoParent />} >
 						<Route path='zeno-10' element={<Zeno10 />} />
 					</Route>

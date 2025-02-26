@@ -2,7 +2,7 @@
 import { motion, useAnimation } from "framer-motion"
 import { useEffect, useRef } from "react"
 import { useSize } from "react-haiku"
-import { MdCurrencyRupee } from 'react-icons/md'
+import Rupee from "../../icons/Rupee"
 
 /**
  * @function HeroSmartPhoneCommon
@@ -51,7 +51,7 @@ export default function HeroSmartPhoneCommon({
     }, [textControls, backgroundControls])
 
     return (
-        <div ref={ref} className={`relative h-[521px] lg:min-h-[750px] w-full overflow-hidden ${theme == "dark" ?'bg-white':'bg-black'}`}>
+        <div ref={ref} className={`relative h-[521px] lg:min-h-[750px] w-full overflow-hidden ${theme == "dark" ? 'bg-white' : 'bg-black'}`}>
             <motion.div
                 className={`absolute min-h-[521px] lg:min-h-[750px] min-w-full bg-cover bg-center bg-no-repeat`}
                 initial={{ opacity: 0, y: "100%" }}
@@ -135,7 +135,7 @@ export default function HeroSmartPhoneCommon({
                             <h1 className={`flex flex-row justify-start items-center gap-1 font-markot lg:text-[20px] lg:leading-[24px] lg:tracking-[0.01em] text-mobile/small/body ${theme == "dark" ? 'text-black/1' : 'text-white'}`}>
                                 <span>Available at </span>
                                 <span className="font-markot flex items-center font-bold text-[20px] leading-[26px] tracking-[0.01em] ">
-                                    <MdCurrencyRupee /> {price} /-
+                                    <Rupee /> {price} /-
                                 </span>
                             </h1>
 

@@ -34,7 +34,7 @@ const CreativeFilterA80 = () => {
             className="text-mobile/h3 lg:text-desktop/h2 text-white py-4"
             data-aos="fade-up"
           >
-            9 Creative Filters
+            Creative Filters
           </h1>
           <p
             className="text-mobile/body/2 lg:text-desktop/body/large text-white"

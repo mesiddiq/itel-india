@@ -8,7 +8,7 @@ const mergedData = AllPhonesData.concat(AllFeaturePhoneData.map((phone, index) =
 })))
 import { useEffect, useState } from "react"
 import BuyNowText from "../../../components/common/smartphone_common/BuyNowText"
-import { MdCurrencyRupee } from "react-icons/md"
+import Rupee from "../../icons/Rupee"
 
 const ShowDataForComparision = () => {
 
@@ -35,7 +35,7 @@ const ShowDataForComparision = () => {
                     {/* Product Title  */}
                     <div className="flex flex-col gap-1">
                         <p className="text-mobile/h5/medium text-[#1A1A1A]">{dataOfCurrentPhone.title}</p>
-                        <p className="text-mobile/title text-itel-red flex items-center"><MdCurrencyRupee />  {dataOfCurrentPhone.specification.price}</p>
+                        <p className="text-mobile/title text-itel-red flex items-center"><Rupee />  {dataOfCurrentPhone.specification.price}</p>
                     </div>
                     
                     {/* Product Specifications */}

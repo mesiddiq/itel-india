@@ -13,6 +13,9 @@ import PureCinematic from '../../components/core/zeno_serires_core/zeno10/PureCi
 import ZenoHeader from '../../components/core/zeno_serires_core/zeno10/ZenoHeader'
 import ZenoText from '../../components/core/zeno_serires_core/zeno10/ZenoText'
 import { FullSpecificationsZeno10, ImageCarouselDataZeno10 } from '../../data/smartphonedata/Zeno10Data'
+import ReactPlayer from 'react-player'
+import SliderAnimationCommon from '../../components/common/smartphone_common/SliderAnimationCommon'
+import ZenoSlider from '../../components/core/zeno_serires_core/zeno10/ZenoSlider'
 
 
 
@@ -20,11 +23,25 @@ const Zeno10 = () => {
     return (
         <main>
             <Hero />
-            <ZenoText />
             <ZenoHeader />
+            <ZenoText />
+            <section className="relative">
+                <ReactPlayer
+                    url="/smartphone/zeno10/video.mp4"
+                    width="100%"
+                    height="100%"
+                    muted={true}
+                    playsinline={true}
+                    playing={true}
+                    loop={true}
+                    controls={false}
+                    className="w-full max-h-screen object-cover"
+                />
+            </section>
             <FeatureCards />
             <PureCinematic />
             <NonStopPower />
+            <ZenoSlider />
             <MultiTasking />
             <FutureReady />
             <DynamicBar />

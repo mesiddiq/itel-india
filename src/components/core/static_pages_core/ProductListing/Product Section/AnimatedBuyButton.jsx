@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import { MdCurrencyRupee } from 'react-icons/md';
+import Rupee from '../../../../icons/Rupee';
 
 const AnimatedBuyButton = ({ price }) => {
 	const [isHovered, setIsHovered] = useState(false);
@@ -28,7 +28,7 @@ const AnimatedBuyButton = ({ price }) => {
 			<div className="relative z-10 flex items-center gap-[4px] md:gap-3">
 				<span className="text-xs flex items-center font-bold md:text-base leading-[18px] md:leading-[19.2px] tracking-[-0.02em] md:tracking-[-0.01em]">
 					{!isHovered &&
-						<MdCurrencyRupee />
+						<Rupee />
 					}
 					{isHovered ? 'BUY NOW' : `${price}`}
 				</span>

@@ -1,4 +1,4 @@
-import { MdCurrencyRupee } from "react-icons/md";
+import Rupee from "../../icons/Rupee";
 
 /* eslint-disable react/prop-types */
 function SimilarProducts({ theme = 'light' }) {
@@ -63,7 +63,7 @@ function SimilarProducts({ theme = 'light' }) {
                     </h3>
                     <div className="flex gap-2 flex-wrap items-center mt-3">
                       <p className={`text-desktop/h6/medium  font-bold flex items-center tracking-normal leading-tight ${isLightTheme ? 'text-black' : 'text-white'}`}>
-                       <MdCurrencyRupee/>   {product.price}
+                       <Rupee/>   {product.price}
                       </p>
                       {/* {product.originalPrice && (
                         <p className="text-desktop/strikethrough/text text-neutral-400 line-through">

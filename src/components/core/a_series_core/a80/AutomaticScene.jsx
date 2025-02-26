@@ -8,9 +8,9 @@ const AutomaticScene = () => {
 
     const CardData = [
         { src: '/smartphone/A80/AllSections/autosence/beach.webp', alt: 'Beach', caption: 'Beach', icon: 'icons' },
-        { src: '/smartphone/A80/AllSections/autosence/building.webp', alt: 'Buidling', caption: 'Buidling', icon: 'icons' },
+        { src: '/smartphone/A80/AllSections/autosence/building.webp', alt: 'Building', caption: 'Building', icon: 'icons' },
         { src: '/smartphone/A80/AllSections/autosence/food.webp', alt: 'Food', caption: 'Food', icon: 'icons' },
-        { src: '/smartphone/A80/AllSections/autosence/potrait.webp', alt: 'Potrait', caption: 'Potrait', icon: 'icons' },
+        { src: '/smartphone/A80/AllSections/autosence/potrait.webp', alt: 'Portrait', caption: 'Portrait', icon: 'icons' },
         { src: '/smartphone/A80/AllSections/autosence/pets.webp', alt: 'Pet', caption: 'Pet', icon: 'icons' },
         { src: '/smartphone/A80/AllSections/autosence/sky.webp', alt: 'Sky', caption: 'Sky', icon: 'icons' },
     ]

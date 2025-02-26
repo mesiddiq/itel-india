@@ -70,14 +70,14 @@ const ExperienceTheCamera = () => {
                                 <p className="lg:text-desktop/body/large bg-gradient-to-br from-[#FFEFDD] to-[#FFD8D6] bg-clip-text text-transparent">From lighting to color balance, the AI optimises your photos, make them sharp and full of detail, so you can focus on the moment, not the settings.</p>
                             </div>
                             <div className="flex flex-col gap-5">
-                                <h1 className="bg-gradient-to-br from-[#FFEFDD] to-[#FFD8D6] bg-clip-text text-transparent opacity-80">
+                                {/* <h1 className="bg-gradient-to-br from-[#FFEFDD] to-[#FFD8D6] bg-clip-text text-transparent opacity-80">
                                     <span className="lg:text-[32px] lg:leading-10 lg:tracking-[0.32px] font-bold ">
                                         13MP &nbsp;
                                     </span>
                                     <span className="lg:text-desktop/h5">
                                         Super HDR Camera
                                     </span>
-                                </h1>
+                                </h1> */}
                                 <h1 className="bg-gradient-to-br from-[#FFEFDD] to-[#FFD8D6] bg-clip-text text-transparent opacity-80">
                                     <span className="lg:text-[32px] lg:leading-10 lg:tracking-[0.32px] font-bold ">
                                         50MP &nbsp;
@@ -102,15 +102,7 @@ const ExperienceTheCamera = () => {
                         <h1 className="lg:text-desktop/h2 text-mobile/h3 text-white">Experience the full of life in every shot.</h1>
                         <p className="lg:text-desktop/body/large text-mobile/body/large bg-gradient-to-br from-[#FFEFDD] to-[#FFD8D6] bg-clip-text text-transparent">From lighting to color balance, the AI optimises your photos, make them sharp and full of detail, so you can focus on the moment, not the settings.</p>
                     </div>
-                    <div className="flex flex-col gap-5">
-                        <h1 className="bg-gradient-to-br from-[#FFEFDD] to-[#FFD8D6] bg-clip-text text-transparent opacity-80">
-                            <span className="lg:text-[32px] lg:leading-10 lg:tracking-[0.32px] font-bold ">
-                                13MP &nbsp;
-                            </span>
-                            <span className="lg:text-desktop/h5">
-                                Super HDR Camera
-                            </span>
-                        </h1>
+                    <div className="flex flex-col gap-5">     
                         <h1 className="bg-gradient-to-br from-[#FFEFDD] to-[#FFD8D6] bg-clip-text text-transparent opacity-80">
                             <span className="lg:text-[32px] lg:leading-10 lg:tracking-[0.32px] font-bold ">
                                 50MP &nbsp;
