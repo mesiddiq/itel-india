@@ -45,14 +45,14 @@ const Hero = () => {
                     <p className="text-white/90 lg:text-desktop/h6/medium">A better vision for the future that holds.</p>
                 </div>
                 <div className="flex items-center gap-4 justify-center py-6 lg:py-12">
-                    <a href="https://amzn.in/d/hDpj5DV" target="_blank" className="hidden md:block">
+                    <a href="https://www.amazon.in/dp/B0DQWR6WXH?ie=UTF8&ref_=itel_zeno_10_Website" target="_blank" className="hidden md:block">
                         <img src="/smartphone/zeno10/hero/BuyNowbutton.png" alt="Buy now button" className="lg:max-w-[160px] max-w-[80px]" />
                     </a>
                     <h5 className="lg:text-desktop/h5 text-white ">
                         <span className="font-normal">
-                            Available at
+                            Starting from
                         </span>
-                        <span className="font-bold"> ₹ 5,699/-</span>
+                        <span className="font-bold"> ₹ 5,499/-</span>
                     </h5>
                 </div>
             </div>

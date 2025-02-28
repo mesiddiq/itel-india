@@ -33,7 +33,7 @@ export const PhoneData = [
     {
         id: 'zeno',
         products: [
-            { id: 7, label: 'Zeno 10', price: '5,699.00', thumbnail: '/smartphone/zeno10/hero/frontglass.webp', link: '/product/zeno-10' }
+            { id: 7, label: 'Zeno 10', price: '5,499.00', thumbnail: '/smartphone/zeno10/hero/frontglass.webp', link: '/product/zeno-10' }
         ]
     },
 ]

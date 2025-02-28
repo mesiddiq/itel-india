@@ -35,25 +35,9 @@ const HomePage = () => {
             <CountOnItel />
             <OurCoolGadgets />
             <OurSmartAppliances />
-            <div className="px-4 md:px-0">
-                <ReactPlayer
-                    url={['/videos/homepage/enjoybetterlife.webm']}
-                    width={"100%"}
-                    height={"100%"}
-                    playing
-                    loop
-                    muted
-                    className='hidden md:block z-20'
-                />
-                <ReactPlayer
-                    url={['/videos/homepage/enjoybetterlife_mobile.mp4']}
-                    width={"100%"}
-                    height={"100%"}
-                    playing
-                    loop
-                    muted
-                    className='md:hidden rounded-[16px] overflow-hidden mx-auto lg:rounded-none'
-                />
+            <div className="">
+                <img src="/static_page/homepage/enjoybetterlife.webp" alt="Enjoy better life" className='hidden md:block w-full object-cover' />
+                <img src="/static_page/homepage/enjoybetterlife_mobile.webp" alt="Enjoy better life" className='md:hidden w-full object-cover' />
             </div>
         </div>
     )

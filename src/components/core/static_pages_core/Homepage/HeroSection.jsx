@@ -28,13 +28,13 @@ const Banner1 = ({ activeSlide }) => {
                     autoPlay
                     muted
                     loop
-                    src="/videos/homepage/herobanner1.webm" className='w-full object-cover absolute h-full top-0 md:block hidden object-right'
+                    src="/videos/homepage/herobanner1.mp4" className='w-full object-cover absolute h-full top-0 md:block hidden object-right'
                 />
                 <video
                     autoPlay
                     muted
                     loop
-                    src="/videos/homepage/herobanner1_mobile.webm" className='w-full object-cover h-full scale-110 absolute top-0 md:hidden'
+                    src="/videos/homepage/herobanner1_mobile.mp4" className='w-full object-cover h-full scale-110 absolute top-0 md:hidden'
                 />
                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
                     <div className="space-y-4 lg:space-y-0">
@@ -110,10 +110,24 @@ const ColorPro5g = ({ activeSlide }) => {
                         />
                     </Link>
                 </div>
-                <img
+                {/* <img
                     src="/static_page/homepage/colorpro5g.webp"
                     alt="Hritik Roshan"
                     className='h-full w-full absolute lg:-right-[17%] lg:bottom-0 top-36 lg:top-0 object-contain scale-110 lg:scale-100 '
+                /> */}
+
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    src="/videos/homepage/color_pro_5g.mp4" className='w-full object-cover absolute h-full top-0 hidden md:block'
+                />
+
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    src="/videos/homepage/color_pro_5g_mobile.webm" className='w-full absolute top-0 left-0 md:hidden object-cover h-full'
                 />
             </div>
         </AnimatePresence>
@@ -175,14 +189,14 @@ const Banner3 = ({ activeSlide }) => {
                     autoPlay
                     muted
                     loop
-                    src="/videos/homepage/herobanner4.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
+                    src="/videos/homepage/a80.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
                 />
 
                 <video
                     autoPlay
                     muted
                     loop
-                    src="/videos/homepage/herobanner4_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
+                    src="/videos/homepage/a80_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
                 />
                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
                     <div className="space-y-4 lg:space-y-3">
@@ -264,7 +278,7 @@ const ZenoComingSoon = ({ activeSlide }) => {
                             className="space-y-2 lg:space-y-2 lg:pt-4">
                             <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80 max-w-[600px]'>6.6" Display with Dynamic Bar | 64GB Big Memory | 5000 mAh with Type C Charger
                             </h5>
-                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><Rupee /> 5,699 /-</h2>
+                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><Rupee /> 5,499 /-</h2>
                         </motion.div>
                         <Link to={'/product/zeno-10'}>
                             <motion.button

@@ -42,7 +42,7 @@ export default function HeroSectionA80({
                 initial={{ opacity: 0, y: "100%" }}
                 animate={backgroundControls}
                 transition={{ duration: 1, ease: "easeOut" }}
-                src={bgDesktopVideo}
+                src={'/videos/a80.mp4'}
                 autoPlay
                 muted
                 loop
@@ -53,11 +53,11 @@ export default function HeroSectionA80({
                 initial={{ opacity: 0, y: "100%" }}
                 animate={backgroundControls}
                 transition={{ duration: 1, ease: "easeOut" }}
-                src={'/smartphone/A80/AllSections/Banner/bannermobile.mp4'}
+                src={'/videos/a80_mobile.mp4'}
                 autoPlay
                 loop
             />
- 
+
             <div className="content h-full justify-between flex-col md:flex-row  flex lg:items-center pt-11 lg:pt-0  md:px-0">
                 <div className="relative z-10 px-4">
                     <motion.div
@@ -145,7 +145,6 @@ export default function HeroSectionA80({
                         </div>
                     </motion.div>
                 </div>
-                <img src="/smartphone/A80/AllSections/Banner/HR+with+A80+(2).webp" alt="" className="z-20 relative hidden lg:block md:top-14 p-10 md:h-[710px]" />
             </div>
         </div>
     )

@@ -16,12 +16,19 @@ import { FullSpecificationsZeno10, ImageCarouselDataZeno10 } from '../../data/sm
 import ReactPlayer from 'react-player'
 import SliderAnimationCommon from '../../components/common/smartphone_common/SliderAnimationCommon'
 import ZenoSlider from '../../components/core/zeno_serires_core/zeno10/ZenoSlider'
+import { Helmet } from 'react-helmet'
 
 
 
 const Zeno10 = () => {
     return (
         <main>
+            <Helmet>
+                <title>Zeno 10</title>
+                <description>
+                    Zeno 10 is built to capture the smallest details with unmatched clarity and brilliant color vibrancy so you can capture the same smooth clarity as shooting stars.
+                </description>
+            </Helmet>
             <Hero />
             <ZenoHeader />
             <ZenoText />

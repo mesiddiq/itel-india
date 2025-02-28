@@ -23,35 +23,35 @@ import { ImageCarouselData, FullSpecificationsData } from '../../data/smartphone
 import { Helmet } from "react-helmet";
 const ColorPro5G = () => {
 	return (
-    <>
+		<>
 
-<Helmet>
-        <title>itel Color Pro 5G | Best 5G Phone Under 10000 | itel India</title>
-        <meta name="description" content={`Experience blazing-fast 5G with itel Color Pro 5G, the latest and most affordable smartphone under 10000. Enjoy smooth performance, sleek design, and advanced features`} />
-      </Helmet>
+			<Helmet>
+				<title>itel Color Pro 5G | Best 5G Phone Under 10000 | itel India</title>
+				<meta name="description" content={`Experience blazing-fast 5G with itel Color Pro 5G, the latest and most affordable smartphone under 10000. Enjoy smooth performance, sleek design, and advanced features`} />
+			</Helmet>
 
 
-    	<HeroBanner />
-    	<StickyHeader purchaseLink={"https://www.amazon.in/dp/B0DHVX144Z?th=1"} icon={'/smartphone/color-pro-5g/StickyHeader/image.png'} iconSize={'h-[44px]'} bgColor={'radial-gradient(56.49% 350.52% at 50% 0%, #201853 0%, #12052D 100%)'} />
-    	<BeUnstoppable />
-    	<FeaturesGrid />
-    	<EnhanceYourStyle />
-    	<TransformYourPhone />
-    	<PhoneCarousel />
-    	<Revolution />
-    	<ElevateUnparalled />
-    	<AIPoweredCamera />
-    	<UnlockBoundless />
-    	<CaptureMore />
-    	<Carousel />
-    	<NextGenPerformance />
-    	<EnjoyOptimalGaming />
-    	<UltraSmooth />
-    	<PowerThrough />
-    	<ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false}/>
-      <FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
-    </>
-  )
+			<HeroBanner />
+			<StickyHeader purchaseLink={"https://www.amazon.in/dp/B0DHVX144Z?th=1"} icon={'/smartphone/color-pro-5g/StickyHeader/image.png'} iconSize={'h-[44px]'} bgColor={'radial-gradient(56.49% 350.52% at 50% 0%, #201853 0%, #12052D 100%)'} />
+			<BeUnstoppable />
+			<FeaturesGrid />
+			<EnhanceYourStyle />
+			<TransformYourPhone />
+			<PhoneCarousel />
+			<Revolution />
+			<ElevateUnparalled />
+			<AIPoweredCamera />
+			<UnlockBoundless />
+			<CaptureMore />
+			<Carousel />
+			<NextGenPerformance />
+			<EnjoyOptimalGaming />
+			<UltraSmooth />
+			<PowerThrough />
+			<ColorImageCarousel ImageCarouselData={ImageCarouselData} showTitleInMobile={false} />
+			<FullSpecifications FullSpecificationsData={FullSpecificationsData} mode='dark' />
+		</>
+	)
 }
 
 export default ColorPro5G;
