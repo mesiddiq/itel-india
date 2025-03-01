@@ -1,6 +1,6 @@
 import curlyLine from '/product-listing/curlyHeader.svg'
 import readmore from '/product-listing/read-more.svg'
-import hritik from '/smartphone/color-pro-5g/HeroBanner/HeroImage.webp'
+const hritik = '/smartphone/color-pro-5g/HeroBanner/HeroImage.webp'
 
 const ProductListingBanner = () => {
 return (
