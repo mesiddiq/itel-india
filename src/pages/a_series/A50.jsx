@@ -17,7 +17,7 @@ export default function A50() {
         <title>itel A50 | Affordable 3GB & 2GB RAM Smartphone | itel India</title>
 
         <meta name="description" 
-        content={`Explore the itel A50, a budget-friendly smartphone with 3GB and 2GB RAM options, powerful performance, and sleek design. Perfect for smooth multitasking on the go.`} />
+          content={`Explore the itel A50, a budget-friendly smartphone with 3GB and 2GB RAM options, powerful performance, and sleek design. Perfect for smooth multitasking on the go.`} />
       </Helmet>
       <HeroSmartPhoneCommon
         headingText="A50"
