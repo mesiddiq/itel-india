@@ -65,6 +65,7 @@ const SuperGuru400 = lazy(() => import('./pages/feature_phone/SuperGuru400'));
 const SuperGuru4G = lazy(() => import('./pages/feature_phone/SuperGuru4G'));
 const SuperGuru600 = lazy(() => import('./pages/feature_phone/SuperGuru600'));
 const Ace2Power = lazy(() => import('./pages/feature_phone/Ace2Power'));
+const King_signal = lazy(() => import('./pages/feature_phone/King_signal'));
 import 'lenis/dist/lenis.css'
 import Lenis from 'lenis'
 import Zeno10 from './pages/zeno/Zeno10'
@@ -201,6 +202,7 @@ function App() {
 						<Route path='power-450' element={<Power450 />} />
 						<Route path='ace-2-power' element={<Ace2Power />} />
 						<Route path='flip-one' element={<FlipOne />} />
+						<Route path='king-signal' element={<King_signal/>}/>
 					</Route>
 
 					{/* ***********************Not Found**************** */}
