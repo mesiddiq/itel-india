@@ -110,11 +110,6 @@ const ColorPro5g = ({ activeSlide }) => {
                         />
                     </Link>
                 </div>
-                {/* <img
-                    src="/static_page/homepage/colorpro5g.webp"
-                    alt="Hritik Roshan"
-                    className='h-full w-full absolute lg:-right-[17%] lg:bottom-0 top-36 lg:top-0 object-contain scale-110 lg:scale-100 '
-                /> */}
 
                 <video
                     autoPlay
@@ -127,7 +122,7 @@ const ColorPro5g = ({ activeSlide }) => {
                     autoPlay
                     muted
                     loop
-                    src="/videos/homepage/color_pro_5g_mobile.webm" className='w-full absolute top-0 left-0 md:hidden object-cover h-full'
+                    src="/videos/homepage/color_pro_5g_mobile.mp4" className='w-full absolute top-0 left-0 md:hidden object-cover h-full'
                 />
             </div>
         </AnimatePresence>
@@ -250,7 +245,7 @@ const ZenoComingSoon = ({ activeSlide }) => {
                     autoPlay
                     muted
                     loop
-                    src="/smartphone/zeno10/video.mp4" className='w-full object-cover absolute left-0 top-0 h-full object-right'
+                    src="/smartphone/zeno10/video.mp4" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right'
                 />
                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
                     <div className="space-y-4 lg:space-y-3">

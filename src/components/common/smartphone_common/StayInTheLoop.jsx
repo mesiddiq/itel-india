@@ -61,27 +61,27 @@ const StayInTheLoop = ({ theme = 'light' }) => {
 				>
 					<SwiperSlide>
 						<div className="flex items-center justify-center">
-							<InstagramEmbed url="https://www.instagram.com/p/C99U-HPywNj" className='md:w-[300px] lg:w-[350px]' />
+							<InstagramEmbed url="https://www.instagram.com/p/DGyMHOjyBey/" className='md:w-[300px] lg:w-[350px]' />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="flex items-center justify-center">
-							<InstagramEmbed url="https://www.instagram.com/p/DBJH37TS_UY" className='md:w-[300px] lg:w-[350px]' />
+							<InstagramEmbed url="https://www.instagram.com/p/DGrUlXIoRtQ" className='md:w-[300px] lg:w-[350px]' />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="flex items-center justify-center">
-							<InstagramEmbed url="https://www.instagram.com/p/DBvYXhkSYdH" className='md:w-[300px] lg:w-[350px]' />
+							<InstagramEmbed url="https://www.instagram.com/p/DGPvOsJIM2n" className='md:w-[300px] lg:w-[350px]' />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="flex items-center justify-center">
-							<InstagramEmbed url="https://www.instagram.com/p/DA0hWXhCP_K" className='md:w-[300px] lg:w-[350px]' />
+							<InstagramEmbed url="https://www.instagram.com/p/DF7a3igh8ya/" className='md:w-[300px] lg:w-[350px]' />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="flex items-center justify-center">
-							<InstagramEmbed url="https://www.instagram.com/p/C_5IZxsC1hR" className='md:w-[300px] lg:w-[350px]' />
+							<InstagramEmbed url="https://www.instagram.com/p/DFpzvxOPAe9" className='md:w-[300px] lg:w-[350px]' />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>

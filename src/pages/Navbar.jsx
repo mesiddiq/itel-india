@@ -57,7 +57,7 @@ const CommonCard = ({ thumbnail, label, price, link, fn }) => {
 const Support = ({ support, setSupport }) => {
 
     return (
-        <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${support ? 'h-[330px] z-[100]' : 'h-0'}`}>
+        <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${support ? 'h-[330px] z-[500] ' : 'h-0'}`}>
             <div className='py-12 max-w-[741px] w-full mx-auto flex flex-wrap gap-6 font-markot'>
                 {
                     SupportData.map(({ id, label, path }) => (
@@ -87,7 +87,7 @@ const SmartPhoneDropdown = ({ smartPhone, setSmartPhone, handleOutside }) => {
     }
 
     return (
-        <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${smartPhone ? 'h-[330px] py-12 z-[100]' : 'h-0'}`}>
+        <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${smartPhone ? 'h-[330px] py-12 z-[500] ' : 'h-0'}`}>
             <div className="max-w-[1065px] w-full mx-auto flex lg:gap-6 pl-4 xl:pl-0 xl:gap-11">
                 <div className="flex flex-col gap-3">
                     {
@@ -181,7 +181,7 @@ const TvDropDown = ({ tv }) => {
     }
 
     return (
-        <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${tv ? 'h-[330px] py-12 z-[100]' : 'h-0'}`}>
+        <div className={`bg-[#1a1a1a] absolute top-0 w-full overflow-hidden transition-all duration-500 ${tv ? 'h-[330px] py-12 z-[100] ' : 'h-0'}`}>
             <div className="max-w-[1065px] w-full mx-auto flex lg:gap-6 pl-4 xl:pl-0 xl:gap-11">
                 <div className="flex flex-col gap-3">
                     {
@@ -468,7 +468,7 @@ const Navbar = () => {
                         <ArrowSvg isActive={support} />
                     </button>
                 </div>
-                <div className="relative z-50">
+                <div className="relative z-[100]">
                     <Support support={support} setSupport={setSupport} />
                     <SmartPhoneDropdown smartPhone={smartPhone} setSmartPhone={setSmartPhone} handleOutside={handleOutside} />
                     <AccessoriesDropDown Accessories={Accessories} setAccessories={setAccessories} />
