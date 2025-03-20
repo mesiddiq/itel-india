@@ -40,7 +40,7 @@ function King_signal_section1() {
                     <div className="absolute inset-0 flex flex-col justify-center pl-[80px] text-white space-y-2 
                     max-sm:pl-0 max-sm:items-center max-sm:justify-start max-sm:pt-4 max-sm:text-center">
                         {section1.map((line, i) => (
-                            <p key={i} className="text-3xl font-bold max-sm:text-lg">{line}</p>
+                            <p key={i} className="text-[48px] font-bold max-sm:text-[24px]">{line}</p>
                         ))}
                     </div>
                 </div>
@@ -63,7 +63,7 @@ function King_signal_section1() {
                     <div className="absolute inset-0 flex flex-col justify-center pr-[80px] text-white space-y-2 items-end text-right 
                     max-sm:pr-0 max-sm:items-center max-sm:justify-start max-sm:pt-4 max-sm:text-center max-sm:text-white">
                         {section2.map((line, i) => (
-                            <p key={i} className="text-3xl font-bold max-sm:text-lg">{line}</p>
+                            <p key={i} className="text-[48px] font-bold max-sm:text-[24px]">{line}</p>
                         ))}
                     </div>
                 </div>
@@ -86,7 +86,7 @@ function King_signal_section1() {
                     <div className="absolute inset-0 flex flex-col justify-center pl-[80px] text-white space-y-2 
                     max-sm:pl-0 max-sm:items-center max-sm:justify-start max-sm:pt-4 max-sm:text-center">
                         {section3.map((line, i) => (
-                            <p key={i} className="text-3xl font-bold max-sm:text-lg">{line}</p>
+                            <p key={i} className="text-[48px] font-bold max-sm:text-[24px]">{line}</p>
                         ))}
                     </div>
                 </div>
