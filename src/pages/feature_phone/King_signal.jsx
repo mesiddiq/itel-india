@@ -4,6 +4,7 @@ import Stay_connected from "../../components/core/feature_phone/king_signal/Stay
 import Strong_Signal from "../../components/core/feature_phone/king_signal/strong_signal";
 import Touch_switch from "../../components/core/feature_phone/king_signal/Torch_switch";
 import Tough_sleek from "../../components/core/feature_phone/king_signal/Tough_sleek";
+import Type_C from "../../components/core/feature_phone/king_signal/Type-C";
 
 function King_signal(){
     return (
@@ -13,6 +14,7 @@ function King_signal(){
             <Silverplated/>
             <Stay_connected/>
             <Tough_sleek/>
+            <Type_C/>
             <Touch_switch/>
         </>
     )
