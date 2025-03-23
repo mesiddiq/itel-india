@@ -2,6 +2,7 @@ import King_signal_section1 from "../../components/core/feature_phone/king_signa
 import Silverplated from "../../components/core/feature_phone/king_signal/Silverplated";
 import Stay_connected from "../../components/core/feature_phone/king_signal/Stay_connected";
 import Strong_Signal from "../../components/core/feature_phone/king_signal/strong_signal";
+import Touch_switch from "../../components/core/feature_phone/king_signal/Torch_switch";
 import Tough_sleek from "../../components/core/feature_phone/king_signal/Tough_sleek";
 
 function King_signal(){
@@ -12,6 +13,7 @@ function King_signal(){
             <Silverplated/>
             <Stay_connected/>
             <Tough_sleek/>
+            <Touch_switch/>
         </>
     )
 }
