@@ -68,66 +68,66 @@ const Banner1 = ({ activeSlide }) => {
 }
 
 
-const ColorPro5g = ({ activeSlide }) => {
-    return (
-        <AnimatePresence mode='wait'>
-            <div key={activeSlide} className='bg-black relative lg:h-[627px] h-[520px] overflow-hidden font-markot px-4 md:px-0'>
-                <div className="content relative lg:mt-[125px] lg:h-[416px] z-10 h-[238px] pt-6 lg:pt-0">
-                    <motion.h3
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#BA69F6] rounded-[24px] px-[6px] py-[2px] text-white font-bricolage' >
-                        featured
-                    </motion.h3>
-                    <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">IVCO itel Vivid Color Technology |
-                        5G Network Connectivity | <br /> 12GB/8GB* RAM + 128GB ROM</p>
-                    <motion.img
-                        initial={{ opacity: 0, y: 100 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        src="/static_page/homepage/colorpro5gtext.svg"
-                        alt="Color Pro 5g"
-                        className='absolute lg:top-10 top-14 -left-10 lg:-left-24 -z-[1] max-w-[300px] lg:max-w-max'
-                    />
-                    <motion.h2
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center lg:mt-12 mt-3'>
-                        <span>
-                            <Rupee />
-                        </span>
-                        <span >
-                            8,999 /-
-                        </span>
-                    </motion.h2>
-                    <Link to={'/product/color-pro-5g'}>
-                        <img
-                            src="/static_page/Buttons.svg"
-                            alt="Buy Now"
-                            className='max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-4'
-                        />
-                    </Link>
-                </div>
+// const ColorPro5g = ({ activeSlide }) => {
+//     return (
+//         <AnimatePresence mode='wait'>
+//             <div key={activeSlide} className='bg-black relative lg:h-[627px] h-[520px] overflow-hidden font-markot px-4 md:px-0'>
+//                 <div className="content relative lg:mt-[125px] lg:h-[416px] z-10 h-[238px] pt-6 lg:pt-0">
+//                     <motion.h3
+//                         initial={{ scale: 0 }}
+//                         animate={{ scale: 1 }}
+//                         transition={{ duration: 1, delay: 0.2 }}
+//                         className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#BA69F6] rounded-[24px] px-[6px] py-[2px] text-white font-bricolage' >
+//                         featured
+//                     </motion.h3>
+//                     <p className="lg:text-desktop/h4 text-mobile/small/button text-white/80 lg:mt-[180px] mt-[70px] z-10">IVCO itel Vivid Color Technology |
+//                         5G Network Connectivity | <br /> 12GB/8GB* RAM + 128GB ROM</p>
+//                     <motion.img
+//                         initial={{ opacity: 0, y: 100 }}
+//                         animate={{ opacity: 1, y: 0 }}
+//                         transition={{ duration: 1, delay: 0.2 }}
+//                         src="/static_page/homepage/colorpro5gtext.svg"
+//                         alt="Color Pro 5g"
+//                         className='absolute lg:top-10 top-14 -left-10 lg:-left-24 -z-[1] max-w-[300px] lg:max-w-max'
+//                     />
+//                     <motion.h2
+//                         initial={{ opacity: 0, y: 50 }}
+//                         animate={{ opacity: 1, y: 0 }}
+//                         transition={{ duration: 1, delay: 0.2 }}
+//                         className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center lg:mt-12 mt-3'>
+//                         <span>
+//                             <Rupee />
+//                         </span>
+//                         <span >
+//                             8,999 /-
+//                         </span>
+//                     </motion.h2>
+//                     <Link to={'/product/color-pro-5g'}>
+//                         <img
+//                             src="/static_page/Buttons.svg"
+//                             alt="Buy Now"
+//                             className='max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-4'
+//                         />
+//                     </Link>
+//                 </div>
 
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    src="/videos/homepage/color_pro_5g.mp4" className='w-full object-cover absolute h-full top-0 hidden md:block'
-                />
+//                 <video
+//                     autoPlay
+//                     muted
+//                     loop
+//                     src="/videos/homepage/color_pro_5g.mp4" className='w-full object-cover absolute h-full top-0 hidden md:block'
+//                 />
 
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    src="/videos/homepage/color_pro_5g_mobile.mp4" className='w-full absolute top-0 left-0 md:hidden object-cover h-full'
-                />
-            </div>
-        </AnimatePresence>
-    )
-}
+//                 <video
+//                     autoPlay
+//                     muted
+//                     loop
+//                     src="/videos/homepage/color_pro_5g_mobile.mp4" className='w-full absolute top-0 left-0 md:hidden object-cover h-full'
+//                 />
+//             </div>
+//         </AnimatePresence>
+//     )
+// }
 
 const Banner4 = ({ activeSlide }) => {
 
@@ -172,70 +172,71 @@ const Banner4 = ({ activeSlide }) => {
     )
 }
 
-const Banner3 = ({ activeSlide }) => {
+// const Banner3 = ({ activeSlide }) => {
 
-    return (
-        <AnimatePresence mode='wait'>
-            <motion.div
-                key={activeSlide}
-                className="relative h-[520px] md:h-[550px] lg:h-[627px]  flex justify-center  lg:pt-[114px]">
+//     return (
+//         <AnimatePresence mode='wait'>
+//             <motion.div
+//                 key={activeSlide}
+//                 className="relative h-[520px] md:h-[550px] lg:h-[627px]  flex justify-center  lg:pt-[114px]">
 
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    src="/videos/homepage/a80.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
-                />
+//                 <video
+//                     autoPlay
+//                     muted
+//                     loop
+//                     src="/videos/homepage/a80.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
+//                 />
 
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    src="/videos/homepage/a80_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
-                />
-                <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
-                    <div className="space-y-4 lg:space-y-3">
-                        <motion.h3
-                            initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{ duration: 1, delay: 0.2 }}
-                            className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#F4A23B] rounded-[24px] px-[6px] py-[2px] text-[#C0CDEE] font-bricolage' >
-                            featured
-                        </motion.h3>
-                        <motion.div
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }}
-                            className='flex items-center lg:gap-6 gap-3'
-                        >
-                            <img src="smartphone\A80\AllSections/a80logo.png" alt="A80 logo" className='lg:max-w-[190px] max-w-[103px]' />
-                            <h1 className="lg:text-desktop/h2 text-mobile/h4">Awesome <br />
-                                All-in-One</h1>
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }}
-                            className="space-y-2 lg:space-y-2 lg:pt-4">
-                            <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80 max-w-[600px]'>Supports 3 years Lag-Free | 6.7" Punch Hole | IP 54 Certified | 120Hz Refresh Rate | Up to 128+8GB*                        </h5>
-                            <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><Rupee /> 6,999 /-</h2>
-                        </motion.div>
-                        <Link to={'/product/a80'}>
-                            <motion.button
-                                initial={{ opacity: 0, y: 50 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 0.2 }}
-                            >
-                                <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
-                            </motion.button>
-                        </Link>
-                    </div>
-                </div>
-            </motion.div>
+//                 <video
+//                     autoPlay
+//                     muted
+//                     loop
+//                     src="/videos/homepage/a80_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
+//                 />
+//                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
+//                     <div className="space-y-4 lg:space-y-3">
+//                         <motion.h3
+//                             initial={{ scale: 0 }}
+//                             animate={{ scale: 1 }}
+//                             transition={{ duration: 1, delay: 0.2 }}
+//                             className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#F4A23B] rounded-[24px] px-[6px] py-[2px] text-[#C0CDEE] font-bricolage' >
+//                             featured
+//                         </motion.h3>
+//                         <motion.div
+//                             initial={{ opacity: 0, y: -50 }}
+//                             animate={{ opacity: 1, y: 0 }}
+//                             transition={{ duration: 1, delay: 0.2 }}
+//                             className='flex items-center lg:gap-6 gap-3'
+//                         >
+//                             <img src="smartphone\A80\AllSections/a80logo.png" alt="A80 logo" className='lg:max-w-[190px] max-w-[103px]' />
+//                             <h1 className="lg:text-desktop/h2 text-mobile/h4">Awesome <br />
+//                                 All-in-One</h1>
+//                         </motion.div>
+//                         <motion.div
+//                             initial={{ opacity: 0, y: 50 }}
+//                             animate={{ opacity: 1, y: 0 }}
+//                             transition={{ duration: 1, delay: 0.2 }}
+//                             className="space-y-2 lg:space-y-2 lg:pt-4">
+//                             <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80 max-w-[600px]'>Supports 3 years Lag-Free | 6.7" Punch Hole | IP 54 Certified | 120Hz Refresh Rate | Up to 128+8GB*                        </h5>
+//                             <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><Rupee /> 6,999 /-</h2>
+//                         </motion.div>
+//                         <Link to={'/product/a80'}>
+//                             <motion.button
+//                                 initial={{ opacity: 0, y: 50 }}
+//                                 animate={{ opacity: 1, y: 0 }}
+//                                 transition={{ duration: 1, delay: 0.2 }}
+//                             >
+//                                 <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
+//                             </motion.button>
+//                         </Link>
+//                     </div>
+//                 </div>
+//             </motion.div>
 
-        </AnimatePresence>
-    )
-}
+//         </AnimatePresence>
+//     )
+// }
+
 const ZenoComingSoon = ({ activeSlide }) => {
 
     return (
@@ -290,6 +291,132 @@ const ZenoComingSoon = ({ activeSlide }) => {
         </AnimatePresence>
     )
 }
+const UnicornMax = ({ activeSlide }) => {
+
+    return (
+        <AnimatePresence mode='wait'>
+            <motion.div key={activeSlide} className=" h-[520px] md:h-[550px] lg:h-[627px] flex lg:justify-center lg:pt-[114px]">
+                <img
+                    src="/static_page/homepage/unicornmax.webp" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right hidden lg:block'
+                />
+                <img
+                    src="/static_page/homepage/unicornmax_mob.webp" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right lg:hidden'
+                />
+                <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
+                    <div className="space-y-4 lg:space-y-3">
+                        <motion.h3
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#F7931E] rounded-[24px] px-[6px] py-[2px] text-[#F7931E] font-bricolage' >
+                            featured
+                        </motion.h3>
+                        <motion.div
+                            initial={{ opacity: 0, y: -50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className='flex items-center lg:gap-6 gap-3'
+                        >
+                            <img src="/static_page/homepage/unicornmax_logo.webp" alt="Zeno 10 logo" className='lg:max-w-[300px] max-w-[150px]' />
+                            {/* <h1 className="lg:text-desktop/h2 text-mobile/h4">Awesome <br />
+                                All-in-One</h1> */}
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className="space-y-2 lg:space-y-2 lg:pt-4">
+                            <h5 className='lg:text-desktop/h4 text-mobile/small/button text-grey/grey/1 max-w-[600px]'>1.43" AMOLED Display | 1000-nits brightness | Dual-core Processor
+                            </h5>
+
+                        </motion.div>
+                        <div className="flex items-center gap-4 lg:pt-8">
+                            <Link to={'https://www.amazon.in/dp/B0DKF67QV6'} target='_blank'>
+                                <motion.button
+                                    initial={{ opacity: 0, y: 50 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 1, delay: 0.2 }}
+                                >
+                                    <img src="/static_page/Buttons.svg" alt="Buy Now" className='max-w-[136px] lg:max-w-max md:max-w-28 ' />
+                                </motion.button>
+                            </Link>
+                            <div className="flex items-center gap-2">
+                                <span className="">
+                                    Available at
+                                </span>
+                                <span className='text-neutral-100 text-[14px] lg:text-[28px] font-bold flex items-center'><Rupee /> 1,999 /-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </motion.div>
+        </AnimatePresence>
+    )
+}
+
+
+const KingSignal = ({ activeSlide }) => {
+
+    return (
+        <AnimatePresence mode='wait'>
+            <motion.div key={activeSlide} className=" h-[520px] md:h-[550px] lg:h-[627px] flex lg:justify-center lg:pt-[114px]">
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    src="/videos/homepage/king_signal.mp4" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right hidden lg:block'
+                />
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    src="/videos/homepage/king_signal_mob.mp4" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right lg:hidden '
+                />
+                <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
+                    <div className="space-y-4 lg:space-y-3">
+                        <motion.h3
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#15D582] rounded-[24px] px-[6px] py-[2px] text-[#C0CDEE] font-bricolage' >
+                            featured
+                        </motion.h3>
+                        <motion.div
+                            initial={{ opacity: 0, y: -50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className='flex items-center'
+                        >
+                            {/* <img src="/smartphone/zeno10/hero/zeno10.png" alt="Zeno 10 logo" className='lg:max-w-[300px] max-w-[150px]' /> */}
+                            <h1 className="lg:text-[80px] lg:leading-[88px] lg:tracking-[-3.2px]  text-[36px] font-bold tracking-[-1.44px] uppercase">
+                                king <span className="text-[#05FE04]">signal</span>
+                            </h1>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className="space-y-2 lg:space-y-2 lg:pt-4">
+                            <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80 max-w-[600px]'>
+                                Uninterrupted connectivity, Durable build
+                            </h5>
+                            {/* <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><Rupee /> 5,499 /-</h2> */}
+                        </motion.div>
+                        <Link to={'/product/zeno-10'}>
+                            <motion.button
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.2 }}
+                            >
+                                <img src="/static_page/comingsoon.svg" alt="Buy Now" className=' max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-6' />
+                            </motion.button>
+                        </Link>
+                    </div>
+                </div>
+            </motion.div>
+        </AnimatePresence>
+    )
+}
 
 
 const HeroSection = () => {
@@ -320,26 +447,25 @@ const HeroSection = () => {
                 <Banner1 activeSlide={activeSlide} />
             </SwiperSlide>
 
+            {/* *************** Slide 2************************* */}
 
             <SwiperSlide>
                 <ZenoComingSoon activeSlide={activeSlide} />
             </SwiperSlide>
 
-            {/* *************** Slide 2************************* */}
-
-            <SwiperSlide>
-                <Banner3 activeSlide={activeSlide} />
-            </SwiperSlide>
-
             {/* *************** Slide 3************************* */}
 
             <SwiperSlide>
-                <ColorPro5g activeSlide={activeSlide} />
+                <KingSignal activeSlide={activeSlide} />
             </SwiperSlide>
 
             {/* *************** Slide 4************************* */}
 
+            <SwiperSlide>
+                <UnicornMax activeSlide={activeSlide} />
+            </SwiperSlide>
 
+            {/* *************** Slide 5************************* */}
 
             <SwiperSlide>
                 <Banner4 activeSlide={activeSlide} />

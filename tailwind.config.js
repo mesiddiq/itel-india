@@ -45,6 +45,7 @@ export default {
 				'p55/from': '#D5EEF9',
 				'p55/to': '#70A2E1',
 				'a-80-dark':'#161410',
+				'king-signal':'#05FE04',
 			},
 			fontSize: {
 				'desktop/large/h': ['136px', {
