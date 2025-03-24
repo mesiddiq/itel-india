@@ -20,7 +20,7 @@ function Silverplated() {
         <>
             <div className="bg-[#041721] w-full h-auto flex relative px-[100px] pt-[49px] gap-[70px] items-start max-sm:flex-col max-sm:gap-[10px] max-sm:pt-[20px] max-sm:px-[20px] max-sm:min-h-[700px]">
                 {/* First Div (Text Section) */}
-                <div className="flex flex-col gap-[70px] max-sm:gap-[10px]" style={{ width: "518px" }}>
+                <div className="flex flex-col gap-[20px] max-sm:gap-[10px]" style={{ width: "518px" }}>
                     {/* Section 1 */}
                     <div>
                         {section1.map((line, i) => (
