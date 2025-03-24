@@ -24,10 +24,18 @@ function Touch_switch() {
 
     return (
         <>
-            <div className="relative bg-[#041721] w-full min-h-screen flex items-start justify-start">
-                {/* Desktop Layout */}
+            {/* Desktop Layout */}
+            <div
+                className="relative w-full min-h-screen items-start justify-start bg-[#041721] hidden md:flex"
+                style={{
+                    backgroundImage: "url('/featurephone/king_signal/product/Torch_Background.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover"
+                }}
+            >
                 <div
-                    className="hidden md:flex flex-col gap-[22px] text-white absolute top-[256px] left-[120px]"
+                    className="flex flex-col gap-[22px] text-white absolute top-[256px] left-[120px]"
                     style={{ width: '570px', height: '207px' }}
                 >
                     {/* Section 1 */}
@@ -54,32 +62,40 @@ function Touch_switch() {
                         ))}
                     </div>
                 </div>
+            </div>
 
-                {/* Mobile Layout */}
-                <div className="flex md:hidden flex-col gap-[24px] text-white px-[24px] pt-[40px]" style={{ width: '312px', height: '183px' }}>
-                    {/* Phone Section 1 */}
-                    <div className="flex flex-col gap-[8px]">
-                        {phonesection1.map((text, index) => (
-                            <p
-                                key={index}
-                                className="font-medium text-[24px] leading-[130%] tracking-[-0.01em]"
-                            >
-                                {text}
-                            </p>
-                        ))}
-                    </div>
+            {/* Mobile Layout */}
+            <div
+                className="relative w-full min-h-screen flex md:hidden flex-col gap-[24px] text-white px-[24px] pt-[40px]"
+                style={{
+                    backgroundImage: "url('/featurephone/king_signal/product/Torch_Phone_Screen.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover"
+                }}
+            >
+                {/* Phone Section 1 */}
+                <div className="flex flex-col gap-[8px]" style={{ width: '312px', height: '183px' }}>
+                    {phonesection1.map((text, index) => (
+                        <p
+                            key={index}
+                            className="font-medium text-[24px] leading-[130%] tracking-[-0.01em]"
+                        >
+                            {text}
+                        </p>
+                    ))}
+                </div>
 
-                    {/* Phone Section 2 */}
-                    <div className="flex flex-col gap-[4px]">
-                        {phonesection2.map((text, index) => (
-                            <p
-                                key={index}
-                                className="font-normal text-[14px] leading-[140%] tracking-[-0.02em]"
-                            >
-                                {text}
-                            </p>
-                        ))}
-                    </div>
+                {/* Phone Section 2 */}
+                <div className="flex flex-col gap-[4px]">
+                    {phonesection2.map((text, index) => (
+                        <p
+                            key={index}
+                            className="font-normal text-[14px] leading-[140%] tracking-[-0.02em]"
+                        >
+                            {text}
+                        </p>
+                    ))}
                 </div>
             </div>
         </>
