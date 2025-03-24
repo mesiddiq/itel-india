@@ -28,11 +28,23 @@ function King_signal_section1() {
         "like basements, metro stations, tunnels, or parking lots."
     ];
 
+    const smallsection1 = [
+        "*Signal strength also depends on the operator's network."
+    ]
+
+    const smallsection2 = [
+        "*Signal strength also depends on the operator's network."
+    ]
+
+    const smallsection3 = [
+        "*Signal strength also depends on the operator's network."
+    ]
+
     return (
         <>
             <div
-                className="relative w-full bg-gradient-to-r overflow-hidden px-[80px] pt-[120px] pb-[30px] flex flex-col gap-[70px] 
-                max-sm:px-0 max-sm:pt-[63px] max-sm:gap-[70px]"
+                className="relative w-full bg-gradient-to-r overflow-hidden px-[80px] pt-[120px] pb-[30px] flex flex-col gap-[20px] 
+                max-sm:px-0 max-sm:pt-[63px] max-sm:gap-[20px]"
                 style={{ backgroundImage: "linear-gradient(to right, #061F40, #073421)" }}
             >
                 {/* section 1 */}
@@ -54,10 +66,10 @@ function King_signal_section1() {
                     max-sm:pl-0 max-sm:items-center max-sm:justify-start max-sm:pt-4 max-sm:text-center">
                         <div className="space-y-2">
                             {section1.map((line, i) => (
-                                <p key={i} className="text-[48px] font-bold leading-[1.1] max-sm:text-[24px] max-sm:leading-[1.2]">{line}</p>
+                                <p key={i} className="font-medium text-[48px] leading-[120%] tracking-[-0.02em] max-sm:text-[24px] max-sm:leading-[1.2]">{line}</p>
                             ))}
                         </div>
-                        <div className="space-y-1 mt-[70px]">
+                        <div className="space-y-1 mt-[20px]">
                             {subsection1.map((line, i) => (
                                 <p key={i} className="text-[16px] max-sm:text-[14px]">{line}</p>
                             ))}
@@ -80,19 +92,25 @@ function King_signal_section1() {
                     <div className="absolute inset-0 bg-[url('/featurephone/king_signal/product/signal_connectivity.webp')] bg-center bg-contain bg-no-repeat sm:block hidden"></div>
 
                     {/* Text */}
-                    <div className="absolute inset-0 flex flex-col justify-center pr-[80px] text-white items-end text-right 
-                    max-sm:pr-0 max-sm:items-center max-sm:justify-start max-sm:pt-4 max-sm:text-center">
-                        <div className="space-y-2">
+                    <div className="absolute top-[218.5px] left-[701px] w-[448px] h-[240px] flex flex-col justify-center items-start text-white gap-[20px]">
+
+                        <div className="space-y-2 text-left w-full">
                             {section2.map((line, i) => (
-                                <p key={i} className="text-[48px] font-bold leading-[1.1] max-sm:text-[24px] max-sm:leading-[1.2]">{line}</p>
+                                <p key={i} className="font-medium text-[48px] leading-[120%] tracking-[-0.02em]">{line}</p>
                             ))}
                         </div>
-                        <div className="space-y-1 mt-[70px]">
+
+                        <div className="space-y-1 text-left w-full">
                             {subsection2.map((line, i) => (
-                                <p key={i} className="text-[16px] max-sm:text-[14px]">{line}</p>
+                                <p key={i} className="text-[16px]">{line}</p>
                             ))}
                         </div>
+
                     </div>
+
+
+
+
                 </div>
 
                 {/* section 3 */}
@@ -114,10 +132,10 @@ function King_signal_section1() {
                     max-sm:pl-0 max-sm:items-center max-sm:justify-start max-sm:pt-4 max-sm:text-center">
                         <div className="space-y-2">
                             {section3.map((line, i) => (
-                                <p key={i} className="text-[48px] font-bold leading-[1.1] max-sm:text-[24px] max-sm:leading-[1.2]">{line}</p>
+                                <p key={i} className="font-medium text-[48px] leading-[120%] tracking-[-0.02em] max-sm:text-[24px] max-sm:leading-[1.2]">{line}</p>
                             ))}
                         </div>
-                        <div className="space-y-1 mt-[70px]">
+                        <div className="space-y-1 mt-[20px]">
                             {subsection3.map((line, i) => (
                                 <p key={i} className="text-[16px] max-sm:text-[14px]">{line}</p>
                             ))}
