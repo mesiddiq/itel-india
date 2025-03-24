@@ -58,12 +58,18 @@ function Strong_Signal() {
 
                         {/* Stats Section */}
                         <div className="flex flex-col gap-[24px] mt-[40px]">
-                            <div className="rounded-[24px] h-[65px] flex items-center gap-[10px] px-[18px] py-[9px] w-[395px]" style={{ background: 'rgba(255, 255, 255, 0.1)' }}>
-                                <p className="text-[20px] font-medium">510% Longer Call Duration*</p>
+                            <div className="rounded-[24px] h-[65px] flex items-center justify-center gap-[10px] px-[18px] py-[9px] w-[395px]" style={{ background: 'rgba(255, 255, 255, 0.1)' }}>
+                                <p className="flex items-center gap-[5px] text-[20px] font-medium leading-none">
+                                    <span className="text-[36px] leading-none">510%</span> Longer Call Duration*
+                                </p>
                             </div>
+
                             <div className="rounded-[24px] h-[65px] flex items-center gap-[10px] px-[18px] py-[9px] w-[523px]" style={{ background: 'rgba(255, 255, 255, 0.1)' }}>
-                                <p className="text-[20px] font-medium">61.98% Better Average Network Speed</p>
+                                <p className="flex items-center gap-[5px] text-[20px] font-medium leading-none">
+                                    <span className="text-[36px] leading-none">61.98%</span> Better Average Network Speed
+                                </p>
                             </div>
+
                         </div>
                     </div>
                 </div>

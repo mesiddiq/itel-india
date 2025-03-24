@@ -49,14 +49,14 @@ function Stay_connected() {
                             <div
                                 className="flex items-center justify-center text-white rounded-[12px]"
                                 style={{
-                                    width: "298px",
+                                    width: "489px",
                                     height: "65px",
                                     gap: "4px",
                                     background: "rgba(255, 255, 255, 0.1)"
                                 }}
                             >
                                 <p className="text-[36px] font-bold leading-tight">2000</p>
-                                <p className="text-[20px] leading-tight">Phone Book</p>
+                                <p className="text-[20px] leading-tight">Phone Book With Contact Icons</p>
                             </div>
 
                             <div
