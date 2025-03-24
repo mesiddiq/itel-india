@@ -19,7 +19,6 @@ function Signal_performance() {
             </div>
 
             {/* Mobile Background */}
-            {/* Mobile Background */}
             <div className="flex md:hidden w-full h-screen bg-cover bg-center relative text-white bg-[url('/featurephone/king_signal/product/Signal_Performance_Phone.png')]">
                 <div className="absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center gap-[8px] h-[130px] w-[312px]">
                     <div className="font-medium text-[24px] leading-[130%] tracking-[-0.01em] uppercase text-center">
