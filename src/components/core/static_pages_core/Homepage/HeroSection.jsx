@@ -296,11 +296,17 @@ const UnicornMax = ({ activeSlide }) => {
     return (
         <AnimatePresence mode='wait'>
             <motion.div key={activeSlide} className=" h-[520px] md:h-[550px] lg:h-[627px] flex lg:justify-center lg:pt-[114px]">
-                <img
-                    src="/static_page/homepage/unicornmax.webp" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right hidden lg:block'
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    src="/videos/homepage/unicorn_max.webm" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right hidden lg:block'
                 />
-                <img
-                    src="/static_page/homepage/unicornmax_mob.webp" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right lg:hidden'
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    src="/videos/homepage/unicorn_max_mob.webm" className='w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right lg:hidden'
                 />
                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
                     <div className="space-y-4 lg:space-y-3">
@@ -331,7 +337,7 @@ const UnicornMax = ({ activeSlide }) => {
 
                         </motion.div>
                         <div className="flex items-center gap-4 lg:pt-8">
-                            <Link to={'https://www.amazon.in/dp/B0DKF67QV6'} target='_blank'>
+                            <Link to={'https://www.amazon.in/dp/ref=itel_asinwebtraffic/B0DKF67QV6'} target='_blank'>
                                 <motion.button
                                     initial={{ opacity: 0, y: 50 }}
                                     animate={{ opacity: 1, y: 0 }}

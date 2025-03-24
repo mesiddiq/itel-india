@@ -13,43 +13,43 @@ export const FullSpecificationsDataKingSignal = [
         id: 1,
         label: 'General',
         data: [
-            { label: 'Model', value: 'Circle 1' },
-            { label: 'Colors', value: 'Rose Gold & Black' },
-            { label: 'Display', value: '3.35 cm (1.32")' },
+            { label: 'Model', value: 'King Signal ' },
+            { label: 'Colors', value: 'Black, Purple Red, Army Green' },
+            { label: 'Display', value: '5.08cm (2”)' },
             { label: 'Battery', value: '500 mAh' },
-            { label: 'Language Support', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada & Malayalam & Punjabi)' },
-            { label: 'Phonebook', value: '500' },
+            { label: 'Language Support', value: '10 language support for reading & writing | 22 language support for reading' },
+            { label: 'Battery Capacity', value: '1500 mAh' },
+            { label: 'Phonebook', value: '2000' },
             { label: 'SMS', value: '200' },
-            { label: 'Message', value: 'Yes' },
-            { label: 'Torch', value: 'Yes' },
+            { label: 'Message', value: '500' }
         ]
     },
     {
         id: 2,
         label: 'Display Features',
         data: [
-            { label: 'Display Size', value: '3.35 cm (1.32") 2"' },
-            { label: 'Resolution', value: '128*128' },
-            { label: 'Resolution Type', value: 'QVGA' },
-            { label: 'Pixel Density', value: '137 ppi' },
+            { label: 'Display Size', value: '5.08cm (2")' },
+            { label: 'Resolution', value: '160x128 Pixels' },
+            { label: 'Resolution Type', value: 'QQVGA' },
+            { label: 'Pixel Density', value: '102ppi' },
         ]
     },
     {
         id: 3,
         label: 'Battery',
         data: [
-            { label: 'Battery Capacity', value: '500 mAh' },
+            { label: 'Battery Capacity', value: '1500 mAh' },
             { label: 'Battery Type', value: 'Li-ion' },
-            { label: 'Battery Backup', value: '212.7 Hours' },
-            { label: 'Talktime', value: '7.75 Hours' },
+            { label: 'Battery Backup', value: '33 Days' },
+            { label: 'Reverse Charging', value: 'Type C' },
         ]
     },
     {
         id: 4,
         label: 'Camera',
         data: [
-            { label: 'Rear Camera', value: '0.08M' },
-            { label: 'Rear flash', value: 'Yes' },
+            { label: 'Rear Camera', value: 'VGA' },
+            { label: 'Rear flash', value: 'No' },
         ]
     },
     {
@@ -59,11 +59,11 @@ export const FullSpecificationsDataKingSignal = [
             { label: 'ROM', value: '4 MB' },
             { label: 'RAM', value: '4 MB' },
             { label: 'Chipset', value: 'SC6513E' },
-            { label: 'Dimension', value: '97.6 * 49 * 11.2mm' },
+            { label: 'Dimension', value: '119.(122.5)*51.8*13.3mm' },
             { label: 'Expandable Memory', value: 'Upto 32GB' },
-            { label: 'Phonebook', value: '500' },
-            { label: 'Message', value: '200' },
-            { label: 'Processor', value: '208 MHz' },
+            { label: 'Phonebook', value: '2000' },
+            { label: 'Message', value: '500' },
+            // { label: 'Processor', value: '208 MHz' },
         ]
     },
     {
@@ -71,21 +71,22 @@ export const FullSpecificationsDataKingSignal = [
         label: 'Connectivity',
         data: [
             { label: 'Network Type', value: '2G' },
-            { label: 'Bluetooth Support', value: 'Yes' },
+            { label: 'Bluetooth Support', value: 'No' },
             { label: 'Earphone Jack', value: '3.5mm' },
-            { label: 'SIM Slot', value: 'Slot 1 & Slot 2- Standard' },
+            { label: 'SIM Slot', value: 'Triple SIM (3 SIM CARD SUPPORT)' },
             { label: 'Dual Active/Standby', value: 'Dual Standby' },
             { label: 'FM Radio', value: 'Wireless FM' },
-            { label: 'GSM', value: '1800/900' },
-            { label: '3G: WCDMA', value: '900/2100 MHz' },
+            { label: 'GSM', value: '900/1800' },
+            // { label: '3G: WCDMA', value: '900/2100 MHz' },
         ]
     },
     {
         id: 7,
         label: 'Additional',
         data: [
-            { label: 'Languages', value: '9 (English, Hindi, Gujarati, Tamil, Telugu, Bengali, Kannada & Malayalam & Punjabi)' },
-            { label: 'Accessories', value: 'Charger & Battery' }
+            { label: 'Languages', value: '10 language support for reading & writing | 22 language support for reading' },
+            { label: 'Accessories', value: 'Charger & Battery' },
+            { label: 'Warranty', value: '13 months warranty + 111 replacement Warranty (Replacement Guarantee is on manufacturing defect)' },
         ]
     },
 ]
@@ -109,5 +110,21 @@ export const FeatureRichDataKingSignal = {
             title: 'Super strong and durable design',
             description: `Whether it's accidental drops, rough handling, or extreme conditions, its rugged build ensures long-lasting performance.`
         },
+    ]
+}
+
+export const TechSpecsDataKingSignal = {
+    phoneUrl: '/featurephone/king_signal/product/power_packed.webp',
+    cards: [
+        { id: '1', label: '5.08 cm (2”) Big Screen', icon: '/featurephone/common/display.svg' },
+        { id: '2', label: '1500mAh Battery', icon: '/featurephone/common/battery.svg' },
+        { id: '3', label: 'King Voice', icon: '/featurephone/common/voice.svg' },
+        { id: '4', label: '33 Days*  Standby', icon: '/featurephone/common/battery.svg' },
+        { id: '5', label: '2000 Phonebook with contact icons', icon: '/featurephone/common/connectivity.svg' },
+        { id: '6', label: '2000 Phonebook with contact icons', icon: '/featurephone/common/connectivity.svg' },
+        { id: '7', label: 'Triple SIM', icon: '/featurephone/common/upi.svg' },
+        { id: '8', label: '10+ Language Support ', icon: '/featurephone/common/language.svg' },
+        { id: '9', label: 'Auto Call Recording', icon: '/featurephone/common/recording-kv.svg' },
+        { id: '10', label: 'Wireless FM with Recording', icon: '/featurephone/common/radio.svg' },
     ]
 }

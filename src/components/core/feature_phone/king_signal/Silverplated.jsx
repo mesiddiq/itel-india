@@ -18,9 +18,9 @@ function Silverplated() {
 
     return (
         <>
-            <div className="bg-[#041721] w-full h-auto flex relative px-[100px] pt-[49px] gap-[70px] items-start max-sm:flex-col max-sm:gap-[30px] max-sm:pt-[20px] max-sm:px-[20px]">
+            <div className="bg-[#041721] w-full h-auto flex relative px-[100px] pt-[49px] gap-[70px] items-start max-sm:flex-col max-sm:gap-[10px] max-sm:pt-[20px] max-sm:px-[20px] max-sm:min-h-[700px]">
                 {/* First Div (Text Section) */}
-                <div className="flex flex-col gap-[70px]" style={{ width: "518px" }}>
+                <div className="flex flex-col gap-[70px] max-sm:gap-[10px]" style={{ width: "518px" }}>
                     {/* Section 1 */}
                     <div>
                         {section1.map((line, i) => (
@@ -39,10 +39,10 @@ function Silverplated() {
                         ))}
                     </div>
 
-                    {/* Section 3 */}
-                    <div>
+                    {/* Section 3 (Hidden on mobile) */}
+                    <div className="max-sm:hidden">
                         {sections3.map((line, i) => (
-                            <p key={i} className="text-white text-[18px] max-sm:text-[14px] text-left">
+                            <p key={i} className="text-white text-[18px] text-left">
                                 {line}
                             </p>
                         ))}
@@ -51,17 +51,21 @@ function Silverplated() {
 
                 {/* Second Div (Image Section) */}
                 <div
-                    className="relative max-sm:w-full max-sm:h-[auto]"
+                    className="relative max-sm:absolute"
                     style={{
                         width: "464px",
                         height: "620px",
-                        left: "0px"
+                        left: "0px",
+                        ...(window.innerWidth <= 640 && {
+                            top: "239.6px",
+                            left: "42.38px"
+                        })
                     }}
                 >
                     <img
                         src="/featurephone/king_signal/product/silver_plate.webp"
                         alt="Silver Plated Technology"
-                        className="w-full h-full object-contain max-sm:h-[400px] max-sm:mx-auto"
+                        className="w-full h-full object-contain max-sm:h-[400px]"
                     />
                 </div>
             </div>
