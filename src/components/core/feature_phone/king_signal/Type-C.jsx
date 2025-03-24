@@ -18,11 +18,12 @@ function Type_C() {
                         height: '693px',
                         borderRadius: '48px',
                         background: 'linear-gradient(90deg, #061F40 0%, #073421 100%)',
-                        position: 'relative'
+                        position: 'relative',
+                        overflow: 'hidden'
                     }}
                     className="flex"
                 >
-                    {/* Inner div */}
+                    {/* Left Text Section */}
                     <div
                         style={{
                             width: '437px',
@@ -46,7 +47,7 @@ function Type_C() {
                         </div>
 
                         {/* Section 2 */}
-                        <div className="flex flex-col  text-white">
+                        <div className="flex flex-col text-white">
                             {section2.map((text, index) => (
                                 <p
                                     key={index}
@@ -56,6 +57,24 @@ function Type_C() {
                                 </p>
                             ))}
                         </div>
+                    </div>
+
+                    {/* Right Image Section */}
+                    <div
+                        style={{
+                            position: 'absolute',
+                            top: '64.44px',
+                            left: '523px'
+                        }}
+                    >
+                        <img
+                            src="/featurephone/king_signal/product/type_c.webp"
+                            alt="Type-C"
+                            style={{
+                                height: '628.56px',
+                                width: 'auto'
+                            }}
+                        />
                     </div>
                 </div>
             </div>
