@@ -84,7 +84,7 @@ function Stay_connected() {
                         }}
                     >
                         <img
-                            src="/featurephone/king_signal/product/stay_connected.webp"
+                            src="/featurephone/king_signal/product/phone_icons.png"
                             alt="Stay Connected"
                             className="h-full w-auto object-contain"
                         />
