@@ -1,3 +1,4 @@
+import Rigorous_Test from "../../components/core/feature_phone/king_signal/Rigorous_test";
 import King_signal_section1 from "../../components/core/feature_phone/king_signal/Section1";
 import Silverplated from "../../components/core/feature_phone/king_signal/Silverplated";
 import Stay_connected from "../../components/core/feature_phone/king_signal/Stay_connected";
@@ -13,6 +14,7 @@ function King_signal(){
             <Strong_Signal/>
             <Silverplated/>
             <Stay_connected/>
+            <Rigorous_Test/>
             <Tough_sleek/>
             <Type_C/>
             <Touch_switch/>
