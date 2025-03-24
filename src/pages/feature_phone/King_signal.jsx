@@ -1,5 +1,7 @@
+import Feature_Section from "../../components/core/feature_phone/king_signal/Feature_section";
 import Rigorous_Test from "../../components/core/feature_phone/king_signal/Rigorous_test";
 import King_signal_section1 from "../../components/core/feature_phone/king_signal/Section1";
+import Signal_performance from "../../components/core/feature_phone/king_signal/Signal_performance";
 import Silverplated from "../../components/core/feature_phone/king_signal/Silverplated";
 import Stay_connected from "../../components/core/feature_phone/king_signal/Stay_connected";
 import Strong_Signal from "../../components/core/feature_phone/king_signal/strong_signal";
@@ -10,6 +12,8 @@ import Type_C from "../../components/core/feature_phone/king_signal/Type-C";
 function King_signal(){
     return (
         <>
+            <Feature_Section/>
+            <Signal_performance/>
             <King_signal_section1/>
             <Strong_Signal/>
             <Silverplated/>
