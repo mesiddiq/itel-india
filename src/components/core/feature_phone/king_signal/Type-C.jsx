@@ -1,10 +1,10 @@
 function Type_C() {
     return (
         <>
-            <section className="bg-[rgb(4,23,33)] py-12 lg:py-[100px]">
+            <section className="bg-[rgb(4,23,33)] py-12 lg:py-[100px] px-4 md:px-0">
                 <div className="h-[580px] relative lg:h-[693px] lg:p-20 p-6 content rounded-xl lg:rounded-3xl bg-king-signal-dark flex lg:items-center">
-                    <div className="max-w-[440px] lg:space-y-8 space-y-6 ">
-                        <h3 className="text-bg/primary/1 lg:text-[48px] font-medium lg:leading-[57px] lg:tracking-[-0.96px] ">
+                    <div className="max-w-[440px] lg:space-y-8 space-y-3 ">
+                        <h3 className="text-bg/primary/1 text-mobile/h4 lg:text-[48px] font-medium lg:leading-[57px] lg:tracking-[-0.96px] ">
                             Type-C Charging Onboard
                         </h3>
                         <p className="text-white/70 lg:text-[16px] font-medium lg:leading-[22px] text-desktop/body/2/regular">
