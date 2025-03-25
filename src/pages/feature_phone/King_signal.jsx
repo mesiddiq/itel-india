@@ -4,8 +4,10 @@ import FullSpecifications from "../../components/common/FullSpecifications";
 import StickyHeader from "../../components/common/StickyHeader";
 import HeroKingSignal from "../../components/core/feature_phone/king_signal/HeroKingSignal";
 import KingSignalKingVoice from "../../components/core/feature_phone/king_signal/KingSingnalKingVoice";
+import Feature_Section from "../../components/core/feature_phone/king_signal/Feature_section";
 import Rigorous_Test from "../../components/core/feature_phone/king_signal/Rigorous_test";
 import King_signal_section1 from "../../components/core/feature_phone/king_signal/Section1";
+import Signal_performance from "../../components/core/feature_phone/king_signal/Signal_performance";
 import Silverplated from "../../components/core/feature_phone/king_signal/Silverplated";
 import Stay_connected from "../../components/core/feature_phone/king_signal/Stay_connected";
 import Strong_Signal from "../../components/core/feature_phone/king_signal/strong_signal";
@@ -22,16 +24,18 @@ function King_signal() {
             <StickyHeader {...HeroDataKingSignal} />
             <FeatureRich {...FeatureRichDataKingSignal} />
             <PhoneSliderAnimation />
+            <Feature_Section/>
+            {/* <Signal_performance/> */}
             <King_signal_section1 />
             <Strong_Signal />
             <Silverplated />
             <Stay_connected />
             <Tough_sleek />
-            <KingSignalKingVoice />
-            <Touch_switch/>
-            <TechSpecs {...TechSpecsDataKingSignal} />
             <Rigorous_Test/>
-            <Type_C/> 
+            <Type_C/>
+            <Touch_switch/>
+            <KingSignalKingVoice />
+            <TechSpecs {...TechSpecsDataKingSignal} />
             <FullSpecifications FullSpecificationsData={FullSpecificationsDataKingSignal} mode={'light'} />
         </>
     )

@@ -259,6 +259,7 @@ export default {
 				'RAMHighPerformanceGradient': 'linear-gradient(240.94deg, #DFF4FF 0.88%, rgba(230, 221, 255, 0) 56.21%)',
 				'MultiTaskEaseGradient': 'linear-gradient(289.9deg, rgba(221, 248, 255, 0.1) 7.77%, #E6DDFF 92.5%)',
 				'HighPerformanceGradient': 'linear-gradient(251.2deg, rgba(221, 248, 255, 0.3) 0%, #E6DDFF 40.29%)',
+				'king-signal-dark': 'linear-gradient(313deg, #073421 17.72%, #061F40 78.34%)',
 			},
 			borderImage: {
 				's24-gradient-border': 'linear-gradient(107.83deg, #FFCF92 23.83%, #FFE8CB 75.66%) 1',
