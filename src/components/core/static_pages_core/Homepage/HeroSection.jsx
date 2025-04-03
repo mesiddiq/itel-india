@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,6 +16,7 @@ import Rupee from "../../../icons/Rupee";
 
 // import './styles.css';
 
+// eslint-disable-next-line react/prop-types
 const Banner1 = ({ activeSlide }) => {
 	return (
 		<AnimatePresence mode="wait">
@@ -78,128 +80,6 @@ const Banner1 = ({ activeSlide }) => {
 		</AnimatePresence>
 	);
 };
-
-
-const Banner4 = ({ activeSlide }) => {
-	return (
-		<AnimatePresence mode="wait">
-			<div
-				key={activeSlide}
-				className="relative h-[520px] md:h-[550px] lg:h-[627px]  flex justify-center  lg:pt-[114px]"
-			>
-				<video
-					autoPlay
-					muted
-					loop
-					src="/videos/homepage/herobanner3.mp4"
-					className="w-full object-cover absolute h-full top-0 hidden md:block"
-				/>
-
-				<video
-					autoPlay
-					muted
-					loop
-					src="/videos/homepage/herobanner3_mobile.webm"
-					className="w-full absolute top-0 left-0 md:hidden object-cover h-full"
-				/>
-				<div className="content space-y-4 absolute px-4 md:px-0 pt-6 lg:pt-0">
-					<motion.div
-						initial={{ scale: 0 }}
-						animate={{ scale: 1 }}
-						transition={{ duration: 1, delay: 0.2 }}
-						className="w-fit"
-					>
-						<h3 className="text-[14px] leading-[16.8px] uppercase font-bold border-2 rounded-[24px] px-[6px] py-[2px] bg-clip-text text-transparent bg-gradient-to-r from-s24/from to-s24/to border-s24/from font-bricolage">
-							coming soon
-						</h3>
-					</motion.div>
-					{/* <h3 className='text-desktop/h1 text-white font-bold '>The Ulitimate Hair <br /> Dryer Collection</h3> */}
-					<motion.h1
-						initial={{ opacity: 0, y: -50 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 1, delay: 0.2 }}
-						className="text-mobile/h2 lg:text-desktop/h1 text-white font-bold"
-					>
-						The Ultimate Hair <br /> Dryer Collection
-					</motion.h1>
-					<motion.h5
-						initial={{ opacity: 0, y: 50 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 1, delay: 0.2 }}
-						className="font-medium text-mobile/small/button lg:text-[24px] leading-6 text-white/80"
-					>
-						itel Hair Dryers
-					</motion.h5>
-				</div>
-			</div>
-		</AnimatePresence>
-	);
-};
-
-// const Banner3 = ({ activeSlide }) => {
-
-//     return (
-//         <AnimatePresence mode='wait'>
-//             <motion.div
-//                 key={activeSlide}
-//                 className="relative h-[520px] md:h-[550px] lg:h-[627px]  flex justify-center  lg:pt-[114px]">
-
-//                 <video
-//                     autoPlay
-//                     muted
-//                     loop
-//                     src="/videos/homepage/a80.mp4" className='w-full object-cover absolute left-0 top-0 hidden h-full md:block object-right'
-//                 />
-
-//                 <video
-//                     autoPlay
-//                     muted
-//                     loop
-//                     src="/videos/homepage/a80_mobile.mp4" className='w-full object-cover absolute left-0 top-0 h-full md:hidden'
-//                 />
-//                 <div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
-//                     <div className="space-y-4 lg:space-y-3">
-//                         <motion.h3
-//                             initial={{ scale: 0 }}
-//                             animate={{ scale: 1 }}
-//                             transition={{ duration: 1, delay: 0.2 }}
-//                             className='text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#F4A23B] rounded-[24px] px-[6px] py-[2px] text-[#C0CDEE] font-bricolage' >
-//                             featured
-//                         </motion.h3>
-//                         <motion.div
-//                             initial={{ opacity: 0, y: -50 }}
-//                             animate={{ opacity: 1, y: 0 }}
-//                             transition={{ duration: 1, delay: 0.2 }}
-//                             className='flex items-center lg:gap-6 gap-3'
-//                         >
-//                             <img src="smartphone\A80\AllSections/a80logo.png" alt="A80 logo" className='lg:max-w-[190px] max-w-[103px]' />
-//                             <h3 className="lg:text-desktop/h2 text-mobile/h4">Awesome <br />
-//                                 All-in-One</h3>
-//                         </motion.div>
-//                         <motion.div
-//                             initial={{ opacity: 0, y: 50 }}
-//                             animate={{ opacity: 1, y: 0 }}
-//                             transition={{ duration: 1, delay: 0.2 }}
-//                             className="space-y-2 lg:space-y-2 lg:pt-4">
-//                             <h5 className='lg:text-desktop/h4 text-mobile/small/button text-white/80 max-w-[600px]'>Supports 3 years Lag-Free | 6.7" Punch Hole | IP 54 Certified | 120Hz Refresh Rate | Up to 128+8GB*                        </h5>
-//                             <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><Rupee /> 6,999 /-</h2>
-//                         </motion.div>
-//                         <Link to={'/product/a80'}>
-//                             <motion.button
-//                                 initial={{ opacity: 0, y: 50 }}
-//                                 animate={{ opacity: 1, y: 0 }}
-//                                 transition={{ duration: 1, delay: 0.2 }}
-//                             >
-//                                 <img src="/static_page/Buttons.svg" alt="Buy Now" className='lg:pt-[72px] max-w-[90px] lg:max-w-max md:max-w-28 mt-2' />
-//                             </motion.button>
-//                         </Link>
-//                     </div>
-//                 </div>
-//             </motion.div>
-
-//         </AnimatePresence>
-//     )
-// }
 
 const ZenoComingSoon = ({ activeSlide }) => {
 	return (
@@ -361,6 +241,78 @@ const UnicornMax = ({ activeSlide }) => {
 	);
 };
 
+const A95 = ({ activeSlide }) => {
+	return (
+		<AnimatePresence mode="wait">
+			<motion.div
+				key={activeSlide}
+				className=" h-[520px] md:h-[550px] lg:h-[627px] flex lg:justify-center lg:pt-[114px]"
+			>
+				<video
+					autoPlay
+					muted
+					loop
+					src="/videos/homepage/a95.mp4"
+					className="w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right hidden lg:block"
+				/>
+				<video
+					autoPlay
+					muted
+					loop
+					src="/videos/homepage/a95_mobile.mp4"
+					className="w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right lg:hidden "
+				/>
+				<div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
+					<div className="space-y-4 lg:space-y-3">
+						<motion.h3
+							initial={{ scale: 0 }}
+							animate={{ scale: 1 }}
+							transition={{ duration: 1, delay: 0.2 }}
+							className="text-[14px] w-fit flex gap-1 items-center leading-[16.8px] uppercase font-bold border-2 border-[#B69C7F] rounded-[24px] px-[6px] py-[2px] text-transparent bg-clip-text bg-gradient-to-r from-[#B69C7F] to-[#e3ddd3] font-bricolage"
+						>
+							featured
+						</motion.h3>
+						<motion.div
+							initial={{ opacity: 0, y: -50 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 1, delay: 0.2 }}
+							className="flex items-center pt-4"
+						>
+							<img
+								src="/static_page/homepage/a95.svg"
+								alt="A95"
+								className="lg:max-w-[500px] max-w-[218px]"
+							/>
+						</motion.div>
+						<motion.div
+							initial={{ opacity: 0, y: 50 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 1, delay: 0.2 }}
+							className="space-y-2 lg:space-y-2 lg:pt-4"
+						>
+							<h5 className="lg:text-[48px] text-mobile/h5  text-white uppercase">
+								built to last
+							</h5>
+						</motion.div>
+						{/* <Link> */}
+						<motion.button
+							initial={{ opacity: 0, y: 50 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 1, delay: 0.2 }}
+						>
+							<img
+								src="/static_page/comingsoon.svg"
+								alt="Buy Now"
+								className=" max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-6"
+							/>
+						</motion.button>
+						{/* </Link> */}
+					</div>
+				</div>
+			</motion.div>
+		</AnimatePresence>
+	);
+};
 const KingSignal = ({ activeSlide }) => {
 	return (
 		<AnimatePresence mode="wait">
@@ -481,8 +433,11 @@ const HeroSection = () => {
 
 			{/* *************** Slide 5************************* */}
 
-			<SwiperSlide>
+			{/* <SwiperSlide>
 				<Banner4 activeSlide={activeSlide} />
+			</SwiperSlide> */}
+			<SwiperSlide>
+				<A95 activeSlide={activeSlide} />
 			</SwiperSlide>
 		</Swiper>
 	);
