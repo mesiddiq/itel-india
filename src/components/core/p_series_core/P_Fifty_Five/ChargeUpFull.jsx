@@ -14,8 +14,8 @@ const ChargeUpFull = () => {
 
             <div className="font-markot content h-full py-[95px] relative z-10 flex flex-col justify-between">
                 <div className="flex flex-col gap-[24px] max-w-[353px]">
-                    <h1 className="text-desktop/h2 bg-gradient-to-r from-[#D5EEF9] to-[#70A2E1] bg-clip-text text-transparent">Charge Up Full in 170mins</h1>
-                    <h1 className="text-desktop/body/large text-white  max-w-[342px]">41 Days Standby Time, 60 Hours Talk time, 24 Hours Video Time </h1>
+                    <h3 className="text-desktop/h2 bg-gradient-to-r from-[#D5EEF9] to-[#70A2E1] bg-clip-text text-transparent">Charge Up Full in 170mins</h3>
+                    <h3 className="text-desktop/body/large text-white  max-w-[342px]">41 Days Standby Time, 60 Hours Talk time, 24 Hours Video Time </h3>
                 </div>
 
                 <div className="flex flex-col gap-[36px] text-white">
@@ -25,9 +25,9 @@ const ChargeUpFull = () => {
                         <FeatureSpecifications featureMetric="18 W" featureMetricDescription="Type-C Fast Charging" />
                     </div>
 
-                    <h1 className="text-desktop/body/1">
+                    <h3 className="text-desktop/body/1">
                         Battery : Power Boost | Ultra Power Saving | Battery Optimization
-                    </h1>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -43,8 +43,8 @@ const ChargeUpFull = () => {
             <div className="content h-full">
             <div className="font-markot px-4 h-full w-full py-[27px] relative z-10 flex flex-col gap-[24px] max-h-[300px]">
                 <div className="flex flex-col gap-[12px] max-w-[353px]">
-                    <h1 className="text-mobile/h4 bg-gradient-to-r from-[#D5EEF9] to-[#70A2E1] bg-clip-text text-transparent">Charge Up Full in 170mins</h1>
-                    <h1 className="text-mobile/body/large text-white  max-w-[342px]">41 Days Standby Time, 60 Hours Talk time, 24 Hours Video Time </h1>
+                    <h3 className="text-mobile/h4 bg-gradient-to-r from-[#D5EEF9] to-[#70A2E1] bg-clip-text text-transparent">Charge Up Full in 170mins</h3>
+                    <h3 className="text-mobile/body/large text-white  max-w-[342px]">41 Days Standby Time, 60 Hours Talk time, 24 Hours Video Time </h3>
                 </div>
 
                 <div className="flex flex-col gap-[16px]">
@@ -54,9 +54,9 @@ const ChargeUpFull = () => {
                         <FeatureSpecifications featureMetric="18 W" featureMetricDescription="Type-C Fast Charging" />
                     </div>
 
-                    <h1 className="text-mobile/body/2 max-w-[256px]">
+                    <h3 className="text-mobile/body/2 max-w-[256px]">
                         Battery Lab: Power Boost | Ultra Power Saving | Battery Optimization
-                    </h1>
+                    </h3>
                 </div>
             </div>
             </div>

@@ -12,7 +12,7 @@ export default function A50Heropage() {
           <p className='text-[#3A3358] font-extrabold text-[14px] font-bricolage'>AWESOME SERIES</p>
           <img src="/smartphone/a05/StarFour.png" alt="starLogo" />
         </span>
-        <h1 className='lg:text-desktop/large/h text-mobile/h1 text-[#181818]'>A50</h1>
+        <h3 className='lg:text-desktop/large/h text-mobile/h1 text-[#181818]'>A50</h3>
         <p className='text-mobile/h7 lg:text-desktop/title text-[#181818] text-opacity-80 max-w-[300px] md:max-w-[550px]'>6.6" HD+ DISPLAY WITH DYNAMIC BAR | 12GB*(4GB+8GB*) RAM + 64GB ROM | 8MP AI REAR CAMERA</p>
         <p className='text-mobile/small/body md:text-[20px] font-normal leading-[24px] text-[#181818] md:pt-[40px] lg:pt-[64px]'>Starting from <span className='font-bold text-mobile/h5 md:text-[20px]'> ₹ 6,499/-</span></p>
         <BuyNowSquareBG purchaseLink="" content="BUY NOW"/>

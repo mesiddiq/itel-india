@@ -11,10 +11,10 @@ const NonStopPower = () => {
                         <span className="text-zeno-solid">//</span>
                         <span className="text-dull-white font-markot">battery</span>
                     </h6>
-                    <h1 className=" lg:text-[48px] lg:leading-[48px] text-[32px] leading-8 uppercase font-bold ">
+                    <h3 className=" lg:text-[48px] lg:leading-[48px] text-[32px] leading-8 uppercase font-bold ">
                         <span className="text-dull-white">non-stop power, </span>
                         <span className="text-zeno-solid">inspired by you</span>
-                    </h1>
+                    </h3>
                     <p className="lg:text-desktop/body/large text-[14px] leading-5 text-[#f3f3f3] !tracking-wide ">
                         Designed for those who live life on the go, Zeno is packed with a massive <span className="text-zeno-solid">5000mAh battery</span> battery, ensuring you stay connected, entertained, and productive all day long.
                     </p>

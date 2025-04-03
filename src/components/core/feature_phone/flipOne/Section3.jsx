@@ -6,7 +6,7 @@ const Section3 = () => {
             <div className="content lg:pt-[100px] flex flex-col h-full lg:flex-row pt-10">
                 <div className="lg:space-y-14 space-y-4">
                     <div className="space-y-3">
-                        <h1 className="lg:text-desktop/h2 text-mobile/h4 md:text-mobile/h3 text-bg/primary/1">Crystal Clear. <br /> Enhanced Visibility.</h1>
+                        <h3 className="lg:text-desktop/h2 text-mobile/h4 md:text-mobile/h3 text-bg/primary/1">Crystal Clear. <br /> Enhanced Visibility.</h3>
                         <h5 className="lg:text-[16px] lg:leading-[22px] text-mobile/body/2 md:text-mobile/body/large font-normal text-grey/grey/2 max-w-[448px] lg:mt-[14px]">Experience big entertainment be it movies or games, enjoy every moment in vivid detail.</h5>
                     </div>
                     <div className="flex gap-2 lg:gap-4 items-center max-w-[264px]">

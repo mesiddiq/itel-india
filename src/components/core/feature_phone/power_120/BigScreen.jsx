@@ -8,7 +8,7 @@ const BigScreen = () => {
                     <img src="/featurephone/Power_120/Backgrounds/big_screen_phone.webp" alt="it5330" className='lg:max-h-[602px] max-h-[393px]' />
                 </div>
                 <div className="flex flex-col gap-3 lg:gap-5">
-                    <h1 className=" text-mobile/h4 lg:text-desktop/h1 text-bg/primary/1">Super 2” Big Screen Display</h1>
+                    <h3 className=" text-mobile/h4 lg:text-desktop/h1 text-bg/primary/1">Super 2” Big Screen Display</h3>
                     <p className="  text-mobile/body/2 lg:text-desktop/body/large text-white/80">Take your viewing experience to greater heights with the itel Power 120's <br className='hidden lg:block' /> super 2" large screen - 5.08cm QVGA display, offering the ideal fusion of style and functionality.</p>
                 </div>
                 <div className="flex gap-4 lg:gap-10 mx-auto w-full justify-center mt-5">

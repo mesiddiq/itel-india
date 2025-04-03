@@ -34,9 +34,9 @@ const Hero = () => {
         >
           {index === currentSlide && (
             <div className="absolute bottom-20 left-5 md:left-16 text-white space-y-4 max-w-lg">
-              <h1 className="text-3xl md:text-5xl font-bold">
+              <h3 className="text-3xl md:text-5xl font-bold">
                 Bringing India Together with itel
-              </h1>
+              </h3>
               <p className="text-lg md:text-2xl">
                 Snag your itel smartphones starting at just ₹6,999/-
               </p>

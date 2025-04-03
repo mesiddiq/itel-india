@@ -6,7 +6,7 @@ const SaveYourContacts = () => {
             <div className="content font-markot relative flex flex-col lg:flex-row items-center justify-between h-full overflow-hidden">
                 <div className="lg:space-y-5 max-w-[518px]">
                     <h6 className="text-mobile/h6 text-bg/primary/1 lg:text-[14px] lg:leading-[16px] lg:font-medium lg:tracking-[0.84px] uppercase">phonebook avatar</h6>
-                    <h1 className="text-mobile/h4 lg:text-featurephone/heading text-bg/primary/1 mt-[10px] lg:mt-0">Save your Contacts with Contact icons</h1>
+                    <h3 className="text-mobile/h4 lg:text-featurephone/heading text-bg/primary/1 mt-[10px] lg:mt-0">Save your Contacts with Contact icons</h3>
                     <h4 className="text-mobile/body/2 lg:text-featurephone/paragraph text-white mt-3 lg:mt-0">Easily organize contacts by saving names based on their specific attributes, and get a personalized contact list.</h4>
                     <div className="flex gap-4 items-center mt-5 lg:mt-0">
                         <svg xmlns="http://www.w3.org/2000/svg" className='w-8 lg:w-12' width="32" height="33" viewBox="0 0 32 33" fill="none">

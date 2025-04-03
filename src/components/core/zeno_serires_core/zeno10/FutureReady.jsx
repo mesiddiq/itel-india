@@ -11,10 +11,10 @@ const FutureReady = () => {
                         <span className="text-zeno-solid">//</span>
                         <span className="text-dull-white font-markot">storage</span>
                     </h6>
-                    <h1 className=" lg:text-[48px] lg:leading-[48px] text-[32px] leading-8 uppercase font-bold ">
+                    <h3 className=" lg:text-[48px] lg:leading-[48px] text-[32px] leading-8 uppercase font-bold ">
                         <span className="text-dull-white">future-ready </span>
                         <span className="text-zeno-solid">powerhouse</span>
-                    </h1>
+                    </h3>
                     <p className="lg:text-desktop/body/large text-[14px] leading-5 text-[#f3f3f3] !tracking-wide ">
                         Whether you're editing videos, gaming in high-definition, or running demanding applications, Zeno delivers seamless performance every single time.
                     </p>

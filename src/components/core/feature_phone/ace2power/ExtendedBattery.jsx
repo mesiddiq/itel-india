@@ -13,7 +13,7 @@ const ExtendedBattery = () => {
 
                     <div className="space-y-4 max-w-[437px] lg:text-left text-center">
 
-                        <h1 className="text-mobile/h4 lg:text-desktop/h2 text-black/1">Extended Battery Life: <br className='lg:hidden' /> Up to 21 Days*</h1>
+                        <h3 className="text-mobile/h4 lg:text-desktop/h2 text-black/1">Extended Battery Life: <br className='lg:hidden' /> Up to 21 Days*</h3>
 
                         <h4 className="text-mobile/h6 text-black/1 lg:text-[36px] lg:leading-[46.8px] lg:-tracking-[0.7px] font-normal ">2500 mAh Battery</h4>
 

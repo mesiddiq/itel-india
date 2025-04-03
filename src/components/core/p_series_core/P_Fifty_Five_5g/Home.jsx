@@ -17,9 +17,9 @@ const Home = () => {
           </div>
 
        
-          <h1 className="text-mobile/h1 md:text-desktop/large/h">
+          <h3 className="text-mobile/h1 md:text-desktop/large/h">
             P55 5G
-          </h1>
+          </h3>
 
           <p className="text-mobile/title font-markot md:text-desktop/title text-grey/grey/2 w-full md:w-[543px]">
             5G WITH NRCA | MEDIATEK DIMENSITY 6080 | 12GB* 6GB<br/> + 6GB* RAM + 128GB ROM

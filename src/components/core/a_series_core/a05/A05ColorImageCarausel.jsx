@@ -29,9 +29,9 @@ const A05ColorImageCarausel = ({ ImageCarouselData, showTitleInMobile }) => {
         
         {
           showTitleInMobile &&
-          <h1 className="block lg:hidden px-4 text-black/1 text-mobile/h4 text-left font-markot">
+          <h3 className="block lg:hidden px-4 text-black/1 text-mobile/h4 text-left font-markot">
             Product Versions
-          </h1>
+          </h3>
         }
 
         <div className="lg:rounded-2xl overflow-hidden relative w-full xl:max-w-[1270px] lg:max-w-[1000px] md:max-w-[650px] h-[360px] lg:h-[450px] xl:h-[650px] bg-cover bg-center flex flex-col justify-center items-center" style={{
@@ -57,7 +57,7 @@ const A05ColorImageCarausel = ({ ImageCarouselData, showTitleInMobile }) => {
         
         {/* Color Selector */}
         <div className="px-5 lg:px-0 font-markot w-full flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-4">
-            <h1 className={`text-desktop/title ${ImageCarouselData[0].colorSelectorTextColor}`}>COLOR</h1>
+            <h3 className={`text-desktop/title ${ImageCarouselData[0].colorSelectorTextColor}`}>COLOR</h3>
 
             {
                 ImageCarouselData.map((colorData) => (

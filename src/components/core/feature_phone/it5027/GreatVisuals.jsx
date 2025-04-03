@@ -9,8 +9,8 @@ const GreatVisuals = () => {
                 </div>
                 <div className="lg:w-[518px] lg:space-y-[70px] space-y-5 lg:translate-y-10">
                     <div className="space-y-3 lg:space-y-5">
-                        <h1 className=" text-mobile/h4 lg:text-featurephone/heading text-bg/primary/1">Big Screen.
-                            <br className='hidden lg:block' />Great Visuals.</h1>
+                        <h3 className=" text-mobile/h4 lg:text-featurephone/heading text-bg/primary/1">Big Screen.
+                            <br className='hidden lg:block' />Great Visuals.</h3>
                         <h3 className="lg:text-featurephone/paragraph text-mobile/body/2 text-white/70 max-w-[448px]">
                             Experience big entertainment with itel it5027's 6.1cm screen. Whether it's movies or games, enjoy every moment in vivid detail.
                         </h3>

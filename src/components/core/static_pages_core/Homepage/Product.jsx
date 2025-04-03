@@ -13,7 +13,7 @@ const ProductCard = ({ image, name, purchaseLink, price }) => {
         <div className="p-3 lg:py-9 flex flex-col gap-3 lg:gap-10 h-[202px] lg:h-[452px] max-w-[156px] lg:max-w-[304px] w-full rounded-[8px] bg-dark/card/bg">
             <img src={image} className="max-h-[100px] lg:max-h-[200px] object-contain" alt="Product Image" />
             <div className="flex flex-col items-center ">
-                <h1 className="text-mobile/h6 lg:text-desktop/h4 text-grey/grey/1">{name}</h1>
+                <h3 className="text-mobile/h6 lg:text-desktop/h4 text-grey/grey/1">{name}</h3>
                 <p className="text-[10px] leading-4 font-bold text-grey/grey/2 lg:text-desktop/button lg:mt-4 mt-[6px]">{price}</p>
                 <Link to={purchaseLink} className='flex  items-center gap-[6px] lg:gap-2 lg:mt-6 mt-1'>
                     <span className="text-mobile/small/button lg:text-desktop/button">Buy Now</span>

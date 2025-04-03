@@ -30,7 +30,7 @@ const Compare = () => {
           <div className="max-h-screen md:max-h-[90vh] overflow-y-scroll overflowHidden flex flex-col gap-5 text-black relative bg-white py-5 px-4 rounded-none md:rounded-lg w-full max-w-md md:max-w-lg lg:max-w-xl md:mx-0">
             
             <div className='flex flex-row justify-between gap-4'>
-                <h1 className='text-mobile/h3'>Compare</h1>
+                <h3 className='text-mobile/h3'>Compare</h3>
                 <button className=" text-black" onClick={togglePopup}>
                   <img src='/product-listing/closePopup.svg' />
                 </button>

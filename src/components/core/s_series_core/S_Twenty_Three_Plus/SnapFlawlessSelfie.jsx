@@ -7,7 +7,7 @@ const SnapFlawlessSelfie = () => {
       <div className='content'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
           <div className='col-span-1 text-center lg:text-left lg:h-[620px] lg:flex lg:flex-col lg:justify-center'>
-            <h1 className='bg-gradient-to-br from-[#CA86FF] to-[#85E2FD] inline-block text-transparent bg-clip-text text-mobile/h4 md:text-desktop/h2 font-markot mb-[20px]'>Snap Your Flawless Selfie</h1>
+            <h3 className='bg-gradient-to-br from-[#CA86FF] to-[#85E2FD] inline-block text-transparent bg-clip-text text-mobile/h4 md:text-desktop/h2 font-markot mb-[20px]'>Snap Your Flawless Selfie</h3>
             <p className='text-[#F2F2F2] text-mobile/body/2 md:text-desktop/body/large font-markot mb-[20px] md:mb-[80px]' data-aos="fade-down">Capture flawless selfies with advanced features like Ultra HD resolution, Beauty mode, and Wide Selfie for expansive group shots.</p>
 
             <div className='hidden lg:grid grid-cols-[160px_10px_60px] lg:gap-4' data-aos="fade-down">

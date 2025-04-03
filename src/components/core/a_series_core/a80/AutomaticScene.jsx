@@ -63,9 +63,9 @@ const AutomaticScene = () => {
                         <h4 className="uppercase font-medium lg:text-[14px] lg:leading-4 text-transparent bg-clip-text bg-gradient-to-r from-[#FFBD6D] to-[#FF8657] ">
                             awesome intelligence
                         </h4>
-                        <h1 className="font-medium lg:text-[48px] lg:leading-[57px] lg:tracking-tight text-[#f3f3f3]">
+                        <h3 className="font-medium lg:text-[48px] lg:leading-[57px] lg:tracking-tight text-[#f3f3f3]">
                             Automatic Scene Classification
-                        </h1>
+                        </h3>
                         <p className="lg:text-desktop/body/1 text-mobile/body/2 text-white/70 ">
                             The camera can automatically classify and optimize over 16+
                             scenes, including portraits, pets, sky, food, buildings and

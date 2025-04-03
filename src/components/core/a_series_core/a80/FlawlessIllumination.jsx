@@ -40,7 +40,7 @@ const FlawlessIllumination = () => {
                     <img ref={smartPhoneMobileRef} className='w-full -z-10 h-full object-cover absolute top-0 md:hidden ' src="/smartphone/A80/AllSections/flashlight/smartphone_mobile.webp" alt="Flawless Illumination" />
                     <div ref={textRef} className="lg:space-y-4 space-y-2 text-center z-30 content max-w-[296px] md:max-w-max">
                         <h4 className='bg-gradient-to-r from-[#FFBD6D] to-[#FF8657] text-transparent bg-clip-text font-medium lg:text-[14px] lg:leading-4 text-[10px] uppercase'>Stunning Details. Vibrant Colors.</h4>
-                        <h1 className="lg:text-desktop/h2 text-[28px] leading-9 tracking-[-0.28px]">Flawless Illumination with Unique Ring Light</h1>
+                        <h3 className="lg:text-desktop/h2 text-[28px] leading-9 tracking-[-0.28px]">Flawless Illumination with Unique Ring Light</h3>
                         <p className="lg:text-desktop/body/1  text-mobile/body/2  text-white/70"> Beyond functionality, the sleek and stylish ring light adds a modern touch to your device.</p>
                     </div>
                 </div>

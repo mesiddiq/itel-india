@@ -19,9 +19,9 @@ const Powerful = () => {
              <p className='font-markot text-[12px] md:text-[16px] font-normal md:font-semibold '> Dimensity <span className='font-normal '>6080 Octa Core</span> </p>
             </div>
             <div className=' flex flex-col gap-2 md:gap-3'>
-            <h1 className="font-medium font-markot text-mobile/h4 md:text-desktop/h2">
+            <h3 className="font-medium font-markot text-mobile/h4 md:text-desktop/h2">
               Powerful Processing <br /> like Never Before
-            </h1>
+            </h3>
 
             <p className="font-markot text-mobile/body/2 md:text-desktop/body/large">
               Low Power Consumption | Faster Running Speed | <br/> Better Image Processing

@@ -27,7 +27,7 @@ const Circle1KingVoice = () => {
                     <div className="bg-[#1c1b1b] absolute -translate-y-1/2  px-3 xl:px-5">
                         <h3 className={`text-mobile/h6 xl:text-desktop/h3 font-markot text-center bg-gradient-to-r from-[#ff998f] to-[#fff7e8] text-transparent bg-clip-text`} >A Phone That Speaks For You</h3>
                     </div>
-                    <h1 className='uppercase text-[94px] md:text-[150px] text-center md:leading-[140px] lg:text-[160px] lg:leading-[200px] xl:text-[200px] xl:leading-[240px] 2xl:text-[240px] 2xl:leading-[286px] font-bold leading-[94px] font-markot px-5 2xl:px-0 py-4 2xl:py-5 bg-gradient-to-r from-[#ff998f] to-[#fff7e8] text-transparent bg-clip-text'>
+                    <h3 className='uppercase text-[94px] md:text-[150px] text-center md:leading-[140px] lg:text-[160px] lg:leading-[200px] xl:text-[200px] xl:leading-[240px] 2xl:text-[240px] 2xl:leading-[286px] font-bold leading-[94px] font-markot px-5 2xl:px-0 py-4 2xl:py-5 bg-gradient-to-r from-[#ff998f] to-[#fff7e8] text-transparent bg-clip-text'>
                         <span className='tracking-[15px] font-markot '>king</span><br className='lg:hidden' />
                         <div className='-tracking-[3.7px] inline'>v
                             <div className='relative inline'>
@@ -50,7 +50,7 @@ const Circle1KingVoice = () => {
                                 ice
                             </span>
                         </div>
-                    </h1>
+                    </h3>
                 </div>
             </div>
             <div className="grid gap-x-4 gap-y-3 xl:gap-y-10 grid-cols-2 xl:gap-x-[622px] font-markot relative">

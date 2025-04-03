@@ -6,7 +6,7 @@ const GlassDesign = () => {
             <div className="content flex flex-col-reverse lg:flex-row items-center lg:items-end justify-end h-full relative">
                 <img src="/featurephone/it5330/Backgrounds/kingvoice.webp" alt="Voice-Activated Functions" className="xl:max-w-[470px] lg:max-w-[350px] max-w-[256px] absolute lg:left-16 -bottom-12 xl:-bottom-72 " />
                 <div className="max-w-[562px]">
-                    <h1 className="text-mobile/h4 lg:text-featurephone/heading  text-white">Presenting New Age Glass Design</h1>
+                    <h3 className="text-mobile/h4 lg:text-featurephone/heading  text-white">Presenting New Age Glass Design</h3>
                     <p className="text-mobile/body/2 lg:text-featurephone/paragraph text-white/90 lg:mt-[22px] mt-[14px]">The aesthetic appeal of glass aligns with modern design trends, while its high durability reduces maintenance requirements.</p>
                     <div className="flex gap-4 lg:gap-6 lg:mt-[70px] mt-5 ">
                         <div className="flex items-center gap-2 lg:gap-4 ">

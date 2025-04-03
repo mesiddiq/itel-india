@@ -7,7 +7,7 @@ const Communicate = () => {
                 <img src="/featurephone/Ace2Power/Backgrounds/communication.webp" alt="Communicate gbg" className='hidden lg:block'/>
                 <div className="max-w-[437px] space-y-3 lg:space-y-6 lg:absolute  top-[220px] left-[148px]
                 ">
-                    <h1 className="text-mobile/h4 !font-normal lg:text-featurephone/heading text-black/1">Communicate in Your Own Language</h1>
+                    <h3 className="text-mobile/h4 !font-normal lg:text-featurephone/heading text-black/1">Communicate in Your Own Language</h3>
                     <h6 className="text-mobile/h6 lg:text-[20px] lg:leading-6 text-transparent bg-clip-text bg-gradient-to-r from-[#242424] to-[#ff073c] uppercase">available in 9 <br /> local languages</h6>
                     <p className="lg:text-desktop/body/1 text-brand/black text-mobile/small/body max-w-[279px]">Message reading support available for 22 popular Indian languages</p>
                 </div>

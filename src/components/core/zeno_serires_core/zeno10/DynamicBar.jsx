@@ -14,11 +14,11 @@ const DynamicBar = () => {
                         <span className="text-zeno-solid">//</span>
                         <span className="text-dull-white font-markot">dynamic bar</span>
                     </h6>
-                    <h1 className="lg:text-[64px] text-[32px] leading-8 font-bold uppercase lg:leading-[64px] text-center lg:text-left">
+                    <h3 className="lg:text-[64px] text-[32px] leading-8 font-bold uppercase lg:leading-[64px] text-center lg:text-left">
                         <span className="text-dull-white" >intuitive.</span> <br />
                         <span className="text-dull-white">smart.</span> <br className='hidden lg:block' />
                         <span className="text-zeno-solid">dynamic.</span>
-                    </h1>
+                    </h3>
                 </div>
                 <img src="/smartphone/zeno10/dynamicbar/mobileframe.webp" alt="Dynamic bar mobile frame" className='max-h-[490px] lg:max-w-[515px] max-w-[300px] object-contain flex-shrink absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 ' />
                 <div className="lg:max-w-[425px] max-w-[297px] h-[169px] lg:h-[241px] p-4 lg:p-10 relative ">

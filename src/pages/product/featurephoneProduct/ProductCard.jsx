@@ -11,14 +11,14 @@ export default function ProductCard({ product }) {
             {/* New */}
             {
                 isNew == true ? (
-                    <h1 className="md:w-[55px] lg:w-[55px] rounded-full bg-[#3A3358] px-3 py-[2px] text-[12px] lg:text-sm leading-[22.4px] tracking-[-0.01em]">
+                    <h3 className="md:w-[55px] lg:w-[55px] rounded-full bg-[#3A3358] px-3 py-[2px] text-[12px] lg:text-sm leading-[22.4px] tracking-[-0.01em]">
                         New
-                    </h1>
+                    </h3>
                 ) :
                     (
-                        <h1 className="md:w-[30px] lg:w-[55px] h-[26px] rounded-full bg-transparent px-3 py-[2px] text-[12px] lg:text-sm leading-[22.4px] tracking-[-0.01em]">
+                        <h3 className="md:w-[30px] lg:w-[55px] h-[26px] rounded-full bg-transparent px-3 py-[2px] text-[12px] lg:text-sm leading-[22.4px] tracking-[-0.01em]">
 
-                        </h1>
+                        </h3>
                     )
             }
 
@@ -31,9 +31,9 @@ export default function ProductCard({ product }) {
 
             {/* ProductDescription */}
             <div className="flex flex-col gap-3">
-                <h1 className="text-base text-white md:text-desktop/h4 leading-[19.2px] tracking-[-0.01em] md:leading-[31.2px] md:tracking-[-0.02em] text-center">
+                <h3 className="text-base text-white md:text-desktop/h4 leading-[19.2px] tracking-[-0.01em] md:leading-[31.2px] md:tracking-[-0.02em] text-center">
                     {title}
-                </h1>
+                </h3>
                 <h3 className="max-w-[250px] text-[10px] leading-[14px] tracking-[0.02em] md:text-sm md:leading-[22.4px] md:tracking-[-0.01em] text-center text-[#949494] md:text-[#C0C0C0]">
                     {description}
                 </h3>

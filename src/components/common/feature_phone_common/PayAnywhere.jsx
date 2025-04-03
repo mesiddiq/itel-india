@@ -6,7 +6,7 @@ const PayAnywhere = ({ upiImageUrl }) => {
             <div className='rounded-[16px] overflow-hidden h-[430px] lg:h-auto lg:rounded-[24px] relative bg-bg/secondry content py-[26px] lg:py-[89px] px-[24px] lg:px-[114px]'>
                 <div className="space-y-[222px] lg:space-y-10 ">
                     <div className="space-y-2 lg:space-y-4 ">
-                        <h1 className='text-mobile/h4 lg:text-[60px] lg:leading-[72px] lg:tracking-[-2.4px] text-black/1 font-bold' data-aos="fade-up">Pay anyone. <br /> anywhere. <br />anytime</h1>
+                        <h3 className='text-mobile/h4 lg:text-[60px] lg:leading-[72px] lg:tracking-[-2.4px] text-black/1 font-bold' data-aos="fade-up">Pay anyone. <br /> anywhere. <br />anytime</h3>
                         <p className='text-mobile/body/2 lg:text-[16px] lg:leading-[22.72px] lg:font-normal text-smoky/black'>Make payment without internet connection. <br />
                             Scan QR code & pay! </p>
                     </div>

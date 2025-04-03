@@ -61,11 +61,11 @@ const PureCinematic = () => {
                         <span className="text-zeno-solid">//</span>
                         <span className="text-dull-white font-markot">display</span>
                     </h6>
-                    <h1 className="lg:text-[64px] text-[32px] leading-8 font-bold uppercase lg:leading-[64px] text-center lg:text-left">
+                    <h3 className="lg:text-[64px] text-[32px] leading-8 font-bold uppercase lg:leading-[64px] text-center lg:text-left">
                         <span className="text-dull-white" >pure</span> <br className='hidden lg:block' />
                         <span className="text-zeno-solid">cinematic</span><br />
                         <span className="text-dull-white">experience</span>
-                    </h1>
+                    </h3>
                 </div>
                 <img ref={imageRef} src="/smartphone/zeno10/display/mobileframe.webp" alt="Car in mobile frame" className='absolute w-full object-contain h-full left-1/2 -translate-x-1/2 z-50 hidden lg:block ' />
                 <img src="/smartphone/zeno10/display/mobileframe.webp" alt="Car in mobile frame" className='max-w-[302px] md:max-w-[500px] object-contain h-full z-50 lg:hidden' />

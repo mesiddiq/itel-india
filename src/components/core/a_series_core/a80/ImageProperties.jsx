@@ -66,13 +66,13 @@ const ImageProperties = () => {
                         <p className="text-[10px] leading-3 tracking-[0.6px] uppercase text-a-80-dark text-center">Enhanced Smooth Performance</p>
                         <div className="h-[72px] w-full relative ">
                             {textData.map((text, index) => (
-                                <h1
+                                <h3
                                     key={text}
                                     ref={el => textMobileRef.current[index] = el}
                                     className={`absolute w-full font-medium text-[28px] leading-9  text-center text-a-80-dark top-0 ${index > 0 ? 'opacity-0' : ''}`}
                                 >
                                     {text}
-                                </h1>
+                                </h3>
                             ))}
                         </div>
                         <p className="text-mobile/body/2 text-center text-a-80-dark/80">
@@ -98,13 +98,13 @@ const ImageProperties = () => {
                         <p className="lg:text-[14px] lg:leading-4 uppercase text-a-80-dark text-center">Enhanced Smooth Performance</p>
                         <div className="h-[116px] w-full relative">
                             {textData.map((text, index) => (
-                                <h1
+                                <h3
                                     key={text}
                                     ref={el => textsRef.current[index] = el}
                                     className={`absolute w-full lg:text-desktop/h2 text-center text-a-80-dark top-0 ${index > 0 ? 'opacity-0' : ''}`}
                                 >
                                     {text}
-                                </h1>
+                                </h3>
                             ))}
                         </div>
                         <p className="lg:text-desktop/body/1 text-center text-a-80-dark/80">

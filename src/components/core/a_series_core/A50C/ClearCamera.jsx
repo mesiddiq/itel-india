@@ -17,38 +17,38 @@ const ClearCamera = () => {
 
             <div className="flex flex-col justify-between h-full">
                 <div className="flex flex-col gap-2 text-black/1">
-                    <h1 className="max-w-[539px] text-desktop/h2 ">Clear Camera to Record Exciting Moments</h1>
-                    <h1 className="max-w-[455px] text-desktop/body/large ">Featuring an 8MP AI rear camera and 5MP selfie camera, every shot is infused with stunning detail and clarity.</h1>
+                    <h3 className="max-w-[539px] text-desktop/h2 ">Clear Camera to Record Exciting Moments</h3>
+                    <h3 className="max-w-[455px] text-desktop/body/large ">Featuring an 8MP AI rear camera and 5MP selfie camera, every shot is infused with stunning detail and clarity.</h3>
                 </div>
 
                 <div className="flex flex-col gap-[42px] text-[#232323]">
                     <div className="flex flex-row gap-[42px]">
                         <div className="flex flex-col gap-[18px] min-w-[91px] max-w-[91px]">
                             <img src='/smartphone/A50C/beautyMode.svg' alt="beautyMode" className="w-[45px] h-[45px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">5 AI Beauty Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">5 AI Beauty Mode</h3>
                         </div>
                         <div className="flex flex-col gap-[18px] min-w-[91px] max-w-[91px]">
                             <img src='/smartphone/A50C/potraitMode.svg' alt="potraitMode" className="w-[45px] h-[45px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Portrait Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Portrait Mode</h3>
                         </div>
                         <div className="flex flex-col gap-[18px] min-w-[91px] max-w-[91px]">
                             <img src='/smartphone/A50C/wideSelfie.svg' alt="wideSelfie" className="w-[45px] h-[45px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Wide Selfie Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Wide Selfie Mode</h3>
                         </div>
                     </div>
 
                     <div className="flex flex-row gap-[42px]">
                         <div className="flex flex-col gap-[18px] min-w-[91px] max-w-[91px]">
                             <img src='/smartphone/A50C/panorama.svg' alt="panorama" className="w-[45px] h-[45px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Panorama</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Panorama</h3>
                         </div>
                         <div className="flex flex-col gap-[18px] min-w-[91px] max-w-[91px]">
                             <img src='/smartphone/A50C/hdrMode.svg' alt="hdrMode" className="w-[45px] h-[45px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">HDR Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">HDR Mode</h3>
                         </div>
                         <div className="flex flex-col gap-[18px] min-w-[91px] max-w-[91px]">
                             <img src='/smartphone/A50C/beautyMode.svg' alt="beautyMode" className="w-[45px] h-[45px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Time Lapse</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Time Lapse</h3>
                         </div>
                     </div>
                 </div>
@@ -67,38 +67,38 @@ const ClearCamera = () => {
     
             <div className="flex flex-col items-center gap-4 h-full px-4">
                 <div className="flex flex-col gap-2 text-black/1 text-center">
-                    <h1 className="max-w-[539px] text-mobile/h4 ">Clear Camera to Record Exciting Moments</h1>
-                    <h1 className="max-w-[455px] text-mobile/body/2 ">Featuring an 8MP AI rear camera and 5MP selfie camera, every shot is infused with stunning detail and clarity.</h1>
+                    <h3 className="max-w-[539px] text-mobile/h4 ">Clear Camera to Record Exciting Moments</h3>
+                    <h3 className="max-w-[455px] text-mobile/body/2 ">Featuring an 8MP AI rear camera and 5MP selfie camera, every shot is infused with stunning detail and clarity.</h3>
                 </div>
 
                 <div className="z-10 flex flex-col gap-[42px] text-[#232323] text-center">
                     <div className="flex flex-row gap-4">
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/beautyMode.svg' alt="beautyMode" className="w-[32px] h-[32px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">5 AI Beauty Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">5 AI Beauty Mode</h3>
                         </div>
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/potraitMode.svg' alt="potraitMode" className="w-[32px] h-[32px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Portrait Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Portrait Mode</h3>
                         </div>
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/wideSelfie.svg' alt="wideSelfie" className="w-[32px] h-[32px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Wide Selfie Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Wide Selfie Mode</h3>
                         </div>
                     </div>
 
                     <div className="flex flex-row gap-4">
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/panorama.svg' alt="panorama" className="w-[32px] h-[32px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Panorama</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Panorama</h3>
                         </div>
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/hdrMode.svg' alt="hdrMode" className="w-[32px] h-[32px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">HDR Mode</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">HDR Mode</h3>
                         </div>
                         <div className="flex flex-col items-center gap-[16px] min-w-[88px] max-w-[88px]">
                             <img src='/smartphone/A50C/beautyMode.svg' alt="beautyMode" className="w-[32px] h-[32px]" />
-                            <h1 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Time Lapse</h1>
+                            <h3 className="text-[16px] font-bold leading-[19.2px] tracking-[0.01em]">Time Lapse</h3>
                         </div>
                     </div>
                 </div>

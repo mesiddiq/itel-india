@@ -20,10 +20,10 @@ const SuperCharge = () => {
           {/* Content (Unrotated) */}
           <div className="relative z-10 text-white flex flex-col justify-center items-center gap-[12px]  md:gap-[56px] text-center rounded-[16px] pt-8">
             <div className="flex flex-col gap-[12px] font-markot">
-              <h1 className="font-medium text-mobile/h4 mb-4 text-[#B3D98E]">
+              <h3 className="font-medium text-mobile/h4 mb-4 text-[#B3D98E]">
                 Beast Mode <br />
                 Octa-Core Processor
-              </h1>
+              </h3>
               <p className="text-desktop/button">Unisoc T606 (12nm)</p>
             </div>
             <p className="text-[16px] mb-6">
@@ -53,10 +53,10 @@ const SuperCharge = () => {
               data-aos="fade-left"
             >
               <div className="flex flex-col font-markot gap-[12px]">
-                <h1 className="font-medium text-desktop/h2 mb-4 text-[#B3D98E]">
+                <h3 className="font-medium text-desktop/h2 mb-4 text-[#B3D98E]">
                   Beast Mode <br />
                   Octa-Core Processor
-                </h1>
+                </h3>
                 <p className="text-desktop/button">Unisoc T606 (12nm)</p>
             
               <p className="text-[16px] mb-6 font-normal text-white">

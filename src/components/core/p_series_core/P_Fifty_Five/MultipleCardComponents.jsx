@@ -52,12 +52,12 @@ const MultipleCardComponents = () => {
                   </div>
 
                   <span className='flex flex-col text-[22px] font-bold leading-[28px] tracking-[0.02em] text-left'>
-                    <h1 className="hidden lg:block">
+                    <h3 className="hidden lg:block">
                       5000 mAh
                       <span className="text-[22px] font-normal leading-[28px] tracking-[0.02em]"> Battery Lab with </span> 
                       18W <span className="text-[22px] font-normal leading-[28px] tracking-[0.02em]">Type-C Fast Charging </span> 
-                    </h1>
-                    <h1 className="block lg:hidden xs:text-mobile/body/large text-[10px] leading-4">5000 mAh Battery Lab with 18W Type-C Fast Charging</h1>
+                    </h3>
+                    <h3 className="block lg:hidden xs:text-mobile/body/large text-[10px] leading-4">5000 mAh Battery Lab with 18W Type-C Fast Charging</h3>
                   </span>
 
                 </div>
@@ -83,8 +83,8 @@ const MultipleCardComponents = () => {
                   </div>
 
                   <span className='flex flex-col lg:max-w-full max-w-[120px] opacity-90'>
-                    <h1 className="lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] lg:text-left text-mobile/body/large">6.6” HD+</h1>
-                    <h1 className="lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] text-mobile/body/large"><span className="lg:font-normal">Punch Hole Display</span> <br className="xl:hidden"/> with 90 Hz Refresh Rate</h1>
+                    <h3 className="lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] lg:text-left text-mobile/body/large">6.6” HD+</h3>
+                    <h3 className="lg:text-[22px] lg:font-bold lg:leading-[28px] lg:tracking-[0.02em] text-mobile/body/large"><span className="lg:font-normal">Punch Hole Display</span> <br className="xl:hidden"/> with 90 Hz Refresh Rate</h3>
                   </span>
 
                 </div>

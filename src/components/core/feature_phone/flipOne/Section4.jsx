@@ -7,7 +7,7 @@ const Section4 = () => {
             <img src="/featurephone/flipOne/SquarePattern.svg" alt="7 days power backup" className='absolute left-1/2 -translate-x-1/2  bottom-10 lg:bottom-0 lg:scale-100 scale-150 ' />
             <div className="content lg:pb-[55px] h-full flex flex-col lg:flex-row lg:items-end pt-10 lg:pt-0">
                 <div className="max-w-[386px]">
-                    <h1 className="text-mobile/h4 md:text-desktop/h3 lg:text-desktop/h2 text-white">7 Days Power Backup</h1>
+                    <h3 className="text-mobile/h4 md:text-desktop/h3 lg:text-desktop/h2 text-white">7 Days Power Backup</h3>
                     <p className="text-mobile/body/2 md:text-mobile/body/large lg:text-featurephone/paragraph text-white/90 lg:mt-[20px] mt-[14px]">With super battery mode and a 1200mAh battery - stay connected, stay charged with Flip One</p>
                     <div className="flex gap-4 lg:gap-6 lg:mt-[56px] mt-5 ">
                         <div className="flex items-center gap-2">

@@ -13,7 +13,7 @@ const CreateYourStyle = () => {
                 <img src="/featurephone/it5027/Backgrounds/boy.webp" alt="" className='absolute right-0 -bottom-4 max-w-[330px] md:max-w-[350px] lg:hidden' />
                 <div className="space-y-5 lg:space-y-9 z-50 max-w-[487px]">
                     <div className="">
-                        <h1 className="lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[2.4px] text-white text-mobile/h4">Create Your <br className="hidden lg:block" /> Own Style</h1>
+                        <h3 className="lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[2.4px] text-white text-mobile/h4">Create Your <br className="hidden lg:block" /> Own Style</h3>
                         <p className="lg:text-featurephone/paragraph text-mobile/body/2 text-white mt-3 lg:mt-[18px]">Create your own style with a range of breezy colors and a sleek 11mm slim body design. Stand out effortlessly!</p>
                     </div>
                     <div className="flex gap-5 lg:gap-6 flex-wrap lg:flex-nowrap ">

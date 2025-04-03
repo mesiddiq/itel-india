@@ -25,7 +25,7 @@ const QuickBoost = () => {
             <div className="flex flex-col sm:gap-[20px] lg:gap-[36px] absolute top-0 w-full h-full sm:p-5 lg:px-[90px] lg:pt-[60px] ">
 
                 <div className="sm:max-w-[250px] lg:max-w-[482px]">
-                    <h1 className="sm:text-desktop/h4 lg:text-desktop/h2 text-[#232323]">Quick Boost: 10W Type-C Fast Charging Support</h1>
+                    <h3 className="sm:text-desktop/h4 lg:text-desktop/h2 text-[#232323]">Quick Boost: 10W Type-C Fast Charging Support</h3>
                 </div>
 
                 <div className="flex flex-col sm:gap-3 lg:gap-5 text-black w-[153px] max-w-[153px] lg:w-[253px] lg:max-w-[253px]">
@@ -36,7 +36,7 @@ const QuickBoost = () => {
                     <CustomFeatureSpecifications featureMetric="7.5 Hours*" featureMetricDescription="Talktime" />
                 </div>
 
-                <h1 className="text-[#6F7384] absolute sm:bottom-6 lg:bottom-12 sm:text-desktop/body/2/regular lg:text-desktop/body/1">*5W charger available inside the box</h1>
+                <h3 className="text-[#6F7384] absolute sm:bottom-6 lg:bottom-12 sm:text-desktop/body/2/regular lg:text-desktop/body/1">*5W charger available inside the box</h3>
             </div>
         </div>
 
@@ -49,7 +49,7 @@ const QuickBoost = () => {
             <div className="flex mx-5 flex-col absolute top-2/3 items-center gap-4 max-w-[296px] w-full h-full ">
 
                 <div className="max-w-[296px]">
-                    <h1 className="text-mobile/h5/medium text-[#232323]">Quick Boost: 10W Type-C Fast Charging Support</h1>
+                    <h3 className="text-mobile/h5/medium text-[#232323]">Quick Boost: 10W Type-C Fast Charging Support</h3>
                 </div>
 
                 <div className="flex flex-row gap-[12px] text-black w-[296px] max-w-[296px]">
@@ -62,7 +62,7 @@ const QuickBoost = () => {
 
             </div>
                 
-            <h1 className="mx-5 text-[#6F7384] absolute bottom-6 text-mobile/small/body">*5W charger available inside the box</h1>
+            <h3 className="mx-5 text-[#6F7384] absolute bottom-6 text-mobile/small/body">*5W charger available inside the box</h3>
         </div>
     </>
   )

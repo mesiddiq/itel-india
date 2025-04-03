@@ -6,7 +6,7 @@ const GrandScreen = () => {
 			<div className="flex flex-col lg:flex-row gap-[22px] lg:gap-14 font-markot items-center justify-center lg:min-h-[720px]  pt-10 lg:pt-0">
 				<div className="space-y-5 lg:space-y-[54px] max-w-[504px]">
 					<div className="flex flex-col gap-3 lg:gap-5">
-						<h1 className="text-mobile/h4 text-white lg:text-featurephone/heading font-medium ">Grand Screen, Grand Entertainment</h1>
+						<h3 className="text-mobile/h4 text-white lg:text-featurephone/heading font-medium ">Grand Screen, Grand Entertainment</h3>
 						<p className="text-mobile/body/2 text-white/70 lg:text-[16px] lg:font-normal lg:leading-[22px] ">Enjoy all your content on a big 2.4" QVGA display. Now navigating menus and reading texts made much more comfortable and enjoyable with itel it5262.</p>
 					</div>
 					<div className="flex lg:gap-4 gap-[6px] items-center">

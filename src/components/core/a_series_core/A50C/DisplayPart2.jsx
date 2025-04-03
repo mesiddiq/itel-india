@@ -7,18 +7,18 @@ const DisplayPart2 = () => {
         }}>
             <div className="font-markot w-1/2 flex flex-col gap-[42px] max-w-[492px] ">
                 <div className="flex flex-col gap-3">
-                    <h1 className="text-desktop/h2 text-[#232323]">6.6” HD+ IPS Display with Dynamic Bar</h1>
-                    <h1 className="text-desktop/body/large text-[#232323]">Enjoy HD quality display on the expansive 6.6” screen, seamlessly integrated with the dynamic notification bar - Keep up with notifications effortlessly. </h1>
+                    <h3 className="text-desktop/h2 text-[#232323]">6.6” HD+ IPS Display with Dynamic Bar</h3>
+                    <h3 className="text-desktop/body/large text-[#232323]">Enjoy HD quality display on the expansive 6.6” screen, seamlessly integrated with the dynamic notification bar - Keep up with notifications effortlessly. </h3>
                 </div>
 
                 <div className="flex flex-row gap-[32px]">
                     <div className="flex flex-col gap-2">
                         <img src='/smartphone/A50C/samplingRate.svg' alt="samplingRate" className="w-[49px]" />
-                        <h1 className="text-desktop/h6/medium text-[#232323]">120 Hz Touch Sampling Rate</h1>
+                        <h3 className="text-desktop/h6/medium text-[#232323]">120 Hz Touch Sampling Rate</h3>
                     </div>
                     <div className="flex flex-col gap-2">
                         <img src='/smartphone/A50C/refreshRate.svg' alt="refreshRate" className="w-[49px]" />
-                        <h1 className="text-desktop/h6/medium text-[#232323]">60 Hz Refresh Rate</h1>
+                        <h3 className="text-desktop/h6/medium text-[#232323]">60 Hz Refresh Rate</h3>
                     </div>
                 </div>
             </div>
@@ -35,18 +35,18 @@ const DisplayPart2 = () => {
         }}>
             <div className="font-markot w-full flex flex-col gap-[18px] max-w-[296px] ">
                 <div className="flex flex-col items-center text-center gap-2">
-                    <h1 className="text-mobile/h4 text-[#181818]">6.6” HD+ IPS Display with Dynamic Bar</h1>
-                    <h1 className="text-mobile/body/2 text-[#1C1B1B]">Enjoy HD quality display on the expansive 6.6” screen, seamlessly integrated with the dynamic notification bar - Keep up with notifications effortlessly. </h1>
+                    <h3 className="text-mobile/h4 text-[#181818]">6.6” HD+ IPS Display with Dynamic Bar</h3>
+                    <h3 className="text-mobile/body/2 text-[#1C1B1B]">Enjoy HD quality display on the expansive 6.6” screen, seamlessly integrated with the dynamic notification bar - Keep up with notifications effortlessly. </h3>
                 </div>
 
                 <div className="flex flex-row text-center gap-[16px]">
                     <div className="flex flex-col items-center gap-[10px]">
                         <img src='/smartphone/A50C/samplingRate.svg' alt="samplingRate" className="w-[32px]" />
-                        <h1 className="text-mobile/h7 text-[#0E0E0E]">120 Hz Touch Sampling Rate</h1>
+                        <h3 className="text-mobile/h7 text-[#0E0E0E]">120 Hz Touch Sampling Rate</h3>
                     </div>
                     <div className="flex flex-col items-center gap-[10px]">
                         <img src='/smartphone/A50C/refreshRate.svg' alt="refreshRate" className="w-[32px]" />
-                        <h1 className="text-mobile/h7 text-[#0E0E0E]">60 Hz Refresh Rate</h1>
+                        <h3 className="text-mobile/h7 text-[#0E0E0E]">60 Hz Refresh Rate</h3>
                     </div>
                 </div>
             </div>

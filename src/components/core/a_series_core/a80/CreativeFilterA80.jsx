@@ -30,12 +30,12 @@ const CreativeFilterA80 = () => {
       <div className="content overflow-hidden h-[480px] lg:h-[620px] relative flex flex-col justify-between lg:flex-row items-center gap-6 pt-8 px-4">
         {/* Text Section */}
         <div className="w-full lg:max-w-[496px] relative  text-center lg:text-left">
-          <h1
+          <h3
             className="text-mobile/h3 lg:text-desktop/h2 text-white py-4"
             data-aos="fade-up"
           >
             Creative Filters
-          </h1>
+          </h3>
           <p
             className="text-mobile/body/2 lg:text-desktop/body/large text-white"
             data-aos="fade-left"

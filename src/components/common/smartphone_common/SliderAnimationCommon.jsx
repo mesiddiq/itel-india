@@ -32,14 +32,14 @@ const SliderAnimationCommon = ({
             style={{ backgroundColor: bgColor ? bgColor : '#ebe9e2' }}
         >
             <Marquee speed='50' direction='right' autoFill={true}>
-                <h1 className="font-bricolage uppercase text-[16px] lg:text-[20px] lg:leading-6  text-grey/grey/4 font-extrabold -tracking-[0.16px]"
+                <h3 className="font-bricolage uppercase text-[16px] lg:text-[20px] lg:leading-6  text-grey/grey/4 font-extrabold -tracking-[0.16px]"
                     style={{
                         color: textColor ? textColor : 'black',
                         backgroundImage: textGradient1 ? `linear-gradient(to right, ${textGradient1}, ${textGradient2})` : 'none',
                         WebkitBackgroundClip: textColor ? 'initial' : 'text',
                         WebkitTextFillColor: textColor ? 'initial' : 'transparent'
                     }}
-                >{text1}</h1>
+                >{text1}</h3>
                 {
                     svgCode ?
                         <span className={`mx-4 block rounded-[38px] py-[3.7px] px-[13.32px] ${svgBgColor}`}>
@@ -48,14 +48,14 @@ const SliderAnimationCommon = ({
                         :
                         <img src={icon} alt="Slider Icon" className='w-7 h-[17px] mx-4' />
                 }
-                <h1 className="font-bricolage uppercase text-[16px] lg:text-[20px] lg:leading-6  text-grey/grey/4 font-extrabold -tracking-[0.16px]"
+                <h3 className="font-bricolage uppercase text-[16px] lg:text-[20px] lg:leading-6  text-grey/grey/4 font-extrabold -tracking-[0.16px]"
                     style={{
                         color: textColor ? textColor : 'black',
                         backgroundImage: textGradient1 ? `linear-gradient(to right, ${textGradient1}, ${textGradient2})` : 'none',
                         WebkitBackgroundClip: textColor ? 'initial' : 'text',
                         WebkitTextFillColor: textColor ? 'initial' : 'transparent'
                     }}
-                >{text2}</h1>
+                >{text2}</h3>
                 {
                     svgCode ?
                         <span className={`mx-4 block rounded-[38px] py-[3.7px] px-[13.32px] ${svgBgColor}`}>

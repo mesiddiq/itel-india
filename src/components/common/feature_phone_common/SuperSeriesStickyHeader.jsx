@@ -24,7 +24,7 @@ const SuperSeriesStickyHeader = ({
                 <div className="content flex justify-between">
                     <div className="flex gap-2 items-center">
                         <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className={iconSize ? iconSize : 'size-10'} />
-                        <h1 className={`text-mobile/h5 md:text-desktop/h3 font-bold ${dark ? 'text-black/1' : 'text-white'} `}>{title}</h1>
+                        <h3 className={`text-mobile/h5 md:text-desktop/h3 font-bold ${dark ? 'text-black/1' : 'text-white'} `}>{title}</h3>
                     </div>
                     {/* <div className="gap-3 items-center bg-black/1 justify-center hidden lg:flex absolute left-1/2 -translate-x-1/2 ">
                         {RoutesData.map(({ path, alias, label }) => (

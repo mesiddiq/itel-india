@@ -19,12 +19,12 @@ const GridSectionDisplay = () => {
                 alt="Smartphone Icon"
                 className="pb-4 mx-auto lg:mx-0"
               />
-              <h1
+              <h3
                 className="lg:text-desktop/h5 text-mobile/h5 py-2"
                 data-aos="fade-up"
               >
                 120Hz Display Refresh Rate
-              </h1>
+              </h3>
               <p
                 className="text-desktop/body/2/medium lg:text-desktop/body/2/regular"
                 data-aos="fade-left"
@@ -62,12 +62,12 @@ const GridSectionDisplay = () => {
         <div className="flex flex-wrap gap-4 justify-center">
           {/* Dynamic Bar */}
           <div className="w-full xl:w-[550px] border flex flex-col justify-center items-center overflow-hidden border-[#FFBD6D] rounded-lg h-auto lg:h-[272px] relative">
-            <h1
+            <h3
               className="text-center lg:text-left lg:text-desktop/h5 text-mobile/h6 py-2 pt-[30px]"
               data-aos="fade-up"
             >
               Effortless Navigation with the Dynamic Bar
-            </h1>
+            </h3>
             <div className="relative pt-8">
               <img
                 src="/smartphone/A80/AllSections/Grid/DynamicBarOpattern.webp"
@@ -90,12 +90,12 @@ const GridSectionDisplay = () => {
                 alt="Camera Line Icon"
                 className="pb-2 mx-auto lg:mx-0"
               />
-              <h1
+              <h3
                 className="lg:text-desktop/h5 text-mobile/h6 py-1"
                 data-aos="fade-up"
               >
                 50MP Camera
-              </h1>
+              </h3>
               <p
                 className="text-desktop/body/2/regular lg:text-desktop/body/2/regular"
                 data-aos="fade-left"

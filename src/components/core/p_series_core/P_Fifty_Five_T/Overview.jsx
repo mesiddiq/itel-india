@@ -7,7 +7,7 @@ const Overview = (props) => {
       <div className='content'>
         <div className='grid grid-cols-1 lg:grid-cols-2 min-h-[185px] lg:min-h-[120px]'>
           <div className='col-span-1'>
-            <h1 className='bg-gradient-to-br from-[#EECF7F] to-[#D2B363] inline-block text-transparent bg-clip-text text-desktop/h4 md:text-desktop/h2 font-markot'>Your New Tech Flex Powered by Android 14 Go</h1>
+            <h3 className='bg-gradient-to-br from-[#EECF7F] to-[#D2B363] inline-block text-transparent bg-clip-text text-desktop/h4 md:text-desktop/h2 font-markot'>Your New Tech Flex Powered by Android 14 Go</h3>
           </div>
           <div className='col-span-1 pt-[10px]'>
             <p className='text-desktop/body/2/regular md:text-desktop/body/1 text-[#D9D9D9] font-markot animate-slide-down'>

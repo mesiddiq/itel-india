@@ -10,12 +10,12 @@ const UninterruptedConnectivity = () => {
                         </div>
                         <div className="flex lg:flex-col gap-4 lg:gap-5 max-w-[253px]" data-aos="fade-up">
                             <div className="space-y-1 md:space-y-2" data-aos="fade-up">
-                                <h1 className='text-mobile/h6 lg:text-desktop/h4'>20 Days*</h1>
+                                <h3 className='text-mobile/h6 lg:text-desktop/h4'>20 Days*</h3>
                                 <h6 className='text-mobile/small/body lg:text-desktop/body/1'>Standby Time</h6>
                             </div>
                             <div className="min-h-full lg:w-full lg:h-[1px] w-[1px] bg-white"></div>
                             <div className="space-y-1 md:space-y-2" data-aos="fade-up">
-                                <h1 className='text-mobile/h6 lg:text-desktop/h4'>31.7 Hours*</h1>
+                                <h3 className='text-mobile/h6 lg:text-desktop/h4'>31.7 Hours*</h3>
                                 <h6 className='text-mobile/small/body lg:text-desktop/body/1'>Talk Time</h6>
                             </div>
                         </div>

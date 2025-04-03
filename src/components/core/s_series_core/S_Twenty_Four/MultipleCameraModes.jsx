@@ -8,9 +8,9 @@ const MultipleCameraModes = () => {
                 {/* Top Most Text */}
                 <div className="flex flex-col gap-4 lg:gap-6 justify-center items-center">
                     <div className="flex flex-col gap-[10px] w-[80%] lg:w-full text-center lg:gap-10 justify-center items-center">
-                        <h1 className="text-desktop/h4 lg:text-desktop/h2 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
+                        <h3 className="text-desktop/h4 lg:text-desktop/h2 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
                             Multiple Camera Modes: Get Your Best Shots
-                        </h1>
+                        </h3>
                         <p className="text-mobile/h6 lg:text-desktop/h5/medium text-grey/grey/1"> 
                             AI Clear Portrait | Super Night Mode | Portrait Blurring 
                         </p>
@@ -65,9 +65,9 @@ const MultipleCameraModes = () => {
                 {/* Lower Most Text */}
                 <div className="flex flex-col gap-4 lg:gap-6 justify-center items-center my-8 lg:my-12">
                     <div className="flex flex-col gap-[10px]  text-center lg:gap-10 justify-center items-center">
-                        <h1 className="w-[80%] lg:w-full text-desktop/h4 lg:text-desktop/h2 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
+                        <h3 className="w-[80%] lg:w-full text-desktop/h4 lg:text-desktop/h2 bg-gradient-to-r from-[#FFCF92] to-[#FFE8CB] bg-clip-text text-transparent">
                             Shoot Videos with Impeccable Clarity
-                        </h1>
+                        </h3>
                         <p className="text-mobile/h6 lg:text-desktop/h5/medium text-grey/grey/1"> 
                             EIS Video Stabilisation (video recording at 2k@30fps) | Dual Video Recording
                         </p>

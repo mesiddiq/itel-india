@@ -7,7 +7,7 @@ const HeroSectionOfA23SPage = () => {
                     <img src="/smartphone/A23s/UpArrow.svg" alt="A23sBadge" className="w-[12px] h-[12px]" />
                 </div>
                 <div className="w-[330px] md:w-[528px] pe-6">
-                    <h1 className="text-mobile/h1 md:text-desktop/large/h py-4">A23S</h1>
+                    <h3 className="text-mobile/h1 md:text-desktop/large/h py-4">A23S</h3>
                     <p className="text-mobile/title md:text-desktop/title text-[#181818] uppercase ">
                         4GB*(2GB+2GB*) RAM + 32GB ROM | Smart Face Unlock | 3020 mAh battery
                     </p>

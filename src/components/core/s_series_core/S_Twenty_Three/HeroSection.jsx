@@ -28,9 +28,9 @@ function HeroSection() {
 						</div>
 
 						{/* S23 Text */}
-						<h1 className="text-purple-200 text-mobile/h1 md:text-desktop/large/h font-markot mt-4">
+						<h3 className="text-purple-200 text-mobile/h1 md:text-desktop/large/h font-markot mt-4">
 							S23
-						</h1>
+						</h3>
 
 						{/* Description */}
 						<p className="mt-4 md:mt-8  uppercase text-gray-300 w-full md:max-w-[543px] text-mobile/title md:text-desktop/title font-markot">

@@ -20,9 +20,9 @@ export default function Enjoy({ part1, part2, part3 }) {
         </div>
   
         {/* Centered ENJOY text */}
-        <h1 className="absolute inset-0 flex items-center justify-center text-[60px] font-bold text-red-500 stroke-red-600 stroke-[1px] z-10" style={{ WebkitTextStroke: '1px #dc2626', textStroke: '1px #dc2626' }}>
+        <h3 className="absolute inset-0 flex items-center justify-center text-[60px] font-bold text-red-500 stroke-red-600 stroke-[1px] z-10" style={{ WebkitTextStroke: '1px #dc2626', textStroke: '1px #dc2626' }}>
           { part2 }
-        </h1>
+        </h3>
         </div>
   
     )

@@ -6,7 +6,7 @@ function DesignSection() {
 		<section className="relative w-full bg-brand/black  overflow-hidden px-4 md:px-0">
 			<div className="max-w-[1440px] mx-auto md:w-11/12 w-full lg:pl-[102px]   xl:h-[720px] lg:h-auto  h-[575px] md:h-[700px] flex items-center flex-col xl:flex-row gap-4 justify-between py-10 pt-10 pb-5">
 				<div className="max-w-[514px]">
-					<h1 data-aos="fade-up" data-aos-delay="100" className=" text-mobile/h4 lg:text-desktop/h2 text-white">Design Innovation: Unique Round Screen Display</h1>
+					<h3 data-aos="fade-up" data-aos-delay="100" className=" text-mobile/h4 lg:text-desktop/h2 text-white">Design Innovation: Unique Round Screen Display</h3>
 					<p data-aos="fade-up" data-aos-delay="200" className="lg:text-featurephone/paragraph text-mobile/body/2 text-grey/grey/2 max-w-[475px] mt-3 lg:mt-[22px]">A feature-rich phone with a unique round screen display that stands out from the crowd. Available in two attractive colors, it is a perfect choice for those seeking innovation and elegance in their phone.</p>
 					<h4 data-aos="fade-up" data-aos-delay="300" className="lg:text-[20px] lg:leading-6 lg:tracking-[0.8px] font-bold uppercase text-transparent text-[16px] leading-5 tracking-[0.6px] bg-clip-text bg-gradient-to-r from-[#ff998f] to-[#fff7e8] mt-4 lg:mt-12">Black | Rose Gold</h4>
 				</div>

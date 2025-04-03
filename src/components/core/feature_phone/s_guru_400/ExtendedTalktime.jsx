@@ -13,12 +13,12 @@ const ExtendedTalktime = () => {
                         </div>
                         <div className="flex lg:flex-col gap-4 lg:gap-5 max-w-[253px]" data-aos="fade-up">
                             <div className="space-y-1 md:space-y-2" data-aos="fade-up">
-                                <h1 className='text-mobile/h6 lg:text-desktop/h4'>14 Days*</h1>
+                                <h3 className='text-mobile/h6 lg:text-desktop/h4'>14 Days*</h3>
                                 <h6 className='text-mobile/small/body lg:text-desktop/body/1'>Standby Time</h6>
                             </div>
                             <div className="min-h-full lg:w-full lg:h-[1px] w-[1px] bg-white"></div>
                             <div className="space-y-1 md:space-y-2" data-aos="fade-up">
-                                <h1 className='text-mobile/h6 lg:text-desktop/h4'>19.9 Hours*</h1>
+                                <h3 className='text-mobile/h6 lg:text-desktop/h4'>19.9 Hours*</h3>
                                 <h6 className='text-mobile/small/body lg:text-desktop/body/1'>Talk Time</h6>
                             </div>
                         </div>
@@ -64,8 +64,8 @@ const ExtendedTalktime = () => {
                     </div>
                     <div className="lg:pt-[382px]">
                         <div className="z-10 space-y-3 lg:space-y-5 max-w-[640px]" data-aos="fade-up">
-                            <h1 className="text-mobile/h4 lg:text-desktop/h2 text-bg/primary/1">Crystal Clear Audio: <br />
-                                Unmatched Clarity in Every Call</h1>
+                            <h3 className="text-mobile/h4 lg:text-desktop/h2 text-bg/primary/1">Crystal Clear Audio: <br />
+                                Unmatched Clarity in Every Call</h3>
                             <p className="text-mobile/body/2 lg:text-desktop/body/large text-grey/grey/1/70">Designed for sharp, clear sound, this feature ensures perfect clarity for effortless communication, even in noisy environments.</p>
                         </div>
                     </div>

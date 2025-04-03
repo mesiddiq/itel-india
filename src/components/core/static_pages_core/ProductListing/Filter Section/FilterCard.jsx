@@ -2,9 +2,9 @@
 const FilterCard = ({typeOfFilter, filterOptions}) => {
 return (
     <section className="pr-5">
-        <h1 className='font-base font-medium mb-5'>
+        <h3 className='font-base font-medium mb-5'>
                 {typeOfFilter}
-        </h1>
+        </h3>
         <ul className='flex flex-col gap-3 justify-center'>
             {
                 filterOptions.map((option) => (

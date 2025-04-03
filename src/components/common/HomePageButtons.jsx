@@ -4,7 +4,7 @@ const HomePageButtons = () => {
     return (
         <div className='flex gap-4 flex-wrap py-10 justify-center '>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">S series</h1>
+                <h3 className="text-2xl">S series</h3>
                 <Link to='/product/s23'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         s-23
@@ -22,7 +22,7 @@ const HomePageButtons = () => {
                 </Link>
             </div>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">A series</h1>
+                <h3 className="text-2xl">A series</h3>
                 <Link to='/product/a05-i'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         A-05i
@@ -55,7 +55,7 @@ const HomePageButtons = () => {
                 </Link>
             </div>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">product - P series</h1>
+                <h3 className="text-2xl">product - P series</h3>
                 <Link to='/product/p55-5g'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         p-55 5G
@@ -78,7 +78,7 @@ const HomePageButtons = () => {
                 </Link>
             </div>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">Feature Phones</h1>
+                <h3 className="text-2xl">Feature Phones</h3>
                 <Link to='/product/ace-2-power'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Ace 2 Power
@@ -136,7 +136,7 @@ const HomePageButtons = () => {
                 </Link>
             </div>
             <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">Static Pages</h1>
+                <h3 className="text-2xl">Static Pages</h3>
                 <Link to='/homepage'>
                     <button className='bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded' type="button">
                         Home

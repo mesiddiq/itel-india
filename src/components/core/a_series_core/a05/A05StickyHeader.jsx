@@ -8,7 +8,7 @@ const StickyHeader = ({ title, purchaseLink, icon, bgColor }) => {
             <div className="content flex justify-between">
                 <div className="flex gap-2 items-center">
                     <img src={icon ? icon : '/featurephone/superguru4g/buynowlogo.svg'} alt="Icon" className='size-10' />
-                    <h1 className='text-mobile/h5 md:text-desktop/h4 font-bold text-black/1'>{title}</h1>
+                    <h3 className='text-mobile/h5 md:text-desktop/h4 font-bold text-black/1'>{title}</h3>
                 </div>
                 <div className="hidden md:flex gap-8 items-center">
                     <a href="#overview" className='text-desktop/body/1 text-black/1'>Overview</a>

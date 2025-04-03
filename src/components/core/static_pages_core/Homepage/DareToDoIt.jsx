@@ -18,9 +18,9 @@ const DareToDoIt = () => {
 				</Marquee>
 
 				<Marquee speed='100' autoFill={true}>
-					<h1 className='text-[#FF0037] text-[102px] md:text-[226px] font-[900] border-y-2 border-dashed border-[#FF0037] py-2'>
+					<h3 className='text-[#FF0037] text-[102px] md:text-[226px] font-[900] border-y-2 border-dashed border-[#FF0037] py-2'>
 						DARE TO DO IT!
-					</h1>
+					</h3>
 				</Marquee>
 
 				<Marquee speed='100' direction='right' autoFill={true}>

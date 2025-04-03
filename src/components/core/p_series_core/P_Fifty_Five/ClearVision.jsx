@@ -14,7 +14,7 @@ const ClearVision = () => {
                     
                     <div className="font-markot flex flex-col justify-between items-start h-full">
                         <div className="flex flex-col gap-[24px]">
-                            <h1 className="text-desktop/h2">90Hz Madness</h1>
+                            <h3 className="text-desktop/h2">90Hz Madness</h3>
                             <h2 className="text-base font-normal leading-[22.72px] text-left max-w-[300px]">Immerse yourself in the ultimate visual experience with the itel P55&apos;s 6.6-inch HD+ punch-hole display with a super-smooth 90Hz refresh rate.</h2>
                         </div>
 
@@ -42,7 +42,7 @@ const ClearVision = () => {
                 <div className="relative z-10 py-[10px] w-full flex flex-col justify-start items-center">
                     
                     <div className="font-markot flex flex-col justify-start mt-[26px] items-center gap-[10px] h-full">
-                            <h1 className="text-mobile/h4">90Hz Madness</h1>
+                            <h3 className="text-mobile/h4">90Hz Madness</h3>
                             <h2 className="text-mobile/body/2 text-center max-w-[218px]">Immerse yourself in the ultimate visual experience with the itel P55&apos;s 6.6-inch HD+ punch-hole display with a super-smooth 90Hz refresh rate.</h2>
 
                         <div className="flex flex-row gap-[6px]">

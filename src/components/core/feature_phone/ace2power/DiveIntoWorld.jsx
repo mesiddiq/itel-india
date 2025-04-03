@@ -16,7 +16,7 @@ const DiveIntoWorld = () => {
             <div className="content relative h-full">
                 <div className="max-w-[548px] ">
 
-                    <h1 className=" text-mobile/h4 lg:text-desktop/h2 ">Dive into a World of Entertainment</h1>
+                    <h3 className=" text-mobile/h4 lg:text-desktop/h2 ">Dive into a World of Entertainment</h3>
 
                     <p className="lg:text-desktop/body/large text-mobile/body/2 lg:mt-5 mt-3">
                         Enjoy the world of entertainment with features like wireless FM recording, Autocall Recording, a vivid 4.57cm (1.8") QQVGA Display, and the immersive KingVoice experience.

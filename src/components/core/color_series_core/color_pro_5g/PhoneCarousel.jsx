@@ -31,7 +31,7 @@ const PhoneCarousel = () => {
           />
         </div>
         <div className='px-5 lg:px-0 font-markot w-full flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-4 pt-10'>
-          <h1 className={`text-desktop/title text-white`}>COLOR</h1>
+          <h3 className={`text-desktop/title text-white`}>COLOR</h3>
           {ImageCarouselData.map((colorData) => (
             <div
               key={colorData.id}

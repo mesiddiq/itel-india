@@ -19,9 +19,9 @@ return (
                     <h3 className='text-base md:text-2xl font-medium tracking-[-2%]'>
                         The Wait is Over!
                     </h3>
-                    <h1 className='text-4xl md:text-5xl font-medium leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]'>
+                    <h3 className='text-4xl md:text-5xl font-medium leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]'>
                         Presenting Circle 1
-                    </h1>
+                    </h3>
                 </div>
                 
                 <a href="/product/circle-1" className='cursor-pointer'>

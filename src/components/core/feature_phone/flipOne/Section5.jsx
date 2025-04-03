@@ -5,7 +5,7 @@ const Section5 = () => {
         <section className='bg-[linear-gradient(263deg,_#732706_0%,_#D85820_112.96%)] overflow-hidden lg:h-[800px] h-[680px] md:h-[750px] px-4 md:px-0'>
             <div className="content lg:pt-[67px] pt-10 flex flex-col lg:flex-row justify-between h-full ">
                 <div className="max-w-[448px]">
-                    <h1 className="text-mobile/h4 md:text-desktop/h3 lg:text-desktop/h2 text-white">Communication Redefined</h1>
+                    <h3 className="text-mobile/h4 md:text-desktop/h3 lg:text-desktop/h2 text-white">Communication Redefined</h3>
                     <p className="text-mobile/body/2 md:text-mobile/body/large lg:text-featurephone/paragraph text-white/90 lg:mt-[20px] mt-[14px]">Connect your Smartphone via Bluetooth to take calls on your Flip One. Experience the king voice feature available in both Hindi and English!</p>
                     <div className="flex gap-4 lg:gap-6 lg:mt-[56px] mt-5 ">
                         <div className="flex items-center gap-2">

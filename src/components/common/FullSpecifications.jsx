@@ -13,9 +13,9 @@ const FullSpecifications = ({ FullSpecificationsData, mode, gifStar }) => {
     
 			<div className={`h-full lg:content flex flex-col gap-6 lg:gap-[52px] ${mode == 'light' ? '' : ''}`}>
 				
-				<h1 className={`font-markot ${mode == 'light' ? 'text-black' : 'text-white'} text-desktop/h4 lg:text-desktop/h2 flex flex-row items-center`}>
+				<h3 className={`font-markot ${mode == 'light' ? 'text-black' : 'text-white'} text-desktop/h4 lg:text-desktop/h2 flex flex-row items-center`}>
 				{ gifStar ? <img src={gifStar} className='mr-2 w-[60px] h-[45px]'/> : '' }<span>Full Specifications</span>
-				</h1>
+				</h3>
 				
 				<div className={`flex flex-row w-full ${mode == 'light' ? 'bg-[#fbfbfb]' : 'bg-[#202020]'}}`}>
 					

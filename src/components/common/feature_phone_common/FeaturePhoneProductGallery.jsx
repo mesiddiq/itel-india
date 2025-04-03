@@ -73,7 +73,7 @@ const FeaturePhoneProductGallery = ({ bgUrl, bgUrlMobile, products }) => {
                 </div>
             </Swiper>
             <div className='flex flex-col md:flex-row text-center md:items-center justify-center gap-4 content mt-12 px-4 md:px-0'>
-                <h1 className="text-desktop/title uppercase text-black/1">color</h1>
+                <h3 className="text-desktop/title uppercase text-black/1">color</h3>
                 <div className="flex gap-3 flex-col md:flex-row">
                     {products.map((item) => (
                         <button key={item.id} onClick={() => setselectedData(item)} className={` rounded-full flex gap-3 h-9 lg:h-auto items-center font-markot ${item.id === selectedData.id ? 'border-itel-red border-2 py-[6px] md:px-3' : 'text-lg'}`}>

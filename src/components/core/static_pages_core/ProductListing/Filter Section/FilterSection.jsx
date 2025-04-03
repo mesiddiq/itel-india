@@ -106,9 +106,9 @@ const FilterSection = () => {
             {
                 filters.map((filter) => (
                     // <section className="pr-5">
-                    //     <h1 className='font-base font-medium mb-5'>
+                    //     <h3 className='font-base font-medium mb-5'>
                     //         {filter.name}
-                    //     </h1>
+                    //     </h3>
                     //     <ul className='flex flex-col gap-3 justify-center'>
                     //         {
                     //             filter?.options?.map((option) => (

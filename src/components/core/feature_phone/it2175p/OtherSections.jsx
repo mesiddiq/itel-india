@@ -7,7 +7,7 @@ const OtherSections = () => {
             <div className="bg-[url('/featurephone/it2175p/Backgrounds/display.webp')] overflow-hidden lg:bg-[url('/featurephone/it2175p/Backgrounds/display.jpg')] bg-cover font-markot px-4 md:px-0 ">
                 <div className="content relative flex flex-col pt-9 gap-12 lg:gap-0 lg:pt-10 xl:pt-0 xl:flex-row-reverse  items-center justify-between min-h-[572px] lg:min-h-[726px]">
                     <div className="flex flex-col max-w-[480px] gap-5">
-                        <h1 className="text-mobile/h4 md:text-mobile/h3 lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[1.2px]">The 2.0” Display Advantage</h1>
+                        <h3 className="text-mobile/h4 md:text-mobile/h3 lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[1.2px]">The 2.0” Display Advantage</h3>
                         <p className="text-mobile/body/2 lg:text-[16px] font-normal lg:leading-[22px] text-grey/grey/1">Experience a bigger view and elevated style with itel it2175 Pro&apos;s big and bright 5.1cm (2”) Display. Ergonomically designed for your comfort.</p>
                         <div className="grid grid-cols-2 gap-y-5 gap-x-4 lg:gap-y-6 lg:gap-x-10">
                             <For each={['Bigger View', 'Elevated Style', 'Highly Ergonomic', 'Elevated Experiences']} render={(item) =>
@@ -15,9 +15,9 @@ const OtherSections = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg" className='lg:w-12 w-6' width="48" height="48" viewBox="0 0 48 48" fill="none">
                                         <path d="M22.032 4.5L21.5625 4.9215L11.391 15H3V39H28.266C30.381 39 32.226 37.506 32.6715 35.4375L35.157 24H40.5C42.9675 24 45 21.9675 45 19.5C45 17.0325 42.9675 15 40.5 15H24.375L24.657 13.875C24.9615 13.641 25.155 13.5405 25.5945 12.9375C26.2965 11.9775 27 10.488 27 8.484C27 6.345 25.065 4.5 22.641 4.5H22.032ZM23.109 7.641C23.742 7.764 24 8.022 24 8.484C24 9.8385 23.5905 10.6755 23.2035 11.2035C22.8165 11.73 22.5465 11.859 22.5465 11.859L22.0305 12.141L21.8445 12.75L20.9535 16.125L20.484 18H40.5C41.349 18 42 18.651 42 19.5C42 20.349 41.349 21 40.5 21H32.718L32.4375 22.1715L29.766 34.8285C29.688 35.1661 29.4965 35.4666 29.2235 35.6799C28.9504 35.8931 28.6124 36.0061 28.266 36H13.5V17.109L23.109 7.641ZM6 18H10.5V36H6V18Z" fill="white" />
                                     </svg>
-                                    <h1 className="lg:text-desktop/h5/medium text-mobile/h7 text-grey/grey/1 tracking-[0.12px]">
+                                    <h3 className="lg:text-desktop/h5/medium text-mobile/h7 text-grey/grey/1 tracking-[0.12px]">
                                         {item}
-                                    </h1>
+                                    </h3>
                                 </div>
                             } />
                         </div>
@@ -37,7 +37,7 @@ const OtherSections = () => {
                 <div className="content relative flex flex-col items-center justify-between lg:flex-col xl:flex-row lg:pt-10 min-h-[683px] lg:min-h-[800px] pt-8 xl:pt-0">
                     <div className="max-w-[530px]">
                         <div className="flex flex-col gap-5">
-                            <h1 className="text-mobile/h4 md:text-mobile/h3 lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[1.2px]">The 2.0” Display Advantage</h1>
+                            <h3 className="text-mobile/h4 md:text-mobile/h3 lg:text-[60px] lg:leading-[72px] lg:font-medium lg:-tracking-[1.2px]">The 2.0” Display Advantage</h3>
                             <h4 className="lg:text-desktop/h4 text-mobile/h6 text-grey/grey/1">1200 mAh Battery </h4>
                             <p className="text-mobile/body/2 lg:text-[16px] font-normal lg:leading-[22px] text-grey/grey/1">Experience a bigger view and elevated style with itel it2175 Pro&apos;s big and bright 5.1cm (2”) Display. Ergonomically designed for your comfort.</p>
                         </div>
@@ -69,7 +69,7 @@ const OtherSections = () => {
                     <div className="relative ">
                         <img src="/featurephone/it2175p/Backgrounds/powerphone.webp" className='max-w-[223px] lg:max-w-[450px] lg:translate-y-10 lg:-translate-x-16' alt="it2175p" />
                         <div className="absolute right-44 bottom-16 lg:flex items-center hidden ">
-                            <h1 className="text-[20px] font-bold text-grey/grey/2 leading-6 tracking-[0.2px] text-nowrap mx-5">Super Battery Mode</h1>
+                            <h3 className="text-[20px] font-bold text-grey/grey/2 leading-6 tracking-[0.2px] text-nowrap mx-5">Super Battery Mode</h3>
                             <div className="h-[2px] w-[calc(100vw_-_900px)] max-w-[700px] bg-white "></div>
                             <div className="size-2 bg-white rounded-full"></div>
                         </div>

@@ -6,7 +6,7 @@ const OverviewTwo = (props) => {
       <div className='content'>
         <div className='grid grid-cols-1 lg:grid-cols-2 min-h-[185px] lg:min-h-[120px]'>
           <div className='col-span-1'>
-            <h1 className='bg-gradient-to-br from-[#CA86FF] to-[#85E2FD] inline-block text-transparent bg-clip-text text-desktop/h4 md:text-desktop/h2 font-markot'>Redefining Style with 3D Curved AMOLED Display</h1>
+            <h3 className='bg-gradient-to-br from-[#CA86FF] to-[#85E2FD] inline-block text-transparent bg-clip-text text-desktop/h4 md:text-desktop/h2 font-markot'>Redefining Style with 3D Curved AMOLED Display</h3>
           </div>
           <div className='col-span-1 pt-[10px]'>
 

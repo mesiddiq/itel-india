@@ -7,7 +7,7 @@ const HeroSectionOfPage = () => {
                     <img src="/smartphone/a70/UpArrow.svg" alt="A70Badge" className="w-[12px] h-[12px]" />
                 </div>
                 <div>
-                    <h1 className="text-mobile/h1 md:text-desktop/large/h py-4">A70</h1>
+                    <h3 className="text-mobile/h1 md:text-desktop/large/h py-4">A70</h3>
                     <p className="text-mobile/title md:text-desktop/title text-[#181818] uppercase">
                         12GB* (4GB+8GB*) RAM + 256GB ROM <br /> | Dynamic bar | 13MP AI Dual Rear Camera
                     </p>

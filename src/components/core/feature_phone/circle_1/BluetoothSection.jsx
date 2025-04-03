@@ -10,7 +10,7 @@ function BluetoothSection() {
 			{/* Text Section */}
 			<div className="relative z-10 flex flex-col items-center text-center text-white pt-4 md:py-12">
 				<h2 className="lg:text-[48px] lg:leading-[52px] lg:-tracking-[1.9px] text-mobile/h4 font-medium">Realtime</h2>
-				<h1 className="lg:text-[80px] lg:leading-[88px] lg:-tracking-[2.4px] text-mobile/h4 font-medium ">Bluetooth Calling</h1>
+				<h3 className="lg:text-[80px] lg:leading-[88px] lg:-tracking-[2.4px] text-mobile/h4 font-medium ">Bluetooth Calling</h3>
 				<p className=" text-mobile/body/2 lg:text-desktop/body/large text-grey/grey/1/70 max-w-[578px] mt-3">
 					No need to constantly hold your smartphone – Circle 1 with built-in BT
 					Caller lets you take calls effortlessly.

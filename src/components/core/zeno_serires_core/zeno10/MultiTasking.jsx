@@ -75,12 +75,12 @@ function MultiTasking() {
             <div className="px-6 lg:px-24 py-12 h-full flex flex-col gap-14">
                 <div className="lg:flex text-white justify-between items-end z-50">
                     <div className="text-center lg:text-left">
-                        <h1 className="font-markot font-extrabold italic tracking-[0.35em] mb-2">
+                        <h3 className="font-markot font-extrabold italic tracking-[0.35em] mb-2">
                             <span className="text-zeno-solid">//</span>PERFORMANCE
-                        </h1>
-                        <h1 className="text-3xl  lg:text-6xl font-extrabold font-clashdisplay">
+                        </h3>
+                        <h3 className="text-3xl  lg:text-6xl font-extrabold font-clashdisplay">
                             SEAMLESS <br /> <span className="text-zeno-solid">MULTITASKING</span>.
-                        </h1>
+                        </h3>
                     </div>
                     <div className="w-full text-center lg:w-[30rem] text-xl [word-spacing:10px] text-gray-300">
                         <p>
@@ -119,12 +119,12 @@ function MultiTasking() {
                                         }}
                                         key={index}
                                     >
-                                        <h1 className="text-xl font-extrabold font-markot text-red-600 border-l-2 border-red-600 pl-4">
+                                        <h3 className="text-xl font-extrabold font-markot text-red-600 border-l-2 border-red-600 pl-4">
                                             {item.title} <br />
                                             <span className="text-gray-300 text-xl font-normal">
                                                 {item.titleDescription}
                                             </span>
-                                        </h1>
+                                        </h3>
                                         {item.description}
                                     </div>
                                 ))}
@@ -144,12 +144,12 @@ function MultiTasking() {
                                         }}
                                         key={index}
                                     >
-                                        <h1 className="text-xl font-extrabold font-markot text-red-600 border-l-2 border-red-600 pl-4">
+                                        <h3 className="text-xl font-extrabold font-markot text-red-600 border-l-2 border-red-600 pl-4">
                                             {item.title} <br />
                                             <span className="text-gray-300 text-xl font-normal">
                                                 {item.titleDescription}
                                             </span>
-                                        </h1>
+                                        </h3>
                                         {item.description}
                                     </div>
                                 ))}

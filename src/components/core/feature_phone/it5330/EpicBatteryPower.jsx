@@ -5,7 +5,7 @@ const EpicBatteryPower = () => {
         <div className="lg:h-[800px] relative overflow-hidden h-[694px] px-4 md:px-0 font-markot  bg-[url('/featurephone/it5330/Backgrounds/epic_battery_mobile.webp')] lg:bg-[url('/featurephone/it5330/Backgrounds/epic_battery.webp')] bg-cover ">
             <div className="content  pt-8 lg:pt-[130px] justify-between flex flex-col lg:flex-row items-center">
                 <div className="max-w-[590px]">
-                    <h1 className="text-mobile/h4 lg:text-featurephone/heading text-bg/primary/1">Epic Battery Power</h1>
+                    <h3 className="text-mobile/h4 lg:text-featurephone/heading text-bg/primary/1">Epic Battery Power</h3>
                     <h2 className="lg:text-desktop/h3 text-mobile/h6 lg:mt-5 mt-3">1900 mAh Battery</h2>
                     <p className="text-mobile/body/2 lg:text-featurephone/paragraph text-grey/grey/1/90 lg:mt-5 mt-3">Fuel your hustle with itel it5330's 1900 mAh battery with super battery mode, delivering a whopping 12 days* standby and 31.7 hours* of talktime. Stay charged, stay winning!</p>
                     <div className="flex lg:flex-col gap-2 lg:gap-6 mt-5">

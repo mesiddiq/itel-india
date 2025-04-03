@@ -39,7 +39,7 @@ const MultipleCardComponents = () => {
                     </span>
                 </div>
 
-                <h1 className="text-[#050036] text-desktop/overline md:text-desktop/caption">*5W charger available inside the box</h1>
+                <h3 className="text-[#050036] text-desktop/overline md:text-desktop/caption">*5W charger available inside the box</h3>
 
                 {/* Image added here */}
                 <img

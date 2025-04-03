@@ -15,13 +15,13 @@ const ProductListingBanner = () => {
                             The Wait is Over!
                         </h3>
                         {/* Laptop Text */}
-                        <h1 className='z-10 hidden md:block text-4xl md:text-5xl font-medium leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]'>
+                        <h3 className='z-10 hidden md:block text-4xl md:text-5xl font-medium leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]'>
                             Presenting Zeno 10
-                        </h1>
+                        </h3>
                         {/* Mobile Text */}
-                        <h1 className='z-10 block md:hidden text-4xl md:text-5xl font-medium leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]'>
+                        <h3 className='z-10 block md:hidden text-4xl md:text-5xl font-medium leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]'>
                             Presenting<br />Zeno 10
-                        </h1>
+                        </h3>
                     </div>
 
                     <Link to="/product/zeno-10" className='cursor-pointer z-0'>

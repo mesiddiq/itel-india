@@ -44,12 +44,12 @@ export function WordRotate({
 
     return (
         <div ref={containerRef} className="overflow-hidden py-2">
-            <h1
+            <h3
                 ref={wordRef}
                 className={className}
             >
                 {words[index]}
-            </h1>
+            </h3>
         </div>
     )
 }

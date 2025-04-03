@@ -46,13 +46,13 @@ const MobileFrame = () => {
             <div ref={sectionRef} style={{ height: '400vh', position: 'relative' }} className="bg-[#161410] hidden md:block">
                 <div className=" h-screen sticky top-0 bg-[url('/smartphone/A80/AllSections/120HZdisplay/text.svg')] bg-no-repeat bg-center bg-contain">
 
-                    <h1 ref={headingRef} className="bg-gradient-to-r from-[#FFBD6D] to-[#FF8657] bg-clip-text text-transparent w-full lg:text-desktop/h2 absolute top-10 text-center left-1/2 -translate-x-1/2 !font-normal text-mobile/h4">
+                    <h3 ref={headingRef} className="bg-gradient-to-r from-[#FFBD6D] to-[#FF8657] bg-clip-text text-transparent w-full lg:text-desktop/h2 absolute top-10 text-center left-1/2 -translate-x-1/2 !font-normal text-mobile/h4">
                         <span className="">A </span>
                         <span className="font-bold">
                             Bigger, Better
                         </span>
                         <span className=""> Viewing Experience</span>
-                    </h1>
+                    </h3>
                     <video
                         ref={videoRef}
                         className="object-cover h-full top-0 sticky w-full overflow-hidden -z-10"
@@ -71,14 +71,14 @@ const MobileFrame = () => {
                         <div className="grid grid-cols-3 gap-10 place-items-center text-white absolute bottom-10  w-full">
                             {CardData.map((item, index) => (
                                 <div key={index} className="card lg:space-y-2" ref={cardRefs[index]}>
-                                    <h1 className='uppercase' >
+                                    <h3 className='uppercase' >
                                         <span className="lg:text-[32px] lg:leading-10 font-bold tracking-[0.32px]">
                                             {item.title} &nbsp;
                                         </span>
                                         <span className="lg:text-desktop/h5 !font-medium">
                                             {item.subTitle}
                                         </span>
-                                    </h1>
+                                    </h3>
                                     <p className="text-white/70 lg:text-desktop/body/1 ">
                                         {item.description}
                                     </p>
@@ -89,13 +89,13 @@ const MobileFrame = () => {
                 </div>
             </div>
             <div className="md:hidden px-4 content bg-a-80-dark pt-6  bg-[url('/smartphone/A80/AllSections/120HZdisplay/text.svg')] bg-no-repeat bg-[20%_20%] bg-contain">
-                <h1 className="bg-gradient-to-r from-[#FFBD6D] to-[#FF8657] bg-clip-text text-transparent  text-center !font-normal text-mobile/h4">
+                <h3 className="bg-gradient-to-r from-[#FFBD6D] to-[#FF8657] bg-clip-text text-transparent  text-center !font-normal text-mobile/h4">
                     <span className="">A </span>
                     <span className="font-bold">
                         Bigger, Better
                     </span>
                     <span className=""> Viewing Experience</span>
-                </h1>
+                </h3>
 
                 <div className="relative">
                     <video
@@ -117,14 +117,14 @@ const MobileFrame = () => {
                     {
                         CardData.map((item, index) => (
                             <div className="space-y-2">
-                                <h1 className="">
+                                <h3 className="">
                                     <span className="text-[24px] leading-8 uppercase font-bold tracking-[0.24px]">
                                         {item.title} &nbsp;
                                     </span>
                                     <span className="text-[16px] font-medium leading-5 tracking-[0.16px] text-white uppercase">
                                         {item.subTitle}
                                     </span>
-                                </h1>
+                                </h3>
                                 <p className="text-[16px] leading-6 -tracking-[0.16px] text-white/80 ">
                                     {item.description}
                                 </p>

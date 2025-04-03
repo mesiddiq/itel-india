@@ -13,7 +13,7 @@ const StorageSuperstar = () => {
             <div className="content lg:h-[800px] h-[564px] relative font-markot flex flex-row-reverse lg:items-center lg:justify-between pt-6 lg:pt-0">
                 <div className="space-y-5 lg:space-y-[70px] max-w-[550px]">
                     <div className="space-y-3 lg:space-y-4">
-                        <h1 className="text-mobile/h4 lg:text-[62px] lg:leading-[74px] lg:-tracking-[1.8px] font-medium text-bg/primary/1">Storage Superstar</h1>
+                        <h3 className="text-mobile/h4 lg:text-[62px] lg:leading-[74px] lg:-tracking-[1.8px] font-medium text-bg/primary/1">Storage Superstar</h3>
                         <h4 className="text-mobile/body/2 lg:text-desktop/body/large">Unleash your digital life with itel it5330's spacious storage, blending style with functionality. Store up to 1000 phonebook entries, 200 SMS, and switch between 9 languages effortlessly. It's your world, your way!</h4>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -22,7 +22,7 @@ const StorageSuperstar = () => {
                             render={(item) => (
                                 <div className="flex gap-2 items-center">
                                     <img src={item.icon} alt={item.label} className="size-8 lg:size-12" />
-                                    <h1 className="text-mobile/h6 lg:text-desktop/h5/medium">{item.label}</h1>
+                                    <h3 className="text-mobile/h6 lg:text-desktop/h5/medium">{item.label}</h3>
                                 </div>
                             )} />
                     </div>

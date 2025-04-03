@@ -8,18 +8,18 @@ const PowerPerformance = () => {
       <div className="font-markot flex flex-col items-center ">
         <div className="flex flex-row justify-between w-full ">
           <div className="flex flex-col gap-3">
-            <h1 className="text-desktop/h2 text-[#232323]">Power & Performance</h1>
-            <h1 className="text-desktop/h4 text-[#232323]">4GB* (2GB+ 2GB)* RAM | 32GB ROM</h1>
+            <h3 className="text-desktop/h2 text-[#232323]">Power & Performance</h3>
+            <h3 className="text-desktop/h4 text-[#232323]">4GB* (2GB+ 2GB)* RAM | 32GB ROM</h3>
           </div>
 
           <div className="flex flex-col gap-4 max-w-[345px]">
             <div className="flex flex-row items-center gap-2">
-              <h1 className="text-desktop/h3 text-[#232323]">20%</h1>
-              <h1 className="text-desktop/body/large text-[#232323]">Reduced start-up time of frequently used apps</h1>
+              <h3 className="text-desktop/h3 text-[#232323]">20%</h3>
+              <h3 className="text-desktop/body/large text-[#232323]">Reduced start-up time of frequently used apps</h3>
             </div>
             <div className="flex flex-row items-center gap-2">
-              <h1 className="text-desktop/h3 text-[#232323]">36%</h1>
-              <h1 className="text-desktop/body/large text-[#232323]">Faster warm boot of apps</h1>
+              <h3 className="text-desktop/h3 text-[#232323]">36%</h3>
+              <h3 className="text-desktop/body/large text-[#232323]">Faster warm boot of apps</h3>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ const PowerPerformance = () => {
         <img src='/smartphone/A50C/powerPerformance.png' alt="Powerful 4GB RAM" className="w-3/4" />
       </div>
 
-      <h1 className="absolute bottom-6 right-12 font-markot text-desktop/caption text-[#232323]">Memory Fusion Technology*</h1>
+      <h3 className="absolute bottom-6 right-12 font-markot text-desktop/caption text-[#232323]">Memory Fusion Technology*</h3>
     </div>
 
     {/* Mobile */}
@@ -40,21 +40,21 @@ const PowerPerformance = () => {
       <div className="font-markot flex flex-col items-center w-full max-w-[350px]">
         <div className="flex flex-col gap-[24px] w-full ">
           <div className="flex flex-col items-center text-center gap-2">
-            <h1 className="text-mobile/h4 text-[#181818]">Power & Performance</h1>
-            <h1 className="text-mobile/h6 text-[#1C1B1B]">4GB* (2GB+ 2GB)* RAM | 32GB ROM</h1>
+            <h3 className="text-mobile/h4 text-[#181818]">Power & Performance</h3>
+            <h3 className="text-mobile/h6 text-[#1C1B1B]">4GB* (2GB+ 2GB)* RAM | 32GB ROM</h3>
           </div>
 
           <div className="flex flex-row gap-4 ">
             <div className="flex flex-row items-start gap-2">
-              <h1 className="text-mobile/h5/medium text-[#0E0E0E]">20%</h1>
-              <h1 className="text-mobile/body/2 text-[#0E0E0E]">Reduced start-up time of frequently used apps</h1>
+              <h3 className="text-mobile/h5/medium text-[#0E0E0E]">20%</h3>
+              <h3 className="text-mobile/body/2 text-[#0E0E0E]">Reduced start-up time of frequently used apps</h3>
             </div>
 
             <div className="border border-grey/grey/4"></div>
 
             <div className="flex flex-row items-start gap-2">
-              <h1 className="text-mobile/h5/medium text-[#0E0E0E]">36%</h1>
-              <h1 className="text-mobile/body/2 text-[#0E0E0E]">Faster warm boot of apps</h1>
+              <h3 className="text-mobile/h5/medium text-[#0E0E0E]">36%</h3>
+              <h3 className="text-mobile/body/2 text-[#0E0E0E]">Faster warm boot of apps</h3>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const PowerPerformance = () => {
         <img src='/smartphone/A50C/powerPerformance.png' alt="Powerful 4GB RAM" className="w-3/4" />
       </div>
 
-      <h1 className="absolute bottom-4 right-4 font-markot text-[10px] font-normal leading-4 text-[#232323]">Memory Fusion Technology*</h1>
+      <h3 className="absolute bottom-4 right-4 font-markot text-[10px] font-normal leading-4 text-[#232323]">Memory Fusion Technology*</h3>
 
     </div>
     </>

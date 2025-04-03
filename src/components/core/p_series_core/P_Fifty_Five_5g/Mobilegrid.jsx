@@ -122,7 +122,7 @@ const MobileGrid = () => {
       />
       {/* Text Section */}
       <div className="flex flex-col opacity-[70%] md:justify-between items-start text-white z-20 gap-[20px] p-6 md:p-12 font-markot">
-        <h1 className="text-mobile/h5/medium md:text-desktop/h3 ">Vivid Colors,<br/>Wide Viewing</h1>
+        <h3 className="text-mobile/h5/medium md:text-desktop/h3 ">Vivid Colors,<br/>Wide Viewing</h3>
         <div className='flex flex-col gap-[20px] text-mobile/h6 md:text-desktop/h4'>
         <p className="">6.6" HD+ IPS Display</p>
         <p className="">90Hz Refresh Rate</p>

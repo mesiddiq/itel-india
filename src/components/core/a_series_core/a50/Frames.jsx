@@ -66,9 +66,9 @@ export default function Frames() {
                     >
                         <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:px-14 px-5">
                             <span className="flex flex-col">
-                                <h1 className="lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[709px] text-center md:text-start">
+                                <h3 className="lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[709px] text-center md:text-start">
                                     Speed & Storage: All for Your Entertainment Needs
-                                </h1>
+                                </h3>
                                 <p className="lg:max-w-[437px] lg:text-mobile/body/large text-desktop/body/2/regular text-[#181818] text-opacity-80 pt-4 text-center md:text-start">
                                     Enjoy high performance, effortless multitasking, and expandable space.
                                 </p>
@@ -130,9 +130,9 @@ export default function Frames() {
                 {/* Frame 1 */}
                 <div className="lg:mt-15 border-[#62b67af4] border-2 mt-7 md:w-full  h-[750px] py-5 rounded-[16px] md:rounded-[56px] md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col md:bg-[url('/smartphone/a50/f2.webp')] bg-[url('/smartphone/a50/f1Mobile.webp')]">
                     <div className='flex flex-col lg:justify-start items-start md:pl-12 px-5 md:px-0 pt-5'>
-                        <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
+                        <h3 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
                             Perfect Shots with AI Camera
-                        </h1>
+                        </h3>
                         <p className='lg:max-w-[437px] lg:text-mobile/body/large text-desktop/body/2/regular text-[#181818] text-opacity-80 pt-4 text-center md:text-start'>
                             Featuring a 5MP Front Camera and 8MP AI Rear Camera, every shot is infused with stunning detail and clarity.
                         </p>
@@ -232,9 +232,9 @@ export default function Frames() {
                 {/* Frame 3 */}
                 <div className="md:w-full  h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
                     <div className='flex flex-col lg:justify-start items-start md:pl-12 px-5 md:px-0'>
-                        <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
+                        <h3 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
                             Minimize Glitches for a Flawless Experience
-                        </h1>
+                        </h3>
                         <p className='lg:max-w-[437px] lg:text-mobile/body/large text-desktop/body/2/regular text-[#181818] text-opacity-80 pt-4 text-center md:text-start'>
                             Designed for smooth and efficient operations, it smartly optimizes performance for specific scenarios, reducing delays and flashbacks, and ensuring a seamless user experience.
                         </p>
@@ -256,9 +256,9 @@ export default function Frames() {
                 {/* Frame 4*/}
                 <div className="md:w-full  h-[624px] border-[#62b67af4] border-2  md:rounded-[56px] rounded-[16px] py-5 md:h-[626px] bg-cover bg-center flex md:flex-row md:justify-between justify-center items-center flex-col bg-[url('/smartphone/a50/mobBg.webp')] md:bg-[url('/smartphone/a50/oBg.webp')] mt-5">
                     <div className='flex flex-col lg:justify-start items-start xl:pl-12 px-5 md:ps-4 md:px-0'>
-                        <h1 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
+                        <h3 className='lg:text-desktop/h2 text-mobile/h4 text-[#181818] lg:max-w-[437px] text-center md:text-start'>
                             6.6” Big Display with Dynamic Bar
-                        </h1>
+                        </h3>
                         <p className='lg:max-w-[437px] lg:text-mobile/body/large text-desktop/body/2/regular text-[#181818] text-opacity-80 pt-4 text-center md:text-start'>
                             The spacious display, featuring a 90% screen-to-body ratio, provides an immersive viewing experience. Keeping up with your dynamic lifestyle, the integrated dynamic bar delivers essential notifications more seamlessly than ever - from battery status to calls and unlocking.                        </p>
                         <div className='gap-8 lg:gap-10 pt-5 md:pt-12 flex justify-center md:justify-start items-center w-full'>

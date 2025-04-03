@@ -10,9 +10,9 @@ const BeyoundLimits = () => {
                             <span className="text-zeno-solid">//</span>
                             <span className="text-dull-white font-markot"> camera</span>
                         </h6>
-                        <h1 className="lg:text-[64px] lg:leading-[64px] uppercase font-bold text-dull-white max-w-[674px] text-[32px] leading-8 ">
+                        <h3 className="lg:text-[64px] lg:leading-[64px] uppercase font-bold text-dull-white max-w-[674px] text-[32px] leading-8 ">
                             go <span className="text-zeno-solid">go beyound</span> in every shot
-                        </h1>
+                        </h3>
                     </div>
                     <p className="lg:text-desktop/body/large text-[14px] leading-5 text-[#f3f3f3] !tracking-wide max-w-[436px]">
                         Zeno 10 is built to capture the smallest details with <span className="text-zeno-solid"> unmatched clarity  </span> and brilliant <span className="text-zeno-solid"> color vibrancy </span>  so you can capture the same smooth clarity as shooting stars.

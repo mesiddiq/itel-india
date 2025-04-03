@@ -59,7 +59,7 @@ const BuiltForLife = () => {
             <div className="sticky pt-10 top-0 h-screen">
                 <div className="h-full relative overflow-hidden">
                     <div className="flex justify-between content flex-col gap-2 lg:flex-row text-center lg:text-left px-4 lg:px-0">
-                        <h1 className="lg:text-desktop/h2 text-mobile/h4 text-black/1 max-w-[496px]">Built for Life’s Unexpected Moments</h1>
+                        <h3 className="lg:text-desktop/h2 text-mobile/h4 text-black/1 max-w-[496px]">Built for Life’s Unexpected Moments</h3>
                         <p className="lg:text-desktop/body/large text-mobile/body/2 text-[#6F7384] max-w-[486px] ">
                             A80's built to handle the challenges of an active lifestyle, whether you’re caught in a rain or out in a dusty environment.
                         </p>

@@ -39,7 +39,7 @@ const VisualExperience = () => {
                 </div>
                 <div className=''>
                     <div className="right max-w-[496px] flex flex-col gap-2 lg:gap-4 lg:text-left text-center ">
-                        <h1 className="lg:text-desktop/h2 text-mobile/h3 ">Enjoy a Breathtaking Visual Experience</h1>
+                        <h3 className="lg:text-desktop/h2 text-mobile/h3 ">Enjoy a Breathtaking Visual Experience</h3>
                         <p className="text-mobile/body/2 text-white/70 lg:text-desktop/body/large">
                             Dynamic Bar get your essential notifications more seamlessly than ever, such as battery status, calling, and unlocking.
                         </p>

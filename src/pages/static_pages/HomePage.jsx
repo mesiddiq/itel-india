@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet'
 import CountOnItel from '../../components/core/static_pages_core/Homepage/CountOnItel'
 import DareToDoIt from '../../components/core/static_pages_core/Homepage/DareToDoIt'
 import DiscoverNextGen from '../../components/core/static_pages_core/Homepage/DiscoverNextGen'
@@ -11,8 +12,6 @@ import StayPlugged from '../../components/core/static_pages_core/Homepage/StayPl
 import Transform from '../../components/core/static_pages_core/Homepage/Transform'
 import TvFrame from '../../components/core/static_pages_core/Homepage/TvFrame'
 import Video from '../../components/core/static_pages_core/Homepage/Video'
-import { Helmet } from 'react-helmet'
-import ReactPlayer from 'react-player'
 
 const HomePage = () => {
     return (

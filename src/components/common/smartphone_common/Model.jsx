@@ -29,9 +29,9 @@ const Model = ({ theme = 'light', models }) => {
 								</div>
 								<div className="flex flex-col lg:gap-7 gap-4 md:gap-5">
 									<div className="flex justify-between items-center flex-col lg:flex-row gap-1 lg:gap-0">
-										<h1 className={`md:text-mobile/h4 text-mobile/h5/medium lg:text-desktop/h4 ${isLightTheme ? 'text-brand/black' : 'text-white'} `}>
+										<h3 className={`md:text-mobile/h4 text-mobile/h5/medium lg:text-desktop/h4 ${isLightTheme ? 'text-brand/black' : 'text-white'} `}>
 											{title}
-										</h1>
+										</h3>
 										<p className="price text-desktop/button text-itel-red flex items-center">
 											<Rupee />
 											{price}

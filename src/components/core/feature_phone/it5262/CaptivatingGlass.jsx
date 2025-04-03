@@ -9,7 +9,7 @@ const CaptivatingGlass = () => {
                 <img src="/featurephone/it5262/Backgrounds/captivating_phone.webp" alt="Elegant Glass Design" className=' lg:max-w-[1030px] md:max-w-[700px] max-w-[500px] object-contain absolute -bottom-40 md:-bottom-56 mx-auto lg:-left-40 lg:-bottom-80 lg:w-10/12 ' />
                 <div className="max-w-[530px] space-y-6 lg:space-y-[54px]">
                     <div className="space-y-3 lg:space-y-4">
-                        <h1 className="lg:text-featurephone/heading text-mobile/h4 text-bg/primary/1">Captivating Glass Finish Design</h1>
+                        <h3 className="lg:text-featurephone/heading text-mobile/h4 text-bg/primary/1">Captivating Glass Finish Design</h3>
                         <h4 className="lg:text-featurephone/paragraph text-mobile/body/2">Introducing the ultra-slim feature phone with a stunning glass finish, offering a sleek and modern look. Its compact design fits perfectly in your pocket, combining style and convenience. Enjoy a premium feel without compromising on durability and functionality.</h4>
                     </div>
                     <div className="flex items-center gap-3 lg:gap-4">
