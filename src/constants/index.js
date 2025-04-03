@@ -39,7 +39,6 @@ export const static_pages = {
     FAQ: '/assets/staticpages/faqs/',
     MediaAndBlog:'/assets/staticpages/mediaandblog/',
     ServiceCenter: '/assets/staticpages/servicecenters/',
-    MediaAndBlog: '/assets/staticpages/mediaandblog/',
     Otsr: '/assets/staticpages/otsr/',
     EWaste: '/assets/staticpages/ewastemanagement/',
     Promise100Days: '/assets/staticpages/100dayspromise/',

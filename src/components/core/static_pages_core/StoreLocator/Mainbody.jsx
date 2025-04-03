@@ -179,7 +179,7 @@ const Mainbody = () => {
               Store Locator
             </p>
             <p className="lg:w-[711px] text-center text-grey/grey/5 text-desktop/body/2/regular">
-              Simply enter your location below, and we'll show you a list of the nearest electronics retailers, carrier stores, and shops where you can buy your new itel device.
+              Simply enter your location below, and we&aps;ll show you a list of the nearest electronics retailers, carrier stores, and shops where you can buy your new itel device.
             </p>
             <div className="w-full space-y-4 lg:space-x-2 lg:w-[882px] lg:space-y-0 text-brand/black grid grid-cols-1 lg:grid-cols-2">
               <div className="flex flex-col items-start">
