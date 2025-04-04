@@ -9,12 +9,16 @@ export const useFilterStore = create((set) => ({
 	cameras: [],
 	storageOptions: [],
 	activeCategory: "ALL",
+	currentPage: 1,
+
+	setCurrentPage: (page) => set({ currentPage: page }),
 
 	toggleScreenSize: (size) =>
 		set((state) => ({
 			screenSizes: state.screenSizes.includes(size)
 				? state.screenSizes.filter((s) => s !== size)
 				: [...state.screenSizes, size],
+			currentPage: 1,
 		})),
 
 	toggleBatteryType: (type) =>
@@ -22,6 +26,7 @@ export const useFilterStore = create((set) => ({
 			batteryTypes: state.batteryTypes.includes(type)
 				? state.batteryTypes.filter((t) => t !== type)
 				: [...state.batteryTypes, type],
+			currentPage: 1,
 		})),
 
 	togglePriceRange: (range) =>
@@ -29,6 +34,7 @@ export const useFilterStore = create((set) => ({
 			priceRanges: state.priceRanges.includes(range)
 				? state.priceRanges.filter((r) => r !== range)
 				: [...state.priceRanges, range],
+			currentPage: 1,
 		})),
 
 	toggleNetwork: (network) =>
@@ -36,6 +42,7 @@ export const useFilterStore = create((set) => ({
 			networks: state.networks.includes(network)
 				? state.networks.filter((n) => n !== network)
 				: [...state.networks, network],
+			currentPage: 1,
 		})),
 
 	toggleFeature: (feature) =>
@@ -43,6 +50,7 @@ export const useFilterStore = create((set) => ({
 			features: state.features.includes(feature)
 				? state.features.filter((f) => f !== feature)
 				: [...state.features, feature],
+			currentPage: 1,
 		})),
 
 	toggleCamera: (camera) =>
@@ -50,6 +58,7 @@ export const useFilterStore = create((set) => ({
 			cameras: state.cameras.includes(camera)
 				? state.cameras.filter((c) => c !== camera)
 				: [...state.cameras, camera],
+			currentPage: 1,
 		})),
 
 	toggleStorage: (storage) =>
@@ -57,11 +66,13 @@ export const useFilterStore = create((set) => ({
 			storageOptions: state.storageOptions.includes(storage)
 				? state.storageOptions.filter((s) => s !== storage)
 				: [...state.storageOptions, storage],
+			currentPage: 1,
 		})),
 
 	setActiveCategory: (category) =>
 		set(() => ({
 			activeCategory: category,
+			currentPage: 1,
 		})),
 
 	resetFilters: () =>

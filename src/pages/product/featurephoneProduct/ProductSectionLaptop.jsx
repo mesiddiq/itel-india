@@ -1,17 +1,15 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useMemo, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useMemo, useState } from "react";
 import BuyNowSquareBG from "../../../components/common/smartphone_common/BuyNowSquareBG";
 import { AllFeaturePhoneData } from "../../../data/AllFeaturePhoneData";
-import { setFeaturePhones } from "../../../redux/slice/featurePhoneSlice";
+import { useFilterStore } from "../../../zustandstore/store";
 import Compare from "./Compare";
 import FilterTags from "./FilterTags";
 import ProductList from "./ProductList";
 import SeriesTags from "./SeriesTags";
-import { useFilterStore } from "../../../zustandstore/store";
 
 const ProductSectionLaptop = () => {
-	const [currentPage, setCurrentPage] = useState(1);
+	// const [currentPage, setCurrentPage] = useState(1);
 
 	const {
 		screenSizes,
@@ -20,6 +18,8 @@ const ProductSectionLaptop = () => {
 		networks,
 		features,
 		activeCategory,
+		currentPage,
+		setCurrentPage,
 	} = useFilterStore();
 
 	const filteredProducts = useMemo(() => {
@@ -59,7 +59,7 @@ const ProductSectionLaptop = () => {
 			// Filter by battery type
 			if (
 				batteryTypes.length > 0 &&
-				!batteryTypes.includes(product.battery)
+				!batteryTypes.includes(product.batteryCategory)
 			) {
 				return false;
 			}
@@ -103,24 +103,9 @@ const ProductSectionLaptop = () => {
 				return false;
 			}
 
-			// Filter by features
-			if (
-				features.length > 0 &&
-				!features.some((feature) => product.features.includes(feature))
-			) {
-				return false;
-			}
-
 			return true;
 		});
-	}, [
-		screenSizes,
-		batteryTypes,
-		priceRanges,
-		networks,
-		features,
-		activeCategory,
-	]);
+	}, [screenSizes, batteryTypes, priceRanges, networks, activeCategory]);
 
 	const PRODUCTS_PER_PAGE = 6;
 
@@ -163,7 +148,7 @@ const ProductSectionLaptop = () => {
 					<div className="hidden md:flex flex-col gap-12">
 						<div className="flex flex-col gap-5">
 							{/* Product card + Pagination */}
-							<ProductList phones={filteredProducts} />
+							<ProductList phones={paginatedProducts} />
 						</div>
 						{totalPages > 1 && (
 							<div className="flex justify-center items-center mt-4 mb-6">

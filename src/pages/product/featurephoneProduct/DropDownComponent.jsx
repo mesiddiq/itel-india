@@ -6,7 +6,7 @@ const DropDownComponent = ({data, setCurrentPhone}) => {
     const [selectedOption, setSelectedOption] = useState('Select')
     const dropdownRef = useRef(null)
 
-    const options = data.map(phone => phone.title)
+    const options = data.map(phone => phone.name)
     // console.log(options)
     const toggleDropdown = () => setIsOpen(!isOpen)
 
