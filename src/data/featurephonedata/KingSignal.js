@@ -3,7 +3,7 @@ export const HeroDataKingSignal = {
     subtitle: 'Unique Design with Round Screen | Inbuilt BT Caller | Lanyard to Carry Around',
     bgDesktop: '/featurephone/Circle_1/Backgrounds/banner.webp',
     bgMobile: '/featurephone/Circle_1/Backgrounds/bannermobile.webp',
-    purchaseLink: 'https://amzn.in/d/5QhNgaP',
+    purchaseLink: '',
     icon: "/featurephone/superguru4g/buynowlogo.svg",
     phoneUrl: '/featurephone/Circle_1/Backgrounds/hero.webp',
 }

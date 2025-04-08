@@ -1,5 +1,28 @@
 export const AllFeaturePhoneData = [
     {
+        id: 13,
+        title: "King Signal",
+        thumbnail: "/product-listing/filterFeaturephoneImages/king_signal.webp",
+        description: "Super strong signal | 1500mAh | Auto call recording",
+        purchaseLink: "/product/king-signal",
+        category: "Innovation Series",
+        isNew: true,
+        specification: {
+            price: "1,099",
+            primaryCamera: "VGA",
+            storage: "4 MB RAM & 4 MB ROM",
+            screenSize: '2"',
+            screenSizeForCompare: '5.08 cm (2")',
+            battery: "1900 mAh",
+        },
+        features: {
+            hasKingVoice: false,
+            hasPowerKeypad: true,
+            hasUPI: false,
+            hasBluetooth: false
+        }
+    },
+    {
         id: 1,
         title: "Super Guru 600",
         thumbnail: "/product-listing/filterFeaturephoneImages/SG600.webp",

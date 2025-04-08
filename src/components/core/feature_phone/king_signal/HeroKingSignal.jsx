@@ -20,7 +20,7 @@ const HeroKingSignal = () => {
                         <p className={`text-mobile/title lg:text-[20px] lg:leading-6 lg:tracking-[0.2px] font-normal uppercase text-grey/grey/1 max-w-[564px]`} data-aos="fade-right" data-aos-delay="400">Super strong signal | 1500mAh | Auto call recording</p>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="600" className='w-fit'>
-                        <BuyNowSquareBG purchaseLink={'https://amzn.in/d/5QhNgaP'} content={'Buy Now'} />
+                        <BuyNowSquareBG purchaseLink={''} content={'Buy Now'} />
                     </div>
                     <div className="flex gap-4 max-w-[730px] flex-wrap">
                         <div className="px-2 py-1 lg:py-2 lg:px-5 rounded-md bg-white/10 flex gap-3 items-center w-fit">

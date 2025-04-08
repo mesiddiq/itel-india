@@ -1,42 +1,40 @@
-import curlyLine from '/product-listing/curlyHeader.svg'
-import readmore from '/product-listing/read-more.svg'
+import { Link } from "react-router-dom";
+import curlyLine from "/product-listing/curlyHeader.svg";
+import readmore from "/product-listing/read-more.svg";
 
 const ProductListingBanner = () => {
-return (
+	return (
+		<section className=" w-full h-[450px] md:h-[329px] font-markot bg-[#EBE8E2] lg:rounded-2xl relative overflow-hidden">
+			<div
+				className=" overflow-hidden flex md:flex-row justify-between lg:pr-40 flex-col bg-[#EBE8E2] h-full w-full rounded-2xl bg-no-repeat bg-center md:bg-right bg-cover md:bg-auto"
+				style={{ backgroundImage: `url(${curlyLine})` }}
+			>
+				<section className="pl-5 md:pl-10 py-5 md:py-11 md:h-full md:w-1/2 w-full flex flex-col gap-4 md:justify-between">
+					<div className="flex flex-col">
+						<h3 className="text-base md:text-2xl font-medium tracking-[-2%]">
+							The Wait is Over!
+						</h3>
+						<h3 className="text-4xl md:text-5xl font-medium lg:leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]">
+							Presenting King Signal
+						</h3>
+					</div>
 
-    <section className=" w-full h-[400px] md:h-[329px] font-markot bg-[#EBE8E2] lg:rounded-2xl relative overflow-hidden">
-        
-        <div className=' overflow-hidden flex md:flex-row flex-col bg-[#EBE8E2] h-full w-full rounded-2xl bg-no-repeat bg-center md:bg-right bg-cover md:bg-auto' style={{ backgroundImage: `url(${curlyLine})`}}>
-            <section className='w-full md:w-1/2 h-full flex justify-center items-end absolute right-0 
-                scale-[80%] xs:scale-[40%] sm:scale-[40%] md:scale-[40%] lg:scale-[40%] xl:scale-[30%] 2xl:scale-[20%]
-                -bottom-[120px] -left-10 sm:left-auto xs:-bottom-[120px] sm:-bottom-[200px] md:-bottom-[60px] lg:-bottom-[70px] xl:-bottom-[90px] 2xl:-bottom-[70px]'
-            >
-                <img src="/featurephone/Circle_1/product_gallery/pink_front.webp" className='ml-20'/>
-            </section>
-            
-            <section className='pl-5 md:pl-10 py-5 md:py-11 md:h-full md:w-1/2 w-full flex flex-col md:justify-between'>
-                <div className='flex flex-col'>
-                    <h3 className='text-base md:text-2xl font-medium tracking-[-2%]'>
-                        The Wait is Over!
-                    </h3>
-                    <h3 className='text-4xl md:text-5xl font-medium leading-[57.6px] tracking-[-0.04em] text-left text-[#FF0037]'>
-                        Presenting Circle 1
-                    </h3>
-                </div>
-                
-                <a href="/product/circle-1" className='cursor-pointer'>
-                    <section className='flex flex-row'>
-                            <img src={readmore} className='w-1/3'/>
-                    </section>
-                </a>
-            </section>
-            
-        </div>
+					<Link to="/product/king-signal">
+						<img
+							src={readmore}
+							className="w-1/3"
+						/>
+					</Link>
+				</section>
+				<img
+					src="/featurephone/king_signal/product/hero_phone.webp"
+					alt="King Signal"
+					className="lg:ml-20 max-w-[200px] lg:max-w-[250px] self-end lg:self-start"
+				/>
+			</div>
+		</section>
+	);
+};
 
-    </section>
-    
-)
-}
-
-export default ProductListingBanner
+export default ProductListingBanner;
 //styleName: Desktop/H2;

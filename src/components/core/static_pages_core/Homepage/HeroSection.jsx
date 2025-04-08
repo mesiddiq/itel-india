@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -318,7 +319,7 @@ const KingSignal = ({ activeSlide }) => {
 		<AnimatePresence mode="wait">
 			<motion.div
 				key={activeSlide}
-				className=" h-[520px] md:h-[550px] lg:h-[627px] flex lg:justify-center lg:pt-[114px]"
+				className=" h-[520px] md:h-[550px] lg:h-[627px] flex lg:justify-center"
 			>
 				<video
 					autoPlay
@@ -334,7 +335,7 @@ const KingSignal = ({ activeSlide }) => {
 					src="/videos/homepage/king_signal_mob.mp4"
 					className="w-full object-cover object-center absolute left-0 top-0 h-full lg:object-right lg:hidden "
 				/>
-				<div className="content space-y-4 z-10 px-4 md:px-0 pt-6 lg:pt-0">
+				<div className="content z-10 px-4 md:px-0 py-6 lg:py-0 flex flex-col lg:flex-row lg:items-center justify-between">
 					<div className="space-y-4 lg:space-y-3">
 						<motion.h3
 							initial={{ scale: 0 }}
@@ -363,24 +364,38 @@ const KingSignal = ({ activeSlide }) => {
 							className="space-y-2 lg:space-y-2 lg:pt-4"
 						>
 							<h5 className="lg:text-desktop/h4 text-mobile/small/button text-white/80 max-w-[600px]">
-								Uninterrupted connectivity, Durable build
+								Super strong signal | 1500mAh | <br /> Auto call
+								recording
 							</h5>
 							{/* <h2 className='text-neutral-100 text-mobile/h4 lg:text-[28px] font-bold flex items-center'><Rupee /> 5,499 /-</h2> */}
 						</motion.div>
-						{/* <Link> */}
-						<motion.button
-							initial={{ opacity: 0, y: 50 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 1, delay: 0.2 }}
-						>
-							<img
-								src="/static_page/comingsoon.svg"
-								alt="Buy Now"
-								className=" max-w-[90px] lg:max-w-max md:max-w-28 mt-2 lg:mt-6"
-							/>
-						</motion.button>
-						{/* </Link> */}
+						<div className="flex items-center gap-4 lg:pt-8">
+							<Link
+								to={
+									"/product/king-signal"
+								}
+							>
+								<motion.button
+									initial={{ opacity: 0, y: 50 }}
+									animate={{ opacity: 1, y: 0 }}
+									transition={{ duration: 1, delay: 0.2 }}
+								>
+									<img
+										src="/static_page/Buttons.svg"
+										alt="Buy Now"
+										className="max-w-[136px] lg:max-w-max md:max-w-28 "
+									/>
+								</motion.button>
+							</Link>
+							<div className="flex items-center gap-2">
+								<span className="">Available at</span>
+								<span className="text-neutral-100 text-[14px] lg:text-[28px] font-bold flex items-center">
+									<Rupee /> 1,099 /-
+								</span>
+							</div>
+						</div>
 					</div>
+					<img src="/featurephone/king_signal/product/hero_phone.webp" alt="King Signal" className="lg:max-w-[400px] max-w-[200px] self-end lg:self-center" />
 				</div>
 			</motion.div>
 		</AnimatePresence>
