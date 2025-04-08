@@ -1,6 +1,7 @@
 import { create } from "zustand";
 
 export const useFilterStore = create((set) => ({
+	// Featurephones
 	screenSizes: [],
 	batteryTypes: [],
 	priceRanges: [],
@@ -9,6 +10,13 @@ export const useFilterStore = create((set) => ({
 	cameras: [],
 	storageOptions: [],
 	activeCategory: "ALL",
+
+	// Smartphones
+	smartPhoneScreenSizes: [],
+	smartPhoneCameras: [],
+	smartPhonePriceRanges: [],
+	smartPhoneActiveCategory: "ALL",
+	smartPhoneStorage: [],
 	currentPage: 1,
 
 	setCurrentPage: (page) => set({ currentPage: page }),
@@ -73,6 +81,11 @@ export const useFilterStore = create((set) => ({
 		set(() => ({
 			activeCategory: category,
 			currentPage: 1,
+		})),
+
+	setSmartPhoneActiveCategory: (category) =>
+		set(() => ({
+			smartPhoneActiveCategory: category,
 		})),
 
 	resetFilters: () =>

@@ -2,10 +2,10 @@ import { useMemo } from "react";
 import BuyNowSquareBG from "../../../components/common/smartphone_common/BuyNowSquareBG";
 import { AllFeaturePhoneData } from "../../../data/AllFeaturePhoneData";
 import { useFilterStore } from "../../../zustandstore/store";
-import Compare from "./Compare";
+import Compare from "../Compare";
 import FilterTags from "./FilterTags";
-import ProductList from "./ProductList";
 import SeriesTags from "./SeriesTags";
+import ProductCard from "../ProductCard";
 
 const ProductSectionLaptop = () => {
 	// const [currentPage, setCurrentPage] = useState(1);
@@ -144,7 +144,7 @@ const ProductSectionLaptop = () => {
 			<section className="hidden lg:flex flex-col gap-8 ">
 				<div className="hidden md:flex flex-row justify-between items-center">
 					<SeriesTags />
-					<Compare />
+					<Compare phoneData={AllFeaturePhoneData} />
 				</div>
 
 				{/* <PhoneBanner source={seriesBannerData[selectedSeries[0]]} /> */}
@@ -155,7 +155,20 @@ const ProductSectionLaptop = () => {
 					<div className="hidden md:flex flex-col gap-12">
 						<div className="flex flex-col gap-5">
 							{/* Product card + Pagination */}
-							<ProductList phones={paginatedProducts} />
+							{paginatedProducts.length === 0 ? (
+								<p className="text-gray-300">
+									No Feature Phones match your selected filters.
+								</p>
+							) : (
+								<div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+									{paginatedProducts?.map((phone) => (
+										<ProductCard
+											key={phone.id}
+											product={phone}
+										/>
+									))}
+								</div>
+							)}
 						</div>
 						{totalPages > 1 && (
 							<div className="flex justify-center items-center mt-4 mb-6">
@@ -173,8 +186,8 @@ const ProductSectionLaptop = () => {
 									src="/product-listing/arrow-right-carousel.svg"
 									onClick={nextPage}
 									className={`p-3 cursor-pointer ${currentPage === totalPages
-											? "opacity-50"
-											: ""
+										? "opacity-50"
+										: ""
 										}`}
 									alt="Next page"
 								/>

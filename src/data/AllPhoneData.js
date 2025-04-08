@@ -1,338 +1,289 @@
 export const AllPhonesData = [
-    {
-        id: 1, //Unique id of the phone
-        title: "A 80", //Title of the phone
-        thumbnail: "/smartphone/A80/AllSections/a80image.webp", //Thumbnail of the phone
-        description: "Built for Life’s Unexpected Moments", //Description of the phone
-        purchaseLink: "/product/a80",
-        category: "", //Category of the phone
-        isNew: true, //Is the phone new or not
-        specification: {
-            price: "6,999", //Price of the phone
-            primaryCamera: "13 MP", //Primary camera of the phone
-            storage: "128 GB", //Storage of the phone
-            screenSize: '6.6" ', //Screen size of the phone
-            processor: "Octacore",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 2, //Unique id of the phone
-        title: "S24", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/S24.webp", //Thumbnail of the phone
-        description: "Your Ideal Storyteller: Stunning 108MP AI Camera", //Description of the phone
-        purchaseLink: "/product/s24", //Link to buy the phone
-        category: "S Series", //Category of the phone
-        isNew: true, //Is the phone new or not
-        specification: {
-            price: "10,999", //Price of the phone
-            primaryCamera: "108 MP", //Primary camera of the phone
-            storage: "128 GB", //Storage of the phone
-            screenSize: '16.76 cm (6.6 inch)', //Screen size of the phone
-            processor: "Hexa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 3, //Unique id of the phone
-        title: "S23+", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/S23PLUS.webp", //Thumbnail of the phone
-        description: "Redefining Style with 3D Curved AMOLED Display", //Description of the phone
-        purchaseLink: "/product/s23-plus", //Link to buy the phone //Link to buy the phone
-        category: "S Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "12,999", //Price of the phone
-            primaryCamera: "50 MP", //Primary camera of the phone
-            storage: "256 GB", //Storage of the phone
-            screenSize: '6.78" FHD+ AMOLED Curved Screen', //Screen size of the phone
-            processor: "Octacore",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: false,
-            hasAmoledDisplay: true,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 4, //Unique id of the phone
-        title: "S23", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/S23.webp", //Thumbnail of the phone
-        description: "Flaunt your Style: Photochromic Colour Change Tech", //Description of the phone
-        purchaseLink: "/product/s23", //Link to buy the phone //Link to buy the phone
-        category: "S Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "8,199", //Price of the phone
-            primaryCamera: "50 MP", //Primary camera of the phone
-            storage: "128 GB", //Storage of the phone
-            screenSize: '16.76 cm (6.6 inch)', //Screen size of the phone
-            processor: "Hexa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: false,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 5, //Unique id of the phone
-        title: "P55 5G", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/P555g.webp", //Thumbnail of the phone
-        description: "Speed, Flair and Power in your Pocket!", //Description of the phone
-        purchaseLink: "/product/p55-5g", //Link to buy the phone //Link to buy the phone
-        category: "P Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "9,273", //Price of the phone
-            primaryCamera: "108MP", //Primary camera of the phone
-            storage: "128 GB", //Storage of the phone
-            screenSize: '16.76 cm (6.6 inch)', //Screen size of the phone
-            processor: "Hexa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: true,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 6, //Unique id of the phone
-        title: "P55", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/p55.webp", //Thumbnail of the phone
-        description: "Zap, Play, Win: All possible with 24GB* RAM", //Description of the phone
-        purchaseLink: "/product/p55", //Link to buy the phone
-        category: "P Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "6,999", //Price of the phone
-            primaryCamera: "50MP", //Primary camera of the phone
-            storage: "128 GB", //Storage of the phone
-            screenSize: '6.56" HD+', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 7, //Unique id of the phone
-        title: "P55T", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/P55T.webp", //Thumbnail of the phone
-        description: "Your New Tech Flex Powered by Android 14 Go", //Description of the phone
-        purchaseLink: "/product/p55t", //Link to buy the phone
-        category: "P Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "7,999", //Price of the phone
-            primaryCamera: "50 MP", //Primary camera of the phone
-            storage: "256 GB", //Storage of the phone
-            screenSize: '6.78" FHD+ AMOLED Curved Screen', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 8, //Unique id of the phone
-        title: "P55+", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/P55plus.webp", //Thumbnail of the phone
-        description: "India's first under 10K with 45W Charging. Ready to Rock!", //Description of the phone
-        purchaseLink: "/product/p55-plus", //Link to buy the phone
-        category: "P Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "9,499", //Price of the phone
-            primaryCamera: "50 MP AI Dual Rear Camera", //Primary camera of the phone
-            storage: "256 GB", //Storage of the phone
-            screenSize: '6.56" HD+ IPS Display', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 9, //Unique id of the phone
-        title: "A50", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/A50.webp", //Thumbnail of the phone
-        description: "Step into A50's Excellence with the 8 MP AI Rear Camera", //Description of the phone
-        purchaseLink: "/product/a50", //Link to buy the phone
-        category: "A Series", //Category of the phone
-        isNew: true, //Is the phone new or not
-        specification: {
-            price: "6,499", //Price of the phone
-            primaryCamera: "8MP AI Camera", //Primary camera of the phone
-            storage: "64 GB", //Storage of the phone
-            screenSize: '6.56" HD+ IPS', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 10, //Unique id of the phone
-        title: "A50C", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/A50C.webp", //Thumbnail of the phone
-        description: "Discover the All-Rounder A50C: Packed with 4GB* RAM", //Description of the phone
-        purchaseLink: "/product/a50-c", //Link to buy the phone
-        category: "A Series", //Category of the phone
-        isNew: true, //Is the phone new or not
-        specification: {
-            price: "5,599", //Price of the phone
-            primaryCamera: "8 MP", //Primary camera of the phone
-            storage: "32 GB", //Storage of the phone
-            screenSize: '6.56 inch', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "4000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: true,
-            hasAmoledDisplay: false,
-            hasBigBattery: false
-        }
-    },
-    {
-        id: 11, //Unique id of the phone
-        title: "A70", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/A70.webp", //Thumbnail of the phone
-        description: "The Ultimate Fast Wonder with Memory Fusion Technology", //Description of the phone
-        purchaseLink: "/product/a70", //Link to buy the phone
-        category: "A Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "6,299", //Price of the phone
-            primaryCamera: "13MP AI Dual Cam", //Primary camera of the phone
-            storage: "256GB", //Storage of the phone
-            screenSize: '6.6 inch', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: false,
-            hasAmoledDisplay: false,
-            hasBigBattery: true
-        }
-    },
-    {
-        id: 12, //Unique id of the phone
-        title: "Aura 05i", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/aura+05i.webp", //Thumbnail of the phone
-        description: "The Ultimate Fast Wonder with Memory Fusion Technology", //Description of the phone
-        purchaseLink: "/product/a05-i", //Link to buy the phone
-        category: "A Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "6,299", //Price of the phone
-            primaryCamera: "5 MP", //Primary camera of the phone
-            storage: "32 GB", //Storage of the phone
-            screenSize: '6.56 inch', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "4000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: false,
-            hasAmoledDisplay: false,
-            hasBigBattery: false
-        }
-    },
-    {
-        id: 13, //Unique id of the phone
-        title: "A05", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/A05.webp", //Thumbnail of the phone
-        description: "Experience Brilliance with expansive 6.6-Inch HD+ Drop Notch Display", //Description of the phone
-        purchaseLink: "/product/a05", //Link to buy the phone
-        category: "A Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "6,499", //Price of the phone
-            primaryCamera: "8 MP", //Primary camera of the phone
-            storage: "64 GB", //Storage of the phone
-            screenSize: '6.56 inch', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "4000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: false,
-            hasAmoledDisplay: false,
-            hasBigBattery: false
-        }
-    },
-    {
-        id: 14, //Unique id of the phone
-        title: "A23s", //Title of the phone
-        thumbnail: "/product-listing/filterPhoneImages/A23s.webp", //Thumbnail of the phone
-        description: "Embark on Your Digital Journey with the All-New itel A23S", //Description of the phone
-        purchaseLink: "/product/a23-s", //Link to buy the phone
-        category: "A Series", //Category of the phone
-        isNew: false, //Is the phone new or not
-        specification: {
-            price: "4,799", //Price of the phone
-            primaryCamera: "13MP AI Dual Cam", //Primary camera of the phone
-            storage: "256GB", //Storage of the phone
-            screenSize: '6.6 inch', //Screen size of the phone
-            processor: "Octa Core",
-            battery: "5000 mAh",
-            topSpecification: "" //Top specification of the phone (if any)
-        },
-        features: {
-            is5G: false,
-            hasAICamera: false,
-            hasAmoledDisplay: false,
-            hasBigBattery: false
-        }
-    },
-]
+	{
+		id: "1",
+		name: "A 80",
+		image: "/smartphone/A80/AllSections/a80image.webp",
+		price: 6999,
+		screenSize: '6.6"',
+		battery: "High",
+		network: ["4G"],
+		features: ["AI Camera", "Big Battery"],
+		isNew: true,
+		camera: "13 MP",
+		storage: "128 GB",
+		ram: "2 GB",
+		processor: "Octacore",
+		description: "Built for Life's Unexpected Moments",
+		category: "A Series",
+		colors: ["Silver", "Black"],
+        pageUrl:'a80'
+	},
+	{
+		id: "2",
+		name: "S24",
+		image: "/product-listing/filterPhoneImages/S24.webp",
+		price: 10999,
+		screenSize: '6.6"',
+		battery: "High",
+		network: ["4G"],
+		features: ["AI Camera", "Big Battery"],
+		isNew: true,
+		camera: "108 MP",
+		storage: "128 GB",
+		ram: "3 GB",
+		processor: "Hexa Core",
+		description: "Your Ideal Storyteller: Stunning 108MP AI Camera",
+		category: "S Series",
+		colors: ["Blue", "White", "Black"],
+        pageUrl:'s24'
+	},
+	{
+		id: "3",
+		name: "S23+",
+		image: "/product-listing/filterPhoneImages/S23PLUS.webp",
+		price: 12999,
+		screenSize: '6.78"',
+		battery: "High",
+		network: ["4G"],
+		features: ["AMOLED", "Big Battery"],
+		isNew: false,
+		camera: "50 MP",
+		storage: "256 GB",
+		ram: "4 GB",
+		processor: "Octacore",
+		description: "Redefining Style with 3D Curved AMOLED Display",
+		category: "S Series",
+		colors: ["Silver", "Gold", "Black"],
+        pageUrl:'s23-plus'
+	},
+	{
+		id: "4",
+		name: "S23",
+		image: "/product-listing/filterPhoneImages/S23.webp",
+		price: 8199,
+		screenSize: '6.6"',
+		battery: "High",
+		network: ["4G"],
+		features: ["Big Battery"],
+		isNew: false,
+		camera: "50 MP",
+		storage: "128 GB",
+		ram: "3 GB",
+		processor: "Hexa Core",
+		description: "Flaunt your Style: Photochromic Colour Change Tech",
+		category: "S Series",
+		colors: ["Red", "Black"],
+        pageUrl:'s23'
+	},
+	{
+		id: "5",
+		name: "P55 5G",
+		image: "/product-listing/filterPhoneImages/P555g.webp",
+		price: 9273,
+		screenSize: '6.6"',
+		battery: "High",
+		network: ["5G"],
+		features: ["AI Camera", "Big Battery", "5G"],
+		isNew: false,
+		camera: "108 MP",
+		storage: "128 GB",
+		ram: "6 GB",
+		processor: "Hexa Core",
+		description: "Speed, Flair and Power in your Pocket!",
+		category: "P Series",
+		colors: ["Silver", "Black"],
+        pageUrl:'p55-5g'
+	},
+	{
+		id: "6",
+		name: "P55",
+		image: "/product-listing/filterPhoneImages/p55.webp",
+		price: 6999,
+		screenSize: '6.56"',
+		battery: "High",
+		network: ["4G"],
+		features: ["AI Camera", "Big Battery"],
+		isNew: false,
+		camera: "50 MP",
+		storage: "128 GB",
+		ram: "4 GB",
+		processor: "Octa Core",
+		description: "Zap, Play, Win: All possible with 24GB* RAM",
+		category: "P Series",
+		colors: ["Blue", "White", "Black"],
+        pageUrl:'p55'
+	},
+	{
+		id: "7",
+		name: "P55T",
+		image: "/product-listing/filterPhoneImages/P55T.webp",
+		price: 7999,
+		screenSize: '6.78"',
+		battery: "High",
+		network: ["4G"],
+		features: ["AI Camera", "Big Battery"],
+		isNew: false,
+		camera: "50 MP",
+		storage: "256 GB",
+		ram: "4 GB",
+		processor: "Octa Core",
+		description: "Your New Tech Flex Powered by Android 14 Go",
+		category: "P Series",
+		colors: ["Silver", "Gold", "Black"],
+        pageUrl:'p55t'
+	},
+	{
+		id: "8",
+		name: "P55+",
+		image: "/product-listing/filterPhoneImages/P55plus.webp",
+		price: 9499,
+		screenSize: '6.56"',
+		battery: "High",
+		network: ["4G"],
+		features: ["AI Camera", "Big Battery"],
+		isNew: false,
+		camera: "50 MP",
+		storage: "256 GB",
+		ram: "6 GB",
+		processor: "Octa Core",
+		description:
+			"India's first under 10K with 45W Charging. Ready to Rock!",
+		category: "P Series",
+		colors: ["Red", "Black"],
+        pageUrl:'p55-plus'
+	},
+	{
+		id: "9",
+		name: "A50",
+		image: "/product-listing/filterPhoneImages/A50.webp",
+		price: 6499,
+		screenSize: '6.56"',
+		battery: "High",
+		network: ["4G"],
+		features: ["AI Camera", "Big Battery"],
+		isNew: true,
+		camera: "8 MP",
+		storage: "64 GB",
+		ram: "4 GB",
+		processor: "Octa Core",
+		description: "Step into A50's Excellence with the 8 MP AI Rear Camera",
+		category: "A Series",
+		colors: ["Silver", "Black"],
+        pageUrl:'a50'
+	},
+	{
+		id: "10",
+		name: "A50C",
+		image: "/product-listing/filterPhoneImages/A50C.webp",
+		price: 5599,
+		screenSize: '6.56"',
+		battery: "Low",
+		network: ["4G"],
+		features: ["AI Camera"],
+		isNew: true,
+		camera: "8 MP",
+		storage: "32 GB",
+		ram: "2 GB",
+		processor: "Octa Core",
+		description: "Discover the All-Rounder A50C: Packed with 4GB* RAM",
+		category: "A Series",
+		colors: ["Blue", "White", "Black"],
+        pageUrl:'a50-c'
+	},
+	{
+		id: "11",
+		name: "A70",
+		image: "/product-listing/filterPhoneImages/A70.webp",
+		price: 6299,
+		screenSize: '6.6"',
+		battery: "High",
+		network: ["4G"],
+		features: ["Big Battery"],
+		isNew: false,
+		camera: "13 MP",
+		storage: "256 GB",
+		ram: "4 GB",
+		processor: "Octa Core",
+		description: "The Ultimate Fast Wonder with Memory Fusion Technology",
+		category: "A Series",
+		colors: ["Silver", "Gold", "Black"],
+        pageUrl:'a70'
+	},
+	{
+		id: "12",
+		name: "Aura 05i",
+		image: "/product-listing/filterPhoneImages/aura+05i.webp",
+		price: 6299,
+		screenSize: '6.56"',
+		battery: "Low",
+		network: ["4G"],
+		features: [],
+		isNew: false,
+		camera: "5 MP",
+		storage: "32 GB",
+		ram: "2 GB",
+		processor: "Octa Core",
+		description: "The Ultimate Fast Wonder with Memory Fusion Technology",
+		category: "A Series",
+		colors: ["Red", "Black"],
+        pageUrl:'a05-i'
+	},
+	{
+		id: "13",
+		name: "A05",
+		image: "/product-listing/filterPhoneImages/A05.webp",
+		price: 6499,
+		screenSize: '6.56"',
+		battery: "Low",
+		network: ["4G"],
+		features: [],
+		isNew: false,
+		camera: "8 MP",
+		storage: "64 GB",
+		ram: "3 GB",
+		processor: "Octa Core",
+		description:
+			"Experience Brilliance with expansive 6.6-Inch HD+ Drop Notch Display",
+		category: "A Series",
+		colors: ["Silver", "Black"],
+        pageUrl:'a05'
+	},
+	{
+		id: "14",
+		name: "A23s",
+		image: "/product-listing/filterPhoneImages/A23s.webp",
+		price: 4799,
+		screenSize: '6.6"',
+		battery: "Low",
+		network: ["4G"],
+		features: ["Big Battery"],
+		isNew: false,
+		camera: "13 MP",
+		storage: "256 GB",
+		ram: "2 GB",
+		processor: "Octa Core",
+		description:
+			"Embark on Your Digital Journey with the All-New itel A23S",
+		category: "A Series",
+		colors: ["Blue", "White", "Black"],
+        pageUrl:'a23-s'
+	},
+];
+
+
+export const smartPhoneCategories = ["ALL", "S Series", "P Series", "A Series"];
+
+export const screenSizes = ['6"', '6.56"', '6.6"', '6.78"'];
+export const batteryTypes = ["High", "Low"];
+export const priceRanges = [
+	"Under ₹5,000",
+	"₹5,000 - ₹7,000",
+	"₹7,000 - ₹10,000",
+	"Above ₹10,000",
+];
+export const networks = ["4G", "5G"];
+export const features = ["5G", "AI Camera", "AMOLED", "Big Battery"];
+
+export const cameraTypes = ["5 MP", "8 MP", "13 MP", "50 MP", "108 MP"];
+export const storageOptions = ["32 GB", "64 GB", "128 GB", "256 GB"];
+export const ramOptions = ["2 GB", "3 GB", "4 GB", "6 GB"];

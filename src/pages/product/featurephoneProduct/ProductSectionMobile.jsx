@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useMemo } from "react";
-import Compare from "./Compare";
+import Compare from "../Compare";
 import SeriesTags from "./SeriesTags";
-
 import BuyNowSquareBG from "../../../components/common/smartphone_common/BuyNowSquareBG";
 import { AllFeaturePhoneData } from "../../../data/AllFeaturePhoneData";
 import { useFilterStore } from "../../../zustandstore/store";
 import Filters from "./Filters";
-import ProductList from "./ProductList";
+import ProductCard from "../ProductCard";
 
 
 const ProductSectionMobile = () => {
@@ -146,7 +145,7 @@ const ProductSectionMobile = () => {
             <section className="px-4 overflow-hidden lg:hidden py-10 text-white flex flex-col gap-7">
                 <div className="filterCompare flex flex-row justify-between items-center">
                     <Filters />
-                    <Compare />
+                    <Compare phoneData={AllFeaturePhoneData} />
                 </div>
                 <div className="flex flex-col gap-5">
                     <SeriesTags />
@@ -154,7 +153,21 @@ const ProductSectionMobile = () => {
                     {/* List of Products */}
                     <div className="allProducts flex flex-col gap-5">
                         {/* Product card + Pagination */}
-                        <ProductList phones={paginatedProducts} />
+                        {/* <ProductList phones={paginatedProducts} /> */}
+                        {paginatedProducts.length === 0 ? (
+                            <p className="text-gray-300">
+                                No Feature Phones match your selected filters.
+                            </p>
+                        ) : (
+                            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {paginatedProducts?.map((phone) => (
+                                    <ProductCard
+                                        key={phone.id}
+                                        product={phone}
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
                     {totalPages > 1 && (
                         <div className="flex justify-center items-center mt-4">
