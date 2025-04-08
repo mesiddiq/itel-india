@@ -1,11 +1,11 @@
-import Aos from 'aos'
 import "aos/dist/aos.css"
-import { useEffect } from 'react'
-import './App.css'
+import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Terms from './pages/static_pages/Terms'
-import { lazy, Suspense } from 'react';
+import './App.css'
 import Footer from './components/common/static_common/Footer'
+import Terms from './pages/static_pages/Terms'
+import Zeno10 from './pages/zeno/Zeno10'
+import ZenoParent from './pages/zeno/ZenoParent'
 import BackToTopButton from './utils/BackToTop'
 const FlipOne = lazy(() => import('./pages/feature_phone/FlipOne'));
 const SmartPhoneProductPage = lazy(() => import('./pages/product/SmartPhoneProductPage'));
@@ -66,29 +66,8 @@ const SuperGuru4G = lazy(() => import('./pages/feature_phone/SuperGuru4G'));
 const SuperGuru600 = lazy(() => import('./pages/feature_phone/SuperGuru600'));
 const Ace2Power = lazy(() => import('./pages/feature_phone/Ace2Power'));
 const King_signal = lazy(() => import('./pages/feature_phone/King_signal'));
-import 'lenis/dist/lenis.css'
-import Lenis from 'lenis'
-import Zeno10 from './pages/zeno/Zeno10'
-import ZenoParent from './pages/zeno/ZenoParent'
 
 function App() {
-
-	useEffect(() => {
-
-		const lenis = new Lenis()
-
-		function raf(time) {
-			lenis.raf(time)
-			requestAnimationFrame(raf)
-		}
-
-		requestAnimationFrame(raf)
-
-		Aos.init({
-			duration: 1000,
-			once: true
-		})
-	}, [])
 
 	return (
 		<Suspense fallback={<Loading />}>

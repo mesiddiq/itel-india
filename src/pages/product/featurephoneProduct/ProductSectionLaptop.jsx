@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import BuyNowSquareBG from "../../../components/common/smartphone_common/BuyNowSquareBG";
 import { AllFeaturePhoneData } from "../../../data/AllFeaturePhoneData";
 import { useFilterStore } from "../../../zustandstore/store";
@@ -16,10 +15,10 @@ const ProductSectionLaptop = () => {
 		batteryTypes,
 		priceRanges,
 		networks,
-		features,
 		activeCategory,
 		currentPage,
 		setCurrentPage,
+		features
 	} = useFilterStore();
 
 	const filteredProducts = useMemo(() => {
@@ -103,9 +102,17 @@ const ProductSectionLaptop = () => {
 				return false;
 			}
 
+			// Filter by features
+			if (features.length > 0) {
+				const hasAllFeatures = features.every((feature) =>
+					product.features.includes(feature)
+				);
+				if (!hasAllFeatures) return false;
+			}
+
 			return true;
 		});
-	}, [screenSizes, batteryTypes, priceRanges, networks, activeCategory]);
+	}, [screenSizes, batteryTypes, priceRanges, networks, activeCategory, features]);
 
 	const PRODUCTS_PER_PAGE = 6;
 
@@ -155,9 +162,8 @@ const ProductSectionLaptop = () => {
 								<img
 									src="/product-listing/arrow-left-carousel.svg"
 									onClick={prevPage}
-									className={`p-3 cursor-pointer ${
-										currentPage === 1 ? "opacity-50" : ""
-									}`}
+									className={`p-3 cursor-pointer ${currentPage === 1 ? "opacity-50" : ""
+										}`}
 									alt="Previous page"
 								/>
 								<span className="text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">
@@ -166,11 +172,10 @@ const ProductSectionLaptop = () => {
 								<img
 									src="/product-listing/arrow-right-carousel.svg"
 									onClick={nextPage}
-									className={`p-3 cursor-pointer ${
-										currentPage === totalPages
+									className={`p-3 cursor-pointer ${currentPage === totalPages
 											? "opacity-50"
 											: ""
-									}`}
+										}`}
 									alt="Next page"
 								/>
 							</div>

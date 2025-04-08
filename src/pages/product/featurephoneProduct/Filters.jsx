@@ -13,6 +13,10 @@ export default function Filters() {
 		toggleBatteryType,
 		togglePriceRange,
 		toggleNetwork,
+		networks,
+		screenSizes,
+		priceRanges,
+		batteryTypes,
 	} = useFilterStore();
 
 	return (
@@ -37,7 +41,7 @@ export default function Filters() {
 										id={`screen-${size}`}
 										type="checkbox"
 										className="form-checkbox h-5 w-5 text-red-600 bg-red-600"
-										// checked={selectedScreenSizes.includes(size)}
+										checked={screenSizes.includes(size)}
 										onChange={() => toggleScreenSize(size)}
 									/>
 									<label
@@ -65,7 +69,7 @@ export default function Filters() {
 										id={`battery-${type}`}
 										type="checkbox"
 										className="form-checkbox h-5 w-5 text-red-600 bg-red-600"
-										// checked={selectedBatteryTypes.includes(type)}
+										checked={batteryTypes.includes(type)}
 										onChange={() => toggleBatteryType(type)}
 									/>
 									<label
@@ -78,7 +82,7 @@ export default function Filters() {
 							))}
 						</div>
 					</div>
-
+					<div className="border-[1px] border-white/20 w-full mb-4"></div>
 					<div className="mb-6">
 						<h3 className="mb-3 text-desktop/title uppercase">
 							PRICE
@@ -93,7 +97,7 @@ export default function Filters() {
 										id={`price-${range}`}
 										type="checkbox"
 										className="form-checkbox h-5 w-5 text-red-600 bg-red-600"
-										// checked={selectedPriceRanges.includes(range)}
+										checked={priceRanges.includes(range)}
 										onChange={() => togglePriceRange(range)}
 									/>
 									<label
@@ -106,7 +110,7 @@ export default function Filters() {
 							))}
 						</div>
 					</div>
-
+					<div className="border-[1px] border-white/20 w-full mb-4"></div>
 					<div className="mb-6">
 						<h3 className="mb-3 text-desktop/title uppercase">
 							NETWORK
@@ -121,7 +125,7 @@ export default function Filters() {
 										id={`network-${network}`}
 										type="checkbox"
 										className="form-checkbox h-5 w-5 text-red-600 bg-red-600"
-										// checked={selectedNetworks.includes(network)}
+										checked={networks.includes(network)}
 										onChange={() => toggleNetwork(network)}
 									/>
 									<label
@@ -134,6 +138,7 @@ export default function Filters() {
 							))}
 						</div>
 					</div>
+					<div className="border-[1px] border-white/20 w-full mb-4"></div>
 				</div>
 			</div>
 		</>
