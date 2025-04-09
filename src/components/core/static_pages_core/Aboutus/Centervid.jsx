@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
 const Centervid = () => {
@@ -27,7 +27,7 @@ const Centervid = () => {
     };
   }, []);
   return (
-    <div ref={wrapperRef} className="lg:h-[810px] w-screen relative font-markot h-[202px]">
+    <div ref={wrapperRef} className="lg:h-[calc(100vh-80px)] w-screen relative font-markot h-[202px]">
       <ReactPlayer
         url="/videos/aboutus.webm"
         playing={isVisible}

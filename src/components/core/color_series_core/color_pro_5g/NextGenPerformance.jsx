@@ -11,7 +11,7 @@ const NextGenPerformance = () => {
       entries.forEach(entry => {
         const video = videoRef.current;
         if (entry.isIntersecting) {
-          console.log("NextGenPerformanceIf", entry.isIntersecting);
+          // console.log("NextGenPerformanceIf", entry.isIntersecting);
           video.currentTime = 0;
           video.play();
           
@@ -23,7 +23,7 @@ const NextGenPerformance = () => {
           // Cleanup the timer on component unmount
           return () => clearTimeout(timer);
         } else {
-          console.log("NextGenPerformanceElse", entry.isIntersecting);
+          // console.log("NextGenPerformanceElse", entry.isIntersecting);
           video.pause();
           setStartAnimation(false);
         }

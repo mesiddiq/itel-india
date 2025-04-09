@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import filter from '/product-listing/setting-3.svg'
-// import ShowDataForComparision from '../Product Section/ShowDataForComparision';
-import Filters from './Filters';
 import BuyNowText from '../../../components/common/smartphone_common/BuyNowText';
+import FilterSection from './FilterSection';
 
 const FilterHeading = () => {
   const [isOpen, setIsOpen] = useState(false);

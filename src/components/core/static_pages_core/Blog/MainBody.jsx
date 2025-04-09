@@ -71,11 +71,9 @@ const BlogCard = ({ category, title, image,data,id }) => {
 const MainBody = () => {
 
 	const { id } = useParams()
-	console.log(id)
 
 	const Maindata = data[id - 1]
 
-	console.log(Maindata)
 	useEffect(() => {
 		window.scrollTo(0, 0)
 	})

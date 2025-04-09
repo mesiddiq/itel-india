@@ -95,7 +95,7 @@ const FilterSection = () => {
 
         dispatch(updateFilters({ filterName, newValues }))
         dispatch(filterSmartPhones())
-        console.log(smartPhones)
+        // console.log(smartPhones)
     }
 
     return (

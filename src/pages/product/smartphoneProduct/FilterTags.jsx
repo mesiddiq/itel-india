@@ -1,43 +1,42 @@
-import { useDispatch, useSelector } from "react-redux";
-import { toggleFeatureFilter } from '../../../redux/reducers/actions';
 import cross from '/product-listing/cross.svg'
-
-const filtersData = ["5G Connectivity", "AI Camera", "Amoled Display", "Big Battery"];
+import { useFilterStore } from "../../../zustandstore/store";
+import { smartPhoneFeatures } from "../../../data/AllPhoneData";
 
 export default function FilterComponent() {
-  const dispatch = useDispatch();
-  const selectedFeatures = useSelector(state => (console.log(state), state.filters.filters.features));
 
-  // Toggle filter selection
-  const toggleFilter = (filter) => {
-    dispatch(toggleFeatureFilter(filter));
-  };
+  const { toggleSmartPhoneFeature, smartPhoneFeatures: selectedFeatures } = useFilterStore()
 
+  // console.log(selectedFeatures)
   // Check if filter is active
   const isActive = (filter) => selectedFeatures.includes(filter);
 
+  // Toggle filter
+  const handleClick = (filter) => {
+    console.log(filter)
+    toggleSmartPhoneFeature(filter)
+  };
+
   return (
     <div className="flex gap-4 w-auto">
-      {filtersData.map((filter) => (
+      {smartPhoneFeatures.map((filter) => (
         <button
           key={filter}
-          onClick={() => toggleFilter(filter)}
+          onClick={() => handleClick(filter)}
           className={`flex items-center justify-center px-3 py-1 rounded-sm text-sm transition-colors 
-            ${
-              isActive(filter)
-                ? "bg-[#575757] text-white"
-                : "bg-[#1C1C1C] text-[#949494] hover:bg-[#575757] hover:text-white"
+            ${isActive(filter)
+              ? "bg-[#575757] text-white"
+              : "bg-[#1C1C1C] text-[#949494] hover:bg-[#575757] hover:text-white"
             }
           `}
         >
           <span>{filter}</span>
-          {isActive(filter) && (
+          {selectedFeatures.includes(filter) && (
             <span
               className="ml-2 text-xs cursor-pointer hover:text-gray-300"
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleFilter(filter);
-              }}
+              // onClick={(e) => {
+              //   e.stopPropagation();
+              //   toggleFilter(filter);
+              // }}
             >
               <img src={cross} alt="cross" />
             </span>

@@ -30,7 +30,7 @@ const AnimatedBuyButton = ({ price }) => {
 					{!isHovered &&
 						<Rupee />
 					}
-					{isHovered ? 'BUY NOW' : `${price}`}
+					{isHovered ? 'BUY NOW' : ` ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`}
 				</span>
 				<img src='/product-listing/arrow-right.svg' />
 			</div>

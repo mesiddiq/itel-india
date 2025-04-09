@@ -11,7 +11,7 @@ const UnlockBoundless = () => {
       entries.forEach(entry => {
         const video = videoRef.current;
         if (entry.isIntersecting) {
-          console.log("UnlockBoundlessIf", entry.isIntersecting);
+          // console.log("UnlockBoundlessIf", entry.isIntersecting);
           video.currentTime = 0;
           video.play();
 
@@ -23,7 +23,7 @@ const UnlockBoundless = () => {
           // Cleanup the timer on component unmount
           return () => clearTimeout(timer);
         } else {
-          console.log("UnlockBoundlessElse", entry.isIntersecting);
+          // console.log("UnlockBoundlessElse", entry.isIntersecting);
           video.pause();
           setStartAnimation(false);
         }

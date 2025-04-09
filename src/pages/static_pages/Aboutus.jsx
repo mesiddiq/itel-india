@@ -1,4 +1,3 @@
-import React from 'react'
 import Bottem from '../../components/core/static_pages_core/Aboutus/Bottem'
 import Herosection from '../../components/core/static_pages_core/Aboutus/Herosection'
 import Mission from '../../components/core/static_pages_core/Aboutus/Mission'
