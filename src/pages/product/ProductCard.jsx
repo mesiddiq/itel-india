@@ -7,7 +7,7 @@ export default function ProductCard({ product }) {
     const { isNew, price, image, name, description, pageUrl } = product
     return (
         <Link to={'/product/' + pageUrl}>
-            <div className=" py-3 md:py-5 px-3 gap-3 rounded-2xl bg-[#232323] flex flex-col flex-wrap justify-around items-center" >
+            <div className=" py-3 md:py-5 px-3 gap-3 rounded-2xl bg-[#232323] flex flex-col flex-wrap justify-around items-center lg:h-[500px] h-[280px]" >
                 {
                     isNew == true ? (
                         <h3 className="md:w-[55px] lg:w-[55px] rounded-full bg-[#3A3358] px-3 py-[2px] text-[12px] lg:text-sm leading-[22.4px] tracking-[-0.01em]">
@@ -34,7 +34,7 @@ export default function ProductCard({ product }) {
                         {name}
                     </h3>
                     <h3 className="max-w-[250px] text-[10px] leading-[14px] tracking-[0.02em] md:text-sm md:leading-[22.4px] md:tracking-[-0.01em] text-center text-[#949494] md:text-[#C0C0C0]">
-                        {description}
+                        {description.split(' ').slice(0, 8).join(' ') + (description.split(' ').length > 10 ? '...' : '')}
                     </h3>
                 </div>
 

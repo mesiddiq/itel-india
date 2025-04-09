@@ -18,7 +18,7 @@ const UltraSmooth = () => {
       entries.forEach(entry => {
         const video = videoRef.current;
         if (entry.isIntersecting) {
-          console.log("UltraSmoothIf", entry.isIntersecting);
+          // console.log("UltraSmoothIf", entry.isIntersecting);
           video.currentTime = 0;
           video.play();
           
@@ -30,7 +30,7 @@ const UltraSmooth = () => {
           // Cleanup the timer on component unmount
           return () => clearTimeout(timer);
         } else {
-          console.log("UltraSmoothElse", entry.isIntersecting);
+          // console.log("UltraSmoothElse", entry.isIntersecting);
           video.pause();
           setStartAnimation(false);
         }

@@ -12,14 +12,17 @@ export const useFilterStore = create((set) => ({
 	activeCategory: "ALL",
 
 	// Smartphones
+	smartPhoneFeatures: [],
 	smartPhoneScreenSizes: [],
 	smartPhoneCameras: [],
 	smartPhonePriceRanges: [],
 	smartPhoneActiveCategory: "ALL",
 	smartPhoneStorage: [],
 	currentPage: 1,
+	smartPhoneCurrentPage: 1,
 
 	setCurrentPage: (page) => set({ currentPage: page }),
+	setSmartPhoneCurrentPage: (page) => set({ smartPhoneCurrentPage: page }),
 
 	toggleScreenSize: (size) =>
 		set((state) => ({
@@ -83,9 +86,51 @@ export const useFilterStore = create((set) => ({
 			currentPage: 1,
 		})),
 
+	//#######################################SMARTPHONE#######################################//
+
 	setSmartPhoneActiveCategory: (category) =>
 		set(() => ({
 			smartPhoneActiveCategory: category,
+			smartPhoneCurrentPage: 1,
+		})),
+
+	toggleSmartPhonePriceRange: (range) =>
+		set((state) => ({
+			smartPhonePriceRanges: state.smartPhonePriceRanges.includes(range)
+				? state.smartPhonePriceRanges.filter((r) => r !== range)
+				: [...state.smartPhonePriceRanges, range],
+			currentPage: 1,
+		})),
+
+	toggleSmartPhoneScreenSize: (size) =>
+		set((state) => ({
+			smartPhoneScreenSizes: state.smartPhoneScreenSizes.includes(size)
+				? state.smartPhoneScreenSizes.filter((s) => s !== size)
+				: [...state.smartPhoneScreenSizes, size],
+			smartPhoneCurrentPage: 1,
+		})),
+
+	toggleSmartPhoneFeature: (feature) =>
+		set((state) => ({
+			smartPhoneFeatures: state.smartPhoneFeatures.includes(feature)
+				? state.smartPhoneFeatures.filter((f) => f !== feature)
+				: [...state.smartPhoneFeatures, feature],
+		})),
+
+	toggleSmartPhoneCamera: (camera) =>
+		set((state) => ({
+			smartPhoneCameras: state.smartPhoneCameras.includes(camera)
+				? state.smartPhoneCameras.filter((c) => c !== camera)
+				: [...state.smartPhoneCameras, camera],
+			smartPhoneCurrentPage: 1,
+		})),
+
+	toggleSmartPhoneStorage: (storage) =>
+		set((state) => ({
+			smartPhoneStorage: state.smartPhoneStorage.includes(storage)
+				? state.smartPhoneStorage.filter((s) => s !== storage)
+				: [...state.smartPhoneStorage, storage],
+			smartPhoneCurrentPage: 1,
 		})),
 
 	resetFilters: () =>

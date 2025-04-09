@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const BlogCard = ({ category, title,id, image,data }) => {
   return (
     <div  className="bg-white space-y-[12px] lg:space-y-[16px] ">
-      {console.log(id)}
       <img
         src={image}
         alt={title}

@@ -1,26 +1,25 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import BuyNowSquareBG from "../../../components/common/smartphone_common/BuyNowSquareBG";
 import { AllPhonesData } from '../../../data/AllPhoneData';
 import { useFilterStore } from "../../../zustandstore/store";
 import Compare from "../Compare";
+import ProductCard from "../ProductCard";
 import FilterTags from "./FilterTags";
 import SeriesTags from "./SeriesTags";
-import ProductCard from "../ProductCard";
 
 const PRODUCTS_PER_PAGE = 6;
 
 const ProductSectionLaptop = () => {
 
-    const [currentPage, setCurrentPage] = useState(1);
     const {
-        // screenSizes,
-        // batteryTypes,
-        // priceRanges,
-        // networks,
-        // features,
-        // cameras,
-        // storageOptions,
+        smartPhoneFeatures,
+        setSmartPhoneCurrentPage,
+        smartPhoneCurrentPage,
+        smartPhonePriceRanges,
         smartPhoneActiveCategory,
+        smartPhoneStorage,
+        smartPhoneScreenSizes,
+        smartPhoneCameras
     } = useFilterStore();
 
     const filteredProducts = useMemo(() => {
@@ -31,71 +30,72 @@ const ProductSectionLaptop = () => {
             }
 
             // Filter by screen size
-            // if (screenSizes.length > 0 && !screenSizes.includes(product.screenSize)) {
-            //     return false;
-            // }
+            if (smartPhoneScreenSizes.length > 0) {
+                const screenSizeInRange = smartPhoneScreenSizes.some(range => {
+                    if (range === 'Under 6"' && product.screenSize < 6) return true;
+                    if (range === '6" - 6.5"' && product.screenSize >= 6 && product.screenSize <= 6.5) {
+                        return true;
+                    }
+                    if (range === 'Above 6.5"' && product.screenSize > 6.5) {
+                        return true;
+                    }
+                    return false;
+                });
+                if (!screenSizeInRange) return false;
+            }
 
-            // Filter by battery type
-            // if (batteryTypes.length > 0 && !batteryTypes.includes(product.battery)) {
-            //     return false;
-            // }
 
             // Filter by price range
-            // if (priceRanges.length > 0) {
-            //     const priceInRange = priceRanges.some(range => {
-            //         if (range === 'Under ₹5,000' && product.price < 5000) return true;
-            //         if (range === '₹5,000 - ₹7,000' && product.price >= 5000 && product.price <= 7000) return true;
-            //         if (range === '₹7,000 - ₹10,000' && product.price > 7000 && product.price <= 10000) return true;
-            //         if (range === 'Above ₹10,000' && product.price > 10000) return true;
-            //         return false;
-            //     });
+            if (smartPhonePriceRanges.length > 0) {
+                const priceInRange = smartPhonePriceRanges.some(range => {
+                    if (range === 'Under ₹5,000' && product.price < 5000) return true;
+                    if (range === '₹5,000 - ₹7,000' && product.price >= 5000 && product.price <= 7000) return true;
+                    if (range === '₹7,000 - ₹10,000' && product.price > 7000 && product.price <= 10000) return true;
+                    if (range === 'Above ₹10,000' && product.price > 10000) return true;
+                    return false;
+                });
 
-            //     if (!priceInRange) return false;
-            // }
-
-            // Filter by network
-            // if (networks.length > 0 && !networks.some(net => product.network.includes(net))) {
-            //     return false;
-            // }
+                if (!priceInRange) return false;
+            }
 
             // Filter by features
-            // if (features.length > 0) {
-            //     const hasFeatures = features.some(feature => product.features.includes(feature));
-            //     if (!hasFeatures) return false;
-            // }
+            if (smartPhoneFeatures.length > 0) {
+                const hasFeatures = smartPhoneFeatures.some(feature => product.features.includes(feature));
+                if (!hasFeatures) return false;
+            }
 
             // Filter by camera
-            // if (cameras.length > 0 && !cameras.includes(product.camera || '')) {
-            //     return false;
-            // }
+            if (smartPhoneCameras.length > 0 && !smartPhoneCameras.includes(product.camera || '')) {
+                return false;
+            }
 
             // Filter by storage
-            // if (storageOptions.length > 0 && !storageOptions.includes(product.storage || '')) {
-            //     return false;
-            // }
+            if (smartPhoneStorage.length > 0 && !smartPhoneStorage.includes(product.storage || '')) {
+                return false;
+            }
 
             return true;
         });
 
-    }, [smartPhoneActiveCategory]);
+    }, [smartPhoneActiveCategory, smartPhonePriceRanges, smartPhoneStorage, smartPhoneScreenSizes, smartPhoneCameras, smartPhoneFeatures]);
     // screenSizes, batteryTypes, priceRanges, networks, features, cameras, storageOptions, 
 
     // Calculate pagination
     const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
-    const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
+    const startIndex = (smartPhoneCurrentPage - 1) * PRODUCTS_PER_PAGE;
     const paginatedProducts = filteredProducts.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
 
     // Handle page changes
     const nextPage = () => {
-        if (currentPage < totalPages) {
-            setCurrentPage(currentPage + 1);
+        if (smartPhoneCurrentPage < totalPages) {
+            setSmartPhoneCurrentPage(smartPhoneCurrentPage + 1);
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     };
 
     const prevPage = () => {
-        if (currentPage > 1) {
-            setCurrentPage(currentPage - 1);
+        if (smartPhoneCurrentPage > 1) {
+            setSmartPhoneCurrentPage(smartPhoneCurrentPage - 1);
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     };
@@ -154,11 +154,15 @@ const ProductSectionLaptop = () => {
                                     </div>
                                 </div>
                             )}
-                            <div className="flex justify-center items-center mt-4">
-                                <img src='/product-listing/arrow-left-carousel.svg' onClick={prevPage} disabled={currentPage === 1} className="p-3 cursor-pointer" />
-                                <span className="text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">{currentPage} of {totalPages}</span>
-                                <img src='/product-listing/arrow-right-carousel.svg' onClick={nextPage} disabled={currentPage === totalPages} className="p-3 cursor-pointer" />
-                            </div>
+                            {
+                                totalPages > 1 && (
+                                    <div className="flex justify-center items-center mt-4">
+                                        <img src='/product-listing/arrow-left-carousel.svg' onClick={prevPage} disabled={smartPhoneCurrentPage === 1} className="p-3 cursor-pointer" />
+                                        <span className="text-sm leading-[22.4px] tracking-[-0.02em] text-[#F8F6F3]">{smartPhoneCurrentPage} of {totalPages}</span>
+                                        <img src='/product-listing/arrow-right-carousel.svg' onClick={nextPage} disabled={smartPhoneCurrentPage === totalPages} className="p-3 cursor-pointer" />
+                                    </div>
+                                )
+                            }
                         </div>
 
                         {/* Explore More */}

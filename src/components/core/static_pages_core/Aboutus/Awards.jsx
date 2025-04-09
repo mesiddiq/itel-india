@@ -1,8 +1,6 @@
-import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -47,12 +45,10 @@ const Awards = () => {
         slidesPerView={
           window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1
         } // Adjust slides per view based on screen width
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {data.map((data) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={data.title}>
               <div className=" bg-bg/primary/1 lg:space-y-[20px] rounded-xl overflow-hidden flex flex-col">
                 <img src={data.img} alt="Award Image" className="lg:h-[350px] h-[250px] object-top object-cover" />
                 <div className=" mx-2 lg:h-[128px] space-x-2 flex items-center justify-between py-4 lg:py-0">

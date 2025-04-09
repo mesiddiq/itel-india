@@ -1,101 +1,92 @@
-/* eslint-disable no-unused-vars */
-import { useDispatch, useSelector } from 'react-redux'
-import { togglePriceFilter, toggleCameraFilter, toggleScreenFilter, toggleStorageFilter } from '../../../redux/reducers/actions'
-
-
-
+import { useFilterStore } from '../../../zustandstore/store'
+import { smartPhoneCameraTypes, smartPhonePriceRanges, smartPhoneScreenSizes, smartPhoneStorageOptions } from '../../../data/AllPhoneData'
 
 const FilterSection = () => {
-
-    const dispatch = useDispatch()
-    const filters = useSelector(state => state.filters.filters)
-
-    const renderFilter = (name, options, currentValues, action) => (
-        // const dispatch = useDispatch()
-        <>
+    const {
+        toggleSmartPhonePriceRange,
+        toggleSmartPhoneCamera,
+        toggleSmartPhoneScreenSize,
+        toggleSmartPhoneStorage,
+        smartPhonePriceRanges: selectedPriceRanges,
+        smartPhoneCameras: selectedCameras,
+        smartPhoneScreenSizes: selectedScreenSizes,
+        smartPhoneStorage: selectedStorage
+    } = useFilterStore()
+    return (
+        <section className="mt-2 max-h-[70vh] overflow-y-scroll overflowHidden " >
             <div className="mb-6">
-                <h3 className="mb-3 text-desktop/title uppercase">{name}</h3>
+                <h3 className="font-semibold mb-3">PRICE RANGE</h3>
                 <div className="space-y-3">
-                    {options.map(option => (
-                        <label key={option.value} className="cursor-pointer flex items-center space-x-2">
+                    {smartPhonePriceRanges.map((range) => (
+                        <div key={range} className="cursor-pointer flex items-center space-x-2">
                             <input
+                                id={`price-${range}`}
                                 type="checkbox"
                                 className="form-checkbox h-5 w-5 text-red-600 bg-red-600 checked:text-red-600 checked:bg-red-600 checked:border-red-600"
-                                checked={currentValues.includes(option.value)}
-                                onChange={() => dispatch(action(option.value))}
+                                checked={selectedPriceRanges.includes(range)}
+                                onChange={() => toggleSmartPhonePriceRange(range)}
                             />
-                            <span className="text-white text-desktop/body/2/regular">{option.label}</span>
-                        </label>
+                            <label htmlFor={`price-${range}`} className='text-white text-desktop/body/2/regular cursor-pointer'>{range}</label>
+                        </div>
                     ))}
                 </div>
             </div>
-            <div className='border-[1px] border-white/20 w-full mb-4'></div>
-        </>
-    )
-
-    const filterOptions = {
-        price: [
-            { value: 'under-5000', label: 'Under ₹5,000' },
-            { value: '5000-7000', label: '₹5,000 - ₹7,000' },
-            { value: '7000-10000', label: '₹7,000 - ₹10,000' },
-            { value: 'above-10000', label: 'Above ₹10,000' }
-        ],
-        camera: [
-            { value: '8-50', label: '8 - 50 MP' },
-            { value: '51-100', label: '51 - 100 MP' },
-            { value: 'above-100', label: 'Above 100 MP' }
-        ],
-        screen: [
-            { value: 'under-6', label: 'Under 6"' },
-            { value: '6-6.5', label: '6" - 6.5"' },
-            { value: 'above-6.5', label: 'Above 6.5"' }
-        ],
-        storage: [
-            { value: '32', label: '32 GB' },
-            { value: '64', label: '64 GB' },
-            { value: '128', label: '128 GB' }
-        ]
-    }
-
-    return (
-        <section className="mt-2 max-h-[70vh] overflow-y-scroll overflowHidden " >
-            {renderFilter('Price Range', filterOptions.price, filters.price, togglePriceFilter)}
-            {renderFilter('Primary Camera', filterOptions.camera, filters.camera, toggleCameraFilter)}
-            {renderFilter('Screen Size', filterOptions.screen, filters.screen, toggleScreenFilter)}
-            {renderFilter('Storage', filterOptions.storage, filters.storage, toggleStorageFilter)}
+            <div className="border-[1px] border-white/20 w-full mb-4"></div>
+            <div className="mb-6">
+                <h3 className="font-semibold mb-3">PRIMARY CAMERA</h3>
+                <div className="space-y-3">
+                    {smartPhoneCameraTypes.map((camera) => (
+                        <div key={camera} className="cursor-pointer flex items-center space-x-2">
+                            <input
+                                id={`camera-${camera}`}
+                                type="checkbox"
+                                className="form-checkbox h-5 w-5 text-red-600 bg-red-600 checked:text-red-600 checked:bg-red-600 checked:border-red-600"
+                                checked={selectedCameras.includes(camera)}
+                                onChange={() => toggleSmartPhoneCamera(camera)}
+                            />
+                            <label htmlFor={`camera-${camera}`} className='text-white text-desktop/body/2/regular cursor-pointer'>{camera}</label>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="border-[1px] border-white/20 w-full mb-4"></div>
+            <div className="mb-6">
+                <h3 className="font-semibold mb-3">SCREEN SIZE</h3>
+                <div className="space-y-3">
+                    {smartPhoneScreenSizes.map((size) => (
+                        <div key={size} className="cursor-pointer flex items-center space-x-2">
+                            <input
+                                id={`screen-${size}`}
+                                type="checkbox"
+                                className="form-checkbox h-5 w-5 text-red-600 bg-red-600 checked:text-red-600 checked:bg-red-600 checked:border-red-600"
+                                checked={selectedScreenSizes.includes(size)}
+                                onChange={() => toggleSmartPhoneScreenSize(size)}
+                            />
+                            <label htmlFor={`screen-${size}`} className='text-white text-desktop/body/2/regular cursor-pointer'>{size}</label>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="border-[1px] border-white/20 w-full mb-4"></div>
+            <div className="mb-6">
+                <h3 className="font-semibold mb-3">STORAGE</h3>
+                <div className="space-y-3">
+                    {smartPhoneStorageOptions.map((storage) => (
+                        <div key={storage} className="cursor-pointer flex items-center space-x-2">
+                            <input
+                                id={`storage-${storage}`}
+                                type="checkbox"
+                                className="form-checkbox h-5 w-5 text-red-600 bg-red-600 checked:text-red-600 checked:bg-red-600 checked:border-red-600"
+                                checked={selectedStorage.includes(storage)}
+                                onChange={() => toggleSmartPhoneStorage(storage)}
+                            />
+                            <label htmlFor={`storage-${storage}`} className='text-white text-desktop/body/2/regular cursor-pointer'>{storage}</label>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </section>
     )
 }
 
 export default FilterSection
-// {
-//     filters.map((filter) => (
-//         <section key={filter.id} className="pr-5">
-//             <h2 className="font-medium text-base mb-5 text-foreground">
-//                 {filter.name}
-//             </h2>
-
-//             <div className="space-y-3 " role="group" aria-labelledby={`filter-${filter.id}`}>
-//                 {filter.options.map((option) => (
-//                     <div key={option.id} className="flex items-center space-x-2">
-//                         <input type="checkbox"
-//                             id={option.id}
-//                             onChange={(checked) => {
-//                                 handleFilterChange(filter.filterName, option.value, checked)
-//                             }}
-//                             className="h-5 w-5 rounded-sm border-gray-400 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
-//                         />
-//                         <label
-//                             htmlFor={option.id}
-//                             className="text-sm text-muted-foreground leading-tight cursor-pointer"
-//                         >
-//                             {option.label}
-//                         </label>
-//                     </div>
-//                 ))}
-//             </div>
-
-//             <div className="h-px bg-border/20 my-6" role="separator" />
-//         </section>
-//     ))
-// }

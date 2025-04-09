@@ -57,7 +57,6 @@ const ProductSectionLaptop = ({ activeSeries, setActiveSeries, currentPage, setC
         dispatch(setSmartPhones(AllPhonesData))
     })
 
-    console.log(smartPhonesData)
 
     return (
         <>

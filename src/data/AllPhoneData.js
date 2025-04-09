@@ -4,7 +4,7 @@ export const AllPhonesData = [
 		name: "A 80",
 		image: "/smartphone/A80/AllSections/a80image.webp",
 		price: 6999,
-		screenSize: '6.6"',
+		screenSize: 6.6,
 		battery: "High",
 		network: ["4G"],
 		features: ["AI Camera", "Big Battery"],
@@ -16,14 +16,14 @@ export const AllPhonesData = [
 		description: "Built for Life's Unexpected Moments",
 		category: "A Series",
 		colors: ["Silver", "Black"],
-        pageUrl:'a80'
+		pageUrl: "a80",
 	},
 	{
 		id: "2",
 		name: "S24",
 		image: "/product-listing/filterPhoneImages/S24.webp",
 		price: 10999,
-		screenSize: '6.6"',
+		screenSize: 6.6,
 		battery: "High",
 		network: ["4G"],
 		features: ["AI Camera", "Big Battery"],
@@ -35,17 +35,17 @@ export const AllPhonesData = [
 		description: "Your Ideal Storyteller: Stunning 108MP AI Camera",
 		category: "S Series",
 		colors: ["Blue", "White", "Black"],
-        pageUrl:'s24'
+		pageUrl: "s24",
 	},
 	{
 		id: "3",
 		name: "S23+",
 		image: "/product-listing/filterPhoneImages/S23PLUS.webp",
 		price: 12999,
-		screenSize: '6.78"',
+		screenSize: 6.78,
 		battery: "High",
 		network: ["4G"],
-		features: ["AMOLED", "Big Battery"],
+		features: ["Amoled Display", "Big Battery"],
 		isNew: false,
 		camera: "50 MP",
 		storage: "256 GB",
@@ -54,14 +54,14 @@ export const AllPhonesData = [
 		description: "Redefining Style with 3D Curved AMOLED Display",
 		category: "S Series",
 		colors: ["Silver", "Gold", "Black"],
-        pageUrl:'s23-plus'
+		pageUrl: "s23-plus",
 	},
 	{
 		id: "4",
 		name: "S23",
 		image: "/product-listing/filterPhoneImages/S23.webp",
 		price: 8199,
-		screenSize: '6.6"',
+		screenSize: 6.6,
 		battery: "High",
 		network: ["4G"],
 		features: ["Big Battery"],
@@ -73,17 +73,17 @@ export const AllPhonesData = [
 		description: "Flaunt your Style: Photochromic Colour Change Tech",
 		category: "S Series",
 		colors: ["Red", "Black"],
-        pageUrl:'s23'
+		pageUrl: "s23",
 	},
 	{
 		id: "5",
 		name: "P55 5G",
 		image: "/product-listing/filterPhoneImages/P555g.webp",
 		price: 9273,
-		screenSize: '6.6"',
+		screenSize: 6.6,
 		battery: "High",
 		network: ["5G"],
-		features: ["AI Camera", "Big Battery", "5G"],
+		features: ["AI Camera", "Big Battery", "5G Connectivity"],
 		isNew: false,
 		camera: "108 MP",
 		storage: "128 GB",
@@ -92,14 +92,14 @@ export const AllPhonesData = [
 		description: "Speed, Flair and Power in your Pocket!",
 		category: "P Series",
 		colors: ["Silver", "Black"],
-        pageUrl:'p55-5g'
+		pageUrl: "p55-5g",
 	},
 	{
 		id: "6",
 		name: "P55",
 		image: "/product-listing/filterPhoneImages/p55.webp",
 		price: 6999,
-		screenSize: '6.56"',
+		screenSize: 6.56,
 		battery: "High",
 		network: ["4G"],
 		features: ["AI Camera", "Big Battery"],
@@ -111,14 +111,14 @@ export const AllPhonesData = [
 		description: "Zap, Play, Win: All possible with 24GB* RAM",
 		category: "P Series",
 		colors: ["Blue", "White", "Black"],
-        pageUrl:'p55'
+		pageUrl: "p55",
 	},
 	{
 		id: "7",
 		name: "P55T",
 		image: "/product-listing/filterPhoneImages/P55T.webp",
 		price: 7999,
-		screenSize: '6.78"',
+		screenSize: 6.78,
 		battery: "High",
 		network: ["4G"],
 		features: ["AI Camera", "Big Battery"],
@@ -130,14 +130,14 @@ export const AllPhonesData = [
 		description: "Your New Tech Flex Powered by Android 14 Go",
 		category: "P Series",
 		colors: ["Silver", "Gold", "Black"],
-        pageUrl:'p55t'
+		pageUrl: "p55t",
 	},
 	{
 		id: "8",
 		name: "P55+",
 		image: "/product-listing/filterPhoneImages/P55plus.webp",
 		price: 9499,
-		screenSize: '6.56"',
+		screenSize: 6.56,
 		battery: "High",
 		network: ["4G"],
 		features: ["AI Camera", "Big Battery"],
@@ -150,14 +150,14 @@ export const AllPhonesData = [
 			"India's first under 10K with 45W Charging. Ready to Rock!",
 		category: "P Series",
 		colors: ["Red", "Black"],
-        pageUrl:'p55-plus'
+		pageUrl: "p55-plus",
 	},
 	{
 		id: "9",
 		name: "A50",
 		image: "/product-listing/filterPhoneImages/A50.webp",
 		price: 6499,
-		screenSize: '6.56"',
+		screenSize: 6.56,
 		battery: "High",
 		network: ["4G"],
 		features: ["AI Camera", "Big Battery"],
@@ -169,14 +169,14 @@ export const AllPhonesData = [
 		description: "Step into A50's Excellence with the 8 MP AI Rear Camera",
 		category: "A Series",
 		colors: ["Silver", "Black"],
-        pageUrl:'a50'
+		pageUrl: "a50",
 	},
 	{
 		id: "10",
 		name: "A50C",
 		image: "/product-listing/filterPhoneImages/A50C.webp",
 		price: 5599,
-		screenSize: '6.56"',
+		screenSize: 6.56,
 		battery: "Low",
 		network: ["4G"],
 		features: ["AI Camera"],
@@ -188,14 +188,14 @@ export const AllPhonesData = [
 		description: "Discover the All-Rounder A50C: Packed with 4GB* RAM",
 		category: "A Series",
 		colors: ["Blue", "White", "Black"],
-        pageUrl:'a50-c'
+		pageUrl: "a50-c",
 	},
 	{
 		id: "11",
 		name: "A70",
 		image: "/product-listing/filterPhoneImages/A70.webp",
 		price: 6299,
-		screenSize: '6.6"',
+		screenSize: 6.6,
 		battery: "High",
 		network: ["4G"],
 		features: ["Big Battery"],
@@ -207,14 +207,14 @@ export const AllPhonesData = [
 		description: "The Ultimate Fast Wonder with Memory Fusion Technology",
 		category: "A Series",
 		colors: ["Silver", "Gold", "Black"],
-        pageUrl:'a70'
+		pageUrl: "a70",
 	},
 	{
 		id: "12",
 		name: "Aura 05i",
 		image: "/product-listing/filterPhoneImages/aura+05i.webp",
 		price: 6299,
-		screenSize: '6.56"',
+		screenSize: 6.56,
 		battery: "Low",
 		network: ["4G"],
 		features: [],
@@ -226,14 +226,14 @@ export const AllPhonesData = [
 		description: "The Ultimate Fast Wonder with Memory Fusion Technology",
 		category: "A Series",
 		colors: ["Red", "Black"],
-        pageUrl:'a05-i'
+		pageUrl: "a05-i",
 	},
 	{
 		id: "13",
 		name: "A05",
 		image: "/product-listing/filterPhoneImages/A05.webp",
 		price: 6499,
-		screenSize: '6.56"',
+		screenSize: 6.56,
 		battery: "Low",
 		network: ["4G"],
 		features: [],
@@ -246,14 +246,14 @@ export const AllPhonesData = [
 			"Experience Brilliance with expansive 6.6-Inch HD+ Drop Notch Display",
 		category: "A Series",
 		colors: ["Silver", "Black"],
-        pageUrl:'a05'
+		pageUrl: "a05",
 	},
 	{
 		id: "14",
 		name: "A23s",
 		image: "/product-listing/filterPhoneImages/A23s.webp",
 		price: 4799,
-		screenSize: '6.6"',
+		screenSize: 6.6,
 		battery: "Low",
 		network: ["4G"],
 		features: ["Big Battery"],
@@ -266,24 +266,29 @@ export const AllPhonesData = [
 			"Embark on Your Digital Journey with the All-New itel A23S",
 		category: "A Series",
 		colors: ["Blue", "White", "Black"],
-        pageUrl:'a23-s'
+		pageUrl: "a23-s",
 	},
 ];
 
-
 export const smartPhoneCategories = ["ALL", "S Series", "P Series", "A Series"];
 
-export const screenSizes = ['6"', '6.56"', '6.6"', '6.78"'];
-export const batteryTypes = ["High", "Low"];
-export const priceRanges = [
+export const smartPhoneScreenSizes = ['Under 6"', '6" - 6.5"', 'Above 6.5"'];
+export const smartPhonePriceRanges = [
 	"Under ₹5,000",
 	"₹5,000 - ₹7,000",
 	"₹7,000 - ₹10,000",
 	"Above ₹10,000",
 ];
-export const networks = ["4G", "5G"];
-export const features = ["5G", "AI Camera", "AMOLED", "Big Battery"];
+export const smartPhoneNetworks = ["4G", "5G"];
+export const smartPhoneFeatures = ["5G Connectivity", "AI Camera", "Amoled Display"];
 
-export const cameraTypes = ["5 MP", "8 MP", "13 MP", "50 MP", "108 MP"];
-export const storageOptions = ["32 GB", "64 GB", "128 GB", "256 GB"];
-export const ramOptions = ["2 GB", "3 GB", "4 GB", "6 GB"];
+export const smartPhoneCameraTypes = [
+	"5 MP",
+	"8 MP",
+	"13 MP",
+	"50 MP",
+	"108 MP",
+];
+export const smartPhoneStorageOptions = ["32 GB", "64 GB", "128 GB", "256 GB"];
+export const smartPhoneRamOptions = ["2 GB", "3 GB", "4 GB", "6 GB"];
+
