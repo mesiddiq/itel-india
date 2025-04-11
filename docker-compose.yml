@@ -4,6 +4,6 @@ services:
   itel-india:
     container_name: itel-india
     restart: on-failure
-    image: $IMAGE_TAG
+    image: itel-india
     ports:
       - "8082:3000"
